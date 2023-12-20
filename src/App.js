@@ -84,32 +84,60 @@ const App = () => {
           }}
         >
           {/* Top section */}
-          <div>
-
+          <div
+             style={{ 
+                background-color: blue,
+             }}                 
+          >  
+           Top section
           </div>
           {/* Section 1 */}
-          <div>
-
+          <div
+             style={{ 
+                background-color: white,
+             }}                 
+          >  
+            Section 1
           </div>
           {/* News and Offers Section */}
-          <div>
-
+          <div
+             style={{ 
+                background-color: purple,
+             }}                 
+          >  
+            News and Offers section 
           </div>
           {/* Section 2 */}
-          <div>
-
+          <div
+             style={{ 
+                background-color: green,
+             }}                 
+          >  
+            Section 2
           </div>
           {/* Section 3 */}
-          <div>
-
+          <div
+             style={{ 
+                background-color: yellow,
+             }}                 
+          >  
+             Section 3
           </div>
           {/* Section 4 */}
-          <div>
-
+          <div
+             style={{ 
+                background-color: red,
+             }}                 
+          >  
+              Section 4
           </div>
           {/* Section 5 */}
-          <div>
-
+          <div
+             style={{ 
+                background-color: black,
+             }}                 
+          >  
+             Section 5
           </div>
         </div>
       </Content>
