@@ -1,127 +1,239 @@
-// import 'antd/dist/antd.css';
-import './App.css';
-import { Layout, Menu, theme } from "antd";
-import './citypay_logo.png'
+import React from "react";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { Layout, theme } from "antd";
+import "./App.css";
 
-//These are kept for the navbar items
-const navbarItem1 = ["Agent Signup", "Android Download", "IOS Download"];
-const navbarItemNames2 = ['Home','About', 'Services', 'Contact', 'Blog', 'Facebook', 'Instagram'];
+//Static Elements Import
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
-//listing and displaying the items of array in individual nav bar
-const { Header, Content, Footer } = Layout;
-const items1 = navbarItem1.map((name, index) => ({
-  key: String(index + 1),
-  label: name,
-}));
-const items2 = navbarItemNames2.map((name, index) => ({
-  key: String(index + 1),
-  label: name,
-}));
+//Assets Import
+import citypay from "./Assets/citypay_logo.png";
+
+//Pages Import 
+import ContactPage from "./ContactPage";
+import AboutPage from "./AboutPage";
+import ServicesPage from "./ServicesPage";
+import BlogPage from "./BlogPage";
+import FAQPage from "./FAQPage";
+import OurTeamPage from "./OurTeamPage";
+import LegalPage from "./LegalPage";
+import DownloadPage from "./DownloadPage";
+import NewsPage from "./NewsPage";
+
+const { Header, Content } = Layout;
 
 const App = () => {
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
+
   return (
-    <Layout>
-      <Header
-        style={{
-          position: "sticky",
-          top: 0,
-          zIndex: 1,
-          width: "100%",
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
-        <div className="Logo Image">
-          <img src="./citypay_logo.png" alt="CityPayLogo"></img>
-        </div>
-        <div className="navbar_top" />
-        <Menu
-          theme="dark"
-          mode="horizontal"
-          items={items1}
+    <Router>
+      <Layout>
+        <Header
           style={{
-            flex: 1,
-            minWidth: 0,
-          }}
-        />
-      </Header>
-      <Header
-        style={{
-          position: "sticky",
-          top: 0,
-          zIndex: 1,
-          width: "100%",
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
-        <div className="navbar_bot" />
-        <Menu
-          theme="dark"
-          mode="horizontal"
-          defaultSelectedKeys={["1"]}
-          items={items2}
-          style={{
-            flex: 1,
-            minWidth: 0,
-          }}
-        />
-      </Header>
-      <Content
-        style={{
-          padding: "0 48px",
-        }}
-      >
-        <div
-          style={{
-            padding: 24,
-            minHeight: 380,
-            background: colorBgContainer,
-            borderRadius: borderRadiusLG,
+            position: "sticky",
+            top: 0,
+            zIndex: 1,
+            height: "auto",
+            width: "100%",
+            display: "flex",
+            justifyContent: "flex-end",
+            alignItems: "center",
+            background: "linear-gradient(to right, #1096fe, #05336d)",
           }}
         >
-          {/* Top section */}
-          <div>
+          {/* Logo For CityPay */}
+          <Link to="/">
+            <div className="Logo Image">
+              <img
+                src={citypay}
+                alt="CityPayLogo"
+                style={{ paddingTop: "15px", height: "70px", width: "auto" }}
+              />
+            </div>
+          </Link>
 
+          {/* Navbar Import */}
+          <div className="navbar_bot" style={{ marginLeft: "auto" }}>
+            <Navbar selectedKey="1" />
           </div>
-          {/* Section 1 */}
-          <div>
-
-          </div>
-          {/* News and Offers Section */}
-          <div>
-
-          </div>
-          {/* Section 2 */}
-          <div>
-
-          </div>
-          {/* Section 3 */}
-          <div>
-
-          </div>
-          {/* Section 4 */}
-          <div>
-
-          </div>
-          {/* Section 5 */}
-          <div>
-
-          </div>
-        </div>
-      </Content>
-      <Footer
-        style={{
-          textAlign: "center",
-        }}
-      >
-        {/* <image> */}
-      </Footer>
-    </Layout>
+        </Header>
+        <Content style={{ padding: "0 48px" }}>
+          {/* Define Routes for Page */}
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <div>
+                  <div
+                    style={{
+                      padding: 24,
+                      minHeight: 380,
+                      background: colorBgContainer,
+                      borderRadius: borderRadiusLG,
+                      display: "flex",
+                    }}
+                  >
+                    <div style={{ flex: "3", marginRight: "48px" }}>
+                      {/* Top section */}
+                      <div
+                        style={{
+                          backgroundColor: "blue",
+                          padding: "16px",
+                          marginBottom: "16px",
+                        }}
+                      >
+                        Top section
+                      </div>
+                      {/* Section 1 */}
+                      <div
+                        style={{
+                          backgroundColor: "white",
+                          padding: "16px",
+                          marginBottom: "16px",
+                        }}
+                      >
+                        Section 1
+                      </div>
+                      {/* Section 2 */}
+                      <div
+                        style={{
+                          backgroundColor: "green",
+                          padding: "16px",
+                          marginBottom: "16px",
+                        }}
+                      >
+                        Section 2
+                      </div>
+                      {/* Section 3 */}
+                      <div
+                        style={{
+                          backgroundColor: "yellow",
+                          padding: "16px",
+                          marginBottom: "16px",
+                        }}
+                      >
+                        Section 3
+                      </div>
+                      {/* Section 4 */}
+                      <div
+                        style={{
+                          backgroundColor: "red",
+                          padding: "16px",
+                          marginBottom: "16px",
+                        }}
+                      >
+                        Section 4
+                      </div>
+                      {/* Section 5 */}
+                      <div
+                        style={{
+                          backgroundColor: "black",
+                          padding: "16px",
+                          marginBottom: "16px",
+                        }}
+                      >
+                        Section 5
+                      </div>
+                    </div>
+                    {/* News and Offers Section */}
+                    <div
+                      style={{
+                        flex: "1",
+                        backgroundColor: "purple",
+                        padding: "16px",
+                        borderRadius: borderRadiusLG,
+                        position: "sticky",
+                        top: "0",
+                        height: "fit-content",
+                      }}
+                    >
+                      News and Offers section
+                    </div>
+                  </div>
+                </div>
+              }
+            />
+            <Route
+              path="/contact"
+              element={
+                <div>
+                  <ContactPage />
+                </div>
+              }
+            />
+            <Route
+              path="/about"
+              element={
+                <div>
+                  <AboutPage />
+                </div>
+              }
+            />
+            <Route
+              path="/Services"
+              element={
+                <div>
+                  <ServicesPage />
+                </div>
+              }
+            />
+            <Route
+              path="/Blog"
+              element={
+                <div>
+                  <BlogPage />
+                </div>
+              }
+            />
+            <Route
+              path="/faq"
+              element={
+                <div>
+                  <FAQPage />
+                </div>
+              }
+            />
+            <Route
+              path="/ourTeam"
+              element={
+                <div>
+                  <OurTeamPage />
+                </div>
+              }
+            />
+            <Route
+              path="/news"
+              element={
+                <div>
+                  <NewsPage />
+                </div>
+              }
+            />
+            <Route
+              path="/legal"
+              element={
+                <div>
+                  <LegalPage />
+                </div>
+              }
+            />
+            <Route
+              path="/downloads"
+              element={
+                <div>
+                  <DownloadPage />
+                </div>
+              }
+            />
+          </Routes>
+        </Content>
+        <Footer />
+      </Layout>
+    </Router>
   );
 };
-export default App;
 
+export default App;
