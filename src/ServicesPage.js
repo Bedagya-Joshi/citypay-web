@@ -5,7 +5,7 @@ const ServicesPage = () => {
     <div>
       <div
         style={{
-          backgroundColor: "blue",
+          backgroundColor: "cyan",
           padding: "16px",
           marginBottom: "16px",
         }}
@@ -19,31 +19,14 @@ const ServicesPage = () => {
           gap: "16px",
         }}
       >
-        <div style={{ backgroundColor: "blue", padding: "8px", margin: "8px" }}>
-          Bank Transfer Service anything whether donkey castle during fox wolf say joined great cut soil cotton crowd cent income since essential canal desert forty atmosphere yesterday general
+        <div style={{ backgroundColor: "cyan", padding: "8px", margin: "8px" }}>
+          1. Send and Receive Money from all the Bank’s in Nepal
         </div>
-        <div style={{ backgroundColor: "blue", padding: "8px", margin: "8px" }}>
-          Wallet Top Up chair threw yard funny be cake only cut unknown birthday experience expect he library spring giving noun those cage cat field straight major jungle
+        <div style={{ backgroundColor: "cyan", padding: "8px", margin: "8px" }}>
+          2. Receive remittance from Wallet
         </div>
-        <div style={{ backgroundColor: "blue", padding: "8px", margin: "8px" }}>
-          MPOS Service wrapped paper fruit pole roll dirt count cross college widely division general offer just electricity night strong addition movie planet system gun terrible smaller
-        </div>
-      </div>
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(3, 1fr)",
-          gap: "16px",
-        }}
-      >
-        <div style={{ backgroundColor: "blue", padding: "8px", margin: "8px" }}>
-          Bank Transfer Service had loud talk grandfather structure health time slide key take horn late too highway music thee sister factor taught pale quarter silent to mighty
-        </div>
-        <div style={{ backgroundColor: "blue", padding: "8px", margin: "8px" }}>
-          Wallet Top Up tie population impossible classroom floating cast general farm tight bet model soon perhaps same heart week distant generally row join fill combine produce plane
-        </div>
-        <div style={{ backgroundColor: "blue", padding: "8px", margin: "8px" }}>
-          MPOS Service tea except sheep slow direct alone reason nodded length then break draw slide cake metal far explain gather summer coach rapidly land chief calm
+        <div style={{ backgroundColor: "cyan", padding: "8px", margin: "8px" }}>
+          3. Receive remittance directly to wallet
         </div>
       </div>
       <div
@@ -53,14 +36,31 @@ const ServicesPage = () => {
           gap: "16px",
         }}
       >
-        <div style={{ backgroundColor: "blue", padding: "8px", margin: "8px" }}>
-          Bank Transfer Service once walk whether strip verb cent cry something bill lost bar furniture treated rear gentle run circus hung shorter salmon voyage leaving appropriate determine
+        <div style={{ backgroundColor: "cyan", padding: "8px", margin: "8px" }}>
+          4. QR Payment : in Smart QR and Nepal Pay QR
         </div>
-        <div style={{ backgroundColor: "blue", padding: "8px", margin: "8px" }}>
-          Wallet Top Up test scientific travel fine government blew remember situation purpose changing there farm jet chance trace speak furniture list when rear poetry chest liquid bark
+        <div style={{ backgroundColor: "cyan", padding: "8px", margin: "8px" }}>
+          5. Request funds
         </div>
-        <div style={{ backgroundColor: "blue", padding: "8px", margin: "8px" }}>
-          MPOS Service force you pen right setting silk other spider dish border screen little attention edge blood ate selection depth sound hardly field regular voice soil
+        <div style={{ backgroundColor: "cyan", padding: "8px", margin: "8px" }}>
+          6. NFC Payment
+        </div>
+      </div>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(3, 1fr)",
+          gap: "16px",
+        }}
+      >
+        <div style={{ backgroundColor: "cyan", padding: "8px", margin: "8px" }}>
+          7. Utility Payments
+        </div>
+        <div style={{ backgroundColor: "cyan", padding: "8px", margin: "8px" }}>
+          8. Government Payments
+        </div>
+        <div style={{ backgroundColor: "cyan", padding: "8px", margin: "8px" }}>
+          9. MPOS Service
         </div>
       </div>
     </div>
