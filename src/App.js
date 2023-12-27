@@ -6,6 +6,7 @@ import "./App.css";
 //Static Elements Import
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { AuthProvider } from "./Blog/AuthContext";
 
 //Assets Import
 import citypay from "./Assets/citypay_logo.png";
@@ -19,7 +20,11 @@ import FAQPage from "./FAQPage";
 import OurTeamPage from "./OurTeamPage";
 import LegalPage from "./LegalPage";
 import DownloadPage from "./DownloadPage";
-import NewsPage from "./NewsPage";
+import LoginPage from "./Blog/LoginPage";
+import WriteBlogPage from "./Blog/WritePage";
+
+// import Blog from "./Blog";
+
 
 const { Header, Content } = Layout;
 
@@ -30,6 +35,7 @@ const App = () => {
 
   return (
     <Router>
+      <AuthProvider>
       <Layout>
         <Header
           style={{
@@ -77,16 +83,8 @@ const App = () => {
                     }}
                   >
                     <div style={{ flex: "3", marginRight: "48px" }}>
-                      {/* Top section */}
-                      <div
-                        style={{
-                          backgroundColor: "blue",
-                          padding: "16px",
-                          marginBottom: "16px",
-                        }}
-                      >
-                        Top section
-                      </div>
+                      <DownloadPage />
+                      
                       {/* Section 1 */}
                       <div
                         style={{
@@ -189,6 +187,22 @@ const App = () => {
               }
             />
             <Route
+              path="/login"
+              element={
+                <div>
+                  <LoginPage />
+                </div>
+              }
+            />
+            <Route
+              path="/write"
+              element={
+                <div>
+                  <WriteBlogPage />
+                </div>
+              }
+            />
+            <Route
               path="/faq"
               element={
                 <div>
@@ -204,14 +218,7 @@ const App = () => {
                 </div>
               }
             />
-            <Route
-              path="/news"
-              element={
-                <div>
-                  <NewsPage />
-                </div>
-              }
-            />
+            
             <Route
               path="/legal"
               element={
@@ -232,6 +239,7 @@ const App = () => {
         </Content>
         <Footer />
       </Layout>
+      </AuthProvider>
     </Router>
   );
 };

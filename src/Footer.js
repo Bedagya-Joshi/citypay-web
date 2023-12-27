@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import fb_logo from "./Assets/fb_logo.png";
 import ig_logo from "./Assets/ig_logo.png";
 import citypay from "./Assets/citypay_logo.png";
+import qrcode from "./Assets/QRcode.jpeg";
 
 const { Footer } = Layout;
 
@@ -20,10 +21,18 @@ const CustomFooter = () => {
         justifyContent: "space-between",
       }}
     >
-      <div className="Logo Image">
+      <div
+        className="Logo Image"
+        style={{ display: "flex", flexDirection: "column", gap:"10px" }}
+      >
         <img
           src={citypay}
           alt="CityPayLogo"
+          style={{ height: "70px", width: "auto" }}
+        />
+        <img
+          src={qrcode}
+          alt="QR Scan"
           style={{ height: "70px", width: "auto" }}
         />
       </div>
@@ -102,7 +111,6 @@ const CustomFooter = () => {
       >
         <Link to="/faq">FAQ</Link>
         <Link to="/ourTeam">Our Team</Link>
-        <Link to="/news">News & Events</Link>
         <a
           href="https://agent.citywallet.com.np/auth/signup"
           target="_blank"
