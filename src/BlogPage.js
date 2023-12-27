@@ -1,6 +1,6 @@
 // BlogPage.js
 import React, { useState, useEffect } from "react";
-import { Link, Route, Routes, useNavigate } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import axios from "axios";
 import Post from "./Blog/Post";
 import FullPost from "./Blog/FullPost";
@@ -29,7 +29,7 @@ const BlogPage = () => {
     fetchBlogs();
   }, []);
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const handlePageChange = (newPage) => {
     setCurrentPage(newPage);

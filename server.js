@@ -89,7 +89,6 @@ const events = [
   {
     id: 1,
     title: "Test event 1",
-    author: "John Doe",
     timestamp: "2023-01-01 12:00",
     summary: "This is a test event post.",
     eventText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
@@ -97,7 +96,6 @@ const events = [
   {
     id: 2,
     title: "Test event 2",
-    author: "Bedagya Raj Joshi",
     timestamp: "2023-01-03 15:00",
     summary: "This is a test event post.",
     eventText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
@@ -105,7 +103,6 @@ const events = [
   {
     id: 3,
     title: "Test event 3",
-    author: "Admin",
     timestamp: "2023-03-12 5:00",
     summary: "This is a test event post.",
     eventText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
@@ -113,7 +110,6 @@ const events = [
   {
     id: 4,
     title: "Test event 4",
-    author: "City Pay",
     timestamp: "2023-12-12 16:00",
     summary: "This is a test event post.",
     eventText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
@@ -121,7 +117,6 @@ const events = [
   {
     id: 5,
     title: "Test event 5",
-    author: "City Pay",
     timestamp: "2023-12-12 16:00",
     summary: "This is a test event post.",
     eventText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
@@ -129,7 +124,6 @@ const events = [
   {
     id: 6,
     title: "Test event 6",
-    author: "City Pay",
     timestamp: "2023-12-12 16:00",
     summary: "This is a test event post.",
     eventText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
@@ -137,7 +131,6 @@ const events = [
   {
     id: 7,
     title: "Test event 7",
-    author: "City Pay",
     timestamp: "2023-12-12 16:00",
     summary: "This is a test event post.",
     eventText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
@@ -161,6 +154,7 @@ app.get("/api/events/:id", (req, res) => {
     res.status(404).json({ error: "event not found" });
   }
 });
+
 
 // Start the server
 app.listen(PORT, () => {

@@ -28,3 +28,16 @@ div.blogNav{
   display: flex;
   gap:10px;
 }
+
+.news-and-event {
+  display: flex;
+  align-items: center;
+  /* Align items vertically in the center */
+  margin-bottom: 16px;
+  /* Adjust margin as needed */
+}
+
+.image-container {
+  margin-right: 16px;
+  /* Adjust margin as needed */
+}
