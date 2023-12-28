@@ -9,16 +9,18 @@ const FullPost = () => {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        // Fetch the post with the specified ID
         const postResponse = await client.fetch(
           `*[_type == "post" && _id == $postId][0]{
             title,
-            author->{_id, name}, // Fetch only _id and name from the author reference
+            author->{_id, name},
             publishedAt,
-            body
+            body,
+            mainImage
           }`,
           { postId }
         );
+
+        console.log("Post Response:", postResponse); // Log the response
 
         setPost(postResponse);
       } catch (error) {
@@ -32,14 +34,13 @@ const FullPost = () => {
   const renderBlockContent = (content) => {
     return content.map((block, index) => {
       if (block._type === "block" && block.children) {
-        // Render text block
         return (
           <p key={index}>
             {block.children.map((child) => child.text).join(" ")}
           </p>
         );
       } else {
-        return null; // Handle other block types as needed
+        return null;
       }
     });
   };
@@ -50,6 +51,13 @@ const FullPost = () => {
 
   return (
     <div>
+      {post.mainImage && post.mainImage.asset && (
+        <img
+          src={post.mainImage.asset.url}
+          alt={post.title}
+          style={{ width: "100%" }}
+        />
+      )}
       <h2>{post.title}</h2>
       {post.author && <p>by {post.author.name}</p>}
       <p>{new Date(post.publishedAt).toLocaleString()}</p>

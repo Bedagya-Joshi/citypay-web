@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import client from "../services/sanityClient";
 
 const Post = ({ _id, mainImage, title, author, publishedAt, summary }) => {
   const [imageURL, setImageURL] = useState(null);
@@ -9,29 +8,18 @@ const Post = ({ _id, mainImage, title, author, publishedAt, summary }) => {
   useEffect(() => {
     const fetchImageURL = async () => {
       try {
-        // Check if mainImage is an object with _type 'image' and contains asset property
-        if (mainImage?._type === "image" && mainImage.asset) {
-          const imageUrl = mainImage.asset.url;
-          setImageURL(imageUrl);
-        } else {
-          // Fetch the image details using the reference
-          const imageDetails = await client.fetch(
-            `*[_id == '${mainImage._ref}'][0]`
-          );
+        let imageUrl;
 
-          // Extract the URL from the image details
-          const imageUrl = imageDetails?.asset?.url;
+        // For testing, use a placeholder image URL
+        imageUrl = "https://via.placeholder.com/150";
 
-          setImageURL(imageUrl);
-        }
+        setImageURL(imageUrl);
       } catch (error) {
         console.error("Error fetching image URL:", error);
       }
     };
 
-    if (mainImage?._ref) {
-      fetchImageURL();
-    }
+    fetchImageURL();
 
     // Format the date and time
     const date = new Date(publishedAt);
@@ -44,32 +32,29 @@ const Post = ({ _id, mainImage, title, author, publishedAt, summary }) => {
     setFormattedDateTime(`${formattedDate} ${formattedTime}`);
   }, [mainImage, publishedAt]);
 
-  // Function to render block content
-  const renderBlockContent = (content) => {
-    return content.map((block, index) => {
-      if (block._type === "block" && block.children) {
-        // Render text block
-        return (
-          <p key={index}>
-            {block.children.map((child) => child.text).join(" ")}
-          </p>
-        );
-      } else {
-        return null; // Handle other block types as needed
-      }
-    });
-  };
-
   return (
     <div className="post">
-      {imageURL && <img src={imageURL} alt="blog img" />}
+      {imageURL && (
+        <img
+          src={imageURL}
+          alt={title}
+          style={{ width: "10%", height: "10%" }}
+        />
+      )}
       <div className="texts">
         <h2>{title}</h2>
         <div className="info">
-          <a className="author">{author && author.name}</a>
-          <time>{formattedDateTime}</time>
+          <p>by {author && author.name}</p>
+          <p>{formattedDateTime}</p>
         </div>
-        <div className="summary">{summary && renderBlockContent(summary)}</div>
+        <div className="summary">
+          {summary &&
+            summary.map((block, index) => (
+              <p key={index}>
+                {block.children.map((child) => child.text).join(" ")}
+              </p>
+            ))}
+        </div>
         <Link to={`/blog/${_id}`}>Read more</Link>
       </div>
     </div>

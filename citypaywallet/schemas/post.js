@@ -18,6 +18,17 @@ export default defineType({
       options: {
         hotspot: true,
       },
+      // Add this 'resolve' function to include the URL in the response
+      resolve: async (doc) => {
+        if (doc.mainImage && doc.mainImage.asset) {
+          const imageDetails = await sanity.imageAsset(doc.mainImage.asset._ref)
+          return {
+            ...doc.mainImage,
+            url: imageDetails.url,
+          }
+        }
+        return null
+      },
     }),
     defineField({
       name: 'author',
@@ -39,12 +50,12 @@ export default defineType({
     defineField({
       name: 'summary',
       title: 'Summary',
-      type: 'blockContent',
+      type: 'blockContent', // Directly reference the block type
     }),
     defineField({
       name: 'body',
       title: 'Body',
-      type: 'blockContent',
+      type: 'blockContent', // Directly reference the block type
     }),
   ],
 
