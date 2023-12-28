@@ -1,7 +1,6 @@
-// BlogPage.js
 import React, { useState, useEffect } from "react";
 import { Link, Route, Routes } from "react-router-dom";
-import axios from "axios";
+import client from "./services/sanityClient";
 import Post from "./Blog/Post";
 import FullPost from "./Blog/FullPost";
 
@@ -15,11 +14,20 @@ const BlogPage = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/api/blogs");
-        setBlogs(response.data);
+        const response = await client.fetch(`
+          *[_type == "post"] | order(publishedAt desc) {
+            _id,
+            title,
+            mainImage,
+            author->{_id, name}, // Include author information in the query
+            publishedAt,
+            summary
+          }`);
+        console.log("Sanity Response:", response);
 
-        // Calculate the total number of pages based on the number of blogs
-        const totalBlogs = response.data.length;
+        setBlogs(response);
+
+        const totalBlogs = response.length;
         setTotalPages(Math.ceil(totalBlogs / POSTS_PER_PAGE));
       } catch (error) {
         console.error(error);
@@ -28,8 +36,6 @@ const BlogPage = () => {
 
     fetchBlogs();
   }, []);
-
-  // const navigate = useNavigate();
 
   const handlePageChange = (newPage) => {
     setCurrentPage(newPage);
@@ -41,17 +47,13 @@ const BlogPage = () => {
         index
         element={
           <main>
-            <div className="blogNav">
-              <Link to="/write">Write Blog</Link>
-              <Link to="/login">Login</Link>
-            </div>
             {blogs
               .slice(
                 (currentPage - 1) * POSTS_PER_PAGE,
                 currentPage * POSTS_PER_PAGE
               )
               .map((blog) => (
-                <Post key={blog.id} {...blog} />
+                <Post key={blog._id} {...blog} />
               ))}
             {totalPages > 1 && (
               <div>
@@ -73,8 +75,7 @@ const BlogPage = () => {
           </main>
         }
       />
-      {/* Add a new route for displaying the full content of a blog post */}
-      <Route path="/blog/:postId" element={<FullPost />} />
+      <Route path=":postId" element={<FullPost />} />
     </Routes>
   );
 };

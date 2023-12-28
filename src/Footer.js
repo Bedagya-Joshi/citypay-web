@@ -9,6 +9,9 @@ import ig_logo from "./Assets/ig_logo.png";
 import citypay from "./Assets/citypay_logo.png";
 import qrcode from "./Assets/QRcode.jpeg";
 
+// import MapComponent from "./MapComponent";
+
+
 const { Footer } = Layout;
 
 const CustomFooter = () => {
@@ -58,6 +61,10 @@ const CustomFooter = () => {
             justifyContent: "space-between",
           }}
         >
+          {/* Implement map */}
+          <div className="Map">
+            {/* <MapComponent /> */}
+          </div>
           <div>Connect with us:</div>
           <a
             href="https://www.facebook.com/citypaydigital"

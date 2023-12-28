@@ -8,9 +8,13 @@ const ServicesPage = () => {
           backgroundColor: "cyan",
           padding: "16px",
           marginBottom: "16px",
+          fontSize: "17px",
+          fontWeight: "bold",
+          marginTop: "10px",
+          textDecoration: "underline",
         }}
       >
-        Our Services
+        Our Services:
       </div>
       <div
         style={{

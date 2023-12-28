@@ -1,7 +1,6 @@
-// FullPost.js
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import axios from "axios";
+import client from "../services/sanityClient";
 
 const FullPost = () => {
   const { postId } = useParams();
@@ -10,10 +9,18 @@ const FullPost = () => {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const response = await axios.get(
-          `http://localhost:3001/api/blogs/${postId}`
+        // Fetch the post with the specified ID
+        const postResponse = await client.fetch(
+          `*[_type == "post" && _id == $postId][0]{
+            title,
+            author->{_id, name}, // Fetch only _id and name from the author reference
+            publishedAt,
+            body
+          }`,
+          { postId }
         );
-        setPost(response.data);
+
+        setPost(postResponse);
       } catch (error) {
         console.error(error);
       }
@@ -22,18 +29,31 @@ const FullPost = () => {
     fetchPost();
   }, [postId]);
 
+  const renderBlockContent = (content) => {
+    return content.map((block, index) => {
+      if (block._type === "block" && block.children) {
+        // Render text block
+        return (
+          <p key={index}>
+            {block.children.map((child) => child.text).join(" ")}
+          </p>
+        );
+      } else {
+        return null; // Handle other block types as needed
+      }
+    });
+  };
+
   if (!post) {
     return <div>Loading...</div>;
   }
 
-  // Log postId and post to the console
-  console.log("postId:", postId);
-  console.log("post:", post);
-
   return (
     <div>
       <h2>{post.title}</h2>
-      <p>{post.blogText}</p>
+      {post.author && <p>by {post.author.name}</p>}
+      <p>{new Date(post.publishedAt).toLocaleString()}</p>
+      {post.body && Array.isArray(post.body) && renderBlockContent(post.body)}
     </div>
   );
 };

@@ -196,26 +196,11 @@ const App = () => {
                 }
               />
               <Route
-                path="/Blog"
+                path="/blog/*" 
                 element={
                   <div>
                     <BlogPage />
-                  </div>
-                }
-              />
-              <Route
-                path="/login"
-                element={
-                  <div>
-                    <LoginPage />
-                  </div>
-                }
-              />
-              <Route
-                path="/write"
-                element={
-                  <div>
-                    <WriteBlogPage />
+                    
                   </div>
                 }
               />
@@ -235,7 +220,6 @@ const App = () => {
                   </div>
                 }
               />
-
               <Route
                 path="/legal"
                 element={
