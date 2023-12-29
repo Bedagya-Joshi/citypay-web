@@ -29,3 +29,13 @@ div.post p.summary, div.news p.summary {
   margin-right: 16px;
   /* Adjust margin as needed */
 }
+
+.title{
+  font-size: large;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.title{
+  padding-bottom: 20px;
+}

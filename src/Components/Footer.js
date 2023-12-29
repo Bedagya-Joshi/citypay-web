@@ -4,10 +4,10 @@ import { Layout } from "antd";
 import { Link } from "react-router-dom";
 
 //Import Assets
-import fb_logo from "./Assets/fb_logo.png";
-import ig_logo from "./Assets/ig_logo.png";
-import citypay from "./Assets/citypay_logo.png";
-import qrcode from "./Assets/QRcode.jpeg";
+import fb_logo from "../Assets/fb_logo.png";
+import ig_logo from "../Assets/ig_logo.png";
+import citypay from "../Assets/citypay_logo.png";
+import qrcode from "../Assets/QRcode.jpeg";
 
 // import MapComponent from "./MapComponent";
 
@@ -99,6 +99,7 @@ const CustomFooter = () => {
         <Link to="/services">Services</Link>
         <Link to="/contact">Contact</Link>
         <Link to="/blog">Blog</Link>
+        <Link to="/news">News</Link>
         <a
           href="https://agent.citywallet.com.np/auth/signup"
           target="_blank"

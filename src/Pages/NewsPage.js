@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
-import client from "./services/sanityClient";
-import Post from "./Blog/Post";
-import FullPost from "./Blog/FullPost";
+import client from "../services/sanityClient";
+import News from "../News/News";
+import FullNews from "../News/FullNews";
 
-const POSTS_PER_PAGE = 6;
+const NEWS_PER_PAGE = 6;
 
-const BlogPage = () => {
-  const [blogs, setBlogs] = useState([]);
+const NewsPage = () => {
+  const [news, setNews] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchBlogs = async () => {
+    const fetchNews = async () => {
       try {
         const response = await client.fetch(`
-          *[_type == "post"] | order(publishedAt desc) {
+          *[_type == "news"] | order(publishedAt desc) {
             _id,
             title,
             mainImage,
@@ -26,18 +26,19 @@ const BlogPage = () => {
           }`);
         console.log("Sanity Response:", response);
 
-        setBlogs(response);
+        setNews(response);
         setLoading(false);
 
-        const totalBlogs = response.length;
-        setTotalPages(Math.ceil(totalBlogs / POSTS_PER_PAGE));
+        const totalNews = response.length;
+        setTotalPages(Math.ceil(totalNews / NEWS_PER_PAGE));
       } catch (error) {
-        console.error(error);
+        console.error("Error fetching news:", error);
         setLoading(false);
       }
     };
 
-    fetchBlogs();
+
+    fetchNews();
   }, []);
 
   const handlePageChange = (newPage) => {
@@ -52,12 +53,12 @@ const BlogPage = () => {
           <main>
             {loading && <div>Loading...</div>}
             {!loading &&
-              blogs
+              news
                 .slice(
-                  (currentPage - 1) * POSTS_PER_PAGE,
-                  currentPage * POSTS_PER_PAGE
+                  (currentPage - 1) * NEWS_PER_PAGE,
+                  currentPage * NEWS_PER_PAGE
                 )
-                .map((blog) => <Post key={blog._id} {...blog} />)}
+                .map((news) => <News key={news._id} {...news} />)}
             {!loading && totalPages > 1 && (
               <div>
                 <button
@@ -78,9 +79,9 @@ const BlogPage = () => {
           </main>
         }
       />
-      <Route path=":postId" element={<FullPost />} />
+      <Route path=":newsId" element={<FullNews />} />
     </Routes>
   );
 };
 
-export default BlogPage;
+export default NewsPage;

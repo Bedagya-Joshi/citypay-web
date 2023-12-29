@@ -2,8 +2,8 @@ import React from "react";
 import { Menu } from "antd";
 import { Link, useLocation } from "react-router-dom";
 
-import AndDownload from "./Assets/gplay.png";
-import IOSDownload from "./Assets/apple_pay.png";
+import AndDownload from "../Assets/gplay.png";
+import IOSDownload from "../Assets/apple_pay.png";
 
 const Navbar = () => {
     const location = useLocation();
