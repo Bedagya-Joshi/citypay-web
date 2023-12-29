@@ -1,33 +1,34 @@
+// FullNews.js
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import client from "../services/sanityClient";
 
-const FullPost = () => {
-  const { postId } = useParams();
-  const [post, setPost] = useState(null);
+const FullNews = () => {
+  const { newsId } = useParams();
+  const [news, setNews] = useState(null);
 
   useEffect(() => {
-    const fetchPost = async () => {
+    const fetchNews = async () => {
       try {
-        const postResponse = await client.fetch(
-          `*[_type == "post" && _id == $postId][0]{
+        const newsResponse = await client.fetch(
+          `*[_type == "news" && _id == $newsId][0]{
             title,
             author->{_id, name},
             publishedAt,
             body,
             mainImage
           }`,
-          { postId }
+          { newsId }
         );
 
-        setPost(postResponse);
+        setNews(newsResponse);
       } catch (error) {
         console.error(error);
       }
     };
 
-    fetchPost();
-  }, [postId]);
+    fetchNews();
+  }, [newsId]);
 
   const renderBlockContent = (content) => {
     return content.map((block, index) => {
@@ -43,25 +44,25 @@ const FullPost = () => {
     });
   };
 
-  if (!post) {
+  if (!news) {
     return <div>Loading...</div>;
   }
 
   return (
     <div>
-      {post.mainImage && post.mainImage.asset && (
+      {news.mainImage && news.mainImage.asset && (
         <img
-          src={post.mainImage.asset.url}
-          alt={post.title}
+          src={news.mainImage.asset.url}
+          alt={news.title}
           style={{ width: "100%" }}
         />
       )}
-      <h2>{post.title}</h2>
-      {post.author && <p>by {post.author.name}</p>}
-      <p>{new Date(post.publishedAt).toLocaleString()}</p>
-      {post.body && Array.isArray(post.body) && renderBlockContent(post.body)}
+      <h2>{news.title}</h2>
+      {news.author && <p>by {news.author.name}</p>}
+      <p>{new Date(news.publishedAt).toLocaleString()}</p>
+      {news.body && Array.isArray(news.body) && renderBlockContent(news.body)}
     </div>
   );
 };
 
-export default FullPost;
+export default FullNews;

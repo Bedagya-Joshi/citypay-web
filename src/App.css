@@ -1,13 +1,13 @@
-div.post {
+div.post, div.news {
   display: flex;
   padding: 10px;
 }
 
-div.post img {
+div.post img, div.news img {
   width: 20%
 }
 
-div.post div.info {
+div.post div.info, div.news div.info {
   margin: 5px;
   gap: 10px;
   color: #888;
@@ -15,27 +15,15 @@ div.post div.info {
   font-weight: bold;
 }
 
-div.post div.info a.author {
+div.post div.info a.author, div.news div.info a.author {
   color: #333;
 }
 
-div.post p.summary {
+div.post p.summary, div.news p.summary {
   margin: 10px 0;
   line-height: 1.4rem;
 }
 
-div.blogNav{
-  display: flex;
-  gap:10px;
-}
-
-.news-and-event {
-  display: flex;
-  align-items: center;
-  /* Align items vertically in the center */
-  margin-bottom: 16px;
-  /* Adjust margin as needed */
-}
 
 .image-container {
   margin-right: 16px;

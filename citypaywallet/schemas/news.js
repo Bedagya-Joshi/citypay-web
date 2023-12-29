@@ -1,13 +1,14 @@
 import {defineField, defineType} from 'sanity'
+import client from '../../src/services/sanityClient'
 
 export default defineType({
-  name: 'news',
+  name: 'news', 
   title: 'News',
   type: 'document',
   fields: [
     defineField({
       name: 'title',
-      title: 'Title',
+      title: 'Title', 
       type: 'string',
       validation: (Rule) => Rule.required(),
     }),
@@ -18,12 +19,40 @@ export default defineType({
       options: {
         hotspot: true,
       },
+      resolve: async (doc) => {
+        if (doc.mainImage && doc.mainImage.asset) {
+          try {
+            const imageDetails = await client.fetch(
+              `*[_id == '${doc.mainImage.asset._ref}']{
+                asset {
+                  url
+                }
+              }`,
+            )
+
+            return {
+              ...doc.mainImage,
+              url: imageDetails?.asset?.url || null,
+            }
+          } catch (error) {
+            console.error('Error fetching image URL:', error)
+            return null
+          }
+        }
+        return null
+      },
     }),
     defineField({
       name: 'author',
       title: 'Author',
       type: 'reference',
       to: {type: 'author'},
+    }),
+    defineField({
+      name: 'categories',
+      title: 'Categories',
+      type: 'array',
+      of: [{type: 'reference', to: {type: 'category'}}],
     }),
     defineField({
       name: 'publishedAt',
@@ -33,12 +62,12 @@ export default defineType({
     defineField({
       name: 'summary',
       title: 'Summary',
-      type: 'blockContent',
+      type: 'blockContent', // Directly reference the block type
     }),
     defineField({
       name: 'body',
       title: 'Body',
-      type: 'blockContent',
+      type: 'blockContent', // Directly reference the block type
     }),
   ],
 

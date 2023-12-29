@@ -2,12 +2,10 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { Layout, theme } from "antd";
 import "./App.css";
-import axios from "axios";
 
 //Static Elements Import
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { AuthProvider } from "./Blog/AuthContext";
 
 //Assets Import
 import citypay from "./Assets/citypay_logo.png";
@@ -17,16 +15,11 @@ import ContactPage from "./ContactPage";
 import AboutPage from "./AboutPage";
 import ServicesPage from "./ServicesPage";
 import BlogPage from "./BlogPage";
+import NewsPage from "./NewsPage";
 import FAQPage from "./FAQPage";
 import OurTeamPage from "./OurTeamPage";
 import LegalPage from "./LegalPage";
 import DownloadPage from "./DownloadPage";
-import LoginPage from "./Blog/LoginPage";
-import WriteBlogPage from "./Blog/WritePage";
-import NewsAndEventsList from "./NewsAndEventsList";
-import NewsAndEventsPage from "./NewsAndEventsPage";
-
-// import Blog from "./Blog";
 
 const { Header, Content } = Layout;
 
@@ -35,24 +28,8 @@ const App = () => {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
 
-   const [newsAndEvents, setNewsAndEvents] = useState([]);
-
-   useEffect(() => {
-     const fetchNewsAndEvents = async () => {
-       try {
-         const response = await axios.get("http://localhost:3001/api/events");
-         setNewsAndEvents(response.data);
-       } catch (error) {
-         console.error(error);
-       }
-     };
-
-     fetchNewsAndEvents();
-   }, []);
-
   return (
     <Router>
-      <AuthProvider>
         <Layout>
           <Header
             style={{
@@ -153,20 +130,6 @@ const App = () => {
                           Section 5
                         </div>
                       </div>
-                      {/* News and Offers Section */}
-                      <div
-                        style={{
-                          flex: "1",
-                          backgroundColor: "purple",
-                          padding: "16px",
-                          borderRadius: borderRadiusLG,
-                          position: "sticky",
-                          top: "0",
-                          height: "fit-content",
-                        }}
-                      >
-                        <NewsAndEventsList newsAndEventsData={newsAndEvents} />
-                      </div>
                     </div>
                   </div>
                 }
@@ -196,11 +159,18 @@ const App = () => {
                 }
               />
               <Route
-                path="/blog/*" 
+                path="/news/*"
+                element={
+                  <div>
+                    <NewsPage />
+                  </div>
+                }
+              />
+              <Route
+                path="/blog/*"
                 element={
                   <div>
                     <BlogPage />
-                    
                   </div>
                 }
               />
@@ -240,7 +210,6 @@ const App = () => {
           </Content>
           <Footer />
         </Layout>
-      </AuthProvider>
     </Router>
   );
 };

@@ -1,8 +1,9 @@
+// News.js
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import client from "../services/sanityClient";
 
-const Post = ({ _id, mainImage, title, author, publishedAt, summary }) => {
+const News = ({ _id, mainImage, title, author, publishedAt, summary }) => {
   const [imageURL, setImageURL] = useState(null);
   const [formattedDateTime, setFormattedDateTime] = useState("");
 
@@ -45,7 +46,7 @@ const Post = ({ _id, mainImage, title, author, publishedAt, summary }) => {
   }, [mainImage, publishedAt]);
 
   return (
-    <div className="post">
+    <div className="news">
       {imageURL && <img src={imageURL} alt={title} />}
       <div className="texts">
         <h2>{title}</h2>
@@ -54,14 +55,17 @@ const Post = ({ _id, mainImage, title, author, publishedAt, summary }) => {
           <p>{formattedDateTime}</p>
         </div>
         <div className="summary">
-          {summary && summary.map((block, index) => (
-            <p key={index}>{block.children.map((child) => child.text).join(" ")}</p>
-          ))}
+          {summary &&
+            summary.map((block, index) => (
+              <p key={index}>
+                {block.children.map((child) => child.text).join(" ")}
+              </p>
+            ))}
         </div>
-        <Link to={`/blog/${_id}`}>Read more</Link>
+        <Link to={`/news/${_id}`}>Read more</Link>
       </div>
     </div>
   );
 };
 
-export default Post;
+export default News;

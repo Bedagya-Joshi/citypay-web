@@ -1,4 +1,5 @@
 import {defineField, defineType} from 'sanity'
+import client from '../../src/services/sanityClient'
 
 export default defineType({
   name: 'post',
@@ -18,13 +19,24 @@ export default defineType({
       options: {
         hotspot: true,
       },
-      // Add this 'resolve' function to include the URL in the response
       resolve: async (doc) => {
         if (doc.mainImage && doc.mainImage.asset) {
-          const imageDetails = await sanity.imageAsset(doc.mainImage.asset._ref)
-          return {
-            ...doc.mainImage,
-            url: imageDetails.url,
+          try {
+            const imageDetails = await client.fetch(
+              `*[_id == '${doc.mainImage.asset._ref}']{
+                asset {
+                  url
+                }
+              }`,
+            )
+
+            return {
+              ...doc.mainImage,
+              url: imageDetails?.asset?.url || null,
+            }
+          } catch (error) {
+            console.error('Error fetching image URL:', error)
+            return null
           }
         }
         return null

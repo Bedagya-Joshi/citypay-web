@@ -17,10 +17,9 @@ export default defineConfig({
     dataset: 'production',
     cors: [
       {
-        origin: 'http://localhost:3000', // Add your React development server URL
+        origin: 'http://localhost:3000',
         credentials: true,
       },
-      // Add other allowed origins if needed
     ],
   },
 

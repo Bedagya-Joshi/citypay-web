@@ -16,8 +16,9 @@ const Navbar = () => {
     const navbarItems = [
       { name: "About" },
       { name: "Services" },
-      { name: "Contact" },
+      // { name: "Contact" },
       { name: "Blog" },
+      { name: "News" },
       { name: "Agent Signup", onClick: handleAgentSignupClick },
     //   {
     //     name: "Android Download",
@@ -36,19 +37,21 @@ const Navbar = () => {
     const isHomepage = location.pathname === "/";
 
     const items = navbarItems.map((item, index) => (
-        <Menu.Item key={String(index + 1)}>
-            {item.onClick ? (
-                <span onClick={item.onClick}>{item.name}</span>
-            ) : item.image ? (
-                <img
-                    src={item.image}
-                    alt={item.name}
-                    style={{ height: "70px", width: "auto" }}
-                />
-            ) : (
-                <Link to={`/${item.name.toLowerCase()}`}>{item.name}</Link>
-            )}
-        </Menu.Item>
+      <Menu.Item key={String(index + 1)}>
+        {item.onClick ? (
+          <span onClick={item.onClick}>{item.name}</span>
+        ) : item.image ? (
+          <img
+            src={item.image}
+            alt={item.name}
+            style={{ height: "70px", width: "auto" }}
+          />
+        ) : (
+          <Link to={`/${item.name.toLowerCase()}`}>
+            {item.name}
+          </Link>
+        )}
+      </Menu.Item>
     ));
 
     return (
