@@ -253,18 +253,16 @@ const App = () => {
                           <div className="landing-page-image">Image</div>
                           <div className="bullet-text">
                             <h2 style={{ textAlign: "center" }}>
-                              Receive Remittance
+                              Bank Transfer
                             </h2>
                             <p>
-                              Receive remittance directly in your IME Pay wallet
-                              and track the payment status easily.
+                              Lets you transfer to and from any banks instantly all across Nepal.
                             </p>
                             <h2 style={{ textAlign: "center" }}>
-                              Send Domestic Remittance
+                              Co-operative Transfers
                             </h2>
                             <p>
-                              Send domestic remittance to any mobile number
-                              inside Nepal.
+                              Helps you make transactions easier, faster and safer 
                             </p>
                             <h2 style={{ textAlign: "center" }}>
                               Withdraw Cash
@@ -292,32 +290,10 @@ const App = () => {
                             justifyContent: "space-between",
                           }}
                         >
-                          <div className="bullet-text">
-                            <h2 style={{ textAlign: "center" }}>
-                              Receive Remittance
-                            </h2>
-                            <p>
-                              Receive remittance directly in your IME Pay wallet
-                              and track the payment status easily.
-                            </p>
-                            <h2 style={{ textAlign: "center" }}>
-                              Send Domestic Remittance
-                            </h2>
-                            <p>
-                              Send domestic remittance to any mobile number
-                              inside Nepal.
-                            </p>
-                            <h2 style={{ textAlign: "center" }}>
-                              Withdraw Cash
-                            </h2>
-                            <p>
-                              Withdraw cash using “Find Agents” or IME VISA card
-                              on any ATM throughout Nepal & India.
-                            </p>
-                          </div>
                           <div className="landing-page-image">Image</div>
-                          <div className="landing-page-text">
-                            Some text
+                          <div className="landing-page-text" style={{paddingLeft: "50vw", textAlign: "justify"}}>
+                            Not just the QR code in our app but we have made it possible to pay your local businesses,
+                            stores, merchant's or any available QR. Just a simple scan and payment success.
                             <ReadMoreButton to={"/scanQR"}>
                               Read more
                             </ReadMoreButton>
@@ -349,25 +325,16 @@ const App = () => {
                           <div className="landing-page-image">Image</div>
                           <div className="bullet-text">
                             <h2 style={{ textAlign: "center" }}>
-                              Receive Remittance
+                              Pay in stores
                             </h2>
                             <p>
-                              Receive remittance directly in your IME Pay wallet
-                              and track the payment status easily.
+                              No searching or cash or change. Just pay with a simple scan from CityPay QR.
                             </p>
                             <h2 style={{ textAlign: "center" }}>
-                              Send Domestic Remittance
+                              Pay in Apps and online
                             </h2>
                             <p>
-                              Send domestic remittance to any mobile number
-                              inside Nepal.
-                            </p>
-                            <h2 style={{ textAlign: "center" }}>
-                              Withdraw Cash
-                            </h2>
-                            <p>
-                              Withdraw cash using “Find Agents” or IME VISA card
-                              on any ATM throughout Nepal & India.
+                              You can pay to any online businesses or apps with the amount in your Citypay Wallet.
                             </p>
                           </div>
                         </div>
@@ -383,17 +350,17 @@ const App = () => {
                         <div className="title">Perks</div>
                         <Row gutter={16}>
                           <Col span={8}>
-                            <Card title="Card title" bordered={false}>
+                            <Card title="More Reward Points" bordered={false}>
                               Card content
                             </Card>
                           </Col>
                           <Col span={8}>
-                            <Card title="Card title" bordered={false}>
+                            <Card title="Mobile Topup Perks" bordered={false}>
                               Card content
                             </Card>
                           </Col>
                           <Col span={8}>
-                            <Card title="Card title" bordered={false}>
+                            <Card title="Free Transactions" bordered={false}>
                               Card content
                             </Card>
                           </Col>
