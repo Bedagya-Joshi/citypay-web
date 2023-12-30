@@ -1,11 +1,13 @@
 import React from "react";
 import { Anchor } from "antd"; // import the components from Ant Design
+import ScrollToTop from "../Components/ScrollToTop";
 
 const { Link } = Anchor; // destructure the Link component from Anchor
 
 const FAQPage = () => {
   return (
     <div className="faq-page">
+      <ScrollToTop />
       <div className="faq-container" id="faq-container">
         <div className="faq-menu" style={{marginTop: "50px", backgroundColor: "cyan", maxWidth: "300px"}}>
             <Anchor

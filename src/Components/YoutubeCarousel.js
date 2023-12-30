@@ -9,7 +9,7 @@ const contentStyle = {
 };
 
 const YTCarouselItem = () => (
-  <Carousel autoplay dotPosition="top">
+  <Carousel autoplay dotPosition="bottom">
     <div>
       <h3 style={contentStyle}>First Slide</h3>
     </div>

@@ -1,8 +1,10 @@
 import React from "react";
+import ScrollToTop from "../Components/ScrollToTop";
 
 const AboutPage = () => {
   return (
     <div>
+      <ScrollToTop />
       <h1>About Us:</h1>
       <div className="About">
         <h3>What our wallet is about</h3>

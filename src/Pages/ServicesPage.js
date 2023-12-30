@@ -1,8 +1,10 @@
 import React from "react";
+import ScrollToTop from "../Components/ScrollToTop";
 
 const ServicesPage = () => {
   return (
     <div>
+      <ScrollToTop />
       <div
         style={{
           backgroundColor: "cyan",

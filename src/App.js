@@ -28,6 +28,7 @@ import CarouselItem from "./Components/Carousel";
 import YTCarouselItem from "./Components/YoutubeCarousel";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import ScrollToTop from "./Components/ScrollToTop";
 
 
 const { Header, Content } = Layout;
@@ -79,6 +80,7 @@ const App = () => {
             background: "linear-gradient(to right, #1096fe, #05336d)",
           }}
         >
+          <ScrollToTop />
           {/* Logo For CityPay */}
           <Link to="/">
             <div className="Logo Image">
@@ -105,18 +107,25 @@ const App = () => {
                     style={{
                       padding: 24,
                       minHeight: 380,
+                      maxWidth: "95vw",
                       background: colorBgContainer,
                       borderRadius: borderRadiusLG,
                       display: "flex",
                     }}
                   >
-                    <div style={{ flex: "3", marginRight: "48px" }}>
+                    <div
+                      style={{
+                        flex: "3",
+                        marginRight: "48px",
+                        maxWidth: "95vw",
+                      }}
+                    >
                       <DownloadPage />
                       <div
                         style={{
                           maxHeight: "900px",
-                          maxWidth: "1650px",
-                          // backgroundColor: "blue",
+                          maxWidth: "86vw",
+                          backgroundColor: "black",
                         }}
                       >
                         <CarouselItem />
@@ -365,9 +374,10 @@ const App = () => {
                       </div>
                       <div
                         style={{
-                          // backgroundColor: "cyan",
+                          backgroundColor: "black",
                           padding: "16px",
                           marginBottom: "16px",
+                          maxWidth: "95vw",
                         }}
                       >
                         <div className="title">Perks</div>
@@ -400,8 +410,8 @@ const App = () => {
                         <div
                           style={{
                             maxHeight: "900px",
-                            maxWidth: "1650px",
-                            // backgroundColor: "bluew",
+                            maxWidth: "85vw",
+                            backgroundColor: "black",
                           }}
                         >
                           <YTCarouselItem />
