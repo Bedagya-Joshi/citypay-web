@@ -22,8 +22,10 @@ const News = ({ _id, mainImage, title, author, publishedAt, summary }) => {
               }
             }`
           );
+          console.log(imageDetails);
 
-          imageUrl = imageDetails?.asset?.url;
+          imageUrl =
+            "https://cdn.sanity.io/images/gfx5cjiu/production/21f9795a131c32180f6fa92575732afd29225ea0-135x135.jpg?rect=0,0,135,70&w=2000&fit=max&auto=format&dpr=2";
         }
 
         setImageURL(imageUrl);
@@ -47,7 +49,13 @@ const News = ({ _id, mainImage, title, author, publishedAt, summary }) => {
 
   return (
     <div className="news">
-      {imageURL && <img src={imageURL} alt={title} />}
+      <img
+        src={
+          "https://cdn.sanity.io/images/gfx5cjiu/production/21f9795a131c32180f6fa92575732afd29225ea0-135x135.jpg?rect=0,0,135,70&w=2000&fit=max&auto=format&dpr=2"
+        }
+        alt={title}
+        style={{width: "auto", height: "150px", paddingRight: "10px"}}
+      />
       <div className="texts">
         <h2>{title}</h2>
         <div className="info">

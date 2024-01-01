@@ -13,13 +13,14 @@ const FullNews = () => {
         const newsResponse = await client.fetch(
           `*[_type == "news" && _id == $newsId][0]{
             title,
+            mainImage,
             author->{_id, name},
             publishedAt,
             body,
-            mainImage
           }`,
           { newsId }
-        );
+          );
+          console.log(newsResponse);
 
         setNews(newsResponse);
       } catch (error) {
@@ -52,9 +53,11 @@ const FullNews = () => {
     <div>
       {news.mainImage && news.mainImage.asset && (
         <img
-          src={news.mainImage.asset.url}
+          src={
+            "https://cdn.sanity.io/images/gfx5cjiu/production/21f9795a131c32180f6fa92575732afd29225ea0-135x135.jpg?rect=0,0,135,70&w=2000&fit=max&auto=format&dpr=2"
+          }
           alt={news.title}
-          style={{ width: "100%" }}
+          style={{ width: "550px"}}
         />
       )}
       <h2>{news.title}</h2>

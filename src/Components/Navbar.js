@@ -6,68 +6,101 @@ import AndDownload from "../Assets/gplay.png";
 import IOSDownload from "../Assets/apple_pay.png";
 
 const Navbar = () => {
-    const location = useLocation();
-    
-    const handleAgentSignupClick = () => {
-        // Redirect to the external URL when "Agent Signup" is clicked
-        window.open("https://agent.citywallet.com.np/auth/signup", "_blank");
-    };
+  const location = useLocation();
 
-    const navbarItems = [
-      { name: "About" },
-      { name: "Services" },
-      // { name: "Contact" },
-      { name: "Blog" },
-      { name: "News" },
-      { name: "Agent Signup", onClick: handleAgentSignupClick },
-    //   {
-    //     name: "Android Download",
-    //     image: AndDownload,
-    //     style: { width: "20px", height: "20px" },
-    //   },
-    //   {
-    //     name: "IOS Download",
-    //     image: IOSDownload,
-    //     style: { width: "10px", height: "10px" },
-    //   },
-    ];
+  const linkStyle = {
+    color: "white", 
+    textDecoration: "none",
+    transition: "color 0.3s", 
+  };
 
+  const hoverStyle = {
+    color: "#1890ff", 
+  };
 
-    const selectedKeys = [location.pathname];
-    const isHomepage = location.pathname === "/";
+  const handleAgentSignupClick = () => {
+    window.open("https://agent.citywallet.com.np/auth/signup", "_blank");
+  };
 
-    const items = navbarItems.map((item, index) => (
-      <Menu.Item key={String(index + 1)}>
-        {item.onClick ? (
-          <span onClick={item.onClick}>{item.name}</span>
-        ) : item.image ? (
-          <img
-            src={item.image}
-            alt={item.name}
-            style={{ height: "70px", width: "auto" }}
-          />
-        ) : (
-          <Link to={`/${item.name.toLowerCase()}`}>
-            {item.name}
-          </Link>
-        )}
-      </Menu.Item>
-    ));
+  const selectedKeys = [location.pathname];
+  const isHomepage = location.pathname === "/";
 
-    return (
-        <Menu
-            theme="dark"
-            mode="horizontal"
-            selectedKeys={isHomepage ? [] : selectedKeys}
-            style={{
-                flex: 1,
-                minWidth: 0,
-                background: "linear-gradient(to left, #1096fe, #05336d)",
-            }}
+  return (
+    <Menu
+      theme="dark"
+      mode="horizontal"
+      selectedKeys={isHomepage ? [] : selectedKeys}
+      style={{
+        flex: 1,
+        minWidth: 0,
+        background: "linear-gradient(to right, #0c72c9, #063773)",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          flexWrap: "nowrap",
+          alignContent: "center",
+          alignItems: "center",
+          justifyContent: "space-between",
+          gap: "20px",
+        }}
+      >
+        <Link to="/" style={{ ...linkStyle, ":hover": hoverStyle }}>
+          <h4>Home</h4>
+        </Link>
+        <Link to="/about" style={{ ...linkStyle, ":hover": hoverStyle }}>
+          <h4>About</h4>
+        </Link>
+        <Link to="/services" style={{ ...linkStyle, ":hover": hoverStyle }}>
+          <h4>Services</h4>
+        </Link>
+        <Link to="/blog" style={{ ...linkStyle, ":hover": hoverStyle }}>
+          <h4>Blog</h4>
+        </Link>
+        <Link to="/news" style={{ ...linkStyle, ":hover": hoverStyle }}>
+          <h4>News And Events</h4>
+        </Link>
+        <a
+          href="#"
+          onClick={handleAgentSignupClick}
+          style={linkStyle}
+          activeStyle={hoverStyle}
         >
-            {items}
-        </Menu>
-    );
+          <h4>Agent Signup</h4>
+        </a>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.ctxpress.citypay"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src={AndDownload}
+            alt="Android Download"
+            style={{
+              height: "45px",
+              width: "120px",
+            }}
+          />
+        </a>
+        <a
+          href="https://apps.apple.com/nz/app/citypay-nepal/id1643110573"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src={IOSDownload}
+            alt="IOS Download"
+            style={{
+              height: "45px",
+              width: "120px",
+            }}
+          />
+        </a>
+      </div>
+    </Menu>
+  );
 };
 
 export default Navbar;

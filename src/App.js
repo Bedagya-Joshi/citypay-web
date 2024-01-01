@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { Layout, theme, Button, Card, Col, Row } from "antd";
+import { RightCircleTwoTone } from '@ant-design/icons';
 import "./App.css";
 
 //Assets Import
@@ -42,8 +43,8 @@ const ReadMoreButton = ({ to, children }) => {
         style={{
           display: "flex",
           alignItems: "center",
-          width:"100px",
-          height:"50px",
+          width: "100px",
+          height: "50px",
           marginTop: "10px",
           fontWeight: "bold",
         }}
@@ -51,7 +52,7 @@ const ReadMoreButton = ({ to, children }) => {
         <div className="learn-more-btn-content">
           <div className="learn-more-btn-content__title">{children}</div>
           <div className="learn-more-btn-content__img">
-            <img alt="arrow" src= {arrow} style = {{maxHeight: "10px", maxWidth: "30px"}}/>
+            <RightCircleTwoTone />
           </div>
         </div>
       </Button>
@@ -75,7 +76,7 @@ const App = () => {
             height: "auto",
             width: "100%",
             display: "flex",
-            justifyContent: "flex-end",
+            justifyContent: "space-between",
             alignItems: "center",
             background: "linear-gradient(to right, #1096fe, #05336d)",
           }}
@@ -92,7 +93,7 @@ const App = () => {
             </div>
           </Link>
           {/* Navbar Import */}
-          <div className="navbar_bot" style={{ marginLeft: "auto" }}>
+          <div className="navbar_bot">
             <Navbar selectedKey="1" />
           </div>
         </Header>
@@ -120,7 +121,6 @@ const App = () => {
                         maxWidth: "95vw",
                       }}
                     >
-                      <DownloadPage />
                       <div
                         style={{
                           maxHeight: "900px",
@@ -157,25 +157,16 @@ const App = () => {
                           <div className="landing-page-image">Image</div>
                           <div className="bullet-text">
                             <h2 style={{ textAlign: "center" }}>
-                              Receive Remittance
+                              Fund Transfer to Friends and Family
                             </h2>
                             <p>
-                              Receive remittance directly in your IME Pay wallet
-                              and track the payment status easily.
+                              Transfer funds to your friends or family using their phone number or the QR.
                             </p>
                             <h2 style={{ textAlign: "center" }}>
-                              Send Domestic Remittance
+                              Send or Request
                             </h2>
                             <p>
-                              Send domestic remittance to any mobile number
-                              inside Nepal.
-                            </p>
-                            <h2 style={{ textAlign: "center" }}>
-                              Withdraw Cash
-                            </h2>
-                            <p>
-                              Withdraw cash using “Find Agents” or IME VISA card
-                              on any ATM throughout Nepal & India.
+                              You can send or request funds from one wallet to another.
                             </p>
                           </div>
                         </div>
@@ -201,7 +192,7 @@ const App = () => {
                               Receive Remittance
                             </h2>
                             <p>
-                              Receive remittance directly in your IME Pay wallet
+                              Receive remittance directly in your CityPay wallet
                               and track the payment status easily.
                             </p>
                             <h2 style={{ textAlign: "center" }}>
@@ -215,8 +206,7 @@ const App = () => {
                               Withdraw Cash
                             </h2>
                             <p>
-                              Withdraw cash using “Find Agents” or IME VISA card
-                              on any ATM throughout Nepal & India.
+                              Withdraw cash using “Find Agents” on any part of Nepal.
                             </p>
                           </div>
                           <div className="landing-page-image">Image</div>
@@ -262,14 +252,7 @@ const App = () => {
                               Co-operative Transfers
                             </h2>
                             <p>
-                              Helps you make transactions easier, faster and safer 
-                            </p>
-                            <h2 style={{ textAlign: "center" }}>
-                              Withdraw Cash
-                            </h2>
-                            <p>
-                              Withdraw cash using “Find Agents” or IME VISA card
-                              on any ATM throughout Nepal & India.
+                              Helps you make transactions easier, faster and safer with real time deposits.
                             </p>
                           </div>
                         </div>

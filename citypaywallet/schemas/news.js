@@ -1,5 +1,8 @@
 import {defineField, defineType} from 'sanity'
 import client from '../../src/services/sanityClient'
+import axios from 'axios'
+import fs from 'fs'
+
 
 export default defineType({
   name: 'news', 
