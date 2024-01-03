@@ -1,33 +1,25 @@
+// Post.js
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import client from "../services/sanityClient";
 
 const Post = ({ _id, mainImage, title, author, publishedAt, summary }) => {
   const [imageURL, setImageURL] = useState(null);
   const [formattedDateTime, setFormattedDateTime] = useState("");
 
   useEffect(() => {
-    const fetchImageURL = async () => {
+    const fetchImageURL = () => {
       try {
         let imageUrl;
 
-        if (mainImage?._type === "image" && mainImage.asset) {
-          imageUrl = mainImage.asset.url;
-        } else if (mainImage?._ref) {
-          const imageDetails = await client.fetch(
-            `*[_id == '${mainImage._ref}'][0] {
-              asset {
-                url
-              }
-            }`
-          );
-
-          imageUrl = imageDetails?.asset?.url;
+        if (mainImage && mainImage.asset && mainImage.asset._ref) {
+          const imageRef = mainImage.asset._ref;
+          const [, imageId, imageDim, imageExtension] = imageRef.split("-");
+          imageUrl = `https://cdn.sanity.io/images/gfx5cjiu/production/${imageId}-${imageDim}.${imageExtension}`;
         }
 
         setImageURL(imageUrl);
       } catch (error) {
-        console.error("Error fetching image URL:", error);
+        console.error("Error constructing image URL:", error);
       }
     };
 
@@ -46,7 +38,9 @@ const Post = ({ _id, mainImage, title, author, publishedAt, summary }) => {
 
   return (
     <div className="post">
-      {imageURL && <img src={imageURL} alt={title} />}
+      <div className="image-container">
+        {imageURL && <img src={imageURL} alt={title} className="image" />}
+      </div>
       <div className="texts">
         <h2>{title}</h2>
         <div className="info">
@@ -54,9 +48,12 @@ const Post = ({ _id, mainImage, title, author, publishedAt, summary }) => {
           <p>{formattedDateTime}</p>
         </div>
         <div className="summary">
-          {summary && summary.map((block, index) => (
-            <p key={index}>{block.children.map((child) => child.text).join(" ")}</p>
-          ))}
+          {summary &&
+            summary.map((block, index) => (
+              <p key={index}>
+                {block.children.map((child) => child.text).join(" ")}
+              </p>
+            ))}
         </div>
         <Link to={`/blog/${_id}`}>Read more</Link>
       </div>

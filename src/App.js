@@ -78,7 +78,7 @@ const App = () => {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            background: "linear-gradient(to right, #1096fe, #05336d)",
+            background: "#0e83e3",
           }}
         >
           <ScrollToTop />
@@ -160,13 +160,15 @@ const App = () => {
                               Fund Transfer to Friends and Family
                             </h2>
                             <p>
-                              Transfer funds to your friends or family using their phone number or the QR.
+                              Transfer funds to your friends or family using
+                              their phone number or the QR.
                             </p>
                             <h2 style={{ textAlign: "center" }}>
                               Send or Request
                             </h2>
                             <p>
-                              You can send or request funds from one wallet to another.
+                              You can send or request funds from one wallet to
+                              another.
                             </p>
                           </div>
                         </div>
@@ -206,7 +208,8 @@ const App = () => {
                               Withdraw Cash
                             </h2>
                             <p>
-                              Withdraw cash using “Find Agents” on any part of Nepal.
+                              Withdraw cash using “Find Agents” on any part of
+                              Nepal.
                             </p>
                           </div>
                           <div className="landing-page-image">Image</div>
@@ -246,13 +249,15 @@ const App = () => {
                               Bank Transfer
                             </h2>
                             <p>
-                              Lets you transfer to and from any banks instantly all across Nepal.
+                              Lets you transfer to and from any banks instantly
+                              all across Nepal.
                             </p>
                             <h2 style={{ textAlign: "center" }}>
                               Co-operative Transfers
                             </h2>
                             <p>
-                              Helps you make transactions easier, faster and safer with real time deposits.
+                              Helps you make transactions easier, faster and
+                              safer with real time deposits.
                             </p>
                           </div>
                         </div>
@@ -274,9 +279,17 @@ const App = () => {
                           }}
                         >
                           <div className="landing-page-image">Image</div>
-                          <div className="landing-page-text" style={{paddingLeft: "50vw", textAlign: "justify"}}>
-                            Not just the QR code in our app but we have made it possible to pay your local businesses,
-                            stores, merchant's or any available QR. Just a simple scan and payment success.
+                          <div
+                            className="landing-page-text"
+                            style={{
+                              paddingLeft: "50vw",
+                              textAlign: "justify",
+                            }}
+                          >
+                            Not just the QR code in our app but we have made it
+                            possible to pay your local businesses, stores,
+                            merchant's or any available QR. Just a simple scan
+                            and payment success.
                             <ReadMoreButton to={"/scanQR"}>
                               Read more
                             </ReadMoreButton>
@@ -311,13 +324,15 @@ const App = () => {
                               Pay in stores
                             </h2>
                             <p>
-                              No searching or cash or change. Just pay with a simple scan from CityPay QR.
+                              No searching or cash or change. Just pay with a
+                              simple scan from CityPay QR.
                             </p>
                             <h2 style={{ textAlign: "center" }}>
                               Pay in Apps and online
                             </h2>
                             <p>
-                              You can pay to any online businesses or apps with the amount in your Citypay Wallet.
+                              You can pay to any online businesses or apps with
+                              the amount in your Citypay Wallet.
                             </p>
                           </div>
                         </div>

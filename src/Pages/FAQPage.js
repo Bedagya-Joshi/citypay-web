@@ -14,17 +14,17 @@ const FAQPage = () => {
               getContainer={() => document.getElementById("faq-container")}
             >
               <h1 class>Contents:</h1>
-              <Link href="#what" title="What is this website about?" />
-              <Link href="#how" title="How can I contact you?" />
-              <Link href="#why" title="Why should I use this website?" />
-              <Link href="#test1" title="Why should I use this website?" />
-              <Link href="#test2" title="Why should I use this website?" />
-              <Link href="#test3" title="Why should I use this website?" />
-              <Link href="#test4" title="Why should I use this website?" />
-              <Link href="#test5" title="Why should I use this website?" />
-              <Link href="#test6" title="Why should I use this website?" />
-              <Link href="#test7" title="Why should I use this website?" />
-              <Link href="#test8" title="Why should I use this website?" />
+              <Link className="TBC" href="#what" title="What is this website about?" />
+              <Link className="TBC" href="#how" title="How can I contact you?" />
+              <Link className="TBC" href="#why" title="Why should I use this website?" />
+              <Link className="TBC" href="#test1" title="Why should I use this website?" />
+              <Link className="TBC" href="#test2" title="Why should I use this website?" />
+              <Link className="TBC" href="#test3" title="Why should I use this website?" />
+              <Link className="TBC" href="#test4" title="Why should I use this website?" />
+              <Link className="TBC" href="#test5" title="Why should I use this website?" />
+              <Link className="TBC" href="#test6" title="Why should I use this website?" />
+              <Link className="TBC" href="#test7" title="Why should I use this website?" />
+              <Link className="TBC" href="#test8" title="Why should I use this website?" />
               
             </Anchor>
         </div>

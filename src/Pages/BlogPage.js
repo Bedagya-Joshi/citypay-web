@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import client from "../services/sanityClient";
 import Post from "../Blog/Post";
 import FullPost from "../Blog/FullPost";
+import "../App.css"; 
 
 const POSTS_PER_PAGE = 6;
 
@@ -50,8 +51,12 @@ const BlogPage = () => {
         index
         element={
           <main>
-            {loading && <div>Loading...</div>}
+            {loading && <div className="loading-container"><h1 className="loading-header">Loading....</h1></div>}
+            {!loading && blogs.length === 0 && (
+              <div className="no-blogs-container"><h1 className="noblogs">No blogs found.</h1></div>
+            )}
             {!loading &&
+              blogs.length > 0 &&
               blogs
                 .slice(
                   (currentPage - 1) * POSTS_PER_PAGE,
@@ -59,7 +64,7 @@ const BlogPage = () => {
                 )
                 .map((blog) => <Post key={blog._id} {...blog} />)}
             {!loading && totalPages > 1 && (
-              <div>
+              <div className="page-btn">
                 <button
                   onClick={() => handlePageChange(currentPage - 1)}
                   disabled={currentPage === 1}

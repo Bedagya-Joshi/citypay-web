@@ -4,6 +4,7 @@ import client from "../services/sanityClient";
 
 const FullPost = () => {
   const { postId } = useParams();
+  const [imageURL, setImageURL] = useState(null);
   const [post, setPost] = useState(null);
 
   useEffect(() => {
@@ -20,7 +21,14 @@ const FullPost = () => {
           { postId }
         );
 
+         const imageRef = postResponse.mainImage.asset._ref;
+         const [, imageId, imageDim, imageExtension] = imageRef.split("-");
+         const imageUrl = `https://cdn.sanity.io/images/gfx5cjiu/production/${imageId}-${imageDim}.${imageExtension}`;
+         console.log(imageUrl);
+
         setPost(postResponse);
+        setImageURL(imageUrl);
+
       } catch (error) {
         console.error(error);
       }
@@ -50,11 +58,7 @@ const FullPost = () => {
   return (
     <div>
       {post.mainImage && post.mainImage.asset && (
-        <img
-          src={post.mainImage.asset.url}
-          alt={post.title}
-          style={{ width: "100%" }}
-        />
+        <img src={imageURL} alt={post.title} style={{ width: "450px", height: "auto" }} />
       )}
       <h2>{post.title}</h2>
       {post.author && <p>by {post.author.name}</p>}

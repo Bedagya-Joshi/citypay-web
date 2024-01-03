@@ -3,10 +3,6 @@ div.post, div.news {
   padding: 10px;
 }
 
-div.post img, div.news img {
-  width: 20%
-}
-
 div.post div.info, div.news div.info {
   margin: 5px;
   gap: 10px;
@@ -27,7 +23,6 @@ div.post p.summary, div.news p.summary {
 
 .image-container {
   margin-right: 16px;
-  /* Adjust margin as needed */
 }
 
 .title{
@@ -40,3 +35,38 @@ div.post p.summary, div.news p.summary {
   padding-bottom: 20px;
 }
 
+.post {
+  display: flex;
+}
+
+.image-container {
+  width: 150px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image {
+  padding-top: 30px;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;  
+}
+
+h4.navbarItems:hover{
+  color:blue;
+}
+
+.noblogs , .loading-header, .nonews{
+  font-size:xx-large;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 20%;
+}
+
+.page-btn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}

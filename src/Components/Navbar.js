@@ -8,16 +8,6 @@ import IOSDownload from "../Assets/apple_pay.png";
 const Navbar = () => {
   const location = useLocation();
 
-  const linkStyle = {
-    color: "white", 
-    textDecoration: "none",
-    transition: "color 0.3s", 
-  };
-
-  const hoverStyle = {
-    color: "#1890ff", 
-  };
-
   const handleAgentSignupClick = () => {
     window.open("https://agent.citywallet.com.np/auth/signup", "_blank");
   };
@@ -33,10 +23,10 @@ const Navbar = () => {
       style={{
         flex: 1,
         minWidth: 0,
-        background: "linear-gradient(to right, #0c72c9, #063773)",
+        background: "#0e83e3",
       }}
     >
-      <div
+      <div className="navbarItems"
         style={{
           display: "flex",
           flexDirection: "row",
@@ -47,28 +37,34 @@ const Navbar = () => {
           gap: "20px",
         }}
       >
-        <Link to="/" style={{ ...linkStyle, ":hover": hoverStyle }}>
-          <h4>Home</h4>
+        <Link to="/" style={{color: "white", 
+    textDecoration: "none",
+    transition: "color 0.3s",  }}>
+          <h4 className="navbarItems">Home</h4>
         </Link>
-        <Link to="/about" style={{ ...linkStyle, ":hover": hoverStyle }}>
-          <h4>About</h4>
+        <Link to="/about" style={{color: "white", 
+    textDecoration: "none",
+    transition: "color 0.3s",  }}>
+          <h4 className="navbarItems">About</h4>
         </Link>
-        <Link to="/services" style={{ ...linkStyle, ":hover": hoverStyle }}>
-          <h4>Services</h4>
+        <Link to="/services" style={{color: "white", 
+    textDecoration: "none",
+    transition: "color 0.3s",  }}>
+          <h4 className="navbarItems">Services</h4>
         </Link>
-        <Link to="/blog" style={{ ...linkStyle, ":hover": hoverStyle }}>
-          <h4>Blog</h4>
+        <Link to="/blog" style={{color: "white", 
+    textDecoration: "none",
+    transition: "color 0.3s",  }}>
+          <h4 className="navbarItems">Blog</h4>
         </Link>
-        <Link to="/news" style={{ ...linkStyle, ":hover": hoverStyle }}>
-          <h4>News And Events</h4>
+        <Link to="/news" style={{color: "white", 
+    textDecoration: "none",
+    transition: "color 0.3s",  }}>
+          <h4 className="navbarItems">News And Events</h4>
         </Link>
-        <a
-          href="#"
-          onClick={handleAgentSignupClick}
-          style={linkStyle}
-          activeStyle={hoverStyle}
-        >
-          <h4>Agent Signup</h4>
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+        <a href="#" onClick={handleAgentSignupClick} style={{color: "white", textDecoration: "none", transition: "color 0.3s", }}>
+          <h4 className="navbarItems">Agent Signup</h4>
         </a>
         <a
           href="https://play.google.com/store/apps/details?id=com.ctxpress.citypay"

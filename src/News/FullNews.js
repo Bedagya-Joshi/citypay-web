@@ -5,6 +5,7 @@ import client from "../services/sanityClient";
 
 const FullNews = () => {
   const { newsId } = useParams();
+  const [imageURL, setImageURL] = useState(null);
   const [news, setNews] = useState(null);
 
   useEffect(() => {
@@ -21,8 +22,14 @@ const FullNews = () => {
           { newsId }
           );
           console.log(newsResponse);
-
-        setNews(newsResponse);
+          
+          const imageRef = newsResponse.mainImage.asset._ref;
+          const [, imageId, imageDim, imageExtension] = imageRef.split("-");
+          const imageUrl = `https://cdn.sanity.io/images/gfx5cjiu/production/${imageId}-${imageDim}.${imageExtension}`;
+          console.log(imageUrl);
+          
+          setNews(newsResponse);
+          setImageURL(imageUrl);
       } catch (error) {
         console.error(error);
       }
@@ -52,13 +59,7 @@ const FullNews = () => {
   return (
     <div>
       {news.mainImage && news.mainImage.asset && (
-        <img
-          src={
-            "https://cdn.sanity.io/images/gfx5cjiu/production/21f9795a131c32180f6fa92575732afd29225ea0-135x135.jpg?rect=0,0,135,70&w=2000&fit=max&auto=format&dpr=2"
-          }
-          alt={news.title}
-          style={{ width: "550px"}}
-        />
+        <img src={imageURL} alt={news.title} style={{ width: "450px", height:"auto" }} />
       )}
       <h2>{news.title}</h2>
       {news.author && <p>by {news.author.name}</p>}

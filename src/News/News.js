@@ -1,36 +1,27 @@
 // News.js
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import client from "../services/sanityClient";
 
 const News = ({ _id, mainImage, title, author, publishedAt, summary }) => {
   const [imageURL, setImageURL] = useState(null);
   const [formattedDateTime, setFormattedDateTime] = useState("");
 
   useEffect(() => {
-    const fetchImageURL = async () => {
+    const fetchImageURL = () => {
       try {
         let imageUrl;
 
-        if (mainImage?._type === "image" && mainImage.asset) {
-          imageUrl = mainImage.asset.url;
-        } else if (mainImage?._ref) {
-          const imageDetails = await client.fetch(
-            `*[_id == '${mainImage._ref}'][0] {
-              asset {
-                url
-              }
-            }`
-          );
-          console.log(imageDetails);
-
-          imageUrl =
-            "https://cdn.sanity.io/images/gfx5cjiu/production/21f9795a131c32180f6fa92575732afd29225ea0-135x135.jpg?rect=0,0,135,70&w=2000&fit=max&auto=format&dpr=2";
+        if (mainImage && mainImage.asset && mainImage.asset._ref) {
+          const imageRef = mainImage.asset._ref;
+          console.log(imageRef);
+          const [, imageId, imageDim, imageExtension] = imageRef.split("-");
+          imageUrl = `https://cdn.sanity.io/images/gfx5cjiu/production/${imageId}-${imageDim}.${imageExtension}`;
         }
+        console.log(imageUrl);
 
         setImageURL(imageUrl);
       } catch (error) {
-        console.error("Error fetching image URL:", error);
+        console.error("Error constructing image URL:", error);
       }
     };
 
@@ -49,13 +40,9 @@ const News = ({ _id, mainImage, title, author, publishedAt, summary }) => {
 
   return (
     <div className="news">
-      <img
-        src={
-          "https://cdn.sanity.io/images/gfx5cjiu/production/21f9795a131c32180f6fa92575732afd29225ea0-135x135.jpg?rect=0,0,135,70&w=2000&fit=max&auto=format&dpr=2"
-        }
-        alt={title}
-        style={{width: "auto", height: "150px", paddingRight: "10px"}}
-      />
+      <div className="image-container">
+        {imageURL && <img src={imageURL} alt={title} className="image" />}
+      </div>
       <div className="texts">
         <h2>{title}</h2>
         <div className="info">

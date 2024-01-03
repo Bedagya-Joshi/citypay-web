@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import client from "../services/sanityClient";
 import News from "../News/News";
 import FullNews from "../News/FullNews";
+import "../App.css"; 
 
 const NEWS_PER_PAGE = 6;
 
@@ -51,8 +52,18 @@ const NewsPage = () => {
         index
         element={
           <main>
-            {loading && <div>Loading...</div>}
+            {loading && (
+              <div className="loading-container">
+                <h1 className="loading-header">Loading....</h1>
+              </div>
+            )}
+            {!loading && news.length === 0 && (
+              <div className="no-news-container">
+                <h1 className="nonews">No News found.</h1>
+              </div>
+            )}
             {!loading &&
+              news.length > 0 &&
               news
                 .slice(
                   (currentPage - 1) * NEWS_PER_PAGE,
@@ -60,7 +71,7 @@ const NewsPage = () => {
                 )
                 .map((news) => <News key={news._id} {...news} />)}
             {!loading && totalPages > 1 && (
-              <div>
+              <div className="page-btn">
                 <button
                   onClick={() => handlePageChange(currentPage - 1)}
                   disabled={currentPage === 1}
