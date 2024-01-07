@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import client from "../services/sanityClient";
+import "../App.css"
 
 const FullNews = () => {
   const { newsId } = useParams();
@@ -26,7 +27,6 @@ const FullNews = () => {
           const imageRef = newsResponse.mainImage.asset._ref;
           const [, imageId, imageDim, imageExtension] = imageRef.split("-");
           const imageUrl = `https://cdn.sanity.io/images/gfx5cjiu/production/${imageId}-${imageDim}.${imageExtension}`;
-          console.log(imageUrl);
           
           setNews(newsResponse);
           setImageURL(imageUrl);
@@ -53,7 +53,11 @@ const FullNews = () => {
   };
 
   if (!news) {
-    return <div>Loading...</div>;
+    return (
+      <div className="loading-container">
+        <h1 className="loading-header">Loading....</h1>
+      </div>
+    );
   }
 
   return (

@@ -26,7 +26,8 @@ const Navbar = () => {
         background: "#0e83e3",
       }}
     >
-      <div className="navbarItems"
+      <div
+        className="navbarItems"
         style={{
           display: "flex",
           flexDirection: "row",
@@ -37,63 +38,114 @@ const Navbar = () => {
           gap: "20px",
         }}
       >
-        <Link to="/" style={{color: "white", 
-    textDecoration: "none",
-    transition: "color 0.3s",  }}>
+        <Link
+          to="/"
+          style={{
+            color: "white",
+            textDecoration: "none",
+            transition: "color 0.3s",
+          }}
+        >
           <h4 className="navbarItems">Home</h4>
         </Link>
-        <Link to="/about" style={{color: "white", 
-    textDecoration: "none",
-    transition: "color 0.3s",  }}>
+        <Link
+          to="/about"
+          style={{
+            color: "white",
+            textDecoration: "none",
+            transition: "color 0.3s",
+          }}
+        >
           <h4 className="navbarItems">About</h4>
         </Link>
-        <Link to="/services" style={{color: "white", 
-    textDecoration: "none",
-    transition: "color 0.3s",  }}>
+        <Link
+          to="/services"
+          style={{
+            color: "white",
+            textDecoration: "none",
+            transition: "color 0.3s",
+          }}
+        >
           <h4 className="navbarItems">Services</h4>
         </Link>
-        <Link to="/blog" style={{color: "white", 
-    textDecoration: "none",
-    transition: "color 0.3s",  }}>
+        <Link
+          to="/blog"
+          style={{
+            color: "white",
+            textDecoration: "none",
+            transition: "color 0.3s",
+          }}
+        >
           <h4 className="navbarItems">Blog</h4>
         </Link>
-        <Link to="/news" style={{color: "white", 
-    textDecoration: "none",
-    transition: "color 0.3s",  }}>
+        <Link
+          to="/news"
+          style={{
+            color: "white",
+            textDecoration: "none",
+            transition: "color 0.3s",
+          }}
+        >
           <h4 className="navbarItems">News And Events</h4>
         </Link>
         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-        <a href="#" onClick={handleAgentSignupClick} style={{color: "white", textDecoration: "none", transition: "color 0.3s", }}>
+        <a
+          href="#"
+          onClick={handleAgentSignupClick}
+          style={{
+            color: "white",
+            textDecoration: "none",
+            transition: "color 0.3s",
+          }}
+        >
           <h4 className="navbarItems">Agent Signup</h4>
         </a>
-        <a
-          href="https://play.google.com/store/apps/details?id=com.ctxpress.citypay"
-          target="_blank"
-          rel="noreferrer"
+        <button
+          onClick={() =>
+            window.open(
+              "https://play.google.com/store/apps/details?id=com.ctxpress.citypay",
+              "_blank"
+            )
+          }
+          style={{
+            border: "none",
+            background: "none",
+            cursor: "pointer",
+            padding: 0,
+          }}
         >
           <img
             src={AndDownload}
             alt="Android Download"
             style={{
               height: "45px",
-              width: "120px",
+              width: "130px",
             }}
           />
-        </a>
-        <a
-          href="https://apps.apple.com/nz/app/citypay-nepal/id1643110573"
-          target="_blank"
-          rel="noreferrer"
+        </button>
+        <button
+          onClick={() =>
+            window.open(
+              "https://apps.apple.com/nz/app/citypay-nepal/id1643110573",
+              "_blank"
+            )
+          }
+          style={{
+            border: "none",
+            background: "none",
+            cursor: "pointer",
+            padding: 0,
+          }}
         >
           <img
             src={IOSDownload}
             alt="IOS Download"
             style={{
               height: "45px",
-              width: "120px",
+              width: "130px",
             }}
           />
-        </a>
+        </button>
       </div>
     </Menu>
   );

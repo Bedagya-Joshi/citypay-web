@@ -13,11 +13,9 @@ const News = ({ _id, mainImage, title, author, publishedAt, summary }) => {
 
         if (mainImage && mainImage.asset && mainImage.asset._ref) {
           const imageRef = mainImage.asset._ref;
-          console.log(imageRef);
           const [, imageId, imageDim, imageExtension] = imageRef.split("-");
           imageUrl = `https://cdn.sanity.io/images/gfx5cjiu/production/${imageId}-${imageDim}.${imageExtension}`;
         }
-        console.log(imageUrl);
 
         setImageURL(imageUrl);
       } catch (error) {

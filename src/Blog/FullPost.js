@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import client from "../services/sanityClient";
+import "../App.css"
 
 const FullPost = () => {
   const { postId } = useParams();
@@ -21,10 +22,9 @@ const FullPost = () => {
           { postId }
         );
 
-         const imageRef = postResponse.mainImage.asset._ref;
-         const [, imageId, imageDim, imageExtension] = imageRef.split("-");
-         const imageUrl = `https://cdn.sanity.io/images/gfx5cjiu/production/${imageId}-${imageDim}.${imageExtension}`;
-         console.log(imageUrl);
+        const imageRef = postResponse.mainImage.asset._ref;
+        const [, imageId, imageDim, imageExtension] = imageRef.split("-");
+        const imageUrl = `https://cdn.sanity.io/images/gfx5cjiu/production/${imageId}-${imageDim}.${imageExtension}`;
 
         setPost(postResponse);
         setImageURL(imageUrl);
@@ -52,7 +52,11 @@ const FullPost = () => {
   };
 
   if (!post) {
-    return <div>Loading...</div>;
+    return (
+      <div className="loading-container">
+        <h1 className="loading-header">Loading....</h1>
+      </div>
+    );
   }
 
   return (
