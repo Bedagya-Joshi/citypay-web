@@ -38,6 +38,7 @@ const Navbar = () => {
           gap: "20px",
         }}
       >
+        {/* {hello} */}
         <Link
           to="/"
           style={{
