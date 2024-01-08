@@ -6,7 +6,12 @@ import "./App.css";
 
 //Assets Import
 import citypay from "./Assets/citypay_logo.png";
-import arrow from "./Assets/arrow.png";
+import bankvector from "./Assets/bank-vector.png";
+import cashinhand from "./Assets/cashinhand.png";
+import cityexpress from "./Assets/cityexpress.png";
+import cell from "./Assets/cell.png";
+import simpson from "./Assets/simpson.png";
+import youtube from "./Assets/youtube.png";
 
 //Pages Import
 import ContactPage from "./Pages/ContactPage";
@@ -76,7 +81,8 @@ const App = () => {
             height: "auto",
             width: "100%",
             display: "flex",
-            justifyContent: "space-between",
+            justifyContent: "space-around",
+            // rowGap:"50px",
             alignItems: "center",
             background: "#0e83e3",
           }}
@@ -88,7 +94,7 @@ const App = () => {
               <img
                 src={citypay}
                 alt="CityPayLogo"
-                style={{ paddingTop: "15px", height: "70px", width: "auto" }}
+                style={{ paddingTop: "15px", height: "90px", width: "90px", marginLeft:"15px"}}
               />
             </div>
           </Link>
@@ -109,7 +115,6 @@ const App = () => {
                       padding: 24,
                       minHeight: 380,
                       maxWidth: "95vw",
-                      background: colorBgContainer,
                       borderRadius: borderRadiusLG,
                       display: "flex",
                     }}
@@ -123,7 +128,7 @@ const App = () => {
                     >
                       <div
                         style={{
-                          maxHeight: "900px",
+                          maxHeight: "1000px",
                           maxWidth: "86vw",
                           backgroundColor: "black",
                         }}
@@ -139,7 +144,7 @@ const App = () => {
                         }}
                       >
                         <div className="title">
-                          CityPay to Friends and Family
+                         <span class="highlight"> CityPay</span> to Friends and Family
                         </div>
                         <div
                           className="body"
@@ -149,18 +154,20 @@ const App = () => {
                           }}
                         >
                           <div className="landing-page-text">
-                            Some text
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor tortor, venenatis a arcu id, semper ultricies enim. Aliquam turpis tellus, venenatis sit amet mattis a, viverra ac lorem. In condimentum quam ut nibh congue fermentum. Duis quis pulvinar lectus, a aliquam massa. 
                             <ReadMoreButton to={"/citypayfriendandfamily"}>
                               Read more
                             </ReadMoreButton>
                           </div>
-                          <div className="landing-page-image">Image</div>
+                          <div className="landing-page-image">
+                            <img src={bankvector} alt="bank" class="bankimage"/>
+                          </div>
                           <div className="bullet-text">
-                            <h2 style={{ textAlign: "center" }}>
-                              Fund Transfer to Friends and Family
+                            <h2 style={{ textAlign: "", marginBottom:"0px", }}>
+                            Fund Transfer to Friends and Family
                             </h2>
                             <p>
-                              Transfer funds to your friends or family using
+                              Fund transfer has never been easier and secure, with CityPay.<br></br>Transfer funds to your friends or family using
                               their phone number or the QR.
                             </p>
                             <h2 style={{ textAlign: "center" }}>
@@ -181,7 +188,7 @@ const App = () => {
                           marginBottom: "16px",
                         }}
                       >
-                        <div className="title">Remittance Services</div>
+                        <div className="title"><span class="remittance">Remittance Services</span></div>
                         <div
                           className="body"
                           style={{
@@ -190,6 +197,8 @@ const App = () => {
                           }}
                         >
                           <div className="bullet-text">
+                            <br></br>
+                            <br></br>
                             <h2 style={{ textAlign: "center" }}>
                               Receive Remittance
                             </h2>
@@ -212,10 +221,11 @@ const App = () => {
                               Nepal.
                             </p>
                           </div>
-                          <div className="landing-page-image">Image</div>
+                          <div className="landing-page-image">
+                          <img src={cashinhand} alt="cash" class="bankimage"/>
+                          </div>
                           <div className="landing-page-text">
-                            Some text
-                            <ReadMoreButton to={"/remittance"}>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor tortor, venenatis a arcu id, semper ultricies enim. Aliquam turpis tellus, venenatis sit amet mattis a, viverra ac lorem. In condimentum quam ut nibh congue fermentum. Duis quis pulvinar lectus, a aliquam massa.                            <ReadMoreButton to={"/remittance"}>
                               Read more
                             </ReadMoreButton>
                           </div>
@@ -238,12 +248,13 @@ const App = () => {
                           }}
                         >
                           <div className="landing-page-text">
-                            Some text
-                            <ReadMoreButton to={"/banktransfers"}>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor tortor, venenatis a arcu id, semper ultricies enim. Aliquam turpis tellus, venenatis sit amet mattis a, viverra ac lorem. In condimentum quam ut nibh congue fermentum. Duis quis pulvinar lectus, a aliquam massa.                            <ReadMoreButton to={"/banktransfers"}>
                               Read more
                             </ReadMoreButton>
                           </div>
-                          <div className="landing-page-image">Image</div>
+                          <div className="landing-page-image">
+                          <img src={cityexpress} alt="express" class="bankimage"/>
+                          </div>
                           <div className="bullet-text">
                             <h2 style={{ textAlign: "center" }}>
                               Bank Transfer
@@ -275,15 +286,14 @@ const App = () => {
                           className="body"
                           style={{
                             display: "flex",
-                            justifyContent: "space-between",
+                            justifyContent: "start",
                           }}
                         >
-                          <div className="landing-page-image">Image</div>
                           <div
                             className="landing-page-text"
                             style={{
-                              paddingLeft: "50vw",
-                              textAlign: "justify",
+                              paddingLeft: "",
+                              textAlign: "left",
                             }}
                           >
                             Not just the QR code in our app but we have made it
@@ -293,6 +303,10 @@ const App = () => {
                             <ReadMoreButton to={"/scanQR"}>
                               Read more
                             </ReadMoreButton>
+                          </div>
+                          <div className="landing-page-image"
+                            style={{paddingLeft: "400px",}}>
+                          <img src={cell} alt="express" class="cell"/>
                           </div>
                         </div>
                       </div>
@@ -313,12 +327,13 @@ const App = () => {
                           }}
                         >
                           <div className="landing-page-text">
-                            Some text
-                            <ReadMoreButton to={"/businesspayments"}>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor tortor, venenatis a arcu id, semper ultricies enim. Aliquam turpis tellus, venenatis sit amet mattis a, viverra ac lorem. In condimentum quam ut nibh congue fermentum. Duis quis pulvinar lectus, a aliquam massa.                            <ReadMoreButton to={"/businesspayments"}>
                               Read more
                             </ReadMoreButton>
                           </div>
-                          <div className="landing-page-image">Image</div>
+                          <div className="landing-page-image">
+                          <img src={simpson} alt="express" class="bankimage"/>
+                          </div>
                           <div className="bullet-text">
                             <h2 style={{ textAlign: "center" }}>
                               Pay in stores
@@ -339,7 +354,6 @@ const App = () => {
                       </div>
                       <div
                         style={{
-                          backgroundColor: "black",
                           padding: "16px",
                           marginBottom: "16px",
                           maxWidth: "95vw",
@@ -348,18 +362,21 @@ const App = () => {
                         <div className="title">Perks</div>
                         <Row gutter={16}>
                           <Col span={8}>
-                            <Card title="More Reward Points" bordered={false}>
-                              Card content
+                            <Card title="More Reward Points" bordered={false} style={{
+                          boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",}}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor tortor, venenatis a arcu id, semper ultricies enim. Aliquam turpis tellus, venenatis sit amet mattis a, viverra ac lorem. In condimentum quam ut nibh congue fermentum. Duis quis pulvinar lectus, a aliquam massa. Sed vel lacus quis dolor laoreet commodo. Nulla posuere sem vitae commodo cursus. Nulla sagittis pharetra lorem ac dictum. Phasellus cursus dui a ex interdum, in tristique erat iaculis. Nulla porttitor ut leo porta facilisis. Nullam rutrum quam non malesuada feugiat.
                             </Card>
                           </Col>
                           <Col span={8}>
-                            <Card title="Mobile Topup Perks" bordered={false}>
-                              Card content
+                            <Card title="Mobile Topup Perks" bordered={false} style={{
+                          boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",}}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor tortor, venenatis a arcu id, semper ultricies enim. Aliquam turpis tellus, venenatis sit amet mattis a, viverra ac lorem. In condimentum quam ut nibh congue fermentum. Duis quis pulvinar lectus, a aliquam massa. Sed vel lacus quis dolor laoreet commodo. Nulla posuere sem vitae commodo cursus. Nulla sagittis pharetra lorem ac dictum. Phasellus cursus dui a ex interdum, in tristique erat iaculis. Nulla porttitor ut leo porta facilisis. Nullam rutrum quam non malesuada feugiat.
                             </Card>
                           </Col>
                           <Col span={8}>
-                            <Card title="Free Transactions" bordered={false}>
-                              Card content
+                            <Card title="Free Transactions" bordered={false} style={{
+                          boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",}}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor tortor, venenatis a arcu id, semper ultricies enim. Aliquam turpis tellus, venenatis sit amet mattis a, viverra ac lorem. In condimentum quam ut nibh congue fermentum. Duis quis pulvinar lectus, a aliquam massa. Sed vel lacus quis dolor laoreet commodo. Nulla posuere sem vitae commodo cursus. Nulla sagittis pharetra lorem ac dictum. Phasellus cursus dui a ex interdum, in tristique erat iaculis. Nulla porttitor ut leo porta facilisis. Nullam rutrum quam non malesuada feugiat.
                             </Card>
                           </Col>
                         </Row>
@@ -371,7 +388,9 @@ const App = () => {
                           marginBottom: "16px",
                         }}
                       >
-                        <div className="title">Watch the basics</div>
+                        <div className="title" id="watchyt"><span class="basics">Watch the basics</span>
+                        <img src={youtube} alt="youtube" class="youtube"></img>
+                        </div>
                         <div
                           style={{
                             maxHeight: "900px",
