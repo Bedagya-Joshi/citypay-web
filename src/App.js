@@ -6,7 +6,6 @@ import "./App.css";
 
 //Assets Import
 import citypay from "./Assets/citypay_logo.png";
-import arrow from "./Assets/arrow.png";
 
 //Pages Import
 import ContactPage from "./Pages/ContactPage";
