@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import { Layout, theme, Button, Card, Col, Row } from "antd";
+import { Layout, Button, Card, Col, Row } from "antd";
 import { RightCircleTwoTone } from '@ant-design/icons';
 import "./App.css";
 
@@ -60,10 +59,6 @@ const ReadMoreButton = ({ to, children }) => {
 };
 
 const App = () => {
-  const {
-    token: { colorBgContainer, borderRadiusLG },
-  } = theme.useToken();
-
   return (
     <Router>
       <Layout>
@@ -103,16 +98,6 @@ const App = () => {
               path="/"
               element={
                 <div>
-                  <div
-                    style={{
-                      padding: 24,
-                      minHeight: 380,
-                      maxWidth: "95vw",
-                      background: colorBgContainer,
-                      borderRadius: borderRadiusLG,
-                      display: "flex",
-                    }}
-                  >
                     <div
                       style={{
                         flex: "3",
@@ -383,7 +368,6 @@ const App = () => {
                       </div>
                     </div>
                   </div>
-                </div>
               }
             />
             <Route
