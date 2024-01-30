@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Work Sans', sans-serif;
+    /* font-family: 'Concert One', sans-serif; */
+    font-family: 'Roboto', sans-serif;  
+    margin: 0px; 
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    transition: all .2s linear;
+  }
+
+.services h1{
+    font-family: 'catamaran';
+    font-weight: 600;
+    font-size: 45px;
+    text-align: center;
+    background: linear-gradient(to right,#F53F4A 45%, #0D60B5 55%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.grid-container{
+    padding: 95px;
+
+}
+
+.grid-serv{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        row-gap: 10px;
+}
+.grid-1, .grid-2{
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 10px 10px 10px 15px;
+    border-radius: 15px;
+    padding: 8px; 
+    margin: 8px;
+}

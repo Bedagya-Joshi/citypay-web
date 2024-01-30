@@ -2,6 +2,7 @@ import React from "react";
 import { Menu } from "antd";
 import { Link, useLocation } from "react-router-dom";
 
+import citypay from "../Assets/citypay_logo.png";
 import AndDownload from "../Assets/gplay.png";
 import IOSDownload from "../Assets/apple_pay.png";
 
@@ -31,14 +32,24 @@ const Navbar = () => {
         style={{
           display: "flex",
           flexDirection: "row",
-          flexWrap: "nowrap",
+          // flexWrap: "nowrap",
           alignContent: "center",
           alignItems: "center",
           justifyContent: "space-between",
-          gap: "20px",
+          background: "linear-gradient(#0e83e3,#F5F5F5 99%)",
+          border:"none",
+          gap: "50px",
         }}
       >
-        {/* {hello} */}
+          <Link to="/">
+            <div className="Logo Image">
+              <img
+                src={citypay}
+                alt="CityPayLogo"
+                style={{ paddingTop: "15px", height: "90px", width: "90px", marginLeft:"15px"}}
+              />
+            </div>
+          </Link>
         <Link
           to="/"
           style={{

@@ -9,7 +9,7 @@ const contentStyle = {
 };
 
 const YTCarouselItem = () => (
-  <Carousel autoplay dotPosition="bottom">
+  <Carousel autoplay autoplaySpeed={2000} effect="fade" speed={400} dotPosition="bottom">
     <div>
       <h3 style={contentStyle}>First Slide</h3>
     </div>

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600&display=swap');
+
+
+*{
+    font-family: 'Work Sans', sans-serif;
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; 
+    border:none;
+  }
+
+.headingTxt h1{
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    background: linear-gradient(to right,#F53F4A 50%, #0D60B5 20%);
+    background-clip: text;
+    margin-bottom: 20px;
+    -webkit-text-fill-color: transparent;
+}
+
+h2{
+    font-weight: 500;
+}
+
+.containter{
+    width: 400px;
+    height: 700px;
+}
+
+
+.sub-heading{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin-bottom: 25px;
+}
+.what, .mission, .vision, .Innovation, .Reliability, .approach {
+    box-shadow: 2px 3px 10px 0px grey;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 30px 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.sub-heading :hover{
+    color: white;
+    background: linear-gradient(to right, #F53F4A, #0D60B5);
+    transition: fade .1s linear;
+    
+}
+
+.what p{
+    font-family: "Work Sans";
+    font-weight: 400;
+}
+.approach p{
+    font-family: "Work Sans";
+    font-weight: 400;
+}
+
+.mission p{
+    font-family: "Work Sans";
+    font-weight: 400;
+}
+
+.vision p{
+    font-family: "Work Sans";
+    font-weight: 400;
+}
+
+.Innovation p{
+    font-family: "Work Sans";
+    font-weight: 400;
+}
+
+.Reliability p{
+    font-family: "Work Sans";
+    font-weight: 400;
+}
+
+.promotors{
+    /* box-shadow: 1px 5px 15px 3px grey; */
+    /* margin-top: 20px; */
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px 10px 15px;
+    /* margin-bottom: 20px; */
+    text-align: justify;
+    color: white;
+    background: linear-gradient(to right, #F53F4A, #0D60B5);
+}
+ h1{
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-size: 45px;
+    text-align: center;
+    background: linear-gradient(to right,#F53F4A 50%, #0D60B5 20%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.promotors p{
+    padding-top: 20px;
+}
+p{
+    font-family: "Work Sans";
+    font-weight: 400;
+    font-size: 17px;
+}

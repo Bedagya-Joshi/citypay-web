@@ -60,9 +60,9 @@ const FullPost = () => {
   }
 
   return (
-    <div>
+    <div class="post-container">
       {post.mainImage && post.mainImage.asset && (
-        <img src={imageURL} alt={post.title} style={{ width: "450px", height: "auto" }} />
+        <img src={imageURL} alt={post.title}  class="fullpost-image" style={{ width: "450px", height: "auto" }} />
       )}
       <h2>{post.title}</h2>
       {post.author && <p>by {post.author.name}</p>}
