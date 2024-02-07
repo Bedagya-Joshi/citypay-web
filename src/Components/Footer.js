@@ -20,11 +20,13 @@ const CustomFooter = () => {
   return (
     <Footer
       style={{
-        marginTop: "125px",
+        // marginTop: "125px",
         textAlign: "center",
         display: "flex",
-        backgroundColor: "#f0f0f0",
+        backgroundColor: "white",
         justifyContent: "space-around",
+        // borderTop:"1px solid black",
+        boxShadow:"1px 60px 100px 1px grey"
       }}
     >
       <div

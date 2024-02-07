@@ -1,8 +1,9 @@
 import React from "react";
+import "./contactPage.css";
 
 const ContactPage = () => {
   return (
-    <div>
+    <div className="contact">
       <h1>Contact Us</h1>
       <div>
         <h2>CityPay Pvt. Ltd.</h2>
