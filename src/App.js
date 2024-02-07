@@ -1,7 +1,6 @@
 import React, { useState, useEffect, Component } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { Layout, theme, Button, Card, Col, Row } from "antd";
-import { RightCircleTwoTone } from '@ant-design/icons';
 import "./App.css";
 
 
@@ -26,19 +25,12 @@ import FAQPage from "./Pages/FAQPage";
 import OurTeamPage from "./Pages/OurTeamPage";
 import LegalPage from "./Pages/LegalPage";
 import DownloadPage from "./Pages/DownloadPage";
-import BusinessPayments from "./Pages/BusinessPayments";
-import CitypayFriendandFamily from "./Pages/CitypayFriendandFamily";
-import ScanQR from "./Pages/ScanQR";
-import Remittance from "./Pages/Remittance";
-import BankTransfer from "./Pages/BankTransfer";
 
 //Component Import
 import CarouselItem from "./Components/Carousel";
-import YTCarouselItem from "./Components/YoutubeCarousel";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import ScrollToTop from "./Components/ScrollToTop";
-import SizeContext from "antd/es/config-provider/SizeContext";
 
 const { Header, Content } = Layout;
 
