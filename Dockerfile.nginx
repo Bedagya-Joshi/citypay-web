@@ -1,3 +1,11 @@
-FROM ubuntu:latest
-RUN apt-get update && apt-get install -y nginx
+# Use the official Nginx image as the base image
+FROM nginx:latest
+
+# Copy custom Nginx configuration file
+COPY nginx.conf /etc/nginx/nginx.conf
+
+# Expose ports
+EXPOSE 80
+
+# Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
