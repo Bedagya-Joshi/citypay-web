@@ -12,10 +12,10 @@
 }
 
 .body {
-  /* display: flex; */
+  display: flex;
   width: 100%;
-  /* justify-content: center; */
-  /* align-items: center; */
+  justify-content: center;
+  align-items: center;
 }
 
 div.post,
@@ -67,7 +67,7 @@ div.news p.summary {
   background-color: blue;
   margin: 0px;
   padding: 0px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .learn-more-btn {
@@ -1380,6 +1380,7 @@ h4.navbarItems:hover {
     width: 650px;
     margin-left: 115px;
   }
+
   .navMenu {
     width: 100%;
   }
@@ -1661,6 +1662,7 @@ h4.navbarItems:hover {
     grid-template-columns: 2fr 2fr;
     width: 100%;
   }
+
   .grid-1,
   .grid-2,
   .grid-3 {
@@ -1801,6 +1803,7 @@ h4.navbarItems:hover {
     grid-template-columns: 1fr;
     width: 100%;
   }
+
   /* .grid-1,
     .grid-2,
     .grid-3 {
@@ -2047,6 +2050,7 @@ h4.navbarItems:hover {
     grid-template-columns: 1fr;
     width: 100%;
   }
+
   .grid-1,
   .grid-2,
   .grid-3 {
@@ -2196,6 +2200,7 @@ h4.navbarItems:hover {
     width: 650px;
     margin-left: 10px;
   }
+
   .navMenu {
     width: 100%;
   }
@@ -2207,6 +2212,7 @@ h4.navbarItems:hover {
     grid-template-columns: 1fr;
     width: 100%;
   }
+
   .grid-1,
   .grid-2,
   .grid-3 {
