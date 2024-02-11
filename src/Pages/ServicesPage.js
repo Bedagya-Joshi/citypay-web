@@ -4,11 +4,7 @@ import "./servicePage.css";
 
 const ServicesPage = () => {
   return (
-<<<<<<< HEAD
     <div class="grid-contain">
-=======
-    <div class="div-container">
->>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
       <ScrollToTop />
       <div class="services">
        <h1> Our Services:</h1>

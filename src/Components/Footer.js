@@ -57,9 +57,9 @@ const CustomFooter = () => {
           justifyContent: "space-between",
         }}
       >
-        <div>Email: info@ctxpress.com</div>
-        <div>Tel No: +977 1 5970225 / 5970224</div>
-        <div>Toll Free: 16600 11 12 13</div>
+        <div>Email:citypaywallet@gmail.com</div>
+        <div>Tel No:+977 23213123321</div>
+        <div>Toll Free:+128321412412</div>
         <div>Location: Kamaladi, Kathmandu, Nepal</div>
       </div>
       <div className="Connect">

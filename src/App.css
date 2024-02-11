@@ -487,7 +487,6 @@ h4.navbarItems:hover {
     margin-left: 310px;
   }
 
-<<<<<<< HEAD
   .navbarItems .Logo-Image img {
     width: 95%;
     height: 95%;
@@ -513,8 +512,6 @@ h4.navbarItems:hover {
   }
 
 
-=======
->>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
   .carousel-container {
     height: auto;
     width: 1010px;
@@ -526,7 +523,6 @@ h4.navbarItems:hover {
     margin-left: 150px;
   }
 
-<<<<<<< HEAD
   .navbarItems .Logo-Image img {
     width: 90%;
     height: 90%;
@@ -553,8 +549,6 @@ h4.navbarItems:hover {
     margin-right: 95px;
   }
 
-=======
->>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
   .carousel-container {
     height: auto;
     width: 1010px;
@@ -567,7 +561,6 @@ h4.navbarItems:hover {
     margin-left: 130px;
   }
 
-<<<<<<< HEAD
 
   .navbarItems .Logo-Image img {
     width: 85%;
@@ -595,8 +588,6 @@ h4.navbarItems:hover {
     margin-right: 15px;
   }
 
-=======
->>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
   .vid-container {
     margin-right: 50px;
   }
@@ -614,30 +605,27 @@ h4.navbarItems:hover {
     margin-left: 120px;
   }
 
-  .navbarItems .Logo-Image img {
-    width: 85%;
-    height: 85%;
-    margin-left: -20px;
+  .navMenu a {
+    font-size: medium;
   }
 
-  .navbarItems .nav-about {
-    margin-left: 0px;
-    font-size: large;
+  .navbMenu .Logo-Image img {
+    margin-right: 0px;
   }
 
-  .navbarItems .playstore img {
-    margin-left: 30px;
+  .navMenu .playstore img {
+    margin-left: 10px;
     border-radius: 5px;
-    width: 100px;
-    height: 35px;
-  }
-
-  .navbarItems .appstore img {
-    margin-left: -25px;
-    width: 100px;
+    width: 120px;
     height: 40px;
+  }
+
+  .navMenu .appstore img {
+    margin-left: -25px;
+    width: 120px;
+    height: 45px;
     border-radius: 5px;
-    margin-right: 95px;
+    margin-right: 50px;
   }
 
   .Main-container, .mid-container, .lower-container, .fourth-container, .fifth-container {
@@ -662,7 +650,6 @@ h4.navbarItems:hover {
 @media (width<=1220px) {
   .body-container {
     width: 1000px;
-<<<<<<< HEAD
     margin-left: 50px;
   }
 
@@ -710,20 +697,10 @@ h4.navbarItems:hover {
   }
 
 
-=======
-    margin-left: 80px;
-  }
-
-  .Main-container, .mid-container, .lower-container, .fourth-container, .fifth-container {
-    grid-template-columns: 2fr 2fr;
-  }
-
->>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
   .sub-heading {
     grid-template-columns: 1fr;
     row-gap: 20px;
     align-items: center;
-<<<<<<< HEAD
     margin-left: 110px;
   }
 
@@ -740,14 +717,6 @@ h4.navbarItems:hover {
 
   .title {
     margin-left: 170px;
-=======
-  }
-
-  .sub {
-    grid-template-columns: 2fr 2fr;
-    row-gap: 25px;
-    align-items: center;
->>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
   }
 
   .carousel-container {
@@ -1110,7 +1079,6 @@ h4.navbarItems:hover {
     margin-left: 95px;
   }
 
-<<<<<<< HEAD
   .navMenu a {
     font-size: small;
   }
@@ -1134,13 +1102,10 @@ h4.navbarItems:hover {
     margin-right: 70px;
   }
 
-=======
->>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
   .Main-container, .mid-container, .lower-container, .fourth-container, .fifth-container {
     grid-template-columns: 2fr 2fr;
   }
 
-<<<<<<< HEAD
   .Main-container .grid-1 {
     margin-bottom: 150px;
   }
@@ -1311,8 +1276,6 @@ h4.navbarItems:hover {
     font-size: smaller;
   }
 
-=======
->>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
   .sub-heading {
     grid-template-columns: 1fr;
     row-gap: 20px;
@@ -1320,7 +1283,6 @@ h4.navbarItems:hover {
     align-items: center;
   }
 
-<<<<<<< HEAD
   .sub-heading .rewards {
     width: 270px;
     height: 245px;
@@ -1378,13 +1340,6 @@ h4.navbarItems:hover {
 
   .sub .coin {
     width: 200px;
-=======
-  .sub {
-    grid-template-columns: 2fr 2fr;
-    row-gap: 25px;
-    align-items: center;
-    margin-left: 190px;
->>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
   }
 
   .carousel-container {
@@ -1396,7 +1351,6 @@ h4.navbarItems:hover {
 @media (width<=992px) {
   .body-container {
     width: 650px;
-<<<<<<< HEAD
     margin-left: 115px;
   }
 
@@ -1425,13 +1379,6 @@ h4.navbarItems:hover {
     height: 38px;
     border-radius: 5px;
     margin-right: 70px;
-=======
-    margin-left: 155px;
-  }
-
-  .navbarItems {
-    background-color: #056dd4;
->>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
   }
 
   .Main-container, .mid-container, .lower-container, .fourth-container, .fifth-container {
@@ -1441,7 +1388,6 @@ h4.navbarItems:hover {
   .sub-heading {
     grid-template-columns: 1fr;
     row-gap: 20px;
-<<<<<<< HEAD
     margin-left: 160px;
     align-items: center;
   }
@@ -1608,17 +1554,6 @@ h4.navbarItems:hover {
 
   .sub .coin {
     width: 200px;
-=======
-    margin-left: 130px;
-    align-items: center;
-  }
-
-  .sub {
-    grid-template-columns: 2fr 2fr;
-    row-gap: 25px;
-    align-items: center;
-    margin-left: 190px;
->>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
   }
 
   .carousel-container {
@@ -1627,7 +1562,6 @@ h4.navbarItems:hover {
   }
 }
 
-<<<<<<< HEAD
 @media (width<=840px) {
   .body-container {
     width: 650px;
@@ -1754,13 +1688,10 @@ h4.navbarItems:hover {
   }
 }
 
-=======
->>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
 
 @media (width<=768px) {
   .body-container {
     width: 650px;
-<<<<<<< HEAD
     margin-left: 20px;
   }
 
@@ -1788,16 +1719,12 @@ h4.navbarItems:hover {
     height: 30px;
     border-radius: 5px;
     margin-right: 115px;
-=======
-    margin-left: 30px;
->>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
   }
 
   .Main-container, .mid-container, .lower-container, .fourth-container {
     grid-template-columns: 1fr;
   }
 
-<<<<<<< HEAD
   .Main-container .grid-1 {
     margin-left: 50px;
   }
@@ -1861,8 +1788,6 @@ h4.navbarItems:hover {
   }
 
 
-=======
->>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
   .image-container {
     width: 100%;
   }
@@ -1878,24 +1803,15 @@ h4.navbarItems:hover {
   .sub-heading {
     grid-template-columns: 1fr;
     row-gap: 20px;
-<<<<<<< HEAD
     margin-right: -120px;
 
-=======
-    margin-left: 130px;
-    align-items: center;
->>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
   }
 
   .sub {
     grid-template-columns: 1fr;
     row-gap: 25px;
     align-items: center;
-<<<<<<< HEAD
     margin-right: -20px;
-=======
-    margin-left: 10px;
->>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
   }
 
   .carousel-container {
@@ -1904,7 +1820,6 @@ h4.navbarItems:hover {
   }
 }
 
-<<<<<<< HEAD
 @media (width<=715px) {
   .body-container {
     width: 650px;
@@ -2031,28 +1946,17 @@ h4.navbarItems:hover {
 }
 
 
-=======
->>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
 
 @media (width<=600px) {
   .body-container {
     width: 650px;
-<<<<<<< HEAD
     margin-left: 10px;
   }
 
-=======
-    margin-left: -80px;
-  }
-
-
-
->>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
   .Main-container, .mid-container, .lower-container, .fourth-container {
     grid-template-columns: 1fr;
   }
 
-<<<<<<< HEAD
   .Main-container {
     margin-right: 170px;
   }
@@ -2143,24 +2047,6 @@ h4.navbarItems:hover {
 
   .fifth-container {
     grid-template-columns: 1fr;
-=======
-  .fifth-container {
-    padding: 85px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 8px;
-    margin-left: 50px;
-  }
-
-  .perks {
-    margin-left: 200px;
-  }
-
-  .vid-container {
-    margin-left: 160px;
-    max-width: 100%;
-
->>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
   }
 
   .image-container {
@@ -2173,16 +2059,11 @@ h4.navbarItems:hover {
 
   .grid-2 img {
     margin-left: 0;
-<<<<<<< HEAD
-=======
-    width: 100%;
->>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
   }
 
   .sub-heading {
     grid-template-columns: 1fr;
     row-gap: 20px;
-<<<<<<< HEAD
     margin-right: 80px;
   }
 
@@ -2196,36 +2077,23 @@ h4.navbarItems:hover {
 
   .vid-container .title .basics {
     margin-left: 10px;
-=======
-    margin-left: 100px;
-    align-items: center;
->>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
   }
 
   .sub {
     grid-template-columns: 1fr;
     row-gap: 25px;
     align-items: center;
-<<<<<<< HEAD
     margin-right: -20px;
-=======
-    margin-left: 10px;
->>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
   }
 
   .carousel-container {
     height: auto;
-<<<<<<< HEAD
     width: 550px;
-=======
-    width: 500px;
->>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
   }
 }
 
 
 
-<<<<<<< HEAD
 @media (width<=480px) {
   .body-container {
     width: 650px;
@@ -2371,106 +2239,10 @@ h4.navbarItems:hover {
     row-gap: 25px;
     align-items: center;
     margin-right: -20px;
-=======
-@media (width<=476px) {
-  .body-container {
-    margin-left: -120px;
-    padding-left: 20px;
-  }
-
-  .Main-container {
-    padding: 85px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 8px;
-    margin-left: 320px;
-  }
-
-  .mid-container {
-    padding: 85px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 8px;
-    margin-left: 320px;
-  }
-
-  .mid-container p {
-    font-family: 'Work Sans';
-    font-size: 12px;
-  }
-
-  .lower-container {
-    padding: 85px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 8px;
-    padding: 85px;
-    margin-left: 320px;
-  }
-
-  .lower-container p {
-    font-size: 12px;
-  }
-
-  .fourth-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 8px;
-    padding: 85px;
-    margin-left: 320px;
-  }
-
-  .fifth-container {
-    padding: 85px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 8px;
-    margin-left: 320px;
-  }
-
-  .perks {
-    font-weight: 400;
-    padding-top: 0;
-    padding: 85px;
-    margin-bottom: 16px;
-    max-width: 50%;
-    text-align: justify;
-    text-justify: inter-word;
-    margin-left: 270px;
-  }
-
-  .perks h1 {
-    text-align: left;
-  }
-
-  .sub-heading {
-    font-size: 12px;
-  }
-
-  .sub-heading h2 {
-    font-size: 20px;
-    font-weight: 500;
-  }
-
-  .top-up, .rewards, .redefine {
-    width: 300px;
-    height: auto;
-  }
-
-  .vid-container {
-    margin-left: 310px;
-    max-width: 100%;
-
->>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
   }
 
   .carousel-container {
     height: auto;
-<<<<<<< HEAD
     width: 550px;
-=======
-    width: 1000px;
-    margin-left: 150px;
->>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
   }
 }
