@@ -69,6 +69,7 @@ nav{
 }
 
 .playstore img {
+  border-radius: 5px;
   height: 45px;
   width: 130px;
 }
@@ -87,6 +88,11 @@ nav{
 
 /* new navbar */
 
+.downloadButtons {
+  display: flex;
+  gap: 20px;
+}
+
 .burgerInactiveClass {
   border: 1px solid green;
 }
@@ -104,7 +110,7 @@ nav{
 }
 
 .navBarItemsContainer {
-  /* border: 4px solid blue; */
+  /* border: 4px solid red; */
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -115,7 +121,7 @@ nav{
 }
 
 .navMenu {
-  width: 1190px;
+  width: 100%;
   font-family: "Work Sans";
   font-weight: 400;
   font-size: 20px;
@@ -123,7 +129,7 @@ nav{
   display: flex;
   padding: 16px;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   gap: 20px;
   color: white;
 }
@@ -140,8 +146,27 @@ nav{
   display: none;
 }
 
+@media screen and (max-width: 930px) {
+  .downloadButtons {
+    display: none;
+  }
+  .navMenu {
+    /* gap: 1px; */
+    width: 100%;
+    justify-content: ;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 720px) {
+  .downloadButtons {
+    display: none;
+  }
+
   .itemsContainer {
+    display: none;
+  }
+  .navBarItemsContainer {
     display: none;
   }
 
@@ -153,12 +178,15 @@ nav{
   }
 
   .hamburgerIconContainer {
+    z-index: 1;
     display: flex;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     color: white;
+    /* background-color: white; */
     height: auto;
+    padding-left: 50px;
   }
   .burgerActiveClass {
     border: 1px solid blue;
@@ -196,9 +224,9 @@ nav{
   }
 }
 
-@media screen and (min-width: 720px) {
-  .burgerActiveClass {
-    /* border: 1px solid blue;
+/* @media screen and (min-width: 720px) { */
+/* .burgerActiveClass { */
+/* border: 1px solid blue;
     width: 100%;
     height: 100%;
     display: flex;
@@ -207,9 +235,9 @@ nav{
     align-items: center;
     justify-content: center;
     color: white; */
-    /* display: none; */
-  }
-}
+/* display: none; */
+/* } */
+/* } */
 /* 
 .navModal {
   height: auto;
