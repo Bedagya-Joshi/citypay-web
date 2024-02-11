@@ -3,11 +3,13 @@ import React from "react";
 import { Layout } from "antd";
 import { Link } from "react-router-dom";
 
+
 //Import Assets
 import fb_logo from "../Assets/fb_logo.png";
 import ig_logo from "../Assets/ig_logo.png";
 import citypay from "../Assets/citypay_logo.png";
 import qrcode from "../Assets/QRcode.jpeg";
+import "../App.css";
 
 // import MapComponent from "./MapComponent";
 
@@ -18,10 +20,13 @@ const CustomFooter = () => {
   return (
     <Footer
       style={{
+        // marginTop: "125px",
         textAlign: "center",
         display: "flex",
-        backgroundColor: "#f0f0f0",
-        justifyContent: "space-between",
+        backgroundColor: "white",
+        justifyContent: "space-around",
+        // borderTop:"1px solid black",
+        boxShadow:"1px 60px 100px 1px grey"
       }}
     >
       <div
@@ -31,20 +36,24 @@ const CustomFooter = () => {
         <img
           src={citypay}
           alt="CityPayLogo"
-          style={{ height: "70px", width: "auto" }}
+          style={{ height: "90px", width: "90px " }}
         />
         <img
           src={qrcode}
           alt="QR Scan"
-          style={{ height: "70px", width: "auto" }}
+          style={{ height: "90px", width: "90px" }}
         />
       </div>
       <div
         className="ContactUs"
         style={{
+          fontFamily: "catamaran, sans-serif",
+          fontSize:"15px",
+          fontWeight:"Medium",
           display: "flex",
           flexDirection: "column",
           alignItems: "flex-start",
+          columnGap: "5px",
           justifyContent: "space-between",
         }}
       >
@@ -56,6 +65,9 @@ const CustomFooter = () => {
       <div className="Connect">
         <div
           style={{
+            fontFamily: "catamaran, sans-serif",
+            fontSize:"17px",
+            fontWeight:"Bold",
             marginTop: "50px",
             textAlign: "center",
             justifyContent: "space-between",
@@ -74,14 +86,14 @@ const CustomFooter = () => {
             <img
               src={fb_logo}
               alt="Facebook"
-              style={{ height: "35px", width: "auto", margin: "10px" }}
+              style={{ height: "45px", width: "45px", margin: "10px" }}
             />
           </a>
           <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
             <img
               src={ig_logo}
               alt="Instagram"
-              style={{ height: "35px", width: "auto", margin: "10px" }}
+              style={{ height: "45px", width: "45px", margin: "10px" }}
             />
           </a>
         </div>

@@ -1,6 +1,7 @@
 // Post.js
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import "./post.css";
 
 const Post = ({ _id, mainImage, title, author, publishedAt, summary }) => {
   const [imageURL, setImageURL] = useState(null);

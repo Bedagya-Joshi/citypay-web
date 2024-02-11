@@ -1,10 +1,19 @@
+import React, { useState, useEffect, Component } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import { Layout, Button, Card, Col, Row } from "antd";
-import { RightCircleTwoTone } from '@ant-design/icons';
+import { Layout, theme, Button, Card, Col, Row } from "antd";
 import "./App.css";
 
+
 //Assets Import
-import citypay from "./Assets/citypay_logo.png";
+import bankvector from "./Assets/request.jpg";
+import cashinhand from "./Assets/payment.jpg";
+import cityexpress from "./Assets/cityexpress.png";
+import cell from "./Assets/cell.jpg";
+import bank from "./Assets/bank.jpg";
+import youtube from "./Assets/youtube.png";
+import atm from "./Assets/atm.png";
+import ytb from "./Assets/ytb.png";
+import coin from "./Assets/coin.png";
 
 //Pages Import
 import ContactPage from "./Pages/ContactPage";
@@ -16,11 +25,7 @@ import FAQPage from "./Pages/FAQPage";
 import OurTeamPage from "./Pages/OurTeamPage";
 import LegalPage from "./Pages/LegalPage";
 import DownloadPage from "./Pages/DownloadPage";
-import BusinessPayments from "./Pages/BusinessPayments";
-import CitypayFriendandFamily from "./Pages/CitypayFriendandFamily";
-import ScanQR from "./Pages/ScanQR";
-import Remittance from "./Pages/Remittance";
-import BankTransfer from "./Pages/BankTransfer"; 
+
 
 //Component Import
 import CarouselItem from "./Components/Carousel";
@@ -28,348 +33,285 @@ import YTCarouselItem from "./Components/YoutubeCarousel";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import ScrollToTop from "./Components/ScrollToTop";
-
+import SizeContext from "antd/es/config-provider/SizeContext";
 
 const { Header, Content } = Layout;
 
-const ReadMoreButton = ({ to, children }) => {
-  return (
-    <Link to={to}>
-      <Button
-        type="default"
-        className="learn-more-btn"
-        style={{
-          display: "flex",
-          alignItems: "center",
-          width: "100px",
-          height: "50px",
-          marginTop: "10px",
-          fontWeight: "bold",
-        }}
-      >
-        <div className="learn-more-btn-content">
-          <div className="learn-more-btn-content__title">{children}</div>
-          <div className="learn-more-btn-content__img">
-            <RightCircleTwoTone />
-          </div>
-        </div>
-      </Button>
-    </Link>
-  );
-};
+
+
+
 
 const App = () => {
+
   return (
     <Router>
-      <Layout>
-        <Header
-          style={{
-            position: "sticky",
-            top: 0,
-            zIndex: 1,
-            height: "auto",
-            width: "100%",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            background: "#0e83e3",
-          }}
-        >
+      <Layout style={{ backgroundColor: 'white', margin: "0", padding: "0" }}>
+        <Header class="header">
           <ScrollToTop />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           {/* Logo For CityPay */}
-          <Link to="/">
-            <div className="Logo Image">
-              <img
-                src={citypay}
-                alt="CityPayLogo"
-                style={{ paddingTop: "15px", height: "70px", width: "auto" }}
-              />
-            </div>
-          </Link>
           {/* Navbar Import */}
           <div className="navbar_bot">
             <Navbar selectedKey="1" />
           </div>
         </Header>
+
         <Content style={{ padding: "0 48px" }}>
           {/* Define Routes for Page */}
           <Routes>
             <Route
-              path="/"
+              exact path="/"
               element={
-                <div>
-                    <div
-                      style={{
-                        flex: "3",
-                        marginRight: "48px",
-                        maxWidth: "95vw",
-                      }}
-                    >
-                      <div
-                        style={{
-                          maxHeight: "900px",
-                          maxWidth: "86vw",
-                          backgroundColor: "black",
-                        }}
-                      >
-                        <CarouselItem />
+                <div class="body-container">
+
+
+
+                  <div class="carousel-container">
+                    <CarouselItem />
+                  </div>
+
+                  {/* Section 1 */}
+
+                  <div class="Main-container">
+                    <div class="grid-1">
+                      <div className="title">
+                        <span class="highlight"> CityPay</span> <span class="lowlight">to Friends and Family</span>
                       </div>
-                      {/* Section 1 */}
-                      <div
-                        style={{
-                          // backgroundColor: "white",
-                          padding: "16px",
-                          marginBottom: "16px",
-                        }}
-                      >
-                        <div className="title">
-                          CityPay to Friends and Family
-                        </div>
-                        <div
-                          className="body"
-                          style={{
-                            display: "flex",
-                            justifyContent: "space-between",
-                          }}
-                        >
-                          <div className="landing-page-text">
-                            Some text
-                            <ReadMoreButton to={"/citypayfriendandfamily"}>
-                              Read more
-                            </ReadMoreButton>
-                          </div>
-                          <div className="landing-page-image">Image</div>
-                          <div className="bullet-text">
-                            <h2 style={{ textAlign: "center" }}>
-                              Fund Transfer to Friends and Family
-                            </h2>
-                            <p>
-                              Transfer funds to your friends or family using
-                              their phone number or the QR.
-                            </p>
-                            <h2 style={{ textAlign: "center" }}>
-                              Send or Request
-                            </h2>
-                            <p>
-                              You can send or request funds from one wallet to
-                              another.
-                            </p>
-                          </div>
-                        </div>
+                      <div className="landing-page-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor tortor, venenatis a arcu id, semper ultricies enim. Aliquam turpis tellus, venenatis sit amet mattis a, viverra ac lorem. In condimentum quam ut nibh congue fermentum. Duis quis pulvinar lectus, a aliquam massa.
                       </div>
-                      {/* Section 2 */}
-                      <div
-                        style={{
-                          // backgroundColor: "green",
-                          padding: "16px",
-                          marginBottom: "16px",
-                        }}
-                      >
-                        <div className="title">Remittance Services</div>
-                        <div
-                          className="body"
-                          style={{
-                            display: "flex",
-                            justifyContent: "space-between",
-                          }}
-                        >
-                          <div className="bullet-text">
-                            <h2 style={{ textAlign: "center" }}>
-                              Receive Remittance
-                            </h2>
-                            <p>
-                              Receive remittance directly in your CityPay wallet
-                              and track the payment status easily.
-                            </p>
-                            <h2 style={{ textAlign: "center" }}>
-                              Send Domestic Remittance
-                            </h2>
-                            <p>
-                              Send domestic remittance to any mobile number
-                              inside Nepal.
-                            </p>
-                            <h2 style={{ textAlign: "center" }}>
-                              Withdraw Cash
-                            </h2>
-                            <p>
-                              Withdraw cash using “Find Agents” on any part of
-                              Nepal.
-                            </p>
-                          </div>
-                          <div className="landing-page-image">Image</div>
-                          <div className="landing-page-text">
-                            Some text
-                            <ReadMoreButton to={"/remittance"}>
-                              Read more
-                            </ReadMoreButton>
-                          </div>
-                        </div>
+                    </div>
+
+                    <div class="grid-2">
+                      <div className="landing-page-image">
+                        <img src={bankvector} alt="bank" class="bankimage" />
                       </div>
-                      {/* Section 3 */}
-                      <div
-                        style={{
-                          // backgroundColor: "yellow",
-                          padding: "16px",
-                          marginBottom: "16px",
-                        }}
-                      >
-                        <div className="title">Bank Transfers</div>
-                        <div
-                          className="body"
-                          style={{
-                            display: "flex",
-                            justifyContent: "space-between",
-                          }}
-                        >
-                          <div className="landing-page-text">
-                            Some text
-                            <ReadMoreButton to={"/banktransfers"}>
-                              Read more
-                            </ReadMoreButton>
-                          </div>
-                          <div className="landing-page-image">Image</div>
-                          <div className="bullet-text">
-                            <h2 style={{ textAlign: "center" }}>
-                              Bank Transfer
-                            </h2>
-                            <p>
-                              Lets you transfer to and from any banks instantly
-                              all across Nepal.
-                            </p>
-                            <h2 style={{ textAlign: "center" }}>
-                              Co-operative Transfers
-                            </h2>
-                            <p>
-                              Helps you make transactions easier, faster and
-                              safer with real time deposits.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      {/* Section 4 */}
-                      <div
-                        style={{
-                          // backgroundColor: "red",
-                          padding: "16px",
-                          marginBottom: "16px",
-                        }}
-                      >
-                        <div className="title">Scan QR for payment</div>
-                        <div
-                          className="body"
-                          style={{
-                            display: "flex",
-                            justifyContent: "space-between",
-                          }}
-                        >
-                          <div className="landing-page-image">Image</div>
-                          <div
-                            className="landing-page-text"
-                            style={{
-                              paddingLeft: "50vw",
-                              textAlign: "justify",
-                            }}
-                          >
-                            Not just the QR code in our app but we have made it
-                            possible to pay your local businesses, stores,
-                            merchant's or any available QR. Just a simple scan
-                            and payment success.
-                            <ReadMoreButton to={"/scanQR"}>
-                              Read more
-                            </ReadMoreButton>
-                          </div>
-                        </div>
-                      </div>
-                      {/* Section 5 */}
-                      <div
-                        style={{
-                          // backgroundColor: "grey",
-                          padding: "16px",
-                          marginBottom: "16px",
-                        }}
-                      >
-                        <div className="title">Business Payments</div>
-                        <div
-                          className="body"
-                          style={{
-                            display: "flex",
-                            justifyContent: "space-between",
-                          }}
-                        >
-                          <div className="landing-page-text">
-                            Some text
-                            <ReadMoreButton to={"/businesspayments"}>
-                              Read more
-                            </ReadMoreButton>
-                          </div>
-                          <div className="landing-page-image">Image</div>
-                          <div className="bullet-text">
-                            <h2 style={{ textAlign: "center" }}>
-                              Pay in stores
-                            </h2>
-                            <p>
-                              No searching or cash or change. Just pay with a
-                              simple scan from CityPay QR.
-                            </p>
-                            <h2 style={{ textAlign: "center" }}>
-                              Pay in Apps and online
-                            </h2>
-                            <p>
-                              You can pay to any online businesses or apps with
-                              the amount in your Citypay Wallet.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        style={{
-                          backgroundColor: "black",
-                          padding: "16px",
-                          marginBottom: "16px",
-                          maxWidth: "95vw",
-                        }}
-                      >
-                        <div className="title">Perks</div>
-                        <Row gutter={16}>
-                          <Col span={8}>
-                            <Card title="More Reward Points" bordered={false}>
-                              Card content
-                            </Card>
-                          </Col>
-                          <Col span={8}>
-                            <Card title="Mobile Topup Perks" bordered={false}>
-                              Card content
-                            </Card>
-                          </Col>
-                          <Col span={8}>
-                            <Card title="Free Transactions" bordered={false}>
-                              Card content
-                            </Card>
-                          </Col>
-                        </Row>
-                      </div>
-                      <div
-                        style={{
-                          // backgroundColor: "cyan",
-                          padding: "16px",
-                          marginBottom: "16px",
-                        }}
-                      >
-                        <div className="title">Watch the basics</div>
-                        <div
-                          style={{
-                            maxHeight: "900px",
-                            maxWidth: "85vw",
-                            backgroundColor: "black",
-                          }}
-                        >
-                          <YTCarouselItem />
-                        </div>
+                    </div>
+
+                    <div class="grid-3">
+                      <div className="bullet-text">
+                        <h2>
+                          Fund Transfer to Friends and Family
+                        </h2>
+                        <p>
+                          Fund transfer has never been easier and secure, with CityPay.<br></br>Transfer funds to your friends or family using
+                          their phone number or the QR.
+                        </p>
+                        <h2>
+                          Send or Request
+                        </h2>
+                        <p>
+                          You can send or request funds from one wallet to
+                          another.
+                        </p>
                       </div>
                     </div>
                   </div>
+
+                  {/* Section 2 */}
+
+                  <div class="mid-container">
+                    <div class="grid-1">
+                      <div className="title">
+                        <span class="remittance">
+                          <span class="highlight">Remittance<span class="lesslight" style={{ color: "#0D60B5", }}> Services
+                          </span></span>
+                        </span>
+                      </div>
+                      <div className="bullet-text">
+                        <h2>
+                          Receive Remittance
+                        </h2>
+                        <p>
+                          Receive remittance directly in your CityPay wallet
+                          and track the payment status easily.
+                        </p>
+                        <h2>
+                          Send Domestic Remittance
+                        </h2>
+                        <p>
+                          Send domestic remittance to any mobile number
+                          inside Nepal.
+                        </p>
+                        <h2>
+                          Withdraw Cash
+                        </h2>
+                        <p>
+                          Withdraw cash using “Find Agents” on any part of
+                          Nepal.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="grid-2">
+                      <div className="landing-page-image">
+                        <img src={cashinhand} alt="cash" class="bankimage" />
+                      </div>
+                    </div>
+                    <div class="grid-3">
+                      <div className="landing-page-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor tortor, venenatis a arcu id, semper ultricies enim. Aliquam turpis tellus, venenatis sit amet mattis a, viverra ac lorem. In condimentum quam ut nibh congue fermentum. Duis quis pulvinar lectus, a aliquam massa.
+
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Section 3 */}
+
+                  <div class="lower-container">
+                    <div class="grid-1">
+                      <div className="title">
+                        <span class="highlight">Bank Transfers</span>
+                      </div>
+                      <div className="landing-page-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor tortor, venenatis a arcu id, semper ultricies enim. Aliquam turpis tellus, venenatis sit amet mattis a, viverra ac lorem. In condimentum quam ut nibh congue fermentum. Duis quis pulvinar lectus, a aliquam massa.
+
+                      </div>
+                    </div>
+                    <div class="grid-2">
+                      <div className="landing-page-image">
+                        <img src={cityexpress} alt="express" class="bankimage" />
+                      </div>
+                    </div>
+                    <div class="grid-3">
+                      <div className="bullet-text">
+                        <h2>
+                          Bank Transfer
+                        </h2>
+                        <p>
+                          Lets you transfer to and from any banks instantly
+                          all across Nepal.
+                        </p>
+                        <h2>
+                          Co-operative Transfers
+                        </h2>
+                        <p>
+                          Helps you make transactions easier, faster and
+                          safer with real time deposits.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Section 4 */}
+
+                  <div class="fourth-container">
+                    <div class="grid-1">
+                      <div className="title">
+                        <span class="highlight">Scan QR</span><span class="lowlight"> for payment</span>
+                      </div>
+                      <div className="landing-page-text">
+                        Not just the QR code in our app but we have made it
+                        possible to pay your local businesses, stores,
+                        merchant's or any available QR. Just a simple scan
+                        and payment success.
+
+                      </div>
+                    </div>
+                    <div class="grid-2">
+                      <div className="landing-page-image">
+                        <img src={cell} alt="express" class="cell" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="fifth-container">
+
+                    <div class="grid-1">
+                      <div className="title">
+                        <span class="business">Business Payments</span>
+                      </div>
+                      <div className="landing-page-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor tortor, venenatis a arcu id, semper ultricies enim. Aliquam turpis tellus, venenatis sit amet mattis a, viverra ac lorem. In condimentum quam ut nibh congue fermentum. Duis quis pulvinar lectus, a aliquam massa.
+
+                      </div>
+                    </div>
+
+                    <div class="grid-2">
+                      <div className="landing-page-image">
+                        <img src={bank} alt="bank" class="bankimage" />
+                      </div>
+                    </div>
+
+                    <div class="grid-3">
+                      <div className="bullet-text">
+                        <h2>
+                          Pay in stores
+                        </h2>
+                        <p>
+                          No searching or cash or change. Just pay with a
+                          simple scan from CityPay QR.
+                        </p>
+                        <h2>
+                          Pay in Apps and online
+                        </h2>
+                        <p>
+                          You can pay to any online businesses or apps with
+                          the amount in your Citypay Wallet.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="perks">
+                    <div className="title">
+                      <h1>Perks</h1>
+                    </div>
+
+                    <div className="sub-heading">
+
+                      <div className="rewards">
+                        <h2>More Reward Points</h2>
+                        <p>Embark on an exciting journey with City Wallet and unlock a world of exclusive perks! Begin your adventure by earning 10 points simply by signing in. Boost your account security and stature with an exhilarating 50 point when you complete the KYC verification process. Sharing the City Wallet experience is not only fulfilling but also rewarding <br></br>
+                          Earn a thrilling 25 points for every successful referral</p>
+                      </div>
+
+                      <div className="top-up">
+                        <h2>Mobile Topup Thrills</h2>
+                        <p>Recharge your mobile phone with City Wallet and experience the joy of 3.5% cashback on NTC top-ups. We're not just a wallet; We're your passport to saving and conveniences. Enjoy your passport to saving and convenience. Enjoy the seamless process of topping up your phone and witnessing the exciting cashback rewards that follow.</p>
+                      </div>
+
+                      <div className="redefine">
+                        <h2>Convenience Redefined</h2>
+                        <p>Dive deeper into the City Wallet experience with seamless utility payments. Settle bills effortlessly, from electricity to water, all within the City Wallet platform. And for those cross-border moments, enjoy the ease of sending and receiving money with our integrated remittance services. <br></br>City Wallet -the thrilling blend of rewards savings, and convenienve awaits you!</p>
+                      </div>
+                    </div>
+
+                  </div>
+
+
+
+                  <div class="vid-container">
+                    <div className="title" id="watchyt"><span class="basics">Watch the basics</span>
+                      <img src={youtube} alt="youtube" class="youtube"></img>
+                    </div>
+
+                    <div className="sub">
+
+                      <div className="card">
+                        <img src={atm} alt="atm-img" class="atm"></img>
+                        <h2>ATM Card</h2>
+                      </div>
+
+                      <div className="you">
+                        <img src={ytb} alt="yt-img" class="atm"></img>
+                        <h2>YouTube Tutorials</h2>
+                      </div>
+
+                      <div className="coin">
+                        <img src={coin} alt="coin-img" class="atm"></img>
+                        <h2>Get Coins</h2>
+                      </div>
+
+                    </div>
+                    {/* <YTCarouselItem /> */}
+                  </div>
+
+                </div>
               }
             />
+
+            {/* PAGE ROUTES */}
             <Route
               path="/contact"
               element={
@@ -387,7 +329,7 @@ const App = () => {
               }
             />
             <Route
-              path="/services"
+              path="/Services"
               element={
                 <div>
                   <ServicesPage />
@@ -395,55 +337,7 @@ const App = () => {
               }
             />
             <Route
-              path="/businesspayments"
-              element={
-                <div>
-                  <BusinessPayments />
-                </div>
-              }
-            />
-            <Route
-              path="/remittance"
-              element={
-                <div>
-                  <Remittance />
-                </div>
-              }
-            />
-            <Route
-              path="/scanQR"
-              element={
-                <div>
-                  <ScanQR />
-                </div>
-              }
-            />
-            <Route
-              path="/citypayfriendandfamily"
-              element={
-                <div>
-                  <CitypayFriendandFamily />
-                </div>
-              }
-            />
-            <Route
-              path="/banktransfers"
-              element={
-                <div>
-                  <BankTransfer />
-                </div>
-              }
-            />
-            <Route
-              path="/news/*"
-              element={
-                <div>
-                  <NewsPage />
-                </div>
-              }
-            />
-            <Route
-              path="/blog/*"
+              path="/Blog"
               element={
                 <div>
                   <BlogPage />
@@ -467,6 +361,14 @@ const App = () => {
               }
             />
             <Route
+              path="/news"
+              element={
+                <div>
+                  <NewsPage />
+                </div>
+              }
+            />
+            <Route
               path="/legal"
               element={
                 <div>
@@ -484,10 +386,12 @@ const App = () => {
             />
           </Routes>
         </Content>
+        <script src="C:/citipay/citypay-web/src/scrollscript.js"></script>
         <Footer />
       </Layout>
     </Router>
   );
 };
+
 
 export default App;

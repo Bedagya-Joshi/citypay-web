@@ -1,26 +1,16 @@
 import React from "react";
 import { Carousel } from "antd";
-
-const contentStyle = {
-  color: "#fff",
-  lineHeight: "360px",
-  textAlign: "center",
-  background: "#364d79",
-};
+import './carousel.css';
 
 const YTCarouselItem = () => (
-  <Carousel autoplay dotPosition="bottom">
-    <div>
-      <h3 style={contentStyle}>First Slide</h3>
+  <Carousel autoplay autoplaySpeed={2000} effect="fade" speed={400} dotPosition="bottom">
+    <div class="carousel1">First Slide
     </div>
-    <div>
-      <h3 style={contentStyle}>Second Slide</h3>
+    <div class="carousel1"> Second Slide
     </div>
-    <div>
-      <h3 style={contentStyle}>Third Slide</h3>
+    <div class="carousel1"> Third Slide
     </div>
-    <div>
-      <h3 style={contentStyle}>Fourth Slide</h3>
+    <div class="carousel1"> Fourth Slide
     </div>
   </Carousel>
 );

@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Menu } from "antd";
 import { Link, useLocation } from "react-router-dom";
+import "./navbar.css";
+import { GiRocketThruster } from "react-icons/gi";
+import { FaBars, FaCross, FaTimes } from "react-icons/fa";
+import { IconContext } from "react-icons/lib";
 
+import citypay from "../Assets/citypay_logo.png";
 import AndDownload from "../Assets/gplay.png";
 import IOSDownload from "../Assets/apple_pay.png";
+import { navItems } from "../utils/constants.js";
+import { FaHamburger } from "react-icons/fa";
+// import { divIcon } from "leaflet";
+// import { divIcon } from "leaflet";
+// import { divIcon } from "leaflet";
 
 const Navbar = () => {
   const location = useLocation();
@@ -14,141 +24,87 @@ const Navbar = () => {
 
   const selectedKeys = [location.pathname];
   const isHomepage = location.pathname === "/";
+  const [burgerActive, setBurgerActive] = useState(false);
+
+  const renderNavItems = (item) => {
+    return (
+      <div className="navBarItemsContainer">
+        <div
+          className="itemsContainer"
+          selectedKeys={isHomepage ? [] : selectedKeys}
+        >
+          <Link to={item.path}>{item.name}</Link>
+        </div>
+      </div>
+    );
+  };
+
+  // burger menu 
+  const burgerNavItems = (item) => {
+    return(
+      <div className="navModal">
+        <div
+          className="burgerItemsContainer"
+          selectedKeys={isHomepage ? [] : selectedKeys}
+        >
+          <Link to={item.path}>{item.name}</Link>
+        </div>
+      </div>
+    )
+  }
+
+  const handleMenuClick = () => {
+    if (burgerActive === false) {
+      setBurgerActive(true);
+    } else {
+      setBurgerActive(false);
+    }
+  };
 
   return (
-    <Menu
-      theme="dark"
-      mode="horizontal"
-      selectedKeys={isHomepage ? [] : selectedKeys}
-      style={{
-        flex: 1,
-        minWidth: 0,
-        background: "#0e83e3",
-      }}
-    >
-      <div
-        className="navbarItems"
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          flexWrap: "nowrap",
-          alignContent: "center",
-          alignItems: "center",
-          justifyContent: "space-between",
-          gap: "20px",
-        }}
-      >
-        {/* {hello} */}
-        <Link
-          to="/"
-          style={{
-            color: "white",
-            textDecoration: "none",
-            transition: "color 0.3s",
-          }}
-        >
-          <h4 className="navbarItems">Home</h4>
-        </Link>
-        <Link
-          to="/about"
-          style={{
-            color: "white",
-            textDecoration: "none",
-            transition: "color 0.3s",
-          }}
-        >
-          <h4 className="navbarItems">About</h4>
-        </Link>
-        <Link
-          to="/services"
-          style={{
-            color: "white",
-            textDecoration: "none",
-            transition: "color 0.3s",
-          }}
-        >
-          <h4 className="navbarItems">Services</h4>
-        </Link>
-        <Link
-          to="/blog"
-          style={{
-            color: "white",
-            textDecoration: "none",
-            transition: "color 0.3s",
-          }}
-        >
-          <h4 className="navbarItems">Blog</h4>
-        </Link>
-        <Link
-          to="/news"
-          style={{
-            color: "white",
-            textDecoration: "none",
-            transition: "color 0.3s",
-          }}
-        >
-          <h4 className="navbarItems">News And Events</h4>
-        </Link>
-        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-        <a
-          href="#"
-          onClick={handleAgentSignupClick}
-          style={{
-            color: "white",
-            textDecoration: "none",
-            transition: "color 0.3s",
-          }}
-        >
-          <h4 className="navbarItems">Agent Signup</h4>
-        </a>
+    <>
+      <div className="navMenu">
+        <div className="Logo-Image">
+          <img src={citypay} alt="CityPayLogo" />
+        </div>
+        <div className="hamburgerIconContainer" onClick={handleMenuClick}>
+          {burgerActive ? <FaTimes /> : <FaBars />} 
+        </div>
+        {navItems.map((item, index) => renderNavItems(item, index))}
+        <div onClick={handleAgentSignupClick}>Agent Signup</div>
         <button
+          class="playstore"
           onClick={() =>
             window.open(
               "https://play.google.com/store/apps/details?id=com.ctxpress.citypay",
               "_blank"
             )
           }
-          style={{
-            border: "none",
-            background: "none",
-            cursor: "pointer",
-            padding: 0,
-          }}
         >
-          <img
-            src={AndDownload}
-            alt="Android Download"
-            style={{
-              height: "45px",
-              width: "130px",
-            }}
-          />
+          <img src={AndDownload} alt="Android Download" />
         </button>
         <button
+          class="appstore"
           onClick={() =>
             window.open(
               "https://apps.apple.com/nz/app/citypay-nepal/id1643110573",
               "_blank"
             )
           }
-          style={{
-            border: "none",
-            background: "none",
-            cursor: "pointer",
-            padding: 0,
-          }}
         >
-          <img
-            src={IOSDownload}
-            alt="IOS Download"
-            style={{
-              height: "45px",
-              width: "130px",
-            }}
-          />
+          <img src={IOSDownload} alt="IOS Download" />
         </button>
       </div>
-    </Menu>
+      {burgerActive ? (
+        <div className="navModal">
+          {/* <div class="burgerInactiveClass"> */}
+            {navItems.map((item, index) => burgerNavItems(item))}
+          {/* </div> */}
+        </div>
+      ) : (
+        <div></div>
+      )}
+    </>
   );
 };
 
