@@ -32,7 +32,11 @@ h2 {
 }
 
 .box-container {
+<<<<<<< HEAD
     margin-top: 20px;
+=======
+margin-top: 20px;
+>>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
 }
 
 .sub-heading {
@@ -132,9 +136,15 @@ p {
         height: 700px;
     }
 
+<<<<<<< HEAD
     .box-container {
         height: 75vh;
     }
+=======
+.box-container {
+    height: 75vh;
+}
+>>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
 
     .sub-heading {
         display: grid;
@@ -257,6 +267,12 @@ p {
     }
 
 
+<<<<<<< HEAD
+=======
+    .div-con
+
+
+>>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
     .sub-heading {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -1003,12 +1019,20 @@ p {
     .what {
         width: 340px;
         height: 350px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
     }
 
     .mission {
         width: 340px;
         height: 350px;
         margin-left: -1px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
     }
 
     .vision {
@@ -1217,7 +1241,11 @@ p {
 }
 
 
+<<<<<<< HEAD
 @media(width<=520px) {
+=======
+@media(width<=476px) {
+>>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
     .containter {
         width: 400px;
         height: 700px;
@@ -1229,7 +1257,11 @@ p {
         column-gap: 20px;
         margin-bottom: 25px;
         align-items: center;
+<<<<<<< HEAD
         padding: 10px 10px 10px 20px;
+=======
+        padding: 20px 20px 20px 10px;
+>>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
     }
 
     .what, .mission, .vision, .Innovation, .Reliability, .approach {
@@ -1248,37 +1280,58 @@ p {
     .what {
         width: 340px;
         height: 350px;
+<<<<<<< HEAD
         margin-left: -30px;
+=======
+
+>>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
     }
 
     .mission {
         width: 340px;
         height: 350px;
+<<<<<<< HEAD
         margin-left: -30px;
+=======
+        margin-left: -1px;
+
+>>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
     }
 
     .vision {
         width: 340px;
         height: 350px;
+<<<<<<< HEAD
         margin-left: -30px;
+=======
+>>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
     }
 
     .Innovation {
         width: 340px;
         height: 350px;
+<<<<<<< HEAD
         margin-left: -30px;
+=======
+>>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
     }
 
     .Reliability {
         width: 340px;
         height: 350px;
+<<<<<<< HEAD
         margin-left: -30px;
+=======
+>>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
     }
 
     .approach {
         width: 340px;
         height: 350px;
+<<<<<<< HEAD
         margin-left: -30px;
+=======
+>>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
     }
 
     .what p {
@@ -1311,6 +1364,10 @@ p {
         font-weight: 400;
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8b4e98f1b03e08f15f03f792c25265af51e2a771
     .promotors {
         /* box-shadow: 1px 5px 15px 3px grey; */
         /* margin-top: 20px; */
