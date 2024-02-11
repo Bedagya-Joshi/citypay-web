@@ -1,18 +1,18 @@
 export const navItems = [
   {
-    name: "Home",
+    name: "House",
     path: "/",
     alt: "Homepage",
     active: true,
   },
   {
-    name: "About",
+    name: "About US",
     path: "/about",
     alt: "Homepage",
     active: true,
   },
   {
-    name: "Services",
+    name: "Services By Us",
     path: "/services",
     alt: "Homepage",
     active: true,
@@ -32,6 +32,12 @@ export const navItems = [
   {
     name: "News And Events",
     path: "/news",
+    alt: "Homepage",
+    active: true,
+  },
+  {
+    name: "Agent Signup",
+    path: "https://agent.citywallet.com.np/auth/signup",
     alt: "Homepage",
     active: true,
   },

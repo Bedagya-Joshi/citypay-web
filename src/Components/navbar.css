@@ -69,6 +69,7 @@ nav{
 }
 
 .playstore img {
+  border-radius: 5px;
   height: 45px;
   width: 130px;
 }
@@ -86,6 +87,13 @@ nav{
 }
 
 /* new navbar */
+
+.downloadButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
 
 .burgerInactiveClass {
   border: 1px solid green;
@@ -141,6 +149,10 @@ nav{
 }
 
 @media screen and (max-width: 720px) {
+  .downloadButtons {
+    display: none;
+  }
+
   .itemsContainer {
     display: none;
   }
@@ -153,12 +165,15 @@ nav{
   }
 
   .hamburgerIconContainer {
+    z-index: 1;
     display: flex;
-    width: 100%;
-    justify-content: flex-end;
+    width: 720px;
+    justify-content: space-between;
     align-items: center;
     color: white;
+    /* background-color: white; */
     height: auto;
+    padding-left: 50px;
   }
   .burgerActiveClass {
     border: 1px solid blue;
@@ -196,9 +211,9 @@ nav{
   }
 }
 
-@media screen and (min-width: 720px) {
-  .burgerActiveClass {
-    /* border: 1px solid blue;
+/* @media screen and (min-width: 720px) { */
+/* .burgerActiveClass { */
+/* border: 1px solid blue;
     width: 100%;
     height: 100%;
     display: flex;
@@ -207,9 +222,9 @@ nav{
     align-items: center;
     justify-content: center;
     color: white; */
-    /* display: none; */
-  }
-}
+/* display: none; */
+/* } */
+/* } */
 /* 
 .navModal {
   height: auto;
