@@ -38,13 +38,6 @@ import ScrollToTop from "./Components/ScrollToTop";
 
 const { Header, Content } = Layout;
 
-
-const isValidURL = (pathname) => {
-  return /^\/(about|contact|services|blog|faq|ourTeam|news|legal|downloads)\/?$/.test(
-    pathname.toLowerCase()
-  );
-};
-
 const App = () => {
 
   return (
