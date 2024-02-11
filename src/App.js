@@ -36,14 +36,9 @@ const { Header, Content } = Layout;
 const App = () => {
   return (
     <Router>
-<<<<<<< HEAD
-      <Layout style={{ backgroundColor: 'blue', margin: "0", padding: "0" }}>
-        <Header class="header">
-=======
        <Layout  class="mainLayout">
         <Header class="header">  
  
->>>>>>> origin/anurag-test
           <ScrollToTop />
           <meta
             name="viewport"

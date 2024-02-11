@@ -150,10 +150,11 @@ nav{
   .downloadButtons {
     display: none;
   }
+
   .navMenu {
     /* gap: 1px; */
     width: 100%;
-    justify-content: ;
+    justify-content: center;
     align-items: center;
   }
 }
@@ -166,6 +167,7 @@ nav{
   .itemsContainer {
     display: none;
   }
+
   .navBarItemsContainer {
     display: none;
   }
@@ -188,6 +190,7 @@ nav{
     height: auto;
     padding-left: 50px;
   }
+
   .burgerActiveClass {
     border: 1px solid blue;
     width: 100%;
@@ -199,6 +202,7 @@ nav{
     justify-content: center;
     color: white;
   }
+
   .navModal {
     height: auto;
     width: 100%;
