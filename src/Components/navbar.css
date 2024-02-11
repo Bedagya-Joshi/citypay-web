@@ -1,58 +1,78 @@
-.menu{
-    /* flex: 1; */
+/* navbar.css */
+
+.menu {
     min-width: 0;
-    background: #0e83e3;
+    /* background: #0e83e3; */
+    overflow-x: hidden;
+    /* Hide horizontal overflow */
 }
 
-.navbarItems{
+.navbarItems {
     display: flex;
-    flex-direction: row;
-    /* flex-wrap: nowrap; */
-    align-content: center;
     align-items: center;
     justify-content: space-between;
-    border: none;
-    gap: 50px;
+    padding: 0 20px;
+    max-width: 100%;
+    /* Limit maximum width to 100% of the viewport */
+    margin: 0 auto;
+    /* Center the navbar horizontally */
 }
-.Logo-Image{
-    padding-top: 15px;
+
+.Logo-Image {
     height: 90px;
-    width: 90pX;
-    margin-left: 15px;       
 }
 
-.Logo-Image img{
-    width: 90px;
+.Logo-Image img {
     height: 80px;
+    width: auto;
 }
 
-.nav-about{
+.nav-about {
     color: white;
     text-decoration: none;
+    padding: 10px 15px;
     transition: color 0.3s;
 }
 
-.playstore{
+.playstore,
+.appstore {
     border: none;
     background: none;
     cursor: pointer;
     padding: 0;
+    margin: 0 10px;
 }
 
-.playstore img{
-    height: 45px;
-    width: 130px;
+.playstore img,
+.appstore img {
+    height: 30px;
+    width: auto;
 }
 
-.appstore{
-    border: none;
-    background: none;
-    cursor: pointer;
-    padding: 0;
-}
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .navbarItems {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
 
-.appstore img{
-    height: 45px;
-    width: 130px;
-}
+    .Logo-Image {
+        height: 50px;
+    }
 
+    .Logo-Image img {
+        height: 90px;
+        width: auto;
+    }
+
+    .nav-about {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .playstore,
+    .appstore {
+        margin: 5px 0;
+    }
+}

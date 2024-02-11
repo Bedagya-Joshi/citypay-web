@@ -1,5 +1,9 @@
 import React, { useState, useEffect, Component } from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom";
 import { Layout, theme, Button, Card, Col, Row } from "antd";
 import "./App.css";
 
@@ -33,6 +37,13 @@ import Footer from "./Components/Footer";
 import ScrollToTop from "./Components/ScrollToTop";
 
 const { Header, Content } = Layout;
+
+
+const isValidURL = (pathname) => {
+  return /^\/(about|contact|services|blog|faq|ourTeam|news|legal|downloads)\/?$/.test(
+    pathname.toLowerCase()
+  );
+};
 
 const App = () => {
 
@@ -333,7 +344,7 @@ const App = () => {
             />
 
             {/* PAGE ROUTES */}
-            
+
             <Route
               path="/contact"
               element={

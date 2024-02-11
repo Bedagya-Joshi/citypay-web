@@ -18,6 +18,12 @@ export const navItems = [
     active: true,
   },
   {
+    name: "Contact Us",
+    path: "/",
+    alt: "Homepage",
+    active: true,
+  },
+  {
     name: "Blog",
     path: "/",
     alt: "Homepage",
