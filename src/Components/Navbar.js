@@ -39,9 +39,9 @@ const Navbar = () => {
     );
   };
 
-  // burger menu 
+  // burger menu
   const burgerNavItems = (item) => {
-    return(
+    return (
       <div className="navModal">
         <div
           className="burgerItemsContainer"
@@ -50,8 +50,8 @@ const Navbar = () => {
           <Link to={item.path}>{item.name}</Link>
         </div>
       </div>
-    )
-  }
+    );
+  };
 
   const handleMenuClick = () => {
     if (burgerActive === false) {
@@ -68,37 +68,44 @@ const Navbar = () => {
           <img src={citypay} alt="CityPayLogo" />
         </div>
         <div className="hamburgerIconContainer" onClick={handleMenuClick}>
-          {burgerActive ? <FaTimes /> : <FaBars />} 
+        <div className="Logo-Image">
+          <img src={citypay} alt="CityPayLogo" />
+        </div>
+          {burgerActive ? <FaTimes /> : <FaBars />}
         </div>
         {navItems.map((item, index) => renderNavItems(item, index))}
-        <div onClick={handleAgentSignupClick}>Agent Signup</div>
-        <button
-          class="playstore"
-          onClick={() =>
-            window.open(
-              "https://play.google.com/store/apps/details?id=com.ctxpress.citypay",
-              "_blank"
-            )
-          }
-        >
-          <img src={AndDownload} alt="Android Download" />
-        </button>
-        <button
-          class="appstore"
-          onClick={() =>
-            window.open(
-              "https://apps.apple.com/nz/app/citypay-nepal/id1643110573",
-              "_blank"
-            )
-          }
-        >
-          <img src={IOSDownload} alt="IOS Download" />
-        </button>
+        {/* <div onClick={handleAgentSignupClick}>Agent Signup</div> */}
+        
+        <div class="downloadButtons">
+          <button
+            class="playstore"
+            onClick={() =>
+              window.open(
+                "https://play.google.com/store/apps/details?id=com.ctxpress.citypay",
+                "_blank"
+              )
+            }
+          >
+            <img src={AndDownload} alt="Android Download" />
+          </button>
+          <button
+            class="appstore"
+            onClick={() =>
+              window.open(
+                "https://apps.apple.com/nz/app/citypay-nepal/id1643110573",
+                "_blank"
+              )
+            }
+          >
+            <img src={IOSDownload} alt="IOS Download" />
+          </button>
+        </div>
+
       </div>
       {burgerActive ? (
         <div className="navModal">
           {/* <div class="burgerInactiveClass"> */}
-            {navItems.map((item, index) => burgerNavItems(item))}
+          {navItems.map((item, index) => burgerNavItems(item))}
           {/* </div> */}
         </div>
       ) : (
