@@ -43,7 +43,7 @@ const App = () => {
 
   return (
     <Router>
-      <Layout style={{ backgroundColor: 'white', margin: "0", padding: "0" }}>
+      <Layout style={{ backgroundColor: 'blue', margin: "0", padding: "0" }}>
         <Header class="header">
           <ScrollToTop />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />

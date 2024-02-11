@@ -1463,27 +1463,33 @@ h4.navbarItems:hover {
     margin-left: 70px;
   }
 
-  .navbarItems .Logo-Image img {
-    width: 70%;
-    height: 70%;
-    margin-left: 10px;
+  .navMenu .Logo-Image img {
+    width: 99%;
+    height: 99%;
+    margin-left: 40px;
   }
 
-  .navbarItems .nav-about {
-    margin-left: -35px;
+  .navMenu {
+    margin-left: 75px;
   }
 
-  .navbarItems .playstore img {
-    margin-left: -5px;
+  .navMenu a {
+    margin-left: -08px;
+  }
+
+  .navMenu .playstore img {
+    margin-left: 0px;
     border-radius: 5px;
     width: 90px;
+    display: none;
   }
 
-  .navbarItems .appstore img {
+  .navMenu .appstore img {
     margin-left: -25px;
     width: 85px;
     border-radius: 5px;
-    margin-right: 15px;
+    margin-right: 0px;
+    display: none;
   }
 
   .Main-container, .mid-container, .lower-container, .fourth-container, .fifth-container {
@@ -1816,6 +1822,7 @@ h4.navbarItems:hover {
 
   .carousel-container {
     height: auto;
+    display: none;
     width: 600px;
   }
 }
