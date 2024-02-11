@@ -129,7 +129,7 @@ nav{
   display: flex;
   padding: 16px;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   gap: 20px;
   color: white;
 }
@@ -153,7 +153,8 @@ nav{
   .navMenu {
     /* gap: 1px; */
     width: 100%;
-    justify-content: space-between;
+    justify-content: ;
+    align-items: center;
   }
 }
 
@@ -179,7 +180,7 @@ nav{
   .hamburgerIconContainer {
     z-index: 1;
     display: flex;
-    width: 720px;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     color: white;

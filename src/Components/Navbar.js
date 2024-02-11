@@ -68,9 +68,9 @@ const Navbar = () => {
           <img src={citypay} alt="CityPayLogo" />
         </div>
         <div className="hamburgerIconContainer" onClick={handleMenuClick}>
-          <div className="Logo-Image">
+          {/* <div className="Logo-Image">
             <img src={citypay} alt="CityPayLogo" />
-          </div>
+          </div> */}
           {burgerActive ? <FaTimes /> : <FaBars />}
         </div>
         {navItems.map((item, index) => renderNavItems(item, index))}
