@@ -1,20 +1,18 @@
-import AndDownload from "../Assets/gplay.png";
-
 export const navItems = [
   {
-    name: "Home",
+    name: "House",
     path: "/",
     alt: "Homepage",
     active: true,
   },
   {
-    name: "About",
+    name: "About US",
     path: "/about",
     alt: "Homepage",
     active: true,
   },
   {
-    name: "Services",
+    name: "Services By Us",
     path: "/services",
     alt: "Homepage",
     active: true,
@@ -43,12 +41,4 @@ export const navItems = [
     alt: "Homepage",
     active: true,
   },
-  // {
-  //   name: "Download App",
-  //   imageUrl: AndDownload,
-  //   alt: "Download App",
-  //   url: "https://apps.apple.com/nz/app/citypay-nepal/id1643110573",
-  //   isExternal: true,
-  // }
-
 ];
