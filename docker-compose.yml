@@ -11,13 +11,3 @@ services:
     environment:
       - NODE_ENV=production
     restart: always
-
-  nginx:
-    build:
-      context: .
-      dockerfile: Dockerfile.nginx
-    ports:
-      - "80:80"
-    depends_on:
-      - web
-    restart: always
