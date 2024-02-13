@@ -51,7 +51,7 @@ const BlogPage = () => {
         index
         element={
           <main>
-            {loading && <div className="loading-container"><h2 className="loading-header">Loading...</h2></div>}
+            {loading && <div className="loading-container"><h1 className="loading-header">Loading...</h1></div>}
             {!loading && blogs.length === 0 && (
               <div className="no-blogs-container"><h1 className="noblogs">No blogs found.</h1></div>
             )}
@@ -83,7 +83,7 @@ const BlogPage = () => {
           </main>
         }
       />
-      <Route path=":postId" element={<FullPost />} />
+      <Route path=":postId" element={<FullPost/>} />
     </Routes>
   );
 };

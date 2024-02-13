@@ -63,6 +63,7 @@ const Navbar = () => {
           <img src={citypay} alt="CityPayLogo" />
         </div>
         <div className="hamburgerIconContainer" onClick={handleMenuClick}>
+
           <div class="download">
             <button
               class="playstore"
@@ -94,7 +95,7 @@ const Navbar = () => {
         </div>
         {navItems.map((item, index) => renderNavItems(item, index))}
         {/* <div onClick={handleAgentSignupClick}>Agent Signup</div> */}
-        
+
         <div class="downloadButtons">
           <button
             class="playstore"
@@ -119,7 +120,6 @@ const Navbar = () => {
             <img src={IOSDownload} alt="IOS Download" />
           </button>
         </div>
-
       </div>
       {burgerActive ? (
         <div className="navModal">

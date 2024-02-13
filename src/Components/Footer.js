@@ -3,7 +3,6 @@ import React from "react";
 import { Layout } from "antd";
 import { Link } from "react-router-dom";
 
-
 //Import Assets
 import fb_logo from "../Assets/fb_logo.png";
 import ig_logo from "../Assets/ig_logo.png";
@@ -12,7 +11,6 @@ import qrcode from "../Assets/QRcode.jpeg";
 import "../App.css";
 
 // import MapComponent from "./MapComponent";
-
 
 const { Footer } = Layout;
 
@@ -26,12 +24,12 @@ const CustomFooter = () => {
         backgroundColor: "white",
         justifyContent: "space-around",
         // borderTop:"1px solid black",
-        boxShadow:"1px 60px 100px 1px grey"
+        boxShadow: "1px 60px 100px 1px grey",
       }}
     >
       <div
         className="Logo Image"
-        style={{ display: "flex", flexDirection: "column", gap:"10px" }}
+        style={{ display: "flex", flexDirection: "column", gap: "10px" }}
       >
         <img
           src={citypay}
@@ -48,8 +46,8 @@ const CustomFooter = () => {
         className="ContactUs"
         style={{
           fontFamily: "catamaran, sans-serif",
-          fontSize:"15px",
-          fontWeight:"Medium",
+          fontSize: "15px",
+          fontWeight: "Medium",
           display: "flex",
           flexDirection: "column",
           alignItems: "flex-start",
@@ -66,17 +64,15 @@ const CustomFooter = () => {
         <div
           style={{
             fontFamily: "catamaran, sans-serif",
-            fontSize:"17px",
-            fontWeight:"Bold",
+            fontSize: "17px",
+            fontWeight: "Bold",
             marginTop: "50px",
             textAlign: "center",
             justifyContent: "space-between",
           }}
         >
           {/* Implement map */}
-          <div className="Map">
-            {/* <MapComponent /> */}
-          </div>
+          <div className="Map">{/* <MapComponent /> */}</div>
           <div>Connect with us:</div>
           <a
             href="https://www.facebook.com/citypaydigital"
