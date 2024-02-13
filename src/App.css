@@ -12,22 +12,22 @@
 }
 
 .body {
-  /* display: flex; */
+  display: flex;
   width: 100%;
   /* justify-content: center; */
   /* align-items: center; */
 }
 
-/* blog page starts here */
-/* 
-.text {
-  width: 100%;
-} */
+div.post,
+div.news {
+  display: flex;
+  padding: 10px;
+}
 
 div.post div.info,
 div.news div.info {
-  /* margin: 5px;  */
-  /* gap: 10px; */
+  margin: 5px;
+  gap: 10px;
   color: #888;
   display: flex;
   font-weight: bold;
@@ -40,8 +40,16 @@ div.news div.info a.author {
 
 div.post p.summary,
 div.news p.summary {
-  /* margin: 10px 0; */
-  /* line-height: 1.4rem; */
+  margin: 10px 0;
+  line-height: 1.4rem;
+}
+
+.image-container {
+  margin-right: 16px;
+  width: 1500px;
+  height: 300px;
+  /* width: 400px;
+  height: 400px; */
 }
 
 /* css for app.js starts here */
@@ -59,7 +67,7 @@ div.news p.summary {
   background-color: white;
   margin: 0px;
   padding: 0px;
-  width: 100%;
+  max-width: 100%;
 }
 
 .learn-more-btn {
@@ -92,12 +100,11 @@ div.news p.summary {
 
 .Main-container {
   background-color: white;
-  /* padding: 85px; */
+  padding: 85px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   margin: 0;
-  width: 100%;
 }
 
 .Main-container .grid-2 .landing-page-image .bankimage {
@@ -108,7 +115,7 @@ div.news p.summary {
 .grid-1,
 .grid-2,
 .grid-3 {
-  width: 100%;
+  width: 336px;
   height: auto;
   border: none;
   font-family: "Work Sans";
@@ -153,9 +160,8 @@ div.news p.summary {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 16px;
-  /* padding: 85px; */
+  padding: 85px;
   margin: 0;
-  width: 100%;
 }
 
 .lower-container .grid-2 .landing-page-image .bankimage {
@@ -187,7 +193,6 @@ div.news p.summary {
   padding: 85px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
   gap: 16px;
   margin: 0;
 }
@@ -616,19 +621,19 @@ h4.navbarItems:hover {
     font-size: medium;
   }
 
-  .navbMenu .Logo-Image img {
-    margin-right: 0px;
+  .navMenu .Logo-Image img {
+    margin-right: 20px;
   }
 
   .navMenu .playstore img {
-    margin-left: 10px;
+    margin-left: -10px;
     border-radius: 5px;
     width: 120px;
     height: 40px;
   }
 
   .navMenu .appstore img {
-    margin-left: -25px;
+    margin-left: -5px;
     width: 120px;
     height: 45px;
     border-radius: 5px;
@@ -641,7 +646,6 @@ h4.navbarItems:hover {
   .fourth-container,
   .fifth-container {
     grid-template-columns: repeat(3, 1fr);
-    width: 100%;
   }
 
   .perks {
@@ -669,16 +673,16 @@ h4.navbarItems:hover {
   }
 
   .navMenu .playstore img {
-    margin-left: 10px;
+    margin-left: -10px;
     border-radius: 5px;
     width: 100px;
     height: 35px;
   }
 
   .navMenu .appstore img {
-    margin-left: -25px;
+    margin-left: -5px;
     width: 100px;
-    height: 40px;
+    height: 38px;
     border-radius: 5px;
     margin-right: 50px;
   }
@@ -689,7 +693,6 @@ h4.navbarItems:hover {
   .fourth-container,
   .fifth-container {
     grid-template-columns: repeat(3, 1fr);
-    width: 100%;
   }
 
   .Main-container .title {
@@ -755,16 +758,16 @@ h4.navbarItems:hover {
   }
 
   .navMenu .playstore img {
-    margin-left: 10px;
+    margin-left: -25px;
     border-radius: 5px;
-    width: 100px;
-    height: 35px;
+    width: 90px;
+    height: 30px;
   }
 
   .navMenu .appstore img {
-    margin-left: -25px;
-    width: 100px;
-    height: 38px;
+    margin-left: -5px;
+    width: 90px;
+    height: 35px;
     border-radius: 5px;
     margin-right: 50px;
   }
@@ -775,7 +778,6 @@ h4.navbarItems:hover {
   .fourth-container,
   .fifth-container {
     grid-template-columns: repeat(3, 1fr);
-    width: 100%;
   }
 
   .Main-container .title {
@@ -829,26 +831,26 @@ h4.navbarItems:hover {
   }
 
   .navMenu a {
-    font-size: medium;
+    font-size: small;
   }
 
   .navMenu .Logo-Image img {
-    margin-left: 15px;
+    margin-left: 18px;
   }
 
   .navMenu .playstore img {
-    margin-left: 5px;
+    margin-left: -25px;
     border-radius: 5px;
-    width: 100px;
-    height: 35px;
+    width: 90px;
+    height: 30px;
   }
 
   .navMenu .appstore img {
-    margin-left: -25px;
-    width: 100px;
-    height: 38px;
+    margin-left: -5px;
+    width: 90px;
+    height: 35px;
     border-radius: 5px;
-    margin-right: 60px;
+    margin-right: 50px;
   }
 
   .Main-container,
@@ -857,7 +859,6 @@ h4.navbarItems:hover {
   .fourth-container,
   .fifth-container {
     grid-template-columns: 2fr, 2fr;
-    width: 100%;
   }
 
   .Main-container .title {
@@ -1103,22 +1104,24 @@ h4.navbarItems:hover {
   }
 
   .navMenu .Logo-Image img {
-    margin-left: 20px;
+    margin-left: 35px;
+    width: 75px;
+    height: 75px;
   }
 
   .navMenu .playstore img {
-    margin-left: 5px;
+    margin-left: -25px;
     border-radius: 5px;
-    width: 95px;
-    height: 35px;
+    width: 90px;
+    height: 30px;
   }
 
   .navMenu .appstore img {
-    margin-left: -25px;
-    width: 95px;
-    height: 38px;
+    margin-left: -5px;
+    width: 90px;
+    height: 35px;
     border-radius: 5px;
-    margin-right: 70px;
+    margin-right: 50px;
   }
 
   .Main-container,
@@ -1127,7 +1130,6 @@ h4.navbarItems:hover {
   .fourth-container,
   .fifth-container {
     grid-template-columns: 2fr 2fr;
-    width: 100%;
   }
 
   .Main-container .grid-1 {
@@ -1372,40 +1374,33 @@ h4.navbarItems:hover {
     width: 650px;
     margin-left: 115px;
   }
-  .navMenu {
-    width: 100%;
-  }
 
-  img {
-    width: 100%;
+  .navMenu .Logo-Image img {
+    margin-left: 45px;
+    margin-top: 5px;
+    width: 65px;
+    height: 65px;
   }
 
   .navMenu a {
-    font-size: small;
-    margin-left: -20px;
-  }
-
-  .navMenu .Logo-Image img {
-    margin-left: 50px;
-    width: 65px;
-    height: 65px;
-    margin-top: 8px;
+    margin-left: -45px;
   }
 
   .navMenu .playstore img {
-    margin-left: -40px;
+    margin-left: -55px;
     border-radius: 5px;
-    width: 95px;
-    height: 35px;
+    width: 90px;
+    height: 30px;
   }
 
   .navMenu .appstore img {
-    margin-left: -45px;
-    width: 95px;
-    height: 38px;
+    margin-left: -5px;
+    width: 90px;
+    height: 35px;
     border-radius: 5px;
     margin-right: 70px;
   }
+
 
   .Main-container,
   .mid-container,
@@ -1413,15 +1408,6 @@ h4.navbarItems:hover {
   .fourth-container,
   .fifth-container {
     grid-template-columns: 2fr 2fr;
-    width: 100%;
-    padding: 0;
-  }
-
-  .grid-1,
-  .grid-2,
-  .grid-3 {
-    width: 100%;
-    margin: 0;
   }
 
   .sub-heading {
@@ -1502,27 +1488,39 @@ h4.navbarItems:hover {
     margin-left: 70px;
   }
 
-  .navbarItems .Logo-Image img {
-    width: 70%;
-    height: 70%;
-    margin-left: 10px;
+  .navMenu .Logo-Image img {
+    margin-left: 22px;
+    margin-top: 5px;
+    width: 75px;
+    height: 75px;
   }
 
-  .navbarItems .nav-about {
-    margin-left: -35px;
+  .navMenu {
+    margin-left: 225px;
+    margin-right: 0px;
   }
 
-  .navbarItems .playstore img {
+  .navMenu a {
+    margin-left: auto;
+    margin-right: 0px;
+    font-size: 1.45vh;
+  }
+
+  .navMenu .playstore img {
     margin-left: -5px;
+    margin-bottom: 50px;
     border-radius: 5px;
-    width: 90px;
+    width: 9.6vh;
+    height: 3.5vh;
   }
 
-  .navbarItems .appstore img {
-    margin-left: -25px;
-    width: 85px;
+  .navMenu .appstore img {
+    margin-left: -98px;
+    margin-top: 45px;
+    width: 9.5vh;
+    height: 3.65vh;
     border-radius: 5px;
-    margin-right: 15px;
+    margin-right: 270px;
   }
 
   .Main-container,
@@ -1531,7 +1529,6 @@ h4.navbarItems:hover {
   .fourth-container,
   .fifth-container {
     grid-template-columns: 2fr 2fr;
-    width: 100%;
   }
 
   .sub-heading {
@@ -1612,31 +1609,40 @@ h4.navbarItems:hover {
     margin-left: 20px;
   }
 
-  .navMenu a {
-    font-size: x-small;
-    margin-left: -10px;
-  }
-
   .navMenu .Logo-Image img {
     margin-left: 50px;
-    width: 65px;
-    height: 65px;
-    margin-top: 8px;
+    margin-top: 5px;
+    width: 68px;
+    height: 68px;
+  }
+
+  .navMenu {
+    margin-left: 255px;
+    margin-right: 25px;
+  }
+
+  .navMenu a {
+    margin-left: auto;
+    margin-right: 0px;
+    font-size: 1.4vh;
   }
 
   .navMenu .playstore img {
-    margin-left: -60px;
+    margin-left: -35px;
+    margin-bottom: 45px;
+    margin-top: 5px;
     border-radius: 5px;
-    width: 95px;
-    height: 35px;
+    width: 9.6vh;
+    height: 3.5vh;
   }
 
   .navMenu .appstore img {
-    margin-left: -45px;
-    width: 95px;
-    height: 38px;
+    margin-left: -98px;
+    margin-top: 40px;
+    width: 9.5vh;
+    height: 3.65vh;
     border-radius: 5px;
-    margin-right: 70px;
+    margin-right: 300px;
   }
 
   .Main-container,
@@ -1645,13 +1651,6 @@ h4.navbarItems:hover {
   .fourth-container,
   .fifth-container {
     grid-template-columns: 2fr 2fr;
-    width: 100%;
-  }
-  .grid-1,
-  .grid-2,
-  .grid-3 {
-    width: 100%;
-    margin: 0;
   }
 
   .sub-heading {
@@ -1734,11 +1733,11 @@ h4.navbarItems:hover {
     font-size: smaller;
   }
 
-  .ant-layout-footer .Connect {
+  .Connect {
     font-size: smaller;
   }
 
-  .ant-layout-footer .ContactUs {
+  .ContactUs {
     font-size: smaller;
   }
 }
@@ -1749,50 +1748,50 @@ h4.navbarItems:hover {
     margin-left: 20px;
   }
 
-  .carousel-container {
-    display: none;
+  .navMenu .Logo-Image img {
+    margin-left: 55px;
+    margin-top: 6px;
+    width: 65px;
+    height: 65px;
   }
 
-  .navbarItems .Logo-Image img {
-    width: 70%;
-    height: 70%;
-    margin-left: 20px;
+  .navMenu {
+    margin-left: 318px;
+    margin-right: 55px;
+    height: 95px;
   }
 
-  .navbarItems .nav-about {
-    margin-left: -45px;
-    font-size: smaller;
+  .navMenu a {
+    margin-left: auto;
+    margin-right: 0px;
+    font-size: 1.3vh;
   }
 
-  .navbarItems .playstore img {
-    margin-left: -10px;
+  .navMenu .playstore img {
+    margin-left: -22px;
+    margin-bottom: 45px;
+    margin-top: 5px;
     border-radius: 5px;
-    width: 80px;
-    height: 30px;
+    width: 8.9vh;
+    height: 3.6vh;
   }
 
-  .navbarItems .appstore img {
-    margin-left: -25px;
-    width: 80px;
-    height: 30px;
+  .navMenu .appstore img {
+    margin-left: -94px;
+    margin-top: 40px;
+    width: 8.9vh;
+    height: 3.7vh;
     border-radius: 5px;
-    margin-right: 115px;
+    margin-right: 350px;
   }
+
 
   .Main-container,
   .mid-container,
   .lower-container,
-  .fifth-container,
   .fourth-container {
     grid-template-columns: 1fr;
-    width: 100%;
   }
-  /* .grid-1,
-    .grid-2,
-    .grid-3 {
-      width: 100%;
-      margin: 0;
-    } */
 
   .Main-container .grid-1 {
     margin-left: 50px;
@@ -1813,13 +1812,12 @@ h4.navbarItems:hover {
   }
 
   .mid-container .grid-2 {
-    /* margin-left: 140px; */
-    /* margin-top: -140px; */
-    width: 100%;
+    margin-left: 140px;
+    margin-top: -140px;
   }
 
   .mid-container .grid-3 .landing-page-text {
-    /* margin-left: 120px; */
+    margin-left: 120px;
     margin-top: 90px;
   }
 
@@ -1890,10 +1888,53 @@ h4.navbarItems:hover {
   }
 }
 
-@media (width<=715px) {
+@media (width<=720px) {
   .body-container {
     width: 650px;
     margin-left: 10px;
+  }
+
+  .navMenu {
+    height: 98px;
+  }
+
+  .navMenu .Logo-Image img {
+    width: 90px;
+    height: 90px;
+    margin-top: -8px;
+    margin-left: 155px;
+  }
+
+  .hamburgerIconContainer .Logo-Image img {
+    display: none;
+  }
+
+  .hamburgerIconContainer {
+    margin-right: 275px;
+  }
+
+  .hamburgerIconContainer svg {
+    height: 1.7em;
+    width: 3.3em;
+  }
+
+  .download .playstore img {
+    margin-left: 320px;
+    margin-right: -1px;
+    border-radius: 5px;
+    width: 125px;
+    height: 45px;
+    margin-bottom: -33px;
+  }
+
+  .download .appstore img {
+    margin-left: 175px;
+    width: 120px;
+    height: 45px;
+    border-radius: 5px;
+    margin-right: 95px;
+    margin-top: -16px;
+    margin-bottom: -8px;
   }
 
   .Main-container,
@@ -1901,7 +1942,6 @@ h4.navbarItems:hover {
   .lower-container,
   .fourth-container {
     grid-template-columns: 1fr;
-    width: 100%;
   }
 
   .Main-container .grid-1 {
@@ -2014,9 +2054,65 @@ h4.navbarItems:hover {
   }
 
   .carousel-container {
-    height: auto;
-    width: 550px;
+    height: 5px;
+    width: 0px;
   }
+
+  .carousel-container img.carouselimage {
+    display: none;
+  }
+}
+
+@media (width<=640px) {
+
+  .navMenu .Logo-Image img {
+    width: 85px;
+    height: 85px;
+    margin-top: -5px;
+    margin-left: 215px;
+  }
+
+  .navMenu {
+    height: 98px;
+  }
+
+  .hamburgerIconContainer .Logo-Image img {
+    display: none;
+  }
+
+  .hamburgerIconContainer {
+    margin-right: 275px;
+  }
+
+  .hamburgerIconContainer svg {
+    height: 1.5em;
+    width: 3.3em;
+    margin-right: 60px;
+  }
+
+  .download {
+    margin-left: 40px;
+  }
+
+  .download .playstore img {
+    margin-left: 320px;
+    margin-right: -1px;
+    border-radius: 5px;
+    width: 125px;
+    height: 45px;
+    margin-bottom: -33px;
+  }
+
+  .download .appstore img {
+    margin-left: 175px;
+    width: 120px;
+    height: 45px;
+    border-radius: 5px;
+    margin-right: 95px;
+    margin-top: -16px;
+    margin-bottom: -8px;
+  }
+
 }
 
 @media (width<=600px) {
@@ -2025,18 +2121,55 @@ h4.navbarItems:hover {
     margin-left: 10px;
   }
 
+  .navMenu .Logo-Image img {
+    width: 80px;
+    height: 80px;
+    margin-top: -1px;
+    margin-left: 248px;
+  }
+
+  .hamburgerIconContainer .Logo-Image img {
+    display: none;
+  }
+
+  .hamburgerIconContainer {
+    margin-right: 275px;
+  }
+
+  .hamburgerIconContainer svg {
+    height: 1.5em;
+    width: 3.3em;
+    margin-right: 75px;
+  }
+
+  .download {
+    margin-left: 50px;
+  }
+
+  .download .playstore img {
+    margin-left: 320px;
+    margin-right: -1px;
+    border-radius: 5px;
+    width: 125px;
+    height: 45px;
+    margin-bottom: -33px;
+  }
+
+  .download .appstore img {
+    margin-left: 175px;
+    width: 120px;
+    height: 45px;
+    border-radius: 5px;
+    margin-right: 95px;
+    margin-top: -16px;
+    margin-bottom: -8px;
+  }
+
   .Main-container,
   .mid-container,
   .lower-container,
   .fourth-container {
     grid-template-columns: 1fr;
-    width: 100%;
-  }
-  .grid-1,
-  .grid-2,
-  .grid-3 {
-    width: 100%;
-    margin: 0;
   }
 
   .Main-container {
@@ -2176,13 +2309,102 @@ h4.navbarItems:hover {
   }
 }
 
+
+@media (width<=540px) {
+
+  .navMenu .Logo-Image img {
+    width: 80px;
+    height: 80px;
+    margin-top: -1px;
+    margin-left: 280px;
+  }
+
+  .hamburgerIconContainer .Logo-Image img {
+    display: none;
+  }
+
+  .hamburgerIconContainer {
+    margin-right: 325px;
+  }
+
+  .hamburgerIconContainer svg {
+    height: 1.5em;
+    width: 3.3em;
+    margin-right: 5p8x;
+  }
+
+  .download {
+    margin-left: 75px;
+  }
+
+  .download .playstore img {
+    margin-left: 320px;
+    margin-right: -1px;
+    border-radius: 5px;
+    width: 115px;
+    height: 38px;
+    margin-bottom: -31px;
+  }
+
+  .download .appstore img {
+    margin-left: 175px;
+    width: 110px;
+    height: 38px;
+    border-radius: 5px;
+    margin-right: 95px;
+    margin-top: -16px;
+    margin-bottom: -8px;
+  }
+}
+
 @media (width<=480px) {
   .body-container {
     width: 650px;
     margin-left: 10px;
   }
-  .navMenu {
-    width: 100%;
+
+  .navMenu .Logo-Image img {
+    width: 80px;
+    height: 80px;
+    margin-top: -1px;
+    margin-left: 330px;
+  }
+
+  .hamburgerIconContainer .Logo-Image img {
+    display: none;
+  }
+
+  .hamburgerIconContainer {
+    margin-right: 365px;
+  }
+
+  .hamburgerIconContainer svg {
+    height: 1.5em;
+    width: 3.3em;
+    margin-right: 85px;
+  }
+
+  .download {
+    margin-left: 75px;
+  }
+
+  .download .playstore img {
+    margin-left: 330px;
+    margin-right: -1px;
+    border-radius: 5px;
+    width: 110px;
+    height: 38px;
+    margin-bottom: -31px;
+  }
+
+  .download .appstore img {
+    margin-left: 205px;
+    width: 110px;
+    height: 38px;
+    border-radius: 5px;
+    margin-right: 95px;
+    margin-top: -16px;
+    margin-bottom: -8px;
   }
 
   .Main-container,
@@ -2190,13 +2412,6 @@ h4.navbarItems:hover {
   .lower-container,
   .fourth-container {
     grid-template-columns: 1fr;
-    width: 100%;
-  }
-  .grid-1,
-  .grid-2,
-  .grid-3 {
-    width: 100%;
-    margin: 0;
   }
 
   .Main-container .grid-1,
@@ -2343,5 +2558,52 @@ h4.navbarItems:hover {
   .carousel-container {
     height: auto;
     width: 550px;
+  }
+}
+
+@media (width<=420px) {
+
+  .navMenu .Logo-Image img {
+    width: 70px;
+    height: 70px;
+    margin-top: 3px;
+    margin-left: 380px;
+  }
+
+  .hamburgerIconContainer .Logo-Image img {
+    display: none;
+  }
+
+  .hamburgerIconContainer {
+    margin-right: 415px;
+  }
+
+  .hamburgerIconContainer svg {
+    height: 1.5em;
+    width: 3.3em;
+    margin-right: 85px;
+  }
+
+  .download {
+    margin-left: 75px;
+  }
+
+  .download .playstore img {
+    margin-left: 350px;
+    margin-right: -1px;
+    border-radius: 5px;
+    width: 90px;
+    height: 35px;
+    margin-bottom: -31px;
+  }
+
+  .download .appstore img {
+    margin-left: 250px;
+    width: 90px;
+    height: 35px;
+    border-radius: 5px;
+    margin-right: 95px;
+    margin-top: -16px;
+    margin-bottom: -8px;
   }
 }

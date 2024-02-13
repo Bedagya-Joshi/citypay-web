@@ -24,12 +24,12 @@ const CustomFooter = () => {
         backgroundColor: "white",
         justifyContent: "space-around",
         // borderTop:"1px solid black",
-        boxShadow: "1px 60px 100px 1px grey",
+        boxShadow:"1px 60px 100px 1px grey"
       }}
     >
       <div
         className="Logo Image"
-        style={{ display: "flex", flexDirection: "column", gap: "10px" }}
+        style={{ display: "flex", flexDirection: "column", gap:"10px" }}
       >
         <img
           src={citypay}
@@ -46,8 +46,8 @@ const CustomFooter = () => {
         className="ContactUs"
         style={{
           fontFamily: "catamaran, sans-serif",
-          fontSize: "15px",
-          fontWeight: "Medium",
+          fontSize:"15px",
+          fontWeight:"Medium",
           display: "flex",
           flexDirection: "column",
           alignItems: "flex-start",
@@ -55,24 +55,26 @@ const CustomFooter = () => {
           justifyContent: "space-between",
         }}
       >
-        <div>Email:citypaywallet@gmail.com</div>
-        <div>Tel No:+977 23213123321</div>
-        <div>Toll Free:+128321412412</div>
-        <div>Location: Kamaladi, Kathmandu, Nepal</div>
+        <div class="infos">Email:citypaywallet@gmail.com</div>
+        <div class="infos">Tel No:+977 23213123321</div>
+        <div class="infos">Toll Free:+128321412412</div>
+        <div class="infos">Location: Kamaladi, Kathmandu, Nepal</div>
       </div>
       <div className="Connect">
         <div
           style={{
             fontFamily: "catamaran, sans-serif",
-            fontSize: "17px",
-            fontWeight: "Bold",
+            fontSize:"17px",
+            fontWeight:"Bold",
             marginTop: "50px",
             textAlign: "center",
             justifyContent: "space-between",
           }}
         >
           {/* Implement map */}
-          <div className="Map">{/* <MapComponent /> */}</div>
+          <div className="Map">
+            {/* <MapComponent /> */}
+          </div>
           <div>Connect with us:</div>
           <a
             href="https://www.facebook.com/citypaydigital"

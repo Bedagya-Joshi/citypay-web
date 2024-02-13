@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Layout } from "antd";
 import "./App.css";
+import "./Components/footer.css";
 
 //Assets Import
 import bankvector from "./Assets/request.jpg";
@@ -36,8 +37,9 @@ const { Header, Content } = Layout;
 const App = () => {
   return (
     <Router>
-      <Layout class="mainLayout">
-        <Header class="header">
+       <Layout  class="mainLayout">
+        <Header class="header">  
+ 
           <ScrollToTop />
           <meta
             name="viewport"
@@ -357,7 +359,7 @@ const App = () => {
               }
             />
             <Route
-              path="/blog/*"
+              path="/Blog"
               element={
                 <div>
                   <BlogPage />
@@ -381,7 +383,7 @@ const App = () => {
               }
             />
             <Route
-              path="/news/*"
+              path="/news"
               element={
                 <div>
                   <NewsPage />
