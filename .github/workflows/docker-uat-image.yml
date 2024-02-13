@@ -27,5 +27,5 @@ jobs:
 
       - name: Push Docker Image to Registry
         run: |
-          docker tag citypay:latest ${{ secrets.DUSERNAME }}/citytest:latest
+          docker tag citytest:latest ${{ secrets.DUSERNAME }}/citytest:latest
           docker push ${{ secrets.DUSERNAME }}/citytest:latest
