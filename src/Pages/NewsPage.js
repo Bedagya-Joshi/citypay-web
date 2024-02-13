@@ -3,8 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import client from "../services/sanityClient";
 import News from "../News/News";
 import FullNews from "../News/FullNews";
-import "../App.css";
-import "../Blog/post.css";
+import "../App.css"; 
 
 const NEWS_PER_PAGE = 6;
 
@@ -38,6 +37,7 @@ const NewsPage = () => {
         setLoading(false);
       }
     };
+
 
     fetchNews();
   }, []);
