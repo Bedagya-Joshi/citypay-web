@@ -5,18 +5,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    image: bedagya/citypay:latest
     ports:
-      - "8080:3000"
+      - "8088:3000"
     environment:
       - NODE_ENV=production
-    restart: always
-
-  nginx:
-    build:
-      context: .
-      dockerfile: Dockerfile.nginx
-    ports:
-      - "80:80"
-    depends_on:
-      - web
     restart: always
