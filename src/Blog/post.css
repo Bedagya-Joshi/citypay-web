@@ -37,6 +37,8 @@ div.news {
   width: auto;
   height: 300px;
   margin: 0;
+  /* margin-bottom: 40px; */
+  padding: 30px;
 }
 
 .post-container {
