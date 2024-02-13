@@ -3,7 +3,6 @@ import React from "react";
 import { Layout } from "antd";
 import { Link } from "react-router-dom";
 
-
 //Import Assets
 import fb_logo from "../Assets/fb_logo.png";
 import ig_logo from "../Assets/ig_logo.png";
@@ -12,7 +11,6 @@ import qrcode from "../Assets/QRcode.jpeg";
 import "../App.css";
 
 // import MapComponent from "./MapComponent";
-
 
 const { Footer } = Layout;
 
