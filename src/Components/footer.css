@@ -1,18 +1,13 @@
 * {
-
     margin: 0;
     padding: 0;
 }
-
-
 
 .Logo Image {
     display: "flex";
     flex-direction: "column";
     gap: "10px"
 }
-
-
 
 .ContactUs {
     font-family: "catamaran, sans-serif";
@@ -26,15 +21,14 @@
 }
 
 
-.infos
-        {
-        font-family: "catamaran, sans-serif";
-            font-Size:"17px";
-            font-weight:"Bold";
-            margin-top: "50px";
-            text-align: "center";
-            justify-content: "space-between";
-    }
+.infos {
+    font-family: "catamaran, sans-serif";
+    font-Size: "17px";
+    font-weight: "Bold";
+    margin-top: "50px";
+    text-align: "center";
+    justify-content: "space-between";
+}
 
 
 .NavBar Content {
@@ -51,4 +45,3 @@
     align-items: "flex-end";
     justify-content: "space-between";
 }
-
