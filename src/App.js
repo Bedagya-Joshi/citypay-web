@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Layout } from "antd";
 import "./App.css";
+import "./Components/footer.css";
 
 //Assets Import
 import bankvector from "./Assets/request.jpg";

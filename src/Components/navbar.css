@@ -173,6 +173,15 @@ nav{
     display: none;
   }
 
+  .carousel-container {
+    height: 5px;
+    width: 0px;
+  }
+
+  .carousel-container img.carouselimage {
+    display: none;
+  }
+
   .burgerItemsContainer {
     display: flex;
     flex-direction: column;
@@ -191,6 +200,7 @@ nav{
     height: auto;
     padding-left: 50px;
   }
+
   .burgerActiveClass {
     border: 1px solid blue;
     width: 100%;
@@ -202,6 +212,7 @@ nav{
     justify-content: center;
     color: white;
   }
+
   .navModal {
     height: auto;
     width: 100%;

@@ -1,0 +1,54 @@
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.Logo Image {
+    display: "flex";
+    flex-direction: "column";
+    gap: "10px"
+}
+
+
+
+.ContactUs {
+    font-family: "catamaran, sans-serif";
+    font-size: "15px";
+    font-weight: "Medium";
+    display: "flex";
+    flex-direction: "column";
+    align-items: "flex-start";
+    column-gap: "5px";
+    justify-content: "space-between";
+}
+
+
+.infos
+        {
+        font-family: "catamaran, sans-serif";
+            font-Size:"17px";
+            font-weight:"Bold";
+            margin-top: "50px";
+            text-align: "center";
+            justify-content: "space-between";
+    }
+
+
+.NavBar Content {
+
+    display: "flex";
+    flex-Direction: "column";
+    align-items: "flex-end";
+    justify-content: "space-between";
+}
+
+.Footer {
+    display: "flex";
+    flex-direction: "column";
+    align-items: "flex-end";
+    justify-content: "space-between";
+}
+
