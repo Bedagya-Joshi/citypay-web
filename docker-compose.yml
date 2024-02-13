@@ -6,17 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8080:3000"
+      - "8088:3000"
     environment:
       - NODE_ENV=production
-    restart: always
-
-  nginx:
-    build:
-      context: .
-      dockerfile: Dockerfile.nginx
-    ports:
-      - "80:80"
-    depends_on:
-      - web
     restart: always
