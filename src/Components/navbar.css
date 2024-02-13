@@ -152,8 +152,9 @@ nav{
   }
   .navMenu {
     /* gap: 1px; */
-    width: 100%;
-    justify-content: ;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-around;
     align-items: center;
   }
 }
@@ -219,8 +220,10 @@ nav{
   }
 
   .navMenu {
-    max-width: 100%;
-    color: darkblue;
+    width: 100%;
+    color: red;
+    display: flex;
+    justify-content: space-around;
   }
 }
 
