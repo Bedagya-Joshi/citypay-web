@@ -5,6 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    image: bedagya/citypay:latest
     ports:
       - "8088:3000"
     environment:
