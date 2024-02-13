@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     image: bedagya/citypay:latest
     ports:
-      - "8080:3000"
+      - "8088:3000"
     environment:
       - NODE_ENV=production
     restart: always
