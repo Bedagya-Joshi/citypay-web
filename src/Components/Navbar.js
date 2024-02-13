@@ -24,7 +24,7 @@ const Navbar = () => {
   const renderNavItems = (item) => {
     return (
       <div className="navBarItemsContainer">
-        <div
+        <div 
           className="itemsContainer"
           selectedKeys={isHomepage ? [] : selectedKeys}
         >

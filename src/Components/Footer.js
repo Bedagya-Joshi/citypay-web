@@ -57,10 +57,10 @@ const CustomFooter = () => {
           justifyContent: "space-between",
         }}
       >
-        <div>Email:citypaywallet@gmail.com</div>
-        <div>Tel No:+977 23213123321</div>
-        <div>Toll Free:+128321412412</div>
-        <div>Location: Kamaladi, Kathmandu, Nepal</div>
+        <div class="infos">Email:citypaywallet@gmail.com</div>
+        <div class="infos">Tel No:+977 23213123321</div>
+        <div class="infos">Toll Free:+128321412412</div>
+        <div class="infos">Location: Kamaladi, Kathmandu, Nepal</div>
       </div>
       <div className="Connect">
         <div
