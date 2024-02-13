@@ -63,6 +63,30 @@ const Navbar = () => {
           <img src={citypay} alt="CityPayLogo" />
         </div>
         <div className="hamburgerIconContainer" onClick={handleMenuClick}>
+          <div class="download">
+            <button
+              class="playstore"
+              onClick={() =>
+                window.open(
+                  "https://play.google.com/store/apps/details?id=com.ctxpress.citypay",
+                  "_blank"
+                )
+              }
+            >
+              <img src={AndDownload} alt="Android Download" />
+            </button>
+            <button
+              class="appstore"
+              onClick={() =>
+                window.open(
+                  "https://apps.apple.com/nz/app/citypay-nepal/id1643110573",
+                  "_blank"
+                )
+              }
+            >
+              <img src={IOSDownload} alt="IOS Download" />
+            </button>
+          </div>
         <div className="Logo-Image">
           <img src={citypay} alt="CityPayLogo" />
         </div>
