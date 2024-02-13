@@ -18,16 +18,16 @@
   /* align-items: center; */
 }
 
-div.post,
-div.news {
-  display: flex;
-  padding: 10px;
-}
+/* blog page starts here */
+/* 
+.text {
+  width: 100%;
+} */
 
 div.post div.info,
 div.news div.info {
-  margin: 5px;
-  gap: 10px;
+  /* margin: 5px;  */
+  /* gap: 10px; */
   color: #888;
   display: flex;
   font-weight: bold;
@@ -40,16 +40,8 @@ div.news div.info a.author {
 
 div.post p.summary,
 div.news p.summary {
-  margin: 10px 0;
-  line-height: 1.4rem;
-}
-
-.image-container {
-  margin-right: 16px;
-  width: 1500px;
-  height: 300px;
-  /* width: 400px;
-  height: 400px; */
+  /* margin: 10px 0; */
+  /* line-height: 1.4rem; */
 }
 
 /* css for app.js starts here */
