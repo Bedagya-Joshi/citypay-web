@@ -1,6 +1,6 @@
-import React, { useState, useEffect, Component } from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import { Layout, theme, Button, Card, Col, Row } from "antd";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Layout } from "antd";
 import "./App.css";
 
 //Assets Import
@@ -27,11 +27,9 @@ import DownloadPage from "./Pages/DownloadPage";
 
 //Component Import
 import CarouselItem from "./Components/Carousel";
-import YTCarouselItem from "./Components/YoutubeCarousel";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import ScrollToTop from "./Components/ScrollToTop";
-import SizeContext from "antd/es/config-provider/SizeContext";
 
 const { Header, Content } = Layout;
 

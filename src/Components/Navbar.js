@@ -1,16 +1,11 @@
 import React, { useState } from "react";
-import { Menu } from "antd";
 import { Link, useLocation } from "react-router-dom";
 import "./navbar.css";
-import { GiRocketThruster } from "react-icons/gi";
-import { FaBars, FaCross, FaTimes } from "react-icons/fa";
-import { IconContext } from "react-icons/lib";
-
+import { FaBars, FaTimes } from "react-icons/fa";
 import citypay from "../Assets/citypay_logo.png";
 import AndDownload from "../Assets/gplay.png";
 import IOSDownload from "../Assets/apple_pay.png";
 import { navItems } from "../utils/constants.js";
-import { FaHamburger } from "react-icons/fa";
 // import { divIcon } from "leaflet";
 // import { divIcon } from "leaflet";
 // import { divIcon } from "leaflet";

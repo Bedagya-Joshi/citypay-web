@@ -1,14 +1,14 @@
 # Use the official Node.js image as the base image
-FROM node:14-alpine
+FROM node:14.17.6-alpine
 
 # Set the working directory in the container
-WORKDIR /src/
+WORKDIR /usr/src/app
 
 # Copy package.json and package-lock.json to the container
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install
+RUN npm install --production
 
 # Copy the rest of the application code to the container
 COPY . .
