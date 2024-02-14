@@ -23,7 +23,7 @@ import BlogPage from "./Pages/BlogPage";
 import NewsPage from "./Pages/NewsPage";
 import FAQPage from "./Pages/FAQPage";
 import OurTeamPage from "./Pages/OurTeamPage";
-import LegalPage from "./Pages/LegalPage";
+import LegalPage from "./Pages/LegalPage";f
 import DownloadPage from "./Pages/DownloadPage";
 
 //Component Import
