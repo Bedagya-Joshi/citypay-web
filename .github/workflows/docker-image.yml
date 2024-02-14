@@ -25,6 +25,10 @@ jobs:
       - name: Build Docker Image
         run: docker build . --file Dockerfile --tag citypay:latest
 
+      - name: Delete Previous Docker Image from Registry
+        run: |
+          docker image rm -f ${{ secrets.DUSERNAME }}/citypay:latest || true
+
       - name: Push Docker Image to Registry
         run: |
           docker tag citypay:latest ${{ secrets.DUSERNAME }}/citypay:latest
