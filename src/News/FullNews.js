@@ -2,7 +2,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import client from "../services/sanityClient";
-import "../App.css"
+// import "../App.css"
+import "../Blog/post.css";
 
 const FullNews = () => {
   const { newsId } = useParams();
@@ -21,15 +22,15 @@ const FullNews = () => {
             body,
           }`,
           { newsId }
-          );
-          console.log(newsResponse);
-          
-          const imageRef = newsResponse.mainImage.asset._ref;
-          const [, imageId, imageDim, imageExtension] = imageRef.split("-");
-          const imageUrl = `https://cdn.sanity.io/images/gfx5cjiu/production/${imageId}-${imageDim}.${imageExtension}`;
-          
-          setNews(newsResponse);
-          setImageURL(imageUrl);
+        );
+        console.log(newsResponse);
+
+        const imageRef = newsResponse.mainImage.asset._ref;
+        const [, imageId, imageDim, imageExtension] = imageRef.split("-");
+        const imageUrl = `https://cdn.sanity.io/images/gfx5cjiu/production/${imageId}-${imageDim}.${imageExtension}`;
+
+        setNews(newsResponse);
+        setImageURL(imageUrl);
       } catch (error) {
         console.error(error);
       }
@@ -61,14 +62,24 @@ const FullNews = () => {
   }
 
   return (
-    <div>
+    <div class="post-container">
       {news.mainImage && news.mainImage.asset && (
-        <img src={imageURL} alt={news.title} style={{ width: "450px", height:"auto" }} />
+        <div class="post-image">
+        <img
+          src={imageURL}
+          alt={news.title}
+          class="fullpost-image"
+        />
+        </div>
       )}
-      <h2>{news.title}</h2>
-      {news.author && <p>by {news.author.name}</p>}
-      <p>{new Date(news.publishedAt).toLocaleString()}</p>
-      {news.body && Array.isArray(news.body) && renderBlockContent(news.body)}
+      <div class="post-title">
+        <h2>{news.title}</h2>
+        {news.author && <p>by {news.author.name}</p>}
+        <p>{new Date(news.publishedAt).toLocaleString()}</p>
+      </div>
+      <div class="post-body">
+        {news.body && Array.isArray(news.body) && renderBlockContent(news.body)}
+      </div>
     </div>
   );
 };

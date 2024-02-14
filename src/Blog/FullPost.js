@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import client from "../services/sanityClient";
-import "../App.css"
+import "../App.css";
+import "./post.css";
 
 const FullPost = () => {
   const { postId } = useParams();
@@ -28,7 +29,6 @@ const FullPost = () => {
 
         setPost(postResponse);
         setImageURL(imageUrl);
-
       } catch (error) {
         console.error(error);
       }
@@ -62,12 +62,18 @@ const FullPost = () => {
   return (
     <div class="post-container">
       {post.mainImage && post.mainImage.asset && (
-        <img src={imageURL} alt={post.title}  class="fullpost-image" style={{ width: "450px", height: "auto" }} />
+        <div class="post-image">
+          <img src={imageURL} alt={post.title} class="fullpost-image" />
+        </div>
       )}
-      <h2>{post.title}</h2>
-      {post.author && <p>by {post.author.name}</p>}
-      <p>{new Date(post.publishedAt).toLocaleString()}</p>
-      {post.body && Array.isArray(post.body) && renderBlockContent(post.body)}
+      <div class="post-title">
+        <h2>{post.title}</h2>
+        {post.author && <p>by {post.author.name}</p>}
+        <p>{new Date(post.publishedAt).toLocaleString()}</p>
+      </div>
+      <div class="post-body">
+        {post.body && Array.isArray(post.body) && renderBlockContent(post.body)}
+      </div>
     </div>
   );
 };
