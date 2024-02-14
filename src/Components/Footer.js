@@ -24,30 +24,28 @@ const CustomFooter = () => {
         backgroundColor: "white",
         justifyContent: "space-around",
         // borderTop:"1px solid black",
-        boxShadow:"1px 60px 100px 1px grey"
+        boxShadow: "1px 60px 100px 1px grey"
       }}
     >
       <div
-        className="Logo Image"
-        style={{ display: "flex", flexDirection: "column", gap:"10px" }}
+        class="Logo-Image"
       >
         <img
           src={citypay}
-          alt="CityPayLogo"
-          style={{ height: "90px", width: "90px " }}
+          alt="CityPayLogo" class="footer-img"
         />
         <img
           src={qrcode}
-          alt="QR Scan"
-          style={{ height: "90px", width: "90px" }}
+          alt="QR Scan" class="footer-img"
         />
       </div>
+
       <div
         className="ContactUs"
         style={{
           fontFamily: "catamaran, sans-serif",
-          fontSize:"15px",
-          fontWeight:"Medium",
+          fontSize: "15px",
+          fontWeight: "Medium",
           display: "flex",
           flexDirection: "column",
           alignItems: "flex-start",
@@ -64,8 +62,8 @@ const CustomFooter = () => {
         <div
           style={{
             fontFamily: "catamaran, sans-serif",
-            fontSize:"17px",
-            fontWeight:"Bold",
+            fontSize: "17px",
+            fontWeight: "Bold",
             marginTop: "50px",
             textAlign: "center",
             justifyContent: "space-between",
@@ -75,25 +73,32 @@ const CustomFooter = () => {
           <div className="Map">
             {/* <MapComponent /> */}
           </div>
-          <div>Connect with us:</div>
-          <a
-            href="https://www.facebook.com/citypaydigital"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src={fb_logo}
-              alt="Facebook"
-              style={{ height: "45px", width: "45px", margin: "10px" }}
-            />
-          </a>
-          <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
-            <img
-              src={ig_logo}
-              alt="Instagram"
-              style={{ height: "45px", width: "45px", margin: "10px" }}
-            />
-          </a>
+          <div class="con">Connect with us:</div>
+          <div class="social">
+            <a
+              href="https://www.facebook.com/citypaydigital"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={fb_logo}
+                alt="Facebook" class="social-logo"
+
+              />
+
+            </a>
+
+            <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
+              <img
+                src={ig_logo}
+                alt="Instagram" class="social-logo"
+
+              />
+
+            </a>
+
+          </div>
+
         </div>
       </div>
       <div
