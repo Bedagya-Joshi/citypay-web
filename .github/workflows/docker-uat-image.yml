@@ -25,6 +25,10 @@ jobs:
       - name: Build Docker Image
         run: docker build . --file Dockerfile --tag citytest:latest
 
+      - name: Delete Previous Docker Image from Registry
+        run: |
+          docker image rm -f ${{ secrets.DUSERNAME }}/citytest:latest || true
+
       - name: Push Docker Image to Registry
         run: |
           docker tag citytest:latest ${{ secrets.DUSERNAME }}/citytest:latest
