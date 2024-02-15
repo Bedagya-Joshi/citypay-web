@@ -91,7 +91,7 @@ nav{
 .downloadButtons {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   gap: 20px;
 }
 
@@ -123,7 +123,7 @@ nav{
 }
 
 .navMenu {
-  width: 1190px;
+  width: 100%;
   font-family: "Work Sans";
   font-weight: 400;
   font-size: 20px;
@@ -154,6 +154,10 @@ nav{
   }
 
   .itemsContainer {
+    display: none;
+  }
+
+  .downloadButtons {
     display: none;
   }
 
