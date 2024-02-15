@@ -611,6 +611,24 @@ h4.navbarItems:hover {
   }
 }
 
+@media(width<=1323px) {
+  .Main-container {
+    padding: 40px;
+  }
+
+  .mid-container {
+    padding: 40px;
+  }
+
+  .lower-container {
+    padding: 40px;
+  }
+
+  .fifth-container {
+    padding: 40px;
+  }
+}
+
 @media (width<=1300px) {
   .body-container {
     width: 1000px;
@@ -659,6 +677,44 @@ h4.navbarItems:hover {
   .carousel-container {
     height: auto;
     width: 980px;
+  }
+}
+
+@media(width<=1268px) {
+  .Main-container {
+    padding: 10px;
+  }
+
+  .mid-container {
+    padding: 10px;
+  }
+
+  .lower-container {
+    padding: 10px;
+  }
+
+  .fifth-container {
+    padding: 10px;
+  }
+}
+
+@media(width<=1238px) {
+  .Main-container {
+    padding: 7px;
+    margin-right: 80px;
+  }
+
+  .mid-container {
+    padding: 7px;
+  }
+
+  .lower-container {
+    padding: 7px;
+    margin-right: 80px;
+  }
+
+  .fifth-container {
+    padding: 7px;
   }
 }
 
