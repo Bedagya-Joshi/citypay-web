@@ -91,7 +91,7 @@ nav{
 .downloadButtons {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   gap: 20px;
 }
 
@@ -112,7 +112,7 @@ nav{
 }
 
 .navBarItemsContainer {
-  /* border: 4px solid red; */
+  /* border: 4px solid blue; */
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -131,7 +131,7 @@ nav{
   display: flex;
   padding: 16px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 20px;
   color: white;
 }
@@ -148,19 +148,6 @@ nav{
   display: none;
 }
 
-@media screen and (max-width: 930px) {
-  .downloadButtons {
-    display: none;
-  }
-  .navMenu {
-    /* gap: 1px; */
-    /* width: 100%; */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-}
-
 @media screen and (max-width: 720px) {
   .downloadButtons {
     display: none;
@@ -169,7 +156,17 @@ nav{
   .itemsContainer {
     display: none;
   }
-  .navBarItemsContainer {
+
+  .downloadButtons {
+    display: none;
+  }
+
+  .carousel-container {
+    height: 5px;
+    width: 0px;
+  }
+
+  .carousel-container img.carouselimage {
     display: none;
   }
 
@@ -183,7 +180,7 @@ nav{
   .hamburgerIconContainer {
     z-index: 1;
     display: flex;
-    width: 100%;
+    width: 720px;
     justify-content: space-between;
     align-items: center;
     color: white;
@@ -191,6 +188,7 @@ nav{
     height: auto;
     padding-left: 50px;
   }
+
   .burgerActiveClass {
     border: 1px solid blue;
     width: 100%;
@@ -202,6 +200,7 @@ nav{
     justify-content: center;
     color: white;
   }
+
   .navModal {
     height: auto;
     width: 100%;
@@ -215,6 +214,7 @@ nav{
     justify-content: space-evenly;
     gap: 20px;
     background-color: #0e83e3;
+    padding-bottom: 10px;
   }
 
   .navModal a {
@@ -222,10 +222,8 @@ nav{
   }
 
   .navMenu {
-    width: 100%;
-    color: red;
-    display: flex;
-    justify-content: space-around;
+    max-width: 100%;
+    color: darkblue;
   }
 }
 
