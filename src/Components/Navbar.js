@@ -12,11 +12,6 @@ import { navItems } from "../utils/constants.js";
 
 const Navbar = () => {
   const location = useLocation();
-
-  const handleAgentSignupClick = () => {
-    window.open("https://agent.citywallet.com.np/auth/signup", "_blank");
-  };
-
   const selectedKeys = [location.pathname];
   const isHomepage = location.pathname === "/";
   const [burgerActive, setBurgerActive] = useState(false);
