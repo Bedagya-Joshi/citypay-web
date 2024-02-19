@@ -2870,17 +2870,17 @@ h4.navbarItems:hover {
   .sub-heading {
     grid-template-columns: 1fr;
     row-gap: 20px;
-    margin-right: 0px;
+    margin-left: -60px;
     width: 100%;
   }
 
   .perks {
     width: 60%;
-    margin-left: -175px;
+    margin-left: -325px;
   }
 
   .perks .title h1 {
-    margin-right: 0px;
+    margin-left: 155px;
     margin-top: 30px;
     margin-bottom: -50px;
   }
@@ -3040,7 +3040,11 @@ h4.navbarItems:hover {
   }
 
   .perks {
-    margin-left: -210px;
+    margin-left: -330px;
+  }
+
+  .perks .title h1 {
+    margin-right: 35px;
   }
 
   .vid-container {
@@ -3369,7 +3373,7 @@ h4.navbarItems:hover {
   }
 
   .fifth-container .grid-2 {
-   margin-right: 60px;
+    margin-right: 60px;
   }
 
   .perks {
