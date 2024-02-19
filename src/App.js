@@ -175,7 +175,7 @@ const App = () => {
                         <img
                           src={cityexpress}
                           alt="express"
-                          class="bankimage"
+                          class="pay"
                         />
                       </div>
                     </div>
