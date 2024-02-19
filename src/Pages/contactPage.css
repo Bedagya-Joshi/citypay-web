@@ -13,4 +13,396 @@
 
 .contact {
     height: 74vh;
+    padding-top: 65px;
+    padding-left: 65px;
+}
+
+.Support .cont1 {
+    /* background-color: aqua; */
+    width: 20%;
+}
+
+.Support .cont2 {
+    /* background-color: red; */
+    width: 20%;
+    margin-left: 440px;
+    margin-top: -230px;
+}
+
+.Branch {
+    padding-top: 15px;
+}
+
+@media(width<=1686px) {
+    .Support .cont1 {
+        /* background-color: aqua; */
+        width: 30%;
+    }
+
+    .Support .cont2 {
+        /* background-color: red; */
+        width: 30%;
+        margin-left: 440px;
+        margin-top: -230px;
+    }
+}
+
+@media(width<=1300px) {
+
+    .contact {
+        padding-top: 140px;
+    }
+
+    .Support .cont1 {
+        /* background-color: aqua; */
+        width: 30%;
+    }
+
+    .contact h1 {
+        font-size: 2.5em;
+    }
+
+    .contact h2 {
+        font-size: 1.3em;
+    }
+
+    .Office h3 {
+        font-size: 1.0em;
+    }
+
+    .Office p {
+        font-size: 1.0em;
+    }
+
+    .Support h3 {
+        font-size: 1.0em;
+    }
+
+    .Support p {
+        font-size: 1.0em;
+    }
+
+    .Branch h3 {
+        font-size: 1.0em;
+    }
+
+    .Support .cont2 {
+        /* background-color: red; */
+        width: 30%;
+        margin-left: 340px;
+        margin-top: -192px;
+    }
+}
+
+
+
+@media(width<=1115px) {
+
+    .contact {
+        padding-top: 160px;
+    }
+
+    .Support .cont1 {
+        /* background-color: aqua; */
+        width: 30%;
+    }
+
+    .contact h1 {
+        font-size: 2.3em;
+    }
+
+    .contact h2 {
+        font-size: 1.15em;
+    }
+
+    .Office h3 {
+        font-size: 0.9em;
+    }
+
+    .Office p {
+        font-size: 0.9em;
+    }
+
+    .Support h3 {
+        font-size: 0.9em;
+    }
+
+    .Support p {
+        font-size: 0.9em;
+    }
+
+    .Branch h3 {
+        font-size: 0.9em;
+    }
+
+    .Support .cont2 {
+        /* background-color: red; */
+        width: 30%;
+        margin-left: 350px;
+        margin-top: -180px;
+    }
+}
+
+
+@media(width<=923px) {
+
+    .contact {
+        padding-top: 140px;
+    }
+
+    .Support .cont1 {
+        /* background-color: aqua; */
+        width: 30%;
+    }
+
+    .contact h1 {
+        font-size: 2.3em;
+    }
+
+    .contact h2 {
+        font-size: 1.15em;
+    }
+
+    .Office h3 {
+        font-size: 0.9em;
+    }
+
+    .Office p {
+        font-size: 0.9em;
+    }
+
+    .Support h3 {
+        font-size: 0.9em;
+    }
+
+    .Support p {
+        font-size: 0.9em;
+    }
+
+    .Branch h3 {
+        font-size: 0.9em;
+    }
+
+    .Support .cont1 {
+        width: 40%;
+    }
+
+    .Support .cont2 {
+        /* background-color: red; */
+        width: 40%;
+        margin-left: 350px;
+        margin-top: -180px;
+    }
+}
+
+
+@media(width<=840px) {
+
+    .contact {
+        padding-top: 110px;
+    }
+
+    .Support .cont1 {
+        /* background-color: aqua; */
+        width: 30%;
+    }
+
+    .contact h1 {
+        font-size: 2.11em;
+    }
+
+    .contact h2 {
+        font-size: 1.07em;
+    }
+
+    .Office h3 {
+        font-size: 0.8em;
+    }
+
+    .Office p {
+        font-size: 0.8em;
+    }
+
+    .Support h3 {
+        font-size: 0.8em;
+    }
+
+    .Support p {
+        font-size: 0.8em;
+    }
+
+    .Branch h3 {
+        font-size: 0.8em;
+    }
+
+    .Support .cont1 {
+        width: 40%;
+    }
+
+    .Support .cont2 {
+        /* background-color: red; */
+        width: 40%;
+        margin-left: 330px;
+        margin-top: -160px;
+    }
+}
+
+
+@media(width<=720px) {
+
+    .contact {
+        padding-top: 140px;
+        padding-left: 30px;
+    }
+
+    .Support .cont1 {
+        /* background-color: aqua; */
+        width: 30%;
+    }
+
+    .contact h1 {
+        font-size: 2.11em;
+    }
+
+    .contact h2 {
+        font-size: 1.07em;
+    }
+
+    .Office h3 {
+        font-size: 0.8em;
+    }
+
+    .Office p {
+        font-size: 0.8em;
+    }
+
+    .Support h3 {
+        font-size: 0.8em;
+    }
+
+    .Support p {
+        font-size: 0.8em;
+    }
+
+    .Branch h3 {
+        font-size: 0.8em;
+    }
+
+    .Support .cont1 {
+        width: 40%;
+    }
+
+    .Support .cont2 {
+        /* background-color: red; */
+        width: 40%;
+        margin-left: 270px;
+        margin-top: -160px;
+    }
+}
+
+
+
+@media(width<=640px) {
+
+    .contact {
+        padding-top: 140px;
+        padding-left: 10px;
+    }
+
+    .Support .cont1 {
+        /* background-color: aqua; */
+        width: 30%;
+    }
+
+    .contact h1 {
+        font-size: 2.11em;
+    }
+
+    .contact h2 {
+        font-size: 1.07em;
+    }
+
+    .Office h3 {
+        font-size: 0.8em;
+    }
+
+    .Office p {
+        font-size: 0.8em;
+    }
+
+    .Support h3 {
+        font-size: 0.8em;
+    }
+
+    .Support p {
+        font-size: 0.8em;
+    }
+
+    .Branch h3 {
+        font-size: 0.8em;
+    }
+
+    .Support .cont1 {
+        width: 45%;
+    }
+
+    .Support .cont2 {
+        /* background-color: red; */
+        width: 50%;
+        margin-left: 230px;
+        margin-top: -160px;
+    }
+}
+
+
+@media(width<=557px) {
+
+    .contact {
+        padding-top: 160px;
+        padding-left: 1px;
+    }
+
+    .Support .cont1 {
+        /* background-color: aqua; */
+        width: 30%;
+    }
+
+    .contact h1 {
+        font-size: 2.0em;
+    }
+
+    .contact h2 {
+        font-size: 1.01em;
+    }
+
+    .Office h3 {
+        font-size: 0.7em;
+    }
+
+    .Office p {
+        font-size: 0.7em;
+    }
+
+    .Support h3 {
+        font-size: 0.7em;
+    }
+
+    .Support p {
+        font-size: 0.7em;
+    }
+
+    .Branch h3 {
+        font-size: 0.7em;
+    }
+
+    .Support .cont1 {
+        width: 50%;
+    }
+
+    .Support .cont2 {
+        /* background-color: red; */
+        width: 50%;
+        margin-left: 200px;
+        margin-top: -142px;
+    }
 }

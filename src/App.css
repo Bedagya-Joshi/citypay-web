@@ -112,8 +112,8 @@ div.news p.summary {
 }
 
 .Main-container .grid-2 .landing-page-image .bankimage {
-  width: 120%;
-  height: 100%;
+  width: 100%;
+  height: 95%;
 }
 
 .grid-1,
@@ -149,8 +149,8 @@ div.news p.summary {
 }
 
 .mid-container .grid-2 .landing-page-image .bankimage {
-  width: 120%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
 }
 
 .mid-container p {
@@ -168,9 +168,17 @@ div.news p.summary {
   margin: 0;
 }
 
-.lower-container .grid-2 .landing-page-image .bankimage {
-  width: 100%;
+.lower-container .grid-2 {
+  width: 95%;
   height: 100%;
+  margin-top: 0px;
+}
+
+.lower-container .grid-2 .landing-page-image .pay {
+  width: 85%;
+  height: 50%;
+  margin-top: 130px;
+  margin-right: 50px;
 }
 
 .lower-container p {
@@ -529,6 +537,7 @@ h4.navbarItems:hover {
     border-radius: 5px;
     margin-right: 5px;
   }
+
 
   .carousel-container {
     height: auto;
@@ -1028,6 +1037,12 @@ h4.navbarItems:hover {
     width: 100%;
   }
 
+  .lower-container .grid-2 .landing-page-image .pay {
+    width: 65%;
+    height: 40%;
+    margin-left: 45px;
+  }
+
   .lower-container .grid-1 .title .highlight {
     font-size: smaller;
   }
@@ -1315,6 +1330,12 @@ h4.navbarItems:hover {
 
   .lower-container .grid-1 .landing-page-text {
     font-size: smaller;
+  }
+
+  .lower-container .grid-2 .landing-page-image .pay {
+    width: 65%;
+    height: 40%;
+    margin-top: 235px;
   }
 
   .lower-container .grid-3 .bullet-text h2 {
@@ -1941,12 +1962,17 @@ h4.navbarItems:hover {
 
   .lower-container .grid-2 {
     margin-left: 140px;
-    margin-top: -130px;
+    margin-top: -200px;
+  }
+
+  .lower-container .grid-2 .landing-page-image .pay {
+    width: 60%;
+    height: 40%;
   }
 
   .lower-container .grid-3 .bullet-text {
     margin-left: 90px;
-    margin-top: -140px;
+    margin-top: -180px;
   }
 
   .fourth-container .grid-1 {
@@ -2154,8 +2180,8 @@ h4.navbarItems:hover {
   }
 
   .lower-container .grid-2 {
-    margin-left: 70px;
-    margin-top: -80px;
+    margin-left: 50px;
+    margin-top: -170px;
     width: 65%;
     height: 65%;
   }
@@ -2167,7 +2193,7 @@ h4.navbarItems:hover {
   .lower-container .grid-3 .bullet-text {
     margin-left: 10px;
     padding-right: 80px;
-    margin-top: -460px;
+    margin-top: -300px;
     width: 100%;
   }
 
@@ -2446,10 +2472,14 @@ h4.navbarItems:hover {
   }
 
   .lower-container .grid-2 {
-    margin-left: 70px;
-    margin-top: -80px;
+    margin-left: 95px;
+    margin-top: -175px;
     width: 65%;
     height: 65%;
+  }
+
+  .lower-container .grid-2 .landing-page-image .pay {
+    margin-left: 0px;
   }
 
   .lower-container .grid-3 {
@@ -2459,7 +2489,7 @@ h4.navbarItems:hover {
   .lower-container .grid-3 .bullet-text {
     margin-left: 10px;
     padding-right: 80px;
-    margin-top: -460px;
+    margin-top: -300px;
     width: 100%;
   }
 
@@ -2742,10 +2772,14 @@ h4.navbarItems:hover {
   }
 
   .lower-container .grid-2 {
-    margin-left: 70px;
-    margin-top: -80px;
+    margin-left: 95px;
+    margin-top: -175px;
     width: 65%;
     height: 65%;
+  }
+
+  .lower-container .grid-2 .landing-page-image .pay {
+    margin-left: 0px;
   }
 
   .lower-container .grid-3 {
@@ -2755,7 +2789,7 @@ h4.navbarItems:hover {
   .lower-container .grid-3 .bullet-text {
     margin-left: 10px;
     padding-right: 80px;
-    margin-top: -460px;
+    margin-top: -300px;
     width: 100%;
   }
 
