@@ -1871,3 +1871,142 @@ p {
     }
 
 }
+
+
+@media(width<=390px) {
+    .containter {
+        width: 400px;
+        height: 700px;
+
+    }
+
+    .box-container h1 {
+        font-size: 1.65em;
+    }
+
+    .sub-heading h2 {
+        font-size: 1.1em;
+    }
+
+    .sub-heading p {
+        font-size: 0.9em;
+    }
+
+    .promotors p {
+        font-size: 0.9em;
+    }
+
+
+    .sub-heading {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 5px;
+        padding: 15px 250px 10px 45px;
+        margin-bottom: 25px;
+        margin-left: -10px;
+    }
+
+    .what, .mission, .vision, .Innovation, .Reliability, .approach {
+        box-shadow: 2px 3px 10px 0px grey;
+        border: none;
+        border-radius: 10px;
+        padding: 20px 25px 20px;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .what {
+        width: 230px;
+        height: 235px;
+    }
+
+    .mission {
+        width: 230px;
+        height: 235px;
+    }
+
+    .vision {
+        width: 230px;
+        height: 235px;
+    }
+
+    .Innovation {
+        width: 230px;
+        height: 235px;
+    }
+
+    .Reliability {
+        width: 230px;
+        height: 235px;
+    }
+
+    .approach {
+        width: 230px;
+        height: 235px;
+    }
+
+    .what p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .approach p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .mission p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .vision p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .Innovation p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .Reliability p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+
+    .promotors {
+        /* box-shadow: 1px 5px 15px 3px grey; */
+        /* margin-top: 20px; */
+        border: none;
+        border-radius: 10px;
+        padding: 10px 10px 10px 15px;
+        /* margin-bottom: 20px; */
+        text-align: justify;
+    }
+
+    h1 {
+        font-family: 'Work Sans';
+        font-weight: 600;
+        font-size: 45px;
+        text-align: center;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .promotors p {
+        padding-top: 20px;
+    }
+
+    p {
+        font-family: "Work Sans";
+        font-weight: 400;
+        font-size: 17px;
+    }
+
+}

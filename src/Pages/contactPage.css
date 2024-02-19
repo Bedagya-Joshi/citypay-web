@@ -406,3 +406,55 @@
         margin-top: -142px;
     }
 }
+
+
+
+@media(width<=390px) {
+
+    .contact {
+        padding-top: 95px;
+    }
+
+    .Support .cont1 {
+        /* background-color: aqua; */
+        width: 30%;
+    }
+
+    .contact h1 {
+        font-size: 2.0em;
+    }
+
+    .contact h2 {
+        font-size: 1.01em;
+    }
+
+    .Office h3 {
+        font-size: 0.7em;
+    }
+
+    .Office p {
+        font-size: 0.7em;
+    }
+
+    .Support h3 {
+        font-size: 0.7em;
+    }
+
+    .Support p {
+        font-size: 0.7em;
+    }
+
+    .Branch h3 {
+        font-size: 0.7em;
+    }
+
+    .Support .cont1 {
+        width: 50%;
+    }
+
+    .Support .cont2 {
+        width: 50%;
+        margin-left: 170px;
+        margin-top: -209px;
+    }
+}
