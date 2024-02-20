@@ -280,39 +280,6 @@ div.news p.summary {
   justify-content: flex-start;
 }
 
-.rewards:hover {
-  background: linear-gradient(to right, #f9616b, #51a4f8);
-  color: white;
-  transition: fade 0.1s linear;
-}
-
-.top-up:hover {
-  background: linear-gradient(to right, #f9616b, #51a4f8);
-  color: white;
-  transition: fade 0.1s linear;
-}
-
-.redefine:hover {
-  background: linear-gradient(to right, #f9616b, #51a4f8);
-  color: white;
-  transition: fade 0.1s linear;
-}
-
-/*Vid Container*/
-.vid-container {
-  /* margin-left: 185px; */
-  max-width: 100%;
-  margin-bottom: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.vid-container div:hover {
-  transform: translateY(-4px);
-}
-
 .sub {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -326,44 +293,6 @@ div.news p.summary {
   font-size: 20px;
   font-weight: 500;
   color: #0d60b5;
-}
-
-.card,
-.you,
-.coin {
-  box-shadow: 2px 3px 10px 0px grey;
-  border: none;
-  border-radius: 10px;
-  padding: 20px 30px 20px;
-  text-align: justify;
-  width: 336px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.card:hover {
-  color: white;
-  transition: fade 0.1s linear;
-}
-
-.you:hover {
-  color: white;
-  width: 336px;
-  transition: fade 0.1s linear;
-}
-
-.coin:hover {
-  color: white;
-  transition: fade 0.1s linear;
-}
-
-.atm {
-  max-width: 100%;
-  object-fit: contain;
 }
 
 .highlight {
@@ -614,9 +543,6 @@ h4.navbarItems:hover {
     margin-right: 15px;
   }
 
-  .vid-container {
-    margin-right: 50px;
-  }
 
   .carousel-container {
     height: auto;
@@ -681,10 +607,6 @@ h4.navbarItems:hover {
 
   .perks {
     margin-right: 160px;
-  }
-
-  .vid-container {
-    margin-right: 180px;
   }
 
   .carousel-container {
@@ -1171,15 +1093,6 @@ h4.navbarItems:hover {
 
   .sub-heading .redefine p {
     font-size: small;
-  }
-
-  .vid-container .title .basics {
-    font-size: smaller;
-  }
-
-  .vid-container .sub h2 {
-    font-size: smaller;
-    text-align: center;
   }
 
   .sub {
@@ -2284,14 +2197,6 @@ h4.navbarItems:hover {
     margin-left: -85px;
   }
 
-  .vid-container {
-    margin-left: -110px;
-  }
-
-  .vid-container .title .basics {
-    margin-left: 0px;
-  }
-
   .sub {
     grid-template-columns: 1fr;
     row-gap: 25px;
@@ -2578,14 +2483,6 @@ h4.navbarItems:hover {
 
   .rewards, .top-up, .redefine {
     margin-left: -85px;
-  }
-
-  .vid-container {
-    margin-left: -135px;
-  }
-
-  .vid-container .title .basics {
-    margin-left: 0px;
   }
 
   .sub {
@@ -2890,14 +2787,6 @@ h4.navbarItems:hover {
     margin-left: 15px;
   }
 
-  .vid-container {
-    margin-left: -205px;
-  }
-
-  .vid-container .title .basics {
-    margin-left: 0px;
-  }
-
   .sub {
     grid-template-columns: 1fr;
     row-gap: 25px;
@@ -3041,10 +2930,6 @@ h4.navbarItems:hover {
 
   .perks {
     margin-left: -210px;
-  }
-
-  .vid-container {
-    margin-left: -240px;
   }
 
 
@@ -3233,14 +3118,6 @@ h4.navbarItems:hover {
     margin-right: 200px;
   }
 
-  .vid-container {
-    margin-left: -310px;
-  }
-
-  .vid-container .title .basics {
-    margin-left: 20px;
-  }
-
   .sub {
     grid-template-columns: 1fr;
     row-gap: 25px;
@@ -3380,13 +3257,6 @@ h4.navbarItems:hover {
     margin-left: 95px;
   }
 
-  .vid-container .sub {
-    margin-right: 30px;
-  }
-
-  .vid-container {
-    margin-right: 215px;
-  }
 
   .perks .title h1 {
     margin-right: -70px;

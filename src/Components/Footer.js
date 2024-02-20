@@ -24,20 +24,12 @@ const CustomFooter = () => {
         backgroundColor: "white",
         justifyContent: "space-around",
         // borderTop:"1px solid black",
-        boxShadow: "1px 60px 100px 1px grey"
+        boxShadow: "1px 60px 100px 1px grey",
       }}
     >
-      <div
-        class="Logo-Image"
-      >
-        <img
-          src={citypay}
-          alt="CityPayLogo" class="footer-img"
-        />
-        <img
-          src={qrcode}
-          alt="QR Scan" class="footer-img"
-        />
+      <div class="Logo-Image">
+        <img src={citypay} alt="CityPayLogo" class="footer-img" />
+        <img src={qrcode} alt="QR Scan" class="footer-img" />
       </div>
 
       <div
@@ -51,6 +43,7 @@ const CustomFooter = () => {
           alignItems: "flex-start",
           columnGap: "5px",
           justifyContent: "space-between",
+          textAlign: "left",
         }}
       >
         <div class="infos">Email:citypaywallet@gmail.com</div>
@@ -70,9 +63,7 @@ const CustomFooter = () => {
           }}
         >
           {/* Implement map */}
-          <div className="Map">
-            {/* <MapComponent /> */}
-          </div>
+          <div className="Map">{/* <MapComponent /> */}</div>
           <div class="con">Connect with us:</div>
           <div class="social">
             <a
@@ -80,25 +71,17 @@ const CustomFooter = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img
-                src={fb_logo}
-                alt="Facebook" class="social-logo"
-
-              />
-
+              <img src={fb_logo} alt="Facebook" class="social-logo" />
             </a>
 
-            <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
-              <img
-                src={ig_logo}
-                alt="Instagram" class="social-logo"
-
-              />
-
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={ig_logo} alt="Instagram" class="social-logo" />
             </a>
-
           </div>
-
         </div>
       </div>
       <div
@@ -106,8 +89,9 @@ const CustomFooter = () => {
         style={{
           display: "flex",
           flexDirection: "column",
-          alignItems: "flex-end",
+          alignItems: "flex-start",
           justifyContent: "space-between",
+          textAlign: "left",
         }}
       >
         <Link to="/about">About</Link>
@@ -128,12 +112,13 @@ const CustomFooter = () => {
         style={{
           display: "flex",
           flexDirection: "column",
-          alignItems: "flex-end",
+          alignItems: "flex-start",
           justifyContent: "space-between",
+          textAlign: "left",
         }}
       >
-        <Link to="/faq">FAQ</Link>
-        <Link to="/ourTeam">Our Team</Link>
+        <Link to="/underconstruction">FAQ</Link>
+        <Link to="/underconstruction">Our Team</Link>
         <a
           href="https://agent.citywallet.com.np/auth/signup"
           target="_blank"
@@ -141,8 +126,8 @@ const CustomFooter = () => {
         >
           Become an Agent
         </a>
-        <Link to="/legal">Legal</Link>
-        <Link to="/downloads">Downloads</Link>
+        <Link to="/underconstruction">Legal</Link>
+        <Link to="/underconstruction">Downloads</Link>
       </div>
     </Footer>
   );

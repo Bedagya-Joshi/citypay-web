@@ -10,10 +10,6 @@ import cashinhand from "./Assets/payment.jpg";
 import cityexpress from "./Assets/cityexpress.png";
 import cell from "./Assets/cell.jpg";
 import bank from "./Assets/bank.jpg";
-import youtube from "./Assets/youtube.png";
-import atm from "./Assets/atm.png";
-import ytb from "./Assets/ytb.png";
-import coin from "./Assets/coin.png";
 
 //Pages Import
 import ContactPage from "./Pages/ContactPage";
@@ -25,6 +21,7 @@ import FAQPage from "./Pages/FAQPage";
 import OurTeamPage from "./Pages/OurTeamPage";
 import LegalPage from "./Pages/LegalPage";
 import DownloadPage from "./Pages/DownloadPage";
+import UnderConstruction from "./Pages/UnderConstruction.js";
 
 //Component Import
 import CarouselItem from "./Components/Carousel";
@@ -303,31 +300,6 @@ const App = () => {
                       </div>
                     </div>
                   </div>
-
-                  <div class="vid-container">
-                    <div className="title" id="watchyt">
-                      <span class="basics">Watch the basics</span>
-                      <img src={youtube} alt="youtube" class="youtube"></img>
-                    </div>
-
-                    <div className="sub">
-                      <div className="card">
-                        <img src={atm} alt="atm-img" class="atm"></img>
-                        <h2>ATM Card</h2>
-                      </div>
-
-                      <div className="you">
-                        <img src={ytb} alt="yt-img" class="atm"></img>
-                        <h2>YouTube Tutorials</h2>
-                      </div>
-
-                      <div className="coin">
-                        <img src={coin} alt="coin-img" class="atm"></img>
-                        <h2>Get Coins</h2>
-                      </div>
-                    </div>
-                    {/* <YTCarouselItem /> */}
-                  </div>
                 </div>
               }
             />
@@ -335,75 +307,43 @@ const App = () => {
             {/* PAGE ROUTES */}
             <Route
               path="/contact"
-              element={
-                <div>
-                  <ContactPage />
-                </div>
-              }
+              element={<ContactPage />}
             />
             <Route
               path="/about"
-              element={
-                <div>
-                  <AboutPage />
-                </div>
-              }
+              element={<AboutPage />}
             />
             <Route
               path="/Services"
-              element={
-                <div>
-                  <ServicesPage />
-                </div>
-              }
+              element={<ServicesPage />}
             />
             <Route
               path="/blog/*"
-              element={
-                <div>
-                  <BlogPage />
-                </div>
-              }
+              element={<BlogPage />}
             />
             <Route
               path="/faq"
-              element={
-                <div>
-                  <FAQPage />
-                </div>
-              }
+              element={<FAQPage />}
             />
             <Route
               path="/ourTeam"
-              element={
-                <div>
-                  <OurTeamPage />
-                </div>
-              }
+              element={<OurTeamPage />}
             />
             <Route
               path="/news/*"
-              element={
-                <div>
-                  <NewsPage />
-                </div>
-              }
+              element={<NewsPage />}
             />
             <Route
               path="/legal"
-              element={
-                <div>
-                  <LegalPage />
-                </div>
-              }
+              element={<LegalPage />}
             />
             <Route
               path="/downloads"
-              element={
-                <div>
-                  <DownloadPage />
-                </div>
-              }
+              element={<DownloadPage />}
+            />
+            <Route
+              path="/underconstruction"
+              element={<UnderConstruction />}
             />
           </Routes>
         </Content>

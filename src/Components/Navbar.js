@@ -6,9 +6,6 @@ import citypay from "../Assets/citypay_logo.png";
 import AndDownload from "../Assets/gplay.png";
 import IOSDownload from "../Assets/apple_pay.png";
 import { navItems } from "../utils/constants.js";
-// import { divIcon } from "leaflet";
-// import { divIcon } from "leaflet";
-// import { divIcon } from "leaflet";
 
 const Navbar = () => {
   const location = useLocation();
