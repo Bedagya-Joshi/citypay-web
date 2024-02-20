@@ -6,7 +6,7 @@ import "./Components/footer.css";
 
 //Assets Import
 import bankvector from "./Assets/request.jpg";
-import cashinhand from "./Assets/payment.jpg";
+import cashinhand from "./Assets/payment.png";
 import cityexpress from "./Assets/cityexpress.png";
 import cell from "./Assets/cell.jpg";
 import bank from "./Assets/bank.jpg";
