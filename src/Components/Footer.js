@@ -89,7 +89,7 @@ const CustomFooter = () => {
         }}
       >
         <Link to="/about">About</Link>
-        <Link to="/services">Services</Link>
+        <Link to="/underconstruction">Services</Link>
         <Link to="/contact">Contact Us</Link>
         <Link to="/underconstruction">Blog</Link>
         <Link to="/underconstruction">News</Link>

@@ -11,12 +11,12 @@ export const navItems = [
     alt: "Homepage",
     active: true,
   },
-  {
-    name: "Services",
-    path: "/services",
-    alt: "Homepage",
-    active: true,
-  },
+  // {
+  //   name: "Services",
+  //   path: "/services",
+  //   alt: "Homepage",
+  //   active: true,
+  // },
   {
     name: "Contact Us",
     path: "/contact",
