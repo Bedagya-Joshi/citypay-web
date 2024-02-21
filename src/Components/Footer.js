@@ -21,7 +21,6 @@ const CustomFooter = () => {
         backgroundColor: "white",
         justifyContent: "space-around",
         boxShadow: "1px 60px 100px 1px grey",
-        
       }}
     >
       <div class="Logo-Image">
@@ -113,7 +112,7 @@ const CustomFooter = () => {
         }}
       >
         <Link to="/underconstruction">FAQ</Link>
-        <Link to="/ourTeam">Our Team</Link>
+        <Link to="/underconstruction">Our Team</Link>
         <a
           href="https://agent.citywallet.com.np/auth/signup"
           target="_blank"

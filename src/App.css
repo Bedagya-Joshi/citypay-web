@@ -11,12 +11,6 @@
   transition: all 0.2s linear;
 }
 
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
 
 .body {
   display: flex;
@@ -468,7 +462,7 @@ h4.navbarItems:hover {
   }
 }
 
-@media (width<=1799px) {
+/* @media (width<=1799px) {
   .body-container {
     margin-left: 150px;
   }
@@ -2117,9 +2111,9 @@ h4.navbarItems:hover {
   .ContactUs {
     font-size: smaller;
   }
-}
+} */
 
-@media (width<=768px) {
+@media (max-width: 768px) {
   .body-container {
     width: 650px;
     margin-left: 20px;
@@ -2270,7 +2264,7 @@ h4.navbarItems:hover {
   }
 }
 
-@media (width<=720px) {
+/* @media (width<=720px) {
   .body-container {
     width: 642px;
     margin-left: 10px;
@@ -3626,4 +3620,4 @@ h4.navbarItems:hover {
   .ContactUs {
     margin-left: -130px;
   }
-}
+} */
