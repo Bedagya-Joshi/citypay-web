@@ -168,11 +168,7 @@ const App = () => {
                         <span class="highlight">Bank Transfers</span>
                       </div>
                       <div className="landing-page-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed tortor tortor, venenatis a arcu id, semper ultricies
-                        enim. Aliquam turpis tellus, venenatis sit amet mattis
-                        a, viverra ac lorem. In condimentum quam ut nibh congue
-                        fermentum. Duis quis pulvinar lectus, a aliquam massa.
+                        City Pay offers seamless remittance services and convenient bank transfers. Easily receive remittance, load money from your bank account for free, and transfer funds to any bank in Nepal. With our extensive agent network, access your funds conveniently across Nepal. Simplify your financial transactions and stay connected with City Pay.
                       </div>
                     </div>
                     <div class="grid-2">
@@ -224,11 +220,7 @@ const App = () => {
                         <span class="business">Business Payments</span>
                       </div>
                       <div className="landing-page-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed tortor tortor, venenatis a arcu id, semper ultricies
-                        enim. Aliquam turpis tellus, venenatis sit amet mattis
-                        a, viverra ac lorem. In condimentum quam ut nibh congue
-                        fermentum. Duis quis pulvinar lectus, a aliquam massa.
+                        City pay Business payment  typically refers to the ability for businesses to accept payments from customers using a citypay wallet. This can include accepting payments for goods or services purchased online or in-person. For businesses, this feature enables them to expand their payment options, streamline transactions, and potentially reach a wider customer base.
                       </div>
                     </div>
 
