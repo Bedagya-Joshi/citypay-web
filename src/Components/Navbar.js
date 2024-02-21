@@ -87,9 +87,7 @@ const Navbar = () => {
               <img src={IOSDownload} alt="IOS Download" />
             </button>
           </div>
-        <div className="Logo-Image">
-          <img src={citypay} alt="CityPayLogo" />
-        </div>
+       
           {burgerActive ? <FaTimes /> : <FaBars />}
         </div>
         {navItems.map((item, index) => renderNavItems(item, index))}

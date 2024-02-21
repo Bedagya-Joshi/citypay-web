@@ -3169,33 +3169,46 @@ h4.navbarItems:hover {
     margin: 0;
   }
 
+  .navbar_bot {
+    width: 100%;
+  }
+
   .navMenu {
     height: 98px;
-    margin-left: 220px;
+    margin-left: 0px;
   }
 
   .navMenu .Logo-Image img {
     width: 75px;
     height: 75px;
     margin-top: -1px;
-    margin-left: 275px;
+    margin-left: 140px;
+  }
+
+  .hamburgerIconContainer {
+    width: 100%;
   }
 
   .hamburgerIconContainer .Logo-Image img {
     display: none;
   }
 
-  .hamburgerIconContainer {
-    margin-right: 385px;
-  }
+  /* .hamburgerIconContainer {
+    margin-right: 85px;
+  } */
 
   .hamburgerIconContainer svg {
     height: 1.7em;
     width: 3.3em;
+    margin-left: 80px;
   }
 
+  /* .navMenu .Logo-Image {
+    margin-left: -80px;
+  } */
+
   .download .playstore img {
-    margin-left: 390px;
+    margin-left: 280px;
     margin-right: -1px;
     border-radius: 5px;
     width: 125px;
@@ -3204,11 +3217,10 @@ h4.navbarItems:hover {
   }
 
   .download .appstore img {
-    margin-left: 245px;
+    margin-left: 140px;
     width: 120px;
     height: 45px;
     border-radius: 5px;
-    margin-right: 95px;
     margin-top: -16px;
     margin-bottom: -8px;
   }
@@ -3321,13 +3333,14 @@ h4.navbarItems:hover {
   }
 
   .lower-container {
-    width: 70%;
+    width: 100%;
     height: 70%;
-    margin-left: -35px;
+    /* margin-left: -35px; */
+    margin: 5px 5px 5px 5px;
   }
 
   .lower-container .grid-1 {
-    margin-left: 10px;
+    margin: 10px 10px 10px 10px;
     margin-top: 90px;
     width: 100%;
   }
@@ -3337,55 +3350,66 @@ h4.navbarItems:hover {
   }
 
   .lower-container .grid-1 .landing-page-text {
-    width: 110%;
-    padding-bottom: 10px;
+    width: 80%;
+    margin: 10px 10px 10px 30px;
+    padding: 0px;
   }
 
   .lower-container .grid-2 {
-    margin-left: 95px;
-    margin-top: -175px;
-    width: 65%;
+    margin: 5px 5px 5px 5px;
+    width: 100%;
     height: 65%;
   }
 
+
   .lower-container .grid-2 .landing-page-image .pay {
-    margin-left: 10px;
+    margin: 150px 10px 10px 120px;
+    margin-top: -20px;
   }
 
   .lower-container .grid-3 {
+    margin: 5px 5px 5px 5px;
     width: 100%;
   }
 
   .lower-container .grid-3 .bullet-text {
-    margin-left: 10px;
-    padding-right: 80px;
-    margin-top: -300px;
-    width: 150%;
+    margin: 5px 5px 5px 35px;
+    margin-top: -650px;
+    padding: 0px;
+    width: 90%;
   }
 
   .fourth-container {
     width: 70%;
-    margin-left: 10px;
+    margin: 10px 10px 10px 10px;
   }
 
   .fourth-container .grid-1 {
-    margin-left: 20px;
-    margin-top: 40px;
-    width: 80%;
+    margin: 20px 20px 1px 20px;
+    padding: 5px 5px 5px 5px;
+    width: 100%;
   }
 
   .fourth-container .grid-1 .title {
-    margin-left: 25px;
+    margin: 2px 2px 2px 25px;
+    padding: 0;
   }
 
   .fourth-container .grid-1 .landing-page-text {
-    width: 110%;
+    width: 90%;
+    margin: 5px 5px 5px 5px;
   }
 
   .fourth-container .grid-2 {
-    margin-left: 70px;
-    margin-top: -20px;
-    width: 45%;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
+    width: 100%;
+    height: 90%;
+  }
+
+  .fourth-container .grid-2 .landing-page-image .cell {
+    margin: 1px 1px 1px 65px;
+    padding: 2px 2px 2px 2px;
   }
 
   .fourth-container .grid-3 .bullet-text {
@@ -3394,37 +3418,52 @@ h4.navbarItems:hover {
   }
 
   .fifth-container {
-    margin-left: -40px;
+    margin: 5px 5px 5px 5px;
     width: 100%;
   }
 
   .fifth-container .grid-1 {
-    height: 100%;
+    height: 70%;
     width: 120%;
+    margin: 5px 5px 5px 35px;
+  }
+
+  .fifth-container .grid-1 .title {
+    margin: 1px 1px 1px 1px;
+    padding: 2px 2px 2px 2px;
+    width: 100%;
   }
 
   .fifth-container .grid-1 .landing-page-text {
-    margin-bottom: 140px;
-    width: 90%;
+    margin: 5px 5px 5px 5px;
+    width: 100%;
+    height: 20%;
   }
 
   .fifth-container .grid-2 {
     width: 90%;
-    margin-left: -20px;
+    height: 90%;
+    margin: 5px 5px 5px 5px;
+    padding: 1px;
   }
 
   .fifth-container .grid-2 .landing-page-image .bankimage {
     width: 70%;
     height: 70%;
     margin-top: 70px;
-    margin-left: 60px;
+    margin: 170px 5px 5px 75px;
+  }
+
+  .fifth-container .grid-3 {
+    margin: 5px 5px 5px 35px;
+    padding: 0px 0px 0px 0px;
+    margin-top: -250px;
+    width: 100%;
   }
 
   .fifth-container .grid-3 .bullet-text {
-    margin-top: -450px;
-    padding: 10px;
-    margin-left: -60px;
-    width: 160%;
+    margin: 5px 5px 5px 5px;
+    width: 110%;
   }
 
   .image-container {
@@ -3443,7 +3482,7 @@ h4.navbarItems:hover {
 
   .perks {
     width: 60%;
-    margin-left: 50px;
+    margin: 40px 40px 40px 70px;
   }
 
   .perks .title h1 {
@@ -3462,28 +3501,30 @@ h4.navbarItems:hover {
   }
 
   .vid-container {
-    margin-left: -150px;
+    margin: 30px;
+    width: 98%;
   }
 
-  .vid-container .title .basics {
-    margin-left: 0px;
+  .vid-container .title {
+    margin: 10px 50px 10px 85px;
+    width: 65%;
   }
 
   .sub {
     grid-template-columns: 1fr;
     row-gap: 25px;
     align-items: center;
-    margin-right: -150px;
   }
 
   .carousel-container {
     height: 5px;
-    width: 0px;
+    width: 10px;
   }
 
   .carousel-container img.carouselimage {
     display: none;
   }
+
 }
 
 @media (width<=576px) {

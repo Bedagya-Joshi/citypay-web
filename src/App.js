@@ -46,9 +46,9 @@ const App = () => {
           />
           {/* Logo For CityPay */}
           {/* Navbar Import */}
-          {/* <div className="navbar_bot">
+          <div className="navbar_bot">
             <Navbar selectedKey="1" />
-          </div> */}
+          </div>
         </Header>
 
         <Content style={{ padding: "0 48px" }}>
