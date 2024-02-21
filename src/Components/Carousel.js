@@ -9,7 +9,7 @@ import photo4 from "../Assets/Carousel-img3.png";
 
 
 const CarouselItem = () => (
-  <Carousel autoplay autoplaySpeed={1500} effect="fade" speed={500} dotPosition="bottom">
+  <Carousel autoplay autoplaySpeed={1500} effect="fade" speed={500} dots={false}>
     <div class="carousel">
       <img src={photo3} alt="carousel" class="carouselimage"/>
     </div>

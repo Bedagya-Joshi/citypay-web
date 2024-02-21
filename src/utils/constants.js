@@ -1,10 +1,10 @@
 export const navItems = [
-  {
-    name: "Home",
-    path: "/",
-    alt: "Homepage",
-    active: true,
-  },
+  // {
+  //   name: "Home",
+  //   path: "/",
+  //   alt: "Homepage",
+  //   active: true,
+  // },
   {
     name: "About",
     path: "/about",

@@ -52,7 +52,9 @@ const Navbar = () => {
     <>
       <div className="navMenu">
         <div className="Logo-Image">
+          <Link to ="/">
           <img src={citypay} alt="CityPayLogo" />
+          </Link>
         </div>
         <div className="hamburgerIconContainer" onClick={handleMenuClick}>
           <div class="download">

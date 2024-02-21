@@ -21,6 +21,7 @@ const CustomFooter = () => {
         backgroundColor: "white",
         justifyContent: "space-around",
         boxShadow: "1px 60px 100px 1px grey",
+        
       }}
     >
       <div class="Logo-Image">
@@ -44,7 +45,7 @@ const CustomFooter = () => {
       >
         <div class="infos">Email:citypaywallet@gmail.com</div>
         <div class="infos">Tel No:+977 23213123321</div>
-        <div class="infos">Toll Free:+128321412412</div>
+        <div class="infos">Toll Free: +16600 11 12 13</div>
         <div class="infos">Location: Kamaladi, Kathmandu, Nepal</div>
       </div>
       <div className="Connect">
