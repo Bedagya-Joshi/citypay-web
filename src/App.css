@@ -263,6 +263,27 @@ div.news p.summary {
   color: #0d60b5;
 }
 
+.rewards:hover {
+  transform: scale3d(1.2, 1.2, 1.2);
+  box-shadow: 2px 3px 10px 0px grey;
+  border-radius: 10px;
+  background-color: rgba(211, 211, 211, 0.249);
+}
+
+.top-up:hover {
+  transform: scale3d(1.2, 1.2, 1.2);
+  box-shadow: 2px 3px 10px 0px grey;
+  border-radius: 10px;
+  background-color: rgba(211, 211, 211, 0.249);
+}
+
+.redefine:hover {
+  transform: scale3d(1.2, 1.2, 1.2);
+  box-shadow: 2px 3px 10px 0px grey;
+  border-radius: 10px;
+  background-color: rgba(211, 211, 211, 0.249);
+}
+
 .rewards,
 .top-up,
 .redefine {
@@ -282,92 +303,6 @@ div.news p.summary {
 
 .perks div:hover {
   transform: translate3d(8px);
-}
-
-/* 
-.rewards:hover {
-  background: linear-gradient(to right, #f9616b, #51a4f8);
-  color: white;
-  transition: fade 0.1s linear;
-}
-
-.top-up:hover {
-  background: linear-gradient(to right, #f9616b, #51a4f8);
-  color: white;
-  transition: fade 0.1s linear;
-}
-
-.redefine:hover {
-  background: linear-gradient(to right, #f9616b, #51a4f8);
-  color: white;
-  transition: fade 0.1s linear;
-} */
-
-/*Vid Container*/
-.vid-container {
-  max-width: 100%;
-  margin-bottom: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.vid-container div:hover {
-  transform: translateY(-4px);
-}
-
-.sub {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 30px;
-  font-weight: 400;
-  font-family: "Work Sans";
-  margin-bottom: 25px;
-}
-
-.sub h2 {
-  font-size: 20px;
-  font-weight: 500;
-  color: #0d60b5;
-}
-
-.card,
-.you,
-.coin {
-  box-shadow: 2px 3px 10px 0px grey;
-  border: none;
-  border-radius: 10px;
-  padding: 20px 30px 20px;
-  text-align: justify;
-  width: 336px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.card:hover {
-  color: white;
-  transition: fade 0.1s linear;
-}
-
-.you:hover {
-  color: white;
-  width: 336px;
-  transition: fade 0.1s linear;
-}
-
-.coin:hover {
-  color: white;
-  transition: fade 0.1s linear;
-}
-
-.atm {
-  max-width: 100%;
-  object-fit: contain;
 }
 
 .highlight {
@@ -3274,7 +3209,7 @@ h4.navbarItems:hover {
   .hamburgerIconContainer svg {
     height: 1.7em;
     width: 3.3em;
-    margin-left: 80px;
+    margin-left: 30px;
   }
 
   .download .playstore img {
@@ -3601,6 +3536,38 @@ h4.navbarItems:hover {
     display: none;
   }
 
+}
+
+@media(width<=601px) {
+
+  .navMenu .Logo-Image .img {
+    margin: 5px 5px 5px 5px;
+  }
+
+  .download .playstore img {
+    margin-left: 260px;
+    margin-right: -1px;
+    border-radius: 5px;
+    width: 125px;
+    height: 45px;
+    margin-bottom: -33px;
+  }
+
+  .download .appstore img {
+    margin-left: 120px;
+    width: 120px;
+    height: 45px;
+    border-radius: 5px;
+    margin-top: -16px;
+    margin-bottom: -8px;
+  }
+
+
+  .hamburgerIconContainer svg {
+    height: 1.7em;
+    width: 3.3em;
+    margin-left: 20px;
+  }
 }
 
 @media (width<=576px) {

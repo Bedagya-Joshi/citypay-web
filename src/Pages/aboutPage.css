@@ -55,14 +55,6 @@ h2 {
     justify-content: flex-start;
 }
 
-
-.sub-heading :hover {
-    color: white;
-    background: linear-gradient(to right, #F53F4A, #0D60B5);
-    transition: fade .1s linear;
-
-}
-
 .what p {
     font-family: "Work Sans";
     font-weight: 400;
@@ -94,15 +86,13 @@ h2 {
 }
 
 .promotors {
-    /* box-shadow: 1px 5px 15px 3px grey; */
-    /* margin-top: 20px; */
+    box-shadow: 1px 5px 15px 3px grey;
+    margin-top: 20px;
     border: none;
     border-radius: 10px;
     padding: 10px 10px 10px 15px;
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
     text-align: justify;
-    color: white;
-    background: linear-gradient(to right, #F53F4A, #0D60B5);
 }
 
 h1 {
@@ -125,7 +115,6 @@ p {
     font-size: 17px;
 }
 
-/*Responsive*/
 @media(width>=1800px) {
     .containter {
         width: 400px;
