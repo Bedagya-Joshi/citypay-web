@@ -2824,7 +2824,7 @@ h4.navbarItems:hover {
     width: 75px;
     height: 75px;
     margin-top: -1px;
-    margin-left: 130px;
+    margin-left: 45px;
   }
 
   .hamburgerIconContainer {
@@ -2838,11 +2838,11 @@ h4.navbarItems:hover {
   .hamburgerIconContainer svg {
     height: 1.7em;
     width: 3.3em;
-    margin-left: 100px;
+    margin-left: 120px;
   }
 
   .download .playstore img {
-    margin-left: 320px;
+    margin-left: 200px;
     margin-right: -1px;
     border-radius: 5px;
     width: 125px;
@@ -2851,7 +2851,7 @@ h4.navbarItems:hover {
   }
 
   .download .appstore img {
-    margin-left: 180px;
+    margin-left: 60px;
     width: 120px;
     height: 45px;
     border-radius: 5px;
