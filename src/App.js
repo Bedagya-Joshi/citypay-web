@@ -204,7 +204,10 @@ const App = () => {
                         Not just the QR code in our app but we have made it
                         possible to pay your local businesses, stores,
                         merchant's or any available QR. Just a simple scan and
-                        payment success.
+                        payment success.<br></br>
+                        <br></br>
+                        Our innovative Scan QR for Payment feature goes beyond in-app QR codes, allowing you to seamlessly transact with local businesses, stores, and merchants. Simply scan any available QR code, and experience the satisfaction of instant payment success. Whether you're shopping at your favorite neighborhood store or exploring new merchants, City Pay ensures a seamless payment experience with just a simple scan. Say goodbye to cash hassles and embrace the future of effortless transactions with City Pay.
+
                       </div>
                     </div>
                     <div class="grid-2">
