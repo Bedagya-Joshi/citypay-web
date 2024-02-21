@@ -3089,7 +3089,7 @@ h4.navbarItems:hover {
   .fourth-container {
     width: 70%;
     margin: 10px 10px 10px 50px;
-    padding: 10px 30px 10px 10px;
+    padding: 10px 10px 5px 10px;
   }
 
   .fourth-container .grid-1 {
@@ -3189,11 +3189,12 @@ h4.navbarItems:hover {
 
   .perks {
     width: 60%;
-    margin: 40px 40px 40px 70px;
+    margin: 40px 40px 40px 110px;
   }
 
   .perks .title h1 {
-    margin-right: 0px;
+    margin: 5px 255px 5px 5px;
+    padding: 0px;
   }
 
   .sub-heading {
@@ -3213,8 +3214,13 @@ h4.navbarItems:hover {
   }
 
   .vid-container .title {
-    margin: 10px 50px 10px 85px;
-    width: 65%;
+    margin: 1px 1px 1px 40px;
+    padding: 0px;
+    width: 60%;
+  }
+
+  .vid-container .title .basics {
+    margin: 1px 1px 1px 1px;
   }
 
   .sub {
