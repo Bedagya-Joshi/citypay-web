@@ -45,7 +45,7 @@ const App = () => {
           {/* Navbar Import */}
           <div className="navbar_bot">
             <Navbar selectedKey="1" />
-          </div>
+          </div>      
         </Header>
 
         <Content style={{ padding: "0 48px" }}>

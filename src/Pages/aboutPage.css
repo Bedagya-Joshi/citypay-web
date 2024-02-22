@@ -1,48 +1,301 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap");
 
 * {
-    font-family: 'Work Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    outline: none;
-    border: none;
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
 }
 
-.headingTxt h1 {
-    font-family: 'Work Sans';
-    font-weight: 600;
-    font-size: 40px;
-    text-align: center;
-    background: linear-gradient(to right, #F53F4A 50%, #0D60B5 20%);
-    background-clip: text;
-    margin-bottom: 20px;
-    -webkit-text-fill-color: transparent;
+.top-section {
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(#0e83e3, #65c7f7, #9cecfb);
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 40px;
 }
 
-h2 {
-    font-weight: 500;
+.top-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 35px;
 }
 
-.containter {
-    width: 400px;
-    height: 700px;
+.top-content h1 {
+  color: white;
+  font-size: 110px;
+  text-decoration: underline 15px;
+}
+
+.top-paragraph {
+  width: 450px;
+  color: black;
+  line-height: 1.7rem;
+}
+.top-paragraph h3 {
+  font-family: "Work Sans", serif;
+  font-weight: 450;
+}
+
+.top-image {
 }
 
 .box-container {
-    margin-top: 20px;
+  position: relative;
+  bottom: 0;
+  top: -57px;
+}
+
+.headingTxt h1 {
+  font-family: "Work Sans";
+  font-weight: 700;
+  font-size: 90px;
+  color: black;
+  text-align: center;
+  background-clip: text;
+  margin-bottom: 20px;
+}
+
+.containter {
+  width: 400px;
+  height: 700px;
+}
+
+.wallet {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  width: 80px;
 }
 
 .sub-heading {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  margin-bottom: 25px;
+}
+
+.what h2,
+.mission h2,
+.vision h2,
+.Innovation h2,
+.Reliability h2,
+.approach h2 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.what,
+.mission,
+.vision,
+.Innovation,
+.Reliability,
+.approach {
+  /* box-shadow: 2px 3px 10px 0px grey; */
+  border: none;
+  border-radius: 10px;
+  padding: 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.what p,
+.approach p,
+.mission p,
+.vision p,
+.Innovation p,
+.Reliability p {
+  font-family: "Work Sans";
+  font-weight: 400;
+  text-align: center;
+}
+
+.promotors {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 10px 10px 15px;
+  text-align: justify;
+  color: black;
+}
+
+/* h1 {
+  font-family: "Work Sans";
+  font-weight: 600;
+  font-size: 45px;
+  text-align: center;
+  color: black;
+} */
+
+.promotors p {
+  padding-top: 20px;
+}
+
+p {
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 17px;
+}
+
+/*Responsive*/
+@media (width>=1800px) {
+  .containter {
+    width: 400px;
+    height: 700px;
+  }
+
+  .box-container {
+    height: 75vh;
+  }
+
+  .sub-heading {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
     margin-bottom: 25px;
+  }
+
+  .what,
+  .mission,
+  .vision,
+  .Innovation,
+  .Reliability,
+  .approach {
+    box-shadow: 2px 3px 10px 0px grey;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .what {
+    width: 550px;
+    height: 180px;
+  }
+
+  .mission {
+    width: 550px;
+    height: 180px;
+  }
+
+  .vision {
+    width: 550px;
+    height: 180px;
+  }
+
+  .Innovation {
+    width: 550px;
+    height: 180px;
+  }
+
+  .Reliability {
+    width: 550px;
+    height: 180px;
+  }
+
+  .approach {
+    width: 550px;
+    height: 180px;
+  }
+
+  .what p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
+
+  .approach p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
+
+  .mission p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
+
+  .vision p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
+
+  .Innovation p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
+
+  .Reliability p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
+
+  .promotors {
+    /* box-shadow: 1px 5px 15px 3px grey; */
+    /* margin-top: 20px; */
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px 10px 15px;
+    /* margin-bottom: 20px; */
+    text-align: justify;
+  }
+
+  h1 {
+    font-family: "Work Sans";
+    font-weight: 600;
+    font-size: 45px;
+    text-align: center;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .promotors p {
+    padding-top: 20px;
+  }
+
+  p {
+    font-family: "Work Sans";
+    font-weight: 400;
+    font-size: 17px;
+  }
 }
 
-.what, .mission, .vision, .Innovation, .Reliability, .approach {
+@media (width<=1220px) {
+  .containter {
+    width: 400px;
+    height: 700px;
+  }
+
+  .sub-heading {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin-bottom: 25px;
+  }
+
+  .what,
+  .mission,
+  .vision,
+  .Innovation,
+  .Reliability,
+  .approach {
     box-shadow: 2px 3px 10px 0px grey;
     border: none;
     border-radius: 10px;
@@ -53,1949 +306,1084 @@ h2 {
     gap: 20px;
     align-items: center;
     justify-content: flex-start;
-}
+  }
 
-.what p {
+  .what {
+    width: 300px;
+    height: 330px;
+  }
+
+  .mission {
+    width: 300px;
+    height: 330px;
+  }
+
+  .vision {
+    width: 300px;
+    height: 330px;
+  }
+
+  .Innovation {
+    width: 300px;
+    height: 330px;
+  }
+
+  .Reliability {
+    width: 300px;
+    height: 330px;
+  }
+
+  .approach {
+    width: 300px;
+    height: 330px;
+  }
+
+  .what p {
     font-family: "Work Sans";
     font-weight: 400;
-}
+  }
 
-.approach p {
+  .approach p {
     font-family: "Work Sans";
     font-weight: 400;
-}
+  }
 
-.mission p {
+  .mission p {
     font-family: "Work Sans";
     font-weight: 400;
-}
+  }
 
-.vision p {
+  .vision p {
     font-family: "Work Sans";
     font-weight: 400;
-}
+  }
 
-.Innovation p {
+  .Innovation p {
     font-family: "Work Sans";
     font-weight: 400;
-}
+  }
 
-.Reliability p {
+  .Reliability p {
     font-family: "Work Sans";
     font-weight: 400;
-}
+  }
 
-.promotors {
-    box-shadow: 1px 5px 15px 3px grey;
-    margin-top: 20px;
+  .promotors {
+    /* box-shadow: 1px 5px 15px 3px grey; */
+    /* margin-top: 20px; */
     border: none;
     border-radius: 10px;
     padding: 10px 10px 10px 15px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     text-align: justify;
-}
+  }
 
-h1 {
-    font-family: 'Work Sans';
+  h1 {
+    font-family: "Work Sans";
     font-weight: 600;
     font-size: 45px;
     text-align: center;
-    background: linear-gradient(to right, #F53F4A 50%, #0D60B5 20%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+  }
 
-.promotors p {
+  .promotors p {
     padding-top: 20px;
-}
+  }
 
-p {
+  p {
     font-family: "Work Sans";
     font-weight: 400;
     font-size: 17px;
+  }
 }
 
-@media(width>=1800px) {
-    .containter {
-        width: 400px;
-        height: 700px;
-    }
+@media (width<=1140px) {
+  .containter {
+    width: 400px;
+    height: 700px;
+  }
 
-    .box-container {
-        height: 75vh;
-    }
+  .sub-heading {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin-bottom: 25px;
+    margin-left: -80px;
+  }
 
-    .sub-heading {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 30px;
-        margin-bottom: 25px;
-    }
+  .what,
+  .mission,
+  .vision,
+  .Innovation,
+  .Reliability,
+  .approach {
+    box-shadow: 2px 3px 10px 0px grey;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 30px 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+  }
 
-    .what, .mission, .vision, .Innovation, .Reliability, .approach {
-        box-shadow: 2px 3px 10px 0px grey;
-        border: none;
-        border-radius: 10px;
-        padding: 15px 30px 20px;
-        text-align: justify;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-        justify-content: flex-start;
-    }
+  .what {
+    width: 300px;
+    height: 330px;
+  }
 
+  .mission {
+    width: 300px;
+    height: 330px;
+  }
 
-    .what {
-        width: 550px;
-        height: 180px;
-    }
+  .vision {
+    width: 300px;
+    height: 330px;
+    margin-right: 370px;
+  }
 
-    .mission {
-        width: 550px;
-        height: 180px;
-    }
+  .Innovation {
+    width: 300px;
+    height: 330px;
+  }
 
-    .vision {
-        width: 550px;
-        height: 180px;
-    }
+  .Reliability {
+    width: 300px;
+    height: 330px;
+  }
 
-    .Innovation {
-        width: 550px;
-        height: 180px;
-    }
+  .approach {
+    width: 300px;
+    height: 330px;
+  }
 
-    .Reliability {
-        width: 550px;
-        height: 180px;
-    }
+  .what p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .approach {
-        width: 550px;
-        height: 180px;
-    }
+  .approach p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
+  .mission p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .what p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  .vision p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .approach p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  .Innovation p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .mission p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  .Reliability p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .vision p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  .promotors {
+    /* box-shadow: 1px 5px 15px 3px grey; */
+    /* margin-top: 20px; */
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px 10px 15px;
+    /* margin-bottom: 20px; */
+    text-align: justify;
+  }
 
-    .Innovation p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  h1 {
+    font-family: "Work Sans";
+    font-weight: 600;
+    font-size: 45px;
+    text-align: center;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-    .Reliability p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  .promotors p {
+    padding-top: 20px;
+  }
 
-
-    .promotors {
-        /* box-shadow: 1px 5px 15px 3px grey; */
-        /* margin-top: 20px; */
-        border: none;
-        border-radius: 10px;
-        padding: 10px 10px 10px 15px;
-        /* margin-bottom: 20px; */
-        text-align: justify;
-    }
-
-    h1 {
-        font-family: 'Work Sans';
-        font-weight: 600;
-        font-size: 45px;
-        text-align: center;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .promotors p {
-        padding-top: 20px;
-    }
-
-    p {
-        font-family: "Work Sans";
-        font-weight: 400;
-        font-size: 17px;
-    }
+  p {
+    font-family: "Work Sans";
+    font-weight: 400;
+    font-size: 17px;
+  }
 }
 
+@media (width<=1080px) {
+  .containter {
+    width: 400px;
+    height: 700px;
+  }
 
-@media(width<=1220px) {
-    .containter {
-        width: 400px;
-        height: 700px;
-    }
+  .sub-heading {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin-bottom: 25px;
+    margin-left: -50px;
+  }
 
+  .what,
+  .mission,
+  .vision,
+  .Innovation,
+  .Reliability,
+  .approach {
+    box-shadow: 2px 3px 10px 0px grey;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 30px 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+  }
 
-    .sub-heading {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 30px;
-        margin-bottom: 25px;
-    }
+  .what {
+    width: 270px;
+    height: 350px;
+  }
 
-    .what, .mission, .vision, .Innovation, .Reliability, .approach {
-        box-shadow: 2px 3px 10px 0px grey;
-        border: none;
-        border-radius: 10px;
-        padding: 20px 30px 20px;
-        text-align: justify;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-        justify-content: flex-start;
-    }
+  .mission {
+    width: 270px;
+    height: 350px;
+  }
 
-    .what {
-        width: 300px;
-        height: 330px;
-    }
+  .vision {
+    width: 270px;
+    height: 350px;
+  }
 
-    .mission {
-        width: 300px;
-        height: 330px;
-    }
+  .Innovation {
+    width: 270px;
+    height: 350px;
+  }
 
-    .vision {
-        width: 300px;
-        height: 330px;
-    }
+  .Reliability {
+    width: 270px;
+    height: 350px;
+  }
 
-    .Innovation {
-        width: 300px;
-        height: 330px;
-    }
+  .approach {
+    width: 270px;
+    height: 350px;
+  }
 
-    .Reliability {
-        width: 300px;
-        height: 330px;
-    }
+  .what p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .approach {
-        width: 300px;
-        height: 330px;
-    }
+  .approach p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .what p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  .mission p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .approach p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  .vision p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .mission p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  .Innovation p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .vision p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  .Reliability p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .Innovation p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  .promotors {
+    /* box-shadow: 1px 5px 15px 3px grey; */
+    /* margin-top: 20px; */
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px 10px 15px;
+    /* margin-bottom: 20px; */
+    text-align: justify;
+  }
 
-    .Reliability p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  h1 {
+    font-family: "Work Sans";
+    font-weight: 600;
+    font-size: 45px;
+    text-align: center;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
+  .promotors p {
+    padding-top: 20px;
+  }
 
-    .promotors {
-        /* box-shadow: 1px 5px 15px 3px grey; */
-        /* margin-top: 20px; */
-        border: none;
-        border-radius: 10px;
-        padding: 10px 10px 10px 15px;
-        /* margin-bottom: 20px; */
-        text-align: justify;
-    }
-
-    h1 {
-        font-family: 'Work Sans';
-        font-weight: 600;
-        font-size: 45px;
-        text-align: center;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .promotors p {
-        padding-top: 20px;
-    }
-
-    p {
-        font-family: "Work Sans";
-        font-weight: 400;
-        font-size: 17px;
-    }
+  p {
+    font-family: "Work Sans";
+    font-weight: 400;
+    font-size: 17px;
+  }
 }
 
+@media (width<=992px) {
+  .containter {
+    width: 400px;
+    height: 700px;
+  }
 
-@media(width<=1140px) {
-    .containter {
-        width: 400px;
-        height: 700px;
+  .sub-heading {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin-bottom: 25px;
+    margin-left: -130px;
+  }
 
-    }
+  .what,
+  .mission,
+  .vision,
+  .Innovation,
+  .Reliability,
+  .approach {
+    box-shadow: 2px 3px 10px 0px grey;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 30px 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+  }
 
+  .what {
+    width: 280px;
+    height: 350px;
+  }
 
-    .sub-heading {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 5px;
-        padding: 10px 190px 10px 10px;
-        margin-bottom: 25px;
-        margin-left: -10px;
-    }
+  .mission {
+    width: 280px;
+    height: 350px;
+  }
 
-    .what, .mission, .vision, .Innovation, .Reliability, .approach {
-        box-shadow: 2px 3px 10px 0px grey;
-        border: none;
-        border-radius: 10px;
-        padding: 20px 10px 20px;
-        text-align: justify;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        align-items: center;
-        justify-content: flex-start;
-    }
+  .vision {
+    width: 280px;
+    height: 350px;
+  }
 
-    .what {
-        width: 300px;
-        height: 270px;
-    }
+  .Innovation {
+    width: 280px;
+    height: 350px;
+  }
 
-    .mission {
-        width: 300px;
-        height: 270px;
-    }
+  .Reliability {
+    width: 280px;
+    height: 350px;
+  }
 
-    .vision {
-        width: 300px;
-        height: 270px;
-    }
+  .approach {
+    width: 280px;
+    height: 350px;
+  }
 
-    .Innovation {
-        width: 300px;
-        height: 270px;
-    }
+  .what p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .Reliability {
-        width: 300px;
-        height: 270px;
-    }
+  .approach p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .approach {
-        width: 300px;
-        height: 270px;
-    }
+  .mission p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .what p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  .vision p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .approach p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  .Innovation p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .mission p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  .Reliability p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .vision p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  .promotors {
+    /* box-shadow: 1px 5px 15px 3px grey; */
+    /* margin-top: 20px; */
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px 10px 15px;
+    /* margin-bottom: 20px; */
+    text-align: justify;
+  }
 
-    .Innovation p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  h1 {
+    font-family: "Work Sans";
+    font-weight: 600;
+    font-size: 45px;
+    text-align: center;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-    .Reliability p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  .promotors p {
+    padding-top: 20px;
+  }
 
-
-    .promotors {
-        /* box-shadow: 1px 5px 15px 3px grey; */
-        /* margin-top: 20px; */
-        border: none;
-        border-radius: 10px;
-        padding: 10px 10px 10px 15px;
-        /* margin-bottom: 20px; */
-        text-align: justify;
-    }
-
-    h1 {
-        font-family: 'Work Sans';
-        font-weight: 600;
-        font-size: 45px;
-        text-align: center;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .promotors p {
-        padding-top: 20px;
-    }
-
-    p {
-        font-family: "Work Sans";
-        font-weight: 400;
-        font-size: 17px;
-    }
+  p {
+    font-family: "Work Sans";
+    font-weight: 400;
+    font-size: 17px;
+  }
 }
 
+@media (width<=940px) {
+  .containter {
+    width: 400px;
+    height: 700px;
+  }
 
-@media(width<=1080px) {
-    .containter {
-        width: 400px;
-        height: 700px;
+  .sub-heading {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    margin-bottom: 25px;
+    margin-left: -5px;
+  }
 
-    }
+  .what,
+  .mission,
+  .vision,
+  .Innovation,
+  .Reliability,
+  .approach {
+    box-shadow: 2px 3px 10px 0px grey;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 30px 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+  }
 
-    .box-container h1 {
-        font-size: 1.8em;
-    }
+  .what {
+    width: 280px;
+    height: 350px;
+  }
 
-    .sub-heading h2 {
-        font-size: 1.18em;
-    }
+  .mission {
+    width: 280px;
+    height: 350px;
+    margin-left: -328px;
+  }
 
-    .sub-heading p {
-        font-size: 1.0em;
-    }
+  .vision {
+    width: 280px;
+    height: 350px;
+  }
 
-    .promotors p {
-        font-size: 1.0em;
-    }
+  .Innovation {
+    width: 280px;
+    height: 350px;
+  }
 
+  .Reliability {
+    width: 280px;
+    height: 350px;
+  }
 
-    .sub-heading {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 5px;
-        padding: 15px 200px 10px 45px;
-        margin-bottom: 25px;
-        margin-left: -10px;
-    }
+  .approach {
+    width: 280px;
+    height: 350px;
+  }
 
-    .what, .mission, .vision, .Innovation, .Reliability, .approach {
-        box-shadow: 2px 3px 10px 0px grey;
-        border: none;
-        border-radius: 10px;
-        padding: 20px 10px 20px;
-        text-align: justify;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        align-items: center;
-        justify-content: flex-start;
-    }
+  .what p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .what {
-        width: 270px;
-        height: 220px;
-    }
+  .approach p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .mission {
-        width: 270px;
-        height: 220px;
-    }
+  .mission p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .vision {
-        width: 270px;
-        height: 220px;
-    }
+  .vision p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .Innovation {
-        width: 270px;
-        height: 220px;
-    }
+  .Innovation p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .Reliability {
-        width: 270px;
-        height: 220px;
-    }
+  .Reliability p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .approach {
-        width: 270px;
-        height: 220px;
-    }
+  .promotors {
+    /* box-shadow: 1px 5px 15px 3px grey; */
+    /* margin-top: 20px; */
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px 10px 15px;
+    /* margin-bottom: 20px; */
+    text-align: justify;
+  }
 
-    .what p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  h1 {
+    font-family: "Work Sans";
+    font-weight: 600;
+    font-size: 45px;
+    text-align: center;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-    .approach p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  .promotors p {
+    padding-top: 20px;
+  }
 
-    .mission p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .vision p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .Innovation p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .Reliability p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-
-    .promotors {
-        /* box-shadow: 1px 5px 15px 3px grey; */
-        /* margin-top: 20px; */
-        border: none;
-        border-radius: 10px;
-        padding: 10px 10px 10px 15px;
-        /* margin-bottom: 20px; */
-        text-align: justify;
-    }
-
-    h1 {
-        font-family: 'Work Sans';
-        font-weight: 600;
-        font-size: 45px;
-        text-align: center;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .promotors p {
-        padding-top: 20px;
-    }
-
-    p {
-        font-family: "Work Sans";
-        font-weight: 400;
-        font-size: 17px;
-    }
+  p {
+    font-family: "Work Sans";
+    font-weight: 400;
+    font-size: 17px;
+  }
 }
 
+@media (width<=800px) {
+  .containter {
+    width: 400px;
+    height: 700px;
+  }
 
-@media(width<=992px) {
-    .containter {
-        width: 400px;
-        height: 700px;
+  .sub-heading {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    margin-bottom: 25px;
+    margin-left: -65px;
+  }
 
-    }
+  .what,
+  .mission,
+  .vision,
+  .Innovation,
+  .Reliability,
+  .approach {
+    box-shadow: 2px 3px 10px 0px grey;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 30px 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+  }
 
-    .box-container h1 {
-        font-size: 1.65em;
-    }
+  .what {
+    width: 280px;
+    height: 350px;
+  }
 
-    .sub-heading h2 {
-        font-size: 1.1em;
-    }
+  .mission {
+    width: 280px;
+    height: 350px;
+  }
 
-    .sub-heading p {
-        font-size: 0.9em;
-    }
+  .vision {
+    width: 280px;
+    height: 350px;
+  }
 
-    .promotors p {
-        font-size: 0.9em;
-    }
+  .Innovation {
+    width: 280px;
+    height: 350px;
+  }
 
+  .Reliability {
+    width: 280px;
+    height: 350px;
+  }
 
-    .sub-heading {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 5px;
-        padding: 15px 200px 10px 25px;
-        margin-bottom: 25px;
-        margin-left: -10px;
-    }
+  .approach {
+    width: 280px;
+    height: 350px;
+  }
 
-    .what, .mission, .vision, .Innovation, .Reliability, .approach {
-        box-shadow: 2px 3px 10px 0px grey;
-        border: none;
-        border-radius: 10px;
-        padding: 20px 10px 20px;
-        text-align: justify;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        align-items: center;
-        justify-content: flex-start;
-    }
+  .what p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .what {
-        width: 250px;
-        height: 200px;
-    }
+  .approach p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .mission {
-        width: 250px;
-        height: 200px;
-    }
+  .mission p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .vision {
-        width: 250px;
-        height: 200px;
-    }
+  .vision p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .Innovation {
-        width: 250px;
-        height: 200px;
-    }
+  .Innovation p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .Reliability {
-        width: 250px;
-        height: 200px;
-    }
+  .Reliability p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .approach {
-        width: 250px;
-        height: 200px;
-    }
+  .promotors {
+    /* box-shadow: 1px 5px 15px 3px grey; */
+    /* margin-top: 20px; */
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px 10px 15px;
+    /* margin-bottom: 20px; */
+    text-align: justify;
+  }
 
-    .what p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  h1 {
+    font-family: "Work Sans";
+    font-weight: 600;
+    font-size: 45px;
+    text-align: center;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-    .approach p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  .promotors p {
+    padding-top: 20px;
+  }
 
-    .mission p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .vision p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .Innovation p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .Reliability p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-
-    .promotors {
-        /* box-shadow: 1px 5px 15px 3px grey; */
-        /* margin-top: 20px; */
-        border: none;
-        border-radius: 10px;
-        padding: 10px 10px 10px 15px;
-        /* margin-bottom: 20px; */
-        text-align: justify;
-    }
-
-    h1 {
-        font-family: 'Work Sans';
-        font-weight: 600;
-        font-size: 45px;
-        text-align: center;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .promotors p {
-        padding-top: 20px;
-    }
-
-    p {
-        font-family: "Work Sans";
-        font-weight: 400;
-        font-size: 17px;
-    }
+  p {
+    font-family: "Work Sans";
+    font-weight: 400;
+    font-size: 17px;
+  }
 }
 
+@media (width<=768px) {
+  .containter {
+    width: 400px;
+    height: 700px;
+  }
 
-@media(width<=940px) {
-    .containter {
-        width: 400px;
-        height: 700px;
+  .sub-heading {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+    margin-bottom: 25px;
+    align-items: center;
+    padding: 30px 30px 30px 155px;
+  }
 
-    }
+  .what,
+  .mission,
+  .vision,
+  .Innovation,
+  .Reliability,
+  .approach {
+    box-shadow: 2px 3px 10px 0px grey;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 30px 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+  }
 
-    .box-container h1 {
-        font-size: 1.65em;
-    }
+  .what {
+    width: 340px;
+    height: 350px;
+  }
 
-    .sub-heading h2 {
-        font-size: 1.1em;
-    }
+  .mission {
+    width: 340px;
+    height: 350px;
+    margin-left: -1px;
+  }
 
-    .sub-heading p {
-        font-size: 0.9em;
-    }
+  .vision {
+    width: 340px;
+    height: 350px;
+  }
 
-    .promotors p {
-        font-size: 0.9em;
-    }
+  .Innovation {
+    width: 340px;
+    height: 350px;
+  }
 
+  .Reliability {
+    width: 340px;
+    height: 350px;
+  }
 
-    .sub-heading {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 5px;
-        padding: 15px 200px 10px 25px;
-        margin-bottom: 25px;
-        margin-left: -10px;
-    }
+  .approach {
+    width: 340px;
+    height: 350px;
+  }
 
-    .what, .mission, .vision, .Innovation, .Reliability, .approach {
-        box-shadow: 2px 3px 10px 0px grey;
-        border: none;
-        border-radius: 10px;
-        padding: 20px 25px 20px;
-        text-align: justify;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        align-items: center;
-        justify-content: flex-start;
-    }
+  .what p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .what {
-        width: 230px;
-        height: 235px;
-    }
+  .approach p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .mission {
-        width: 230px;
-        height: 235px;
-    }
+  .mission p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .vision {
-        width: 230px;
-        height: 235px;
-    }
+  .vision p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .Innovation {
-        width: 230px;
-        height: 235px;
-    }
+  .Innovation p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .Reliability {
-        width: 230px;
-        height: 235px;
-    }
+  .Reliability p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .approach {
-        width: 230px;
-        height: 235px;
-    }
+  .promotors {
+    /* box-shadow: 1px 5px 15px 3px grey; */
+    /* margin-top: 20px; */
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px 10px 15px;
+    /* margin-bottom: 20px; */
+    text-align: justify;
+  }
 
-    .what p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  h1 {
+    font-family: "Work Sans";
+    font-weight: 600;
+    font-size: 45px;
+    text-align: center;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-    .approach p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  .promotors p {
+    padding-top: 20px;
+  }
 
-    .mission p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .vision p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .Innovation p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .Reliability p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-
-    .promotors {
-        /* box-shadow: 1px 5px 15px 3px grey; */
-        /* margin-top: 20px; */
-        border: none;
-        border-radius: 10px;
-        padding: 10px 10px 10px 15px;
-        /* margin-bottom: 20px; */
-        text-align: justify;
-    }
-
-    h1 {
-        font-family: 'Work Sans';
-        font-weight: 600;
-        font-size: 45px;
-        text-align: center;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .promotors p {
-        padding-top: 20px;
-    }
-
-    p {
-        font-family: "Work Sans";
-        font-weight: 400;
-        font-size: 17px;
-    }
-
+  p {
+    font-family: "Work Sans";
+    font-weight: 400;
+    font-size: 17px;
+  }
 }
 
-@media(width<=800px) {
-    .containter {
-        width: 400px;
-        height: 700px;
+@media (width<=600px) {
+  .containter {
+    width: 400px;
+    height: 700px;
+  }
 
-    }
+  .sub-heading {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+    margin-bottom: 25px;
+    align-items: center;
+    padding: 30px 30px 30px 50px;
+    margin-left: 40px;
+  }
 
-    .box-container h1 {
-        font-size: 1.65em;
-    }
+  .what,
+  .mission,
+  .vision,
+  .Innovation,
+  .Reliability,
+  .approach {
+    box-shadow: 2px 3px 10px 0px grey;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 30px 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+  }
 
-    .sub-heading h2 {
-        font-size: 1.1em;
-    }
+  .what {
+    width: 340px;
+    height: 350px;
+  }
 
-    .sub-heading p {
-        font-size: 0.9em;
-    }
+  .mission {
+    width: 340px;
+    height: 350px;
+    margin-left: -1px;
+  }
 
-    .promotors p {
-        font-size: 0.9em;
-    }
+  .vision {
+    width: 340px;
+    height: 350px;
+  }
 
+  .Innovation {
+    width: 340px;
+    height: 350px;
+  }
 
-    .sub-heading {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 5px;
-        padding: 15px 250px 10px 90px;
-        margin-bottom: 25px;
-        margin-left: -10px;
-    }
+  .Reliability {
+    width: 340px;
+    height: 350px;
+  }
 
-    .what, .mission, .vision, .Innovation, .Reliability, .approach {
-        box-shadow: 2px 3px 10px 0px grey;
-        border: none;
-        border-radius: 10px;
-        padding: 20px 25px 20px;
-        text-align: justify;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        align-items: center;
-        justify-content: flex-start;
-    }
+  .approach {
+    width: 340px;
+    height: 350px;
+  }
 
-    .what {
-        width: 230px;
-        height: 235px;
-    }
+  .what p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .mission {
-        width: 230px;
-        height: 235px;
-    }
+  .approach p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .vision {
-        width: 230px;
-        height: 235px;
-    }
+  .mission p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .Innovation {
-        width: 230px;
-        height: 235px;
-    }
+  .vision p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .Reliability {
-        width: 230px;
-        height: 235px;
-    }
+  .Innovation p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .approach {
-        width: 230px;
-        height: 235px;
-    }
+  .Reliability p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
 
-    .what p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  .promotors {
+    /* box-shadow: 1px 5px 15px 3px grey; */
+    /* margin-top: 20px; */
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px 10px 15px;
+    /* margin-bottom: 20px; */
+    text-align: justify;
+  }
 
-    .approach p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  h1 {
+    font-family: "Work Sans";
+    font-weight: 600;
+    font-size: 45px;
+    text-align: center;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-    .mission p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
+  .promotors p {
+    padding-top: 20px;
+  }
 
-    .vision p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .Innovation p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .Reliability p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-
-    .promotors {
-        /* box-shadow: 1px 5px 15px 3px grey; */
-        /* margin-top: 20px; */
-        border: none;
-        border-radius: 10px;
-        padding: 10px 10px 10px 15px;
-        /* margin-bottom: 20px; */
-        text-align: justify;
-    }
-
-    h1 {
-        font-family: 'Work Sans';
-        font-weight: 600;
-        font-size: 45px;
-        text-align: center;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .promotors p {
-        padding-top: 20px;
-    }
-
-    p {
-        font-family: "Work Sans";
-        font-weight: 400;
-        font-size: 17px;
-    }
-
+  p {
+    font-family: "Work Sans";
+    font-weight: 400;
+    font-size: 17px;
+  }
 }
 
-
-@media(width<=768px) {
-    .containter {
-        width: 400px;
-        height: 700px;
-
-    }
-
-    .box-container h1 {
-        font-size: 1.65em;
-    }
-
-    .sub-heading h2 {
-        font-size: 1.1em;
-    }
-
-    .sub-heading p {
-        font-size: 0.9em;
-    }
-
-    .promotors p {
-        font-size: 0.9em;
-    }
-
-
-    .sub-heading {
-        display: grid;
-        grid-template-columns: 1fr;
-        column-gap: 5px;
-        padding: 15px 250px 10px 220px;
-        margin-bottom: 25px;
-        margin-left: -10px;
-    }
-
-    .what, .mission, .vision, .Innovation, .Reliability, .approach {
-        box-shadow: 2px 3px 10px 0px grey;
-        border: none;
-        border-radius: 10px;
-        padding: 20px 25px 20px;
-        text-align: justify;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .what {
-        width: 230px;
-        height: 235px;
-    }
-
-    .mission {
-        width: 230px;
-        height: 235px;
-    }
-
-    .vision {
-        width: 230px;
-        height: 235px;
-    }
-
-    .Innovation {
-        width: 230px;
-        height: 235px;
-    }
-
-    .Reliability {
-        width: 230px;
-        height: 235px;
-    }
-
-    .approach {
-        width: 230px;
-        height: 235px;
-    }
-
-    .what p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .approach p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .mission p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .vision p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .Innovation p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .Reliability p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-
-    .promotors {
-        /* box-shadow: 1px 5px 15px 3px grey; */
-        /* margin-top: 20px; */
-        border: none;
-        border-radius: 10px;
-        padding: 10px 10px 10px 15px;
-        /* margin-bottom: 20px; */
-        text-align: justify;
-    }
-
-    h1 {
-        font-family: 'Work Sans';
-        font-weight: 600;
-        font-size: 45px;
-        text-align: center;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .promotors p {
-        padding-top: 20px;
-    }
-
-    p {
-        font-family: "Work Sans";
-        font-weight: 400;
-        font-size: 17px;
-    }
-}
-
-@media(width<=720px) {
-    .containter {
-        width: 400px;
-        height: 700px;
-
-    }
-
-    .box-container h1 {
-        font-size: 1.65em;
-    }
-
-    .sub-heading h2 {
-        font-size: 1.1em;
-    }
-
-    .sub-heading p {
-        font-size: 0.9em;
-    }
-
-    .promotors p {
-        font-size: 0.9em;
-    }
-
-
-    .sub-heading {
-        display: grid;
-        grid-template-columns: 1fr;
-        column-gap: 5px;
-        padding: 15px 250px 10px 195px;
-        margin-bottom: 25px;
-        margin-left: -10px;
-    }
-
-    .what, .mission, .vision, .Innovation, .Reliability, .approach {
-        box-shadow: 2px 3px 10px 0px grey;
-        border: none;
-        border-radius: 10px;
-        padding: 20px 25px 20px;
-        text-align: justify;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .what {
-        width: 230px;
-        height: 235px;
-    }
-
-    .mission {
-        width: 230px;
-        height: 235px;
-    }
-
-    .vision {
-        width: 230px;
-        height: 235px;
-    }
-
-    .Innovation {
-        width: 230px;
-        height: 235px;
-    }
-
-    .Reliability {
-        width: 230px;
-        height: 235px;
-    }
-
-    .approach {
-        width: 230px;
-        height: 235px;
-    }
-
-    .what p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .approach p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .mission p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .vision p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .Innovation p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .Reliability p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-
-    .promotors {
-        /* box-shadow: 1px 5px 15px 3px grey; */
-        /* margin-top: 20px; */
-        border: none;
-        border-radius: 10px;
-        padding: 10px 10px 10px 15px;
-        /* margin-bottom: 20px; */
-        text-align: justify;
-    }
-
-    h1 {
-        font-family: 'Work Sans';
-        font-weight: 600;
-        font-size: 45px;
-        text-align: center;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .promotors p {
-        padding-top: 20px;
-    }
-
-    p {
-        font-family: "Work Sans";
-        font-weight: 400;
-        font-size: 17px;
-    }
-
-}
-
-@media(width<=640px) {
-    .containter {
-        width: 400px;
-        height: 700px;
-
-    }
-
-    .box-container h1 {
-        font-size: 1.65em;
-    }
-
-    .sub-heading h2 {
-        font-size: 1.1em;
-    }
-
-    .sub-heading p {
-        font-size: 0.9em;
-    }
-
-    .promotors p {
-        font-size: 0.9em;
-    }
-
-
-    .sub-heading {
-        display: grid;
-        grid-template-columns: 1fr;
-        column-gap: 5px;
-        padding: 15px 250px 10px 160px;
-        margin-bottom: 25px;
-        margin-left: -10px;
-    }
-
-    .what, .mission, .vision, .Innovation, .Reliability, .approach {
-        box-shadow: 2px 3px 10px 0px grey;
-        border: none;
-        border-radius: 10px;
-        padding: 20px 25px 20px;
-        text-align: justify;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .what {
-        width: 230px;
-        height: 235px;
-    }
-
-    .mission {
-        width: 230px;
-        height: 235px;
-    }
-
-    .vision {
-        width: 230px;
-        height: 235px;
-    }
-
-    .Innovation {
-        width: 230px;
-        height: 235px;
-    }
-
-    .Reliability {
-        width: 230px;
-        height: 235px;
-    }
-
-    .approach {
-        width: 230px;
-        height: 235px;
-    }
-
-    .what p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .approach p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .mission p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .vision p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .Innovation p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .Reliability p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-
-    .promotors {
-        /* box-shadow: 1px 5px 15px 3px grey; */
-        /* margin-top: 20px; */
-        border: none;
-        border-radius: 10px;
-        padding: 10px 10px 10px 15px;
-        /* margin-bottom: 20px; */
-        text-align: justify;
-    }
-
-    h1 {
-        font-family: 'Work Sans';
-        font-weight: 600;
-        font-size: 45px;
-        text-align: center;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .promotors p {
-        padding-top: 20px;
-    }
-
-    p {
-        font-family: "Work Sans";
-        font-weight: 400;
-        font-size: 17px;
-    }
-
-}
-
-@media(width<=600px) {
-    .containter {
-        width: 400px;
-        height: 700px;
-
-    }
-
-    .box-container h1 {
-        font-size: 1.65em;
-    }
-
-    .sub-heading h2 {
-        font-size: 1.1em;
-    }
-
-    .sub-heading p {
-        font-size: 0.9em;
-    }
-
-    .promotors p {
-        font-size: 0.9em;
-    }
-
-
-    .sub-heading {
-        display: grid;
-        grid-template-columns: 1fr;
-        column-gap: 5px;
-        padding: 15px 250px 10px 140px;
-        margin-bottom: 25px;
-        margin-left: -10px;
-    }
-
-    .what, .mission, .vision, .Innovation, .Reliability, .approach {
-        box-shadow: 2px 3px 10px 0px grey;
-        border: none;
-        border-radius: 10px;
-        padding: 20px 25px 20px;
-        text-align: justify;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .what {
-        width: 230px;
-        height: 235px;
-    }
-
-    .mission {
-        width: 230px;
-        height: 235px;
-    }
-
-    .vision {
-        width: 230px;
-        height: 235px;
-    }
-
-    .Innovation {
-        width: 230px;
-        height: 235px;
-    }
-
-    .Reliability {
-        width: 230px;
-        height: 235px;
-    }
-
-    .approach {
-        width: 230px;
-        height: 235px;
-    }
-
-    .what p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .approach p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .mission p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .vision p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .Innovation p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .Reliability p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-
-    .promotors {
-        /* box-shadow: 1px 5px 15px 3px grey; */
-        /* margin-top: 20px; */
-        border: none;
-        border-radius: 10px;
-        padding: 10px 10px 10px 15px;
-        /* margin-bottom: 20px; */
-        text-align: justify;
-    }
-
-    h1 {
-        font-family: 'Work Sans';
-        font-weight: 600;
-        font-size: 45px;
-        text-align: center;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .promotors p {
-        padding-top: 20px;
-    }
-
-    p {
-        font-family: "Work Sans";
-        font-weight: 400;
-        font-size: 17px;
-    }
-
-}
-
-@media(width<=540px) {
-    .containter {
-        width: 400px;
-        height: 700px;
-
-    }
-
-    .box-container h1 {
-        font-size: 1.65em;
-    }
-
-    .sub-heading h2 {
-        font-size: 1.1em;
-    }
-
-    .sub-heading p {
-        font-size: 0.9em;
-    }
-
-    .promotors p {
-        font-size: 0.9em;
-    }
-
-
-    .sub-heading {
-        display: grid;
-        grid-template-columns: 1fr;
-        column-gap: 5px;
-        padding: 15px 250px 10px 110px;
-        margin-bottom: 25px;
-        margin-left: -10px;
-    }
-
-    .what, .mission, .vision, .Innovation, .Reliability, .approach {
-        box-shadow: 2px 3px 10px 0px grey;
-        border: none;
-        border-radius: 10px;
-        padding: 20px 25px 20px;
-        text-align: justify;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .what {
-        width: 230px;
-        height: 235px;
-    }
-
-    .mission {
-        width: 230px;
-        height: 235px;
-    }
-
-    .vision {
-        width: 230px;
-        height: 235px;
-    }
-
-    .Innovation {
-        width: 230px;
-        height: 235px;
-    }
-
-    .Reliability {
-        width: 230px;
-        height: 235px;
-    }
-
-    .approach {
-        width: 230px;
-        height: 235px;
-    }
-
-    .what p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .approach p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .mission p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .vision p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .Innovation p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .Reliability p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-
-    .promotors {
-        /* box-shadow: 1px 5px 15px 3px grey; */
-        /* margin-top: 20px; */
-        border: none;
-        border-radius: 10px;
-        padding: 10px 10px 10px 15px;
-        /* margin-bottom: 20px; */
-        text-align: justify;
-    }
-
-    h1 {
-        font-family: 'Work Sans';
-        font-weight: 600;
-        font-size: 45px;
-        text-align: center;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .promotors p {
-        padding-top: 20px;
-    }
-
-    p {
-        font-family: "Work Sans";
-        font-weight: 400;
-        font-size: 17px;
-    }
-
-}
-
-
-@media(width<=520px) {
-    .containter {
-        width: 400px;
-        height: 700px;
-
-    }
-
-    .box-container h1 {
-        font-size: 1.65em;
-    }
-
-    .sub-heading h2 {
-        font-size: 1.1em;
-    }
-
-    .sub-heading p {
-        font-size: 0.9em;
-    }
-
-    .promotors p {
-        font-size: 0.9em;
-    }
-
-
-    .sub-heading {
-        display: grid;
-        grid-template-columns: 1fr;
-        column-gap: 5px;
-        padding: 15px 250px 10px 100px;
-        margin-bottom: 25px;
-        margin-left: -10px;
-    }
-
-    .what, .mission, .vision, .Innovation, .Reliability, .approach {
-        box-shadow: 2px 3px 10px 0px grey;
-        border: none;
-        border-radius: 10px;
-        padding: 20px 25px 20px;
-        text-align: justify;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .what {
-        width: 230px;
-        height: 235px;
-    }
-
-    .mission {
-        width: 230px;
-        height: 235px;
-    }
-
-    .vision {
-        width: 230px;
-        height: 235px;
-    }
-
-    .Innovation {
-        width: 230px;
-        height: 235px;
-    }
-
-    .Reliability {
-        width: 230px;
-        height: 235px;
-    }
-
-    .approach {
-        width: 230px;
-        height: 235px;
-    }
-
-    .what p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .approach p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .mission p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .vision p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .Innovation p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .Reliability p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-
-    .promotors {
-        /* box-shadow: 1px 5px 15px 3px grey; */
-        /* margin-top: 20px; */
-        border: none;
-        border-radius: 10px;
-        padding: 10px 10px 10px 15px;
-        /* margin-bottom: 20px; */
-        text-align: justify;
-    }
-
-    h1 {
-        font-family: 'Work Sans';
-        font-weight: 600;
-        font-size: 45px;
-        text-align: center;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .promotors p {
-        padding-top: 20px;
-    }
-
-    p {
-        font-family: "Work Sans";
-        font-weight: 400;
-        font-size: 17px;
-    }
-
-}
-
-
-@media(width<=390px) {
-    .containter {
-        width: 400px;
-        height: 700px;
-
-    }
-
-    .box-container h1 {
-        font-size: 1.65em;
-    }
-
-    .sub-heading h2 {
-        font-size: 1.1em;
-    }
-
-    .sub-heading p {
-        font-size: 0.9em;
-    }
-
-    .promotors p {
-        font-size: 0.9em;
-    }
-
-
-    .sub-heading {
-        display: grid;
-        grid-template-columns: 1fr;
-        column-gap: 5px;
-        padding: 15px 250px 10px 45px;
-        margin-bottom: 25px;
-        margin-left: -10px;
-    }
-
-    .what, .mission, .vision, .Innovation, .Reliability, .approach {
-        box-shadow: 2px 3px 10px 0px grey;
-        border: none;
-        border-radius: 10px;
-        padding: 20px 25px 20px;
-        text-align: justify;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .what {
-        width: 230px;
-        height: 235px;
-    }
-
-    .mission {
-        width: 230px;
-        height: 235px;
-    }
-
-    .vision {
-        width: 230px;
-        height: 235px;
-    }
-
-    .Innovation {
-        width: 230px;
-        height: 235px;
-    }
-
-    .Reliability {
-        width: 230px;
-        height: 235px;
-    }
-
-    .approach {
-        width: 230px;
-        height: 235px;
-    }
-
-    .what p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .approach p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .mission p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .vision p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .Innovation p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-    .Reliability p {
-        font-family: "Work Sans";
-        font-weight: 400;
-    }
-
-
-    .promotors {
-        /* box-shadow: 1px 5px 15px 3px grey; */
-        /* margin-top: 20px; */
-        border: none;
-        border-radius: 10px;
-        padding: 10px 10px 10px 15px;
-        /* margin-bottom: 20px; */
-        text-align: justify;
-    }
-
-    h1 {
-        font-family: 'Work Sans';
-        font-weight: 600;
-        font-size: 45px;
-        text-align: center;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .promotors p {
-        padding-top: 20px;
-    }
-
-    p {
-        font-family: "Work Sans";
-        font-weight: 400;
-        font-size: 17px;
-    }
-
+@media (width<=520px) {
+  .containter {
+    width: 400px;
+    height: 700px;
+  }
+
+  .sub-heading {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+    margin-bottom: 25px;
+    align-items: center;
+    padding: 10px 10px 10px 20px;
+  }
+
+  .what,
+  .mission,
+  .vision,
+  .Innovation,
+  .Reliability,
+  .approach {
+    box-shadow: 2px 3px 10px 0px grey;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 30px 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .what {
+    width: 340px;
+    height: 350px;
+    margin-left: -30px;
+  }
+
+  .mission {
+    width: 340px;
+    height: 350px;
+    margin-left: -30px;
+  }
+
+  .vision {
+    width: 340px;
+    height: 350px;
+    margin-left: -30px;
+  }
+
+  .Innovation {
+    width: 340px;
+    height: 350px;
+    margin-left: -30px;
+  }
+
+  .Reliability {
+    width: 340px;
+    height: 350px;
+    margin-left: -30px;
+  }
+
+  .approach {
+    width: 340px;
+    height: 350px;
+    margin-left: -30px;
+  }
+
+  .what p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
+
+  .approach p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
+
+  .mission p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
+
+  .vision p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
+
+  .Innovation p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
+
+  .Reliability p {
+    font-family: "Work Sans";
+    font-weight: 400;
+  }
+
+  .promotors {
+    /* box-shadow: 1px 5px 15px 3px grey; */
+    /* margin-top: 20px; */
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px 10px 15px;
+    /* margin-bottom: 20px; */
+    text-align: justify;
+  }
+
+  h1 {
+    font-family: "Work Sans";
+    font-weight: 600;
+    font-size: 45px;
+    text-align: center;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .promotors p {
+    padding-top: 20px;
+  }
+
+  p {
+    font-family: "Work Sans";
+    font-weight: 400;
+    font-size: 17px;
+  }
 }

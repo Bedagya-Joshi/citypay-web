@@ -49,7 +49,7 @@ const Navbar = () => {
   };
 
   return (
-    <>
+    <div>
       <div className="navMenu">
         <div className="Logo-Image">
           <Link to="/">
@@ -81,7 +81,6 @@ const Navbar = () => {
               <img src={IOSDownload} alt="IOS Download" />
             </button>
           </div>
-
           {burgerActive ? <FaTimes /> : <FaBars />}
         </div>
         {navItems.map((item, index) => renderNavItems(item, index))}
@@ -111,7 +110,6 @@ const Navbar = () => {
             <img src={IOSDownload} alt="IOS Download" />
           </button>
         </div>
-
       </div>
       {burgerActive ? (
         <div className="navModal">
@@ -122,7 +120,7 @@ const Navbar = () => {
       ) : (
         <div></div>
       )}
-    </>
+    </div>
   );
 };
 
