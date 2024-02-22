@@ -7,12 +7,6 @@ import photo2 from "../Assets/downloadcitypay.png";
 import photo3 from "../Assets/Carousel-img2.jpg";
 import photo4 from "../Assets/Carousel-img3.png";
 
-const contentStyle = {
-  color: "#fff",
-  lineHeight: "500px",
-  textAlign: "center",
-  background: "#364d79",
-};
 
 const CarouselItem = () => (
   <Carousel autoplay autoplaySpeed={1500} effect="fade" speed={500} dotPosition="bottom">

@@ -9,8 +9,6 @@ import { navItems } from "../utils/constants.js";
 
 const Navbar = () => {
   const location = useLocation();
-
-
   const selectedKeys = [location.pathname];
   const isHomepage = location.pathname === "/";
   const [burgerActive, setBurgerActive] = useState(false);
