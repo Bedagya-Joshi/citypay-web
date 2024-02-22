@@ -1947,28 +1947,45 @@ h4.navbarItems:hover {
   }
 
   .navMenu .Logo-Image img {
-    margin-left: 45px;
-    margin-top: 5px;
-    width: 65px;
-    height: 65px;
+    margin: 1px 1px 1px 1px;
+    padding: 2px 2px 2px 2px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    bottom: 10px;
   }
 
+  .navMenu {
+    margin: 1px 200px 1px 1px;
+    gap: 10px;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .navMenu a {
+    margin-left: auto;
+    margin-right: 0px;
+    font-size: 1.8vh;
+  }
+
+  .download {
+    padding: auto;
+  }
 
   .navMenu .playstore img {
-    margin-left: -5px;
+    margin: 1px 1px 1px 1px;
     border-radius: 5px;
-    width: 90px;
-    height: 30px;
+    width: 10.4vh;
+    height: 4.19vh;
   }
 
   .navMenu .appstore img {
-    margin-left: -5px;
-    width: 90px;
-    height: 35px;
+    margin: 1px 1px 1px 1px;
+    width: 10.4vh;
+    height: 4.22vh;
     border-radius: 5px;
-    margin-right: 70px;
+    margin-right: 0px;
   }
-
 
   .Main-container,
   .mid-container,
@@ -1978,50 +1995,300 @@ h4.navbarItems:hover {
     grid-template-columns: 2fr 2fr;
   }
 
+  .Main-container {
+    margin: 5px 5px 5px 45px;
+    padding: 5px 5px 5px 5px;
+  }
+
+  .Main-container .grid-1 {
+    margin: 5px 5px 5px;
+    height: 50%;
+    width: 120%;
+    font-size: 1.52em;
+  }
+
+  .Main-container .grid-1 .title {
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+    font-size: 1.75em;
+  }
+
+  .Main-container .grid-1 .landing-page-text {
+    margin: 5px 5px 5px 5px;
+    width: 100%;
+  }
+
+  .Main-container .grid-2 {
+    margin: 5px 5px 5px 35px;
+  }
+
+  .Main-container .grid-2 .landing-page-image .bankimage {
+    position: relative;
+    top: 50px;
+  }
+
+  .Main-container .grid-3 {
+    margin: 5px 5px 5px 5px;
+    position: relative;
+    bottom: 250px;
+    height: 50%;
+    width: 120%;
+    font-size: 1.52em;
+  }
+
+  .Main-container .grid-3 .bullet-text {
+    margin: 100px 5px 5px 5px;
+    width: 100%;
+
+  }
+
+  .mid-container {
+    margin: 5px 5px 5px 35px;
+    padding: 5px 5px 5px 5px;
+  }
+
+
+  .mid-container .grid-1 {
+    margin: 1px 1px 1px 15px;
+    padding: 0px;
+    height: 50%;
+    font-size: 1.52em;
+    width: 120%;
+  }
+
+  .mid-container .grid-1 .title {
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+    font-size: 1.75em;
+  }
+
+  .mid-container .grid-1 .bullet-text {
+    margin: 1px 1px 1px 1px;
+    width: 100%;
+  }
+
+  .mid-container .grid-2 {
+    margin: 1px 1px 15px 1px;
+    padding: 5px 5px 5px 5px;
+    height: 80%;
+  }
+
+  .mid-container .grid-2 .landing-page-image .bankimage {
+    margin: 60px 1px 1px 85px;
+    padding: 0px;
+  }
+
+  .mid-container .grid-3 {
+    margin: 1px 1px 1px 7px;
+    position: relative;
+    bottom: 200px;
+    height: 100%;
+    width: 120%;
+    font-size: 1.52em;
+  }
+
+  .mid-container .grid-3 .landing-page-text {
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+    width: 100%;
+  }
+
+
+  .lower-container {
+    margin: 5px 5px 5px 35px;
+    padding: 5px 5px 5px 5px;
+    height: 30%;
+  }
+
+
+  .lower-container .grid-1 {
+    margin: 1px 1px 1px 15px;
+    padding: 0px;
+    height: 50%;
+    width: 120%;
+    font-size: 1.52em;
+  }
+
+  .lower-container .grid-1 .title {
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+    font-size: 1.75em;
+  }
+
+  .lower-container .grid-1 .landing-page-text {
+    margin: 1px 1px 1px 1px;
+    width: 100%;
+  }
+
+  .lower-container .grid-2 {
+    margin: 1px 1px 15px 1px;
+    padding: 5px 5px 5px 5px;
+    height: 70%;
+  }
+
+  .lower-container .grid-2 .landing-page-image .pay {
+    margin: 120px 1px 1px 120px;
+    width: 80%;
+    height: 60%;
+    padding: 0px;
+  }
+
+  .lower-container .grid-3 {
+    position: relative;
+    bottom: 310px;
+    left: 7px;
+    padding: 0px;
+    font-size: 1.52em;
+    width: 120%;
+  }
+
+  .lower-container .grid-3 .bullet-text {
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .fourth-container {
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+  }
+
+
+  .fourth-container .grid-1 {
+    margin: 105px 1px 1px 45px;
+    padding: 0px;
+    height: 50%;
+    width: 120%;
+    font-size: 1.52em;
+  }
+
+  .fourth-container .grid-1 .title {
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+    font-size: 1.75em;
+  }
+
+  .fourth-container .grid-1 .landing-page-text {
+    margin: 1px 1px 1px 1px;
+    width: 90%;
+  }
+
+  .fourth-container .grid-2 {
+    margin: 1px 1px 15px 1px;
+    padding: 5px 5px 5px 5px;
+    height: 90%;
+    width: 85%;
+  }
+
+  .fourth-container .grid-2 .landing-page-image .cell {
+    margin: 1px 1px 1px 80px;
+    padding: 5px 5px 5px 5px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .fifth-container {
+    margin: 5px 5px 5px 35px;
+    padding: 4px 4px 4px 4px;
+  }
+
+  .fifth-container .grid-1 {
+    margin: 85px 1px 1px 1px;
+    height: 70%;
+    position: relative;
+    bottom: 130px;
+    width: 120%;
+    font-size: 1.52em;
+  }
+
+  .fifth-container .grid-1 .title {
+    font-size: 1.75em;
+  }
+
+  .fifth-container .grid-1 .landing-page-text {
+    margin: 1px 1px 1px 1px;
+    padding: 1px 1px 1px 1px;
+    width: 95%;
+  }
+
+  .fifth-container .grid-2 {
+    margin: 1px 1px 1px 1px;
+    padding: 1px 1px 1px 1px;
+  }
+
+  .fifth-container .grid-2 .landing-page-image .bankimage {
+    width: 90%;
+    height: 90%;
+    margin: 30px 1px 1px 50px;
+  }
+
+  .fifth-container .grid-3 {
+    margin: 1px 1px 1px 1px;
+    font-size: 1.52em;
+    width: 120%;
+  }
+
+  .fifth-container .grid-3 .bullet-text {
+    position: relative;
+    bottom: 240px;
+    width: 100%;
+    margin: 1px 1px 1px 10px;
+  }
+
+  .perks {
+    margin: 5px 5px 5px 5px;
+  }
+
+  .perks .title h1 {
+    margin: 1px 170px 1px 1px;
+    font-size: 1.75em;
+  }
+
   .sub-heading {
-    grid-template-columns: 1fr;
-    row-gap: 20px;
-    margin-left: 160px;
+    grid-template-columns: repeat(2fr, 3fr);
+    column-gap: 20px;
+    gap: 20px;
+    margin: 5px 5px 5px 5px;
     align-items: center;
   }
 
   .sub-heading .rewards {
-    width: 270px;
-    height: 245px;
+    width: 290px;
+    height: 340px;
   }
 
   .sub-heading .rewards h2 {
-    font-size: smaller;
+    font-size: 1.45em;
   }
 
   .sub-heading .rewards p {
-    font-size: smaller;
+    font-size: 1.12em;
   }
 
   .sub-heading .top-up {
-    width: 270px;
-    height: 245px;
+    width: 290px;
+    height: 340px;
   }
 
   .sub-heading .top-up h2 {
-    font-size: smaller;
+    font-size: 1.45em;
   }
 
   .sub-heading .top-up p {
-    font-size: smaller;
+    font-size: 1.12em;
   }
 
   .sub-heading .redefine {
-    width: 270px;
-    height: 245px;
+    width: 290px;
+    height: 340px;
   }
 
   .sub-heading .redefine h2 {
-    font-size: smaller;
+    font-size: 1.45em;
   }
 
   .sub-heading .redefine p {
-    font-size: smaller;
+    font-size: 1.12em;
   }
 
   .sub {
@@ -2057,21 +2324,23 @@ h4.navbarItems:hover {
   }
 
   .navMenu .Logo-Image img {
-    margin-left: 5px;
-    margin-top: 5px;
-    width: 75px;
-    height: 75px;
+    margin: 1px 1px 1px 1px;
+    padding: 2px 2px 2px 2px;
+    width: 86px;
+    height: 86px;
   }
 
   .navMenu {
-    margin-right: 0px;
+    margin: 1px 180px 1px 1px;
+    gap: 10px;
+    width: 100%;
     padding: 0px;
   }
 
   .navMenu a {
     margin-left: auto;
     margin-right: 0px;
-    font-size: 1.45vh;
+    font-size: 1.8vh;
   }
 
   .download {
@@ -2079,18 +2348,16 @@ h4.navbarItems:hover {
   }
 
   .navMenu .playstore img {
-    margin-left: 0px;
-    margin-bottom: 50px;
+    margin: 1px 1px 1px 1px;
     border-radius: 5px;
-    width: 9.6vh;
-    height: 3.5vh;
+    width: 10.4vh;
+    height: 4.19vh;
   }
 
   .navMenu .appstore img {
-    margin-left: -155px;
-    margin-top: 45px;
-    width: 9.6vh;
-    height: 3.65vh;
+    margin: 1px 1px 1px 1px;
+    width: 10.4vh;
+    height: 4.22vh;
     border-radius: 5px;
     margin-right: 0px;
   }
@@ -2103,14 +2370,259 @@ h4.navbarItems:hover {
     grid-template-columns: 2fr 2fr;
   }
 
+  .Main-container {
+    margin: 5px 5px 5px 45px;
+    padding: 5px 5px 5px 5px;
+  }
+
+  .Main-container .grid-1 {
+    margin: 5px 5px 5px;
+    height: 50%;
+    width: 120%;
+    font-size: 1.52em;
+  }
+
+  .Main-container .grid-1 .title {
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+    font-size: 1.75em;
+  }
+
+  .Main-container .grid-1 .landing-page-text {
+    margin: 5px 5px 5px 5px;
+    width: 100%;
+  }
+
+  .Main-container .grid-2 {
+    margin: 5px 5px 5px 35px;
+  }
+
+  .Main-container .grid-2 .landing-page-image .bankimage {
+    position: relative;
+    top: 50px;
+  }
+
+  .Main-container .grid-3 {
+    margin: 5px 5px 5px 5px;
+    position: relative;
+    bottom: 250px;
+    height: 50%;
+    width: 120%;
+    font-size: 1.52em;
+  }
+
+  .Main-container .grid-3 .bullet-text {
+    margin: 100px 5px 5px 5px;
+    width: 100%;
+
+  }
+
+  .mid-container {
+    margin: 5px 5px 5px 35px;
+    padding: 5px 5px 5px 5px;
+  }
+
+
+  .mid-container .grid-1 {
+    margin: 1px 1px 1px 15px;
+    padding: 0px;
+    height: 50%;
+    font-size: 1.52em;
+    width: 120%;
+  }
+
+  .mid-container .grid-1 .title {
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+    font-size: 1.75em;
+  }
+
+  .mid-container .grid-1 .bullet-text {
+    margin: 1px 1px 1px 1px;
+    width: 100%;
+  }
+
+  .mid-container .grid-2 {
+    margin: 1px 1px 15px 1px;
+    padding: 5px 5px 5px 5px;
+    height: 80%;
+  }
+
+  .mid-container .grid-2 .landing-page-image .bankimage {
+    margin: 60px 1px 1px 85px;
+    padding: 0px;
+  }
+
+  .mid-container .grid-3 {
+    margin: 1px 1px 1px 7px;
+    position: relative;
+    bottom: 200px;
+    height: 100%;
+    width: 120%;
+    font-size: 1.52em;
+  }
+
+  .mid-container .grid-3 .landing-page-text {
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+    width: 100%;
+  }
+
+
+  .lower-container {
+    margin: 5px 5px 5px 35px;
+    padding: 5px 5px 5px 5px;
+    height: 30%;
+  }
+
+
+  .lower-container .grid-1 {
+    margin: 1px 1px 1px 15px;
+    padding: 0px;
+    height: 50%;
+    width: 120%;
+    font-size: 1.52em;
+  }
+
+  .lower-container .grid-1 .title {
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+    font-size: 1.75em;
+  }
+
+  .lower-container .grid-1 .landing-page-text {
+    margin: 1px 1px 1px 1px;
+    width: 100%;
+  }
+
+  .lower-container .grid-2 {
+    margin: 1px 1px 15px 1px;
+    padding: 5px 5px 5px 5px;
+    height: 70%;
+  }
+
+  .lower-container .grid-2 .landing-page-image .pay {
+    margin: 120px 1px 1px 120px;
+    width: 80%;
+    height: 60%;
+    padding: 0px;
+  }
+
+  .lower-container .grid-3 {
+    position: relative;
+    bottom: 310px;
+    left: 7px;
+    padding: 0px;
+    font-size: 1.52em;
+    width: 120%;
+  }
+
+  .lower-container .grid-3 .bullet-text {
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .fourth-container {
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+  }
+
+
+  .fourth-container .grid-1 {
+    margin: 105px 1px 1px 45px;
+    padding: 0px;
+    height: 50%;
+    width: 120%;
+    font-size: 1.52em;
+  }
+
+  .fourth-container .grid-1 .title {
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+    font-size: 1.75em;
+  }
+
+  .fourth-container .grid-1 .landing-page-text {
+    margin: 1px 1px 1px 1px;
+    width: 90%;
+  }
+
+  .fourth-container .grid-2 {
+    margin: 1px 1px 15px 1px;
+    padding: 5px 5px 5px 5px;
+    height: 90%;
+    width: 85%;
+  }
+
+  .fourth-container .grid-2 .landing-page-image .cell {
+    margin: 1px 1px 1px 80px;
+    padding: 5px 5px 5px 5px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .fifth-container {
+    margin: 5px 5px 5px 35px;
+    padding: 4px 4px 4px 4px;
+  }
+
+  .fifth-container .grid-1 {
+    margin: 85px 1px 1px 1px;
+    height: 70%;
+    position: relative;
+    bottom: 130px;
+    width: 120%;
+    font-size: 1.52em;
+  }
+
+  .fifth-container .grid-1 .title {
+    font-size: 1.75em;
+  }
+
+  .fifth-container .grid-1 .landing-page-text {
+    margin: 1px 1px 1px 1px;
+    padding: 1px 1px 1px 1px;
+    width: 95%;
+  }
+
+  .fifth-container .grid-2 {
+    margin: 1px 1px 1px 1px;
+    padding: 1px 1px 1px 1px;
+  }
+
+  .fifth-container .grid-2 .landing-page-image .bankimage {
+    width: 90%;
+    height: 90%;
+    margin: 30px 1px 1px 50px;
+  }
+
+  .fifth-container .grid-3 {
+    margin: 1px 1px 1px 1px;
+    font-size: 1.52em;
+    width: 120%;
+  }
+
+  .fifth-container .grid-3 .bullet-text {
+    position: relative;
+    bottom: 240px;
+    width: 100%;
+    margin: 1px 1px 1px 10px;
+  }
+
   .perks {
     padding: 4px 4px 4px 4px;
     margin: 5px 5px 5px 45px;
+
+  }
+
+  .perks .title {
+    padding: 0px 0px 0px 0px;
   }
 
   .perks .title h1 {
-    margin: 1px 180px 1px 1px;
-    padding: 0px;
+    margin: 1px 210px 1px 1px;
+    padding: 0px 0px 0px 0px;
   }
 
   .sub-heading {
@@ -2121,8 +2633,8 @@ h4.navbarItems:hover {
   }
 
   .sub-heading .rewards {
-    width: 260px;
-    height: 245px;
+    width: 240px;
+    height: 260px;
   }
 
   .sub-heading .rewards h2 {
@@ -2134,8 +2646,8 @@ h4.navbarItems:hover {
   }
 
   .sub-heading .top-up {
-    width: 260px;
-    height: 245px;
+    width: 240px;
+    height: 260px;
   }
 
   .sub-heading .top-up h2 {
@@ -2147,8 +2659,8 @@ h4.navbarItems:hover {
   }
 
   .sub-heading .redefine {
-    width: 260px;
-    height: 245px;
+    width: 240px;
+    height: 260px;
   }
 
   .sub-heading .redefine h2 {

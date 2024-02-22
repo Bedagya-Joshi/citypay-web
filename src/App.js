@@ -265,7 +265,7 @@ const App = () => {
                           exhilarating 50 point when you complete the KYC
                           verification process. Sharing the City Wallet
                           experience is not only fulfilling but also rewarding{" "}
-                          <br></br>
+                     
                           Earn a thrilling 25 points for every successful
                           referral
                         </p>
@@ -292,7 +292,7 @@ const App = () => {
                           from electricity to water, all within the City Wallet
                           platform. And for those cross-border moments, enjoy
                           the ease of sending and receiving money with our
-                          integrated remittance services. <br></br>City Wallet
+                          integrated remittance services. City Wallet
                           -the thrilling blend of rewards savings, and
                           convenienve awaits you!
                         </p>
