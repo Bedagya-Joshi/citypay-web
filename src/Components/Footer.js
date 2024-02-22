@@ -5,12 +5,10 @@ import { Link } from "react-router-dom";
 
 //Import Assets
 import fb_logo from "../Assets/fb_logo.png";
-import ig_logo from "../Assets/ig_logo.png";
+import yt_logo from "../Assets/ytb.png";
 import citypay from "../Assets/citypay_logo.png";
 import qrcode from "../Assets/QRcode.jpeg";
 import "../App.css";
-
-// import MapComponent from "./MapComponent";
 
 const { Footer } = Layout;
 
@@ -18,26 +16,16 @@ const CustomFooter = () => {
   return (
     <Footer
       style={{
-        // marginTop: "125px",
         textAlign: "center",
         display: "flex",
         backgroundColor: "white",
         justifyContent: "space-around",
-        // borderTop:"1px solid black",
-        boxShadow: "1px 60px 100px 1px grey"
+        boxShadow: "1px 60px 100px 1px grey",
       }}
     >
-      <div
-        class="Logo-Image"
-      >
-        <img
-          src={citypay}
-          alt="CityPayLogo" class="footer-img"
-        />
-        <img
-          src={qrcode}
-          alt="QR Scan" class="footer-img"
-        />
+      <div class="Logo-Image">
+        <img src={citypay} alt="CityPayLogo" class="footer-img" />
+        <img src={qrcode} alt="QR Scan" class="footer-img" />
       </div>
 
       <div
@@ -51,11 +39,12 @@ const CustomFooter = () => {
           alignItems: "flex-start",
           columnGap: "5px",
           justifyContent: "space-between",
+          textAlign: "left",
         }}
       >
         <div class="infos">Email:citypaywallet@gmail.com</div>
         <div class="infos">Tel No:+977 23213123321</div>
-        <div class="infos">Toll Free:+128321412412</div>
+        <div class="infos">Toll Free: +16600 11 12 13</div>
         <div class="infos">Location: Kamaladi, Kathmandu, Nepal</div>
       </div>
       <div className="Connect">
@@ -69,10 +58,6 @@ const CustomFooter = () => {
             justifyContent: "space-between",
           }}
         >
-          {/* Implement map */}
-          <div className="Map">
-            {/* <MapComponent /> */}
-          </div>
           <div class="con">Connect with us:</div>
           <div class="social">
             <a
@@ -80,25 +65,17 @@ const CustomFooter = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img
-                src={fb_logo}
-                alt="Facebook" class="social-logo"
-
-              />
-
+              <img src={fb_logo} alt="Facebook" class="social-logo" />
             </a>
 
-            <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
-              <img
-                src={ig_logo}
-                alt="Instagram" class="social-logo"
-
-              />
-
+            <a
+              href="https://www.youtube.com/@citypaynp"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={yt_logo} alt="Youtube" class="social-logo" />
             </a>
-
           </div>
-
         </div>
       </div>
       <div
@@ -106,15 +83,16 @@ const CustomFooter = () => {
         style={{
           display: "flex",
           flexDirection: "column",
-          alignItems: "flex-end",
+          alignItems: "flex-start",
           justifyContent: "space-between",
+          textAlign: "left",
         }}
       >
         <Link to="/about">About</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/blog">Blog</Link>
-        <Link to="/news">News</Link>
+        <Link to="/underconstruction">Services</Link>
+        <Link to="/contact">Contact Us</Link>
+        <Link to="/underconstruction">Blog</Link>
+        <Link to="/underconstruction">News</Link>
         <a
           href="https://agent.citywallet.com.np/auth/signup"
           target="_blank"
@@ -128,12 +106,13 @@ const CustomFooter = () => {
         style={{
           display: "flex",
           flexDirection: "column",
-          alignItems: "flex-end",
+          alignItems: "flex-start",
           justifyContent: "space-between",
+          textAlign: "left",
         }}
       >
-        <Link to="/faq">FAQ</Link>
-        <Link to="/ourTeam">Our Team</Link>
+        <Link to="/underconstruction">FAQ</Link>
+        <Link to="/underconstruction">Our Team</Link>
         <a
           href="https://agent.citywallet.com.np/auth/signup"
           target="_blank"
@@ -141,8 +120,8 @@ const CustomFooter = () => {
         >
           Become an Agent
         </a>
-        <Link to="/legal">Legal</Link>
-        <Link to="/downloads">Downloads</Link>
+        <Link to="/underconstruction">Legal</Link>
+        <Link to="https://www.citywallet.com.np">Downloads</Link>
       </div>
     </Footer>
   );

@@ -1,74 +1,41 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600&display=swap');
 
 * {
-  font-family: "Work Sans", sans-serif;
-  font-family: "Roboto", sans-serif;
-  margin: 0px;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  outline: none;
-  border: none;
-  transition: all 0.2s linear;
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
 }
 
 .services h1 {
-  font-family: "catamaran";
-  font-weight: 600;
-  font-size: 45px;
-  text-align: center;
-  background: linear-gradient(to right, #f53f4a 45%, #0d60b5 55%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+    font-family: 'catamaran';
+    font-weight: 600;
+    font-size: 45px;
+    text-align: center;
+    background: linear-gradient(to right, #F53F4A 45%, #0D60B5 55%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .grid-contain {
-  padding: 95px;
-  height: 75vh;
+    padding: 95px;
+    height: 75vh;
 }
 
 .grid-serv {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 20px;
-  row-gap: 20px;
-  padding: 20px;
-}
-
-.box-1,
-.box-2 {
-  display: flex;
-  justify-content: flex-start;
-  border: none;
-  font-size: 17px;
-  font-weight: 400;
-  border-radius: 10px;
-  padding: 10px 10px 10px 15px;
-  box-shadow: 2px 3px 10px 0px grey;
-  border-radius: 15px;
-  padding: 16px;
-  margin: 8px;
-  width: 100%;
-}
-
-/*Responsive Part*/
-
-@media (width<=1280) {
-  .grid-contain {
-    padding: 95px;
-    height: 75vh;
-  }
-
-  .grid-serv {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
     row-gap: 20px;
     padding: 20px;
-  }
+}
 
-  .box-1,
-  .box-2 {
+.box-1, .box-2 {
     display: flex;
     justify-content: flex-start;
     border: none;
@@ -81,248 +48,278 @@
     padding: 16px;
     margin: 8px;
     width: 100%;
-  }
 }
 
-@media (width<=975px) {
-  .grid-contain {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-  }
+/*Responsive Part*/
 
-  .grid-serv {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
-    row-gap: 20px;
-    padding: 20px;
-    padding-top: 95px;
-  }
+@media(width<=1280) {
 
-  .services h1 {
-    margin-bottom: -90px;
-    padding: 1px;
-    padding-top: 130px;
-  }
+    .grid-contain {
+        padding: 95px;
+        height: 75vh;
+    }
 
-  .box-1,
-  .box-2 {
-    display: flex;
-    justify-content: flex-start;
-    border: none;
-    font-size: 1.1em;
-    font-weight: 400;
-    border-radius: 10px;
-    padding: 10px 10px 10px 15px;
-    box-shadow: 2px 3px 10px 0px grey;
-    border-radius: 15px;
-    padding: 16px;
-    margin: 8px;
-    width: 100%;
-  }
+    .grid-serv {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+        padding: 20px;
+    }
+
+    .box-1, .box-2 {
+        display: flex;
+        justify-content: flex-start;
+        border: none;
+        font-size: 17px;
+        font-weight: 400;
+        border-radius: 10px;
+        padding: 10px 10px 10px 15px;
+        box-shadow: 2px 3px 10px 0px grey;
+        border-radius: 15px;
+        padding: 16px;
+        margin: 8px;
+        width: 100%;
+    }
+
 }
 
-@media (width<=908px) {
-  .grid-contain {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-  }
+@media(width<=975px) {
 
-  .grid-serv {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
-    row-gap: 20px;
-    padding: 20px;
-    padding-top: 95px;
-  }
+    .grid-contain {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
 
-  .services h1 {
-    margin-bottom: -90px;
-    padding: 1px;
-    font-size: 2.9em;
-    padding-top: 130px;
-  }
+    .grid-serv {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+        padding: 20px;
+        padding-top: 95px;
+    }
 
-  .box-1,
-  .box-2 {
-    display: flex;
-    justify-content: flex-start;
-    border: none;
-    font-size: 0.8em;
-    font-weight: 400;
-    border-radius: 10px;
-    padding: 10px 10px 10px 15px;
-    box-shadow: 2px 3px 10px 0px grey;
-    border-radius: 15px;
-    padding: 16px;
-    margin: 8px;
-    width: 100%;
-  }
+    .services h1 {
+        margin-bottom: -90px;
+        padding: 1px;
+        padding-top: 130px;
+    }
+
+    .box-1, .box-2 {
+        display: flex;
+        justify-content: flex-start;
+        border: none;
+        font-size: 1.1em;
+        font-weight: 400;
+        border-radius: 10px;
+        padding: 10px 10px 10px 15px;
+        box-shadow: 2px 3px 10px 0px grey;
+        border-radius: 15px;
+        padding: 16px;
+        margin: 8px;
+        width: 100%;
+    }
 }
 
-@media (width<=786px) {
-  .grid-contain {
-    display: flex;
-    flex-direction: column;
-    padding: 1px;
-  }
+@media(width<=908px) {
 
-  .grid-serv {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
-    row-gap: 20px;
-    padding: 20px;
-    padding-top: 95px;
-    height: 100%;
-  }
+    .grid-contain {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
 
-  .services h1 {
-    margin-bottom: -90px;
-    padding: 1px;
-    font-size: 2.84em;
-    padding-top: 130px;
-  }
+    .grid-serv {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+        padding: 20px;
+        padding-top: 95px;
+    }
 
-  .box-1,
-  .box-2 {
-    display: flex;
-    justify-content: flex-start;
-    border: none;
-    font-size: 0.78em;
-    font-weight: 400;
-    border-radius: 10px;
-    padding: 10px 10px 10px 15px;
-    box-shadow: 2px 3px 10px 0px grey;
-    border-radius: 15px;
-    padding: 16px;
-    margin: 8px;
-    width: 100%;
-  }
+    .services h1 {
+        margin-bottom: -90px;
+        padding: 1px;
+        font-size: 2.9em;
+        padding-top: 130px;
+    }
+
+    .box-1, .box-2 {
+        display: flex;
+        justify-content: flex-start;
+        border: none;
+        font-size: 0.8em;
+        font-weight: 400;
+        border-radius: 10px;
+        padding: 10px 10px 10px 15px;
+        box-shadow: 2px 3px 10px 0px grey;
+        border-radius: 15px;
+        padding: 16px;
+        margin: 8px;
+        width: 100%;
+    }
 }
 
-@media (width<=700px) {
-  .grid-contain {
-    display: flex;
-    flex-direction: column;
-    padding: 1px;
-  }
+@media(width<=786px) {
 
-  .grid-serv {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
-    row-gap: 20px;
-    padding: 20px;
-    padding-top: 95px;
-  }
+    .grid-contain {
+        display: flex;
+        flex-direction: column;
+        padding: 1px;
+    }
 
-  .services h1 {
-    margin-bottom: -90px;
-    padding: 1px;
-    font-size: 2.84em;
-    padding-top: 180px;
-  }
+    .grid-serv {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+        padding: 20px;
+        padding-top: 95px;
+    }
 
-  .box-1,
-  .box-2 {
-    display: flex;
-    justify-content: flex-start;
-    border: none;
-    font-size: 0.77em;
-    font-weight: 400;
-    border-radius: 10px;
-    padding: 10px 10px 10px 15px;
-    box-shadow: 2px 3px 10px 0px grey;
-    border-radius: 15px;
-    padding: 16px;
-    margin: 8px;
-    width: 100%;
-  }
+    .services h1 {
+        margin-bottom: -90px;
+        padding: 1px;
+        font-size: 2.84em;
+        padding-top: 130px;
+    }
+
+    .box-1, .box-2 {
+        display: flex;
+        justify-content: flex-start;
+        border: none;
+        font-size: 0.78em;
+        font-weight: 400;
+        border-radius: 10px;
+        padding: 10px 10px 10px 15px;
+        box-shadow: 2px 3px 10px 0px grey;
+        border-radius: 15px;
+        padding: 16px;
+        margin: 8px;
+        width: 100%;
+    }
 }
 
-@media (width<=640px) {
-  .grid-contain {
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-  }
+@media(width<=700px) {
+    .grid-contain {
+        display: flex;
+        flex-direction: column;
+        padding: 1px;
+    }
 
-  .grid-serv {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
-    row-gap: 20px;
-    padding: 20px;
-    padding-top: 95px;
-  }
+    .grid-serv {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+        padding: 20px;
+        padding-top: 95px;
+    }
 
-  .services h1 {
-    margin-bottom: -90px;
-    padding: 1px;
-    font-size: 2.84em;
-    padding-top: 180px;
-  }
+    .services h1 {
+        margin-bottom: -90px;
+        padding: 1px;
+        font-size: 2.84em;
+        padding-top: 180px;
+    }
 
-  .box-1,
-  .box-2 {
-    display: flex;
-    justify-content: flex-start;
-    border: none;
-    font-size: 0.75em;
-    font-weight: 400;
-    border-radius: 10px;
-    padding: 10px 10px 10px 15px;
-    box-shadow: 2px 3px 10px 0px grey;
-    border-radius: 15px;
-    padding: 16px;
-    padding-bottom: 10px;
-    margin: 8px;
-    width: 100%;
-  }
+    .box-1, .box-2 {
+        display: flex;
+        justify-content: flex-start;
+        border: none;
+        font-size: 0.77em;
+        font-weight: 400;
+        border-radius: 10px;
+        padding: 10px 10px 10px 15px;
+        box-shadow: 2px 3px 10px 0px grey;
+        border-radius: 15px;
+        padding: 16px;
+        margin: 8px;
+        width: 100%;
+    }
 }
 
-@media (width<=540px) {
-  .grid-contain {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-  }
+@media(width<=640px) {
+    .grid-contain {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
 
-  .grid-serv {
-    display: grid;
-    grid-template-columns: 1fr;
-    column-gap: 5px;
-    row-gap: 5px;
-    padding: 1px;
-    padding-top: 105px;
-  }
+    .grid-serv {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+        padding: 20px;
+        padding-top: 95px;
+    }
 
-  .services h1 {
-    margin-bottom: -90px;
-    font-size: 2.3em;
-    padding: 1px;
-    padding-top: 60px;
-    margin-right: -35px;
-  }
+    .services h1 {
+        margin-bottom: -90px;
+        padding: 1px;
+        font-size: 2.84em;
+        padding-top: 180px;
+    }
 
-  .box-1,
-  .box-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    border: none;
-    font-size: 0.7em;
-    font-weight: 400;
-    border-radius: 10px;
-    padding: 10px 10px 10px 15px;
-    box-shadow: 2px 3px 10px 0px grey;
-    border-radius: 15px;
-    padding: 12px;
-    margin: 8px;
-    width: 100%;
-  }
+    .box-1, .box-2 {
+        display: flex;
+        justify-content: flex-start;
+        border: none;
+        font-size: 0.75em;
+        font-weight: 400;
+        border-radius: 10px;
+        padding: 10px 10px 10px 15px;
+        box-shadow: 2px 3px 10px 0px grey;
+        border-radius: 15px;
+        padding: 16px;
+        padding-bottom: 10px;
+        margin: 8px;
+        width: 100%;
+    }
+}
+
+
+@media(width<=540px) {
+    .grid-contain {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .grid-serv {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 5px;
+        row-gap: 5px;
+        padding: 1px;
+        padding-top: 40px;
+    }
+
+    .services h1 {
+        margin-bottom: -90px;
+        font-size: 2.3em;
+        padding: 1px;
+        padding-top: 3px;
+        margin-right: -35px;
+    }
+
+    .box-1, .box-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border: none;
+        font-size: 0.7em;
+        font-weight: 400;
+        border-radius: 10px;
+        padding: 10px 10px 10px 15px;
+        box-shadow: 2px 3px 10px 0px grey;
+        border-radius: 15px;
+        padding: 12px;
+        margin: 8px;
+        width: 100%;
+    }
 }

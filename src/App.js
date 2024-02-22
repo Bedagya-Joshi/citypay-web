@@ -6,14 +6,10 @@ import "./Components/footer.css";
 
 //Assets Import
 import bankvector from "./Assets/request.jpg";
-import cashinhand from "./Assets/payment.jpg";
+import cashinhand from "./Assets/payment.png";
 import cityexpress from "./Assets/cityexpress.png";
 import cell from "./Assets/cell.jpg";
 import bank from "./Assets/bank.jpg";
-import youtube from "./Assets/youtube.png";
-import atm from "./Assets/atm.png";
-import ytb from "./Assets/ytb.png";
-import coin from "./Assets/coin.png";
 
 //Pages Import
 import ContactPage from "./Pages/ContactPage";
@@ -25,6 +21,7 @@ import FAQPage from "./Pages/FAQPage";
 import OurTeamPage from "./Pages/OurTeamPage";
 import LegalPage from "./Pages/LegalPage";
 import DownloadPage from "./Pages/DownloadPage";
+import UnderConstruction from "./Pages/UnderConstruction";
 
 //Component Import
 import CarouselItem from "./Components/Carousel";
@@ -69,14 +66,17 @@ const App = () => {
                     <div class="grid-1">
                       <div className="title">
                         <span class="highlight"> CityPay</span>{" "}
-                        <span class="lowlight">to Friends and Family</span>
+                        <span class="lowlight">to Family and Friends</span>
                       </div>
                       <div className="landing-page-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed tortor tortor, venenatis a arcu id, semper ultricies
-                        enim. Aliquam turpis tellus, venenatis sit amet mattis
-                        a, viverra ac lorem. In condimentum quam ut nibh congue
-                        fermentum. Duis quis pulvinar lectus, a aliquam massa.
+                        Many of our family and friends are engaged in different
+                        nations and continents, earning income for themselves
+                        and their families. City Pay is a simple and secure app
+                        for receiving remittances wallet-to-wallet, maintaining
+                        bonds from family to family and friend to friend.
+                        Additionally, City Pay offers a refer-and-earn points
+                        system for inviting family, relatives, and friends,
+                        further strengthening these bonds.
                       </div>
                     </div>
 
@@ -88,16 +88,19 @@ const App = () => {
 
                     <div class="grid-3">
                       <div className="bullet-text">
-                        <h2>Fund Transfer to Friends and Family</h2>
+                        <h2>Fund Transfer to Family and Friends</h2>
                         <p>
-                          Fund transfer has never been easier and secure, with
-                          CityPay.<br></br>Transfer funds to your friends or
-                          family using their phone number or the QR.
+                          Funds transfers are now easy and swift with City Pay.
+                          You can transfer funds to family and friends in a
+                          secure and convenient way using their City Pay ID
+                          (phone number) or QR code (City Pay Partnership Smart
+                          QR Nepal Pay).
                         </p>
                         <h2>Send or Request</h2>
                         <p>
-                          You can send or request funds from one wallet to
-                          another.
+                          Customers and agents can easily request or send funds
+                          from one City Pay wallet to another in a simple and
+                          secure way.
                         </p>
                       </div>
                     </div>
@@ -124,18 +127,20 @@ const App = () => {
                       <div className="bullet-text">
                         <h2>Receive Remittance</h2>
                         <p>
-                          Receive remittance directly in your CityPay wallet and
-                          track the payment status easily.
+                          Receiving remittance is quite easy and simple with
+                          City Pay. You can receive remittance directly into
+                          your City Pay wallet and easily track the payment
+                          status.
                         </p>
                         <h2>Send Domestic Remittance</h2>
                         <p>
-                          Send domestic remittance to any mobile number inside
-                          Nepal.
+                          Easily send domestic remittances to any mobile number
+                          within Nepal using City Pay.
                         </p>
                         <h2>Withdraw Cash</h2>
                         <p>
-                          Withdraw cash using “Find Agents” on any part of
-                          Nepal.
+                          We include a beneficial service called "Find Agents"
+                          to withdraw cash from any part of Nepal.
                         </p>
                       </div>
                     </div>
@@ -163,20 +168,12 @@ const App = () => {
                         <span class="highlight">Bank Transfers</span>
                       </div>
                       <div className="landing-page-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed tortor tortor, venenatis a arcu id, semper ultricies
-                        enim. Aliquam turpis tellus, venenatis sit amet mattis
-                        a, viverra ac lorem. In condimentum quam ut nibh congue
-                        fermentum. Duis quis pulvinar lectus, a aliquam massa.
+                        City Pay offers seamless remittance services and convenient bank transfers. Easily receive remittance, load money from your bank account for free, and transfer funds to any bank in Nepal. With our extensive agent network, access your funds conveniently across Nepal. Simplify your financial transactions and stay connected with City Pay.
                       </div>
                     </div>
                     <div class="grid-2">
                       <div className="landing-page-image">
-                        <img
-                          src={cityexpress}
-                          alt="express"
-                          class="bankimage"
-                        />
+                        <img src={cityexpress} alt="express" class="pay" />
                       </div>
                     </div>
                     <div class="grid-3">
@@ -207,7 +204,10 @@ const App = () => {
                         Not just the QR code in our app but we have made it
                         possible to pay your local businesses, stores,
                         merchant's or any available QR. Just a simple scan and
-                        payment success.
+                        payment success.<br></br>
+                        <br></br>
+                        Our innovative Scan QR for Payment feature goes beyond in-app QR codes, allowing you to seamlessly transact with local businesses, stores, and merchants. Simply scan any available QR code, and experience the satisfaction of instant payment success. Whether you're shopping at your favorite neighborhood store or exploring new merchants, City Pay ensures a seamless payment experience with just a simple scan. Say goodbye to cash hassles and embrace the future of effortless transactions with City Pay.
+
                       </div>
                     </div>
                     <div class="grid-2">
@@ -223,11 +223,7 @@ const App = () => {
                         <span class="business">Business Payments</span>
                       </div>
                       <div className="landing-page-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed tortor tortor, venenatis a arcu id, semper ultricies
-                        enim. Aliquam turpis tellus, venenatis sit amet mattis
-                        a, viverra ac lorem. In condimentum quam ut nibh congue
-                        fermentum. Duis quis pulvinar lectus, a aliquam massa.
+                        City pay Business payment  typically refers to the ability for businesses to accept payments from customers using a citypay wallet. This can include accepting payments for goods or services purchased online or in-person. For businesses, this feature enables them to expand their payment options, streamline transactions, and potentially reach a wider customer base.
                       </div>
                     </div>
 
@@ -303,108 +299,21 @@ const App = () => {
                       </div>
                     </div>
                   </div>
-
-                  <div class="vid-container">
-                    <div className="title" id="watchyt">
-                      <span class="basics">Watch the basics</span>
-                      <img src={youtube} alt="youtube" class="youtube"></img>
-                    </div>
-
-                    <div className="sub">
-                      <div className="card">
-                        <img src={atm} alt="atm-img" class="atm"></img>
-                        <h2>ATM Card</h2>
-                      </div>
-
-                      <div className="you">
-                        <img src={ytb} alt="yt-img" class="atm"></img>
-                        <h2>YouTube Tutorials</h2>
-                      </div>
-
-                      <div className="coin">
-                        <img src={coin} alt="coin-img" class="atm"></img>
-                        <h2>Get Coins</h2>
-                      </div>
-                    </div>
-                    {/* <YTCarouselItem /> */}
-                  </div>
                 </div>
               }
             />
 
             {/* PAGE ROUTES */}
-            <Route
-              path="/contact"
-              element={
-                <div>
-                  <ContactPage />
-                </div>
-              }
-            />
-            <Route
-              path="/about"
-              element={
-                <div>
-                  <AboutPage />
-                </div>
-              }
-            />
-            <Route
-              path="/Services"
-              element={
-                <div>
-                  <ServicesPage />
-                </div>
-              }
-            />
-            <Route
-              path="/blog/*"
-              element={
-                <div>
-                  <BlogPage />
-                </div>
-              }
-            />
-            <Route
-              path="/faq"
-              element={
-                <div>
-                  <FAQPage />
-                </div>
-              }
-            />
-            <Route
-              path="/ourTeam"
-              element={
-                <div>
-                  <OurTeamPage />
-                </div>
-              }
-            />
-            <Route
-              path="/news/*"
-              element={
-                <div>
-                  <NewsPage />
-                </div>
-              }
-            />
-            <Route
-              path="/legal"
-              element={
-                <div>
-                  <LegalPage />
-                </div>
-              }
-            />
-            <Route
-              path="/downloads"
-              element={
-                <div>
-                  <DownloadPage />
-                </div>
-              }
-            />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/Services" element={<ServicesPage />} />
+            <Route path="/blog/*" element={<BlogPage />} />
+            <Route path="/faq" element={<FAQPage />} />
+            <Route path="/ourTeam" element={<OurTeamPage />} />
+            <Route path="/news/*" element={<NewsPage />} />
+            <Route path="/legal" element={<LegalPage />} />
+            <Route path="/downloads" element={<DownloadPage />} />
+            <Route path="/underconstruction" element={<UnderConstruction />} />
           </Routes>
         </Content>
         <script src="C:/citipay/citypay-web/src/scrollscript.js"></script>

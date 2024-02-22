@@ -11,6 +11,10 @@
   transition: all 0.2s linear;
 }
 
+/* .navbar_bot {
+  width: 100%;
+} */
+
 .body {
   display: flex;
   width: 100%;
@@ -108,8 +112,8 @@ div.news p.summary {
 }
 
 .Main-container .grid-2 .landing-page-image .bankimage {
-  width: 120%;
-  height: 100%;
+  width: 100%;
+  height: 95%;
 }
 
 .grid-1,
@@ -145,8 +149,8 @@ div.news p.summary {
 }
 
 .mid-container .grid-2 .landing-page-image .bankimage {
-  width: 120%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
 }
 
 .mid-container p {
@@ -164,9 +168,17 @@ div.news p.summary {
   margin: 0;
 }
 
-.lower-container .grid-2 .landing-page-image .bankimage {
-  width: 100%;
+.lower-container .grid-2 {
+  width: 95%;
   height: 100%;
+  margin-top: 0px;
+}
+
+.lower-container .grid-2 .landing-page-image .pay {
+  width: 85%;
+  height: 50%;
+  margin-top: 130px;
+  margin-right: 50px;
 }
 
 .lower-container p {
@@ -251,6 +263,27 @@ div.news p.summary {
   color: #0d60b5;
 }
 
+.rewards:hover {
+  transform: scale3d(1.2, 1.2, 1.2);
+  box-shadow: 2px 3px 10px 0px grey;
+  border-radius: 10px;
+  background-color: rgba(211, 211, 211, 0.249);
+}
+
+.top-up:hover {
+  transform: scale3d(1.2, 1.2, 1.2);
+  box-shadow: 2px 3px 10px 0px grey;
+  border-radius: 10px;
+  background-color: rgba(211, 211, 211, 0.249);
+}
+
+.redefine:hover {
+  transform: scale3d(1.2, 1.2, 1.2);
+  box-shadow: 2px 3px 10px 0px grey;
+  border-radius: 10px;
+  background-color: rgba(211, 211, 211, 0.249);
+}
+
 .rewards,
 .top-up,
 .redefine {
@@ -268,90 +301,8 @@ div.news p.summary {
   justify-content: flex-start;
 }
 
-.rewards:hover {
-  background: linear-gradient(to right, #f9616b, #51a4f8);
-  color: white;
-  transition: fade 0.1s linear;
-}
-
-.top-up:hover {
-  background: linear-gradient(to right, #f9616b, #51a4f8);
-  color: white;
-  transition: fade 0.1s linear;
-}
-
-.redefine:hover {
-  background: linear-gradient(to right, #f9616b, #51a4f8);
-  color: white;
-  transition: fade 0.1s linear;
-}
-
-/*Vid Container*/
-.vid-container {
-  /* margin-left: 185px; */
-  max-width: 100%;
-  margin-bottom: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.vid-container div:hover {
-  transform: translateY(-4px);
-}
-
-.sub {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 30px;
-  font-weight: 400;
-  font-family: "Work Sans";
-  margin-bottom: 25px;
-}
-
-.sub h2 {
-  font-size: 20px;
-  font-weight: 500;
-  color: #0d60b5;
-}
-
-.card,
-.you,
-.coin {
-  box-shadow: 2px 3px 10px 0px grey;
-  border: none;
-  border-radius: 10px;
-  padding: 20px 30px 20px;
-  text-align: justify;
-  width: 336px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.card:hover {
-  color: white;
-  transition: fade 0.1s linear;
-}
-
-.you:hover {
-  color: white;
-  width: 336px;
-  transition: fade 0.1s linear;
-}
-
-.coin:hover {
-  color: white;
-  transition: fade 0.1s linear;
-}
-
-.atm {
-  max-width: 100%;
-  object-fit: contain;
+.perks div:hover {
+  transform: translate3d(8px);
 }
 
 .highlight {
@@ -526,6 +477,7 @@ h4.navbarItems:hover {
     margin-right: 5px;
   }
 
+
   .carousel-container {
     height: auto;
     width: 1010px;
@@ -611,6 +563,24 @@ h4.navbarItems:hover {
   }
 }
 
+@media(width<=1323px) {
+  .Main-container {
+    padding: 40px;
+  }
+
+  .mid-container {
+    padding: 40px;
+  }
+
+  .lower-container {
+    padding: 40px;
+  }
+
+  .fifth-container {
+    padding: 40px;
+  }
+}
+
 @media (width<=1300px) {
   .body-container {
     width: 1000px;
@@ -659,6 +629,128 @@ h4.navbarItems:hover {
   .carousel-container {
     height: auto;
     width: 980px;
+  }
+}
+
+@media(width<=1268px) {
+  .Main-container {
+    padding: 10px;
+  }
+
+  .mid-container {
+    padding: 10px;
+  }
+
+  .lower-container {
+    padding: 10px;
+  }
+
+  .fifth-container {
+    padding: 10px;
+  }
+}
+
+@media(width<=1238px) {
+
+  .body-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .Main-container {
+    padding: 7px;
+    margin-right: 10px;
+  }
+
+  .mid-container {
+    padding: 7px;
+    margin-left: 10px;
+  }
+
+  .lower-container {
+    padding: 7px;
+    margin-left: 10px;
+  }
+
+  .fourth-container {
+    margin-left: 10px;
+  }
+
+  .fifth-container {
+    padding: 7px;
+    padding-top: 50px;
+    margin-left: 10px;
+  }
+
+  .perks {
+    margin-left: 160px;
+  }
+
+  .vid-container {
+    width: 100%;
+    margin-left: 160px;
+  }
+
+  .ant-layout-footer {
+    padding-top: 10px;
+  }
+
+  .carousel-container {
+    margin-left: 70px;
+  }
+}
+
+@media (width<=1203px) {
+  .body-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .body-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .Main-container {
+    padding: 7px;
+    margin-right: 10px;
+  }
+
+  .mid-container {
+    padding: 7px;
+    margin-left: 10px;
+  }
+
+  .lower-container {
+    padding: 7px;
+    margin-left: 10px;
+  }
+
+  .fourth-container {
+    margin-left: 10px;
+  }
+
+  .fifth-container {
+    padding: 7px;
+    padding-top: 50px;
+    margin-left: 10px;
+  }
+
+  .perks {
+    margin-left: 50px;
+  }
+
+  .vid-container {
+    width: 100%;
+    margin-left: 50px;
+  }
+
+  .ant-layout-footer {
+    padding-top: 10px;
+  }
+
+  .carousel-container {
+    margin-left: 70px;
   }
 }
 
@@ -743,126 +835,259 @@ h4.navbarItems:hover {
   }
 }
 
-@media (width<=1140px) {
+@media (width<=1170px) {
   .body-container {
-    width: 870px;
-    margin-left: 90px;
+    width: 100%;
+    margin: 0;
   }
 
-  .navMenu a {
+  .body-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .Main-container {
+    padding: 7px;
+    margin-right: 10px;
+  }
+
+  .mid-container {
+    padding: 7px;
+    margin-left: 10px;
+  }
+
+  .lower-container {
+    padding: 7px;
+    margin-left: 10px;
+  }
+
+  .fourth-container {
+    margin-left: 10px;
+  }
+
+  .fifth-container {
+    padding: 7px;
+    padding-top: 50px;
+    margin-left: 10px;
+  }
+
+  .perks {
+    margin-left: 50px;
+  }
+
+  .vid-container {
+    width: 100%;
+    margin-left: 50px;
+  }
+
+  .ant-layout-footer {
+    padding-top: 10px;
+  }
+
+  .carousel-container {
+    margin-left: 40px;
+  }
+}
+
+
+
+@media (width<=1140px) {
+  .body-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .body-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .Main-container {
+    padding: 7px;
+    margin-right: 10px;
+  }
+
+  .Main-container .grid-1 {
+    margin-right: -40px;
+  }
+
+  .Main-container .grid-2 {
+    margin-right: -40px;
+  }
+
+  .mid-container {
+    padding: 7px;
+    margin-left: 10px;
+  }
+
+  .mid-container .grid-1 {
+    margin-right: -40px;
+  }
+
+  .mid-container .grid-2 {
+    margin-right: -40px;
+  }
+
+  .lower-container {
+    padding: 7px;
+    margin-left: 10px;
+  }
+
+  .lower-container .grid-1 {
+    margin-right: -35px;
+  }
+
+  .lower-container .grid-3 {
+    margin-right: 40px;
+  }
+
+  .fourth-container {
+    margin-left: 150px;
+  }
+
+  .fourth-container .grid-1 {
+    margin-right: -55px;
+  }
+
+  .fourth-container .grid-2 {
+    margin-right: 45px;
+  }
+
+
+  .fifth-container .grid-1 {
+    margin-right: -55px;
+  }
+
+  .fifth-container .grid-2 {
+    padding-left: 30px;
+  }
+
+  .fifth-container .grid-2 .landing-page-image {
+    margin-right: 0px;
+  }
+
+  .fifth-container .grid-3 {
+    margin-right: 55px;
+  }
+
+
+
+  .perks {
+    margin: 0px 10px 0px
+  }
+
+  .perks .title h1 {
+    margin-left: -150px;
+  }
+
+  .perks .sub-heading {
+    padding: 0px;
+  }
+
+  .sub-heading .rewards {
+    height: 250px;
+    width: 300px;
+  }
+
+  .sub-heading .rewards h2 {
     font-size: medium;
   }
 
-  .navMenu .Logo-Image img {
-    margin-left: 12px;
+  .sub-heading .rewards p {
+    font-size: small;
   }
 
-  .navMenu .playstore img {
-    margin-left: -25px;
-    border-radius: 5px;
-    width: 90px;
-    height: 30px;
+  .sub-heading .top-up {
+    height: 250px;
+    width: 300px;
   }
 
-  .navMenu .appstore img {
-    margin-left: -5px;
-    width: 90px;
-    height: 35px;
-    border-radius: 5px;
-    margin-right: 50px;
+  .sub-heading .top-up h2 {
+    font-size: medium;
   }
 
-  .Main-container,
-  .mid-container,
-  .lower-container,
-  .fourth-container,
-  .fifth-container {
-    grid-template-columns: repeat(3, 1fr);
+  .sub-heading .top-up p {
+    font-size: small;
   }
 
-  .Main-container .title {
-    margin-left: 0px;
+  .sub-heading .redefine {
+    height: 250px;
+    width: 300px;
   }
 
-  .mid-container .title {
-    margin-left: 0px;
+  .sub-heading .redefine h2 {
+    font-size: medium;
   }
 
-  .lower-container .title {
-    margin-left: 0px;
+  .sub-heading .redefine p {
+    font-size: small;
   }
 
-  .fourth-container .title {
-    margin-left: 0px;
+  .vid-container .title .basics {
+    font-size: smaller;
   }
 
-  .fifth-container .title {
-    margin-left: 0px;
+  .vid-container .sub h2 {
+    font-size: smaller;
+    text-align: center;
   }
 
-  .sub-heading {
-    grid-template-columns: 1fr;
-    row-gap: 20px;
-    align-items: center;
-    margin-right: -220px;
-  }
-
-  .top-up {
-    height: 343px;
+  .vid-container {
+    width: 100%;
+    margin: 0px;
+    margin-right: 140px;
   }
 
   .sub {
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 25px;
+    gap: 65px;
     align-items: center;
-    margin-left: 130px;
+    justify-content: center;
+  }
+
+  .sub .card {
+    width: 250px;
+  }
+
+  .sub .you {
+    width: 250px;
+  }
+
+  .sub .coin {
+    width: 250px;
+  }
+
+  .ant-layout-footer {
+    padding-top: 10px;
   }
 
   .carousel-container {
-    height: auto;
-    width: 980px;
+    margin-left: 30px;
   }
 }
 
 @media (width<=1115px) {
   .body-container {
-    width: 870px;
-    margin-left: 90px;
+    width: 100%;
+    margin: 0;
   }
 
-  .navMenu a {
-    font-size: small;
+  .body-container {
+    width: 100%;
+    margin: 0;
   }
 
-  .navMenu .Logo-Image img {
-    margin-left: 18px;
+  .Main-container {
+    padding: 7px;
+    margin-right: 10px;
   }
 
-  .navMenu .playstore img {
-    margin-left: -25px;
-    border-radius: 5px;
-    width: 90px;
-    height: 30px;
+  .Main-container .Main-container .grid-1 {
+    margin-right: -40px;
   }
 
-  .navMenu .appstore img {
-    margin-left: -5px;
-    width: 90px;
-    height: 35px;
-    border-radius: 5px;
-    margin-right: 50px;
-  }
-
-  .Main-container,
-  .mid-container,
-  .lower-container,
-  .fourth-container,
-  .fifth-container {
-    grid-template-columns: 2fr, 2fr;
-  }
-
-  .Main-container .title {
-    margin-left: 0px;
+  .Main-container .grid-2 {
+    margin-right: -40px;
   }
 
   .Main-container .title .highlight {
@@ -885,6 +1110,19 @@ h4.navbarItems:hover {
   .Main-container .grid-3 .bullet-text p {
     font-size: smaller;
     margin-right: 100px;
+  }
+
+  .mid-container {
+    padding: 7px;
+    margin-left: 10px;
+  }
+
+  .mid-container .grid-1 {
+    margin-right: -40px;
+  }
+
+  .mid-container .grid-2 {
+    margin-right: -40px;
   }
 
   .mid-container .title {
@@ -921,12 +1159,18 @@ h4.navbarItems:hover {
     margin-top: 130px;
   }
 
-  .lower-container .title {
-    margin-left: 0px;
+
+  .lower-container {
+    padding: 7px;
+    margin-left: 10px;
   }
 
-  .lower-container .grid-2 {
-    width: 100%;
+  .lower-container .grid-1 {
+    margin-right: -35px;
+  }
+
+  .lower-container .grid-3 {
+    margin-right: 40px;
   }
 
   .lower-container .grid-1 .title .highlight {
@@ -946,8 +1190,16 @@ h4.navbarItems:hover {
     padding-right: 70px;
   }
 
-  .fourth-container .title {
-    margin-left: 0px;
+  .fourth-container {
+    margin-left: 150px;
+  }
+
+  .fourth-container .grid-1 {
+    margin-right: -55px;
+  }
+
+  .fourth-container .grid-2 {
+    margin-right: 45px;
   }
 
   .fourth-container .grid-1 .title .highlight {
@@ -967,6 +1219,27 @@ h4.navbarItems:hover {
     height: 100%;
   }
 
+  .fifth-container .grid-1 {
+    margin-right: -55px;
+  }
+
+  .fifth-container .grid-2 {
+    padding-left: 30px;
+  }
+
+  .fifth-container .grid-2 .landing-page-image {
+    margin-right: 0px;
+  }
+
+  .fifth-container .grid-2 .landing-page-image .bankimage {
+    width: 85%;
+    height: auto;
+  }
+
+  .fifth-container .grid-3 {
+    margin-right: 55px;
+  }
+
   .fifth-container .title {
     margin-left: 0px;
   }
@@ -977,7 +1250,7 @@ h4.navbarItems:hover {
   }
 
   .fifth-container .grid-3 .bullet-text {
-    padding-right: 120px;
+    margin-left: -70px;
   }
 
   .fifth-container .grid-1 .title .business {
@@ -988,6 +1261,12 @@ h4.navbarItems:hover {
     font-size: smaller;
   }
 
+  .fifth-container .grid-3 {
+    margin: 0;
+    padding: 0;
+    padding-right: 90px;
+  }
+
   .fifth-container .grid-3 .bullet-text h2 {
     font-size: smaller;
   }
@@ -996,37 +1275,29 @@ h4.navbarItems:hover {
     font-size: smaller;
   }
 
-  .fifth-container .grid-2 .landing-page-image {
-    align-items: center;
+  .fifth-container {
+    margin-left: -30px;
   }
 
-  .fifth-container .grid-2 .landing-page-image .bankimage {
-    width: 100%;
-    height: 100%;
+  .perks {
+    margin: 0px 10px 0px
   }
 
-  .fifth-container .grid-3 {
-    margin-right: 55px;
+  .perks .title h1 {
+    margin-left: -150px;
   }
 
-  .perks h1 {
-    font-size: smaller;
-  }
-
-  .sub-heading {
-    grid-template-columns: 1fr;
-    row-gap: 20px;
-    align-items: center;
-    margin-right: -220px;
+  .perks .sub-heading {
+    padding: 0px;
   }
 
   .sub-heading .rewards {
-    height: 240px;
+    height: 250px;
     width: 300px;
   }
 
   .sub-heading .rewards h2 {
-    font-size: small;
+    font-size: medium;
   }
 
   .sub-heading .rewards p {
@@ -1034,12 +1305,12 @@ h4.navbarItems:hover {
   }
 
   .sub-heading .top-up {
-    height: 240px;
+    height: 250px;
     width: 300px;
   }
 
   .sub-heading .top-up h2 {
-    font-size: small;
+    font-size: medium;
   }
 
   .sub-heading .top-up p {
@@ -1047,12 +1318,12 @@ h4.navbarItems:hover {
   }
 
   .sub-heading .redefine {
-    height: 240px;
+    height: 250px;
     width: 300px;
   }
 
   .sub-heading .redefine h2 {
-    font-size: small;
+    font-size: medium;
   }
 
   .sub-heading .redefine p {
@@ -1068,9 +1339,15 @@ h4.navbarItems:hover {
     text-align: center;
   }
 
+  .vid-container {
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    margin-right: 140px;
+  }
+
   .sub {
     grid-template-columns: repeat(3, 1fr);
-    gap: 75px;
+    gap: 65px;
     align-items: center;
     justify-content: center;
   }
@@ -1087,16 +1364,19 @@ h4.navbarItems:hover {
     width: 250px;
   }
 
+  .ant-layout-footer {
+    padding-top: 10px;
+  }
+
   .carousel-container {
-    height: auto;
-    width: 980px;
+    margin-left: 20px;
   }
 }
 
-@media (width<=1080px) {
+@media(width<1102px) {
   .body-container {
-    width: 760px;
-    margin-left: 95px;
+    width: 100%;
+    margin: 0;
   }
 
   .navMenu a {
@@ -1110,7 +1390,7 @@ h4.navbarItems:hover {
   }
 
   .navMenu .playstore img {
-    margin-left: -25px;
+    margin-left: -1px;
     border-radius: 5px;
     width: 90px;
     height: 30px;
@@ -1218,6 +1498,12 @@ h4.navbarItems:hover {
     font-size: smaller;
   }
 
+  .lower-container .grid-2 .landing-page-image .pay {
+    width: 65%;
+    height: 40%;
+    margin-top: 235px;
+  }
+
   .lower-container .grid-3 .bullet-text h2 {
     font-size: smaller;
   }
@@ -1278,6 +1564,291 @@ h4.navbarItems:hover {
 
   .fifth-container .grid-3 .bullet-text {
     margin-top: -340px;
+    margin-left: 8px;
+  }
+
+  .fifth-container .grid-2 .landing-page-image {
+    align-items: center;
+  }
+
+  .fifth-container .grid-2 .landing-page-image .bankimage {
+    width: 100%;
+    height: 100%;
+  }
+
+  .fifth-container .grid-3 {
+    margin-right: 55px;
+  }
+
+  .perks h1 {
+    font-size: smaller;
+  }
+
+  .sub-heading {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    margin-left: 130px;
+    align-items: center;
+  }
+
+  .sub-heading .rewards {
+    width: 270px;
+    height: 245px;
+  }
+
+  .sub-heading .rewards h2 {
+    font-size: smaller;
+  }
+
+  .sub-heading .rewards p {
+    font-size: smaller;
+  }
+
+  .sub-heading .top-up {
+    width: 270px;
+    height: 245px;
+  }
+
+  .sub-heading .top-up h2 {
+    font-size: smaller;
+  }
+
+  .sub-heading .top-up p {
+    font-size: smaller;
+  }
+
+  .sub-heading .redefine {
+    width: 270px;
+    height: 245px;
+  }
+
+  .sub-heading .redefine h2 {
+    font-size: smaller;
+  }
+
+  .sub-heading .redefine p {
+    font-size: smaller;
+  }
+
+  .sub {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 75px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+  }
+
+  .sub .card {
+    width: 200px;
+  }
+
+  .sub .you {
+    width: 200px;
+  }
+
+  .sub .coin {
+    width: 200px;
+  }
+
+  .carousel-container {
+    height: auto;
+    width: 980px;
+  }
+}
+
+
+@media (width<=1080px) {
+  .body-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .navMenu a {
+    font-size: small;
+  }
+
+  .navMenu .Logo-Image img {
+    margin-left: 35px;
+    width: 75px;
+    height: 75px;
+  }
+
+  .navMenu .playstore img {
+    margin-left: -1px;
+    border-radius: 5px;
+    width: 90px;
+    height: 30px;
+  }
+
+  .navMenu .appstore img {
+    margin-left: -5px;
+    width: 90px;
+    height: 35px;
+    border-radius: 5px;
+    margin-right: 50px;
+  }
+
+  .Main-container,
+  .mid-container,
+  .lower-container,
+  .fourth-container,
+  .fifth-container {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  .Main-container .grid-1 {
+    margin-bottom: 150px;
+  }
+
+  .Main-container .grid-2 .landing-page-image {
+    margin-bottom: 0px;
+  }
+
+  .Main-container .grid-3 .bullet-text {
+    margin-top: -290px;
+  }
+
+  .Main-container .title {
+    margin-left: 0px;
+  }
+
+  .Main-container .title .highlight {
+    font-size: smaller;
+  }
+
+  .Main-container .title .lowlight {
+    font-size: smaller;
+  }
+
+  .Main-container .landing-page-text {
+    font-size: smaller;
+  }
+
+  .Main-container .grid-3 .bullet-text h2 {
+    font-size: smaller;
+  }
+
+  .Main-container .grid-3 .bullet-text p {
+    font-size: smaller;
+  }
+
+  .mid-container .title {
+    margin-left: 0px;
+  }
+
+  .mid-container .grid-1 .title .highlight {
+    font-size: smaller;
+  }
+
+  .mid-container .grid-1 {
+    margin-bottom: 120px;
+  }
+
+  .mid-container .grid-3 {
+    margin-top: -210px;
+  }
+
+  .remittance .lesslight {
+    font-size: 28px;
+  }
+
+  .mid-container .grid-1 .bullet-text h2 {
+    font-size: smaller;
+  }
+
+  .mid-container .grid-1 .bullet-text p {
+    font-size: smaller;
+  }
+
+  .mid-container .grid-3 .landing-page-text {
+    font-size: smaller;
+    margin-top: -1px;
+    margin-top: 8px;
+  }
+
+  .lower-container .title {
+    margin-left: 0px;
+  }
+
+  .lower-container .grid-3 .bullet-text {
+    margin-top: -210px;
+  }
+
+  .lower-container .grid-1 .title .highlight {
+    font-size: smaller;
+  }
+
+  .lower-container .grid-1 .landing-page-text {
+    font-size: smaller;
+  }
+
+  .lower-container .grid-2 .landing-page-image .pay {
+    width: 65%;
+    height: 40%;
+    margin-top: 235px;
+  }
+
+  .lower-container .grid-3 .bullet-text h2 {
+    font-size: smaller;
+  }
+
+  .lower-container .grid-3 .bullet-text p {
+    font-size: smaller;
+  }
+
+  .fourth-container .title {
+    margin-left: 0px;
+  }
+
+  .fourth-container .grid-1 .title .highlight {
+    font-size: smaller;
+  }
+
+  .fourth-container .grid-1 .title .lowlight {
+    font-size: smaller;
+  }
+
+  .fourth-container .grid-1 .landing-page-text {
+    font-size: smaller;
+  }
+
+  .fourth-container .grid-2 .landing-page-image .cell {
+    width: 250px;
+    height: 100%;
+  }
+
+  .fifth-container .title {
+    margin-left: 0px;
+  }
+
+  .fifth-container .grid-1 {
+    margin-bottom: 180px;
+  }
+
+  .fifth-container .grid-1 .title .business {
+    font-size: smaller;
+  }
+
+  .fifth-container .grid-1 .landing-page-text {
+    font-size: smaller;
+  }
+
+  .fifth-container .grid-3 {
+    margin-left: 100px;
+  }
+
+  .fifth-container .grid-3 .bullet-text h2 {
+    font-size: smaller;
+  }
+
+  .fifth-container .grid-3 .bullet-text p {
+    font-size: smaller;
+    margin-left: 0px;
+  }
+
+  .fifth-container .grid-3 .bullet-text {
+    margin-top: -340px;
+    margin-left: 8px;
   }
 
   .fifth-container .grid-2 .landing-page-image {
@@ -1371,8 +1942,8 @@ h4.navbarItems:hover {
 
 @media (width<=992px) {
   .body-container {
-    width: 650px;
-    margin-left: 115px;
+    width: 100%;
+    margin: 0;
   }
 
   .navMenu .Logo-Image img {
@@ -1382,12 +1953,9 @@ h4.navbarItems:hover {
     height: 65px;
   }
 
-  .navMenu a {
-    margin-left: -45px;
-  }
 
   .navMenu .playstore img {
-    margin-left: -55px;
+    margin-left: -5px;
     border-radius: 5px;
     width: 90px;
     height: 30px;
@@ -1484,20 +2052,20 @@ h4.navbarItems:hover {
 
 @media (width<=940px) {
   .body-container {
-    width: 650px;
-    margin-left: 70px;
+    width: 100%;
+    margin: 0;
   }
 
   .navMenu .Logo-Image img {
-    margin-left: 22px;
+    margin-left: 5px;
     margin-top: 5px;
     width: 75px;
     height: 75px;
   }
 
   .navMenu {
-    margin-left: 225px;
     margin-right: 0px;
+    padding: 0px;
   }
 
   .navMenu a {
@@ -1506,8 +2074,12 @@ h4.navbarItems:hover {
     font-size: 1.45vh;
   }
 
+  .download {
+    padding: auto;
+  }
+
   .navMenu .playstore img {
-    margin-left: -5px;
+    margin-left: 0px;
     margin-bottom: 50px;
     border-radius: 5px;
     width: 9.6vh;
@@ -1515,12 +2087,12 @@ h4.navbarItems:hover {
   }
 
   .navMenu .appstore img {
-    margin-left: -98px;
+    margin-left: -155px;
     margin-top: 45px;
-    width: 9.5vh;
+    width: 9.6vh;
     height: 3.65vh;
     border-radius: 5px;
-    margin-right: 270px;
+    margin-right: 0px;
   }
 
   .Main-container,
@@ -1529,6 +2101,476 @@ h4.navbarItems:hover {
   .fourth-container,
   .fifth-container {
     grid-template-columns: 2fr 2fr;
+  }
+
+  .perks {
+    padding: 4px 4px 4px 4px;
+    margin: 5px 5px 5px 45px;
+  }
+
+  .perks .title h1 {
+    margin: 1px 180px 1px 1px;
+    padding: 0px;
+  }
+
+  .sub-heading {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    margin: 5px 25px 25px 25px;
+    align-items: center;
+  }
+
+  .sub-heading .rewards {
+    width: 260px;
+    height: 245px;
+  }
+
+  .sub-heading .rewards h2 {
+    font-size: smaller;
+  }
+
+  .sub-heading .rewards p {
+    font-size: smaller;
+  }
+
+  .sub-heading .top-up {
+    width: 260px;
+    height: 245px;
+  }
+
+  .sub-heading .top-up h2 {
+    font-size: smaller;
+  }
+
+  .sub-heading .top-up p {
+    font-size: smaller;
+  }
+
+  .sub-heading .redefine {
+    width: 260px;
+    height: 245px;
+  }
+
+  .sub-heading .redefine h2 {
+    font-size: smaller;
+  }
+
+  .sub-heading .redefine p {
+    font-size: smaller;
+  }
+
+  .carousel-container {
+    height: auto;
+    width: 980px;
+  }
+}
+
+
+@media (width<=860px) {
+  .body-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .navMenu .Logo-Image img {
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 75px;
+    height: 75px;
+  }
+
+  .navMenu {
+    margin-right: 0px;
+    padding: 0px;
+  }
+
+  .navMenu a {
+    margin-left: auto;
+    margin-right: 0px;
+    font-size: 1.45vh;
+  }
+
+  .download {
+    padding: auto;
+  }
+
+  .navMenu .playstore img {
+    margin-left: 0px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    width: 9.6vh;
+    height: 3.5vh;
+  }
+
+  .navMenu .appstore img {
+    margin-left: -155px;
+    margin-top: 45px;
+    width: 9.6vh;
+    height: 3.65vh;
+    border-radius: 5px;
+    margin-right: 0px;
+  }
+
+  .Main-container,
+  .mid-container,
+  .lower-container,
+  .fourth-container,
+  .fifth-container {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  .Main-container {
+    margin: 5px 5px 5px 45px;
+    padding: 5px 5px 5px 5px;
+  }
+
+  .Main-container .grid-1 {
+    margin: 5px 5px 5px 5px;
+    height: 50%;
+    width: 100%;
+  }
+
+  .Main-container .grid-1 .title {
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+  }
+
+  .Main-container .grid-1 .landing-page-text {
+    margin: 5px 5px 5px 5px;
+  }
+
+  .Main-container .grid-2 {
+    margin: 5px 5px 5px 5px;
+  }
+
+  .Main-container .grid-3 {
+    margin: 5px 5px 5px 5px;
+    margin-top: -180px;
+    height: 50%;
+    width: 120%;
+  }
+
+  .Main-container .grid-3 .bullet-text {
+    margin: 5px 5px 5px 5px;
+    width: 95%;
+  }
+
+  .mid-container {
+    margin: 5px 5px 5px 35px;
+    padding: 5px 5px 5px 5px;
+  }
+
+
+  .mid-container .grid-1 {
+    margin: 1px 1px 1px 15px;
+    padding: 0px;
+    height: 50%;
+  }
+
+  .mid-container .grid-1 .title {
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+  }
+
+  .mid-container .grid-1 .bullet-text {
+    margin: 1px 1px 1px 1px;
+  }
+
+  .mid-container .grid-2 {
+    margin: 1px 1px 15px 1px;
+    padding: 5px 5px 5px 5px;
+    height: 80%;
+  }
+
+  .mid-container .grid-2 .landing-page-image .bankimage {
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+  }
+
+  .mid-container .grid-3 {
+    margin: 1px 1px 1px 7px;
+    position: relative;
+    top: -250px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .mid-container .grid-3 .landing-page-text {
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+  }
+
+
+  .lower-container {
+    margin: 5px 5px 5px 35px;
+    padding: 5px 5px 5px 5px;
+    height: 30%;
+  }
+
+
+  .lower-container .grid-1 {
+    margin: 1px 1px 1px 15px;
+    padding: 0px;
+    height: 50%;
+  }
+
+  .lower-container .grid-1 .title {
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+  }
+
+  .lower-container .grid-1 .landing-page-text {
+    margin: 1px 1px 1px 1px;
+  }
+
+  .lower-container .grid-2 {
+    margin: 1px 1px 15px 1px;
+    padding: 5px 5px 5px 5px;
+    height: 70%;
+  }
+
+  .lower-container .grid-2 .landing-page-image .pay {
+    margin: 140px 1px 1px 1px;
+    padding: 0px;
+  }
+
+  .lower-container .grid-3 {
+    position: relative;
+    top: -320px;
+    left: 7px;
+    padding: 0px;
+  }
+
+  .lower-container .grid-3 .bullet-text {
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+  }
+
+  .fourth-container {
+    margin: 5px 5px 5px 55px;
+    padding: 5px 5px 5px 5px;
+  }
+
+
+  .fourth-container .grid-1 {
+    margin: 105px 1px 1px 15px;
+    padding: 0px;
+    height: 50%;
+  }
+
+  .fourth-container .grid-1 .title {
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+  }
+
+  .fourth-container .grid-1 .landing-page-text {
+    margin: 1px 1px 1px 1px;
+  }
+
+  .fourth-container .grid-2 {
+    margin: 1px 1px 15px 1px;
+    padding: 5px 5px 5px 5px;
+    height: 90%;
+    width: 85%;
+  }
+
+  .fourth-container .grid-2 .landing-page-image .cell {
+    margin: 1px 1px 1px 1px;
+    padding: 5px 5px 5px 5px;
+  }
+
+  .fifth-container {
+    margin: 5px 5px 5px 75px;
+    padding: 4px 4px 4px 4px;
+  }
+
+  .fifth-container .grid-1 {
+    margin: 85px 1px 1px 1px;
+    height: 70%;
+    position: relative;
+    top: -100px;
+  }
+
+  .fifth-container .grid-1 .landing-page-text {
+    margin: 1px 1px 1px 1px;
+    padding: 1px 1px 1px 1px;
+  }
+
+  .fifth-container .grid-2 {
+    margin: 1px 1px 1px 1px;
+    padding: 1px 1px 1px 1px;
+  }
+
+  .fifth-container .grid-2 .landing-page-image .bankimage {
+    width: 90%;
+    height: 90%;
+    margin: 30px 1px 1px 1px;
+  }
+
+  .fifth-container .grid-3 {
+    margin: 1px 1px 1px 1px;
+  }
+
+  .fifth-container .grid-3 .bullet-text {
+    position: relative;
+    top: -240px;
+    margin: 1px 1px 1px 10px;
+  }
+
+  .perks {
+    padding: 4px 4px 4px 4px;
+    margin: 5px 5px 5px 45px;
+  }
+
+  .perks .title {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .perks .title h1 {
+    margin: 1px 210px 1px 1px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .sub-heading {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    margin: 5px 25px 25px 25px;
+    align-items: center;
+  }
+
+  .sub-heading .rewards {
+    width: 240px;
+    height: 260px;
+  }
+
+  .sub-heading .rewards h2 {
+    font-size: smaller;
+  }
+
+  .sub-heading .rewards p {
+    font-size: smaller;
+  }
+
+  .sub-heading .top-up {
+    width: 240px;
+    height: 260px;
+  }
+
+  .sub-heading .top-up h2 {
+    font-size: smaller;
+  }
+
+  .sub-heading .top-up p {
+    font-size: smaller;
+  }
+
+  .sub-heading .redefine {
+    width: 240px;
+    height: 260px;
+  }
+
+  .sub-heading .redefine h2 {
+    font-size: smaller;
+  }
+
+  .sub-heading .redefine p {
+    font-size: smaller;
+  }
+
+  .carousel-container {
+    height: auto;
+    width: 980px;
+    margin-left: -8px;
+  }
+}
+
+@media (width<=840px) {
+  .body-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .navMenu .Logo-Image img {
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 75px;
+    height: 75px;
+  }
+
+  .navMenu {
+    margin-left: 135px;
+    padding: 0px;
+    margin: 0;
+    padding: 0px;
+  }
+
+  .navMenu a {
+    margin-left: auto;
+    margin-right: 0px;
+    font-size: 1.4vh;
+  }
+
+
+  .navMenu .playstore img {
+    margin-left: 25px;
+    margin-bottom: 45px;
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 9.6vh;
+    height: 3.5vh;
+  }
+
+  .navMenu .appstore img {
+    margin-left: -101px;
+    margin-top: 40px;
+    width: 9.5vh;
+    height: 3.65vh;
+    border-radius: 5px;
+    margin-right: 80px;
+  }
+
+  .Main-container,
+  .mid-container,
+  .lower-container,
+  .fourth-container,
+  .fifth-container {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  .fourth-container {
+    margin: 0;
+  }
+
+  .fifth-container {
+    padding: 2px;
+  }
+
+  .fifth-container .grid-1 {
+    height: 100%;
+  }
+
+  .fifth-container .grid-2 {
+    margin-left: -15px;
+  }
+
+  .fifth-container .grid-1 .landing-page-text {
+    padding-bottom: 180px;
+  }
+
+  .fifth-container .grid-2 .landing-page-image .bankimage {
+    width: 90%;
+    height: 90%;
+    margin-top: 30px;
+  }
+
+
+  .perks {
+    padding: 7px;
+  }
+
+  .perks .title h1 {
+    margin-right: 50px;
+    margin-left: -130px;
   }
 
   .sub-heading {
@@ -1539,8 +2581,8 @@ h4.navbarItems:hover {
   }
 
   .sub-heading .rewards {
-    width: 270px;
-    height: 245px;
+    width: 240px;
+    height: 260px;
   }
 
   .sub-heading .rewards h2 {
@@ -1552,8 +2594,8 @@ h4.navbarItems:hover {
   }
 
   .sub-heading .top-up {
-    width: 270px;
-    height: 245px;
+    width: 240px;
+    height: 260px;
   }
 
   .sub-heading .top-up h2 {
@@ -1565,8 +2607,8 @@ h4.navbarItems:hover {
   }
 
   .sub-heading .redefine {
-    width: 270px;
-    height: 245px;
+    width: 240px;
+    height: 260px;
   }
 
   .sub-heading .redefine h2 {
@@ -1577,152 +2619,10 @@ h4.navbarItems:hover {
     font-size: smaller;
   }
 
-  .sub {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 75px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 220px;
-  }
-
-  .sub .card {
-    width: 200px;
-  }
-
-  .sub .you {
-    width: 200px;
-  }
-
-  .sub .coin {
-    width: 200px;
-  }
-
   .carousel-container {
     height: auto;
     width: 980px;
-  }
-}
-
-@media (width<=840px) {
-  .body-container {
-    width: 650px;
-    margin-left: 20px;
-  }
-
-  .navMenu .Logo-Image img {
-    margin-left: 50px;
-    margin-top: 5px;
-    width: 68px;
-    height: 68px;
-  }
-
-  .navMenu {
-    margin-left: 255px;
-    margin-right: 25px;
-  }
-
-  .navMenu a {
-    margin-left: auto;
-    margin-right: 0px;
-    font-size: 1.4vh;
-  }
-
-  .navMenu .playstore img {
-    margin-left: -35px;
-    margin-bottom: 45px;
-    margin-top: 5px;
-    border-radius: 5px;
-    width: 9.6vh;
-    height: 3.5vh;
-  }
-
-  .navMenu .appstore img {
-    margin-left: -98px;
-    margin-top: 40px;
-    width: 9.5vh;
-    height: 3.65vh;
-    border-radius: 5px;
-    margin-right: 300px;
-  }
-
-  .Main-container,
-  .mid-container,
-  .lower-container,
-  .fourth-container,
-  .fifth-container {
-    grid-template-columns: 2fr 2fr;
-  }
-
-  .sub-heading {
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 20px;
-    margin-left: 0px;
-    align-items: center;
-    margin-right: -230px;
-  }
-
-  .sub-heading .rewards {
-    width: 240px;
-    height: 200px;
-  }
-
-  .sub-heading .rewards h2 {
-    font-size: smaller;
-  }
-
-  .sub-heading .rewards p {
-    font-size: x-small;
-  }
-
-  .sub-heading .top-up {
-    width: 240px;
-    height: 200px;
-  }
-
-  .sub-heading .top-up h2 {
-    font-size: smaller;
-  }
-
-  .sub-heading .top-up p {
-    font-size: x-small;
-  }
-
-  .sub-heading .redefine {
-    width: 240px;
-    height: 200px;
-  }
-
-  .sub-heading .redefine h2 {
-    font-size: smaller;
-  }
-
-  .sub-heading .redefine p {
-    font-size: x-small;
-  }
-
-  .sub {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 75px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 180px;
-  }
-
-  .sub .card {
-    width: 170px;
-  }
-
-  .sub .you {
-    width: 170px;
-  }
-
-  .sub .coin {
-    width: 170px;
-  }
-
-  .carousel-container {
-    height: auto;
-    width: 980px;
+    margin-left: -8px;
   }
 
   .Footer {
@@ -1759,23 +2659,156 @@ h4.navbarItems:hover {
   }
 }
 
-@media (width<=768px) {
+@media (width<=826px) {
   .body-container {
-    width: 650px;
-    margin-left: 20px;
+    width: 100%;
+    margin: 0;
   }
 
   .navMenu .Logo-Image img {
-    margin-left: 55px;
+    margin-left: 20px;
+    margin-top: 5px;
+    width: 75px;
+    height: 75px;
+  }
+
+  .navMenu {
+    margin-left: 130px;
+    padding: 0px;
+    margin: 0;
+    padding: 0px;
+  }
+
+  .navMenu a {
+    margin-left: auto;
+    margin-right: 0px;
+    font-size: 1.32vh;
+  }
+
+
+  .navMenu .playstore img {
+    margin-left: 25px;
+    margin-bottom: 45px;
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 9.6vh;
+    height: 3.5vh;
+  }
+
+  .navMenu .appstore img {
+    margin-left: -101px;
+    margin-top: 40px;
+    width: 9.5vh;
+    height: 3.65vh;
+    border-radius: 5px;
+    margin-right: 80px;
+  }
+
+  .fifth-container {
+    padding: 2px;
+  }
+
+  .fifth-container .grid-1 {
+    height: 100%;
+  }
+
+  .fifth-container .grid-2 {
+    margin-left: -65px;
+  }
+
+  .fifth-container .grid-1 .landing-page-text {
+    padding-bottom: 180px;
+  }
+
+  .fifth-container .grid-2 .landing-page-image .bankimage {
+    width: 90%;
+    height: 90%;
+    margin-top: 30px;
+  }
+}
+
+@media (width<=776px) {
+  .navMenu .Logo-Image img {
+    margin-left: 10px;
+    margin-top: -1px;
+    width: 75px;
+    height: 75px;
+  }
+
+  .navMenu {
+    margin-left: 100px;
+    padding: 0px;
+    margin: 0;
+    padding: 0px;
+  }
+
+  .navMenu a {
+    margin-left: auto;
+    margin-right: 0px;
+    font-size: 1.25vh;
+  }
+
+  .navMenu .playstore img {
+    margin-left: -5px;
+    margin-bottom: 45px;
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 9.6vh;
+    height: 3.5vh;
+  }
+
+  .navMenu .appstore img {
+    margin-left: -101px;
+    margin-top: 40px;
+    width: 9.5vh;
+    height: 3.65vh;
+    border-radius: 5px;
+    margin-right: 80px;
+  }
+
+  .fifth-container {
+    padding: 2px;
+  }
+
+  .fifth-container .grid-1 {
+    height: 100%;
+  }
+
+  .fifth-container .grid-2 {
+    margin-left: -85px;
+  }
+
+  .fifth-container .grid-1 .landing-page-text {
+    padding-bottom: 180px;
+  }
+
+  .fifth-container .grid-2 .landing-page-image .bankimage {
+    width: 90%;
+    height: 90%;
+    margin-top: 30px;
+  }
+}
+
+
+@media (width<=768px) {
+  .body-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .navMenu .Logo-Image img {
+    margin-left: 20px;
     margin-top: 6px;
     width: 65px;
     height: 65px;
   }
 
   .navMenu {
-    margin-left: 318px;
-    margin-right: 55px;
+    margin-left: 100px;
     height: 95px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
 
   .navMenu a {
@@ -1785,7 +2818,7 @@ h4.navbarItems:hover {
   }
 
   .navMenu .playstore img {
-    margin-left: -22px;
+    margin-left: -5px;
     margin-bottom: 45px;
     margin-top: 5px;
     border-radius: 5px;
@@ -1794,14 +2827,168 @@ h4.navbarItems:hover {
   }
 
   .navMenu .appstore img {
-    margin-left: -94px;
+    margin-left: -95px;
     margin-top: 40px;
     width: 8.9vh;
     height: 3.7vh;
     border-radius: 5px;
-    margin-right: 350px;
+    margin-right: 30px;
   }
 
+  .Main-container .grid-2 {
+    margin-left: -35px;
+  }
+
+  .mid-container {
+    margin-left: -20px;
+  }
+
+  .mid-container .grid-2 {
+    margin-left: -50px;
+  }
+
+  .lower-container {
+    margin-left: 5px;
+    padding: 0;
+  }
+
+  .lower-container .grid-2 {
+    margin-left: -50px;
+  }
+
+  .fourth-container .grid-2 {
+    width: 90%;
+  }
+
+  .fourth-container .grid-2 .landing-page-image .cell {
+    width: 85%;
+    height: 85%;
+  }
+
+  .fifth-container {
+    margin-left: -30px;
+  }
+
+  .fifth-container .grid-1 {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .fifth-container .grid-1 .title {
+    margin-left: 50px;
+  }
+
+  .fifth-container .grid-1 .landing-page-text {
+    padding-bottom: 180px;
+    margin-left: 50px;
+  }
+
+  .fifth-container .grid-2 {
+    margin-left: -150px;
+    width: 100%;
+  }
+
+  .fifth-container .grid-2 .landing-page-image .bankimage {
+    width: 85%;
+    height: 85%;
+    margin-top: 30px;
+  }
+
+  .fifth-container .grid-3 .bullet-text {
+    margin-left: -50px;
+
+  }
+}
+
+@media (width<=720px) {
+  .body-container {
+    width: 100%;
+    margin: 0;
+  }
+
+
+  .navbar_bot {
+    width: 100%;
+  }
+
+  .navMenu {
+    height: 98px;
+    margin-left: 0px;
+  }
+
+  .navMenu .Logo-Image img {
+    width: 75px;
+    height: 75px;
+    margin-top: -1px;
+    margin-left: 45px;
+  }
+
+  .hamburgerIconContainer {
+    width: 100%;
+  }
+
+  .hamburgerIconContainer .Logo-Image img {
+    display: none;
+  }
+
+  .hamburgerIconContainer svg {
+    height: 1.7em;
+    width: 3.3em;
+    margin-left: 120px;
+  }
+
+  .download .playstore img {
+    margin-left: 200px;
+    margin-right: -1px;
+    border-radius: 5px;
+    width: 125px;
+    height: 45px;
+    margin-bottom: -33px;
+  }
+
+  .download .appstore img {
+    margin-left: 60px;
+    width: 120px;
+    height: 45px;
+    border-radius: 5px;
+    margin-top: -16px;
+    margin-bottom: -8px;
+  }
+
+
+  .Footer {
+    font-size: x-small;
+    margin-left: 20px;
+  }
+
+  .NavBar.Content {
+    font-size: x-small;
+  }
+
+  .Logo-Image .footer-img {
+    height: 65px;
+    width: 65px;
+    margin-left: -45px;
+    margin-top: -2px;
+  }
+
+  .social .social-logo {
+    height: 30px;
+    width: 30px;
+  }
+
+  .infos {
+    font-size: x-small;
+  }
+
+  .Connect .con {
+    font-size: x-small;
+  }
+
+  .ContactUs {
+    font-size: smaller;
+  }
 
   .Main-container,
   .mid-container,
@@ -1810,57 +2997,159 @@ h4.navbarItems:hover {
     grid-template-columns: 1fr;
   }
 
+  .Main-container {
+    margin-left: 45px;
+    width: 85%;
+  }
+
   .Main-container .grid-1 {
-    margin-left: 50px;
+    margin-left: -50px;
+  }
+
+  .Main-container .grid-1 .landing-page-text {
+    width: 90%;
+    margin-left: 70px;
+  }
+
+  .Main-container .grid-1 .title {
+    margin-left: 70px;
+    margin-right: -40px;
+    padding: 0;
   }
 
   .Main-container .grid-2 {
-    margin-left: 50px;
+    margin-left: 80px;
     margin-top: -150px;
+    width: 95%;
   }
 
   .Main-container .grid-3 .bullet-text {
-    margin-left: 50px;
-    margin-top: 1px;
+    margin-left: 10px;
+    margin-top: -40px;
+    width: 115%;
+  }
+
+  .mid-container {
+    width: 85%;
+    margin: 10px 10px 10px 90px;
+    padding: 5px 35px 5px 5px;
+    margin-bottom: 10px;
+  }
+
+  .mid-container .title {
+    margin-left: 60px;
   }
 
   .mid-container .grid-1 {
-    margin-left: 50px;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
+    width: 100%;
+  }
+
+  .mid-container .grid-1 .bullet-text {
+    width: 95%;
   }
 
   .mid-container .grid-2 {
-    margin-left: 140px;
+    margin: 10px 10px 10px 85px;
+    padding: 5px 5px 5px 5px;
+    top: -100px;
+    width: 60%;
+    height: 80%;
+  }
+
+  .mid-container .grid-3 {
+    width: 100%;
+    height: 100%;
     margin-top: -140px;
+    /* margin: 5px 5px 5px 5px; */
   }
 
   .mid-container .grid-3 .landing-page-text {
-    margin-left: 120px;
-    margin-top: 90px;
+    margin: 5px 5px 5px 5px;
+    width: 100%;
+  }
+
+  .lower-container {
+    width: 100%;
+    height: 70%;
+    margin: 5px 5px 5px 75px;
+    padding: 10px 10px 10px 10px;
   }
 
   .lower-container .grid-1 {
-    margin-left: 90px;
-    margin-top: 90px;
+    margin: 10px 10px 10px 10px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .lower-container .grid-1 .title {
+    margin-left: 150px;
+  }
+
+  .lower-container .grid-1 .landing-page-text {
+    width: 75%;
+    margin: 10px 10px 1px 30px;
+    padding: 0px;
   }
 
   .lower-container .grid-2 {
-    margin-left: 140px;
-    margin-top: -130px;
+    margin: 5px 5px 5px 5px;
+    width: 100%;
+    height: 65%;
+  }
+
+
+  .lower-container .grid-2 .landing-page-image .pay {
+    margin: 0px 10px 10px 170px;
+    margin-top: -25px;
+    height: 50%;
+  }
+
+  .lower-container .grid-3 {
+    margin: 5px 5px 5px 5px;
+    width: 100%;
   }
 
   .lower-container .grid-3 .bullet-text {
-    margin-left: 90px;
-    margin-top: -140px;
+    margin: 5px 5px 5px 35px;
+    margin-top: -650px;
+    padding: 0px;
+    width: 85%;
+  }
+
+  .fourth-container {
+    width: 70%;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 5px 10px;
   }
 
   .fourth-container .grid-1 {
-    margin-left: 90px;
-    margin-top: 90px;
+    margin: 20px 20px 1px 20px;
+    padding: 5px 5px 5px 5px;
+    width: 100%;
+  }
+
+  .fourth-container .grid-1 .title {
+    margin: 2px 2px 2px 55px;
+    padding: 0;
+  }
+
+  .fourth-container .grid-1 .landing-page-text {
+    width: 90%;
+    margin: 5px 5px 5px 15px;
   }
 
   .fourth-container .grid-2 {
-    margin-left: 120px;
-    margin-top: -20px;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
+    width: 100%;
+    height: 90%;
+  }
+
+  .fourth-container .grid-2 .landing-page-image .cell {
+    margin: 1px 1px 1px 95px;
+    padding: 2px 2px 2px 2px;
   }
 
   .fourth-container .grid-3 .bullet-text {
@@ -1869,7 +3158,57 @@ h4.navbarItems:hover {
   }
 
   .fifth-container {
-    margin-left: -110px;
+    margin: 5px 5px 5px 100px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .fifth-container {
+    grid-template-columns: 1fr;
+  }
+
+  .fifth-container .grid-1 {
+    height: 70%;
+    width: 70%;
+    margin: 100px 5px 5px 35px;
+  }
+
+  .fifth-container .grid-1 .title {
+    margin: 1px 1px 1px 1px;
+    padding: 2px 2px 2px 2px;
+    width: 100%;
+  }
+
+  .fifth-container .grid-1 .landing-page-text {
+    margin: 5px 5px 5px 5px;
+    width: 100%;
+    height: 20%;
+  }
+
+  .fifth-container .grid-2 {
+    width: 55%;
+    height: 90%;
+    margin: 5px 5px 5px 55px;
+    margin-top: -140px;
+    padding: 1px;
+  }
+
+  .fifth-container .grid-2 .landing-page-image .bankimage {
+    width: 70%;
+    height: 90%;
+    margin: 5px 5px 5px 105px;
+  }
+
+  .fifth-container .grid-3 {
+    margin: 5px 5px 5px 35px;
+    padding: 0px 0px 0px 0px;
+    margin-top: -250px;
+    width: 70%;
+  }
+
+  .fifth-container .grid-3 .bullet-text {
+    margin: 5px 5px 5px 5px;
+    width: 100%;
   }
 
   .image-container {
@@ -1886,57 +3225,99 @@ h4.navbarItems:hover {
     margin-left: 0;
   }
 
+  .perks {
+    width: 60%;
+    margin: 40px 40px 40px 100px;
+  }
+
+  .perks .title h1 {
+    margin: 0px 210px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
   .sub-heading {
     grid-template-columns: 1fr;
     row-gap: 20px;
-    margin-right: -120px;
+    margin: 20px 20px 20px 30px;
+    width: 95%;
+  }
+
+  .rewards, .top-up, .redefine {
+    margin: 10px 10px 10px 20px;
+  }
+
+
+  /* .vid-container {
+    margin: 30px;
+    width: 98%;
+  }
+
+  .vid-container .title {
+    margin: 1px 1px 1px 40px;
+    padding: 0px;
+    width: 60%;
+  }
+
+  .vid-container .title .basics {
+    margin: 1px 1px 1px 1px;
   }
 
   .sub {
     grid-template-columns: 1fr;
     row-gap: 25px;
     align-items: center;
-    margin-right: -20px;
-  }
+  } */
 
   .carousel-container {
-    height: auto;
-    width: 600px;
+    height: 5px;
+    width: 10px;
   }
+
+  .carousel-container img.carouselimage {
+    display: none;
+  }
+
 }
 
-@media (width<=720px) {
+@media (width<=640px) {
+
   .body-container {
-    width: 650px;
-    margin-left: 10px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .navbar_bot {
+    width: 100%;
   }
 
   .navMenu {
     height: 98px;
+    margin-left: 0px;
   }
 
   .navMenu .Logo-Image img {
-    width: 90px;
-    height: 90px;
-    margin-top: -8px;
-    margin-left: 155px;
+    width: 75px;
+    height: 75px;
+    margin-top: -1px;
+    margin-left: 30px;
+  }
+
+  .hamburgerIconContainer {
+    width: 100%;
   }
 
   .hamburgerIconContainer .Logo-Image img {
     display: none;
   }
 
-  .hamburgerIconContainer {
-    margin-right: 275px;
-  }
-
   .hamburgerIconContainer svg {
     height: 1.7em;
     width: 3.3em;
+    margin-left: 65px;
   }
 
   .download .playstore img {
-    margin-left: 320px;
+    margin-left: 175px;
     margin-right: -1px;
     border-radius: 5px;
     width: 125px;
@@ -1945,9 +3326,391 @@ h4.navbarItems:hover {
   }
 
   .download .appstore img {
-    margin-left: 175px;
+    margin-left: 40px;
     width: 120px;
     height: 45px;
+    border-radius: 5px;
+    margin-top: -16px;
+    margin-bottom: -8px;
+  }
+
+  .Footer {
+    font-size: x-small;
+    margin-left: 20px;
+  }
+
+  .NavBar.Content {
+    font-size: x-small;
+  }
+
+  .Logo-Image .footer-img {
+    height: 65px;
+    width: 65px;
+    margin-left: -45px;
+    margin-top: -2px;
+  }
+
+  .social .social-logo {
+    height: 30px;
+    width: 30px;
+  }
+
+  .infos {
+    font-size: x-small;
+  }
+
+  .Connect .con {
+    font-size: x-small;
+  }
+
+  .ContactUs {
+    font-size: smaller;
+    margin-left: -40px;
+  }
+
+  .Main-container,
+  .mid-container,
+  .lower-container,
+  .fourth-container {
+    grid-template-columns: 1fr;
+  }
+
+  .Main-container {
+    margin-left: 45px;
+    width: 85%;
+  }
+
+  .Main-container .grid-1 {
+    margin-left: -50px;
+  }
+
+  .Main-container .grid-1 .landing-page-text {
+    width: 90%;
+    margin-left: 70px;
+  }
+
+  .Main-container .grid-1 .title {
+    margin-left: 70px;
+    margin-right: -40px;
+    padding: 0;
+  }
+
+  .Main-container .grid-2 {
+    margin-left: 80px;
+    margin-top: -150px;
+    width: 95%;
+  }
+
+  .Main-container .grid-3 .bullet-text {
+    margin-left: 10px;
+    margin-top: -40px;
+    width: 115%;
+  }
+
+  .mid-container {
+    width: 85%;
+    margin: 10px 10px 10px 40px;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 10px;
+  }
+
+  .mid-container .title {
+    margin-left: 60px;
+  }
+
+  .mid-container .grid-1 {
+    margin: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
+    width: 100%;
+  }
+
+  .mid-container .grid-1 .bullet-text {
+    width: 95%;
+  }
+
+  .mid-container .grid-2 {
+    margin: 10px 10px 10px 85px;
+    padding: 5px 5px 5px 5px;
+    top: -100px;
+    width: 60%;
+    height: 80%;
+  }
+
+  .mid-container .grid-3 {
+    width: 100%;
+    height: 100%;
+    margin-top: -140px;
+    /* margin: 5px 5px 5px 5px; */
+  }
+
+  .mid-container .grid-3 .landing-page-text {
+    margin: 5px 5px 5px 5px;
+    width: 100%;
+  }
+
+  .lower-container {
+    width: 100%;
+    height: 70%;
+    margin: 5px 5px 5px 45px;
+  }
+
+  .lower-container .grid-1 {
+    margin: 10px 10px 10px 10px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .lower-container .grid-1 .title {
+    margin-left: 130px;
+  }
+
+  .lower-container .grid-1 .landing-page-text {
+    width: 80%;
+    margin: 10px 10px 10px 30px;
+    padding: 0px;
+  }
+
+  .lower-container .grid-2 {
+    margin: 5px 5px 5px 5px;
+    width: 100%;
+    height: 65%;
+  }
+
+
+  .lower-container .grid-2 .landing-page-image .pay {
+    margin: 0px 10px 10px 140px;
+    margin-top: -30px;
+    height: 50%;
+  }
+
+  .lower-container .grid-3 {
+    margin: 5px 5px 5px 5px;
+    width: 100%;
+  }
+
+  .lower-container .grid-3 .bullet-text {
+    margin: 5px 5px 5px 35px;
+    margin-top: -650px;
+    padding: 0px;
+    width: 90%;
+  }
+
+  .fourth-container {
+    width: 70%;
+    height: 70%;
+    margin: 10px 10px 10px 10px;
+  }
+
+  .fourth-container .grid-1 {
+    margin: 20px 20px 1px 20px;
+    padding: 5px 5px 5px 5px;
+    width: 100%;
+  }
+
+  .fourth-container .grid-1 .title {
+    margin: 2px 2px 2px 25px;
+    padding: 0;
+  }
+
+  .fourth-container .grid-1 .landing-page-text {
+    width: 90%;
+    margin: 5px 5px 5px 5px;
+  }
+
+  .fourth-container .grid-2 {
+    margin: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
+    width: 100%;
+    height: 90%;
+  }
+
+  .fourth-container .grid-2 .landing-page-image .cell {
+    margin: 1px 1px 1px 65px;
+    padding: 2px 2px 2px 2px;
+  }
+
+  .fourth-container .grid-3 .bullet-text {
+    margin-left: 90px;
+    margin-top: -140px;
+  }
+
+  .fifth-container {
+    margin: 5px 5px 5px 85px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .fifth-container {
+    grid-template-columns: 1fr;
+  }
+
+  .fifth-container .grid-1 {
+    height: 70%;
+    width: 70%;
+    margin: 100px 5px 5px 35px;
+  }
+
+  .fifth-container .grid-1 .title {
+    margin: 1px 1px 1px 1px;
+    padding: 2px 2px 2px 2px;
+    width: 100%;
+  }
+
+  .fifth-container .grid-1 .landing-page-text {
+    margin: 5px 5px 5px 5px;
+    width: 100%;
+    height: 20%;
+  }
+
+  .fifth-container .grid-2 {
+    width: 55%;
+    height: 90%;
+    margin: 5px 5px 5px 55px;
+    margin-top: -140px;
+    padding: 1px;
+  }
+
+  .fifth-container .grid-2 .landing-page-image .bankimage {
+    width: 70%;
+    height: 90%;
+    margin: 5px 5px 5px 75px;
+  }
+
+  .fifth-container .grid-3 {
+    margin: 5px 5px 5px 35px;
+    padding: 0px 0px 0px 0px;
+    margin-top: -250px;
+    width: 70%;
+  }
+
+  .fifth-container .grid-3 .bullet-text {
+    margin: 5px 5px 5px 5px;
+    width: 100%;
+  }
+
+  .image-container {
+    width: 100%;
+  }
+
+  .grid-1,
+  .grid-2,
+  .grid-3 {
+    width: 100%;
+  }
+
+  .grid-2 img {
+    margin-left: 0;
+  }
+
+  .perks {
+    width: 60%;
+    margin: 40px 40px 40px 50px;
+  }
+
+  .perks .title h1 {
+    margin: 0px 170px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .sub-heading {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    margin: 20px 20px 20px 30px;
+    width: 95%;
+  }
+
+  .rewards, .top-up, .redefine {
+    margin: 10px 10px 10px 20px;
+  }
+
+  .carousel-container {
+    height: 5px;
+    width: 10px;
+  }
+
+  .carousel-container img.carouselimage {
+    display: none;
+  }
+
+}
+
+@media(width<=601px) {
+
+  .navMenu .Logo-Image .img {
+    margin: 5px 5px 5px 5px;
+  }
+
+  .download .playstore img {
+    margin-left: 260px;
+    margin-right: -1px;
+    border-radius: 5px;
+    width: 125px;
+    height: 45px;
+    margin-bottom: -33px;
+  }
+
+  .download .appstore img {
+    margin-left: 120px;
+    width: 120px;
+    height: 45px;
+    border-radius: 5px;
+    margin-top: -16px;
+    margin-bottom: -8px;
+  }
+
+
+  .hamburgerIconContainer svg {
+    height: 1.7em;
+    width: 3.3em;
+    margin-left: 20px;
+  }
+}
+
+@media (width<=576px) {
+
+  .body-container {
+    width: 642px;
+    margin-left: 10px;
+  }
+
+  .navMenu {
+    height: 98px;
+    margin-left: 220px;
+  }
+
+  .navMenu .Logo-Image img {
+    width: 75px;
+    height: 75px;
+    margin-top: -1px;
+    margin-left: 340px;
+  }
+
+  .hamburgerIconContainer .Logo-Image img {
+    display: none;
+  }
+
+  .hamburgerIconContainer {
+    margin-right: 455px;
+  }
+
+  .hamburgerIconContainer svg {
+    height: 1.7em;
+    width: 3.3em;
+  }
+
+  .download .playstore img {
+    margin-left: 430px;
+    margin-right: -1px;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    margin-bottom: -31px;
+  }
+
+  .download .appstore img {
+    margin-left: 305px;
+    width: 115px;
+    height: 40px;
     border-radius: 5px;
     margin-right: 95px;
     margin-top: -16px;
@@ -1994,59 +3757,118 @@ h4.navbarItems:hover {
     grid-template-columns: 1fr;
   }
 
+  .fifth-container {
+    grid-template-columns: 1fr;
+  }
+
+  .Main-container {
+    margin-left: -65px;
+    margin-right: 75px;
+    width: 55%;
+  }
+
   .Main-container .grid-1 {
+    margin-left: 10px;
+  }
+
+  .Main-container .grid-1 .landing-page-text {
+    width: 90%;
+  }
+
+  .Main-container .grid-1 .title {
     margin-left: 10px;
   }
 
   .Main-container .grid-2 {
     margin-left: 10px;
     margin-top: -150px;
+    width: 95%;
   }
 
   .Main-container .grid-3 .bullet-text {
     margin-left: 10px;
     margin-top: 1px;
+    width: 125%;
+  }
+
+  .mid-container {
+    width: 70%;
+    margin-left: 15px;
   }
 
   .mid-container .grid-1 {
-    margin-left: 10px;
-    padding-right: 120px;
+    margin-left: -10px;
+    padding-right: 20px;
+    width: 70%;
   }
 
   .mid-container .grid-2 {
-    margin-left: 100px;
-    margin-top: -140px;
+    margin-left: 25px;
+    margin-top: -100px;
+    width: 60%;
+    height: 80%;
+  }
+
+  .mid-container .grid-3 {
+    width: 100%;
+    margin-top: -390px;
+    margin-right: -25px;
   }
 
   .mid-container .grid-3 .landing-page-text {
-    margin-left: 70px;
-    margin-top: 90px;
+    margin-left: 0px;
+    width: 80%;
+  }
+
+  .lower-container {
+    width: 70%;
+    height: 70%;
+    margin-right: 85px;
   }
 
   .lower-container .grid-1 {
     margin-left: 10px;
     margin-top: 90px;
+    width: 70%;
   }
 
   .lower-container .grid-2 {
-    margin-left: 70px;
-    margin-top: -130px;
+    margin-left: 95px;
+    margin-top: -175px;
+    width: 65%;
+    height: 65%;
+  }
+
+  .lower-container .grid-2 .landing-page-image .pay {
+    margin-left: 0px;
+  }
+
+  .lower-container .grid-3 {
+    width: 95%;
   }
 
   .lower-container .grid-3 .bullet-text {
     margin-left: 10px;
     padding-right: 80px;
-    margin-top: -140px;
+    margin-top: -300px;
+    width: 100%;
+  }
+
+  .fourth-container {
+    width: 70%;
+    margin-left: -200px;
   }
 
   .fourth-container .grid-1 {
-    margin-right: 200px;
-    margin-top: 90px;
+    margin-right: 80px;
+    margin-top: 40px;
+    width: 70%;
   }
 
   .fourth-container .grid-2 {
     margin-left: 120px;
     margin-top: -20px;
+    width: 45%;
   }
 
   .fourth-container .grid-3 .bullet-text {
@@ -2055,13 +3877,41 @@ h4.navbarItems:hover {
   }
 
   .fifth-container {
-    margin-left: -190px;
+    margin-left: -105px;
+    width: 100%;
+  }
+
+  .fifth-container .grid-1 {
+    height: 100%;
+    width: 80%;
+  }
+
+  .fifth-container .grid-1 .landing-page-text {
+    margin-bottom: 140px;
+    width: 75%;
+  }
+
+  .fifth-container .grid-1 .bullet-text {
+    margin-bottom: 100px;
+    padding: 10px;
+  }
+
+  .fifth-container .grid-2 {
+    width: 90%;
+    margin-left: 170px;
+    margin-top: -320px;
   }
 
   .fifth-container .grid-2 .landing-page-image .bankimage {
-    width: 80%;
-    height: 80%;
+    width: 75%;
+    height: 75%;
     margin-top: 70px;
+    margin-right: 30px;
+  }
+
+  .fifth-container .grid-3 .bullet-text {
+    margin-bottom: -295px;
+    width: 80%;
   }
 
   .image-container {
@@ -2081,15 +3931,28 @@ h4.navbarItems:hover {
   .sub-heading {
     grid-template-columns: 1fr;
     row-gap: 20px;
-    margin-right: -20px;
+    margin-left: -60px;
+    width: 100%;
+  }
+
+  .perks {
+    width: 60%;
+    margin-left: -325px;
   }
 
   .perks .title h1 {
-    margin-right: 100px;
+    margin-left: 155px;
+    margin-top: 30px;
+    margin-bottom: -50px;
+  }
+
+
+  .rewards, .top-up, .redefine {
+    margin-left: 15px;
   }
 
   .vid-container {
-    margin-left: -110px;
+    margin-left: -205px;
   }
 
   .vid-container .title .basics {
@@ -2113,390 +3976,14 @@ h4.navbarItems:hover {
   }
 }
 
-@media (width<=640px) {
-
-  .navMenu .Logo-Image img {
-    width: 85px;
-    height: 85px;
-    margin-top: -5px;
-    margin-left: 215px;
-  }
-
-  .navMenu {
-    height: 98px;
-  }
-
-  .hamburgerIconContainer .Logo-Image img {
-    display: none;
-  }
-
-  .hamburgerIconContainer {
-    margin-right: 275px;
-  }
-
-  .hamburgerIconContainer svg {
-    height: 1.5em;
-    width: 3.3em;
-    margin-right: 60px;
-  }
-
-  .download {
-    margin-left: 40px;
-  }
-
-  .download .playstore img {
-    margin-left: 320px;
-    margin-right: -1px;
-    border-radius: 5px;
-    width: 125px;
-    height: 45px;
-    margin-bottom: -33px;
-  }
-
-  .download .appstore img {
-    margin-left: 175px;
-    width: 120px;
-    height: 45px;
-    border-radius: 5px;
-    margin-right: 95px;
-    margin-top: -16px;
-    margin-bottom: -8px;
-  }
-
-  .Footer {
-    font-size: x-small;
-    margin-left: 20px;
-    align-items: right;
-    justify-content: right;
-  }
-
-  .NavBar.Content {
-    font-size: x-small;
-    display: flex;
-    flex-direction: column;
-    margin-left: 5px;
-  }
-
-  .Logo-Image .footer-img {
-    height: 60px;
-    width: 60px;
-    margin-left: -30px;
-    margin-top: -2px;
-  }
-
-  .social .social-logo {
-    height: 25px;
-    width: 25px;
-  }
-
-  .infos {
-    font-size: x-small;
-  }
-
-  .Connect .con {
-    font-size: x-small;
-  }
-
-  .ContactUs {
-    font-size: smaller;
-    margin-left: -20px;
-  }
-
-}
-
-@media (width<=600px) {
-  .body-container {
-    width: 650px;
-    margin-left: 10px;
-  }
-
-  .navMenu .Logo-Image img {
-    width: 80px;
-    height: 80px;
-    margin-top: -1px;
-    margin-left: 248px;
-  }
-
-  .hamburgerIconContainer .Logo-Image img {
-    display: none;
-  }
-
-  .hamburgerIconContainer {
-    margin-right: 275px;
-  }
-
-  .hamburgerIconContainer svg {
-    height: 1.5em;
-    width: 3.3em;
-    margin-right: 75px;
-  }
-
-  .download {
-    margin-left: 50px;
-  }
-
-  .download .playstore img {
-    margin-left: 320px;
-    margin-right: -1px;
-    border-radius: 5px;
-    width: 125px;
-    height: 45px;
-    margin-bottom: -33px;
-  }
-
-  .download .appstore img {
-    margin-left: 175px;
-    width: 120px;
-    height: 45px;
-    border-radius: 5px;
-    margin-right: 95px;
-    margin-top: -16px;
-    margin-bottom: -8px;
-  }
-
-  .Main-container,
-  .mid-container,
-  .lower-container,
-  .fourth-container {
-    grid-template-columns: 1fr;
-  }
-
-  .Main-container {
-    margin-right: 170px;
-  }
-
-  .Main-container .grid-1 {
-    margin-left: 10px;
-  }
-
-  .Main-container .grid-2 {
-    margin-left: 10px;
-    margin-top: -150px;
-  }
-
-  .Main-container .grid-3 .bullet-text {
-    margin-left: 0px;
-    margin-top: 1px;
-  }
-
-  .mid-container {
-    margin-right: 115px;
-  }
-
-  .mid-container .grid-1 {
-    margin-left: 10px;
-    padding-right: 120px;
-  }
-
-  .mid-container .grid-2 {
-    margin-left: 60px;
-    margin-top: -140px;
-  }
-
-  .mid-container .grid-3 .landing-page-text {
-    margin-left: 40px;
-    margin-top: 90px;
-  }
-
-  .lower-container {
-    margin-right: 195px;
-  }
-
-  .lower-container .grid-1 {
-    margin-left: 10px;
-    margin-top: 90px;
-  }
-
-  .lower-container .grid-2 {
-    margin-left: 70px;
-    margin-top: -130px;
-  }
-
-  .lower-container .grid-3 .bullet-text {
-    margin-left: 10px;
-    padding-right: 0px;
-    margin-top: -140px;
-  }
-
-  .fourth-container .grid-1 {
-    margin-right: 280px;
-    margin-top: 90px;
-  }
-
-  .fourth-container .grid-2 {
-    margin-left: 120px;
-    margin-top: -20px;
-  }
-
-  .fourth-container .grid-3 .bullet-text {
-    margin-left: 90px;
-    margin-top: -140px;
-  }
-
-  .fifth-container {
-    margin-left: -120px;
-  }
-
-  .fifth-container .grid-2 .landing-page-image .bankimage {
-    width: 80%;
-    height: 80%;
-    margin-top: -180px;
-    margin-left: 140px;
-  }
-
-  .fifth-container .grid-3 .bullet-text {
-    padding-right: 260px;
-    margin-bottom: 130px;
-  }
-
-  .fifth-container {
-    grid-template-columns: 1fr;
-  }
-
-  .image-container {
-    width: 100%;
-  }
-
-  .grid-1,
-  .grid-2,
-  .grid-3 {
-    width: 100%;
-  }
-
-  .grid-2 img {
-    margin-left: 0;
-  }
-
-  .sub-heading {
-    grid-template-columns: 1fr;
-    row-gap: 20px;
-    margin-right: 80px;
-  }
-
-  .perks .title h1 {
-    margin-right: 200px;
-  }
-
-  .vid-container {
-    margin-left: -190px;
-  }
-
-  .vid-container .title .basics {
-    margin-left: 10px;
-  }
-
-  .sub {
-    grid-template-columns: 1fr;
-    row-gap: 25px;
-    align-items: center;
-    margin-right: -20px;
-  }
-
-  .carousel-container {
-    height: auto;
-    width: 550px;
-  }
-
-  .Footer {
-    font-size: x-small;
-    margin-left: 15px;
-    align-items: right;
-    justify-content: right;
-  }
-
-  .NavBar.Content {
-    font-size: x-small;
-    display: flex;
-    flex-direction: column;
-    margin-left: 5px;
-  }
-
-  .Logo-Image .footer-img {
-    height: 55px;
-    width: 55px;
-    margin-left: -45px;
-    margin-top: -2px;
-  }
-
-  .social .social-logo {
-    height: 20px;
-    width: 20px;
-  }
-
-  .infos {
-    font-size: x-small;
-  }
-
-  .Connect .con {
-    font-size: x-small;
-  }
-
-  .Connect .social .social-logo {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .ContactUs {
-    font-size: smaller;
-    margin-left: -45px;
-  }
-}
-
-@media (width<=576px) {
-
-  .Footer {
-    font-size: xx-small;
-    margin-left: 15px;
-    align-items: right;
-    justify-content: right;
-  }
-
-  .NavBar.Content {
-    font-size: xx-small;
-    display: flex;
-    flex-direction: column;
-    margin-left: 5px;
-  }
-
-  .Logo-Image .footer-img {
-    height: 45px;
-    width: 45px;
-    margin-left: -55px;
-    margin-top: -2px;
-    margin-bottom: 8px;
-  }
-
-  .social .social-logo {
-    height: 20px;
-    width: 20px;
-  }
-
-  .infos {
-    font-size: xx-small;
-  }
-
-  .Connect .con {
-    font-size: xx-small;
-  }
-
-  .Connect .social .social-logo {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .ContactUs {
-    margin-left: -55px;
-  }
-}
-
 
 @media (width<=540px) {
 
   .navMenu .Logo-Image img {
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     margin-top: -1px;
-    margin-left: 280px;
+    margin-left: 290px;
   }
 
   .hamburgerIconContainer .Logo-Image img {
@@ -2510,7 +3997,7 @@ h4.navbarItems:hover {
   .hamburgerIconContainer svg {
     height: 1.5em;
     width: 3.3em;
-    margin-right: 5p8x;
+    margin-right: 85px;
   }
 
   .download {
@@ -2592,6 +4079,39 @@ h4.navbarItems:hover {
   .ContactUs {
     margin-left: -180px;
   }
+
+  .Main-container {
+    margin-left: -130px;
+  }
+
+  .mid-container {
+    margin-left: -60px;
+  }
+
+  .lower-container {
+    margin-left: -60px;
+  }
+
+  .fourth-container {
+    margin-left: -280px;
+  }
+
+  .fifth-container {
+    margin-left: -170px;
+  }
+
+  .perks {
+    margin-left: -330px;
+  }
+
+  .perks .title h1 {
+    margin-right: 35px;
+  }
+
+  .vid-container {
+    margin-left: -240px;
+  }
+
 
 }
 
@@ -2843,5 +4363,158 @@ h4.navbarItems:hover {
     margin-right: 95px;
     margin-top: -16px;
     margin-bottom: -8px;
+  }
+}
+
+
+@media (width<=390px) {
+
+  .navMenu .Logo-Image img {
+    width: 70px;
+    height: 70px;
+    margin-top: 3px;
+    margin-left: 400px;
+  }
+
+  .hamburgerIconContainer .Logo-Image img {
+    display: none;
+  }
+
+  .hamburgerIconContainer {
+    margin-right: 435px;
+  }
+
+  .hamburgerIconContainer svg {
+    height: 1.5em;
+    width: 3.3em;
+    margin-right: 85px;
+  }
+
+  .download {
+    margin-left: 75px;
+  }
+
+  .download .playstore img {
+    margin-left: 350px;
+    margin-right: -1px;
+    border-radius: 5px;
+    width: 90px;
+    height: 35px;
+    margin-bottom: -31px;
+  }
+
+  .download .appstore img {
+    margin-left: 250px;
+    width: 90px;
+    height: 35px;
+    border-radius: 5px;
+    margin-right: 95px;
+    margin-top: -16px;
+    margin-bottom: -8px;
+  }
+
+  .Main-container {
+    margin-left: -95px;
+  }
+
+  .mid-container {
+    margin-left: 85px;
+  }
+
+  .mid-container .bullet-text h2 {
+    text-align: justify;
+  }
+
+  .lower-container {
+    margin-left: 3px;
+  }
+
+  .fourth-container {
+    margin-left: -295px;
+  }
+
+  .fifth-container {
+    margin-right: 90px;
+  }
+
+  .fifth-container .grid-2 {
+    margin-right: 60px;
+  }
+
+  .perks {
+    margin-right: 250px;
+  }
+
+  .perks .sub-heading {
+    margin-left: 95px;
+  }
+
+  .vid-container .sub {
+    margin-right: 30px;
+  }
+
+  .vid-container {
+    margin-right: 215px;
+  }
+
+  .perks .title h1 {
+    margin-right: -70px;
+  }
+
+
+  .Footer {
+    font-size: 0.57em;
+    margin-left: 15px;
+    margin-right: -35px;
+    display: none;
+  }
+
+  .NavBar.Content {
+    font-size: 0.57em;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  .Logo-Image {
+    margin-left: 2px;
+  }
+
+  .Logo-Image .footer-img {
+    height: 43px;
+    width: 43px;
+    margin-left: -97px;
+    margin-top: -2px;
+    margin-bottom: 8px;
+    display: none;
+  }
+
+  .social .social-logo {
+    height: 20px;
+    width: 20px;
+  }
+
+  .infos {
+    font-size: 0.58em;
+    margin-left: -10px;
+  }
+
+  .Connect {
+    display: flex;
+    flex-direction: column;
+    margin-right: -20px;
+  }
+
+  .Connect .con {
+    font-size: 0.55em;
+  }
+
+  .Connect .social .social-logo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ContactUs {
+    margin-left: -130px;
   }
 }
