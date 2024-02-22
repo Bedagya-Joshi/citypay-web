@@ -12,24 +12,13 @@
 }
 
 .contact {
-    height: 74vh;
-    padding-top: 65px;
-    padding-left: 65px;
+    padding-left: 35px;
+    padding-bottom: 100px;
 }
 
-.Support .cont1 {
-    /* background-color: aqua; */
-    width: 20%;
-}
-
-.Support .cont2 {
-    /* background-color: red; */
-    width: 20%;
-    margin-left: 440px;
-    margin-top: -230px;
-}
-
-.Branch {
+.contact h2 {
+    text-align: center;
+    text-decoration: underline;
     padding-top: 15px;
 }
 

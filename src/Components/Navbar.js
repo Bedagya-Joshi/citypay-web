@@ -6,9 +6,6 @@ import citypay from "../Assets/citypay_logo.png";
 import AndDownload from "../Assets/gplay.png";
 import IOSDownload from "../Assets/apple_pay.png";
 import { navItems } from "../utils/constants.js";
-// import { divIcon } from "leaflet";
-// import { divIcon } from "leaflet";
-// import { divIcon } from "leaflet";
 
 const Navbar = () => {
   const location = useLocation();
@@ -19,7 +16,7 @@ const Navbar = () => {
   const renderNavItems = (item) => {
     return (
       <div className="navBarItemsContainer">
-        <div 
+        <div
           className="itemsContainer"
           selectedKeys={isHomepage ? [] : selectedKeys}
         >
@@ -55,7 +52,9 @@ const Navbar = () => {
     <>
       <div className="navMenu">
         <div className="Logo-Image">
-          <img src={citypay} alt="CityPayLogo" />
+          <Link to="/">
+            <img src={citypay} alt="CityPayLogo" />
+          </Link>
         </div>
         <div className="hamburgerIconContainer" onClick={handleMenuClick}>
           <div class="download">
@@ -82,14 +81,12 @@ const Navbar = () => {
               <img src={IOSDownload} alt="IOS Download" />
             </button>
           </div>
-        <div className="Logo-Image">
-          <img src={citypay} alt="CityPayLogo" />
-        </div>
+
           {burgerActive ? <FaTimes /> : <FaBars />}
         </div>
         {navItems.map((item, index) => renderNavItems(item, index))}
         {/* <div onClick={handleAgentSignupClick}>Agent Signup</div> */}
-        
+
         <div class="downloadButtons">
           <button
             class="playstore"
