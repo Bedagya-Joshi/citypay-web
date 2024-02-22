@@ -14,7 +14,7 @@ const CarouselItem = () => (
     autoplaySpeed={1500}
     effect="fade"
     speed={500}
-    dotPosition="bottom"
+    dots={false}
   >
     <div class="carousel">
       <img src={photo3} alt="carousel" class="carouselimage" />

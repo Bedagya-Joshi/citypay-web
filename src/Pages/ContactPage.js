@@ -21,7 +21,6 @@ const ContactPage = () => {
             <p>TelePhone No: 00977-1-4531900 ext -116, 117, 162, 205</p>
             <p>Call Center: 00977-1-5970225</p>
             <p>Toll-Free No: +16600 11 12 13</p>
-
           </div>
         </div>
       </div>
