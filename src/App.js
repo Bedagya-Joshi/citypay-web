@@ -9,7 +9,7 @@ import bankvector from "./Assets/request.jpg";
 import cashinhand from "./Assets/payment.png";
 import cityexpress from "./Assets/cityexpress.png";
 import cell from "./Assets/cell.jpg";
-import bank from "./Assets/bank.jpg";
+import bank from "./Assets/bank-removebg.png";
 
 //Pages Import
 import ContactPage from "./Pages/ContactPage";
@@ -45,7 +45,7 @@ const App = () => {
           {/* Navbar Import */}
           <div className="navbar_bot">
             <Navbar selectedKey="1" />
-          </div>      
+          </div>
         </Header>
 
         <Content style={{ padding: "0 48px" }}>
@@ -61,46 +61,50 @@ const App = () => {
                   </div>
 
                   {/* Section 1 */}
-
                   <div class="Main-container">
                     <div class="grid-1">
                       <div className="title">
-                        <span class="highlight"> CityPay</span>{" "}
-                        <span class="lowlight">to Family and Friends</span>
+                        <span class="highlight">Receive Remittance</span>
                       </div>
                       <div className="landing-page-text">
-                        Many of our family and friends are engaged in different
-                        nations and continents, earning income for themselves
-                        and their families. City Pay is a simple and secure app
-                        for receiving remittances wallet-to-wallet, maintaining
-                        bonds from family to family and friend to friend.
-                        Additionally, City Pay offers a refer-and-earn points
-                        system for inviting family, relatives, and friends,
-                        further strengthening these bonds.
+                        City Pay simplifies cross-border remittance, enabling
+                        seamless transactions and easy tracking of payments.
+                        Receive funds directly into your CityPay wallet and
+                        manage your finances effortlessly. With our extensive
+                        agent network in Nepal, accessing cash is convenient and
+                        hassle-free, ensuring you're always connected with your
+                        finances.
                       </div>
                     </div>
-
                     <div class="grid-2">
                       <div className="landing-page-image">
                         <img src={bankvector} alt="bank" class="bankimage" />
                       </div>
                     </div>
-
                     <div class="grid-3">
                       <div className="bullet-text">
-                        <h2>Fund Transfer to Family and Friends</h2>
+                        <h2>Receive Remittance</h2>
                         <p>
-                          Funds transfers are now easy and swift with City Pay.
-                          You can transfer funds to family and friends in a
-                          secure and convenient way using their City Pay ID
-                          (phone number) or QR code (City Pay Partnership Smart
-                          QR Nepal Pay).
+                          Seamlessly directly into your CityPay wallet, with
+                          effortless tracking of payment status. Whether it's
+                          from a family member abroad or a supportive friend,
+                          trust CityPay for secure and prompt fund delivery.
                         </p>
-                        <h2>Send or Request</h2>
+                        <h2>Withdraw Cash</h2>
                         <p>
-                          Customers and agents can easily request or send funds
-                          from one City Pay wallet to another in a simple and
-                          secure way.
+                          Effortlessly access your funds via CityPay's extensive
+                          agent network across Nepal. Use the "Find Agents"
+                          feature for convenient cash withdrawal points nearby.
+                          Count on CityPay for seamless transactions in both
+                          urban hubs and remote areas across Nepal.
+                        </p>
+                        <h2>Track Remittance</h2>
+                        <p>
+                          Track your remittance effortlessly with CityPay's
+                          intuitive system, providing real-time updates from
+                          initiation to delivery. Rest assured with peace of
+                          mind and transparency, empowering you to manage your
+                          finances confidently.
                         </p>
                       </div>
                     </div>
@@ -108,54 +112,40 @@ const App = () => {
 
                   {/* Section 2 */}
 
-                  <div class="mid-container">
+                  <div class="Main-container">
                     <div class="grid-1">
                       <div className="title">
-                        <span class="remittance">
-                          <span class="highlight">
-                            Remittance
-                            <span
-                              class="lesslight"
-                              style={{ color: "#0D60B5" }}
-                            >
-                              {" "}
-                              Services
-                            </span>
-                          </span>
-                        </span>
+                        <span class="highlight">Bank Transfers</span>
                       </div>
-                      <div className="bullet-text">
-                        <h2>Receive Remittance</h2>
-                        <p>
-                          Receiving remittance is quite easy and simple with
-                          City Pay. You can receive remittance directly into
-                          your City Pay wallet and easily track the payment
-                          status.
-                        </p>
-                        <h2>Send Domestic Remittance</h2>
-                        <p>
-                          Easily send domestic remittances to any mobile number
-                          within Nepal using City Pay.
-                        </p>
-                        <h2>Withdraw Cash</h2>
-                        <p>
-                          We include a beneficial service called "Find Agents"
-                          to withdraw cash from any part of Nepal.
-                        </p>
+                      <div className="landing-page-text">
+                        City Pay is more than just a digital wallet; it's a tool
+                        for strengthening bonds among friends and family. With
+                        seamless group transactions and real-time updates, City
+                        Pay simplifies financial support and fosters meaningful
+                        connections.
                       </div>
                     </div>
                     <div class="grid-2">
                       <div className="landing-page-image">
-                        <img src={cashinhand} alt="cash" class="bankimage" />
+                        <img src={cashinhand} alt="bank" class="bankimage" />
                       </div>
                     </div>
                     <div class="grid-3">
-                      <div className="landing-page-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed tortor tortor, venenatis a arcu id, semper ultricies
-                        enim. Aliquam turpis tellus, venenatis sit amet mattis
-                        a, viverra ac lorem. In condimentum quam ut nibh congue
-                        fermentum. Duis quis pulvinar lectus, a aliquam massa.
+                      <div className="bullet-text">
+                        <h2>City Pay to Friends and Family</h2>
+                        <p>
+                          Effortlessly share funds using an intuitive interface.
+                          Stay connected with real-time updates, making
+                          financial transactions with loved ones easier than
+                          ever before.
+                        </p>
+                        <h2>Send and Receive Money</h2>
+                        <p>
+                          Instantly to friends and family worldwide, ensuring
+                          secure transactions and peace of mind with every
+                          transfer. Effortlessly request funds, simplifying
+                          financial interactions for stress-free transactions.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -168,12 +158,17 @@ const App = () => {
                         <span class="highlight">Bank Transfers</span>
                       </div>
                       <div className="landing-page-text">
-                        City Pay offers seamless remittance services and convenient bank transfers. Easily receive remittance, load money from your bank account for free, and transfer funds to any bank in Nepal. With our extensive agent network, access your funds conveniently across Nepal. Simplify your financial transactions and stay connected with City Pay.
+                        City Pay offers seamless remittance services and
+                        convenient bank transfers. Easily load money from your
+                        bank account for free, and transfer funds to any bank in
+                        Nepal. With our extensive agent network, access your
+                        funds conveniently across Nepal. Simplify your financial
+                        transactions and stay connected with City Pay.
                       </div>
                     </div>
                     <div class="grid-2">
                       <div className="landing-page-image">
-                        <img src={cityexpress} alt="express" class="pay" />
+                        <img src={bank} alt="bank" class="bankimage" />
                       </div>
                     </div>
                     <div class="grid-3">
@@ -183,10 +178,11 @@ const App = () => {
                           Lets you transfer to and from any banks instantly all
                           across Nepal.
                         </p>
-                        <h2>Co-operative Transfers</h2>
+                        <h2>Link Bank</h2>
                         <p>
-                          Helps you make transactions easier, faster and safer
-                          with real time deposits.
+                          To your wallet app to easily load money to and from
+                          your bank account without the need to login in each
+                          time.
                         </p>
                       </div>
                     </div>
@@ -201,13 +197,11 @@ const App = () => {
                         <span class="lowlight"> for payment</span>
                       </div>
                       <div className="landing-page-text">
-                        Not just the QR code in our app but we have made it
-                        possible to pay your local businesses, stores,
-                        merchant's or any available QR. Just a simple scan and
-                        payment success.<br></br>
-                        <br></br>
-                        Our innovative Scan QR for Payment feature goes beyond in-app QR codes, allowing you to seamlessly transact with local businesses, stores, and merchants. Simply scan any available QR code, and experience the satisfaction of instant payment success. Whether you're shopping at your favorite neighborhood store or exploring new merchants, City Pay ensures a seamless payment experience with just a simple scan. Say goodbye to cash hassles and embrace the future of effortless transactions with City Pay.
-
+                        City Pay simplifies payments with its innovative Scan QR
+                        for Payment feature, allowing you to effortlessly
+                        transact at local businesses and merchants. Say goodbye
+                        to cash hassles and embrace the ease of instant payments
+                        with City Pay's seamless QR scanning technology.
                       </div>
                     </div>
                     <div class="grid-2">
@@ -220,16 +214,20 @@ const App = () => {
                   <div class="fifth-container">
                     <div class="grid-1">
                       <div className="title">
-                        <span class="business">Business Payments</span>
+                        <span class="business">Merchant Payments</span>
                       </div>
                       <div className="landing-page-text">
-                        City pay Business payment  typically refers to the ability for businesses to accept payments from customers using a citypay wallet. This can include accepting payments for goods or services purchased online or in-person. For businesses, this feature enables them to expand their payment options, streamline transactions, and potentially reach a wider customer base.
+                        Empower your business with City Pay's streamlined
+                        merchant payment solutions. Accept payments
+                        effortlessly, both in-store and online, while enjoying
+                        real-time transaction monitoring for peace of mind and
+                        efficiency.
                       </div>
                     </div>
 
                     <div class="grid-2">
                       <div className="landing-page-image">
-                        <img src={bank} alt="bank" class="bankimage" />
+                        <img src={cityexpress} alt="express" class="pay" />
                       </div>
                     </div>
 
@@ -237,13 +235,20 @@ const App = () => {
                       <div className="bullet-text">
                         <h2>Pay in stores</h2>
                         <p>
-                          No searching or cash or change. Just pay with a simple
-                          scan from CityPay QR.
+                          With City Pay Wallet enables secure and convenient
+                          transactions at physical retail outlets using stored
+                          digital funds. Simply scan a QR code to complete
+                          purchases hassle-free, eliminating the need for cash
+                          or physical cards."
                         </p>
                         <h2>Pay in Apps and online</h2>
                         <p>
-                          You can pay to any online businesses or apps with the
-                          amount in your Citypay Wallet.
+                          Empowers you to seamlessly transact with online
+                          businesses and applications, utilizing the funds
+                          stored in your account. Enjoy the convenience of
+                          making secure payments across a variety of platforms,
+                          enhancing your digital shopping and financial
+                          experiences with ease.
                         </p>
                       </div>
                     </div>
