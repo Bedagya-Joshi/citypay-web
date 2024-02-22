@@ -1,6 +1,7 @@
 import React from "react";
 import { Carousel } from "antd";
 import "./carousel.css";
+
 // image import
 import photo1 from "../Assets/Carousel-img4.jpg";
 import photo2 from "../Assets/downloadcitypay.png";
