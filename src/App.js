@@ -8,8 +8,8 @@ import "./Components/footer.css";
 import bankvector from "./Assets/request.jpg";
 import cashinhand from "./Assets/payment.png";
 import cityexpress from "./Assets/cityexpress.png";
-import cell from "./Assets/cell.jpg";
-import bank from "./Assets/bank.jpg";
+import cell from "./Assets/cell.png";
+import bank from "./Assets/bank.png";
 
 //Pages Import
 import ContactPage from "./Pages/ContactPage";
