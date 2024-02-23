@@ -1,6 +1,7 @@
 import React from "react";
 import { Carousel } from "antd";
 import "./carousel.css";
+
 // image import
 import photo1 from "../Assets/Carousel-img4.jpg";
 import photo2 from "../Assets/downloadcitypay.png";
@@ -14,7 +15,7 @@ const CarouselItem = () => (
     autoplaySpeed={1500}
     effect="fade"
     speed={500}
-    dotPosition="bottom"
+    dots={false}
   >
     <div class="carousel">
       <img src={photo3} alt="carousel" class="carouselimage" />
