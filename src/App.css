@@ -1486,14 +1486,14 @@ h4.navbarItems:hover {
   .navMenu .playstore img {
     margin: 1px 1px 1px 1px;
     border-radius: 5px;
-    width: 12.8vh;
-    height: 4.19vh;
+    width: 16.8vh;
+    height: 6.19vh;
   }
 
   .navMenu .appstore img {
     margin: 1px 1px 1px 1px;
-    width: 12.8vh;
-    height: 4.22vh;
+    width: 16.8vh;
+    height: 6.22vh;
     border-radius: 5px;
     margin-right: 0px;
   }
