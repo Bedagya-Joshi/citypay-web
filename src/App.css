@@ -89,7 +89,7 @@ div.news p.summary {
   justify-content: space-around;
   row-gap: 50px;
   align-items: center;
-  background: #0e83e3;
+  background: linear-gradient(to top, #0e83e3, #65c7f7, #0e83e3);
   box-shadow: grey 1px 1px 100px 1px;
 }
 
@@ -1401,7 +1401,6 @@ h4.navbarItems:hover {
     margin-right: 70px;
   }
 
-
   .Main-container,
   .mid-container,
   .lower-container,
@@ -1802,7 +1801,6 @@ h4.navbarItems:hover {
     margin-right: 350px;
   }
 
-
   .Main-container,
   .mid-container,
   .lower-container,
@@ -2114,7 +2112,6 @@ h4.navbarItems:hover {
 }
 
 @media (width<=640px) {
-
   .navMenu .Logo-Image img {
     width: 85px;
     height: 85px;
@@ -2201,7 +2198,6 @@ h4.navbarItems:hover {
     font-size: smaller;
     margin-left: -20px;
   }
-
 }
 
 @media (width<=600px) {
@@ -2443,7 +2439,6 @@ h4.navbarItems:hover {
 }
 
 @media (width<=576px) {
-
   .Footer {
     font-size: xx-small;
     margin-left: 15px;
@@ -2489,9 +2484,7 @@ h4.navbarItems:hover {
   }
 }
 
-
 @media (width<=540px) {
-
   .navMenu .Logo-Image img {
     width: 80px;
     height: 80px;
@@ -2535,7 +2528,6 @@ h4.navbarItems:hover {
     margin-top: -16px;
     margin-bottom: -8px;
   }
-
 
   .Footer {
     font-size: 0.57em;
@@ -2592,7 +2584,6 @@ h4.navbarItems:hover {
   .ContactUs {
     margin-left: -180px;
   }
-
 }
 
 @media (width<=480px) {
@@ -2800,7 +2791,6 @@ h4.navbarItems:hover {
 }
 
 @media (width<=420px) {
-
   .navMenu .Logo-Image img {
     width: 70px;
     height: 70px;
