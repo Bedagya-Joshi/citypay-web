@@ -110,15 +110,14 @@ const AboutPage = () => {
             <div class="cityxp-logo">
               <img src={cityxp} />
               <p>
-              CityPAY is promoted by City Express Money Transfer Pvt. Ltd, one
-              of the largest remittance service providers in Nepal. With over 17
-              years of experience in the field of remittance management, City
-              Express Money Transfer Pvt. Ltd is one of the leading remittance
-              providers with a huge customer base and agent network across
-              different parts of Nepal.
-            </p>
+                CityPAY is promoted by City Express Money Transfer Pvt. Ltd, one
+                of the largest remittance service providers in Nepal. With over
+                17 years of experience in the field of remittance management,
+                City Express Money Transfer Pvt. Ltd is one of the leading
+                remittance providers with a huge customer base and agent network
+                across different parts of Nepal.
+              </p>
             </div>
-           
           </div>
         </section>
       </div>

@@ -10,16 +10,6 @@
   border: none;
 }
 
-.headingTxt h1 {
-    font-family: 'Work Sans';
-    font-weight: 600;
-    font-size: 40px;
-    text-align: center;
-    background:  #0D60B5;
-    background-clip: text;
-    margin-bottom: 20px;
-    -webkit-text-fill-color: transparent;
-}
 .top-section {
   width: 100%;
   height: 600px;
@@ -29,14 +19,11 @@
   align-items: flex-start;
   justify-content: space-between;
   padding: 40px;
-  --mask: radial-gradient(
-        114.04px at 50% calc(100% - 153px),
-        #000 99%,
-        #0000 101%
-      )
-      calc(50% - 102px) 0/204px 100%,
-    radial-gradient(114.04px at 50% calc(100% + 102px), #0000 99%, #000 101%)
-      50% calc(100% - 51px) / 204px 100% repeat-x;
+
+  --mask: radial-gradient(114.04px at 50% calc(100% - 153px),
+      #000 99%,
+      #0000 101%) calc(50% - 102px) 0/204px 100%,
+    radial-gradient(114.04px at 50% calc(100% + 102px), #0000 99%, #000 101%) 50% calc(100% - 51px) / 204px 100% repeat-x;
   -webkit-mask: var(--mask);
   mask: var(--mask);
 }
@@ -60,13 +47,13 @@
   color: black;
   line-height: 1.7rem;
 }
+
 .top-paragraph h3 {
   font-family: "Work Sans", serif;
   font-weight: 450;
 }
 
-.top-image {
-}
+.top-image {}
 
 .box-container {
   position: relative;
@@ -138,35 +125,6 @@
 .vision p,
 .Innovation p,
 .Reliability p {
-
-    font-family: "Work Sans";
-    font-weight: 400;
-}
-
-.promotors {
-    box-shadow: 1px 5px 15px 3px grey;
-    margin-top: 20px;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 10px 10px 15px;
-    margin-bottom: 20px;
-    text-align: justify;
-}
-
-h1 {
-    font-family: 'Work Sans';
-    font-weight: 600;
-    font-size: 45px;
-    text-align: center;
-    background:  #0D60B5;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.promotors p {
-    padding-top: 20px;
-}
-
   font-family: "Work Sans";
   font-weight: 400;
   text-align: center;
@@ -192,7 +150,6 @@ h1 {
   padding-top: 20px;
 } */
 
-
 p {
   font-family: "Work Sans";
   font-weight: 400;
@@ -202,11 +159,11 @@ p {
 .promo-section {
   background-color: rgba(202, 202, 199, 0.601);
   height: 500px;
-    --mask:
-      radial-gradient(114.04px at 50% 153.00px,#000 99%,#0000 101%) calc(50% - 102px) 0/204px 100%,
-      radial-gradient(114.04px at 50% -102px,#0000 99%,#000 101%) 50% 51px/204px 100% repeat-x;
-    -webkit-mask: var(--mask);
-            mask: var(--mask);
+  --mask:
+    radial-gradient(114.04px at 50% 153.00px, #000 99%, #0000 101%) calc(50% - 102px) 0/204px 100%,
+    radial-gradient(114.04px at 50% -102px, #0000 99%, #000 101%) 50% 51px/204px 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
   position: relative;
 }
 
@@ -233,6 +190,7 @@ p {
   max-height: 100%;
   max-width: 100%;
 }
+
 .cityxp-logo p {
   text-align: justify;
   padding-top: 20px;
@@ -245,20 +203,14 @@ p {
 }
 
 /*Responsive*/
-@media only screen and (max-width: 959px) {
-}
+@media only screen and (max-width: 959px) {}
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-}
+@media only screen and (min-width: 768px) and (max-width: 959px) {}
 
-@media only screen and (max-width: 767px) {
-}
+@media only screen and (max-width: 767px) {}
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-}
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
 
-@media only screen and (max-width: 620px) {
-}
+@media only screen and (max-width: 620px) {}
 
-@media only screen and (max-width: 480px) {
-}
+@media only screen and (max-width: 480px) {}
