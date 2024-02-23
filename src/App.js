@@ -79,19 +79,6 @@ const App = () => {
                         </span>
                       </div>
                       <div className="landing-page-text">
-                        City Pay simplifies cross-border remittance, enabling seamless transactions and easy tracking of payments. Receive funds directly into your CityPay wallet and manage your finances effortlessly. With our extensive agent network in Nepal, accessing cash is convenient and hassle-free, ensuring you're always connected with your finances.
-                      </div>
-                    </div>
-
-                    <div class="grid-2">
-
-                      <div className="landing-page-image">
-                        <img src={bankvector} alt="bank" class="bankimage" />
-                      </div>
-                    </div>
-
-                    <div class="grid-3">
-                      <div className="bullet-text">
                         <h2>Receive Remittance</h2>
                         <p>
                           Seamlessly directly into your CityPay wallet, with effortless tracking of payment status. Whether it's from a family member abroad or a supportive friend, trust CityPay for secure and prompt fund delivery.
@@ -104,6 +91,19 @@ const App = () => {
                         <p>
                           Track your remittance effortlessly with CityPay's intuitive system, providing real-time updates from initiation to delivery. Rest assured with peace of mind and transparency, empowering you to manage your finances confidently.
                         </p>
+                      </div>
+                    </div>
+
+                    <div class="grid-2">
+
+                      <div className="landing-page-image">
+                        <img src={bankvector} alt="bank" class="bankimage" />
+                      </div>
+                    </div>
+
+                    <div class="grid-3">
+                      <div className="bullet-text">
+                        City Pay simplifies cross-border remittance, enabling seamless transactions and easy tracking of payments. Receive funds directly into your CityPay wallet and manage your finances effortlessly. With our extensive agent network in Nepal, accessing cash is convenient and hassle-free, ensuring you're always connected with your finances.
                       </div>
                     </div>
                   </div>
