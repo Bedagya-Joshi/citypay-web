@@ -18,8 +18,6 @@
 .body {
   display: flex;
   width: 100%;
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 
 div.post,
@@ -52,8 +50,6 @@ div.news p.summary {
   margin-right: 16px;
   width: 1500px;
   height: 300px;
-  /* width: 400px;
-  height: 400px; */
 }
 
 /* css for app.js starts here */
@@ -141,7 +137,8 @@ div.news p.summary {
 
 .mid-container {
   background-color: white;
-  padding: 85px;
+  margin: 1px 1px 1px 1px;
+  padding: 2px 2px 2px 2px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 16px;
@@ -151,6 +148,22 @@ div.news p.summary {
 .mid-container .grid-2 .landing-page-image .bankimage {
   width: 50%;
   height: 50%;
+  position: relative;
+  right: 60px;
+}
+
+.mid-container .grid-3 p {
+  font-size: 0.92em;
+}
+
+.mid-container .grid-3 {
+  width: 100%;
+}
+
+.mid-container .grid-3 .bullet-text {
+  width: 120%;
+  position: relative;
+  right: 120px;
 }
 
 .mid-container p {
@@ -213,6 +226,22 @@ div.news p.summary {
   width: 120%;
   height: 100%;
 }
+
+
+.sixth-container {
+  background-color: white;
+  padding: 85px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  margin: 0;
+}
+
+.sixth-container .grid-2 .landing-page-image .bankimage {
+  width: 120%;
+  height: 100%;
+}
+
 
 .mid-container .grid-2 .landing-page-image .bankimage {
   width: 100%;
@@ -305,6 +334,10 @@ div.news p.summary {
   transform: translate3d(8px);
 }
 
+.perks .title h1 {
+  color: #0d60b5;
+}
+
 .highlight {
   font-family: "Work Sans";
   color: #0d60b5;
@@ -326,6 +359,7 @@ div.news p.summary {
   padding-bottom: 10px;
   padding-bottom: 20px;
   margin-top: 10px;
+  color: #0d60b5;
 }
 
 .bullet-text {
@@ -490,6 +524,10 @@ h4.navbarItems:hover {
     margin-right: 5px;
   }
 
+  .perks .title h1 {
+    background-color: #0d60b5;
+  }
+
   .carousel-container {
     height: auto;
     width: 1010px;
@@ -603,7 +641,7 @@ h4.navbarItems:hover {
   }
 
   .Main-container {
-    margin: 5px 5px 5px 55px;
+    margin: 5px 5px 5px 130px;
     padding: 5px 5px 5px 5px;
   }
 
@@ -636,13 +674,13 @@ h4.navbarItems:hover {
   }
 
   .Main-container .grid-3 .bullet-text {
-    margin: 5px 35px 5px 5px;
+    margin: 5px 5px 5px 5px;
     width: 95%;
 
   }
 
   .mid-container {
-    margin: 5px 5px 5px 25px;
+    margin: 5px 5px 5px 65px;
     padding: 5px 5px 5px 5px;
   }
 
@@ -651,7 +689,7 @@ h4.navbarItems:hover {
     padding: 0px;
     width: 100%;
     position: relative;
-    left: 70px;
+    left: 60px;
   }
 
   .mid-container .grid-1 .title {
@@ -659,9 +697,9 @@ h4.navbarItems:hover {
     padding: 0px;
   }
 
-  .mid-container .grid-1 .bullet-text {
+  .mid-container .grid-1 .landing-page-text {
     margin: 1px 1px 1px 1px;
-    width: 100%;
+    width: 80%;
   }
 
   .mid-container .grid-2 {
@@ -679,17 +717,18 @@ h4.navbarItems:hover {
     position: relative;
     height: 100%;
     width: 100%;
-    right: 70px;
+    right: 10px;
+    top:30px;
   }
 
-  .mid-container .grid-3 .landing-page-text {
+  .mid-container .grid-3 .bullet-text {
     margin: 1px 1px 1px 1px;
     padding: 0px;
-    width: 99%;
+    width: 100%;
   }
 
   .lower-container {
-    margin: 5px 5px 5px 55px;
+    margin: 5px 5px 5px 80px;
     padding: 5px 5px 5px 5px;
     height: 30%;
   }
@@ -699,7 +738,7 @@ h4.navbarItems:hover {
     padding: 0px;
     width: 100%;
     position: relative;
-    left: 50px;
+    left: 30px;
   }
 
   .lower-container .grid-1 .title {
@@ -725,8 +764,8 @@ h4.navbarItems:hover {
 
   .lower-container .grid-3 {
     position: relative;
-    right: 75px;
-    margin: 10px 10px 1px 1px;
+    right: 60px;
+    margin: 100px 1px 1px 1px;
     padding: 0px;
     width: 100%;
   }
@@ -734,11 +773,13 @@ h4.navbarItems:hover {
   .lower-container .grid-3 .bullet-text {
     margin: 1px 1px 1px 1px;
     padding: 0px;
-    width: 85%;
+    width: 80%;
+    position: relative;
+    bottom: 40px;
   }
 
   .fourth-container {
-    margin: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 160px;
     padding: 5px 5px 5px 5px;
   }
 
@@ -772,7 +813,7 @@ h4.navbarItems:hover {
   }
 
   .fifth-container {
-    margin: 5px 5px 5px 55px;
+    margin: 5px 5px 5px 25px;
     padding: 4px 4px 45px 4px;
     position: relative;
     top: 50px;
@@ -782,7 +823,9 @@ h4.navbarItems:hover {
     margin: 85px 1px 1px 1px;
     height: 70%;
     position: relative;
-    width: 120%;
+    width: 100%;
+    position: relative;
+    left: 60px;
   }
 
   .fifth-container .grid-1 .title {
@@ -801,7 +844,7 @@ h4.navbarItems:hover {
   }
 
   .fifth-container .grid-2 .landing-page-image .bankimage {
-    width: 100%;
+    width: 95%;
     height: 100%;
     margin: 10px 1px 1px 80px;
   }
@@ -811,12 +854,11 @@ h4.navbarItems:hover {
     width: 100%;
   }
 
-  .fifth-container .grid-3 .landing-page-text {
+  .fifth-container .grid-3 .bullet-text {
     position: relative;
-    right: 70px;
+    right: 90px;
     width: 100%;
     margin: 70px 1px 1px 10px;
-    font-size: 0.91em;
   }
 
   .perks {
@@ -839,17 +881,17 @@ h4.navbarItems:hover {
 
   .perks .sub-heading .rewards {
     width: 336px;
-    height: 375px;
+    height: 370px;
   }
 
   .perks .sub-heading .top-up {
     width: 336px;
-    height: 375px;
+    height: 370px;
   }
 
   .perks .sub-heading .redefine {
     width: 336px;
-    height: 375px;
+    height: 370px;
   }
 
   .carousel-container {
@@ -1138,17 +1180,17 @@ h4.navbarItems:hover {
 
   .perks .sub-heading .rewards {
     width: 336px;
-    height: 375px;
+    height: 343px;
   }
 
   .perks .sub-heading .top-up {
     width: 336px;
-    height: 375px;
+    height: 343px;
   }
 
   .perks .sub-heading .redefine {
     width: 336px;
-    height: 375px;
+    height: 343px;
   }
 }
 
@@ -1759,8 +1801,8 @@ h4.navbarItems:hover {
   }
 
   .perks .sub-heading .rewards {
-    width: 290px;
-    height: 395px;
+    width: 280px;
+    height: 375px;
   }
 
   .sub-heading .rewards h2 {
@@ -1772,8 +1814,8 @@ h4.navbarItems:hover {
   }
 
   .perks .sub-heading .top-up {
-    width: 290px;
-    height: 395px;
+    width: 280px;
+    height: 375px;
   }
 
   .sub-heading .top-up h2 {
@@ -1785,8 +1827,8 @@ h4.navbarItems:hover {
   }
 
   .perks .sub-heading .redefine {
-    width: 290px;
-    height: 395px;
+    width: 280px;
+    height: 375px;
   }
 
   .sub-heading .redefine h2 {

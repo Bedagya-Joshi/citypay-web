@@ -9,7 +9,6 @@ import bankvector from "./Assets/request.jpg";
 import cashinhand from "./Assets/payment.png";
 import cell from "./Assets/cell.png";
 import bank from "./Assets/bank.png";
-import util from "./Assets/util.png";
 
 //Pages Import
 import ContactPage from "./Pages/ContactPage";
@@ -62,7 +61,7 @@ const App = () => {
 
                   {/* Section 1 */}
 
-                  <div class="Main-container">
+                  <div class="mid-container">
                     <div class="grid-1">
                       <div className="title">
                         <span class="remittance">
@@ -78,18 +77,16 @@ const App = () => {
                           </span>
                         </span>
                       </div>
+
                       <div className="landing-page-text">
                         City Pay simplifies cross-border remittance, enabling seamless transactions and easy tracking of payments. Receive funds directly into your CityPay wallet and manage your finances effortlessly. With our extensive agent network in Nepal, accessing cash is convenient and hassle-free, ensuring you're always connected with your finances.
                       </div>
                     </div>
-
                     <div class="grid-2">
-
                       <div className="landing-page-image">
                         <img src={bankvector} alt="bank" class="bankimage" />
                       </div>
                     </div>
-
                     <div class="grid-3">
                       <div className="bullet-text">
                         <h2>Receive Remittance</h2>
@@ -110,23 +107,13 @@ const App = () => {
 
                   {/* Section 2 */}
 
-                  <div class="mid-container">
+
+                  <div class="Main-container">
                     <div class="grid-1">
                       <div className="title">
                         <span class="highlight"> CityPay</span>{" "}
                         <span class="lowlight">to Family and Friends</span>
                       </div>
-                      <div className="landing-page-text">
-                        City Pay is more than just a digital wallet; it's a tool for strengthening bonds among friends and family. With seamless group transactions and real-time updates, City Pay simplifies financial support and fosters meaningful connections.
-                      </div>
-                    </div>
-                    <div class="grid-2">
-                      <div className="landing-page-image">
-                        <img src={cashinhand} alt="cash" class="bankimage" />
-                      </div>
-                    </div>
-                    <div class="grid-3">
-
                       <div className="bullet-text">
                         <h2>Fund Transfer to Family and Friends</h2>
                         <p>
@@ -138,7 +125,24 @@ const App = () => {
                         </p>
                       </div>
                     </div>
+
+                    <div class="grid-2">
+                      <div className="landing-page-image">
+                        <img src={cashinhand} alt="cash" class="bankimage" />
+                      </div>
+                    </div>
+
+                    <div class="grid-3">
+                      <div className="landing-page-text">
+                        City Pay is more than just a digital wallet; it's a tool for strengthening bonds among friends and family. With seamless group transactions and real-time updates, City Pay simplifies financial support and fosters meaningful connections.
+                      </div>
+
+                    </div>
                   </div>
+
+                  {/* Section 2 */}
+
+
 
                   {/* Section 3 */}
 
@@ -154,7 +158,7 @@ const App = () => {
                     </div>
                     <div class="grid-2">
                       <div className="landing-page-image">
-                        <img src={bank} alt="bank" class="bankimage" />
+                        <img src={bank} alt="express" class="bankimage" />
                       </div>
                     </div>
                     <div class="grid-3">
@@ -197,6 +201,36 @@ const App = () => {
                   <div class="fifth-container">
                     <div class="grid-1">
                       <div className="title">
+                        <span class="business">Merchant Payments</span>
+                      </div>
+                      <div className="landing-page-text">
+                        Empower your business with City Pay's streamlined merchant payment solutions. Accept payments effortlessly, both in-store and online, while enjoying real-time transaction monitoring for peace of mind and efficiency.
+                      </div>
+                    </div>
+
+                    <div class="grid-2">
+                      <div className="landing-page-image">
+                        <img src={bank} alt="bank" class="bankimage" />
+                      </div>
+                    </div>
+
+                    <div class="grid-3">
+                      <div className="bullet-text">
+                        <h2>Pay in stores</h2>
+                        <p>
+                          With City Pay Wallet enables secure and convenient transactions at physical retail outlets using stored digital funds. Simply scan a QR code to complete purchases hassle-free, eliminating the need for cash or physical cards.
+                        </p>
+                        <h2>Pay online and in apps</h2>
+                        <p>
+                          Empowers you to seamlessly transact with online businesses and applications, utilizing the funds stored in your account. Enjoy the convenience of making secure payments across a variety of platforms, enhancing your digital shopping and financial experiences with ease.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sixth-container">
+                    <div class="grid-1">
+                      <div className="title">
                         <span class="business">Utility Payment</span>
                       </div>
                       <div className="bullet-text">
@@ -217,7 +251,7 @@ const App = () => {
 
                     <div class="grid-2">
                       <div className="landing-page-image">
-                        <img src={util} alt="bank" class="bankimage" />
+                        <img src={bank} alt="bank" class="bankimage" />
                       </div>
                     </div>
 
