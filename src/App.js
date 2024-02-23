@@ -37,9 +37,8 @@ const { Header, Content } = Layout;
 const App = () => {
   return (
     <Router>
-       <Layout  class="mainLayout">
-        <Header class="header">  
- 
+      <Layout class="mainLayout">
+        <Header class="header">
           <ScrollToTop />
           <meta
             name="viewport"
@@ -49,7 +48,7 @@ const App = () => {
           {/* Navbar Import */}
           <div className="navbar_bot">
             <Navbar selectedKey="1" />
-          </div>
+          </div>      
         </Header>
 
         <Content style={{ padding: "0 48px" }}>
@@ -359,7 +358,7 @@ const App = () => {
               }
             />
             <Route
-              path="/Blog"
+              path="/blog/*"
               element={
                 <div>
                   <BlogPage />
@@ -383,7 +382,7 @@ const App = () => {
               }
             />
             <Route
-              path="/news"
+              path="/news/*"
               element={
                 <div>
                   <NewsPage />

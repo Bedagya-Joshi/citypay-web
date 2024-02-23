@@ -30,6 +30,29 @@
     justify-content: "space-between";
 }
 
+.Logo-Image {
+    display: "flex";
+    flex-Direction: "column";
+    gap: "10px"
+}
+
+.footer-img {
+    height: 90px;
+    width: 90px;
+}
+
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social-logo {
+    height: 45px;
+    width: 45px;
+    margin: 10px;
+}
+
 
 .NavBar Content {
 

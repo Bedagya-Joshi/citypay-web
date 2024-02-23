@@ -1,6 +1,7 @@
 // News.js
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import "../Blog/post.css";
 
 const News = ({ _id, mainImage, title, author, publishedAt, summary }) => {
   const [imageURL, setImageURL] = useState(null);
