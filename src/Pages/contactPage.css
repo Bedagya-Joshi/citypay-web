@@ -12,14 +12,41 @@
 }
 
 .contact {
+    padding-top:30px;
     padding-left: 35px;
-    padding-bottom: 100px;
+    padding-bottom: 20%;
+    font-size: larger;
 }
 
 .contact h2 {
     text-align: center;
     text-decoration: underline;
     padding-top: 15px;
+}
+
+.Office h3{
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+.Office{
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    padding-bottom: 10px;
+    gap:  10px;
+}
+.cont1 h3{
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+.cont1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: large;
+    padding-bottom: 10px;
 }
 
 @media(width<=1686px) {
