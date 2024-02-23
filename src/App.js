@@ -10,6 +10,7 @@ import cashinhand from "./Assets/payment.png";
 import cell from "./Assets/cell.png";
 import bank from "./Assets/bank.png";
 import util from "./Assets/util.png";
+import remitance from "./Assets/remitance.png";
 
 //Pages Import
 import ContactPage from "./Pages/ContactPage";
@@ -97,7 +98,7 @@ const App = () => {
                     <div class="grid-2">
 
                       <div className="landing-page-image">
-                        <img src={bankvector} alt="bank" class="bankimage" />
+                        <img src={remitance} alt="bank" class="bankimage" />
                       </div>
                     </div>
 
