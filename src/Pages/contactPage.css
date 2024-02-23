@@ -23,11 +23,6 @@
 }
 
 @media(width<=1686px) {
-    .Support .cont1 {
-        /* background-color: aqua; */
-        width: 30%;
-    }
-
     .Support .cont2 {
         /* background-color: red; */
         width: 30%;
@@ -37,14 +32,8 @@
 }
 
 @media(width<=1300px) {
-
     .contact {
-        padding-top: 140px;
-    }
-
-    .Support .cont1 {
-        /* background-color: aqua; */
-        width: 30%;
+        padding-top: 15px;
     }
 
     .contact h1 {
@@ -86,14 +75,8 @@
 
 
 @media(width<=1115px) {
-
     .contact {
-        padding-top: 100px;
-    }
-
-    .Support .cont1 {
-        /* background-color: aqua; */
-        width: 30%;
+        padding-top: 15px;
     }
 
     .contact h1 {
@@ -136,12 +119,7 @@
 @media(width<=923px) {
 
     .contact {
-        padding-top: 140px;
-    }
-
-    .Support .cont1 {
-        /* background-color: aqua; */
-        width: 30%;
+        padding-top: 15px;
     }
 
     .contact h1 {
@@ -172,10 +150,6 @@
         font-size: 0.9em;
     }
 
-    .Support .cont1 {
-        width: 40%;
-    }
-
     .Support .cont2 {
         /* background-color: red; */
         width: 40%;
@@ -188,12 +162,7 @@
 @media(width<=840px) {
 
     .contact {
-        padding-top: 110px;
-    }
-
-    .Support .cont1 {
-        /* background-color: aqua; */
-        width: 30%;
+        padding-top: 15px;
     }
 
     .contact h1 {
@@ -222,10 +191,6 @@
 
     .Branch h3 {
         font-size: 0.8em;
-    }
-
-    .Support .cont1 {
-        width: 40%;
     }
 
     .Support .cont2 {
@@ -238,15 +203,9 @@
 
 
 @media(width<=720px) {
-
     .contact {
-        padding-top: 140px;
+        padding-top: 15px;
         padding-left: 30px;
-    }
-
-    .Support .cont1 {
-        /* background-color: aqua; */
-        width: 30%;
     }
 
     .contact h1 {
@@ -275,10 +234,6 @@
 
     .Branch h3 {
         font-size: 0.8em;
-    }
-
-    .Support .cont1 {
-        width: 40%;
     }
 
     .Support .cont2 {
@@ -294,13 +249,8 @@
 @media(width<=640px) {
 
     .contact {
-        padding-top: 140px;
+        padding-top: 15px;
         padding-left: 10px;
-    }
-
-    .Support .cont1 {
-        /* background-color: aqua; */
-        width: 30%;
     }
 
     .contact h1 {
@@ -331,10 +281,6 @@
         font-size: 0.8em;
     }
 
-    .Support .cont1 {
-        width: 45%;
-    }
-
     .Support .cont2 {
         /* background-color: red; */
         width: 50%;
@@ -347,13 +293,8 @@
 @media(width<=557px) {
 
     .contact {
-        padding-top: 160px;
+        padding-top: 15px;
         padding-left: 1px;
-    }
-
-    .Support .cont1 {
-        /* background-color: aqua; */
-        width: 30%;
     }
 
     .contact h1 {
@@ -382,10 +323,6 @@
 
     .Branch h3 {
         font-size: 0.7em;
-    }
-
-    .Support .cont1 {
-        width: 50%;
     }
 
     .Support .cont2 {
@@ -401,12 +338,7 @@
 @media(width<=390px) {
 
     .contact {
-        padding-top: 95px;
-    }
-
-    .Support .cont1 {
-        /* background-color: aqua; */
-        width: 30%;
+        padding-top: 15px;
     }
 
     .contact h1 {
@@ -435,10 +367,6 @@
 
     .Branch h3 {
         font-size: 0.7em;
-    }
-
-    .Support .cont1 {
-        width: 50%;
     }
 
     .Support .cont2 {

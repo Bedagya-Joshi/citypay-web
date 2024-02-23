@@ -1862,14 +1862,14 @@ h4.navbarItems:hover {
   .navMenu .playstore img {
     margin: 1px 1px 1px 1px;
     border-radius: 5px;
-    width: 12.8vh;
-    height: 4.19vh;
+    width: 16.8vh;
+    height: 6.19vh;
   }
 
   .navMenu .appstore img {
     margin: 1px 1px 1px 1px;
-    width: 12.8vh;
-    height: 4.22vh;
+    width: 16.8vh;
+    height: 6.22vh;
     border-radius: 5px;
     margin-right: 0px;
   }
@@ -1883,8 +1883,10 @@ h4.navbarItems:hover {
   }
 
   .Main-container {
-    margin: 5px 5px 5px 45px;
+    margin: 5px 5px 5px 75px;
     padding: 5px 5px 5px 5px;
+    position: relative;
+    top: 150px;
   }
 
   .Main-container .grid-1 {
@@ -1897,12 +1899,13 @@ h4.navbarItems:hover {
   .Main-container .grid-1 .title {
     margin: 1px 1px 1px 1px;
     padding: 0px;
-    font-size: 1.75em;
+    font-size: 1.55em;
   }
 
   .Main-container .grid-1 .landing-page-text {
     margin: 5px 5px 5px 5px;
     width: 90%;
+    font-size: 0.68em;
   }
 
   .Main-container .grid-2 {
@@ -1911,28 +1914,32 @@ h4.navbarItems:hover {
 
   .Main-container .grid-2 .landing-page-image .bankimage {
     position: relative;
-    top: 50px;
+    top: 120px;
   }
 
   .Main-container .grid-3 {
     margin: 5px 5px 5px 5px;
     position: relative;
     left: 0px;
-    bottom: 270px;
-    height: 50%;
+    bottom: 370px;
     width: 100%;
-    font-size: 1.52em;
   }
 
   .Main-container .grid-3 .bullet-text {
-    margin: 100px 5px 5px 5px;
-    width: 95%;
+    margin: 100px 5px 5px 25px;
+    width: 100%;
+    position: relative;
+    bottom: 20px;
+  }
 
+  .bullet-text p {
+    font-size: 0.68em;
   }
 
   .mid-container {
     margin: 5px 5px 5px 35px;
     padding: 5px 5px 5px 5px;
+    position: relative;
   }
 
 
@@ -1941,7 +1948,7 @@ h4.navbarItems:hover {
     padding: 0px;
     height: 50%;
     font-size: 1.52em;
-    width: 120%;
+    width: 100%;
   }
 
   .mid-container .grid-1 .title {
@@ -1950,9 +1957,10 @@ h4.navbarItems:hover {
     font-size: 1.75em;
   }
 
-  .mid-container .grid-1 .bullet-text {
+  .mid-container .grid-1 .landing-page-text {
     margin: 1px 1px 1px 1px;
     width: 90%;
+    font-size: 0.68em;
   }
 
   .mid-container .grid-2 {
@@ -1962,41 +1970,43 @@ h4.navbarItems:hover {
   }
 
   .mid-container .grid-2 .landing-page-image .bankimage {
-    margin: 60px 1px 1px 85px;
+    margin: 60px 1px 1px 65px;
     padding: 0px;
   }
 
   .mid-container .grid-3 {
-    margin: 1px 1px 1px 7px;
+    margin: 1px 1px 1px 95px;
     position: relative;
-    bottom: 220px;
+    bottom: 310px;
     height: 100%;
-    width: 112%;
+    width: 100%;
     font-size: 1.52em;
   }
 
-  .mid-container .grid-3 .landing-page-text {
+  .mid-container .grid-3 .bullet-text {
     margin: 1px 1px 1px 1px;
     padding: 0px;
-    width: 100%;
+    width: 90%;
     position: relative;
-    left: 18px;
+    left: 0px;
+  }
+
+  .grid-3 .bullet-text p {
+    font-size: 0.68em;
   }
 
 
   .lower-container {
     margin: 5px 5px 5px 35px;
     padding: 5px 5px 5px 5px;
-    height: 30%;
+    position: relative;
   }
-
 
   .lower-container .grid-1 {
     margin: 1px 1px 1px 15px;
     padding: 0px;
     height: 50%;
-    width: 120%;
-    font-size: 1.52em;
+    width: 100%;
   }
 
   .lower-container .grid-1 .title {
@@ -2007,20 +2017,22 @@ h4.navbarItems:hover {
 
   .lower-container .grid-1 .landing-page-text {
     margin: 1px 1px 1px 1px;
-    width: 100%;
+    width: 90%;
+    font-size: 0.75em;
   }
 
   .lower-container .grid-2 {
-    margin: 1px 1px 15px 1px;
+    margin: 1px 1px 1px 50px;
     padding: 5px 5px 5px 5px;
-    height: 70%;
+    width: 70%;
   }
 
-  .lower-container .grid-2 .landing-page-image .pay {
-    margin: 130px 1px 1px 120px;
-    width: 80%;
-    height: 60%;
+  .lower-container .grid-2 .landing-page-image .bankimage {
+    margin: 0px 1px 1px 1px;
     padding: 0px;
+    position: relative;
+    left: 30px;
+    bottom: 5px;
   }
 
   .lower-container .grid-3 {
@@ -2029,20 +2041,23 @@ h4.navbarItems:hover {
     left: 7px;
     padding: 0px;
     font-size: 1.52em;
-    width: 120%;
+    width: 100%;
   }
 
   .lower-container .grid-3 .bullet-text {
-    margin: 1px 1px 1px 1px;
+    margin: 1px 1px 1px 15px;
     padding: 0px;
-    width: 100%;
+    width: 90%;
     position: relative;
-    left: 10px;
+    left: 42px;
+    bottom: 40px;
+    font-size: 0.90em;
   }
 
   .fourth-container {
-    margin: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 15px;
     padding: 5px 5px 5px 5px;
+    position: relative;
   }
 
 
@@ -2050,7 +2065,7 @@ h4.navbarItems:hover {
     margin: 105px 1px 1px 45px;
     padding: 0px;
     height: 50%;
-    width: 120%;
+    width: 100%;
     font-size: 1.52em;
   }
 
@@ -2073,15 +2088,17 @@ h4.navbarItems:hover {
   }
 
   .fourth-container .grid-2 .landing-page-image .cell {
-    margin: 1px 1px 1px 80px;
+    margin: 1px 1px 1px 20px;
     padding: 5px 5px 5px 5px;
     width: 100%;
     height: 100%;
   }
 
   .fifth-container {
-    margin: 5px 5px 5px 35px;
+    margin: 5px 5px 5px 100px;
     padding: 4px 4px 4px 4px;
+    position: relative;
+    top: 170px;
   }
 
   .fifth-container .grid-1 {
@@ -2089,7 +2106,7 @@ h4.navbarItems:hover {
     height: 70%;
     position: relative;
     bottom: 130px;
-    width: 120%;
+    width: 100%;
     font-size: 1.52em;
   }
 
@@ -2111,20 +2128,20 @@ h4.navbarItems:hover {
   .fifth-container .grid-2 .landing-page-image .bankimage {
     width: 90%;
     height: 90%;
-    margin: 30px 1px 1px 80px;
+    margin: 30px 1px 1px 50px;
   }
 
   .fifth-container .grid-3 {
     margin: 1px 1px 1px 22px;
-    font-size: 1.52em;
-    width: 120%;
+    width: 100%;
   }
 
-  .fifth-container .grid-3 .bullet-text {
+  .fifth-container .grid-3 .landing-page-text {
     position: relative;
-    bottom: 240px;
-    width: 90%;
+    bottom: 200px;
+    width: 100%;
     margin: 1px 1px 1px 10px;
+    font-size: 0.86em;
   }
 
   .perks {

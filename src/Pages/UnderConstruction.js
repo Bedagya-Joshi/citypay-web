@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import UC from "../Assets/UC.png";
 import "./underConstruction.css";
 
 function UnderConstruction() {
