@@ -231,8 +231,8 @@ const App = () => {
                         <img
                           src={cityexpress}
                           alt="express"
-                          class="pay"
-                          style={{ width: "75px" }}
+                          class="bankimage"
+                          // style={{ width: "75px" }}
                         />
                       </div>
                     </div>
@@ -263,7 +263,7 @@ const App = () => {
                   <div class="fifth-container">
                     <div class="grid-1">
                       <div className="title">
-                        <span class="business">Merchant Payments</span>
+                        <span class="business">Utility Payments</span>
                       </div>
                       <div className="landing-page-text">
                         Empower your business with City Pay's streamlined
@@ -279,8 +279,8 @@ const App = () => {
                         <img
                           src={cityexpress}
                           alt="express"
-                          class="pay"
-                          style={{ width: "75px" }}
+                          class="bankimage"
+                          // style={{ width: "75px" }}
                         />
                       </div>
                     </div>
