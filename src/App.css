@@ -89,7 +89,7 @@ div.news p.summary {
   justify-content: space-around;
   row-gap: 50px;
   align-items: center;
-  background: linear-gradient(to top, #0e83e3, #65c7f7, #0e83e3);
+  background: #0e83e3;
   box-shadow: grey 1px 1px 100px 1px;
 }
 
