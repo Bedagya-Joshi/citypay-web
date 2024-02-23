@@ -31,6 +31,7 @@ import ScrollToTop from "./Components/ScrollToTop";
 
 const { Header, Content } = Layout;
 
+
 const App = () => {
   return (
     <Router>
@@ -227,7 +228,60 @@ const App = () => {
 
                     <div class="grid-2">
                       <div className="landing-page-image">
-                        <img src={cityexpress} alt="express" class="pay" />
+                        <img
+                          src={cityexpress}
+                          alt="express"
+                          class="pay"
+                          style={{ width: "75px" }}
+                        />
+                      </div>
+                    </div>
+
+                    <div class="grid-3">
+                      <div className="bullet-text">
+                        <h2>Pay in stores</h2>
+                        <p>
+                          With City Pay Wallet enables secure and convenient
+                          transactions at physical retail outlets using stored
+                          digital funds. Simply scan a QR code to complete
+                          purchases hassle-free, eliminating the need for cash
+                          or physical cards."
+                        </p>
+                        <h2>Pay in Apps and online</h2>
+                        <p>
+                          Empowers you to seamlessly transact with online
+                          businesses and applications, utilizing the funds
+                          stored in your account. Enjoy the convenience of
+                          making secure payments across a variety of platforms,
+                          enhancing your digital shopping and financial
+                          experiences with ease.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="fifth-container">
+                    <div class="grid-1">
+                      <div className="title">
+                        <span class="business">Merchant Payments</span>
+                      </div>
+                      <div className="landing-page-text">
+                        Empower your business with City Pay's streamlined
+                        merchant payment solutions. Accept payments
+                        effortlessly, both in-store and online, while enjoying
+                        real-time transaction monitoring for peace of mind and
+                        efficiency.
+                      </div>
+                    </div>
+
+                    <div class="grid-2">
+                      <div className="landing-page-image">
+                        <img
+                          src={cityexpress}
+                          alt="express"
+                          class="pay"
+                          style={{ width: "75px" }}
+                        />
                       </div>
                     </div>
 
@@ -269,8 +323,7 @@ const App = () => {
                           Boost your account security and stature with an
                           exhilarating 50 point when you complete the KYC
                           verification process. Sharing the City Wallet
-                          experience is not only fulfilling but also rewarding{" "}
-                          <br></br>
+                          experience is not only fulfilling but also rewarding
                           Earn a thrilling 25 points for every successful
                           referral
                         </p>
@@ -290,7 +343,7 @@ const App = () => {
                       </div>
 
                       <div className="redefine">
-                        <h2>Convenience Redefined</h2>
+                        <h2>Loyalty points</h2>
                         <p>
                           Dive deeper into the City Wallet experience with
                           seamless utility payments. Settle bills effortlessly,
