@@ -11,10 +11,6 @@
   transition: all 0.2s linear;
 }
 
-/* .navbar_bot {
-  width: 100%;
-} */
-
 .body {
   display: flex;
   width: 100%;
@@ -112,8 +108,8 @@ div.news p.summary {
 }
 
 .Main-container .grid-2 .landing-page-image .bankimage {
-  width: 100%;
-  height: 95%;
+  width: 120%;
+  height: 100%;
 }
 
 .grid-1,
@@ -149,8 +145,8 @@ div.news p.summary {
 }
 
 .mid-container .grid-2 .landing-page-image .bankimage {
-  width: 50%;
-  height: 50%;
+  width: 120%;
+  height: 100%;
 }
 
 .mid-container p {
@@ -168,17 +164,9 @@ div.news p.summary {
   margin: 0;
 }
 
-.lower-container .grid-2 {
-  width: 95%;
+.lower-container .grid-2 .landing-page-image .bankimage {
+  width: 100%;
   height: 100%;
-  margin-top: 0px;
-}
-
-.lower-container .grid-2 .landing-page-image {
-  width: 85%;
-  height: 50%;
-  margin-top: 130px;
-  margin-right: 50px;
 }
 
 .lower-container p {
@@ -251,7 +239,7 @@ div.news p.summary {
 .sub-heading {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  column-gap: 30px;
   font-weight: 400;
   font-family: "Work Sans";
   margin-bottom: 25px;
@@ -261,27 +249,6 @@ div.news p.summary {
   font-size: 20px;
   font-weight: 500;
   color: #0d60b5;
-}
-
-.rewards:hover {
-  transform: scale3d(1.2, 1.2, 1.2);
-  box-shadow: 2px 3px 10px 0px grey;
-  border-radius: 10px;
-  background-color: rgba(211, 211, 211, 0.249);
-}
-
-.top-up:hover {
-  transform: scale3d(1.2, 1.2, 1.2);
-  box-shadow: 2px 3px 10px 0px grey;
-  border-radius: 10px;
-  background-color: rgba(211, 211, 211, 0.249);
-}
-
-.redefine:hover {
-  transform: scale3d(1.2, 1.2, 1.2);
-  box-shadow: 2px 3px 10px 0px grey;
-  border-radius: 10px;
-  background-color: rgba(211, 211, 211, 0.249);
 }
 
 .rewards,
@@ -301,8 +268,90 @@ div.news p.summary {
   justify-content: flex-start;
 }
 
-.perks div:hover {
-  transform: translate3d(8px);
+.rewards:hover {
+  background: linear-gradient(to right, #f9616b, #51a4f8);
+  color: white;
+  transition: fade 0.1s linear;
+}
+
+.top-up:hover {
+  background: linear-gradient(to right, #f9616b, #51a4f8);
+  color: white;
+  transition: fade 0.1s linear;
+}
+
+.redefine:hover {
+  background: linear-gradient(to right, #f9616b, #51a4f8);
+  color: white;
+  transition: fade 0.1s linear;
+}
+
+/*Vid Container*/
+.vid-container {
+  /* margin-left: 185px; */
+  max-width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.vid-container div:hover {
+  transform: translateY(-4px);
+}
+
+.sub {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  font-weight: 400;
+  font-family: "Work Sans";
+  margin-bottom: 25px;
+}
+
+.sub h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #0d60b5;
+}
+
+.card,
+.you,
+.coin {
+  box-shadow: 2px 3px 10px 0px grey;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 30px 20px;
+  text-align: justify;
+  width: 336px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card:hover {
+  color: white;
+  transition: fade 0.1s linear;
+}
+
+.you:hover {
+  color: white;
+  width: 336px;
+  transition: fade 0.1s linear;
+}
+
+.coin:hover {
+  color: white;
+  transition: fade 0.1s linear;
+}
+
+.atm {
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .highlight {
@@ -453,29 +502,16 @@ h4.navbarItems:hover {
     margin-left: 310px;
   }
 
-  .navMenu .Logo-Image img {
-    margin: 1px 1px 1px 1px;
-    padding: 2px 2px 2px 2px;
-    width: 100px;
-    height: 100px;
-    position: relative;
-    right: 70px;
-    bottom: 10px;
+  .navbarItems .Logo-Image img {
+    width: 95%;
+    height: 95%;
+    margin-left: -1px;
   }
 
-  .navMenu {
-    margin: 1px 120px 1px 1px;
-    gap: 10px;
-    width: 100%;
-    padding: 0px;
+  .navbarItems .nav-about {
+    margin-left: 50px;
+    font-size: large;
   }
-
-  .navMenu a {
-    margin-left: auto;
-    margin-right: 0px;
-    font-size: 1.17em;
-  }
-
 
   .navbarItems .playstore img {
     margin-left: 200px;
@@ -490,10 +526,6 @@ h4.navbarItems:hover {
     margin-right: 5px;
   }
 
-  /* .perks .sub-heading {
-    gap: 30px;
-  } */
-
   .carousel-container {
     height: auto;
     width: 1010px;
@@ -505,29 +537,16 @@ h4.navbarItems:hover {
     margin-left: 150px;
   }
 
-  .navMenu .Logo-Image img {
-    margin: 1px 1px 1px 1px;
-    padding: 2px 2px 2px 2px;
-    width: 100px;
-    height: 100px;
-    position: relative;
-    right: 70px;
-    bottom: 10px;
+  .navbarItems .Logo-Image img {
+    width: 90%;
+    height: 90%;
+    margin-left: -20px;
   }
 
-  .navMenu {
-    margin: 1px 120px 1px 1px;
-    gap: 10px;
-    width: 100%;
-    padding: 0px;
+  .navbarItems .nav-about {
+    margin-left: 0px;
+    font-size: large;
   }
-
-  .navMenu a {
-    margin-left: auto;
-    margin-right: 0px;
-    font-size: 1.17em;
-  }
-
 
   .navbarItems .playstore img {
     margin-left: 40px;
@@ -552,50 +571,73 @@ h4.navbarItems:hover {
 
 @media (width<=1440px) {
   .body-container {
-    width: 100%;
-    margin: 0;
+    width: 1000px;
+    margin-left: 130px;
   }
 
-  .navMenu .Logo-Image img {
-    margin: 1px 1px 1px 1px;
-    padding: 2px 2px 2px 2px;
+  .navbarItems .Logo-Image img {
+    width: 85%;
+    height: 85%;
+    margin-left: -20px;
+  }
+
+  .navbarItems .nav-about {
+    margin-left: 0px;
+    font-size: larger;
+  }
+
+  .navbarItems .playstore img {
+    margin-left: 60px;
+    border-radius: 5px;
     width: 100px;
-    height: 100px;
-    position: relative;
-    right: 70px;
-    bottom: 10px;
+    height: 35px;
   }
 
-  .navMenu {
-    margin: 1px 120px 1px 1px;
-    gap: 10px;
-    width: 100%;
-    padding: 0px;
+  .navbarItems .appstore img {
+    margin-left: -25px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+
+  .vid-container {
+    margin-right: 50px;
+  }
+
+  .carousel-container {
+    height: auto;
+    width: 980px;
+  }
+}
+
+@media (width<=1300px) {
+  .body-container {
+    width: 1000px;
+    margin-left: 120px;
   }
 
   .navMenu a {
-    margin-left: auto;
-    margin-right: 0px;
-    font-size: 1.17em;
+    font-size: medium;
   }
 
-  .downloadButtons {
-    margin: 1px 45px 1px 1px;
+  .navMenu .Logo-Image img {
+    margin-right: 20px;
   }
 
   .navMenu .playstore img {
-    margin: 1px 1px 1px 1px;
+    margin-left: -10px;
     border-radius: 5px;
-    width: 12.8vh;
-    height: 4.19vh;
+    width: 120px;
+    height: 40px;
   }
 
   .navMenu .appstore img {
-    margin: 1px 1px 1px 1px;
-    width: 12.8vh;
-    height: 4.39vh;
+    margin-left: -5px;
+    width: 120px;
+    height: 45px;
     border-radius: 5px;
-    margin-right: 0px;
+    margin-right: 50px;
   }
 
   .Main-container,
@@ -606,249 +648,12 @@ h4.navbarItems:hover {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .Main-container {
-    margin: 5px 5px 5px 25px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .Main-container .grid-1 {
-    margin: 5px 5px 40px;
-    width: 100%;
-  }
-
-  .Main-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-  }
-
-  .Main-container .grid-2 {
-    margin: 5px 5px 5px 5px;
-    width: 90%;
-  }
-
-  .Main-container .grid-2 .landing-page-image .bankimage {
-    position: relative;
-    top: 10px;
-    right: 30px;
-  }
-
-  .Main-container .grid-3 {
-    margin: 5px 5px 5px 5px;
-    position: relative;
-    width: 110%;
-    right: 20px;
-  }
-
-  .Main-container .grid-3 .bullet-text {
-    margin: 5px 5px 5px 5px;
-    width: 95%;
-
-  }
-
-  .mid-container {
-    margin: 5px 5px 5px 25px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .mid-container .grid-1 {
-    margin: 1px 1px 1px 15px;
-    padding: 0px;
-    width: 100%;
-  }
-
-  .mid-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-  }
-
-  .mid-container .grid-1 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    width: 100%;
-  }
-
-  .mid-container .grid-2 {
-    margin: 20px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .mid-container .grid-2 .landing-page-image .bankimage {
-    margin: 30px 1px 1px 55px;
-    padding: 0px;
-  }
-
-  .mid-container .grid-3 {
-    margin: 1px 1px 1px 7px;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    right: 20px;
-  }
-
-  .mid-container .grid-3 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 99%;
-  }
-
-  .lower-container {
-    margin: 5px 5px 5px 25px;
-    padding: 5px 5px 5px 5px;
-    height: 30%;
-  }
-
-  .lower-container .grid-1 {
-    margin: 1px 1px 1px 15px;
-    padding: 0px;
-    width: 100%;
-  }
-
-  .lower-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-  }
-
-  .lower-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-  }
-
-  .lower-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .lower-container .grid-2 .landing-page-image .pay {
-    margin: 170px 1px 1px 25px;
-    width: 90%;
-    height: 45%;
-    padding: 0px;
-  }
-
-  .lower-container .grid-3 {
-    position: relative;
-    right: 25px;
-    margin: 100px 1px 1px 1px;
-    padding: 0px;
-    width: 100%;
-  }
-
-  .lower-container .grid-3 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 100%;
-  }
-
-  .fourth-container {
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .fourth-container .grid-1 {
-    margin: 50px 1px 1px 45px;
-    padding: 0px;
-    width: 120%;
-  }
-
-  .fourth-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-  }
-
-  .fourth-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    width: 115%;
-  }
-
-  .fourth-container .grid-2 {
-    margin: 35px 1px 1px 85px;
-    padding: 5px 5px 5px 5px;
-    height: 90%;
-    width: 80%;
-  }
-
-  .fourth-container .grid-2 .landing-page-image .cell {
-    margin: 1px 1px 1px 140px;
-    padding: 5px 5px 5px 5px;
-    width: 100%;
-  }
-
-  .fifth-container {
-    margin: 5px 5px 5px 25px;
-    padding: 4px 4px 45px 4px;
-    position: relative;
-    top: 50px;
-  }
-
-  .fifth-container .grid-1 {
-    margin: 85px 1px 1px 1px;
-    height: 70%;
-    position: relative;
-    width: 120%;
-  }
-
-  .fifth-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-  }
-
-  .fifth-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-    width: 100%;
-  }
-
-  .fifth-container .grid-2 {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-  }
-
-  .fifth-container .grid-2 .landing-page-image .bankimage {
-    width: 95%;
-    height: 100%;
-    margin: 10px 1px 1px 80px;
-  }
-
-  .fifth-container .grid-3 {
-    margin: 1px 1px 1px 1px;
-    width: 100%;
-  }
-
-  .fifth-container .grid-3 .bullet-text {
-    position: relative;
-    right: 30px;
-    width: 100%;
-    margin: 70px 1px 1px 10px;
-  }
-
   .perks {
-    margin: 4px 4px 4px 4px;
-    padding: 40px 4px 40px 4px;
+    margin-right: 160px;
   }
 
-  .perks .title h1 {
-    position: relative;
-    right: 0px;
-  }
-
-  .perks .sub-heading {
-    grid-template-columns: repeat(2fr, 3fr);
-    gap: 40px;
-    align-items: center;
-    margin: 1px 1px 1px 1px;
-    padding: 4px 4px 4px 4px;
-  }
-
-  .perks .sub-heading .rewards {
-    width: 336px;
-    height: 343px;
-  }
-
-  .perks .sub-heading .top-up {
-    width: 336px;
-    height: 343px;
-  }
-
-  .perks .sub-heading .redefine {
-    width: 336px;
-    height: 343px;
+  .vid-container {
+    margin-right: 180px;
   }
 
   .carousel-container {
@@ -857,635 +662,466 @@ h4.navbarItems:hover {
   }
 }
 
-@media(width<=1268px) {
+@media (width<=1220px) {
   .body-container {
-    width: 100%;
-    margin: 0;
-  }
-
-  .navMenu .Logo-Image img {
-    margin: 1px 1px 1px 1px;
-    padding: 2px 2px 2px 2px;
-    width: 100px;
-    height: 100px;
-    position: relative;
-    right: 70px;
-    bottom: 10px;
-  }
-
-  .navMenu {
-    margin: 1px 120px 1px 1px;
-    gap: 10px;
-    width: 100%;
-    padding: 0px;
+    width: 1000px;
+    margin-left: 50px;
   }
 
   .navMenu a {
-    margin-left: auto;
-    margin-right: 0px;
-    font-size: 1.17em;
-  }
-
-  .downloadButtons {
-    margin: 1px 45px 1px 1px;
+    font-size: medium;
   }
 
   .navMenu .playstore img {
-    margin: 1px 1px 1px 1px;
+    margin-left: -10px;
     border-radius: 5px;
-    width: 12.8vh;
-    height: 4.19vh;
+    width: 100px;
+    height: 35px;
   }
 
   .navMenu .appstore img {
-    margin: 1px 1px 1px 1px;
-    width: 12.8vh;
-    height: 4.39vh;
+    margin-left: -5px;
+    width: 100px;
+    height: 38px;
     border-radius: 5px;
-    margin-right: 0px;
+    margin-right: 50px;
   }
 
-  .Main-container {
-    margin: 5px 5px 5px 25px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .Main-container .grid-1 {
-    margin: 5px 5px 40px;
-    width: 100%;
-  }
-
-  .Main-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-  }
-
-  .Main-container .grid-2 {
-    margin: 5px 5px 5px 5px;
-    width: 90%;
-  }
-
-  .Main-container .grid-2 .landing-page-image .bankimage {
-    position: relative;
-    top: 10px;
-    right: 30px;
-  }
-
-  .Main-container .grid-3 {
-    margin: 5px 5px 5px 5px;
-    position: relative;
-    width: 110%;
-    right: 20px;
-  }
-
-  .Main-container .grid-3 .bullet-text {
-    margin: 5px 5px 5px 5px;
-    width: 95%;
-
-  }
-
-  .mid-container {
-    margin: 5px 5px 5px 25px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .mid-container .grid-1 {
-    margin: 1px 1px 1px 15px;
-    padding: 0px;
-    width: 100%;
-  }
-
-  .mid-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-  }
-
-  .mid-container .grid-1 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    width: 100%;
-  }
-
-  .mid-container .grid-2 {
-    margin: 20px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .mid-container .grid-2 .landing-page-image .bankimage {
-    margin: 30px 1px 1px 55px;
-    padding: 0px;
-  }
-
-  .mid-container .grid-3 {
-    margin: 1px 1px 1px 7px;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    right: 20px;
-  }
-
-  .mid-container .grid-3 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 99%;
-  }
-
-  .lower-container {
-    margin: 5px 5px 5px 25px;
-    padding: 5px 5px 5px 5px;
-    height: 30%;
-  }
-
-  .lower-container .grid-1 {
-    margin: 1px 1px 1px 15px;
-    padding: 0px;
-    width: 100%;
-  }
-
-  .lower-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-  }
-
-  .lower-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-  }
-
-  .lower-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .lower-container .grid-2 .landing-page-image .pay {
-    margin: 170px 1px 1px 25px;
-    width: 90%;
-    height: 45%;
-    padding: 0px;
-  }
-
-  .lower-container .grid-3 {
-    position: relative;
-    right: 25px;
-    margin: 100px 1px 1px 1px;
-    padding: 0px;
-    width: 100%;
-  }
-
-  .lower-container .grid-3 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 100%;
-  }
-
-  .fourth-container {
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .fourth-container .grid-1 {
-    margin: 50px 1px 1px 45px;
-    padding: 0px;
-    width: 120%;
-  }
-
-  .fourth-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-  }
-
-  .fourth-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    width: 115%;
-  }
-
-  .fourth-container .grid-2 {
-    margin: 35px 1px 1px 85px;
-    padding: 5px 5px 5px 5px;
-    height: 90%;
-    width: 80%;
-  }
-
-  .fourth-container .grid-2 .landing-page-image .cell {
-    margin: 1px 1px 1px 80px;
-    padding: 5px 5px 5px 5px;
-    width: 100%;
-  }
-
+  .Main-container,
+  .mid-container,
+  .lower-container,
+  .fourth-container,
   .fifth-container {
-    margin: 5px 5px 5px 25px;
-    padding: 4px 4px 45px 4px;
-    position: relative;
-    top: 50px;
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .fifth-container .grid-1 {
-    margin: 85px 1px 1px 1px;
-    height: 70%;
-    position: relative;
-    width: 120%;
+  .Main-container .title {
+    margin-left: 0px;
   }
 
-  .fifth-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
+  .mid-container .title {
+    margin-left: 0px;
   }
 
-  .fifth-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-    width: 100%;
+  .lower-container .title {
+    margin-left: 0px;
   }
 
-  .fifth-container .grid-2 {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
+  .fourth-container .title {
+    margin-left: 0px;
   }
 
-  .fifth-container .grid-2 .landing-page-image .bankimage {
-    width: 95%;
-    height: 100%;
-    margin: 10px 1px 1px 80px;
+  .fifth-container .title {
+    margin-left: 0px;
   }
 
-  .fifth-container .grid-3 {
-    margin: 1px 1px 1px 1px;
-    width: 100%;
-  }
-
-  .fifth-container .grid-3 .bullet-text {
-    position: relative;
-    right: 30px;
-    width: 100%;
-    margin: 70px 1px 1px 10px;
-  }
-
-  .perks {
-    margin: 4px 4px 4px 4px;
-    padding: 40px 4px 40px 4px;
-  }
-
-  .perks .title h1 {
-    position: relative;
-    right: 0px;
-  }
-
-  .perks .sub-heading {
-    grid-template-columns: repeat(2fr, 3fr);
-    gap: 40px;
+  .sub-heading {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
     align-items: center;
-    margin: 1px 1px 1px 1px;
-    padding: 4px 4px 4px 4px;
+    margin-left: 110px;
   }
 
-  .perks .sub-heading .rewards {
-    width: 336px;
+  .top-up {
     height: 343px;
   }
 
-  .perks .sub-heading .top-up {
-    width: 336px;
-    height: 343px;
+  .sub {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 25px;
+    align-items: center;
+    margin-left: 130px;
   }
 
-  .perks .sub-heading .redefine {
-    width: 336px;
-    height: 343px;
-  }
-}
-
-
-@media (width<=1170px) {
-
-  .body-container {
-    width: 100%;
-    margin: 0;
-  }
-
-  .navMenu .Logo-Image img {
-    margin: 1px 1px 1px 1px;
-    padding: 2px 2px 2px 2px;
-    width: 100px;
-    height: 100px;
-    position: relative;
-    right: 70px;
-    bottom: 10px;
-  }
-
-  .navMenu {
-    margin: 1px 120px 1px 1px;
-    gap: 10px;
-    width: 100%;
-    padding: 0px;
-  }
-
-  .navMenu a {
-    margin-left: auto;
-    margin-right: 0px;
-    font-size: 1.15em;
-  }
-
-  .downloadButtons {
-    margin: 1px 45px 1px 1px;
-  }
-
-  .navMenu .playstore img {
-    margin: 1px 1px 1px 1px;
-    border-radius: 5px;
-    width: 12.8vh;
-    height: 4.19vh;
-  }
-
-  .navMenu .appstore img {
-    margin: 1px 1px 1px 1px;
-    width: 12.8vh;
-    height: 4.39vh;
-    border-radius: 5px;
-    margin-right: 0px;
-  }
-
-  .Main-container {
-    margin: 5px 5px 5px 25px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .Main-container .grid-1 {
-    margin: 5px 5px 40px;
-    width: 100%;
-  }
-
-  .Main-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-  }
-
-  .Main-container .grid-2 {
-    margin: 5px 5px 5px 5px;
-    width: 90%;
-  }
-
-  .Main-container .grid-2 .landing-page-image .bankimage {
-    position: relative;
-    top: 10px;
-    right: 30px;
-  }
-
-  .Main-container .grid-3 {
-    margin: 5px 5px 5px 5px;
-    position: relative;
-    width: 110%;
-    right: 50px;
-  }
-
-  .Main-container .grid-3 .bullet-text {
-    margin: 5px 5px 5px 5px;
-    width: 95%;
-
-  }
-
-  .mid-container {
-    margin: 5px 5px 5px 25px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .mid-container .grid-1 {
-    margin: 1px 1px 1px 15px;
-    padding: 0px;
-    width: 100%;
-  }
-
-  .mid-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-  }
-
-  .mid-container .grid-1 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    width: 100%;
-  }
-
-  .mid-container .grid-2 {
-    margin: 20px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .mid-container .grid-2 .landing-page-image .bankimage {
-    margin: 30px 1px 1px 55px;
-    padding: 0px;
-  }
-
-  .mid-container .grid-3 {
-    margin: 1px 1px 1px 7px;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    right: 20px;
-  }
-
-  .mid-container .grid-3 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 99%;
-  }
-
-  .lower-container {
-    margin: 5px 5px 5px 25px;
-    padding: 5px 5px 5px 5px;
-    height: 30%;
-  }
-
-  .lower-container .grid-1 {
-    margin: 1px 1px 1px 15px;
-    padding: 0px;
-    width: 100%;
-  }
-
-  .lower-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-  }
-
-  .lower-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-  }
-
-  .lower-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .lower-container .grid-2 .landing-page-image .pay {
-    margin: 170px 1px 1px 25px;
-    width: 90%;
-    height: 45%;
-    padding: 0px;
-  }
-
-  .lower-container .grid-3 {
-    position: relative;
-    right: 25px;
-    margin: 100px 1px 1px 1px;
-    padding: 0px;
-    width: 100%;
-  }
-
-  .lower-container .grid-3 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 100%;
-  }
-
-  .fourth-container {
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .fourth-container .grid-1 {
-    margin: 50px 1px 1px 45px;
-    padding: 0px;
-    width: 120%;
-  }
-
-  .fourth-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-  }
-
-  .fourth-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    width: 115%;
-  }
-
-  .fourth-container .grid-2 {
-    margin: 35px 1px 1px 85px;
-    padding: 5px 5px 5px 5px;
-    height: 90%;
-    width: 80%;
-  }
-
-  .fourth-container .grid-2 .landing-page-image .cell {
-    margin: 1px 1px 1px 120px;
-    padding: 5px 5px 5px 5px;
-    width: 100%;
-  }
-
-  .fifth-container {
-    margin: 5px 5px 5px 25px;
-    padding: 4px 4px 45px 4px;
-    position: relative;
-    top: 50px;
-  }
-
-  .fifth-container .grid-1 {
-    margin: 85px 1px 1px 1px;
-    height: 70%;
-    position: relative;
-    width: 120%;
-  }
-
-  .fifth-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-  }
-
-  .fifth-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-    width: 100%;
-  }
-
-  .fifth-container .grid-2 {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-  }
-
-  .fifth-container .grid-2 .landing-page-image .bankimage {
-    width: 95%;
-    height: 100%;
-    margin: 10px 1px 1px 80px;
-  }
-
-  .fifth-container .grid-3 {
-    margin: 1px 1px 1px 1px;
-    width: 100%;
-  }
-
-  .fifth-container .grid-3 .bullet-text {
-    position: relative;
-    right: 30px;
-    width: 100%;
-    margin: 70px 1px 1px 10px;
-  }
-
-  .perks {
-    margin: 1px 1px 1px 1px;
-    padding: 40px 4px 40px 4px;
-  }
-
-  .perks .title h1 {
-    position: relative;
-    right: 0px;
-  }
-
-  .perks .sub-heading {
-    margin: 1px 1px 1px 1px;
-    padding: 2px 2px 2px 2px;
-    gap: 40px;
-  }
-
-
-  .ant-layout-footer {
-    padding-top: 10px;
+  .title {
+    margin-left: 170px;
   }
 
   .carousel-container {
-    margin-left: 40px;
+    height: auto;
+    width: 980px;
   }
 }
 
+@media (width<=1140px) {
+  .body-container {
+    width: 870px;
+    margin-left: 90px;
+  }
+
+  .navMenu a {
+    font-size: medium;
+  }
+
+  .navMenu .Logo-Image img {
+    margin-left: 12px;
+  }
+
+  .navMenu .playstore img {
+    margin-left: -25px;
+    border-radius: 5px;
+    width: 90px;
+    height: 30px;
+  }
+
+  .navMenu .appstore img {
+    margin-left: -5px;
+    width: 90px;
+    height: 35px;
+    border-radius: 5px;
+    margin-right: 50px;
+  }
+
+  .Main-container,
+  .mid-container,
+  .lower-container,
+  .fourth-container,
+  .fifth-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .Main-container .title {
+    margin-left: 0px;
+  }
+
+  .mid-container .title {
+    margin-left: 0px;
+  }
+
+  .lower-container .title {
+    margin-left: 0px;
+  }
+
+  .fourth-container .title {
+    margin-left: 0px;
+  }
+
+  .fifth-container .title {
+    margin-left: 0px;
+  }
+
+  .sub-heading {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    align-items: center;
+    margin-right: -220px;
+  }
+
+  .top-up {
+    height: 343px;
+  }
+
+  .sub {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 25px;
+    align-items: center;
+    margin-left: 130px;
+  }
+
+  .carousel-container {
+    height: auto;
+    width: 980px;
+  }
+}
 
 @media (width<=1115px) {
   .body-container {
-    width: 100%;
-    margin: 0;
-  }
-
-  .navMenu .Logo-Image img {
-    margin: 1px 1px 1px 1px;
-    padding: 2px 2px 2px 2px;
-    width: 100px;
-    height: 100px;
-    position: relative;
-    right: 10px;
-    bottom: 10px;
-  }
-
-  .navMenu {
-    margin: 1px 200px 1px 1px;
-    gap: 10px;
-    width: 100%;
-    padding: 0px;
+    width: 870px;
+    margin-left: 90px;
   }
 
   .navMenu a {
-    margin-left: auto;
-    margin-right: 0px;
-    font-size: 1.15em;
+    font-size: small;
   }
 
-  .downloadButtons {
-    margin: 1px 1px 1px 1px;
+  .navMenu .Logo-Image img {
+    margin-left: 18px;
   }
 
   .navMenu .playstore img {
-    margin: 1px 1px 1px 1px;
+    margin-left: -25px;
     border-radius: 5px;
-    width: 12.8vh;
-    height: 4.19vh;
+    width: 90px;
+    height: 30px;
   }
 
   .navMenu .appstore img {
-    margin: 1px 1px 1px 1px;
-    width: 12.8vh;
-    height: 4.22vh;
+    margin-left: -5px;
+    width: 90px;
+    height: 35px;
     border-radius: 5px;
-    margin-right: 0px;
+    margin-right: 50px;
+  }
+
+  .Main-container,
+  .mid-container,
+  .lower-container,
+  .fourth-container,
+  .fifth-container {
+    grid-template-columns: 2fr, 2fr;
+  }
+
+  .Main-container .title {
+    margin-left: 0px;
+  }
+
+  .Main-container .title .highlight {
+    font-size: smaller;
+  }
+
+  .Main-container .title .lowlight {
+    font-size: smaller;
+  }
+
+  .Main-container .landing-page-text {
+    font-size: smaller;
+  }
+
+  .Main-container .grid-3 .bullet-text h2 {
+    font-size: smaller;
+    margin-right: 100px;
+  }
+
+  .Main-container .grid-3 .bullet-text p {
+    font-size: smaller;
+    margin-right: 100px;
+  }
+
+  .mid-container .title {
+    margin-left: 0px;
+  }
+
+  .mid-container .grid-2 {
+    width: 100%;
+  }
+
+  .mid-container .grid-3 {
+    margin-top: -130px;
+  }
+
+  .mid-container .grid-1 .title .highlight {
+    font-size: smaller;
+  }
+
+  .remittance .lesslight {
+    font-size: 28px;
+  }
+
+  .mid-container .grid-1 .bullet-text h2 {
+    font-size: smaller;
+  }
+
+  .mid-container .grid-1 .bullet-text p {
+    font-size: smaller;
+  }
+
+  .mid-container .grid-3 .landing-page-text {
+    font-size: smaller;
+    padding-right: 70px;
+    margin-top: 130px;
+  }
+
+  .lower-container .title {
+    margin-left: 0px;
+  }
+
+  .lower-container .grid-2 {
+    width: 100%;
+  }
+
+  .lower-container .grid-1 .title .highlight {
+    font-size: smaller;
+  }
+
+  .lower-container .grid-1 .landing-page-text {
+    font-size: smaller;
+  }
+
+  .lower-container .grid-3 .bullet-text h2 {
+    font-size: smaller;
+  }
+
+  .lower-container .grid-3 .bullet-text p {
+    font-size: smaller;
+    padding-right: 70px;
+  }
+
+  .fourth-container .title {
+    margin-left: 0px;
+  }
+
+  .fourth-container .grid-1 .title .highlight {
+    font-size: smaller;
+  }
+
+  .fourth-container .grid-1 .title .lowlight {
+    font-size: smaller;
+  }
+
+  .fourth-container .grid-1 .landing-page-text {
+    font-size: smaller;
+  }
+
+  .fourth-container .grid-2 .landing-page-image .cell {
+    width: 250px;
+    height: 100%;
+  }
+
+  .fifth-container .title {
+    margin-left: 0px;
+  }
+
+  .fifth-container .grid-1 {
+    margin-bottom: 0px;
+    margin-left: 100px;
+  }
+
+  .fifth-container .grid-3 .bullet-text {
+    padding-right: 120px;
+  }
+
+  .fifth-container .grid-1 .title .business {
+    font-size: smaller;
+  }
+
+  .fifth-container .grid-1 .landing-page-text {
+    font-size: smaller;
+  }
+
+  .fifth-container .grid-3 .bullet-text h2 {
+    font-size: smaller;
+  }
+
+  .fifth-container .grid-3 .bullet-text p {
+    font-size: smaller;
+  }
+
+  .fifth-container .grid-2 .landing-page-image {
+    align-items: center;
+  }
+
+  .fifth-container .grid-2 .landing-page-image .bankimage {
+    width: 100%;
+    height: 100%;
+  }
+
+  .fifth-container .grid-3 {
+    margin-right: 55px;
+  }
+
+  .perks h1 {
+    font-size: smaller;
+  }
+
+  .sub-heading {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    align-items: center;
+    margin-right: -220px;
+  }
+
+  .sub-heading .rewards {
+    height: 240px;
+    width: 300px;
+  }
+
+  .sub-heading .rewards h2 {
+    font-size: small;
+  }
+
+  .sub-heading .rewards p {
+    font-size: small;
+  }
+
+  .sub-heading .top-up {
+    height: 240px;
+    width: 300px;
+  }
+
+  .sub-heading .top-up h2 {
+    font-size: small;
+  }
+
+  .sub-heading .top-up p {
+    font-size: small;
+  }
+
+  .sub-heading .redefine {
+    height: 240px;
+    width: 300px;
+  }
+
+  .sub-heading .redefine h2 {
+    font-size: small;
+  }
+
+  .sub-heading .redefine p {
+    font-size: small;
+  }
+
+  .vid-container .title .basics {
+    font-size: smaller;
+  }
+
+  .vid-container .sub h2 {
+    font-size: smaller;
+    text-align: center;
+  }
+
+  .sub {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 75px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sub .card {
+    width: 250px;
+  }
+
+  .sub .you {
+    width: 250px;
+  }
+
+  .sub .coin {
+    width: 250px;
+  }
+
+  .carousel-container {
+    height: auto;
+    width: 980px;
+  }
+}
+
+@media (width<=1080px) {
+  .body-container {
+    width: 760px;
+    margin-left: 95px;
+  }
+
+  .navMenu a {
+    font-size: small;
+  }
+
+  .navMenu .Logo-Image img {
+    margin-left: 35px;
+    width: 75px;
+    height: 75px;
+  }
+
+  .navMenu .playstore img {
+    margin-left: -25px;
+    border-radius: 5px;
+    width: 90px;
+    height: 30px;
+  }
+
+  .navMenu .appstore img {
+    margin-left: -5px;
+    width: 90px;
+    height: 35px;
+    border-radius: 5px;
+    margin-right: 50px;
   }
 
   .Main-container,
@@ -1496,304 +1132,235 @@ h4.navbarItems:hover {
     grid-template-columns: 2fr 2fr;
   }
 
-  .Main-container {
-    margin: 5px 5px 5px 45px;
-    padding: 5px 5px 5px 5px;
-  }
-
   .Main-container .grid-1 {
-    margin: 5px 5px 5px;
-    height: 50%;
-    width: 120%;
-    font-size: 1.52em;
+    margin-bottom: 150px;
   }
 
-  .Main-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.75em;
-  }
-
-  .Main-container .grid-1 .landing-page-text {
-    margin: 5px 5px 5px 5px;
-    width: 90%;
-  }
-
-  .Main-container .grid-2 {
-    margin: 5px 5px 5px 60px;
-  }
-
-  .Main-container .grid-2 .landing-page-image .bankimage {
-    position: relative;
-    top: 50px;
-  }
-
-  .Main-container .grid-3 {
-    margin: 5px 5px 5px 5px;
-    position: relative;
-    left: 0px;
-    bottom: 270px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
+  .Main-container .grid-2 .landing-page-image {
+    margin-bottom: 0px;
   }
 
   .Main-container .grid-3 .bullet-text {
-    margin: 100px 5px 5px 5px;
-    width: 95%;
-
+    margin-top: -290px;
   }
 
-  .mid-container {
-    margin: 5px 5px 5px 35px;
-    padding: 5px 5px 5px 5px;
+  .Main-container .title {
+    margin-left: 0px;
   }
 
+  .Main-container .title .highlight {
+    font-size: smaller;
+  }
+
+  .Main-container .title .lowlight {
+    font-size: smaller;
+  }
+
+  .Main-container .landing-page-text {
+    font-size: smaller;
+  }
+
+  .Main-container .grid-3 .bullet-text h2 {
+    font-size: smaller;
+  }
+
+  .Main-container .grid-3 .bullet-text p {
+    font-size: smaller;
+  }
+
+  .mid-container .title {
+    margin-left: 0px;
+  }
+
+  .mid-container .grid-1 .title .highlight {
+    font-size: smaller;
+  }
 
   .mid-container .grid-1 {
-    margin: 1px 1px 1px 15px;
-    padding: 0px;
-    height: 50%;
-    font-size: 1.52em;
-    width: 120%;
-  }
-
-  .mid-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.75em;
-  }
-
-  .mid-container .grid-1 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    width: 90%;
-  }
-
-  .mid-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 80%;
-  }
-
-  .mid-container .grid-2 .landing-page-image .bankimage {
-    margin: 60px 1px 1px 85px;
-    padding: 0px;
+    margin-bottom: 120px;
   }
 
   .mid-container .grid-3 {
-    margin: 1px 1px 1px 7px;
-    position: relative;
-    bottom: 220px;
-    height: 100%;
-    width: 112%;
-    font-size: 1.52em;
+    margin-top: -210px;
+  }
+
+  .remittance .lesslight {
+    font-size: 28px;
+  }
+
+  .mid-container .grid-1 .bullet-text h2 {
+    font-size: smaller;
+  }
+
+  .mid-container .grid-1 .bullet-text p {
+    font-size: smaller;
   }
 
   .mid-container .grid-3 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 100%;
-    position: relative;
-    left: 18px;
+    font-size: smaller;
+    margin-top: -1px;
+    margin-top: 8px;
   }
 
-
-  .lower-container {
-    margin: 5px 5px 5px 35px;
-    padding: 5px 5px 5px 5px;
-    height: 30%;
-  }
-
-
-  .lower-container .grid-1 {
-    margin: 1px 1px 1px 15px;
-    padding: 0px;
-    height: 50%;
-    width: 120%;
-    font-size: 1.52em;
-  }
-
-  .lower-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.75em;
-  }
-
-  .lower-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    width: 100%;
-  }
-
-  .lower-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 70%;
-  }
-
-  .lower-container .grid-2 .landing-page-image .pay {
-    margin: 130px 1px 1px 120px;
-    width: 80%;
-    height: 60%;
-    padding: 0px;
-  }
-
-  .lower-container .grid-3 {
-    position: relative;
-    bottom: 380px;
-    left: 7px;
-    padding: 0px;
-    font-size: 1.52em;
-    width: 120%;
+  .lower-container .title {
+    margin-left: 0px;
   }
 
   .lower-container .grid-3 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 100%;
-    position: relative;
-    left: 10px;
+    margin-top: -210px;
   }
 
-  .fourth-container {
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
+  .lower-container .grid-1 .title .highlight {
+    font-size: smaller;
   }
 
-
-  .fourth-container .grid-1 {
-    margin: 105px 1px 1px 45px;
-    padding: 0px;
-    height: 50%;
-    width: 120%;
-    font-size: 1.52em;
+  .lower-container .grid-1 .landing-page-text {
+    font-size: smaller;
   }
 
-  .fourth-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.75em;
+  .lower-container .grid-3 .bullet-text h2 {
+    font-size: smaller;
+  }
+
+  .lower-container .grid-3 .bullet-text p {
+    font-size: smaller;
+  }
+
+  .fourth-container .title {
+    margin-left: 0px;
+  }
+
+  .fourth-container .grid-1 .title .highlight {
+    font-size: smaller;
+  }
+
+  .fourth-container .grid-1 .title .lowlight {
+    font-size: smaller;
   }
 
   .fourth-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    width: 90%;
-  }
-
-  .fourth-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 90%;
-    width: 85%;
+    font-size: smaller;
   }
 
   .fourth-container .grid-2 .landing-page-image .cell {
-    margin: 1px 1px 1px 80px;
-    padding: 5px 5px 5px 5px;
+    width: 250px;
+    height: 100%;
+  }
+
+  .fifth-container .title {
+    margin-left: 0px;
+  }
+
+  .fifth-container .grid-1 {
+    margin-bottom: 180px;
+  }
+
+  .fifth-container .grid-1 .title .business {
+    font-size: smaller;
+  }
+
+  .fifth-container .grid-1 .landing-page-text {
+    font-size: smaller;
+  }
+
+  .fifth-container .grid-3 {
+    margin-left: 100px;
+  }
+
+  .fifth-container .grid-3 .bullet-text h2 {
+    font-size: smaller;
+  }
+
+  .fifth-container .grid-3 .bullet-text p {
+    font-size: smaller;
+    margin-left: 0px;
+  }
+
+  .fifth-container .grid-3 .bullet-text {
+    margin-top: -340px;
+  }
+
+  .fifth-container .grid-2 .landing-page-image {
+    align-items: center;
+  }
+
+  .fifth-container .grid-2 .landing-page-image .bankimage {
     width: 100%;
     height: 100%;
   }
 
-  .fifth-container {
-    margin: 5px 5px 5px 35px;
-    padding: 4px 4px 4px 4px;
-  }
-
-  .fifth-container .grid-1 {
-    margin: 85px 1px 1px 1px;
-    height: 70%;
-    position: relative;
-    bottom: 130px;
-    width: 120%;
-    font-size: 1.52em;
-  }
-
-  .fifth-container .grid-1 .title {
-    font-size: 1.75em;
-  }
-
-  .fifth-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-    width: 90%;
-  }
-
-  .fifth-container .grid-2 {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-  }
-
-  .fifth-container .grid-2 .landing-page-image .bankimage {
-    width: 90%;
-    height: 90%;
-    margin: 30px 1px 1px 80px;
-  }
-
   .fifth-container .grid-3 {
-    margin: 1px 1px 1px 22px;
-    font-size: 1.52em;
-    width: 120%;
+    margin-right: 55px;
   }
 
-  .fifth-container .grid-3 .bullet-text {
-    position: relative;
-    bottom: 240px;
-    width: 90%;
-    margin: 1px 1px 1px 10px;
+  .perks h1 {
+    font-size: smaller;
   }
 
-  .perks {
-    margin: 1px 1px 1px 1px;
-    padding: 10px 50px 40px 50px;
+  .sub-heading {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    margin-left: 130px;
+    align-items: center;
   }
 
-  .perks .title h1 {
-    position: relative;
-    right: 0px;
-  }
-
-  .perks .sub-heading {
-    margin: 1px 1px 1px 1px;
-    padding: 2px 25px 2px 25px;
-    gap: 40px;
-  }
-
-  .perks .sub-heading .rewards {
-    width: 280px;
-    height: 375px;
+  .sub-heading .rewards {
+    width: 270px;
+    height: 245px;
   }
 
   .sub-heading .rewards h2 {
-    font-size: 1.45em;
+    font-size: smaller;
   }
 
   .sub-heading .rewards p {
-    font-size: 1.12em;
+    font-size: smaller;
   }
 
-  .perks .sub-heading .top-up {
-    width: 280px;
-    height: 375px;
+  .sub-heading .top-up {
+    width: 270px;
+    height: 245px;
   }
 
   .sub-heading .top-up h2 {
-    font-size: 1.45em;
+    font-size: smaller;
   }
 
   .sub-heading .top-up p {
-    font-size: 1.12em;
+    font-size: smaller;
   }
 
-  .perks .sub-heading .redefine {
-    width: 280px;
-    height: 375px;
+  .sub-heading .redefine {
+    width: 270px;
+    height: 245px;
   }
 
   .sub-heading .redefine h2 {
-    font-size: 1.45em;
+    font-size: smaller;
   }
 
   .sub-heading .redefine p {
-    font-size: 1.12em;
+    font-size: smaller;
+  }
+
+  .sub {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 75px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+  }
+
+  .sub .card {
+    width: 200px;
+  }
+
+  .sub .you {
+    width: 200px;
+  }
+
+  .sub .coin {
+    width: 200px;
   }
 
   .carousel-container {
@@ -1801,55 +1368,37 @@ h4.navbarItems:hover {
     width: 980px;
   }
 }
-
-
 
 @media (width<=992px) {
   .body-container {
-    width: 100%;
-    margin: 0;
+    width: 650px;
+    margin-left: 115px;
   }
 
   .navMenu .Logo-Image img {
-    margin: 1px 1px 1px 1px;
-    padding: 2px 2px 2px 2px;
-    width: 100px;
-    height: 100px;
-    position: relative;
-    right: 10px;
-    bottom: 10px;
-  }
-
-  .navMenu {
-    margin: 1px 100px 1px 1px;
-    gap: 10px;
-    width: 100%;
-    padding: 0px;
+    margin-left: 45px;
+    margin-top: 5px;
+    width: 65px;
+    height: 65px;
   }
 
   .navMenu a {
-    margin-left: auto;
-    margin-right: 0px;
-    font-size: 1.10em;
-  }
-
-  .downloadButtons {
-    margin: 1px 1px 1px 1px;
+    margin-left: -45px;
   }
 
   .navMenu .playstore img {
-    margin: 1px 1px 1px 1px;
+    margin-left: -55px;
     border-radius: 5px;
-    width: 12.8vh;
-    height: 4.19vh;
+    width: 90px;
+    height: 30px;
   }
 
   .navMenu .appstore img {
-    margin: 1px 1px 1px 1px;
-    width: 12.8vh;
-    height: 4.22vh;
+    margin-left: -5px;
+    width: 90px;
+    height: 35px;
     border-radius: 5px;
-    margin-right: 0px;
+    margin-right: 70px;
   }
 
   .Main-container,
@@ -1860,1966 +1409,701 @@ h4.navbarItems:hover {
     grid-template-columns: 2fr 2fr;
   }
 
-  .Main-container {
-    margin: 5px 5px 5px 45px;
-    padding: 5px 5px 5px 5px;
+  .sub-heading {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    margin-left: 160px;
+    align-items: center;
   }
 
-  .Main-container .grid-1 {
-    margin: 5px 5px 5px;
-    height: 50%;
-    width: 120%;
-    font-size: 1.52em;
+  .sub-heading .rewards {
+    width: 270px;
+    height: 245px;
   }
-
-  .Main-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.75em;
-  }
-
-  .Main-container .grid-1 .landing-page-text {
-    margin: 5px 5px 5px 5px;
-    width: 90%;
-  }
-
-  .Main-container .grid-2 {
-    margin: 5px 5px 5px 60px;
-  }
-
-  .Main-container .grid-2 .landing-page-image .bankimage {
-    position: relative;
-    top: 50px;
-  }
-
-  .Main-container .grid-3 {
-    margin: 5px 5px 5px 5px;
-    position: relative;
-    left: 0px;
-    bottom: 270px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .Main-container .grid-3 .bullet-text {
-    margin: 100px 5px 5px 5px;
-    width: 95%;
-
-  }
-
-  .mid-container {
-    margin: 5px 5px 5px 35px;
-    padding: 5px 5px 5px 5px;
-  }
-
-
-  .mid-container .grid-1 {
-    margin: 1px 1px 1px 15px;
-    padding: 0px;
-    height: 50%;
-    font-size: 1.52em;
-    width: 120%;
-  }
-
-  .mid-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.75em;
-  }
-
-  .mid-container .grid-1 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    width: 90%;
-  }
-
-  .mid-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 80%;
-  }
-
-  .mid-container .grid-2 .landing-page-image .bankimage {
-    margin: 60px 1px 1px 85px;
-    padding: 0px;
-  }
-
-  .mid-container .grid-3 {
-    margin: 1px 1px 1px 7px;
-    position: relative;
-    bottom: 220px;
-    height: 100%;
-    width: 112%;
-    font-size: 1.52em;
-  }
-
-  .mid-container .grid-3 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 100%;
-    position: relative;
-    left: 18px;
-  }
-
-
-  .lower-container {
-    margin: 5px 5px 5px 35px;
-    padding: 5px 5px 5px 5px;
-    height: 30%;
-  }
-
-
-  .lower-container .grid-1 {
-    margin: 1px 1px 1px 15px;
-    padding: 0px;
-    height: 50%;
-    width: 120%;
-    font-size: 1.52em;
-  }
-
-  .lower-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.75em;
-  }
-
-  .lower-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    width: 100%;
-  }
-
-  .lower-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 70%;
-  }
-
-  .lower-container .grid-2 .landing-page-image .pay {
-    margin: 130px 1px 1px 120px;
-    width: 80%;
-    height: 60%;
-    padding: 0px;
-  }
-
-  .lower-container .grid-3 {
-    position: relative;
-    bottom: 380px;
-    left: 7px;
-    padding: 0px;
-    font-size: 1.52em;
-    width: 120%;
-  }
-
-  .lower-container .grid-3 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 100%;
-    position: relative;
-    left: 10px;
-  }
-
-  .fourth-container {
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
-  }
-
-
-  .fourth-container .grid-1 {
-    margin: 105px 1px 1px 45px;
-    padding: 0px;
-    height: 50%;
-    width: 120%;
-    font-size: 1.52em;
-  }
-
-  .fourth-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.75em;
-  }
-
-  .fourth-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    width: 90%;
-  }
-
-  .fourth-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 90%;
-    width: 85%;
-  }
-
-  .fourth-container .grid-2 .landing-page-image .cell {
-    margin: 1px 1px 1px 80px;
-    padding: 5px 5px 5px 5px;
-    width: 100%;
-    height: 100%;
-  }
-
-  .fifth-container {
-    margin: 5px 5px 5px 35px;
-    padding: 4px 4px 4px 4px;
-  }
-
-  .fifth-container .grid-1 {
-    margin: 85px 1px 1px 1px;
-    height: 70%;
-    position: relative;
-    bottom: 130px;
-    width: 120%;
-    font-size: 1.52em;
-  }
-
-  .fifth-container .grid-1 .title {
-    font-size: 1.75em;
-  }
-
-  .fifth-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-    width: 90%;
-  }
-
-  .fifth-container .grid-2 {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-  }
-
-  .fifth-container .grid-2 .landing-page-image .bankimage {
-    width: 90%;
-    height: 90%;
-    margin: 30px 1px 1px 80px;
-  }
-
-  .fifth-container .grid-3 {
-    margin: 1px 1px 1px 22px;
-    font-size: 1.52em;
-    width: 120%;
-  }
-
-  .fifth-container .grid-3 .bullet-text {
-    position: relative;
-    bottom: 240px;
-    width: 90%;
-    margin: 1px 1px 1px 10px;
-  }
-
-  .perks {
-    margin: 1px 1px 1px 1px;
-    padding: 10px 50px 40px 50px;
-  }
-
-  .perks .title h1 {
-    position: relative;
-    right: 0px;
-  }
-
-  .perks .sub-heading {
-    margin: 1px 1px 1px 1px;
-    padding: 2px 25px 2px 25px;
-    gap: 25px;
-  }
-
-  .perks .sub-heading .rewards {
-    width: 260px;
-    height: 270px;
-    padding: 20px 10px;
-  }
-
 
   .sub-heading .rewards h2 {
-    font-size: 1.30em;
+    font-size: smaller;
   }
 
   .sub-heading .rewards p {
-    font-size: 0.91em;
+    font-size: smaller;
   }
 
-  .perks .sub-heading .top-up {
-    width: 260px;
-    height: 270px;
-    padding: 20px 10px;
+  .sub-heading .top-up {
+    width: 270px;
+    height: 245px;
   }
 
   .sub-heading .top-up h2 {
-    font-size: 1.30em;
+    font-size: smaller;
   }
 
   .sub-heading .top-up p {
-    font-size: 0.91em;
+    font-size: smaller;
   }
 
-  .perks .sub-heading .redefine {
+  .sub-heading .redefine {
+    width: 270px;
+    height: 245px;
+  }
+
+  .sub-heading .redefine h2 {
+    font-size: smaller;
+  }
+
+  .sub-heading .redefine p {
+    font-size: smaller;
+  }
+
+  .sub {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 75px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+  }
+
+  .sub .card {
+    width: 200px;
+  }
+
+  .sub .you {
+    width: 200px;
+  }
+
+  .sub .coin {
+    width: 200px;
+  }
+
+  .carousel-container {
+    height: auto;
+    width: 980px;
+  }
+}
+
+@media (width<=940px) {
+  .body-container {
+    width: 650px;
+    margin-left: 70px;
+  }
+
+  .navMenu .Logo-Image img {
+    margin-left: 22px;
+    margin-top: 5px;
+    width: 75px;
+    height: 75px;
+  }
+
+  .navMenu {
+    margin-left: 225px;
+    margin-right: 0px;
+  }
+
+  .navMenu a {
+    margin-left: auto;
+    margin-right: 0px;
+    font-size: 1.45vh;
+  }
+
+  .navMenu .playstore img {
+    margin-left: -5px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    width: 9.6vh;
+    height: 3.5vh;
+  }
+
+  .navMenu .appstore img {
+    margin-left: -98px;
+    margin-top: 45px;
+    width: 9.5vh;
+    height: 3.65vh;
+    border-radius: 5px;
+    margin-right: 270px;
+  }
+
+  .Main-container,
+  .mid-container,
+  .lower-container,
+  .fourth-container,
+  .fifth-container {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  .sub-heading {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    margin-left: 160px;
+    align-items: center;
+  }
+
+  .sub-heading .rewards {
+    width: 270px;
+    height: 245px;
+  }
+
+  .sub-heading .rewards h2 {
+    font-size: smaller;
+  }
+
+  .sub-heading .rewards p {
+    font-size: smaller;
+  }
+
+  .sub-heading .top-up {
+    width: 270px;
+    height: 245px;
+  }
+
+  .sub-heading .top-up h2 {
+    font-size: smaller;
+  }
+
+  .sub-heading .top-up p {
+    font-size: smaller;
+  }
+
+  .sub-heading .redefine {
+    width: 270px;
+    height: 245px;
+  }
+
+  .sub-heading .redefine h2 {
+    font-size: smaller;
+  }
+
+  .sub-heading .redefine p {
+    font-size: smaller;
+  }
+
+  .sub {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 75px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 220px;
+  }
+
+  .sub .card {
+    width: 200px;
+  }
+
+  .sub .you {
+    width: 200px;
+  }
+
+  .sub .coin {
+    width: 200px;
+  }
+
+  .carousel-container {
+    height: auto;
+    width: 980px;
+  }
+}
+
+@media (width<=840px) {
+  .body-container {
+    width: 650px;
+    margin-left: 20px;
+  }
+
+  .navMenu .Logo-Image img {
+    margin-left: 50px;
+    margin-top: 5px;
+    width: 68px;
+    height: 68px;
+  }
+
+  .navMenu {
+    margin-left: 255px;
+    margin-right: 25px;
+  }
+
+  .navMenu a {
+    margin-left: auto;
+    margin-right: 0px;
+    font-size: 1.4vh;
+  }
+
+  .navMenu .playstore img {
+    margin-left: -35px;
+    margin-bottom: 45px;
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 9.6vh;
+    height: 3.5vh;
+  }
+
+  .navMenu .appstore img {
+    margin-left: -98px;
+    margin-top: 40px;
+    width: 9.5vh;
+    height: 3.65vh;
+    border-radius: 5px;
+    margin-right: 300px;
+  }
+
+  .Main-container,
+  .mid-container,
+  .lower-container,
+  .fourth-container,
+  .fifth-container {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  .sub-heading {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    margin-left: 0px;
+    align-items: center;
+    margin-right: -230px;
+  }
+
+  .sub-heading .rewards {
     width: 240px;
-    height: 270px;
-    padding: 20px 10px;
+    height: 200px;
   }
-
-  .sub-heading .redefine h2 {
-    font-size: 1.30em;
-  }
-
-  .sub-heading .redefine p {
-    font-size: 0.91em;
-  }
-
-  .carousel-container {
-    height: auto;
-    width: 980px;
-    position: relative;
-    right: 30px;
-  }
-}
-
-
-@media (width<=880px) {
-  .body-container {
-    width: 100%;
-    margin: 0;
-  }
-
-  .navMenu .Logo-Image img {
-    margin: 1px 1px 1px 1px;
-    padding: 2px 2px 2px 2px;
-    width: 100px;
-    height: 100px;
-    position: relative;
-    right: 10px;
-    bottom: 10px;
-  }
-
-  .navMenu {
-    margin: 1px 5px 1px 1px;
-    gap: 10px;
-    width: 100%;
-    padding: 0px;
-  }
-
-  .navMenu a {
-    margin-left: auto;
-    margin-right: 0px;
-    font-size: 1.0em;
-  }
-
-  .downloadButtons {
-    margin: 1px 12px 1px 1px;
-  }
-
-  .navMenu .playstore img {
-    margin: 1px 1px 1px 1px;
-    border-radius: 5px;
-    width: 12.8vh;
-    height: 4.19vh;
-  }
-
-  .navMenu .appstore img {
-    margin: 1px 1px 1px 1px;
-    width: 12.8vh;
-    height: 4.22vh;
-    border-radius: 5px;
-    margin-right: 0px;
-  }
-
-  .Main-container,
-  .mid-container,
-  .lower-container,
-  .fourth-container,
-  .fifth-container {
-    grid-template-columns: 2fr 2fr;
-  }
-
-  .Main-container {
-    margin: 5px 5px 5px 10px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .Main-container .grid-1 {
-    margin: 5px 5px 5px;
-    height: 50%;
-    width: 120%;
-    font-size: 1.52em;
-  }
-
-  .Main-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.75em;
-  }
-
-  .Main-container .grid-1 .landing-page-text {
-    margin: 5px 5px 5px 5px;
-    width: 90%;
-  }
-
-  .Main-container .grid-2 {
-    margin: 5px 5px 5px 60px;
-  }
-
-  .Main-container .grid-2 .landing-page-image .bankimage {
-    position: relative;
-    top: 50px;
-  }
-
-  .Main-container .grid-3 {
-    margin: 5px 5px 5px 5px;
-    position: relative;
-    left: 0px;
-    bottom: 220px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .Main-container .grid-3 .bullet-text {
-    margin: 100px 5px 5px 5px;
-    width: 95%;
-
-  }
-
-  .mid-container {
-    margin: 5px 5px 5px 10px;
-    padding: 5px 5px 5px 5px;
-  }
-
-
-  .mid-container .grid-1 {
-    margin: 1px 1px 1px 15px;
-    padding: 0px;
-    height: 50%;
-    font-size: 1.52em;
-    width: 120%;
-  }
-
-  .mid-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.75em;
-  }
-
-  .mid-container .grid-1 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    width: 90%;
-  }
-
-  .mid-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 80%;
-  }
-
-  .mid-container .grid-2 .landing-page-image .bankimage {
-    margin: 60px 1px 1px 85px;
-    padding: 0px;
-  }
-
-  .mid-container .grid-3 {
-    margin: 1px 1px 1px 7px;
-    position: relative;
-    bottom: 200px;
-    height: 100%;
-    width: 112%;
-    font-size: 1.52em;
-  }
-
-  .mid-container .grid-3 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 100%;
-    position: relative;
-    left: 18px;
-  }
-
-
-  .lower-container {
-    margin: 5px 5px 5px 10px;
-    padding: 5px 5px 5px 5px;
-    height: 30%;
-  }
-
-
-  .lower-container .grid-1 {
-    margin: 1px 1px 1px 15px;
-    padding: 0px;
-    height: 50%;
-    width: 120%;
-    font-size: 1.52em;
-  }
-
-  .lower-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.75em;
-  }
-
-  .lower-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    width: 100%;
-  }
-
-  .lower-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 70%;
-  }
-
-  .lower-container .grid-2 .landing-page-image .pay {
-    margin: 130px 1px 1px 120px;
-    width: 80%;
-    height: 60%;
-    padding: 0px;
-  }
-
-  .lower-container .grid-3 {
-    position: relative;
-    bottom: 380px;
-    left: 7px;
-    padding: 0px;
-    font-size: 1.52em;
-    width: 120%;
-  }
-
-  .lower-container .grid-3 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 100%;
-    position: relative;
-    left: 10px;
-  }
-
-  .fourth-container {
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
-    position: relative;
-    right: 20px;
-  }
-
-
-  .fourth-container .grid-1 {
-    margin: 105px 1px 1px 45px;
-    padding: 0px;
-    height: 50%;
-    width: 120%;
-    font-size: 1.52em;
-  }
-
-  .fourth-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.75em;
-  }
-
-  .fourth-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    width: 90%;
-  }
-
-  .fourth-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 90%;
-    width: 85%;
-  }
-
-  .fourth-container .grid-2 .landing-page-image .cell {
-    margin: 1px 1px 1px 80px;
-    padding: 5px 5px 5px 5px;
-    width: 100%;
-    height: 100%;
-  }
-
-  .fifth-container {
-    margin: 5px 5px 5px 15px;
-    padding: 4px 4px 4px 4px;
-  }
-
-  .fifth-container .grid-1 {
-    margin: 85px 1px 1px 1px;
-    height: 70%;
-    position: relative;
-    bottom: 130px;
-    width: 120%;
-    font-size: 1.52em;
-  }
-
-  .fifth-container .grid-1 .title {
-    font-size: 1.75em;
-  }
-
-  .fifth-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-    width: 90%;
-  }
-
-  .fifth-container .grid-2 {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-  }
-
-  .fifth-container .grid-2 .landing-page-image .bankimage {
-    width: 90%;
-    height: 90%;
-    margin: 30px 1px 1px 80px;
-  }
-
-  .fifth-container .grid-3 {
-    margin: 1px 1px 1px 22px;
-    font-size: 1.52em;
-    width: 120%;
-  }
-
-  .fifth-container .grid-3 .bullet-text {
-    position: relative;
-    bottom: 210px;
-    width: 90%;
-    margin: 1px 1px 1px 10px;
-  }
-
-  .perks {
-    margin: 1px 1px 1px 1px;
-    padding: 10px 50px 40px 50px;
-  }
-
-  .perks .title h1 {
-    position: relative;
-    right: 0px;
-  }
-
-  .perks .sub-heading {
-    margin: 1px 1px 1px 1px;
-    padding: 2px 25px 2px 25px;
-    gap: 45px;
-    grid-template-columns: 2fr 2fr;
-  }
-
-  .perks .sub-heading .rewards {
-    width: 260px;
-    height: 270px;
-    padding: 20px 10px;
-  }
-
 
   .sub-heading .rewards h2 {
-    font-size: 1.30em;
+    font-size: smaller;
   }
 
   .sub-heading .rewards p {
-    font-size: 0.91em;
+    font-size: x-small;
   }
 
-  .perks .sub-heading .top-up {
-    width: 260px;
-    height: 270px;
-    padding: 20px 10px;
+  .sub-heading .top-up {
+    width: 240px;
+    height: 200px;
   }
 
   .sub-heading .top-up h2 {
-    font-size: 1.30em;
+    font-size: smaller;
   }
 
   .sub-heading .top-up p {
-    font-size: 0.91em;
+    font-size: x-small;
   }
 
-  .perks .sub-heading .redefine {
-    width: 260px;
-    height: 270px;
-    padding: 20px 10px;
+  .sub-heading .redefine {
+    width: 240px;
+    height: 200px;
   }
 
   .sub-heading .redefine h2 {
-    font-size: 1.30em;
+    font-size: smaller;
   }
 
   .sub-heading .redefine p {
-    font-size: 0.91em;
+    font-size: x-small;
+  }
+
+  .sub {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 75px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 180px;
+  }
+
+  .sub .card {
+    width: 170px;
+  }
+
+  .sub .you {
+    width: 170px;
+  }
+
+  .sub .coin {
+    width: 170px;
   }
 
   .carousel-container {
     height: auto;
     width: 980px;
-    position: relative;
-    right: 30px;
-  }
-}
-
-
-@media (width<=768px) {
-  .body-container {
-    width: 100%;
-    margin: 0;
-  }
-
-  .navMenu .Logo-Image img {
-    margin: 1px 1px 1px 1px;
-    padding: 2px 2px 2px 2px;
-    width: 100px;
-    height: 100px;
-    position: relative;
-    right: 10px;
-    bottom: 10px;
-  }
-
-  .navMenu {
-    margin: 1px 1px 1px 1px;
-    gap: 10px;
-    width: 100%;
-    padding: 0px;
-  }
-
-  .navMenu a {
-    margin-left: auto;
-    margin-right: 0px;
-    font-size: 0.86em;
-  }
-
-  .downloadButtons {
-    margin: 1px 1px 1px 1px;
-  }
-
-  .navMenu .playstore img {
-    margin: 1px 1px 1px 1px;
-    border-radius: 5px;
-    width: 12.8vh;
-    height: 4.19vh;
-  }
-
-  .navMenu .appstore img {
-    margin: 1px 1px 1px 1px;
-    width: 12.8vh;
-    height: 4.22vh;
-    border-radius: 5px;
-  }
-
-  .Main-container,
-  .mid-container,
-  .lower-container,
-  .fourth-container,
-  .fifth-container {
-    grid-template-columns: 2fr 2fr;
-  }
-
-  .Main-container {
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .Main-container .grid-1 {
-    margin: 5px 5px 5px;
-    height: 50%;
-    width: 120%;
-    font-size: 1.52em;
-  }
-
-  .Main-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.75em;
-    width: 100%;
-  }
-
-  .Main-container .grid-1 .landing-page-text {
-    margin: 5px 5px 5px 5px;
-    width: 100%;
-  }
-
-  .Main-container .grid-2 {
-    margin: 5px 5px 5px 5px;
-  }
-
-  .Main-container .grid-2 .landing-page-image .bankimage {
-    position: relative;
-    top: 50px;
-    left: 20px;
-  }
-
-  .Main-container .grid-3 {
-    margin: 5px 5px 5px 5px;
-    position: relative;
-    left: 0px;
-    bottom: 220px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .Main-container .grid-3 .bullet-text {
-    margin: 100px 5px 5px 5px;
-    width: 100%;
-
-  }
-
-  .mid-container {
-    margin: 5px 5px 5px 15px;
-    padding: 5px 5px 5px 5px;
-  }
-
-
-  .mid-container .grid-1 {
-    margin: 1px 1px 1px 15px;
-    padding: 0px;
-    height: 50%;
-    font-size: 1.52em;
-    width: 120%;
-  }
-
-  .mid-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.75em;
-  }
-
-  .mid-container .grid-1 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    width: 100%;
-  }
-
-  .mid-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 80%;
-  }
-
-  .mid-container .grid-2 .landing-page-image .bankimage {
-    margin: 60px 1px 1px 85px;
-    padding: 0px;
-  }
-
-  .mid-container .grid-3 {
-    margin: 1px 1px 1px 7px;
-    position: relative;
-    bottom: 200px;
-    height: 100%;
-    width: 120%;
-    font-size: 1.52em;
-  }
-
-  .mid-container .grid-3 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 100%;
-    position: relative;
-    left: 18px;
-  }
-
-
-  .lower-container {
-    margin: 5px 5px 5px 10px;
-    padding: 5px 5px 5px 5px;
-    height: 30%;
-  }
-
-
-  .lower-container .grid-1 {
-    margin: 1px 1px 1px 15px;
-    padding: 0px;
-    height: 50%;
-    width: 120%;
-    font-size: 1.52em;
-  }
-
-  .lower-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.75em;
-  }
-
-  .lower-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    width: 100%;
-  }
-
-  .lower-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 70%;
-  }
-
-  .lower-container .grid-2 .landing-page-image .pay {
-    margin: 130px 1px 1px 100px;
-    width: 80%;
-    height: 60%;
-    padding: 0px;
-  }
-
-  .lower-container .grid-3 {
-    position: relative;
-    bottom: 350px;
-    left: 7px;
-    padding: 0px;
-    font-size: 1.52em;
-    width: 120%;
-  }
-
-  .lower-container .grid-3 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 100%;
-    position: relative;
-    left: 10px;
-  }
-
-  .fourth-container {
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
-    position: relative;
-    right: 20px;
-  }
-
-
-  .fourth-container .grid-1 {
-    margin: 105px 1px 1px 45px;
-    padding: 0px;
-    height: 50%;
-    width: 120%;
-    font-size: 1.52em;
-  }
-
-  .fourth-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.75em;
-  }
-
-  .fourth-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    width: 90%;
-  }
-
-  .fourth-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 90%;
-    width: 85%;
-  }
-
-  .fourth-container .grid-2 .landing-page-image .cell {
-    margin: 1px 1px 1px 80px;
-    padding: 5px 5px 5px 5px;
-    width: 100%;
-    height: 100%;
-  }
-
-  .fifth-container {
-    margin: 5px 5px 5px 15px;
-    padding: 4px 4px 4px 4px;
-  }
-
-  .fifth-container .grid-1 {
-    margin: 85px 1px 1px 1px;
-    height: 70%;
-    position: relative;
-    bottom: 130px;
-    width: 120%;
-    font-size: 1.52em;
-  }
-
-  .fifth-container .grid-1 .title {
-    font-size: 1.75em;
-  }
-
-  .fifth-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-    width: 90%;
-  }
-
-  .fifth-container .grid-2 {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-  }
-
-  .fifth-container .grid-2 .landing-page-image .bankimage {
-    width: 90%;
-    height: 90%;
-    margin: 30px 1px 1px 80px;
-  }
-
-  .fifth-container .grid-3 {
-    margin: 1px 1px 1px 22px;
-    font-size: 1.52em;
-    width: 120%;
-  }
-
-  .fifth-container .grid-3 .bullet-text {
-    position: relative;
-    bottom: 210px;
-    width: 90%;
-    margin: 1px 1px 1px 10px;
-  }
-
-  .perks {
-    margin: 1px 1px 1px 1px;
-    padding: 10px 50px 40px 50px;
-  }
-
-  .perks .title h1 {
-    position: relative;
-    right: 0px;
-  }
-
-  .perks .sub-heading {
-    margin: 1px 1px 1px 1px;
-    padding: 2px 25px 2px 25px;
-    gap: 45px;
-    grid-template-columns: 2fr 2fr;
-  }
-
-  .perks .sub-heading .rewards {
-    width: 260px;
-    height: 270px;
-    padding: 20px 10px;
-  }
-
-
-  .sub-heading .rewards h2 {
-    font-size: 1.30em;
-  }
-
-  .sub-heading .rewards p {
-    font-size: 0.91em;
-  }
-
-  .perks .sub-heading .top-up {
-    width: 260px;
-    height: 270px;
-    padding: 20px 10px;
-  }
-
-  .sub-heading .top-up h2 {
-    font-size: 1.30em;
-  }
-
-  .sub-heading .top-up p {
-    font-size: 0.91em;
-  }
-
-  .perks .sub-heading .redefine {
-    width: 260px;
-    height: 270px;
-    padding: 20px 10px;
-  }
-
-  .sub-heading .redefine h2 {
-    font-size: 1.30em;
-  }
-
-  .sub-heading .redefine p {
-    font-size: 0.91em;
-  }
-
-  .carousel-container {
-    height: auto;
-    width: 980px;
-    position: relative;
-    right: 30px;
-  }
-
-  .ant-layout-footer {
-    margin: 1px 1px 1px 1px;
   }
 
   .Footer {
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    left: 40px;
+    font-size: smaller;
+    margin-left: 10px;
   }
 
   .NavBar.Content {
-    position: relative;
-    left: 20px;
+    font-size: smaller;
   }
 
   .Logo-Image .footer-img {
-    height: 65px;
-    width: 65px;
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    right: 40px;
+    height: 70px;
+    width: 70px;
+    margin-right: 60px;
+    margin-top: -2px;
   }
 
   .social .social-logo {
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
   }
 
   .infos {
-    font-size: medium;
-  }
-
-  .Connect {
-    position: relative;
-    right: 10px;
+    font-size: smaller;
   }
 
   .Connect .con {
-    font-size: medium;
+    font-size: smaller;
   }
 
   .ContactUs {
-    font-size: medium;
-    position: relative;
-    right: 20px;
+    font-size: smaller;
+  }
+}
+
+@media (width<=768px) {
+  .body-container {
+    width: 650px;
+    margin-left: 20px;
+  }
+
+  .navMenu .Logo-Image img {
+    margin-left: 55px;
+    margin-top: 6px;
+    width: 65px;
+    height: 65px;
+  }
+
+  .navMenu {
+    margin-left: 318px;
+    margin-right: 55px;
+    height: 95px;
+  }
+
+  .navMenu a {
+    margin-left: auto;
+    margin-right: 0px;
+    font-size: 1.3vh;
+  }
+
+  .navMenu .playstore img {
+    margin-left: -22px;
+    margin-bottom: 45px;
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 8.9vh;
+    height: 3.6vh;
+  }
+
+  .navMenu .appstore img {
+    margin-left: -94px;
+    margin-top: 40px;
+    width: 8.9vh;
+    height: 3.7vh;
+    border-radius: 5px;
+    margin-right: 350px;
+  }
+
+  .Main-container,
+  .mid-container,
+  .lower-container,
+  .fourth-container {
+    grid-template-columns: 1fr;
+  }
+
+  .Main-container .grid-1 {
+    margin-left: 50px;
+  }
+
+  .Main-container .grid-2 {
+    margin-left: 50px;
+    margin-top: -150px;
+  }
+
+  .Main-container .grid-3 .bullet-text {
+    margin-left: 50px;
+    margin-top: 1px;
+  }
+
+  .mid-container .grid-1 {
+    margin-left: 50px;
+  }
+
+  .mid-container .grid-2 {
+    margin-left: 140px;
+    margin-top: -140px;
+  }
+
+  .mid-container .grid-3 .landing-page-text {
+    margin-left: 120px;
+    margin-top: 90px;
+  }
+
+  .lower-container .grid-1 {
+    margin-left: 90px;
+    margin-top: 90px;
+  }
+
+  .lower-container .grid-2 {
+    margin-left: 140px;
+    margin-top: -130px;
+  }
+
+  .lower-container .grid-3 .bullet-text {
+    margin-left: 90px;
+    margin-top: -140px;
+  }
+
+  .fourth-container .grid-1 {
+    margin-left: 90px;
+    margin-top: 90px;
+  }
+
+  .fourth-container .grid-2 {
+    margin-left: 120px;
+    margin-top: -20px;
+  }
+
+  .fourth-container .grid-3 .bullet-text {
+    margin-left: 90px;
+    margin-top: -140px;
+  }
+
+  .fifth-container {
+    margin-left: -110px;
+  }
+
+  .image-container {
+    width: 100%;
+  }
+
+  .grid-1,
+  .grid-2,
+  .grid-3 {
+    width: 100%;
+  }
+
+  .grid-2 img {
+    margin-left: 0;
+  }
+
+  .sub-heading {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    margin-right: -120px;
+  }
+
+  .sub {
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+    align-items: center;
+    margin-right: -20px;
+  }
+
+  .carousel-container {
+    height: auto;
+    width: 600px;
   }
 }
 
 @media (width<=720px) {
   .body-container {
-    width: 100%;
-    margin: 0;
-  }
-
-  .navbar_bot {
-    width: 100%;
+    width: 650px;
+    margin-left: 10px;
   }
 
   .navMenu {
     height: 98px;
-    margin-left: 0px;
   }
 
   .navMenu .Logo-Image img {
     width: 90px;
     height: 90px;
-    margin: 6px 1px 1px 1px;
-    position: relative;
-    left: 70px;
-  }
-
-  .hamburgerIconContainer {
-    width: 100%;
+    margin-top: -8px;
+    margin-left: 155px;
   }
 
   .hamburgerIconContainer .Logo-Image img {
     display: none;
   }
 
+  .hamburgerIconContainer {
+    margin-right: 275px;
+  }
+
   .hamburgerIconContainer svg {
     height: 1.7em;
     width: 3.3em;
+  }
+
+  .download .playstore img {
+    margin-left: 320px;
+    margin-right: -1px;
+    border-radius: 5px;
+    width: 125px;
+    height: 45px;
+    margin-bottom: -33px;
+  }
+
+  .download .appstore img {
+    margin-left: 175px;
+    width: 120px;
+    height: 45px;
+    border-radius: 5px;
+    margin-right: 95px;
+    margin-top: -16px;
+    margin-bottom: -8px;
+  }
+
+  .Footer {
+    font-size: x-small;
+    margin-left: 20px;
+  }
+
+  .NavBar.Content {
+    font-size: x-small;
+  }
+
+  .Logo-Image .footer-img {
+    height: 65px;
+    width: 65px;
+    margin-left: -45px;
+    margin-top: -2px;
+  }
+
+  .social .social-logo {
+    height: 30px;
+    width: 30px;
+  }
+
+  .infos {
+    font-size: x-small;
+  }
+
+  .Connect .con {
+    font-size: x-small;
+  }
+
+  .ContactUs {
+    font-size: smaller;
+  }
+
+  .Main-container,
+  .mid-container,
+  .lower-container,
+  .fourth-container {
+    grid-template-columns: 1fr;
+  }
+
+  .Main-container .grid-1 {
+    margin-left: 10px;
+  }
+
+  .Main-container .grid-2 {
+    margin-left: 10px;
+    margin-top: -150px;
+  }
+
+  .Main-container .grid-3 .bullet-text {
+    margin-left: 10px;
+    margin-top: 1px;
+  }
+
+  .mid-container .grid-1 {
+    margin-left: 10px;
+    padding-right: 120px;
+  }
+
+  .mid-container .grid-2 {
     margin-left: 100px;
-  }
-
-  .download .playstore img {
-    margin-left: 200px;
-    margin-right: -1px;
-    border-radius: 5px;
-    width: 125px;
-    height: 45px;
-    margin-bottom: -33px;
-  }
-
-  .download .appstore img {
-    margin-left: 60px;
-    width: 120px;
-    height: 45px;
-    border-radius: 5px;
-    margin-top: -16px;
-    margin-bottom: -8px;
-  }
-
-  .Main-container,
-  .mid-container,
-  .lower-container,
-  .fourth-container {
-    grid-template-columns: 1fr;
-  }
-
-  .Main-container {
-    margin: 125px 5px 5px 85px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .Main-container .grid-1 {
-    margin: 5px 5px 15px 5px;
-    height: 50%;
-    width: 80%;
-    font-size: 1.52em;
-  }
-
-  .Main-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.25em;
-    width: 100%;
-  }
-
-  .Main-container .grid-1 .landing-page-text {
-    margin: 5px 5px 5px 5px;
-    width: 100%;
-  }
-
-  .Main-container .grid-2 {
-    margin: 5px 5px 5px 5px;
-    position: relative;
-    bottom: 160px;
-  }
-
-  .Main-container .grid-2 .landing-page-image .bankimage {
-    position: relative;
-    bottom: 0px;
-    left: 40px;
-  }
-
-  .Main-container .grid-3 {
-    margin: 5px 5px 5px 5px;
-    position: relative;
-    left: 0px;
-    bottom: 180px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .Main-container .grid-3 .bullet-text {
-    margin: 100px 5px 5px 5px;
-    width: 90%;
-  }
-
-  .mid-container {
-    margin: 5px 5px 5px 65px;
-    padding: 5px 5px 5px 5px;
-  }
-
-
-  .mid-container .grid-1 {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.52em;
-    width: 100%;
-  }
-
-  .mid-container .grid-1 .title .remittance .highlight {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.25em;
-    position: relative;
-    right: 5px;
-  }
-
-  .mid-container .grid-1 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    width: 80%;
-    position: relative;
-    left: 20px;
-  }
-
-  .mid-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 80%;
-  }
-
-  .mid-container .grid-2 .landing-page-image .bankimage {
-    margin: 10px 1px 1px 85px;
-    padding: 0px;
-    position: relative;
-    bottom: 100px;
-  }
-
-  .mid-container .grid-3 {
-    margin: 1px 1px 1px 7px;
-    position: relative;
-    bottom: 200px;
-    height: 100%;
-    width: 100%;
-    font-size: 1.52em;
+    margin-top: -140px;
   }
 
   .mid-container .grid-3 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 90%;
-    position: relative;
-    left: 18px;
-    bottom: 80px;
+    margin-left: 70px;
+    margin-top: 90px;
   }
-
-
-  .lower-container {
-    margin: 5px 5px 5px 75px;
-    padding: 5px 5px 5px 5px;
-  }
-
 
   .lower-container .grid-1 {
-    margin: 1px 1px 1px 15px;
-    padding: 0px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .lower-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.25em;
-    position: relative;
-    left: 45px;
-  }
-
-  .lower-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    width: 90%;
+    margin-left: 10px;
+    margin-top: 90px;
   }
 
   .lower-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 70%;
-  }
-
-  .lower-container .grid-2 .landing-page-image .pay {
-    margin: 130px 1px 1px 100px;
-    width: 80%;
-    height: 60%;
-    padding: 0px;
-    position: relative;
-    left: 35px;
-    bottom: 180px;
-  }
-
-  .lower-container .grid-3 {
-    position: relative;
-    bottom: 350px;
-    left: 7px;
-    padding: 0px;
-    font-size: 1.52em;
-    width: 100%;
+    margin-left: 70px;
+    margin-top: -130px;
   }
 
   .lower-container .grid-3 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 90%;
-    position: relative;
-    left: 10px;
-    bottom: 100px;
+    margin-left: 10px;
+    padding-right: 80px;
+    margin-top: -140px;
   }
-
-  .fourth-container {
-    margin: 5px 5px 5px 60px;
-    padding: 5px 5px 5px 5px;
-    position: relative;
-    right: 20px;
-  }
-
 
   .fourth-container .grid-1 {
-    margin: 105px 1px 1px 45px;
-    padding: 0px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .fourth-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.75em;
-  }
-
-  .fourth-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    width: 90%;
+    margin-right: 200px;
+    margin-top: 90px;
   }
 
   .fourth-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 90%;
-    width: 85%;
+    margin-left: 120px;
+    margin-top: -20px;
   }
 
-  .fourth-container .grid-2 .landing-page-image .cell {
-    margin: 1px 1px 1px 80px;
-    padding: 5px 5px 5px 5px;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    left: 70px;
-    bottom: 80px;
+  .fourth-container .grid-3 .bullet-text {
+    margin-left: 90px;
+    margin-top: -140px;
   }
 
   .fifth-container {
-    margin: 5px 5px 5px 75px;
-    padding: 4px 4px 4px 4px;
-    grid-template-columns: 1fr;
-  }
-
-  .fifth-container .grid-1 {
-    margin: 85px 1px 1px 1px;
-    height: 70%;
-    position: relative;
-    bottom: 130px;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .fifth-container .grid-1 .title .business {
-    font-size: 1.25em;
-    width: 100%;
-    position: relative;
-    right: 0px;
-  }
-
-  .fifth-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-    width: 90%;
-  }
-
-  .fifth-container .grid-2 {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
+    margin-left: -190px;
   }
 
   .fifth-container .grid-2 .landing-page-image .bankimage {
-    width: 90%;
-    height: 90%;
-    margin: 30px 1px 1px 80px;
-    position: relative;
-    left: 50px;
-    bottom: 180px;
+    width: 80%;
+    height: 80%;
+    margin-top: 70px;
   }
 
-  .fifth-container .grid-3 {
-    margin: 1px 1px 1px 22px;
-    font-size: 1.52em;
+  .image-container {
     width: 100%;
   }
 
-  .fifth-container .grid-3 .bullet-text {
-    position: relative;
-    bottom: 210px;
-    width: 90%;
-    margin: 1px 1px 1px 10px;
+  .grid-1,
+  .grid-2,
+  .grid-3 {
+    width: 100%;
   }
 
-  .perks {
-    margin: 20px 20px 20px 50px;
+  .grid-2 img {
+    margin-left: 0;
   }
 
-  .perks .title {
-    padding: 0px 0px 0px 0px;
-    margin: 1px 1px 1px 1px;
+  .sub-heading {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    margin-right: -20px;
   }
 
   .perks .title h1 {
-    margin: 0px 0px 0px 0px;
-    position: relative;
-    right: 10px;
+    margin-right: 100px;
   }
 
-  .perks .sub-heading {
-    gap: 35px;
-    margin: 20px 20px 20px 20px;
-    width: 95%;
-    grid-template-columns: 1fr;
+  .vid-container {
+    margin-left: -110px;
   }
 
-  .ant-layout-footer {
-    margin: 1px 1px 1px 1px;
-  }
-
-  .Footer {
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    left: 40px;
-    font-size: smaller;
-  }
-
-  .Logo-Image .footer-img {
-    height: 65px;
-    width: 65px;
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    right: 60px;
-  }
-
-  .NavBar.Content {
-    position: relative;
-    left: 20px;
-    font-size: smaller;
-  }
-
-  .Logo-Image .footer-img {
-    height: 65px;
-    width: 65px;
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    right: 40px;
-  }
-
-  .social .social-logo {
-    height: 30px;
-    width: 30px;
-  }
-
-  .infos {
-    font-size: smaller;
-  }
-
-  .Connect {
-    position: relative;
-    right: 10px;
-  }
-
-  .Connect .con {
-    font-size: smaller;
-
-  }
-
-  .ContactUs {
-    font-size: smaller;
-    position: relative;
-    right: 20px;
-  }
-
-  .carousel-container {
-    height: 5px;
-    width: 10px;
-  }
-
-  .carousel-container img.carouselimage {
-    display: none;
-  }
-
-}
-
-@media (width<=625px) {
-
-  .body-container {
-    width: 100%;
-    margin: 0;
-  }
-
-  .navbar_bot {
-    width: 100%;
-  }
-
-  .navMenu {
-    height: 98px;
+  .vid-container .title .basics {
     margin-left: 0px;
   }
 
-  .navMenu .Logo-Image img {
-    width: 90px;
-    height: 90px;
-    margin: 6px 1px 1px 1px;
-    position: relative;
-    left: 30px;
-  }
-
-  .hamburgerIconContainer {
-    width: 100%;
-  }
-
-  .hamburgerIconContainer .Logo-Image img {
-    display: none;
-  }
-
-  .hamburgerIconContainer svg {
-    height: 1.7em;
-    width: 3.3em;
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    left: 20px;
-  }
-
-  .download {
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    right: 45px;
-  }
-
-  .download .playstore img {
-    margin-left: 200px;
-    margin-right: -1px;
-    border-radius: 5px;
-    width: 125px;
-    height: 45px;
-    margin-bottom: -33px;
-  }
-
-  .download .appstore img {
-    margin-left: 60px;
-    width: 120px;
-    height: 45px;
-    border-radius: 5px;
-    margin-top: -16px;
-    margin-bottom: -8px;
-  }
-
-  .Main-container,
-  .mid-container,
-  .lower-container,
-  .fourth-container {
+  .sub {
     grid-template-columns: 1fr;
-  }
-
-  .Main-container {
-    margin: 125px 5px 5px 85px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .Main-container .grid-1 {
-    margin: 5px 5px 15px 5px;
-    height: 50%;
-    width: 80%;
-    font-size: 1.52em;
-  }
-
-  .Main-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 100%;
-  }
-
-  .highlight {
-    font-size: 1.36em;
-  }
-
-  .lowlight {
-    font-size: 1.30em;
-  }
-
-  .Main-container .grid-1 .landing-page-text {
-    margin: 5px 5px 5px 5px;
-    width: 100%;
-  }
-
-  .Main-container .grid-2 {
-    margin: 5px 5px 5px 5px;
-    position: relative;
-    bottom: 190px;
-  }
-
-  .Main-container .grid-2 .landing-page-image .bankimage {
-    position: relative;
-    top: 70px;
-    left: 20px;
-  }
-
-  .Main-container .grid-3 {
-    margin: 5px 5px 5px 5px;
-    position: relative;
-    left: 0px;
-    bottom: 180px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .Main-container .grid-3 .bullet-text {
-    margin: 100px 5px 5px 5px;
-    width: 90%;
-  }
-
-  .mid-container {
-    margin: 5px 5px 5px 65px;
-    padding: 5px 5px 5px 5px;
-  }
-
-
-  .mid-container .grid-1 {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.52em;
-    width: 100%;
-  }
-
-  .mid-container .grid-1 .title .remittance .highlight {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.15em;
-    position: relative;
-    right: 20px;
-  }
-
-  .mid-container .grid-1 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    width: 80%;
-    position: relative;
-    left: 20px;
-  }
-
-  .mid-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 80%;
-  }
-
-  .mid-container .grid-2 .landing-page-image .bankimage {
-    margin: 10px 1px 1px 85px;
-    padding: 0px;
-    position: relative;
-    bottom: 100px;
-  }
-
-  .mid-container .grid-3 {
-    margin: 1px 1px 1px 7px;
-    position: relative;
-    bottom: 200px;
-    height: 100%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .mid-container .grid-3 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 90%;
-    position: relative;
-    left: 18px;
-    bottom: 80px;
-  }
-
-
-  .lower-container {
-    margin: 5px 5px 5px 45px;
-    padding: 5px 5px 5px 5px;
-  }
-
-
-  .lower-container .grid-1 {
-    margin: 1px 1px 1px 15px;
-    padding: 0px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .lower-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.25em;
-    position: relative;
-    left: 60px;
-  }
-
-  .lower-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    width: 90%;
-  }
-
-  .lower-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 70%;
-  }
-
-  .lower-container .grid-2 .landing-page-image .pay {
-    margin: 130px 1px 1px 100px;
-    width: 80%;
-    height: 60%;
-    padding: 0px;
-    position: relative;
-    left: 15px;
-    bottom: 180px;
-  }
-
-  .lower-container .grid-3 {
-    position: relative;
-    bottom: 350px;
-    left: 7px;
-    padding: 0px;
-    font-size: 1.52em;
-    width: 100%;
-  }
-
-  .lower-container .grid-3 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 90%;
-    position: relative;
-    left: 10px;
-    bottom: 100px;
-  }
-
-  .fourth-container {
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
-    position: relative;
-    right: 20px;
-  }
-
-
-  .fourth-container .grid-1 {
-    margin: 105px 1px 1px 45px;
-    padding: 0px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .fourth-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.75em;
-  }
-
-  .fourth-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    width: 90%;
-  }
-
-  .fourth-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 90%;
-    width: 85%;
-  }
-
-  .fourth-container .grid-2 .landing-page-image .cell {
-    margin: 1px 1px 1px 80px;
-    padding: 5px 5px 5px 5px;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    left: 50px;
-    bottom: 80px;
-  }
-
-  .fifth-container {
-    margin: 5px 5px 5px 55px;
-    padding: 4px 4px 4px 4px;
-    grid-template-columns: 1fr;
-  }
-
-  .fifth-container .grid-1 {
-    margin: 85px 1px 1px 1px;
-    height: 70%;
-    position: relative;
-    bottom: 130px;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .fifth-container .grid-1 .title .business {
-    font-size: 1.15em;
-    width: 100%;
-    position: relative;
-    right: 12px;
-  }
-
-  .fifth-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-    width: 90%;
-  }
-
-  .fifth-container .grid-2 {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-  }
-
-  .fifth-container .grid-2 .landing-page-image .bankimage {
-    width: 90%;
-    height: 90%;
-    margin: 30px 1px 1px 60px;
-    position: relative;
-    left: 20px;
-    bottom: 180px;
-  }
-
-  .fifth-container .grid-3 {
-    margin: 1px 1px 1px 22px;
-    font-size: 1.52em;
-    width: 100%;
-  }
-
-  .fifth-container .grid-3 .bullet-text {
-    position: relative;
-    bottom: 210px;
-    width: 90%;
-    margin: 1px 1px 1px 10px;
-  }
-
-  .perks {
-    margin: 20px 20px 20px 50px;
-  }
-
-  .perks .title {
-    padding: 0px 0px 0px 0px;
-    margin: 1px 1px 1px 1px;
-  }
-
-  .perks .title h1 {
-    margin: 0px 0px 0px 0px;
-    position: relative;
-    right: 10px;
-  }
-
-  .perks .sub-heading {
-    gap: 35px;
-    margin: 20px 20px 20px 20px;
-    width: 95%;
-    grid-template-columns: 1fr;
-  }
-
-  .ant-layout-footer {
-    margin: 1px 1px 1px 1px;
-  }
-
-  .Footer {
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    left: 40px;
-    font-size: smaller;
-  }
-
-  .Logo-Image .footer-img {
-    height: 65px;
-    width: 65px;
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    right: 60px;
-  }
-
-  .NavBar.Content {
-    position: relative;
-    left: 20px;
-    font-size: smaller;
-  }
-
-  .Logo-Image .footer-img {
-    height: 65px;
-    width: 65px;
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    right: 40px;
-  }
-
-  .social .social-logo {
-    height: 30px;
-    width: 30px;
-  }
-
-  .infos {
-    font-size: smaller;
-  }
-
-  .Connect {
-    position: relative;
-    right: 10px;
-  }
-
-  .Connect .con {
-    font-size: smaller;
-
-  }
-
-  .ContactUs {
-    font-size: smaller;
-    position: relative;
-    right: 20px;
+    row-gap: 25px;
+    align-items: center;
+    margin-right: -20px;
   }
 
   .carousel-container {
     height: 5px;
-    width: 10px;
+    width: 0px;
   }
 
   .carousel-container img.carouselimage {
@@ -3827,781 +2111,16 @@ h4.navbarItems:hover {
   }
 }
 
-@media (width<=584px) {
-
-  .body-container {
-    width: 100%;
-    margin: 0;
-  }
-
-  .navbar_bot {
-    width: 100%;
-  }
-
-  .navMenu {
-    height: 98px;
-    margin-left: 0px;
-  }
-
+@media (width<=640px) {
   .navMenu .Logo-Image img {
     width: 85px;
     height: 85px;
-    margin: 6px 1px 1px 1px;
-    position: relative;
-    left: 0px;
+    margin-top: -5px;
+    margin-left: 215px;
   }
 
-  .hamburgerIconContainer {
-    width: 100%;
-    margin: 1px 1px 1px 1px;
-  }
-
-  .hamburgerIconContainer .Logo-Image img {
-    display: none;
-  }
-
-  .hamburgerIconContainer svg {
-    height: 1.7em;
-    width: 3.3em;
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    left: 50px;
-  }
-
-  .download {
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    left: -40px;
-  }
-
-  .download .playstore img {
-    margin: 1px 1px 1px 1px;
-    border-radius: 5px;
-    width: 115px;
-    height: 40px;
-    position: relative;
-    top: 31px;
-
-  }
-
-  .download .appstore img {
-    margin: 1px 1px 1px 1px;
-    width: 115px;
-    height: 42px;
-    border-radius: 5px;
-    position: relative;
-    left: 135px;
-    bottom: 18px;
-  }
-
-  .Main-container,
-  .mid-container,
-  .lower-container,
-  .fourth-container {
-    grid-template-columns: 1fr;
-  }
-
-  .Main-container {
-    margin: 125px 5px 5px 45px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .Main-container .grid-1 {
-    margin: 5px 5px 15px 5px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .Main-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 100%;
-  }
-
-  .highlight {
-    font-size: 1.26em;
-  }
-
-  .lowlight {
-    font-size: 1.20em;
-  }
-
-  .Main-container .grid-1 .landing-page-text {
-    margin: 5px 5px 5px 5px;
-    width: 90%;
-  }
-
-  .Main-container .grid-2 {
-    margin: 5px 5px 5px 5px;
-    position: relative;
-    bottom: 190px;
-  }
-
-  .Main-container .grid-2 .landing-page-image .bankimage {
-    position: relative;
-    top: 70px;
-    left: 5px;
-  }
-
-  .Main-container .grid-3 {
-    margin: 5px 5px 5px 5px;
-    position: relative;
-    left: 0px;
-    bottom: 180px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .Main-container .grid-3 .bullet-text {
-    margin: 100px 5px 5px 5px;
-    width: 90%;
-  }
-
-  .mid-container {
-    margin: 5px 5px 5px 55px;
-    padding: 5px 5px 5px 5px;
-  }
-
-
-  .mid-container .grid-1 {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.52em;
-    width: 100%;
-  }
-
-  .mid-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.35em;
-    position: relative;
-    left: 35px;
-  }
-
-  .mid-container .grid-1 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    width: 80%;
-    position: relative;
-    left: 20px;
-  }
-
-  .mid-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 80%;
-  }
-
-  .mid-container .grid-2 .landing-page-image .bankimage {
-    margin: 10px 1px 1px 85px;
-    padding: 0px;
-    position: relative;
-    bottom: 100px;
-  }
-
-  .mid-container .grid-3 {
-    margin: 1px 1px 1px 7px;
-    position: relative;
-    bottom: 200px;
-    height: 100%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .mid-container .grid-3 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 90%;
-    position: relative;
-    left: 18px;
-    bottom: 80px;
-  }
-
-
-  .lower-container {
-    margin: 5px 5px 5px 45px;
-    padding: 5px 5px 5px 5px;
-  }
-
-
-  .lower-container .grid-1 {
-    margin: 1px 1px 1px 15px;
-    padding: 0px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .lower-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.25em;
-    position: relative;
-    left: 60px;
-  }
-
-  .lower-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    width: 90%;
-  }
-
-  .lower-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 70%;
-  }
-
-  .lower-container .grid-2 .landing-page-image .pay {
-    margin: 130px 1px 1px 100px;
-    width: 80%;
-    height: 60%;
-    padding: 0px;
-    position: relative;
-    left: 15px;
-    bottom: 180px;
-  }
-
-  .lower-container .grid-3 {
-    position: relative;
-    bottom: 350px;
-    left: 7px;
-    padding: 0px;
-    font-size: 1.52em;
-    width: 100%;
-  }
-
-  .lower-container .grid-3 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 90%;
-    position: relative;
-    left: 10px;
-    bottom: 100px;
-  }
-
-  .fourth-container {
-    margin: 5px 5px 5px 55px;
-    padding: 5px 5px 5px 5px;
-    position: relative;
-    right: 20px;
-  }
-
-
-  .fourth-container .grid-1 {
-    margin: 105px 1px 1px 45px;
-    padding: 0px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .fourth-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.35em;
-    position: relative;
-    right: 20px;
-  }
-
-  .fourth-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    width: 80%;
-  }
-
-  .fourth-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 90%;
-    width: 85%;
-  }
-
-  .fourth-container .grid-2 .landing-page-image .cell {
-    margin: 1px 1px 1px 80px;
-    padding: 5px 5px 5px 5px;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    left: 10px;
-    bottom: 80px;
-  }
-
-  .fifth-container {
-    margin: 5px 5px 5px 55px;
-    padding: 4px 4px 4px 4px;
-    grid-template-columns: 1fr;
-  }
-
-  .fifth-container .grid-1 {
-    margin: 85px 1px 1px 1px;
-    height: 70%;
-    position: relative;
-    bottom: 130px;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .fifth-container .grid-1 .title .business {
-    font-size: 0.95em;
-    width: 100%;
-    position: relative;
-    right: 0px;
-  }
-
-  .fifth-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-    width: 90%;
-  }
-
-  .fifth-container .grid-2 {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-  }
-
-  .fifth-container .grid-2 .landing-page-image .bankimage {
-    width: 90%;
-    height: 90%;
-    margin: 30px 1px 1px 60px;
-    position: relative;
-    left: 20px;
-    bottom: 180px;
-  }
-
-  .fifth-container .grid-3 {
-    margin: 1px 1px 1px 22px;
-    font-size: 1.52em;
-    width: 100%;
-  }
-
-  .fifth-container .grid-3 .bullet-text {
-    position: relative;
-    bottom: 210px;
-    width: 90%;
-    margin: 1px 1px 1px 10px;
-  }
-
-  .perks {
-    margin: 20px 20px 20px 50px;
-  }
-
-  .perks .title {
-    padding: 0px 0px 0px 0px;
-    margin: 1px 1px 1px 1px;
-  }
-
-  .perks .title h1 {
-    margin: 0px 0px 0px 0px;
-    position: relative;
-    right: 10px;
-  }
-
-  .perks .sub-heading {
-    gap: 35px;
-    margin: 20px 20px 20px 20px;
-    width: 95%;
-    grid-template-columns: 1fr;
-  }
-
-  .ant-layout-footer {
-    margin: 1px 1px 1px 1px;
-  }
-
-  .Logo-Image .footer-img {
-    height: 55px;
-    width: 55px;
-    margin: 5px 1px 1px 1px;
-    padding: 2px 2px 2px 2px;
-    position: relative;
-    right: 35px;
-  }
-
-  .ContactUs {
-    position: relative;
-    right: 20px;
-  }
-
-  .social .social-logo {
-    height: 30px;
-    width: 30px;
-  }
-
-  .infos {
-    font-size: x-small;
-  }
-
-  .Connect {
-    position: relative;
-    right: 30px;
-  }
-
-  .Connect .con {
-    font-size: x-small;
-  }
-
-  .NavBar.Content {
-    position: relative;
-    left: -12px;
-    font-size: x-small;
-  }
-
-  .Footer {
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    left: 10px;
-    font-size: x-small;
-  }
-
-  .carousel-container {
-    height: 5px;
-    width: 10px;
-  }
-
-  .carousel-container img.carouselimage {
-    display: none;
-  }
-
-}
-
-@media (width<=480px) {
-  .body-container {
-    width: 100%;
-    margin: 0;
-  }
-
-  .navbar_bot {
-    width: 100%;
-  }
-
-  .navMenu .Logo-Image img {
-    width: 80px;
-    height: 80px;
-    margin: 6px 1px 1px 1px;
-    position: relative;
-    left: -15px;
-  }
-
-  .hamburgerIconContainer {
-    width: 100%;
-    margin: 1px 1px 1px 1px;
-  }
-
-  .hamburgerIconContainer .Logo-Image img {
-    display: none;
-  }
-
-  .hamburgerIconContainer svg {
-    height: 1.7em;
-    width: 3.3em;
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    left: 50px;
-  }
-
-  .download {
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    left: -70px;
-  }
-
-  .download .playstore img {
-    margin: 1px 1px 1px 1px;
-    border-radius: 5px;
-    width: 115px;
-    height: 40px;
-    position: relative;
-    top: 31px;
-
-  }
-
-  .download .appstore img {
-    margin: 1px 1px 1px 1px;
-    width: 115px;
-    height: 42px;
-    border-radius: 5px;
-    position: relative;
-    left: 135px;
-    bottom: 18px;
-  }
-
-  .Main-container,
-  .mid-container,
-  .lower-container,
-  .fourth-container {
-    grid-template-columns: 1fr;
-  }
-
-  .Main-container {
-    margin: 125px 5px 5px 15px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .Main-container .grid-1 {
-    margin: 5px 5px 15px 5px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .Main-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 100%;
-  }
-
-  .highlight {
-    font-size: 1.26em;
-  }
-
-  .lowlight {
-    font-size: 1.20em;
-  }
-
-  .Main-container .grid-1 .landing-page-text {
-    margin: 5px 5px 5px 5px;
-    width: 90%;
-  }
-
-  .Main-container .grid-2 {
-    margin: 5px 5px 5px 5px;
-    position: relative;
-    bottom: 190px;
-  }
-
-  .Main-container .grid-2 .landing-page-image .bankimage {
-    position: relative;
-    top: 70px;
-    left: 5px;
-  }
-
-  .Main-container .grid-3 {
-    margin: 5px 5px 5px 5px;
-    position: relative;
-    left: 0px;
-    bottom: 180px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .Main-container .grid-3 .bullet-text {
-    margin: 100px 5px 5px 5px;
-    width: 90%;
-  }
-
-  .mid-container {
-    margin: 5px 5px 5px 15px;
-    padding: 5px 5px 5px 5px;
-  }
-
-
-  .mid-container .grid-1 {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.52em;
-    width: 100%;
-  }
-
-  .mid-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.20em;
-    position: relative;
-    left: 35px;
-  }
-
-  .mid-container .grid-1 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    width: 80%;
-    position: relative;
-    left: 20px;
-  }
-
-  .mid-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 80%;
-  }
-
-  .mid-container .grid-2 .landing-page-image .bankimage {
-    margin: 10px 1px 1px 55px;
-    padding: 0px;
-    position: relative;
-    bottom: 100px;
-  }
-
-  .mid-container .grid-3 {
-    margin: 1px 1px 1px 7px;
-    position: relative;
-    bottom: 200px;
-    height: 100%;
-    width: 100%;
-  }
-
-  .mid-container .grid-3 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 90%;
-    position: relative;
-    left: 18px;
-    bottom: 80px;
-    font-size: 0.65em;
-  }
-
-
-  .lower-container {
-    margin: 5px 5px 5px 15px;
-    padding: 5px 5px 5px 5px;
-  }
-
-
-  .lower-container .grid-1 {
-    margin: 1px 1px 1px 15px;
-    padding: 0px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .lower-container .grid-1 .title {
-    position: relative;
-    left: 40px;
-  }
-
-  .lower-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    width: 90%;
-    font-size: 0.7em;
-  }
-
-  .lower-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 70%;
-  }
-
-  .lower-container .grid-2 .landing-page-image .pay {
-    margin: 130px 1px 1px 100px;
-    width: 70%;
-    height: 50%;
-    padding: 0px;
-    position: relative;
-    left: -30px;
-    bottom: 180px;
-  }
-
-  .lower-container .grid-3 {
-    position: relative;
-    bottom: 400px;
-    left: 7px;
-    padding: 0px;
-    font-size: 1.52em;
-    width: 100%;
-  }
-
-  .fourth-container {
-    margin: 5px 5px 5px 15px;
-    padding: 5px 5px 5px 5px;
-    position: relative;
-    right: 20px;
-  }
-
-  .fourth-container .grid-1 .title {
-    font-size: 1.05em;
-    position: relative;
-    right: 0px;
-  }
-
-  .fourth-container .grid-2 .landing-page-image .cell {
-    position: relative;
-    left: -30px;
-    bottom: 130px;
-  }
-
-  .fifth-container {
-    margin: 5px 5px 5px 15px;
-    padding: 4px 4px 4px 4px;
-    grid-template-columns: 1fr;
-  }
-
-  .fifth-container .grid-1 .title .business {
-    position: relative;
-    right: 15px;
-  }
-
-  .perks {
-    margin: 20px 20px 20px 0px;
-  }
-
-  .perks .title {
-    position: relative;
-    left: 20px;
-  }
-
-  .ant-layout-footer {
-    margin: 1px 1px 1px 1px;
-  }
-
-  .Logo-Image .footer-img {
-    height: 55px;
-    width: 55px;
-    margin: 1px 1px 1px 1px;
-    padding: 2px 2px 2px 2px;
-    position: relative;
-    right: 45px;
-  }
-
-  .ContactUs {
-    position: relative;
-    right: 30px;
-  }
-
-  .social .social-logo {
-    height: 30px;
-    width: 30px;
-  }
-
-  .infos {
-    font-size: xx-small;
-  }
-
-  .Connect {
-    position: relative;
-    right: 35px;
-  }
-
-  .Connect .con {
-    font-size: xx-small;
-  }
-
-  .NavBar.Content {
-    position: relative;
-    left: -20px;
-    font-size: xx-small;
-  }
-
-  .Footer {
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    left: 0px;
-    font-size: xx-small;
-  }
-
-  .carousel-container img.carouselimage {
-    display: none;
-  }
-}
-
-@media (width<=420px) {
-
-
-  .navMenu .Logo-Image img {
-    width: 75px;
-    height: 75px;
-    margin: 6px 1px 1px 1px;
-    position: relative;
-    left: -5px;
-    bottom: 3px;
+  .navMenu {
+    height: 98px;
   }
 
   .hamburgerIconContainer .Logo-Image img {
@@ -4609,871 +2128,89 @@ h4.navbarItems:hover {
   }
 
   .hamburgerIconContainer {
-    width: 100%;
-    margin: 1px 1px 1px 1px;
+    margin-right: 275px;
   }
 
   .hamburgerIconContainer svg {
     height: 1.5em;
     width: 3.3em;
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    left: 50px;
+    margin-right: 60px;
   }
 
   .download {
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    left: -55px;
+    margin-left: 40px;
   }
 
   .download .playstore img {
-    margin: 1px 1px 1px 1px;
+    margin-left: 320px;
+    margin-right: -1px;
     border-radius: 5px;
-    width: 100px;
-    height: 40px;
-    position: relative;
-    top: 31px;
-
+    width: 125px;
+    height: 45px;
+    margin-bottom: -33px;
   }
 
   .download .appstore img {
-    margin: 1px 1px 1px 1px;
-    width: 100px;
-    height: 40px;
+    margin-left: 175px;
+    width: 120px;
+    height: 45px;
     border-radius: 5px;
-    position: relative;
-    left: 110px;
-    bottom: 17px;
-  }
-
-
-  .Main-container,
-  .mid-container,
-  .lower-container,
-  .fourth-container {
-    grid-template-columns: 1fr;
-  }
-
-  .Main-container {
-    margin: 125px 5px 5px 15px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .Main-container .grid-1 {
-    margin: 5px 5px 15px 5px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .Main-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 100%;
-  }
-
-  .highlight {
-    font-size: 1.16em;
-  }
-
-  .lowlight {
-    font-size: 1.10em;
-  }
-
-  .Main-container .grid-1 .landing-page-text {
-    margin: 5px 5px 5px 5px;
-    width: 90%;
-  }
-
-  .Main-container .grid-2 {
-    margin: 5px 5px 5px 5px;
-    position: relative;
-    bottom: 190px;
-  }
-
-  .Main-container .grid-2 .landing-page-image .bankimage {
-    position: relative;
-    top: 70px;
-    left: -30px;
-  }
-
-  .Main-container .grid-3 {
-    margin: 5px 5px 5px 5px;
-    position: relative;
-    left: 0px;
-    bottom: 160px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .Main-container .grid-3 .bullet-text {
-    margin: 100px 5px 5px 5px;
-    width: 90%;
-  }
-
-  .mid-container {
-    margin: 5px 5px 5px 30px;
-    padding: 5px 5px 5px 5px;
-  }
-
-
-  .mid-container .grid-1 {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.52em;
-    width: 100%;
-  }
-
-  .mid-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.25em;
-    position: relative;
-    left: 20px;
-  }
-
-  .mid-container .grid-1 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    width: 80%;
-    position: relative;
-    left: 20px;
-  }
-
-  .mid-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 80%;
-  }
-
-  .mid-container .grid-2 .landing-page-image .bankimage {
-    margin: 10px 1px 1px 85px;
-    padding: 0px;
-    position: relative;
-    right: 50px;
-    bottom: 100px;
-  }
-
-  .mid-container .grid-3 {
-    margin: 1px 1px 1px 7px;
-    position: relative;
-    bottom: 200px;
-    height: 100%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .mid-container .grid-3 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 90%;
-    position: relative;
-    left: 18px;
-    bottom: 80px;
-  }
-
-
-  .lower-container {
-    margin: 5px 5px 5px 15px;
-    padding: 5px 5px 5px 5px;
-  }
-
-
-  .lower-container .grid-1 {
-    margin: 1px 1px 1px 15px;
-    padding: 0px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .lower-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.25em;
-    position: relative;
-    left: 3px;
-  }
-
-  .lower-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    width: 90%;
-  }
-
-  .lower-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 70%;
-  }
-
-  .lower-container .grid-2 .landing-page-image .pay {
-    margin: 130px 1px 1px 100px;
-    width: 80%;
-    height: 60%;
-    padding: 0px;
-    position: relative;
-    left: -70px;
-    bottom: 180px;
-  }
-
-  .lower-container .grid-3 {
-    position: relative;
-    bottom: 350px;
-    left: 7px;
-    padding: 0px;
-    font-size: 1.52em;
-    width: 100%;
-  }
-
-  .lower-container .grid-3 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 90%;
-    position: relative;
-    left: 10px;
-    bottom: 100px;
-  }
-
-  .fourth-container {
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
-    position: relative;
-    right: 40px;
-  }
-
-
-  .fourth-container .grid-1 {
-    margin: 105px 1px 1px 45px;
-    padding: 0px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .fourth-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.35em;
-    width: 100%;
-    position: relative;
-    right: 0px;
-  }
-
-  .fourth-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    width: 100%;
-  }
-
-  .fourth-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 90%;
-    width: 85%;
-  }
-
-  .fourth-container .grid-2 .landing-page-image .cell {
-    margin: 1px 1px 1px 80px;
-    padding: 5px 5px 5px 5px;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    left: -25px;
-    bottom: 130px;
-  }
-
-  .fifth-container {
-    margin: 5px 5px 5px 55px;
-    padding: 4px 4px 4px 4px;
-    grid-template-columns: 1fr;
-  }
-
-  .fifth-container .grid-1 {
-    margin: 85px 1px 1px 1px;
-    height: 70%;
-    position: relative;
-    bottom: 130px;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .fifth-container .grid-1 .title .business {
-    font-size: 0.90em;
-    width: 100%;
-    position: relative;
-    right: 17px;
-  }
-
-  .fifth-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-    width: 90%;
-  }
-
-  .fifth-container .grid-2 {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-  }
-
-  .fifth-container .grid-2 .landing-page-image .bankimage {
-    width: 90%;
-    height: 90%;
-    margin: 30px 1px 1px 60px;
-    position: relative;
-    left: -15px;
-    bottom: 180px;
-  }
-
-  .fifth-container .grid-3 {
-    margin: 1px 1px 1px 22px;
-    font-size: 1.52em;
-    width: 90%;
-    position: relative;
-    right: 20px;
-  }
-
-  .fifth-container .grid-3 .bullet-text {
-    position: relative;
-    bottom: 210px;
-    width: 90%;
-    margin: 1px 1px 1px 55px;
-  }
-
-  .perks {
-    margin: 10px 100px 10px 10px;
-  }
-
-  .perks .title {
-    padding: 0px 0px 0px 0px;
-    margin: 1px 1px 1px 1px;
-  }
-
-  .perks .title h1 {
-    margin: 0px 0px 0px 0px;
-    position: relative;
-    left: 30px;
-  }
-
-  .perks .sub-heading {
-    gap: 35px;
-    margin: 10px 10px 10px 10px;
-    width: 95%;
-    grid-template-columns: 1fr;
-  }
-
-  .ant-layout-footer {
-    margin: 1px 1px 1px 1px;
-  }
-
-  .Logo-Image .footer-img {
-    height: 65px;
-    width: 65px;
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    right: 30px;
-    bottom: 2px;
-  }
-
-  .ContactUs {
-    position: relative;
-    right: 15px;
-  }
-
-  .infos {
-    font-size: 0.53em;
-  }
-
-  .Connect {
-    position: relative;
-    right: 25px;
-  }
-
-  .Connect .con {
-    font-size: 0.53em;
-    position: relative;
-  }
-
-  .NavBar.Content {
-    position: relative;
-    left: -18px;
-    font-size: 0.53em;
+    margin-right: 95px;
+    margin-top: -16px;
+    margin-bottom: -8px;
   }
 
   .Footer {
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    left: 0px;
-    font-size: 0.53em;
+    font-size: x-small;
+    margin-left: 20px;
+    align-items: right;
+    justify-content: right;
   }
 
-  .social .social-logo {
-    height: 30px;
-    width: 30px;
-  }
-
-  .carousel-container {
-    height: 5px;
-    width: 10px;
-  }
-
-  .carousel-container img.carouselimage {
-    display: none;
-  }
-
-}
-
-
-@media (width<=390px) {
-
-  .navMenu .Logo-Image img {
-    width: 75px;
-    height: 75px;
-    margin: 6px 1px 1px 1px;
-    position: relative;
-    left: -5px;
-    bottom: 3px;
-  }
-
-  .hamburgerIconContainer .Logo-Image img {
-    display: none;
-  }
-
-  .hamburgerIconContainer {
-    width: 100%;
-    margin: 1px 1px 1px 1px;
-  }
-
-  .hamburgerIconContainer svg {
-    height: 1.5em;
-    width: 3.3em;
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    left: 50px;
-  }
-
-  .download {
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    left: -55px;
-  }
-
-  .download .playstore img {
-    margin: 1px 1px 1px 1px;
-    border-radius: 5px;
-    width: 100px;
-    height: 40px;
-    position: relative;
-    top: 31px;
-
-  }
-
-  .download .appstore img {
-    margin: 1px 1px 1px 1px;
-    width: 100px;
-    height: 40px;
-    border-radius: 5px;
-    position: relative;
-    left: 110px;
-    bottom: 17px;
-  }
-
-
-  .Main-container,
-  .mid-container,
-  .lower-container,
-  .fourth-container {
-    grid-template-columns: 1fr;
-  }
-
-  .Main-container {
-    margin: 125px 5px 5px 15px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .Main-container .grid-1 {
-    margin: 5px 5px 15px 5px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .Main-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 100%;
-  }
-
-  .highlight {
-    font-size: 1.16em;
-  }
-
-  .lowlight {
-    font-size: 1.10em;
-  }
-
-  .Main-container .grid-1 .landing-page-text {
-    margin: 5px 5px 5px 5px;
-    width: 90%;
-  }
-
-  .Main-container .grid-2 {
-    margin: 5px 5px 5px 5px;
-    position: relative;
-    bottom: 190px;
-  }
-
-  .Main-container .grid-2 .landing-page-image .bankimage {
-    position: relative;
-    top: 70px;
-    left: -30px;
-  }
-
-  .Main-container .grid-3 {
-    margin: 5px 5px 5px 5px;
-    position: relative;
-    left: 0px;
-    bottom: 160px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .Main-container .grid-3 .bullet-text {
-    margin: 100px 5px 5px 5px;
-    width: 90%;
-  }
-
-  .mid-container {
-    margin: 5px 5px 5px 30px;
-    padding: 5px 5px 5px 5px;
-  }
-
-
-  .mid-container .grid-1 {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.52em;
-    width: 100%;
-  }
-
-  .mid-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.25em;
-    position: relative;
-    left: 20px;
-  }
-
-  .mid-container .grid-1 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    width: 80%;
-    position: relative;
-    left: 20px;
-  }
-
-  .mid-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 80%;
-  }
-
-  .mid-container .grid-2 .landing-page-image .bankimage {
-    margin: 10px 1px 1px 85px;
-    padding: 0px;
-    position: relative;
-    right: 50px;
-    bottom: 100px;
-  }
-
-  .mid-container .grid-3 {
-    margin: 1px 1px 1px 7px;
-    position: relative;
-    bottom: 200px;
-    height: 100%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .mid-container .grid-3 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 90%;
-    position: relative;
-    left: 18px;
-    bottom: 80px;
-  }
-
-
-  .lower-container {
-    margin: 5px 5px 5px 15px;
-    padding: 5px 5px 5px 5px;
-  }
-
-
-  .lower-container .grid-1 {
-    margin: 1px 1px 1px 15px;
-    padding: 0px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .lower-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.25em;
-    position: relative;
-    left: 3px;
-  }
-
-  .lower-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    width: 90%;
-  }
-
-  .lower-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 70%;
-  }
-
-  .lower-container .grid-2 .landing-page-image .pay {
-    margin: 130px 1px 1px 100px;
-    width: 80%;
-    height: 60%;
-    padding: 0px;
-    position: relative;
-    left: -70px;
-    bottom: 180px;
-  }
-
-  .lower-container .grid-3 {
-    position: relative;
-    bottom: 350px;
-    left: 7px;
-    padding: 0px;
-    font-size: 1.52em;
-    width: 100%;
-  }
-
-  .lower-container .grid-3 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 90%;
-    position: relative;
-    left: 10px;
-    bottom: 100px;
-  }
-
-  .fourth-container {
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
-    position: relative;
-    right: 40px;
-  }
-
-
-  .fourth-container .grid-1 {
-    margin: 105px 1px 1px 45px;
-    padding: 0px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .fourth-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.35em;
-    width: 100%;
-    position: relative;
-    right: 0px;
-  }
-
-  .fourth-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    width: 100%;
-  }
-
-  .fourth-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 90%;
-    width: 85%;
-  }
-
-  .fourth-container .grid-2 .landing-page-image .cell {
-    margin: 1px 1px 1px 80px;
-    padding: 5px 5px 5px 5px;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    left: -25px;
-    bottom: 130px;
-  }
-
-  .fifth-container {
-    margin: 5px 5px 5px 55px;
-    padding: 4px 4px 4px 4px;
-    grid-template-columns: 1fr;
-  }
-
-  .fifth-container .grid-1 {
-    margin: 85px 1px 1px 1px;
-    height: 70%;
-    position: relative;
-    bottom: 130px;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .fifth-container .grid-1 .title .business {
-    font-size: 0.90em;
-    width: 100%;
-    position: relative;
-    right: 17px;
-  }
-
-  .fifth-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-    width: 90%;
-  }
-
-  .fifth-container .grid-2 {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-  }
-
-  .fifth-container .grid-2 .landing-page-image .bankimage {
-    width: 90%;
-    height: 90%;
-    margin: 30px 1px 1px 60px;
-    position: relative;
-    left: -15px;
-    bottom: 180px;
-  }
-
-  .fifth-container .grid-3 {
-    margin: 1px 1px 1px 22px;
-    font-size: 1.52em;
-    width: 100%;
-  }
-
-  .fifth-container .grid-3 .bullet-text {
-    position: relative;
-    bottom: 210px;
-    width: 90%;
-    margin: 1px 1px 1px 10px;
-  }
-
-  .perks {
-    margin: 10px 135px 10px 10px;
-  }
-
-  .perks .title {
-    padding: 0px 0px 0px 0px;
-    margin: 1px 1px 1px 1px;
-  }
-
-  .perks .title h1 {
-    margin: 0px 0px 0px 0px;
-    position: relative;
-    left: 57px;
-  }
-
-  .perks .sub-heading {
-    gap: 35px;
-    margin: 10px 10px 10px 10px;
-    width: 95%;
-    grid-template-columns: 1fr;
-  }
-
-  .ant-layout-footer {
-    margin: 1px 1px 1px 1px;
+  .NavBar.Content {
+    font-size: x-small;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
   }
 
   .Logo-Image .footer-img {
     height: 60px;
     width: 60px;
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    right: 20px;
-    bottom: 2px;
-  }
-
-  .ContactUs {
-    font-size: 0.53em;
-    position: relative;
-    right: 10px;
-  }
-
-  .Connect {
-    position: relative;
-    right: 20px;
-  }
-
-  .Connect .con {
-    font-size: 0.53em;
-    position: relative;
-  }
-
-  .NavBar.Content {
-    position: relative;
-    left: -12px;
-    font-size: 0.53em;
-  }
-
-  .Footer {
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    left: -10px;
-    font-size: 0.53em;
+    margin-left: -30px;
+    margin-top: -2px;
   }
 
   .social .social-logo {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
   }
 
   .infos {
-    font-size: 0.52em;
+    font-size: x-small;
   }
 
-  .carousel-container {
-    height: 5px;
-    width: 10px;
+  .Connect .con {
+    font-size: x-small;
   }
 
-  .carousel-container img.carouselimage {
-    display: none;
+  .ContactUs {
+    font-size: smaller;
+    margin-left: -20px;
   }
 }
 
-@media(width<=360px) {
-
+@media (width<=600px) {
   .body-container {
-    width: 100%;
-    margin: 0;
-  }
-
-  .navbar_bot {
-    width: 100%;
-  }
-
-  .navMenu {
-    height: 98px;
-    margin: 1px 1px 1px 1px;
-    padding: 2px 2px 2px 2px;
+    width: 650px;
+    margin-left: 10px;
   }
 
   .navMenu .Logo-Image img {
-    width: 75px;
-    height: 75px;
-    margin: 6px 1px 1px 1px;
-    position: relative;
-    left: 7px;
-    bottom: 3px;
+    width: 80px;
+    height: 80px;
+    margin-top: -1px;
+    margin-left: 248px;
   }
 
   .hamburgerIconContainer .Logo-Image img {
@@ -5481,44 +2218,37 @@ h4.navbarItems:hover {
   }
 
   .hamburgerIconContainer {
-    width: 100%;
-    margin: 1px 1px 1px 1px;
+    margin-right: 275px;
   }
 
   .hamburgerIconContainer svg {
     height: 1.5em;
     width: 3.3em;
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    left: 40px;
+    margin-right: 75px;
   }
 
   .download {
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    left: -55px;
+    margin-left: 50px;
   }
 
   .download .playstore img {
-    margin: 1px 1px 1px 1px;
+    margin-left: 320px;
+    margin-right: -1px;
     border-radius: 5px;
-    width: 100px;
-    height: 40px;
-    position: relative;
-    top: 31px;
-
+    width: 125px;
+    height: 45px;
+    margin-bottom: -33px;
   }
 
   .download .appstore img {
-    margin: 1px 1px 1px 1px;
-    width: 100px;
-    height: 40px;
+    margin-left: 175px;
+    width: 120px;
+    height: 45px;
     border-radius: 5px;
-    position: relative;
-    left: 110px;
-    bottom: 17px;
+    margin-right: 95px;
+    margin-top: -16px;
+    margin-bottom: -8px;
   }
-
 
   .Main-container,
   .mid-container,
@@ -5528,369 +2258,580 @@ h4.navbarItems:hover {
   }
 
   .Main-container {
-    margin: 125px 5px 5px 10px;
-    padding: 5px 5px 5px 5px;
+    margin-right: 170px;
   }
 
   .Main-container .grid-1 {
-    margin: 5px 5px 15px 5px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .Main-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 100%;
-  }
-
-  .highlight {
-    font-size: 1.16em;
-  }
-
-  .lowlight {
-    font-size: 1.10em;
-  }
-
-  .Main-container .grid-1 .landing-page-text {
-    margin: 5px 5px 5px 5px;
-    width: 95%;
+    margin-left: 10px;
   }
 
   .Main-container .grid-2 {
-    margin: 5px 5px 5px 5px;
-    position: relative;
-    bottom: 190px;
-  }
-
-  .Main-container .grid-2 .landing-page-image .bankimage {
-    position: relative;
-    top: 70px;
-    left: -30px;
-  }
-
-  .Main-container .grid-3 {
-    margin: 5px 5px 5px 5px;
-    position: relative;
-    left: 0px;
-    bottom: 160px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
+    margin-left: 10px;
+    margin-top: -150px;
   }
 
   .Main-container .grid-3 .bullet-text {
-    margin: 100px 5px 5px 5px;
-    width: 95%;
+    margin-left: 0px;
+    margin-top: 1px;
   }
 
   .mid-container {
-    margin: 5px 5px 5px 30px;
-    padding: 5px 5px 5px 5px;
+    margin-right: 115px;
   }
-
 
   .mid-container .grid-1 {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.52em;
-    width: 100%;
-  }
-
-  .mid-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.25em;
-    position: relative;
-    left: 20px;
-  }
-
-  .mid-container .grid-1 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    width: 80%;
-    position: relative;
-    left: 20px;
+    margin-left: 10px;
+    padding-right: 120px;
   }
 
   .mid-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 80%;
-    width: 50%;
-    position: relative;
-    right: 30px;
-  }
-
-  .mid-container .grid-2 .landing-page-image .bankimage {
-    margin: 10px 1px 1px 85px;
-    padding: 0px;
-    position: relative;
-    right: 50px;
-    bottom: 100px;
-  }
-
-  .mid-container .grid-3 {
-    margin: 1px 1px 1px 7px;
-    position: relative;
-    bottom: 200px;
-    height: 100%;
-    width: 100%;
-    font-size: 1.52em;
+    margin-left: 60px;
+    margin-top: -140px;
   }
 
   .mid-container .grid-3 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 90%;
-    position: relative;
-    left: 18px;
-    bottom: 80px;
+    margin-left: 40px;
+    margin-top: 90px;
   }
-
 
   .lower-container {
-    margin: 5px 5px 5px 10px;
-    padding: 5px 5px 5px 5px;
+    margin-right: 195px;
   }
-
 
   .lower-container .grid-1 {
-    margin: 1px 1px 1px 15px;
-    padding: 0px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .lower-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.25em;
-    position: relative;
-    left: 3px;
-  }
-
-  .lower-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    width: 95%;
+    margin-left: 10px;
+    margin-top: 90px;
   }
 
   .lower-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 70%;
-  }
-
-  .lower-container .grid-2 .landing-page-image .pay {
-    margin: 130px 1px 1px 100px;
-    width: 80%;
-    height: 60%;
-    padding: 0px;
-    position: relative;
-    left: -70px;
-    bottom: 180px;
-  }
-
-  .lower-container .grid-3 {
-    position: relative;
-    bottom: 350px;
-    left: 7px;
-    padding: 0px;
-    font-size: 1.52em;
-    width: 100%;
+    margin-left: 70px;
+    margin-top: -130px;
   }
 
   .lower-container .grid-3 .bullet-text {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    width: 95%;
-    position: relative;
-    left: 10px;
-    bottom: 100px;
-  }
-
-  .fourth-container {
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
-    position: relative;
-    right: 40px;
+    margin-left: 10px;
+    padding-right: 0px;
+    margin-top: -140px;
   }
 
   .fourth-container .grid-1 {
-    margin: 105px 1px 1px 45px;
-    padding: 0px;
-    height: 50%;
-    width: 100%;
-    font-size: 1.52em;
-  }
-
-  .fourth-container .grid-1 .title {
-    margin: 1px 1px 1px 1px;
-    padding: 0px;
-    font-size: 1.35em;
-    width: 100%;
-    position: relative;
-    right: 0px;
-  }
-
-  .fourth-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    width: 100%;
+    margin-right: 280px;
+    margin-top: 90px;
   }
 
   .fourth-container .grid-2 {
-    margin: 1px 1px 15px 1px;
-    padding: 5px 5px 5px 5px;
-    height: 90%;
-    width: 85%;
+    margin-left: 120px;
+    margin-top: -20px;
   }
 
-  .fourth-container .grid-2 .landing-page-image .cell {
-    margin: 1px 1px 1px 80px;
-    padding: 5px 5px 5px 5px;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    left: -25px;
-    bottom: 130px;
+  .fourth-container .grid-3 .bullet-text {
+    margin-left: 90px;
+    margin-top: -140px;
   }
 
   .fifth-container {
-    margin: 5px 5px 5px 10px;
-    padding: 2px 2px 2px 2px;
-    grid-template-columns: 1fr;
-  }
-
-  .fifth-container .grid-1 {
-    margin: 85px 1px 1px 1px;
-    height: 70%;
-    position: relative;
-    bottom: 130px;
-    width: 95%;
-    font-size: 1.52em;
-  }
-
-  .fifth-container .grid-1 .title .business {
-    font-size: 0.90em;
-    width: 100%;
-    position: relative;
-    right: 0px;
-  }
-
-  .fifth-container .grid-1 .landing-page-text {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-    width: 100%;
-  }
-
-  .fifth-container .grid-2 {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-    width: 30%;
+    margin-left: -120px;
   }
 
   .fifth-container .grid-2 .landing-page-image .bankimage {
     width: 80%;
     height: 80%;
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    left: 15px;
-    bottom: 180px;
-  }
-
-  .fifth-container .grid-3 {
-    margin: 1px 1px 1px 22px;
-    font-size: 1.52em;
-    width: 100%;
+    margin-top: -180px;
+    margin-left: 140px;
   }
 
   .fifth-container .grid-3 .bullet-text {
-    position: relative;
-    bottom: 300px;
-    width: 95%;
-    margin: 1px 1px 1px 10px;
+    padding-right: 260px;
+    margin-bottom: 130px;
   }
 
-  .perks {
-    margin: 10px 135px 10px 10px;
-  }
-
-  .perks .title {
-    padding: 0px 0px 0px 0px;
-    margin: 1px 1px 1px 1px;
-  }
-
-  .perks .title h1 {
-    margin: 0px 0px 0px 0px;
-    position: relative;
-    left: 75px;
-  }
-
-  .perks .sub-heading {
-    gap: 35px;
-    margin: 10px 10px 10px 10px;
-    width: 95%;
+  .fifth-container {
     grid-template-columns: 1fr;
   }
 
-  .ant-layout-footer {
-    margin: 1px 1px 1px 1px;
+  .image-container {
+    width: 100%;
   }
 
-  .Logo-Image .footer-img {
-    height: 65px;
-    width: 65px;
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    right: 18px;
-    bottom: 2px;
+  .grid-1,
+  .grid-2,
+  .grid-3 {
+    width: 100%;
   }
 
-  .ContactUs {
-    font-size: 0.53em;
-    position: relative;
-    right: 7px;
+  .grid-2 img {
+    margin-left: 0;
   }
 
-  .Connect {
-    position: relative;
-    right: 18px;
+  .sub-heading {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    margin-right: 80px;
   }
 
-  .Connect .con {
-    font-size: 0.53em;
-    position: relative;
+  .perks .title h1 {
+    margin-right: 200px;
   }
 
-  .NavBar.Content {
-    position: relative;
-    left: -12px;
-    font-size: 0.53em;
+  .vid-container {
+    margin-left: -190px;
   }
 
-  .Footer {
-    margin: 1px 1px 1px 1px;
-    position: relative;
-    left: 6px;
-    font-size: 0.53em;
+  .vid-container .title .basics {
+    margin-left: 10px;
   }
 
-  .social .social-logo {
-    height: 30px;
-    width: 30px;
-  }
-
-  .infos {
-    font-size: 0.52em;
+  .sub {
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+    align-items: center;
+    margin-right: -20px;
   }
 
   .carousel-container {
-    height: 5px;
-    width: 10px;
+    height: auto;
+    width: 550px;
   }
 
-  .carousel-container img.carouselimage {
+  .Footer {
+    font-size: x-small;
+    margin-left: 15px;
+    align-items: right;
+    justify-content: right;
+  }
+
+  .NavBar.Content {
+    font-size: x-small;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+
+  .Logo-Image .footer-img {
+    height: 55px;
+    width: 55px;
+    margin-left: -45px;
+    margin-top: -2px;
+  }
+
+  .social .social-logo {
+    height: 20px;
+    width: 20px;
+  }
+
+  .infos {
+    font-size: x-small;
+  }
+
+  .Connect .con {
+    font-size: x-small;
+  }
+
+  .Connect .social .social-logo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ContactUs {
+    font-size: smaller;
+    margin-left: -45px;
+  }
+}
+
+@media (width<=576px) {
+  .Footer {
+    font-size: xx-small;
+    margin-left: 15px;
+    align-items: right;
+    justify-content: right;
+  }
+
+  .NavBar.Content {
+    font-size: xx-small;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+
+  .Logo-Image .footer-img {
+    height: 45px;
+    width: 45px;
+    margin-left: -55px;
+    margin-top: -2px;
+    margin-bottom: 8px;
+  }
+
+  .social .social-logo {
+    height: 20px;
+    width: 20px;
+  }
+
+  .infos {
+    font-size: xx-small;
+  }
+
+  .Connect .con {
+    font-size: xx-small;
+  }
+
+  .Connect .social .social-logo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ContactUs {
+    margin-left: -55px;
+  }
+}
+
+@media (width<=540px) {
+  .navMenu .Logo-Image img {
+    width: 80px;
+    height: 80px;
+    margin-top: -1px;
+    margin-left: 280px;
+  }
+
+  .hamburgerIconContainer .Logo-Image img {
     display: none;
+  }
+
+  .hamburgerIconContainer {
+    margin-right: 325px;
+  }
+
+  .hamburgerIconContainer svg {
+    height: 1.5em;
+    width: 3.3em;
+    margin-right: 5p8x;
+  }
+
+  .download {
+    margin-left: 75px;
+  }
+
+  .download .playstore img {
+    margin-left: 320px;
+    margin-right: -1px;
+    border-radius: 5px;
+    width: 115px;
+    height: 38px;
+    margin-bottom: -31px;
+  }
+
+  .download .appstore img {
+    margin-left: 175px;
+    width: 110px;
+    height: 38px;
+    border-radius: 5px;
+    margin-right: 95px;
+    margin-top: -16px;
+    margin-bottom: -8px;
+  }
+
+  .Footer {
+    font-size: 0.57em;
+    margin-left: 15px;
+    margin-right: -25px;
+    display: none;
+  }
+
+  .NavBar.Content {
+    font-size: 0.57em;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+
+  .Logo-Image {
+    margin-left: 2px;
+  }
+
+  .Logo-Image .footer-img {
+    height: 43px;
+    width: 43px;
+    margin-left: -97px;
+    margin-top: -2px;
+    margin-bottom: 8px;
+    display: none;
+  }
+
+  .social .social-logo {
+    height: 20px;
+    width: 20px;
+  }
+
+  .infos {
+    font-size: 0.58em;
+    margin-left: -10px;
+  }
+
+  .Connect {
+    display: flex;
+    flex-direction: column;
+    margin-right: -20px;
+  }
+
+  .Connect .con {
+    font-size: 0.55em;
+  }
+
+  .Connect .social .social-logo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ContactUs {
+    margin-left: -180px;
+  }
+}
+
+@media (width<=480px) {
+  .body-container {
+    width: 650px;
+    margin-left: 10px;
+  }
+
+  .navMenu .Logo-Image img {
+    width: 80px;
+    height: 80px;
+    margin-top: -1px;
+    margin-left: 330px;
+  }
+
+  .hamburgerIconContainer .Logo-Image img {
+    display: none;
+  }
+
+  .hamburgerIconContainer {
+    margin-right: 365px;
+  }
+
+  .hamburgerIconContainer svg {
+    height: 1.5em;
+    width: 3.3em;
+    margin-right: 85px;
+  }
+
+  .download {
+    margin-left: 75px;
+  }
+
+  .download .playstore img {
+    margin-left: 330px;
+    margin-right: -1px;
+    border-radius: 5px;
+    width: 110px;
+    height: 38px;
+    margin-bottom: -31px;
+  }
+
+  .download .appstore img {
+    margin-left: 205px;
+    width: 110px;
+    height: 38px;
+    border-radius: 5px;
+    margin-right: 95px;
+    margin-top: -16px;
+    margin-bottom: -8px;
+  }
+
+  .Main-container,
+  .mid-container,
+  .lower-container,
+  .fourth-container {
+    grid-template-columns: 1fr;
+  }
+
+  .Main-container .grid-1,
+  .grid-2,
+  .grid-3 {
+    margin-right: 25px;
+  }
+
+  .Main-container {
+    margin-right: 265px;
+  }
+
+  .Main-container .grid-2 {
+    margin-left: 10px;
+    margin-top: -150px;
+  }
+
+  .Main-container .grid-3 .bullet-text {
+    margin-left: 0px;
+    margin-top: 1px;
+  }
+
+  .mid-container {
+    margin-right: 265px;
+  }
+
+  .mid-container .grid-1 {
+    margin-left: 10px;
+    padding-right: 120px;
+  }
+
+  .mid-container .grid-2 {
+    margin-left: 30px;
+    margin-top: -140px;
+  }
+
+  .mid-container .grid-3 .landing-page-text {
+    margin-left: 10px;
+    margin-top: 90px;
+  }
+
+  .lower-container {
+    margin-right: 285px;
+  }
+
+  .lower-container .grid-1 {
+    margin-left: 10px;
+    margin-top: 90px;
+  }
+
+  .lower-container .grid-2 {
+    margin-left: 70px;
+    margin-top: -130px;
+  }
+
+  .lower-container .grid-3 .bullet-text {
+    margin-left: 10px;
+    padding-right: 0px;
+    margin-top: -140px;
+  }
+
+  .fourth-container {
+    margin-right: 120px;
+  }
+
+  .fourth-container .grid-1 {
+    margin-right: 280px;
+    margin-top: 90px;
+  }
+
+  .fourth-container .grid-2 {
+    margin-left: 120px;
+    margin-top: -20px;
+  }
+
+  .fourth-container .grid-3 .bullet-text {
+    margin-left: 90px;
+    margin-top: -140px;
+  }
+
+  .fifth-container {
+    margin-left: -180px;
+  }
+
+  .fifth-container .grid-2 .landing-page-image .bankimage {
+    width: 80%;
+    height: 70%;
+    margin-top: -180px;
+    margin-left: 140px;
+  }
+
+  .fifth-container .grid-3 .bullet-text {
+    padding-right: 330px;
+    margin-bottom: 120px;
+  }
+
+  .fifth-container {
+    grid-template-columns: 1fr;
+  }
+
+  .image-container {
+    width: 100%;
+  }
+
+  .grid-1,
+  .grid-2,
+  .grid-3 {
+    width: 100%;
+  }
+
+  .grid-2 img {
+    margin-left: 0;
+  }
+
+  .sub-heading {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    margin-right: 80px;
+  }
+
+  .perks {
+    margin-right: 250px;
+  }
+
+  .perks .title h1 {
+    margin-right: 200px;
+  }
+
+  .vid-container {
+    margin-left: -310px;
+  }
+
+  .vid-container .title .basics {
+    margin-left: 20px;
+  }
+
+  .sub {
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+    align-items: center;
+    margin-right: -20px;
+  }
+
+  .carousel-container {
+    height: auto;
+    width: 550px;
+  }
+}
+
+@media (width<=420px) {
+  .navMenu .Logo-Image img {
+    width: 70px;
+    height: 70px;
+    margin-top: 3px;
+    margin-left: 380px;
+  }
+
+  .hamburgerIconContainer .Logo-Image img {
+    display: none;
+  }
+
+  .hamburgerIconContainer {
+    margin-right: 415px;
+  }
+
+  .hamburgerIconContainer svg {
+    height: 1.5em;
+    width: 3.3em;
+    margin-right: 85px;
+  }
+
+  .download {
+    margin-left: 75px;
+  }
+
+  .download .playstore img {
+    margin-left: 350px;
+    margin-right: -1px;
+    border-radius: 5px;
+    width: 90px;
+    height: 35px;
+    margin-bottom: -31px;
+  }
+
+  .download .appstore img {
+    margin-left: 250px;
+    width: 90px;
+    height: 35px;
+    border-radius: 5px;
+    margin-right: 95px;
+    margin-top: -16px;
+    margin-bottom: -8px;
   }
 }

@@ -2,7 +2,7 @@ import React from "react";
 import ScrollToTop from "../Components/ScrollToTop";
 import "./aboutPage.css";
 
-import what from "../Assets/wallet.png";
+import cityxp from "../Assets/cityexpress.png";
 import bankvector from "../Assets/request.jpg";
 
 const AboutPage = () => {
@@ -37,9 +37,9 @@ const AboutPage = () => {
         </div>
         <div className="sub-heading">
           <div className="what">
-            <div class="icon">
+            {/* <div class="icon">
               <img src={what} alt="wallet" class="wallet" />
-            </div>
+            </div> */}
             <h2>What our wallet is about</h2>
             <p>
               City Wallet “CityPAY” is where seamless transactions meet
@@ -102,17 +102,25 @@ const AboutPage = () => {
           </p>
         </div>
       </div>
-      <h1>Our Promoters:</h1>
-      <div className="promotors">
-        <p>
-          CityPAY is promoted by City Express Money Transfer Pvt. Ltd, one
-          of the largest remittance service providers in Nepal. With over 17
-          years of experience in the field of remittance management, City
-          Express Money Transfer Pvt. Ltd is one of the leading remittance
-          providers with a huge customer base and agent network across
-          different parts of Nepal.
-        </p>
-      </div> */}
+      
+      */}
+        <section class="promo-section">
+          <div className="promotors">
+            <h1>Our Promoters:</h1>
+            <div class="cityxp-logo">
+              <img src={cityxp} />
+              <p>
+              CityPAY is promoted by City Express Money Transfer Pvt. Ltd, one
+              of the largest remittance service providers in Nepal. With over 17
+              years of experience in the field of remittance management, City
+              Express Money Transfer Pvt. Ltd is one of the leading remittance
+              providers with a huge customer base and agent network across
+              different parts of Nepal.
+            </p>
+            </div>
+           
+          </div>
+        </section>
       </div>
     </div>
   );
