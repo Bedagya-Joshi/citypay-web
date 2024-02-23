@@ -6,10 +6,17 @@ import citypay from "../Assets/citypay_logo.png";
 import AndDownload from "../Assets/gplay.png";
 import IOSDownload from "../Assets/apple_pay.png";
 import { navItems } from "../utils/constants.js";
-
+// import { divIcon } from "leaflet";
+// import { divIcon } from "leaflet";
+// import { divIcon } from "leaflet";
 
 const Navbar = () => {
   const location = useLocation();
+
+  const handleAgentSignupClick = () => {
+    window.open("https://agent.citywallet.com.np/auth/signup", "_blank");
+  };
+
   const selectedKeys = [location.pathname];
   const isHomepage = location.pathname === "/";
   const [burgerActive, setBurgerActive] = useState(false);
@@ -17,7 +24,7 @@ const Navbar = () => {
   const renderNavItems = (item) => {
     return (
       <div className="navBarItemsContainer">
-        <div
+        <div 
           className="itemsContainer"
           selectedKeys={isHomepage ? [] : selectedKeys}
         >
@@ -80,14 +87,14 @@ const Navbar = () => {
               <img src={IOSDownload} alt="IOS Download" />
             </button>
           </div>
-          <div className="Logo-Image">
-            <img src={citypay} alt="CityPayLogo" />
-          </div>
+        <div className="Logo-Image">
+          <img src={citypay} alt="CityPayLogo" />
+        </div>
           {burgerActive ? <FaTimes /> : <FaBars />}
         </div>
         {navItems.map((item, index) => renderNavItems(item, index))}
         {/* <div onClick={handleAgentSignupClick}>Agent Signup</div> */}
-
+        
         <div class="downloadButtons">
           <button
             class="playstore"
@@ -112,6 +119,7 @@ const Navbar = () => {
             <img src={IOSDownload} alt="IOS Download" />
           </button>
         </div>
+
       </div>
       {burgerActive ? (
         <div className="navModal">

@@ -1401,6 +1401,7 @@ h4.navbarItems:hover {
     margin-right: 70px;
   }
 
+
   .Main-container,
   .mid-container,
   .lower-container,
@@ -1726,30 +1727,13 @@ h4.navbarItems:hover {
 
   .Footer {
     font-size: smaller;
-    margin-left: 10px;
   }
 
   .NavBar.Content {
     font-size: smaller;
   }
 
-  .Logo-Image .footer-img {
-    height: 70px;
-    width: 70px;
-    margin-right: 60px;
-    margin-top: -2px;
-  }
-
-  .social .social-logo {
-    height: 35px;
-    width: 35px;
-  }
-
-  .infos {
-    font-size: smaller;
-  }
-
-  .Connect .con {
+  .Connect {
     font-size: smaller;
   }
 
@@ -1800,6 +1784,7 @@ h4.navbarItems:hover {
     border-radius: 5px;
     margin-right: 350px;
   }
+
 
   .Main-container,
   .mid-container,
@@ -1952,39 +1937,6 @@ h4.navbarItems:hover {
     margin-bottom: -8px;
   }
 
-  .Footer {
-    font-size: x-small;
-    margin-left: 20px;
-  }
-
-  .NavBar.Content {
-    font-size: x-small;
-  }
-
-  .Logo-Image .footer-img {
-    height: 65px;
-    width: 65px;
-    margin-left: -45px;
-    margin-top: -2px;
-  }
-
-  .social .social-logo {
-    height: 30px;
-    width: 30px;
-  }
-
-  .infos {
-    font-size: x-small;
-  }
-
-  .Connect .con {
-    font-size: x-small;
-  }
-
-  .ContactUs {
-    font-size: smaller;
-  }
-
   .Main-container,
   .mid-container,
   .lower-container,
@@ -2112,6 +2064,7 @@ h4.navbarItems:hover {
 }
 
 @media (width<=640px) {
+
   .navMenu .Logo-Image img {
     width: 85px;
     height: 85px;
@@ -2160,44 +2113,6 @@ h4.navbarItems:hover {
     margin-bottom: -8px;
   }
 
-  .Footer {
-    font-size: x-small;
-    margin-left: 20px;
-    align-items: right;
-    justify-content: right;
-  }
-
-  .NavBar.Content {
-    font-size: x-small;
-    display: flex;
-    flex-direction: column;
-    margin-left: 5px;
-  }
-
-  .Logo-Image .footer-img {
-    height: 60px;
-    width: 60px;
-    margin-left: -30px;
-    margin-top: -2px;
-  }
-
-  .social .social-logo {
-    height: 25px;
-    width: 25px;
-  }
-
-  .infos {
-    font-size: x-small;
-  }
-
-  .Connect .con {
-    font-size: x-small;
-  }
-
-  .ContactUs {
-    font-size: smaller;
-    margin-left: -20px;
-  }
 }
 
 @media (width<=600px) {
@@ -2392,99 +2307,11 @@ h4.navbarItems:hover {
     height: auto;
     width: 550px;
   }
-
-  .Footer {
-    font-size: x-small;
-    margin-left: 15px;
-    align-items: right;
-    justify-content: right;
-  }
-
-  .NavBar.Content {
-    font-size: x-small;
-    display: flex;
-    flex-direction: column;
-    margin-left: 5px;
-  }
-
-  .Logo-Image .footer-img {
-    height: 55px;
-    width: 55px;
-    margin-left: -45px;
-    margin-top: -2px;
-  }
-
-  .social .social-logo {
-    height: 20px;
-    width: 20px;
-  }
-
-  .infos {
-    font-size: x-small;
-  }
-
-  .Connect .con {
-    font-size: x-small;
-  }
-
-  .Connect .social .social-logo {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .ContactUs {
-    font-size: smaller;
-    margin-left: -45px;
-  }
 }
 
-@media (width<=576px) {
-  .Footer {
-    font-size: xx-small;
-    margin-left: 15px;
-    align-items: right;
-    justify-content: right;
-  }
-
-  .NavBar.Content {
-    font-size: xx-small;
-    display: flex;
-    flex-direction: column;
-    margin-left: 5px;
-  }
-
-  .Logo-Image .footer-img {
-    height: 45px;
-    width: 45px;
-    margin-left: -55px;
-    margin-top: -2px;
-    margin-bottom: 8px;
-  }
-
-  .social .social-logo {
-    height: 20px;
-    width: 20px;
-  }
-
-  .infos {
-    font-size: xx-small;
-  }
-
-  .Connect .con {
-    font-size: xx-small;
-  }
-
-  .Connect .social .social-logo {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .ContactUs {
-    margin-left: -55px;
-  }
-}
 
 @media (width<=540px) {
+
   .navMenu .Logo-Image img {
     width: 80px;
     height: 80px;
@@ -2527,62 +2354,6 @@ h4.navbarItems:hover {
     margin-right: 95px;
     margin-top: -16px;
     margin-bottom: -8px;
-  }
-
-  .Footer {
-    font-size: 0.57em;
-    margin-left: 15px;
-    margin-right: -25px;
-    display: none;
-  }
-
-  .NavBar.Content {
-    font-size: 0.57em;
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-  }
-
-  .Logo-Image {
-    margin-left: 2px;
-  }
-
-  .Logo-Image .footer-img {
-    height: 43px;
-    width: 43px;
-    margin-left: -97px;
-    margin-top: -2px;
-    margin-bottom: 8px;
-    display: none;
-  }
-
-  .social .social-logo {
-    height: 20px;
-    width: 20px;
-  }
-
-  .infos {
-    font-size: 0.58em;
-    margin-left: -10px;
-  }
-
-  .Connect {
-    display: flex;
-    flex-direction: column;
-    margin-right: -20px;
-  }
-
-  .Connect .con {
-    font-size: 0.55em;
-  }
-
-  .Connect .social .social-logo {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .ContactUs {
-    margin-left: -180px;
   }
 }
 
@@ -2791,6 +2562,7 @@ h4.navbarItems:hover {
 }
 
 @media (width<=420px) {
+
   .navMenu .Logo-Image img {
     width: 70px;
     height: 70px;

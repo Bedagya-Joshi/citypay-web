@@ -1,225 +1,1342 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600&display=swap');
+
 
 * {
-  font-family: "Work Sans", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  outline: none;
-  border: none;
-}
-
-.top-section {
-  width: 100%;
-  height: 600px;
-  background: linear-gradient(#0e83e3, #65c7f7, #88e7f8);
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 40px;
-
-  --mask: radial-gradient(
-        114.04px at 50% calc(100% - 153px),
-        #000 99%,
-        #0000 101%
-      )
-      calc(50% - 102px) 0/204px 100%,
-    radial-gradient(114.04px at 50% calc(100% + 102px), #0000 99%, #000 101%)
-      50% calc(100% - 51px) / 204px 100% repeat-x;
-  -webkit-mask: var(--mask);
-  mask: var(--mask);
-}
-
-.top-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 35px;
-}
-
-.top-content h1 {
-  color: white;
-  font-size: 110px;
-  text-decoration: underline 15px;
-}
-
-.top-paragraph {
-  width: 450px;
-  color: black;
-  line-height: 1.7rem;
-}
-.top-paragraph h3 {
-  font-family: "Work Sans", serif;
-  font-weight: 450;
-}
-
-.top-image {
-}
-
-.box-container {
-  position: relative;
-  bottom: 0;
-  top: -57px;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
 }
 
 .headingTxt h1 {
-  font-family: "Work Sans";
-  font-weight: 700;
-  font-size: 90px;
-  color: rgb(62, 62, 62);
-  text-align: center;
-  background-clip: text;
-  margin-bottom: 20px;
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    background: linear-gradient(to right, #F53F4A 50%, #0D60B5 20%);
+    background-clip: text;
+    margin-bottom: 20px;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-weight: 500;
 }
 
 .containter {
-  width: 400px;
-  height: 700px;
+    width: 400px;
+    height: 700px;
 }
 
-.wallet {
-  position: absolute;
-  top: 10px;
-  left: 25px;
-  width: 80px;
+.box-container {
+    margin-top: 20px;
 }
 
 .sub-heading {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 30px;
-  margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin-bottom: 25px;
 }
 
-.what h2,
-.mission h2,
-.vision h2,
-.Innovation h2,
-.Reliability h2,
-.approach h2 {
-  font-family: "Work Sans", sans-serif;
-  font-size: 28px;
-  font-weight: 600;
+.what, .mission, .vision, .Innovation, .Reliability, .approach {
+    box-shadow: 2px 3px 10px 0px grey;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 30px 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.what,
-.mission,
-.vision,
-.Innovation,
-.Reliability,
-.approach {
-  /* box-shadow: 2px 3px 10px 0px grey; */
-  border: none;
-  border-radius: 10px;
-  padding: 20px 30px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  justify-content: flex-start;
-  position: relative;
+
+.sub-heading :hover {
+    color: white;
+    background: linear-gradient(to right, #F53F4A, #0D60B5);
+    transition: fade .1s linear;
+
 }
 
-.what p,
-.approach p,
-.mission p,
-.vision p,
-.Innovation p,
+.what p {
+    font-family: "Work Sans";
+    font-weight: 400;
+}
+
+.approach p {
+    font-family: "Work Sans";
+    font-weight: 400;
+}
+
+.mission p {
+    font-family: "Work Sans";
+    font-weight: 400;
+}
+
+.vision p {
+    font-family: "Work Sans";
+    font-weight: 400;
+}
+
+.Innovation p {
+    font-family: "Work Sans";
+    font-weight: 400;
+}
+
 .Reliability p {
-  font-family: "Work Sans";
-  font-weight: 400;
-  text-align: center;
-}
-
-/* .promotors {
-  border: none;
-  border-radius: 10px;
-  padding: 10px 10px 10px 15px;
-  text-align: justify;
-  color: black;
-} */
-
-/* h1 {
-  font-family: "Work Sans";
-  font-weight: 600;
-  font-size: 45px;
-  text-align: center;
-  color: black;
-} */
-
-/* .promotors p {
-  padding-top: 20px;
-} */
-
-p {
-  font-family: "Work Sans";
-  font-weight: 400;
-  font-size: 17px;
-}
-
-.promo-section {
-  background-color: rgba(202, 202, 199, 0.601);
-  height: 500px;
-    --mask:
-      radial-gradient(114.04px at 50% 153.00px,#000 99%,#0000 101%) calc(50% - 102px) 0/204px 100%,
-      radial-gradient(114.04px at 50% -102px,#0000 99%,#000 101%) 50% 51px/204px 100% repeat-x;
-    -webkit-mask: var(--mask);
-            mask: var(--mask);
-  position: relative;
+    font-family: "Work Sans";
+    font-weight: 400;
 }
 
 .promotors {
-  position: absolute;
-  padding: 70px;
-  height: 100%;
+    /* box-shadow: 1px 5px 15px 3px grey; */
+    /* margin-top: 20px; */
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px 10px 15px;
+    /* margin-bottom: 20px; */
+    text-align: justify;
+    color: white;
+    background: linear-gradient(to right, #F53F4A, #0D60B5);
 }
 
-.promotors h1 {
-  font-family: "Work Sans";
-  font-weight: 700;
-  font-size: 90px;
-  color: rgb(62, 62, 62);
-  text-align: center;
-  background-clip: text;
+h1 {
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-size: 45px;
+    text-align: center;
+    background: linear-gradient(to right, #F53F4A 50%, #0D60B5 20%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.cityxp-logo {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 50px;
-  max-height: 100%;
-  max-width: 100%;
-}
-.cityxp-logo p {
-  text-align: justify;
-  padding-top: 20px;
+.promotors p {
+    padding-top: 20px;
 }
 
-.cityxp-logo img {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
+p {
+    font-family: "Work Sans";
+    font-weight: 400;
+    font-size: 17px;
 }
 
 /*Responsive*/
-@media only screen and (max-width: 959px) {
+@media(width>=1800px) {
+    .containter {
+        width: 400px;
+        height: 700px;
+    }
+
+    .box-container {
+        height: 75vh;
+    }
+
+    .sub-heading {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        margin-bottom: 25px;
+    }
+
+    .what, .mission, .vision, .Innovation, .Reliability, .approach {
+        box-shadow: 2px 3px 10px 0px grey;
+        border: none;
+        border-radius: 10px;
+        padding: 15px 30px 20px;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+
+    .what {
+        width: 550px;
+        height: 180px;
+    }
+
+    .mission {
+        width: 550px;
+        height: 180px;
+    }
+
+    .vision {
+        width: 550px;
+        height: 180px;
+    }
+
+    .Innovation {
+        width: 550px;
+        height: 180px;
+    }
+
+    .Reliability {
+        width: 550px;
+        height: 180px;
+    }
+
+    .approach {
+        width: 550px;
+        height: 180px;
+    }
+
+
+    .what p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .approach p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .mission p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .vision p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .Innovation p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .Reliability p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+
+    .promotors {
+        /* box-shadow: 1px 5px 15px 3px grey; */
+        /* margin-top: 20px; */
+        border: none;
+        border-radius: 10px;
+        padding: 10px 10px 10px 15px;
+        /* margin-bottom: 20px; */
+        text-align: justify;
+    }
+
+    h1 {
+        font-family: 'Work Sans';
+        font-weight: 600;
+        font-size: 45px;
+        text-align: center;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .promotors p {
+        padding-top: 20px;
+    }
+
+    p {
+        font-family: "Work Sans";
+        font-weight: 400;
+        font-size: 17px;
+    }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+@media(width<=1220px) {
+    .containter {
+        width: 400px;
+        height: 700px;
+    }
+
+
+    .sub-heading {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        margin-bottom: 25px;
+    }
+
+    .what, .mission, .vision, .Innovation, .Reliability, .approach {
+        box-shadow: 2px 3px 10px 0px grey;
+        border: none;
+        border-radius: 10px;
+        padding: 20px 30px 20px;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .what {
+        width: 300px;
+        height: 330px;
+    }
+
+    .mission {
+        width: 300px;
+        height: 330px;
+    }
+
+    .vision {
+        width: 300px;
+        height: 330px;
+    }
+
+    .Innovation {
+        width: 300px;
+        height: 330px;
+    }
+
+    .Reliability {
+        width: 300px;
+        height: 330px;
+    }
+
+    .approach {
+        width: 300px;
+        height: 330px;
+    }
+
+    .what p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .approach p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .mission p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .vision p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .Innovation p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .Reliability p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+
+    .promotors {
+        /* box-shadow: 1px 5px 15px 3px grey; */
+        /* margin-top: 20px; */
+        border: none;
+        border-radius: 10px;
+        padding: 10px 10px 10px 15px;
+        /* margin-bottom: 20px; */
+        text-align: justify;
+    }
+
+    h1 {
+        font-family: 'Work Sans';
+        font-weight: 600;
+        font-size: 45px;
+        text-align: center;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .promotors p {
+        padding-top: 20px;
+    }
+
+    p {
+        font-family: "Work Sans";
+        font-weight: 400;
+        font-size: 17px;
+    }
 }
 
-@media only screen and (max-width: 767px) {
+
+@media(width<=1140px) {
+    .containter {
+        width: 400px;
+        height: 700px;
+    }
+
+    .sub-heading {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        margin-bottom: 25px;
+        margin-left: -80px;
+    }
+
+    .what, .mission, .vision, .Innovation, .Reliability, .approach {
+        box-shadow: 2px 3px 10px 0px grey;
+        border: none;
+        border-radius: 10px;
+        padding: 20px 30px 20px;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .what {
+        width: 300px;
+        height: 330px;
+
+    }
+
+    .mission {
+        width: 300px;
+        height: 330px;
+    }
+
+    .vision {
+        width: 300px;
+        height: 330px;
+        margin-right: 370px;
+    }
+
+    .Innovation {
+        width: 300px;
+        height: 330px;
+    }
+
+    .Reliability {
+        width: 300px;
+        height: 330px;
+    }
+
+    .approach {
+        width: 300px;
+        height: 330px;
+    }
+
+    .what p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .approach p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .mission p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .vision p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .Innovation p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .Reliability p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .promotors {
+        /* box-shadow: 1px 5px 15px 3px grey; */
+        /* margin-top: 20px; */
+        border: none;
+        border-radius: 10px;
+        padding: 10px 10px 10px 15px;
+        /* margin-bottom: 20px; */
+        text-align: justify;
+    }
+
+    h1 {
+        font-family: 'Work Sans';
+        font-weight: 600;
+        font-size: 45px;
+        text-align: center;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .promotors p {
+        padding-top: 20px;
+    }
+
+    p {
+        font-family: "Work Sans";
+        font-weight: 400;
+        font-size: 17px;
+    }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+@media(width<=1080px) {
+    .containter {
+        width: 400px;
+        height: 700px;
+    }
+
+
+    .sub-heading {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        margin-bottom: 25px;
+        margin-left: -50px;
+    }
+
+    .what, .mission, .vision, .Innovation, .Reliability, .approach {
+        box-shadow: 2px 3px 10px 0px grey;
+        border: none;
+        border-radius: 10px;
+        padding: 20px 30px 20px;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .what {
+        width: 270px;
+        height: 350px;
+
+    }
+
+    .mission {
+        width: 270px;
+        height: 350px;
+    }
+
+    .vision {
+        width: 270px;
+        height: 350px;
+    }
+
+    .Innovation {
+        width: 270px;
+        height: 350px;
+    }
+
+    .Reliability {
+        width: 270px;
+        height: 350px;
+    }
+
+    .approach {
+        width: 270px;
+        height: 350px;
+    }
+
+
+    .what p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .approach p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .mission p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .vision p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .Innovation p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .Reliability p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+
+    .promotors {
+        /* box-shadow: 1px 5px 15px 3px grey; */
+        /* margin-top: 20px; */
+        border: none;
+        border-radius: 10px;
+        padding: 10px 10px 10px 15px;
+        /* margin-bottom: 20px; */
+        text-align: justify;
+    }
+
+    h1 {
+        font-family: 'Work Sans';
+        font-weight: 600;
+        font-size: 45px;
+        text-align: center;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .promotors p {
+        padding-top: 20px;
+    }
+
+    p {
+        font-family: "Work Sans";
+        font-weight: 400;
+        font-size: 17px;
+    }
 }
 
-@media only screen and (max-width: 620px) {
+
+@media(width<=992px) {
+    .containter {
+        width: 400px;
+        height: 700px;
+    }
+
+    .sub-heading {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        margin-bottom: 25px;
+        margin-left: -130px;
+    }
+
+    .what, .mission, .vision, .Innovation, .Reliability, .approach {
+        box-shadow: 2px 3px 10px 0px grey;
+        border: none;
+        border-radius: 10px;
+        padding: 20px 30px 20px;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .what {
+        width: 280px;
+        height: 350px;
+
+    }
+
+    .mission {
+        width: 280px;
+        height: 350px;
+    }
+
+    .vision {
+        width: 280px;
+        height: 350px;
+    }
+
+    .Innovation {
+        width: 280px;
+        height: 350px;
+    }
+
+    .Reliability {
+        width: 280px;
+        height: 350px;
+    }
+
+    .approach {
+        width: 280px;
+        height: 350px;
+    }
+
+    .what p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .approach p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .mission p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .vision p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .Innovation p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .Reliability p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+
+    .promotors {
+        /* box-shadow: 1px 5px 15px 3px grey; */
+        /* margin-top: 20px; */
+        border: none;
+        border-radius: 10px;
+        padding: 10px 10px 10px 15px;
+        /* margin-bottom: 20px; */
+        text-align: justify;
+    }
+
+    h1 {
+        font-family: 'Work Sans';
+        font-weight: 600;
+        font-size: 45px;
+        text-align: center;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .promotors p {
+        padding-top: 20px;
+    }
+
+    p {
+        font-family: "Work Sans";
+        font-weight: 400;
+        font-size: 17px;
+    }
 }
 
-@media only screen and (max-width: 480px) {
+
+@media(width<=940px) {
+    .containter {
+        width: 400px;
+        height: 700px;
+    }
+
+    .sub-heading {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        margin-bottom: 25px;
+        margin-left: -5px;
+    }
+
+    .what, .mission, .vision, .Innovation, .Reliability, .approach {
+        box-shadow: 2px 3px 10px 0px grey;
+        border: none;
+        border-radius: 10px;
+        padding: 20px 30px 20px;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .what {
+        width: 280px;
+        height: 350px;
+
+    }
+
+    .mission {
+        width: 280px;
+        height: 350px;
+        margin-left: -328px;
+    }
+
+    .vision {
+        width: 280px;
+        height: 350px;
+    }
+
+    .Innovation {
+        width: 280px;
+        height: 350px;
+    }
+
+    .Reliability {
+        width: 280px;
+        height: 350px;
+    }
+
+    .approach {
+        width: 280px;
+        height: 350px;
+    }
+
+    .what p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .approach p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .mission p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .vision p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .Innovation p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .Reliability p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+
+    .promotors {
+        /* box-shadow: 1px 5px 15px 3px grey; */
+        /* margin-top: 20px; */
+        border: none;
+        border-radius: 10px;
+        padding: 10px 10px 10px 15px;
+        /* margin-bottom: 20px; */
+        text-align: justify;
+    }
+
+    h1 {
+        font-family: 'Work Sans';
+        font-weight: 600;
+        font-size: 45px;
+        text-align: center;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .promotors p {
+        padding-top: 20px;
+    }
+
+    p {
+        font-family: "Work Sans";
+        font-weight: 400;
+        font-size: 17px;
+    }
+}
+
+@media(width<=800px) {
+    .containter {
+        width: 400px;
+        height: 700px;
+    }
+
+    .sub-heading {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        margin-bottom: 25px;
+        margin-left: -65px;
+    }
+
+    .what, .mission, .vision, .Innovation, .Reliability, .approach {
+        box-shadow: 2px 3px 10px 0px grey;
+        border: none;
+        border-radius: 10px;
+        padding: 20px 30px 20px;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .what {
+        width: 280px;
+        height: 350px;
+
+    }
+
+    .mission {
+        width: 280px;
+        height: 350px;
+
+    }
+
+    .vision {
+        width: 280px;
+        height: 350px;
+    }
+
+    .Innovation {
+        width: 280px;
+        height: 350px;
+    }
+
+    .Reliability {
+        width: 280px;
+        height: 350px;
+    }
+
+    .approach {
+        width: 280px;
+        height: 350px;
+    }
+
+    .what p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .approach p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .mission p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .vision p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .Innovation p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .Reliability p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+
+    .promotors {
+        /* box-shadow: 1px 5px 15px 3px grey; */
+        /* margin-top: 20px; */
+        border: none;
+        border-radius: 10px;
+        padding: 10px 10px 10px 15px;
+        /* margin-bottom: 20px; */
+        text-align: justify;
+    }
+
+    h1 {
+        font-family: 'Work Sans';
+        font-weight: 600;
+        font-size: 45px;
+        text-align: center;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .promotors p {
+        padding-top: 20px;
+    }
+
+    p {
+        font-family: "Work Sans";
+        font-weight: 400;
+        font-size: 17px;
+    }
+}
+
+
+@media(width<=768px) {
+    .containter {
+        width: 400px;
+        height: 700px;
+    }
+
+    .sub-heading {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+        margin-bottom: 25px;
+        align-items: center;
+        padding: 30px 30px 30px 155px;
+    }
+
+    .what, .mission, .vision, .Innovation, .Reliability, .approach {
+        box-shadow: 2px 3px 10px 0px grey;
+        border: none;
+        border-radius: 10px;
+        padding: 20px 30px 20px;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .what {
+        width: 340px;
+        height: 350px;
+    }
+
+    .mission {
+        width: 340px;
+        height: 350px;
+        margin-left: -1px;
+    }
+
+    .vision {
+        width: 340px;
+        height: 350px;
+    }
+
+    .Innovation {
+        width: 340px;
+        height: 350px;
+    }
+
+    .Reliability {
+        width: 340px;
+        height: 350px;
+    }
+
+    .approach {
+        width: 340px;
+        height: 350px;
+    }
+
+    .what p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .approach p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .mission p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .vision p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .Innovation p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .Reliability p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+
+    .promotors {
+        /* box-shadow: 1px 5px 15px 3px grey; */
+        /* margin-top: 20px; */
+        border: none;
+        border-radius: 10px;
+        padding: 10px 10px 10px 15px;
+        /* margin-bottom: 20px; */
+        text-align: justify;
+    }
+
+    h1 {
+        font-family: 'Work Sans';
+        font-weight: 600;
+        font-size: 45px;
+        text-align: center;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .promotors p {
+        padding-top: 20px;
+    }
+
+    p {
+        font-family: "Work Sans";
+        font-weight: 400;
+        font-size: 17px;
+    }
+}
+
+
+@media(width<=600px) {
+    .containter {
+        width: 400px;
+        height: 700px;
+    }
+
+    .sub-heading {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+        margin-bottom: 25px;
+        align-items: center;
+        padding: 30px 30px 30px 50px;
+        margin-left: 40px;
+    }
+
+    .what, .mission, .vision, .Innovation, .Reliability, .approach {
+        box-shadow: 2px 3px 10px 0px grey;
+        border: none;
+        border-radius: 10px;
+        padding: 20px 30px 20px;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .what {
+        width: 340px;
+        height: 350px;
+
+    }
+
+    .mission {
+        width: 340px;
+        height: 350px;
+        margin-left: -1px;
+
+    }
+
+    .vision {
+        width: 340px;
+        height: 350px;
+    }
+
+    .Innovation {
+        width: 340px;
+        height: 350px;
+    }
+
+    .Reliability {
+        width: 340px;
+        height: 350px;
+    }
+
+    .approach {
+        width: 340px;
+        height: 350px;
+    }
+
+    .what p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .approach p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .mission p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .vision p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .Innovation p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .Reliability p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+
+    .promotors {
+        /* box-shadow: 1px 5px 15px 3px grey; */
+        /* margin-top: 20px; */
+        border: none;
+        border-radius: 10px;
+        padding: 10px 10px 10px 15px;
+        /* margin-bottom: 20px; */
+        text-align: justify;
+    }
+
+    h1 {
+        font-family: 'Work Sans';
+        font-weight: 600;
+        font-size: 45px;
+        text-align: center;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .promotors p {
+        padding-top: 20px;
+    }
+
+    p {
+        font-family: "Work Sans";
+        font-weight: 400;
+        font-size: 17px;
+    }
+}
+
+
+@media(width<=520px) {
+    .containter {
+        width: 400px;
+        height: 700px;
+    }
+
+    .sub-heading {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+        margin-bottom: 25px;
+        align-items: center;
+        padding: 10px 10px 10px 20px;
+    }
+
+    .what, .mission, .vision, .Innovation, .Reliability, .approach {
+        box-shadow: 2px 3px 10px 0px grey;
+        border: none;
+        border-radius: 10px;
+        padding: 20px 30px 20px;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .what {
+        width: 340px;
+        height: 350px;
+        margin-left: -30px;
+    }
+
+    .mission {
+        width: 340px;
+        height: 350px;
+        margin-left: -30px;
+    }
+
+    .vision {
+        width: 340px;
+        height: 350px;
+        margin-left: -30px;
+    }
+
+    .Innovation {
+        width: 340px;
+        height: 350px;
+        margin-left: -30px;
+    }
+
+    .Reliability {
+        width: 340px;
+        height: 350px;
+        margin-left: -30px;
+    }
+
+    .approach {
+        width: 340px;
+        height: 350px;
+        margin-left: -30px;
+    }
+
+    .what p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .approach p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .mission p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .vision p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .Innovation p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .Reliability p {
+        font-family: "Work Sans";
+        font-weight: 400;
+    }
+
+    .promotors {
+        /* box-shadow: 1px 5px 15px 3px grey; */
+        /* margin-top: 20px; */
+        border: none;
+        border-radius: 10px;
+        padding: 10px 10px 10px 15px;
+        /* margin-bottom: 20px; */
+        text-align: justify;
+    }
+
+    h1 {
+        font-family: 'Work Sans';
+        font-weight: 600;
+        font-size: 45px;
+        text-align: center;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .promotors p {
+        padding-top: 20px;
+    }
+
+    p {
+        font-family: "Work Sans";
+        font-weight: 400;
+        font-size: 17px;
+    }
 }
