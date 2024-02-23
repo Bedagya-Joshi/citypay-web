@@ -5,12 +5,10 @@ import { Link } from "react-router-dom";
 
 //Import Assets
 import fb_logo from "../Assets/fb_logo.png";
-import ig_logo from "../Assets/ig_logo.png";
+import yt_logo from "../Assets/ytb.png";
 import citypay from "../Assets/citypay_logo.png";
 import qrcode from "../Assets/QRcode.jpeg";
 import "../App.css";
-
-// import MapComponent from "./MapComponent";
 
 const { Footer } = Layout;
 
@@ -18,12 +16,10 @@ const CustomFooter = () => {
   return (
     <Footer
       style={{
-        // marginTop: "125px",
         textAlign: "center",
         display: "flex",
         backgroundColor: "white",
         justifyContent: "space-around",
-        // borderTop:"1px solid black",
         boxShadow: "1px 60px 100px 1px grey",
       }}
     >
@@ -48,7 +44,7 @@ const CustomFooter = () => {
       >
         <div class="infos">Email:citypaywallet@gmail.com</div>
         <div class="infos">Tel No:+977 23213123321</div>
-        <div class="infos">Toll Free:+128321412412</div>
+        <div class="infos">Toll Free: +16600 11 12 13</div>
         <div class="infos">Location: Kamaladi, Kathmandu, Nepal</div>
       </div>
       <div className="Connect">
@@ -62,8 +58,6 @@ const CustomFooter = () => {
             justifyContent: "space-between",
           }}
         >
-          {/* Implement map */}
-          <div className="Map">{/* <MapComponent /> */}</div>
           <div class="con">Connect with us:</div>
           <div class="social">
             <a
@@ -75,11 +69,11 @@ const CustomFooter = () => {
             </a>
 
             <a
-              href="https://www.instagram.com"
+              href="https://www.youtube.com/@citypaynp"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={ig_logo} alt="Instagram" class="social-logo" />
+              <img src={yt_logo} alt="Youtube" class="social-logo" />
             </a>
           </div>
         </div>
@@ -95,10 +89,10 @@ const CustomFooter = () => {
         }}
       >
         <Link to="/about">About</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/blog">Blog</Link>
-        <Link to="/news">News</Link>
+        <Link to="/underconstruction">Services</Link>
+        <Link to="/contact">Contact Us</Link>
+        <Link to="/underconstruction">Blog</Link>
+        <Link to="/underconstruction">News</Link>
         <a
           href="https://agent.citywallet.com.np/auth/signup"
           target="_blank"
@@ -127,7 +121,7 @@ const CustomFooter = () => {
           Become an Agent
         </a>
         <Link to="/underconstruction">Legal</Link>
-        <Link to="/underconstruction">Downloads</Link>
+        <Link to="https://www.citywallet.com.np">Downloads</Link>
       </div>
     </Footer>
   );

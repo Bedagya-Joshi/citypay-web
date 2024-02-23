@@ -1,22 +1,17 @@
 import React from "react";
-import UC from "../Assets/UC.png";
+import { Link } from "react-router-dom";
+import "./underConstruction.css";
 
 function UnderConstruction() {
-    return (
-        <div
-            style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                backgroundImage: `url(${UC})`,
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "contain",
-                width: "100%",
-                height: "100vh",
-            }}
-        >
-        </div>
-    );
+  return (
+    <div className="UC">
+      <div>
+        <button type="button" >
+          <Link to={"/"} style={{color:"white"}}>Go Home</Link>
+        </button>
+      </div>  
+    </div>
+  );
 }
 
 export default UnderConstruction;

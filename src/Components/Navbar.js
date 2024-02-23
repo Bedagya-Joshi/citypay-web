@@ -16,7 +16,7 @@ const Navbar = () => {
   const renderNavItems = (item) => {
     return (
       <div className="navBarItemsContainer">
-        <div 
+        <div
           className="itemsContainer"
           selectedKeys={isHomepage ? [] : selectedKeys}
         >
@@ -49,10 +49,12 @@ const Navbar = () => {
   };
 
   return (
-    <>
+    <div>
       <div className="navMenu">
         <div className="Logo-Image">
-          <img src={citypay} alt="CityPayLogo" />
+          <Link to="/">
+            <img src={citypay} alt="CityPayLogo" />
+          </Link>
         </div>
         <div className="hamburgerIconContainer" onClick={handleMenuClick}>
           <div class="download">
@@ -79,14 +81,11 @@ const Navbar = () => {
               <img src={IOSDownload} alt="IOS Download" />
             </button>
           </div>
-        <div className="Logo-Image">
-          <img src={citypay} alt="CityPayLogo" />
-        </div>
           {burgerActive ? <FaTimes /> : <FaBars />}
         </div>
         {navItems.map((item, index) => renderNavItems(item, index))}
         {/* <div onClick={handleAgentSignupClick}>Agent Signup</div> */}
-        
+
         <div class="downloadButtons">
           <button
             class="playstore"
@@ -111,7 +110,6 @@ const Navbar = () => {
             <img src={IOSDownload} alt="IOS Download" />
           </button>
         </div>
-
       </div>
       {burgerActive ? (
         <div className="navModal">
@@ -122,7 +120,7 @@ const Navbar = () => {
       ) : (
         <div></div>
       )}
-    </>
+    </div>
   );
 };
 
