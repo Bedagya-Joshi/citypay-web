@@ -1509,6 +1509,8 @@ h4.navbarItems:hover {
   .Main-container {
     margin: 5px 5px 5px 75px;
     padding: 5px 5px 5px 5px;
+    position: relative;
+    top: 150px;
   }
 
   .Main-container .grid-1 {
@@ -1560,7 +1562,6 @@ h4.navbarItems:hover {
     margin: 5px 5px 5px 35px;
     padding: 5px 5px 5px 5px;
     position: relative;
-    bottom: 250px;
   }
 
 
@@ -1617,7 +1618,6 @@ h4.navbarItems:hover {
     margin: 5px 5px 5px 35px;
     padding: 5px 5px 5px 5px;
     position: relative;
-    bottom: 300px;
   }
 
   .lower-container .grid-1 {
@@ -1675,7 +1675,6 @@ h4.navbarItems:hover {
     margin: 5px 5px 5px 15px;
     padding: 5px 5px 5px 5px;
     position: relative;
-    bottom: 400px;
   }
 
 
@@ -1716,7 +1715,7 @@ h4.navbarItems:hover {
     margin: 5px 5px 5px 100px;
     padding: 4px 4px 4px 4px;
     position: relative;
-    top: -200px;
+    top: 170px;
   }
 
   .fifth-container .grid-1 {
@@ -1764,7 +1763,8 @@ h4.navbarItems:hover {
 
   .perks {
     margin: 1px 1px 1px 1px;
-    padding: 10px 50px 40px 50px;
+    padding: 10px 50px 80px 50px;
+    position: relative;
   }
 
   .perks .title h1 {
