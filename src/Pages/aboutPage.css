@@ -125,13 +125,13 @@
   text-align: center;
 }
 
-.promotors {
+/* .promotors {
   border: none;
   border-radius: 10px;
   padding: 10px 10px 10px 15px;
   text-align: justify;
   color: black;
-}
+} */
 
 /* h1 {
   font-family: "Work Sans";
@@ -141,9 +141,9 @@
   color: black;
 } */
 
-.promotors p {
+/* .promotors p {
   padding-top: 20px;
-}
+} */
 
 p {
   font-family: "Work Sans";
@@ -151,5 +151,47 @@ p {
   font-size: 17px;
 }
 
-/*Responsive*/
+.promo-section {
+  background-color: rgba(202, 202, 199, 0.601);
+  height: 60vh;
+  --mask: radial-gradient(109.57px at 50% 147.5px, #000 99%, #0000 101%)
+      calc(50% - 100px) 0/200px 100%,
+    radial-gradient(109.57px at 50% -97.5px, #0000 99%, #000 101%) 50% 50px/200px
+      100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
 
+  position: relative;
+}
+
+.promotors {
+  position: absolute;
+  padding: 70px;
+}
+
+.promotors h1 {
+  font-family: "Work Sans";
+  font-weight: 700;
+  font-size: 90px;
+  color: rgb(62, 62, 62);
+  text-align: center;
+  background-clip: text;
+}
+
+.cityxp-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.cityxp-logo p {
+  text-align: justify;
+  padding-top: 20px;
+}
+
+.cityxp-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Responsive*/
