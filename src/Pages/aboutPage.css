@@ -10,6 +10,16 @@
   border: none;
 }
 
+.headingTxt h1 {
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    background:  #0D60B5;
+    background-clip: text;
+    margin-bottom: 20px;
+    -webkit-text-fill-color: transparent;
+}
 .top-section {
   width: 100%;
   height: 600px;
@@ -19,7 +29,6 @@
   align-items: flex-start;
   justify-content: space-between;
   padding: 40px;
-
   --mask: radial-gradient(
         114.04px at 50% calc(100% - 153px),
         #000 99%,
@@ -129,6 +138,35 @@
 .vision p,
 .Innovation p,
 .Reliability p {
+
+    font-family: "Work Sans";
+    font-weight: 400;
+}
+
+.promotors {
+    box-shadow: 1px 5px 15px 3px grey;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px 10px 15px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+h1 {
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-size: 45px;
+    text-align: center;
+    background:  #0D60B5;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.promotors p {
+    padding-top: 20px;
+}
+
   font-family: "Work Sans";
   font-weight: 400;
   text-align: center;
@@ -153,6 +191,7 @@
 /* .promotors p {
   padding-top: 20px;
 } */
+
 
 p {
   font-family: "Work Sans";
