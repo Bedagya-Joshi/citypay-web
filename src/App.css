@@ -1627,7 +1627,7 @@ h4.navbarItems:hover {
   }
 
   .navMenu {
-    margin: 1px 70px 1px 1px;
+    margin: 0px 0px 0px 0px;
     gap: 10px;
     width: 100%;
     padding: 0;
