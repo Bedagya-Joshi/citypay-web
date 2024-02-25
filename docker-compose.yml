@@ -1,13 +1,16 @@
-version: '3'
+version: '3.8'
 
 services:
   web:
+    container_name: react-nginx
     build:
       context: .
       dockerfile: Dockerfile
-    image: bedagya/citypay:latest
     ports:
-      - "8088:3000"
-    environment:
-      - NODE_ENV=production
-    restart: always
+      - "2025:80"
+    networks:
+      - react-network
+
+networks:
+  react-network:
+    driver: bridge
