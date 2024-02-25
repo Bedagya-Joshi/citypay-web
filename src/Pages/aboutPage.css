@@ -19,13 +19,11 @@
   align-items: flex-start;
   justify-content: space-between;
   padding: 40px;
-
-  --mask: radial-gradient(114.04px at 50% calc(100% - 153px),
-      #000 99%,
-      #0000 101%) calc(50% - 102px) 0/204px 100%,
-    radial-gradient(114.04px at 50% calc(100% + 102px), #0000 99%, #000 101%) 50% calc(100% - 51px) / 204px 100% repeat-x;
-  -webkit-mask: var(--mask);
-  mask: var(--mask);
+  --mask:
+      radial-gradient(111.8px at 50% calc(100% - 150px), #000 99%, #0000 101%) calc(50% - 100px) 0/200px 100%,
+      radial-gradient(111.8px at 50% calc(100% + 100px), #0000 99%, #000 101%) 50% calc(100% - 50px)/200px 100% repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
 }
 
 .top-content {
