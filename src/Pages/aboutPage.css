@@ -93,6 +93,13 @@
   height: 700px;
 }
 
+.wallet {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  width: 80px;
+}
+
 .sub-heading {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -424,6 +431,9 @@ p {
     max-width: 100%;
   }
 
+  .top-content{
+    max-width: 100%;
+  }
   .promo-section {
     max-width: 100%;
     max-height: auto;
@@ -612,6 +622,12 @@ p {
     max-width: 100%;
     max-height: auto;
   }
+  .top-content {
+    max-width: 100%;
+  }
+  .top-content h3{
+    max-width: 100%;
+  }
 
   .top-section {
     padding: 0;
@@ -659,6 +675,6 @@ p {
   }
 
   .promotors h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
 }

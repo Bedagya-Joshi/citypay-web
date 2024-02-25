@@ -70,7 +70,7 @@ const AboutPage = () => {
         {/* <div className="headingTxt">
         <h1> What sets us apart </h1>
       </div>
-      <div className="sub-heading">
+      <div className="sub-heading">   
         <div className="Innovation">
           <h2>Innovation</h2>
           <p>
@@ -108,7 +108,7 @@ const AboutPage = () => {
           <div className="promotors">
             <h1>Our Promoters:</h1>
             <div class="cityxp-logo">
-              <img src={cityxp} class="promoimg"/>
+              <img src={cityxp} class="promoimg" alt="promo"/>
               <p>
                 CityPAY is promoted by City Express Money Transfer Pvt. Ltd, one
                 of the largest remittance service providers in Nepal. With over

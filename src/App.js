@@ -10,6 +10,7 @@ import cashinhand from "./Assets/payment.png";
 import cell from "./Assets/cell.png";
 import bank from "./Assets/bank.png";
 import util from "./Assets/util.png";
+import remitance from "./Assets/remitance.png";
 
 //Pages Import
 import ContactPage from "./Pages/ContactPage";
@@ -107,12 +108,12 @@ const App = () => {
 
                     <div class="grid-2">
                       <div className="landing-page-image">
-                        <img src={bankvector} alt="bank" class="bankimage" />
+                        <img src={remitance} alt="bank" class="bankimage" />
                       </div>
                     </div>
 
                     <div class="grid-3">
-                      {/* <div className="bullet-text"> */}
+                      <div className="bullet-text">
                         City Pay simplifies cross-border remittance, enabling
                         seamless transactions and easy tracking of payments.
                         Receive funds directly into your CityPay wallet and
@@ -120,7 +121,7 @@ const App = () => {
                         agent network in Nepal, accessing cash is convenient and
                         hassle-free, ensuring you're always connected with your
                         finances.
-                      {/* </div> */}
+                      </div>
                     </div>
                   </div>
 
@@ -289,7 +290,7 @@ const App = () => {
                       <h1>Perks</h1>
                     </div>
 
-                    <div className="sub-heading">
+                    <div className="perk-heading">
                       <div className="rewards">
                         <h2>More Reward Points</h2>
                         <p>
