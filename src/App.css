@@ -3905,11 +3905,11 @@ h4.navbarItems:hover {
   }
 
   .Main-container {
-    margin: 15px 1px 5px 1px;
+    margin: 15px 1px 5px 45px;
     padding: 5px;
     width: 80%;
     position: relative;
-    right: 60px;
+    right: 65px;
   }
 
   .Main-container .grid-1 .title {
@@ -3917,173 +3917,245 @@ h4.navbarItems:hover {
   }
 
   .Main-container .grid-1 .title .highlight {
-    font-size: 1.1em;
+    font-size: 0.9em;
   }
 
   .Main-container .grid-1 {
-    width: 100%;
+    width: 80%;
   }
 
   .Main-container .grid-1 .landing-page-text {
-    width: 90%;
+    width: 100%;
   }
 
   .Main-container .grid-1 .landing-page-text p, h2 {
     padding: 10px 1px 1px 1px;
+    font-size: 0.78em;
+  }
+
+  .Main-container .grid-2 {
+    width: 75%;
+    height: 88%;
+    position: relative;
+    bottom: 40px;
+    left: 10px;
   }
 
   .Main-container .grid-2 .landing-page-image .bankimage {
     position: relative;
-    left: 0px;
+    right: 30px;
+    top: 15px;
+    width: 80%;
+    height: 90%;
   }
 
   .Main-container .grid-3 {
     position: relative;
-    bottom: 60px;
-    font-size: 1.20em;
+    bottom: 150px;
+    right: 10px;
+    font-size: 0.9em;
+    width: 95%;
   }
 
   .Main-container .grid-3 .bullet-text {
     margin: 5px 5px 5px 5px;
     width: 100%;
+    font-weight: normal;
   }
 
   .mid-container {
-    margin: 5px 1px 5px 1px;
+    margin: 5px 1px 5px 40px;
     padding: 2px;
     position: relative;
-    left: 10px;
+    right: 50px;
+    width: 90%;
   }
 
   .mid-container .grid-1 {
-    width: 95%;
+    width: 80%;
+    position: relative;
+    left: 5px;
   }
 
   .mid-container .grid-1 .title .highlight {
-    font-size: 1.0em;
+    font-size: 0.8em;
     right: 5px;
-    margin: 1px 10px 1px 1px;
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
   }
 
   .mid-container .grid-1 .title .lowlight {
-    font-size: 1.0em;
+    font-size: 0.8em;
     right: 5px;
-    margin: 1px 10px 1px 1px;
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+
   }
 
   .mid-container .grid-1 .landing-page-text {
-    width: 95%;
+    width: 100%;
     left: 0px;
+    font-size: 0.78em;
   }
 
   .mid-container .grid-2 {
     height: 70%;
     position: relative;
+    right: 10px;
     top: 0px;
+    width: 85%;
   }
 
   .mid-container .grid-2 .landing-page-image .bankimage {
-    margin: 10px 1px 1px 35px;
+    margin: 10px 1px 1px 1px;
+    width: 80%;
+    position: relative;
+    left: 20px;
+    height: 90%;
   }
 
   .mid-container .grid-3 {
     margin: 1px 1px 1px 1px;
     position: relative;
     left: 10px;
-    bottom: 100px;
-    font-size: 1.52em;
-    width: 90%;
+    bottom: 210px;
+    width: 85%;
   }
 
-  .mid-container .grid-3 .bullet-text {
-    width: 95%;
+  .mid-container .grid-3 .bullet-text h2 {
+    font-size: 0.87em;
+  }
+
+  .mid-container .grid-3 .bullet-text p {
+    width: 100%;
     left: 0px;
     position: relative;
-    bottom: 100px;
+    top: 5px;
+    font-size: 0.78em;
   }
 
   .lower-container {
-    margin: 5px 1px 5px 1px;
+    margin: 5px 1px 1px 50px;
+    width: 90%;
     padding: 5px;
     position: relative;
-    left: 10px;
+    right: 60px;
+  }
+
+  .lower-container .grid-1 {
+    width: 80%;
+    position: relative;
+    left: 5px;
   }
 
   .lower-container .grid-1 .title .highlight {
-    font-size: 1.45em;
+    font-size: 0.99em;
   }
 
   .lower-container .grid-1 .landing-page-text {
     width: 95%;
+    font-size: 0.78em;
   }
 
   .lower-container .grid-2 {
-    height: 100%;
+    height: 95%;
+    width: 65%;
     position: relative;
-    bottom: 20px;
+    bottom: 60px;
+    left: 5px;
   }
 
   .lower-container .grid-2 .landing-page-image .bankimage {
-    left: 165px;
+    position: relative;
+    right: 25px;
+    top: 50px;
+    width: 80%;
+    height: 80%;
   }
 
   .lower-container .grid-3 {
     position: relative;
-    bottom: 70px;
-    font-size: 1.52em;
+    bottom: 185px;
+    width: 90%;
   }
 
-  .lower-container .grid-3 .bullet-text {
-    width: 95%;
+  .lower-container .grid-3 .bullet-text h2 {
+    font-size: 0.92em;
+  }
+
+  .lower-container .grid-3 .bullet-text p {
+    width: 100%;
     left: 55px;
+    font-size: 0.78em;
   }
 
   .fourth-container {
-    margin: 5px 1px 5px 1px;
+    margin: 5px 1px 5px 15px;
     padding: 5px;
     position: relative;
-    right: 35px;
+    right: 50px;
     width: 80%;
   }
 
   .fourth-container .grid-1 .title .highlight {
-    font-size: 1.23em;
+    font-size: 0.95em;
+  }
+
+  .fourth-container .grid-1 .title .lowlight {
+    font-size: 0.95em;
   }
 
   .fourth-container .grid-1 {
-    width: 100%;
+    width: 90%;
   }
 
   .fourth-container .grid-1 .landing-page-text {
-    width: 100%;
+    width: 95%;
+    font-size: 0.78em;
   }
 
   .fourth-container .grid-2 {
-    height: 95%;
+    height: 70%;
     width: 70%;
     position: relative;
+    left: 30px;
     bottom: 20px;
+  }
+
+  .fourth-container .grid-2 .landing-page-image {
+    position: relative;
+    right: 30px;
   }
 
   .fourth-container .grid-2 .landing-page-image .cell {
     position: relative;
-    right: 40px;
+    margin: 1px;
+    left: 10px;
+    width: 80%;
+    height: 100%;
   }
 
   .fifth-container {
-    margin: 5px 1px 5px 1px;
+    margin: 5px 1px 5px 15px;
     padding: 4px;
     width: 85%;
     position: relative;
-    right: 20px;
+    right: 35px;
   }
 
   .fifth-container .grid-1 {
-    width: 95%;
+    width: 90%;
+    position: relative;
+    right: 10px;
   }
 
-  .fifth-container .grid-1 .bullet-text {
+  .fifth-container .grid-1 .bullet-text h2 {
+    font-size: 0.87em;
+  }
+
+  .fifth-container .grid-1 .bullet-text p {
     width: 100%;
+    font-size: 0.78em;
   }
 
   .fifth-container .grid-1 .title {
@@ -4091,42 +4163,53 @@ h4.navbarItems:hover {
   }
 
   .fifth-container .grid-1 .title .business {
-    font-size: 1.5em;
+    font-size: 0.98em;
 
   }
 
   .fifth-container .grid-2 {
+    margin: 1px;
     height: 90%;
-    width: 60%;
+    width: 70%;
     position: relative;
-    left: 0px;
+    left: 45px;
     bottom: 40px;
   }
 
+  .fifth-container .landing-page-image {
+    position: relative;
+    right: 50px;
+  }
+
   .fifth-container .grid-2 .landing-page-image .bankimage {
-    width: 90%;
-    height: 90%;
-    margin: 30px 1px 1px 30px;
+    width: 80%;
+    height: 80%;
+    margin: 1px;
     position: relative;
     left: 25px;
     bottom: 10px;
   }
 
   .fifth-container .grid-3 {
-    font-size: 1.52em;
     width: 90%;
     position: relative;
-    bottom: 100px;
+    bottom: 250px;
     right: 10px;
   }
 
   .fifth-container .grid-3 .landing-page-text {
     width: 100%;
-    margin: 1px 1px 1px 10px;
+    margin: 1px;
+    font-size: 0.78em;
+  }
+
+  .Main-container, .mid-container, .lower-container, .fourth-container, .fifth-container {
+    position: relative;
+    right: 35px;
   }
 
   .perks {
-    margin: 20px 20px 20px 20px;
+    margin: 20px 20px 20px 35px;
     padding: 10px 10px 10px 10px;
     position: relative;
     left: 5px;
@@ -4149,13 +4232,13 @@ h4.navbarItems:hover {
     padding: 0px;
     width: 70%;
     position: relative;
-    right: 5px;
+    right: 115px;
     grid-template-columns: 1fr;
   }
 
   .rewards, .top-up, .redefine {
     position: relative;
-    right: 100px;
+    right: 0px;
     width: 260px;
     height: 295px;
     padding: 20px;
