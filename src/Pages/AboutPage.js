@@ -3,7 +3,7 @@ import ScrollToTop from "../Components/ScrollToTop";
 import "./aboutPage.css";
 
 import cityxp from "../Assets/cityexpress.png";
-import bankvector from "../Assets/agentcitypay_nobg.png";
+import topimage from "../Assets/topimage-removebg.png";
 
 const AboutPage = () => {
   return (
@@ -27,7 +27,7 @@ const AboutPage = () => {
           </div>
         </div>
         <div class="top-image">
-          <img src={bankvector} alt="bank" class="bankimage" style={{width: "100%"}}/>
+          <img src={topimage} alt="untitled" class="untitled" />
         </div>
       </div>
 

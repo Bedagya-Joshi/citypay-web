@@ -112,7 +112,7 @@ const App = () => {
                     </div>
 
                     <div class="grid-3">
-                      <div className="bullet-text">
+                      {/* <div className="bullet-text"> */}
                         City Pay simplifies cross-border remittance, enabling
                         seamless transactions and easy tracking of payments.
                         Receive funds directly into your CityPay wallet and
@@ -120,7 +120,7 @@ const App = () => {
                         agent network in Nepal, accessing cash is convenient and
                         hassle-free, ensuring you're always connected with your
                         finances.
-                      </div>
+                      {/* </div> */}
                     </div>
                   </div>
 
