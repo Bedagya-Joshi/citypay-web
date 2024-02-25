@@ -2685,11 +2685,11 @@ h4.navbarItems:hover {
   }
 
   .Main-container {
-    margin: 15px 5px 5px 5px;
+    margin: 15px 20px 5px 5px;
     padding: 5px;
     width: 85%;
     position: relative;
-    left: 30px;
+    left: 0px;
   }
 
   .Main-container .grid-1 .title {
@@ -2725,14 +2725,14 @@ h4.navbarItems:hover {
 
   .Main-container .grid-3 .bullet-text {
     margin: 5px 5px 5px 5px;
-    width: 100%;
+    width: 95%;
   }
 
   .mid-container {
-    margin: 5px 5px 5px 50px;
+    margin: 5px 5px 5px 5px;
     padding: 5px;
     position: relative;
-    left: 30px;
+    left: 20px;
   }
 
   .mid-container .grid-1 {
@@ -2752,7 +2752,7 @@ h4.navbarItems:hover {
   }
 
   .mid-container .grid-1 .landing-page-text {
-    width: 80%;
+    width: 95%;
     left: 0px;
   }
 
@@ -2775,14 +2775,14 @@ h4.navbarItems:hover {
   }
 
   .mid-container .grid-3 .bullet-text {
-    width: 80%;
+    width: 95%;
     left: 0px;
     position: relative;
     bottom: 100px;
   }
 
   .lower-container {
-    margin: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 35px;
     padding: 5px;
     position: relative;
     right: 5px;
@@ -2821,7 +2821,7 @@ h4.navbarItems:hover {
     margin: 5px 5px 5px 5px;
     padding: 5px;
     position: relative;
-    left: 15px;
+    right: 10px;
     width: 80%;
   }
 
@@ -2830,7 +2830,7 @@ h4.navbarItems:hover {
   }
 
   .fourth-container .grid-1 {
-    width: 90%;
+    width: 110%;
   }
 
   .fourth-container .grid-1 .landing-page-text {
@@ -2845,11 +2845,12 @@ h4.navbarItems:hover {
   }
 
   .fourth-container .grid-2 .landing-page-image .cell {
-    left: 70px;
+    position: relative;
+    right: 25px;
   }
 
   .fifth-container {
-    margin: 5px 5px 5px 35px;
+    margin: 5px 5px 5px 5px;
     padding: 4px;
     width: 85%;
   }
@@ -2897,13 +2898,12 @@ h4.navbarItems:hover {
   }
 
   .fifth-container .grid-3 .landing-page-text {
-    /* bottom: 210px; */
     width: 95%;
     margin: 1px 1px 1px 10px;
   }
 
   .perks {
-    margin: 20px 20px 20px 20px;
+    margin: 20px 30px 20px 20px;
     padding: 10px 10px 10px 10px;
     position: relative;
     left: 20px;
@@ -2922,10 +2922,10 @@ h4.navbarItems:hover {
 
   .perks .perk-heading {
     gap: 35px;
-    margin: 20px 0px 20px 0px;
+    margin: 20px 0px 20px 5px;
     width: 90%;
     position: relative;
-    left: 25px;
+    left: 75px;
     grid-template-columns: 1fr;
   }
 
@@ -3909,7 +3909,7 @@ h4.navbarItems:hover {
     padding: 5px;
     width: 80%;
     position: relative;
-    right: 50px;
+    right: 60px;
   }
 
   .Main-container .grid-1 .title {
@@ -4756,7 +4756,7 @@ h4.navbarItems:hover {
     height: 65px;
     margin: 6px 1px 1px 1px;
     position: relative;
-    left: 28px;
+    left: 20px;
     bottom: 3px;
   }
 
@@ -4772,15 +4772,15 @@ h4.navbarItems:hover {
   .hamburgerIconContainer svg {
     height: 1.5em;
     width: 3.3em;
-    margin: 1px 1px 1px 15px;
+    margin: 1px 1px 1px 1px;
     position: relative;
-    left: 20px;
+    left: 30px;
   }
 
   .download {
     margin: 1px 1px 1px 15px;
     position: relative;
-    right: 45px;
+    right: 50px;
   }
 
   .download .playstore img {
@@ -4815,7 +4815,7 @@ h4.navbarItems:hover {
     padding: 5px;
     width: 80%;
     position: relative;
-    right: 50px;
+    right: 65px;
   }
 
   .Main-container .grid-1 .title {
@@ -4843,7 +4843,7 @@ h4.navbarItems:hover {
     width: 75%;
     height: 88%;
     position: relative;
-    bottom: 30px;
+    bottom: 40px;
     left: 10px;
   }
 
@@ -4857,7 +4857,8 @@ h4.navbarItems:hover {
 
   .Main-container .grid-3 {
     position: relative;
-    bottom: 60px;
+    bottom: 150px;
+    right: 10px;
     font-size: 0.9em;
     width: 95%;
   }
@@ -4872,7 +4873,7 @@ h4.navbarItems:hover {
     margin: 5px 1px 5px 40px;
     padding: 2px;
     position: relative;
-    right: 35px;
+    right: 50px;
     width: 90%;
   }
 
@@ -4944,7 +4945,7 @@ h4.navbarItems:hover {
     width: 90%;
     padding: 5px;
     position: relative;
-    right: 40px;
+    right: 60px;
   }
 
   .lower-container .grid-1 {
@@ -4998,7 +4999,7 @@ h4.navbarItems:hover {
     margin: 5px 1px 5px 15px;
     padding: 5px;
     position: relative;
-    right: 35px;
+    right: 50px;
     width: 80%;
   }
 
@@ -5027,10 +5028,15 @@ h4.navbarItems:hover {
     bottom: 20px;
   }
 
+  .fourth-container .grid-2 .landing-page-image {
+    position: relative;
+    right: 30px;
+  }
+
   .fourth-container .grid-2 .landing-page-image .cell {
     position: relative;
     margin: 1px;
-    right: 10px;
+    left: 10px;
     width: 80%;
     height: 100%;
   }
@@ -5040,7 +5046,7 @@ h4.navbarItems:hover {
     padding: 4px;
     width: 85%;
     position: relative;
-    right: 20px;
+    right: 35px;
   }
 
   .fifth-container .grid-1 {
@@ -5076,12 +5082,17 @@ h4.navbarItems:hover {
     bottom: 40px;
   }
 
+  .fifth-container .landing-page-image {
+    position: relative;
+    right: 50px;
+  }
+
   .fifth-container .grid-2 .landing-page-image .bankimage {
     width: 80%;
     height: 80%;
     margin: 1px;
     position: relative;
-    right: 25px;
+    left: 25px;
     bottom: 10px;
   }
 
@@ -5119,17 +5130,17 @@ h4.navbarItems:hover {
 
   .perks .perk-heading {
     gap: 35px;
-    margin: 20px 0px 20px 100px;
+    margin: 20px 0px 20px 0px;
     padding: 0px;
-    width: 70%;
+    width: 100%;
     position: relative;
-    left: 4px;
+    right: 7px;
     grid-template-columns: 1fr;
   }
 
   .rewards, .top-up, .redefine {
     position: relative;
-    right: 100px;
+    right: 15px;
     width: 235px;
     height: 320px;
     padding: 20px;
