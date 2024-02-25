@@ -432,23 +432,7 @@ h4.navbarItems:hover {
   text-justify: inter-word;
 }
 
-.basics {
-  font-family: "Work Sans";
-  font-weight: 500;
-  font-size: 40px;
-  color: #525151;
-}
 
-#watchyt {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.youtube {
-  height: auto;
-  width: 100px;
-}
 
 /* Responsive Design*/
 
@@ -457,14 +441,22 @@ h4.navbarItems:hover {
     margin-left: 310px;
   }
 
-  .navMenu .Logo-Image img,
   .navMenu a {
     margin: 1px;
-    padding: 2px;
+    padding: 1px;
     width: 100px;
     height: 100px;
     position: relative;
     right: 70px;
+    bottom: 0px;
+  }
+
+  .navMenu .Logo-Image img {
+    margin: 1px 1px 1px 1px;
+    padding: 1px;
+    width: 100px;
+    height: 100px;
+    position: relative;
     bottom: 10px;
   }
 
@@ -497,6 +489,50 @@ h4.navbarItems:hover {
     margin: 1px;
     padding: 10px 1px 1px 1px;
   }
+
+  .fourth-container {
+    position: relative;
+    left: 60px;
+  }
+
+  .fourth-container .grid-1 {
+    width: 150%;
+  }
+
+  .fourth-container .grid-1 .landing-page-text {
+    width: 90%;
+  }
+
+  .fourth-container .grid-2 {
+    position: relative;
+    left: 120px;
+  }
+
+  .fifth-container {
+    position: relative;
+    right: 20px;
+  }
+
+  .fifth-container .grid-1 {
+    width: 150%;
+  }
+
+  .fifth-container .grid-1 .landing-page-text {
+    width: 90%;
+  }
+
+  .fifth-container .grid-2 {
+    position: relative;
+    left: 120px;
+  }
+
+  .fifth-container .grid-3 {
+    position: relative;
+    left: 120px;
+  }
+
+
+
 
   .carousel-container {
     height: auto;
@@ -556,6 +592,42 @@ h4.navbarItems:hover {
   .Main-container, .mid-container, .lower-container, .fourth-container, .fifth-container {
     position: relative;
     margin: 1px 100px 1px 1px;
+  }
+
+  .fourth-container .grid-1 {
+    width: 150%;
+  }
+
+  .fourth-container .grid-1 .landing-page-text {
+    width: 90%;
+  }
+
+  .fourth-container .grid-2 {
+    position: relative;
+    left: 120px;
+  }
+
+  .fifth-container {
+    position: relative;
+    right: 20px;
+  }
+
+  .fifth-container .grid-1 {
+    width: 150%;
+  }
+
+  .fifth-container .grid-1 .landing-page-text {
+    width: 90%;
+  }
+
+  .fifth-container .grid-2 {
+    position: relative;
+    left: 120px;
+  }
+
+  .fifth-container .grid-3 {
+    position: relative;
+    left: 120px;
   }
 
   .perks {
