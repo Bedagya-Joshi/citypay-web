@@ -234,7 +234,7 @@ const App = () => {
                       <h1>Perks</h1>
                     </div>
 
-                    <div className="sub-heading">
+                    <div className="perk-heading">
                       <div className="rewards">
                         <h2>More Reward Points</h2>
                         <p>
