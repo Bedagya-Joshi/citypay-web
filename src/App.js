@@ -223,23 +223,26 @@ const App = () => {
                         transact at local businesses and merchants. Say goodbye
                         to cash hassles and embrace the ease of instant payments
                         with City Pay's seamless QR scanning technology.
-                        <br></br>
-                        <br></br>
-                        Our innovative Scan QR for Payment feature goes beyond
-                        in-app QR codes, allowing you to seamlessly transact
-                        with local businesses, stores, and merchants. Simply
-                        scan any available QR code, and experience the
-                        satisfaction of instant payment success. Whether you're
-                        shopping at your favorite neighborhood store or
-                        exploring new merchants, City Pay ensures a seamless
-                        payment experience with just a simple scan. Say goodbye
-                        to cash hassles and embrace the future of effortless
-                        transactions with City Pay.
                       </div>
                     </div>
                     <div class="grid-2">
                       <div className="landing-page-image">
                         <img src={cell} alt="express" class="cell" />
+                      </div>
+                    </div>
+
+                    <div class="grid-3">
+                      <div className="bullet-text">
+                        <h2>City Pay QR</h2>
+                        <p>
+                          Effortlessly send money to others using City Pay QR's
+                          seamless scan-and-pay feature.
+                        </p>
+                        <h2>NepalPay and Smart QR</h2>
+                        <p>
+                          Leverage City Pay QR for effortless payments at
+                          merchants accepting NepalPay and Smart QR.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -290,8 +293,8 @@ const App = () => {
                     </div>
                   </div>
 
-                  <div class="perks">
-                    <div className="title" style={{color: "#0d60b5"}}>
+                  <div class="perks" style={{ color: "" }}>
+                    <div className="title">
                       <h1>Perks</h1>
                     </div>
 
