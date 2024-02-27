@@ -246,6 +246,7 @@ div.news p.summary {
 
 .title h1 {
   text-align: left;
+  padding-bottom: 23px;
 }
 
 .perk-heading {
@@ -258,7 +259,6 @@ div.news p.summary {
 }
 
 .perk-heading h2 {
-  /* font-size: 20px; */
   font-weight: 500;
   color: #0d60b5;
 }
@@ -615,6 +615,7 @@ h4.navbarItems:hover {
   .navbarItems .playstore img,
   .navbarItems .appstore img {
     border-radius: 5px;
+
   }
 
   .navbarItems .playstore img {
@@ -772,14 +773,9 @@ h4.navbarItems:hover {
   .navMenu .appstore img {
     margin: 1px;
     border-radius: 5px;
-    width: 12.8vh;
-    height: auto;
+    width: 16.8vh;
+    height: 6.3vh;
   }
-
-  .navMenu .playstore img {
-    width: 12.8vh;
-  }
-
 
   .Main-container,
   .mid-container,
@@ -1028,8 +1024,8 @@ h4.navbarItems:hover {
   .navMenu .appstore img {
     margin: 1px;
     border-radius: 5px;
-    width: 12.8vh;
-    height: auto;
+    width: 16.8vh;
+      height: 6.3vh;
   }
 
   .Main-container,
@@ -1270,8 +1266,8 @@ h4.navbarItems:hover {
   .navMenu .appstore img {
     margin: 1px;
     border-radius: 5px;
-    width: 12.8vh;
-    height: auto;
+    width: 16.8vh;
+      height: 6.3vh;
   }
 
   .Main-container,
@@ -1498,8 +1494,8 @@ h4.navbarItems:hover {
   .navMenu .appstore img {
     margin: 1px;
     border-radius: 5px;
-    width: 12.8vh;
-    height: 4vh;
+    width: 16.8vh;
+      height: 6.3vh;
   }
 
   .Main-container,
@@ -1832,8 +1828,8 @@ h4.navbarItems:hover {
   .navMenu .appstore img {
     margin: 1px;
     border-radius: 5px;
-    width: 9.8vh;
-    height: 4vh;
+    width: 16.8vh;
+      height: 6.3vh;
   }
 
   .Main-container,
@@ -2137,8 +2133,8 @@ h4.navbarItems:hover {
   .navMenu .appstore img {
     margin: 1px;
     border-radius: 5px;
-    width: 9.8vh;
-    height: 3.8vh;
+    width: 16.8vh;
+      height: 6.3vh;
   }
 
   .Main-container,
