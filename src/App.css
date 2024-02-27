@@ -569,12 +569,24 @@ h4.navbarItems:hover {
     left: 120px;
   }
 
+  .Main-container, .mid-container, .lower-container, .fourth-container, .fifth-container {
+    position: relative;
+    left: 90px;
+  }
 
+  .perks {
+    margin: 1px 1px 1px 300px;
+  }
 
+  .perks .perk-heading {
+    gap: 55px;
+  }
 
   .carousel-container {
     height: auto;
     width: 1010px;
+    position: relative;
+    left: 90px;
   }
 }
 
@@ -701,7 +713,11 @@ h4.navbarItems:hover {
   }
 
   .perks {
-    margin: 1px 140px 1px 1px;
+    margin: 1px 145px 1px 1px;
+  }
+
+  .perks .perk-heading {
+    gap: 50px;
   }
 
   .Logo-Image {
@@ -953,6 +969,7 @@ h4.navbarItems:hover {
   .perks .perk-heading {
     margin: 4px;
     padding: 40px 4px;
+    gap: 45px;
   }
 
   .perks .title h1 {

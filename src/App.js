@@ -203,16 +203,11 @@ const App = () => {
                       <div className="bullet-text">
                         <h2>City Pay QR</h2>
                         <p>
-                          Helps you transfer funds to other wallet users with a simple scan of a QR.
+                          Effortlessly send money to others using City Pay QR's seamless scan-and-pay feature.
                         </p>
-                        <h2>NepalPay QR</h2>
+                        <h2>NepalPay and Smart QR</h2>
                         <p>
-                          
-                        </p>
-                        <h2>Scan QR</h2>
-                        <p>
-
-                        </p>
+                          Leverage City Pay QR for effortless payments at merchants accepting NepalPay and Smart QR.</p>
                       </div>
                     </div>
                   </div>
