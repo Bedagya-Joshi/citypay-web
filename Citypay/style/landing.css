@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* height: auto; */
+}
+.header {
+  background-color: pink;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 84px;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+.nav {
+  display: none;
+}
+
+.nav.active {
+  display: block;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  background-color: pink;
+}
+
+.nav li {
+  padding: 10px;
+  text-align: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
