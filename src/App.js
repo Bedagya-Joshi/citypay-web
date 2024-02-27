@@ -291,7 +291,7 @@ const App = () => {
                   </div>
 
                   <div class="perks">
-                    <div className="title">
+                    <div className="title" style={{color: "#0d60b5"}}>
                       <h1>Perks</h1>
                     </div>
 
