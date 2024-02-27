@@ -293,8 +293,8 @@ const App = () => {
                     </div>
                   </div>
 
-                  <div class="perks" style={{ color: "" }}>
-                    <div className="title">
+                  <div class="perks">
+                    <div className="title" style={{ color: "#0d60b5" }}>
                       <h1>Perks</h1>
                     </div>
 
