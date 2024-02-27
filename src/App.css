@@ -214,8 +214,7 @@ div.news p.summary {
 }
 
 .fifth-container .grid-2 .landing-page-image .bankimage {
-  width: 120%;
-  height: 100%;
+  height: 60%;
 }
 
 .mid-container .grid-2 .landing-page-image .bankimage {
@@ -945,7 +944,7 @@ h4.navbarItems:hover {
 
   .fifth-container .grid-1 {
     margin: 1px;
-    width: calc(120% + 35px);
+    width: calc(120% + 15px);
   }
 
   .fifth-container .grid-2 .landing-page-image .bankimage {
@@ -1188,21 +1187,20 @@ h4.navbarItems:hover {
 
   .fifth-container .grid-1 {
     margin: 1px;
-    width: calc(120% + 55px);
+    width: calc(120% + 35px);
   }
 
   .fifth-container .grid-2 .landing-page-image .bankimage {
-    margin: 1px 1px 1px 100px;
-    width: 95%;
+    margin: 120px 1px 1px 90px;
+    width: 110%;
     bottom: 60px;
   }
 
   .fifth-container .grid-3 .landing-page-text {
     position: relative;
-    right: 40px;
     top: 45px;
     width: 90%;
-    margin: 1px 1px 1px 10px;
+    margin: 1px 1px 1px 35px;
     font-size: 0.89em;
   }
 

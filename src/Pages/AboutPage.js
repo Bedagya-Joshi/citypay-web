@@ -3,7 +3,7 @@ import ScrollToTop from "../Components/ScrollToTop";
 import "./aboutPage.css";
 
 import cityxp from "../Assets/cityexpress.png";
-import topimage from "../Assets/topimage-removebg.png";
+import topimage from "../Assets/About.png";
 
 const AboutPage = () => {
   return (
