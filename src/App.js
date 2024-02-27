@@ -198,7 +198,28 @@ const App = () => {
                         <img src={cell} alt="express" class="cell" />
                       </div>
                     </div>
+
+                    <div class="grid-3">
+                      <div className="bullet-text">
+                        <h2>City Pay QR</h2>
+                        <p>
+                          Helps you transfer funds to other wallet users with a simple scan of a QR.
+                        </p>
+                        <h2>NepalPay QR</h2>
+                        <p>
+                          
+                        </p>
+                        <h2>Scan QR</h2>
+                        <p>
+
+                        </p>
+                      </div>
+                    </div>
                   </div>
+
+
+
+
 
                   <div class="fifth-container">
                     <div class="grid-1">
