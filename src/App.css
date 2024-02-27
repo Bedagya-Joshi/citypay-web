@@ -5024,6 +5024,21 @@ h4.navbarItems:hover {
     bottom: 15px;
   }
 
+  .start-img {
+    width: 95%;
+    margin: 1px 122px 1px 1px;
+    position: relative;
+    right: 5px;
+  }
+
+  .start-img .start {
+    margin: 1px 1px 1px 13px;
+    width: 150%;
+    position: relative;
+    top: 30px;
+  }
+
+
   .Main-container,
   .mid-container,
   .lower-container,
