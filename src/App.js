@@ -11,6 +11,7 @@ import cell from "./Assets/cell.png";
 import bank from "./Assets/bank.png";
 import util from "./Assets/util.png";
 import remitance from "./Assets/remitance.png";
+import start from "./Assets/start.png";
 
 //Pages Import
 import ContactPage from "./Pages/ContactPage";
@@ -59,6 +60,10 @@ const App = () => {
                 <div class="body-container">
                   <div class="carousel-container">
                     <CarouselItem />
+                  </div>
+
+                  <div class="start-img">
+                    <img src={start} alt="bank" class="start" />
                   </div>
 
                   {/* Section 1 */}
