@@ -5,12 +5,12 @@ import "./App.css";
 import "./Components/footer.css";
 
 //Assets Import
-import bankvector from "./Assets/request.jpg";
 import cashinhand from "./Assets/payment.png";
 import cell from "./Assets/cell.png";
 import bank from "./Assets/bank.png";
 import util from "./Assets/util.png";
 import remitance from "./Assets/remitance.png";
+import start from "./Assets/start.png";
 
 //Pages Import
 import ContactPage from "./Pages/ContactPage";
@@ -59,6 +59,10 @@ const App = () => {
                 <div class="body-container">
                   <div class="carousel-container">
                     <CarouselItem />
+                  </div>
+
+                  <div class="start-img">
+                    <img src={start} alt="bank" class="start" />
                   </div>
 
                   {/* Section 1 */}
@@ -218,23 +222,26 @@ const App = () => {
                         transact at local businesses and merchants. Say goodbye
                         to cash hassles and embrace the ease of instant payments
                         with City Pay's seamless QR scanning technology.
-                        <br></br>
-                        <br></br>
-                        Our innovative Scan QR for Payment feature goes beyond
-                        in-app QR codes, allowing you to seamlessly transact
-                        with local businesses, stores, and merchants. Simply
-                        scan any available QR code, and experience the
-                        satisfaction of instant payment success. Whether you're
-                        shopping at your favorite neighborhood store or
-                        exploring new merchants, City Pay ensures a seamless
-                        payment experience with just a simple scan. Say goodbye
-                        to cash hassles and embrace the future of effortless
-                        transactions with City Pay.
                       </div>
                     </div>
                     <div class="grid-2">
                       <div className="landing-page-image">
                         <img src={cell} alt="express" class="cell" />
+                      </div>
+                    </div>
+
+                    <div class="grid-3">
+                      <div className="bullet-text">
+                        <h2>City Pay QR</h2>
+                        <p>
+                          Effortlessly send money to others using City Pay QR's
+                          seamless scan-and-pay feature.
+                        </p>
+                        <h2>NepalPay and Smart QR</h2>
+                        <p>
+                          Leverage City Pay QR for effortless payments at
+                          merchants accepting NepalPay and Smart QR.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -286,7 +293,7 @@ const App = () => {
                   </div>
 
                   <div class="perks">
-                    <div className="title">
+                    <div className="title" style={{ color: "#0d60b5" }}>
                       <h1>Perks</h1>
                     </div>
 
