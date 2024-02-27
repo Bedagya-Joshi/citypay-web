@@ -1499,7 +1499,7 @@ h4.navbarItems:hover {
     margin: 1px;
     border-radius: 5px;
     width: 12.8vh;
-    height: auto;
+    height: 4vh;
   }
 
   .Main-container,
@@ -1833,7 +1833,7 @@ h4.navbarItems:hover {
     margin: 1px;
     border-radius: 5px;
     width: 9.8vh;
-    height: auto;
+    height: 4vh;
   }
 
   .Main-container,
@@ -2138,7 +2138,7 @@ h4.navbarItems:hover {
     margin: 1px;
     border-radius: 5px;
     width: 9.8vh;
-    height: auto;
+    height: 3.8vh;
   }
 
   .Main-container,
