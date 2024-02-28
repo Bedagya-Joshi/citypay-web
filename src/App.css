@@ -605,7 +605,8 @@ h4.navbarItems:hover {
   }
 
 
-  .navMenu .playstore img, .navMenu .appstore img {
+  .navMenu .playstore img,
+  .navMenu .appstore img {
     margin: 1px;
     border-radius: 5px;
     width: 16.8vh;
