@@ -42,8 +42,8 @@ const CustomFooter = () => {
           textAlign: "left",
         }}
       >
-        <div class="infos">Email:citypaywallet@gmail.com</div>
-        <div class="infos">Tel No:+977 23213123321</div>
+        <div class="infos">Email: citywallet@ctxpress.com</div>
+        <div class="infos">Tel No: 00977-1-4531900 ext -116, 117, 162, 205</div>
         <div class="infos">Toll Free: +16600 11 12 13</div>
         <div class="infos">Location: Kamaladi, Kathmandu, Nepal</div>
       </div>

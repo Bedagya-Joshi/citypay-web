@@ -4,6 +4,9 @@ import "./aboutPage.css";
 
 import cityxp from "../Assets/cityexpress.png";
 import topimage from "../Assets/About.png";
+import what from "../Assets/wallet.png";
+import vision from "../Assets/vision.png";
+import mission from "../Assets/mission.png";
 
 const AboutPage = () => {
   return (
@@ -37,19 +40,23 @@ const AboutPage = () => {
         </div>
         <div className="sub-heading">
           <div className="what">
-            {/* <div class="icon">
+            <div class="icon">
               <img src={what} alt="wallet" class="wallet" />
-            </div> */}
+            </div>
+            <diV class="underline"></diV>
             <h2>What our wallet is about</h2>
             <p>
               City Wallet “CityPAY” is where seamless transactions meet
-              innovation. At CityPAY, we pride ourselves on redefining the way
-              you experience payments. As a leading player in the financial
-              technology landscape, we bring cutting-edge solutions to simplify
-              and elevate your payment experiences.
+              innovation. As a leading player in the financial technology
+              landscape, we bring cutting-edge solutions to simplify and elevate
+              your payment experiences.
             </p>
           </div>
           <div className="mission">
+            <div class="icon">
+              <img src={mission} alt="wallet" class="wallet" />
+            </div>
+            <diV class="underline"></diV>
             <h2>Our Mission</h2>
             <p>
               At the heart of CityPAY is a commitment to empower individuals and
@@ -60,10 +67,15 @@ const AboutPage = () => {
             </p>
           </div>
           <div className="vision">
+            <div class="icon">
+              <img src={vision} alt="wallet" class="wallet" />
+            </div>
+            <diV class="underline"></diV>
             <h2>Our vision for the future</h2>
             <p>
               As we continue to grow, our vision is to be the most preferred
-              payment application of remittance beneficiaries.
+              payment application of remittance beneficiaries. A Country wide
+              system that helps people access remittance services easily.
             </p>
           </div>
         </div>
@@ -108,7 +120,7 @@ const AboutPage = () => {
           <div className="promotors">
             <h1>Our Promoters:</h1>
             <div class="cityxp-logo">
-              <img src={cityxp} class="promoimg" alt="promo"/>
+              <img src={cityxp} class="promoimg" alt="promo" />
               <p>
                 CityPAY is promoted by City Express Money Transfer Pvt. Ltd, one
                 of the largest remittance service providers in Nepal. With over
