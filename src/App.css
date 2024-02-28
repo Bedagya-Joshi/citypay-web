@@ -11,10 +11,6 @@
   transition: all 0.2s linear;
 }
 
-/* .navbar_bot {
-  width: 100%;
-} */
-
 .body {
   display: flex;
   width: 100%;
@@ -50,11 +46,7 @@ div.news p.summary {
   margin-right: 16px;
   width: 1500px;
   height: 300px;
-  /* width: 400px;
-  height: 400px; */
 }
-
-/* css for app.js starts here */
 
 .body-container {
   width: 1190px;
@@ -193,7 +185,6 @@ div.news p.summary {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 16px;
-  /* padding: 85px; */
   margin: 0;
 }
 
@@ -229,7 +220,6 @@ div.news p.summary {
   -webkit-text-fill-color: transparent;
 }
 
-/*Perks*/
 .perks {
   font-family: "Work Sans";
   font-weight: 400;
@@ -260,7 +250,6 @@ div.news p.summary {
 }
 
 .perk-heading h2 {
-  /* font-size: 20px; */
   font-weight: 500;
   color: #0d60b5;
 }
@@ -394,7 +383,6 @@ h4.navbarItems:hover {
   height: 510px;
   padding: 0;
   border-image-slice: 10%;
-  /* position: relative; */
 }
 
 .landing-page-image {
@@ -429,10 +417,6 @@ h4.navbarItems:hover {
   text-align: justify;
   text-justify: inter-word;
 }
-
-
-
-/* Responsive Design*/
 
 @media (min-width: 721px) and (max-width: 2560px) {
   .start-img {
