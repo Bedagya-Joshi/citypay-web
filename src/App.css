@@ -605,7 +605,8 @@ h4.navbarItems:hover {
   }
 
 
-  .navMenu .playstore img, .navMenu .appstore img {
+  .navMenu .playstore img,
+  .navMenu .appstore img {
     margin: 1px;
     border-radius: 5px;
     width: 16.8vh;
@@ -3706,4 +3707,1961 @@ h4.navbarItems:hover {
     height: 55px;
     width: 55px;
     margin: 1px 1px 1px 1px;
-    padding: 2px 2px 2p
+    padding: 2px 2px 2px 2px;
+    position: relative;
+    right: 30px;
+    bottom: 5px;
+  }
+
+  .ContactUs {
+    position: relative;
+    right: 25px;
+  }
+
+  .social .social-logo {
+    height: 30px;
+    width: 30px;
+  }
+
+  .infos {
+    font-size: xx-small;
+  }
+
+  .Connect {
+    position: relative;
+    right: 35px;
+  }
+
+  .Connect .con {
+    font-size: xx-small;
+  }
+
+  .NavBar.Content {
+    position: relative;
+    left: -20px;
+    font-size: xx-small;
+  }
+
+  .Footer {
+    margin: 1px 1px 1px 1px;
+    position: relative;
+    left: 0px;
+    font-size: xx-small;
+  }
+
+  .carousel-container img.carouselimage {
+    display: none;
+  }
+}
+
+@media (max-width:420px) and (min-width:391px) {
+
+  .body-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .navbar_bot {
+    width: 100%;
+  }
+
+  .navMenu {
+    margin: 0px;
+  }
+
+  .navMenu .Logo-Image img {
+    width: 80px;
+    height: 80px;
+    margin: 1px 1px 1px 1px;
+    position: relative;
+    right: 12px;
+  }
+
+  .hamburgerIconContainer {
+    width: 100%;
+    margin: 1px 1px 1px 1px;
+  }
+
+  .hamburgerIconContainer .Logo-Image img {
+    display: none;
+  }
+
+  .hamburgerIconContainer svg {
+    height: 1.7em;
+    width: 3.3em;
+    margin: 1px 1px 1px 1px;
+    position: relative;
+    left: 50px;
+  }
+
+  .download {
+    margin: 1px 1px 1px 1px;
+    position: relative;
+    left: -70px;
+  }
+
+  .download .playstore img {
+    margin: 1px 1px 1px 1px;
+    border-radius: 5px;
+    width: 105px;
+    height: 35px;
+    position: relative;
+    top: 25px;
+
+  }
+
+  .download .appstore img {
+    margin: 1px 1px 1px 1px;
+    width: 105px;
+    height: 35px;
+    border-radius: 5px;
+    position: relative;
+    left: 135px;
+    bottom: 18px;
+  }
+
+  .start-img {
+    width: 100%;
+    margin: 1px 70px 1px 1px;
+    position: relative;
+    top: 80px;
+  }
+
+  .start-img .start {
+    margin: 1px 1px 1px 1px;
+    width: 120%;
+  }
+
+  .Main-container,
+  .mid-container,
+  .lower-container,
+  .fourth-container,
+  .fifth-container {
+    grid-template-columns: 1fr;
+  }
+
+  .Main-container {
+    margin: 100px 1px 5px 1px;
+    padding: 5px;
+    width: 85%;
+    position: relative;
+    right: 40px;
+  }
+
+  .Main-container .grid-1 .title {
+    padding: 0px;
+  }
+
+  .Main-container .grid-1 .title .highlight {
+    font-size: 1.1em;
+  }
+
+  .Main-container .grid-1 {
+    width: 100%;
+  }
+
+  .Main-container .grid-1 .landing-page-text {
+    width: 90%;
+  }
+
+  .Main-container .grid-1 .landing-page-text p,
+  h2 {
+    padding: 10px 1px 1px 1px;
+  }
+
+  .Main-container .grid-2 .landing-page-image .bankimage {
+    position: relative;
+    left: 0px;
+  }
+
+  .Main-container .grid-3 {
+    position: relative;
+    bottom: 60px;
+    font-size: 1.20em;
+  }
+
+  .Main-container .grid-3 .bullet-text {
+    margin: 5px 5px 5px 5px;
+    width: 100%;
+  }
+
+  .mid-container {
+    margin: 5px 1px 5px 1px;
+    padding: 2px;
+    position: relative;
+    left: 10px;
+    top: 10px;
+  }
+
+  .mid-container .grid-1 {
+    width: 95%;
+  }
+
+  .mid-container .grid-1 .title .highlight {
+    font-size: 1.0em;
+    right: 5px;
+    margin: 1px 10px 1px 1px;
+  }
+
+  .mid-container .grid-1 .title .lowlight {
+    font-size: 1.0em;
+    right: 5px;
+    margin: 1px 10px 1px 1px;
+  }
+
+  .mid-container .grid-1 .landing-page-text {
+    width: 95%;
+    left: 0px;
+  }
+
+  .mid-container .grid-2 {
+    height: 70%;
+    position: relative;
+    top: 0px;
+  }
+
+  .mid-container .grid-2 .landing-page-image .bankimage {
+    margin: 10px 1px 1px 35px;
+  }
+
+  .mid-container .grid-3 {
+    margin: 1px 1px 1px 1px;
+    position: relative;
+    left: 10px;
+    bottom: 100px;
+    font-size: 1.52em;
+    width: 90%;
+  }
+
+  .mid-container .grid-3 .bullet-text {
+    width: 95%;
+    left: 0px;
+    position: relative;
+    bottom: 100px;
+  }
+
+  .lower-container {
+    margin: 5px 1px 5px 1px;
+    padding: 5px;
+    position: relative;
+    left: 10px;
+    bottom: 130px;
+  }
+
+  .lower-container .grid-1 .title .highlight {
+    font-size: 1.45em;
+  }
+
+  .lower-container .grid-1 .landing-page-text {
+    width: 95%;
+  }
+
+  .lower-container .grid-2 {
+    height: 100%;
+    position: relative;
+    top: 20px;
+  }
+
+  .lower-container .grid-2 .landing-page-image .bankimage {
+    left: 165px;
+  }
+
+  .lower-container .grid-3 {
+    position: relative;
+    bottom: 0px;
+    font-size: 1.52em;
+  }
+
+  .lower-container .grid-3 .bullet-text {
+    width: 95%;
+    left: 55px;
+  }
+
+  .fourth-container {
+    margin: 5px 1px 5px 1px;
+    padding: 5px;
+    position: relative;
+    right: 35px;
+    bottom: 50px;
+    width: 80%;
+  }
+
+  .fourth-container .grid-1 .title .highlight {
+    font-size: 1.23em;
+  }
+
+  .fourth-container .grid-1 {
+    width: 100%;
+  }
+
+  .fourth-container .grid-1 .landing-page-text {
+    width: 100%;
+  }
+
+  .fourth-container .grid-2 {
+    height: 95%;
+    width: 70%;
+    position: relative;
+    top: 20px;
+  }
+
+  .fourth-container .grid-2 .landing-page-image .cell {
+    position: relative;
+    right: 40px;
+  }
+
+  .fifth-container {
+    margin: 5px 1px 5px 1px;
+    padding: 4px;
+    width: 85%;
+    position: relative;
+    top: 50px;
+  }
+
+  .fifth-container .grid-1 {
+    width: 95%;
+  }
+
+  .fifth-container .grid-1 .bullet-text {
+    width: 100%;
+  }
+
+  .fifth-container .grid-1 .title {
+    padding: 0px;
+  }
+
+  .fifth-container .grid-1 .title .business {
+    font-size: 1.5em;
+
+  }
+
+  .fifth-container .grid-2 {
+    height: 90%;
+    width: 60%;
+    position: relative;
+    left: 0px;
+    bottom: 40px;
+  }
+
+  .fifth-container .grid-2 .landing-page-image .bankimage {
+    width: 110%;
+    height: 70%;
+    margin: 30px 1px 1px 30px;
+    position: relative;
+    right: 50px;
+    bottom: 10px;
+  }
+
+  .fifth-container .grid-3 {
+    font-size: 1.52em;
+    width: 90%;
+    position: relative;
+    bottom: 210px;
+    right: 10px;
+  }
+
+  .fifth-container .grid-3 .landing-page-text {
+    width: 100%;
+    margin: 1px 1px 1px 10px;
+  }
+
+  .perks {
+    margin: 20px 20px 20px 20px;
+    padding: 10px 10px 10px 10px;
+    position: relative;
+    left: 20px;
+    bottom: 50px;
+  }
+
+  .perks .title {
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+  }
+
+  .perks .title h1 {
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    right: 10px;
+  }
+
+  .perks .perk-heading {
+    gap: 35px;
+    margin: 20px 0px 20px 135px;
+    padding: 0px;
+    width: 70%;
+    position: relative;
+    right: 5px;
+    grid-template-columns: 1fr;
+  }
+
+  .rewards,
+  .top-up,
+  .redefine {
+    position: relative;
+    right: 100px;
+    width: 260px;
+    height: 295px;
+    padding: 20px;
+  }
+
+  .rewards p {
+    font-size: 0.9em;
+  }
+
+  .rewards h2 {
+    font-size: 1.2em;
+  }
+
+  .top-up p {
+    font-size: 0.9em;
+  }
+
+  .top-up h2 {
+    font-size: 1.2em;
+  }
+
+  .redefine p {
+    font-size: 0.9em;
+  }
+
+  .redefine h2 {
+    font-size: 1.2em;
+  }
+
+  .ant-layout-footer {
+    margin: 1px 1px 1px 1px;
+  }
+
+  .Logo-Image .footer-img {
+    height: 65px;
+    width: 65px;
+    margin: 1px 1px 1px 1px;
+    position: relative;
+    right: 30px;
+    bottom: 2px;
+  }
+
+  .ContactUs {
+    position: relative;
+    right: 15px;
+  }
+
+  .infos {
+    font-size: 0.53em;
+  }
+
+  .Connect {
+    position: relative;
+    right: 25px;
+  }
+
+  .Connect .con {
+    font-size: 0.53em;
+    position: relative;
+  }
+
+  .NavBar.Content {
+    position: relative;
+    left: -18px;
+    font-size: 0.53em;
+  }
+
+  .Footer {
+    margin: 1px 1px 1px 1px;
+    position: relative;
+    left: 0px;
+    font-size: 0.53em;
+  }
+
+  .social .social-logo {
+    height: 30px;
+    width: 30px;
+  }
+
+  .carousel-container {
+    height: 5px;
+    width: 10px;
+  }
+
+  .carousel-container img.carouselimage {
+    display: none;
+  }
+
+}
+
+
+@media (max-width:390px) and (min-width:361px) {
+
+  .body-container {
+    width: 82%;
+    margin: 0;
+  }
+
+  .navbar_bot {
+    width: 100%;
+  }
+
+  .navMenu .Logo-Image img {
+    width: 70px;
+    height: 70px;
+    margin: 1px 1px 1px 1px;
+    position: relative;
+    right: 10px;
+  }
+
+  .hamburgerIconContainer {
+    width: 100%;
+    margin: 1px 1px 1px 1px;
+  }
+
+  .hamburgerIconContainer .Logo-Image img {
+    display: none;
+  }
+
+  .hamburgerIconContainer svg {
+    height: 1.7em;
+    width: 3.3em;
+    margin: 1px 1px 1px 1px;
+    position: relative;
+    left: 40px;
+  }
+
+  .download {
+    margin: 1px 1px 1px 1px;
+    position: relative;
+    right: 60px;
+  }
+
+  .download .playstore img {
+    margin: 1px 1px 1px 1px;
+    border-radius: 5px;
+    width: 90px;
+    height: 30px;
+    position: relative;
+    top: 20px;
+
+  }
+
+  .download .appstore img {
+    margin: 1px 1px 1px 1px;
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    position: relative;
+    left: 100px;
+    bottom: 18px;
+  }
+
+  .start-img {
+    width: 100%;
+    margin: 1px 80px 1px 1px;
+    position: relative;
+    right: 10px;
+  }
+
+  .start-img .start {
+    margin: 1px 1px 1px 13px;
+    width: 150%;
+    position: relative;
+    top: 60px;
+  }
+
+  .Main-container,
+  .mid-container,
+  .lower-container,
+  .fourth-container,
+  .fifth-container {
+    grid-template-columns: 1fr;
+  }
+
+  .Main-container {
+    margin: 1px 1px 5px 1px;
+    padding: 5px;
+    width: 80%;
+    position: relative;
+    right: 40px;
+    top: 100px;
+  }
+
+  .Main-container .grid-1 .title {
+    padding: 0px;
+  }
+
+  .Main-container .grid-1 .title .highlight {
+    font-size: 1.1em;
+  }
+
+  .Main-container .grid-1 {
+    width: 95%;
+  }
+
+  .Main-container .grid-1 .landing-page-text {
+    width: 85%;
+  }
+
+  .Main-container .grid-1 .landing-page-text p,
+  h2 {
+    padding: 10px 1px 1px 1px;
+  }
+
+  .Main-container .grid-2 {
+    width: 85%;
+  }
+
+  .Main-container .grid-2 .landing-page-image .bankimage {
+    position: relative;
+    right: 15px;
+  }
+
+  .Main-container .grid-3 {
+    position: relative;
+    bottom: 60px;
+    font-size: 1.20em;
+  }
+
+  .Main-container .grid-3 .bullet-text {
+    margin: 5px 5px 5px 5px;
+    width: 85%;
+  }
+
+  .mid-container {
+    margin: 5px 1px 5px 1px;
+    padding: 2px;
+    position: relative;
+    width: 80%;
+    right: 40px;
+    top: 80px;
+  }
+
+  .mid-container .grid-1 {
+    width: 95%;
+  }
+
+  .mid-container .grid-1 .title .highlight {
+    font-size: 1.0em;
+    right: 5px;
+    margin: 1px 10px 1px 1px;
+  }
+
+  .mid-container .grid-1 .title .lowlight {
+    font-size: 1.0em;
+    right: 5px;
+    margin: 1px 10px 1px 1px;
+  }
+
+  .mid-container .grid-1 .landing-page-text {
+    width: 90%;
+    left: 0px;
+  }
+
+  .mid-container .grid-2 {
+    height: 70%;
+    position: relative;
+    top: 0px;
+  }
+
+  .mid-container .grid-2 .landing-page-image .bankimage {
+    margin: 10px 1px 1px 35px;
+  }
+
+  .mid-container .grid-3 {
+    margin: 1px 1px 1px 1px;
+    position: relative;
+    left: 10px;
+    bottom: 100px;
+    font-size: 1.52em;
+    width: 90%;
+  }
+
+  .mid-container .grid-3 .bullet-text {
+    width: 95%;
+    left: 0px;
+    position: relative;
+    bottom: 100px;
+  }
+
+  .lower-container {
+    margin: 5px 1px 5px 1px;
+    padding: 5px;
+    width: 80%;
+    position: relative;
+    right: 50px;
+    bottom: 70px;
+  }
+
+  .lower-container .grid-1 .title .highlight {
+    font-size: 1.45em;
+  }
+
+  .lower-container .grid-1 .landing-page-text {
+    width: 95%;
+  }
+
+  .lower-container .grid-2 {
+    height: 100%;
+    position: relative;
+    top: 20px;
+  }
+
+  .lower-container .grid-2 .landing-page-image .bankimage {
+    left: 165px;
+  }
+
+  .lower-container .grid-3 {
+    position: relative;
+    bottom: 0px;
+    font-size: 1.52em;
+  }
+
+  .lower-container .grid-3 .bullet-text {
+    width: 95%;
+    left: 55px;
+  }
+
+  .fourth-container {
+    margin: 5px 1px 5px 1px;
+    padding: 5px;
+    position: relative;
+    right: 35px;
+    bottom: 30px;
+    width: 80%;
+  }
+
+  .fourth-container .grid-1 .title .highlight {
+    font-size: 1.23em;
+  }
+
+  .fourth-container .grid-1 {
+    width: 100%;
+  }
+
+  .fourth-container .grid-1 .landing-page-text {
+    width: 100%;
+  }
+
+  .fourth-container .grid-2 {
+    height: 95%;
+    width: 70%;
+    position: relative;
+    top: 20px;
+  }
+
+  .fourth-container .grid-2 .landing-page-image .cell {
+    position: relative;
+    right: 40px;
+  }
+
+  .fifth-container {
+    margin: 5px 1px 5px 0px;
+    padding: 4px;
+    width: 85%;
+    position: relative;
+    top: 50px;
+    right: 20px;
+  }
+
+  .fifth-container .grid-1 {
+    width: 95%;
+  }
+
+  .fifth-container .grid-1 .bullet-text {
+    width: 100%;
+  }
+
+  .fifth-container .grid-1 .title {
+    padding: 0px;
+  }
+
+  .fifth-container .grid-1 .title .business {
+    font-size: 1.5em;
+
+  }
+
+  .fifth-container .grid-2 {
+    height: 90%;
+    width: 60%;
+    position: relative;
+    left: 0px;
+    bottom: 40px;
+  }
+
+  .fifth-container .grid-2 .landing-page-image .bankimage {
+    width: 100%;
+    height: 65%;
+    margin: 30px 1px 1px 30px;
+    position: relative;
+    right: 30px;
+    bottom: 10px;
+  }
+
+  .fifth-container .grid-3 {
+    font-size: 1.52em;
+    width: 90%;
+    position: relative;
+    bottom: 235px;
+    right: 10px;
+  }
+
+  .fifth-container .grid-3 .landing-page-text {
+    width: 100%;
+    margin: 1px 1px 1px 10px;
+  }
+
+  .perks {
+    margin: 20px 20px 20px 55px;
+    padding: 10px 10px 10px 10px;
+    position: relative;
+    left: 5px;
+  }
+
+  .perks .title {
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+  }
+
+  .perks .title h1 {
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    right: 10px;
+  }
+
+  .perks .perk-heading {
+    gap: 35px;
+    margin: 20px 0px 20px 135px;
+    padding: 0px;
+    width: 70%;
+    position: relative;
+    right: 115px;
+    grid-template-columns: 1fr;
+  }
+
+  .rewards,
+  .top-up,
+  .redefine {
+    position: relative;
+    right: 0px;
+    width: 260px;
+    height: 295px;
+    padding: 20px;
+  }
+
+  .rewards p {
+    font-size: 0.9em;
+  }
+
+  .rewards h2 {
+    font-size: 1.2em;
+  }
+
+  .top-up p {
+    font-size: 0.9em;
+  }
+
+  .top-up h2 {
+    font-size: 1.2em;
+  }
+
+  .redefine p {
+    font-size: 0.9em;
+  }
+
+  .redefine h2 {
+    font-size: 1.2em;
+  }
+
+  .ant-layout-footer {
+    margin: 1px 1px 1px 1px;
+  }
+
+  .Logo-Image .footer-img {
+    height: 60px;
+    width: 60px;
+    margin: 1px 1px 1px 1px;
+    position: relative;
+    right: 20px;
+    bottom: 2px;
+  }
+
+  .ContactUs {
+    font-size: 0.53em;
+    position: relative;
+    right: 10px;
+  }
+
+  .Connect {
+    position: relative;
+    right: 20px;
+  }
+
+  .Connect .con {
+    font-size: 0.53em;
+    position: relative;
+  }
+
+  .NavBar.Content {
+    position: relative;
+    left: -12px;
+    font-size: 0.53em;
+  }
+
+  .Footer {
+    margin: 1px 1px 1px 1px;
+    position: relative;
+    left: 5px;
+    font-size: 0.53em;
+  }
+
+  .social .social-logo {
+    height: 30px;
+    width: 30px;
+  }
+
+  .infos {
+    font-size: 0.52em;
+  }
+
+  .carousel-container {
+    height: 5px;
+    width: 10px;
+  }
+
+  .carousel-container img.carouselimage {
+    display: none;
+  }
+}
+
+@media(max-width:360px) and (min-width:321px) {
+
+  .body-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .navbar_bot {
+    width: 100%;
+  }
+
+  .navMenu {
+    height: 98px;
+    margin: 1px 1px 1px 1px;
+    padding: 2px 2px 2px 2px;
+  }
+
+  .navMenu .Logo-Image img {
+    width: 70px;
+    height: 70px;
+    margin: 6px 1px 1px 1px;
+    position: relative;
+    left: 7px;
+    bottom: 3px;
+  }
+
+  .hamburgerIconContainer .Logo-Image img {
+    display: none;
+  }
+
+  .hamburgerIconContainer {
+    width: 100%;
+    margin: 1px 1px 1px 1px;
+  }
+
+  .hamburgerIconContainer svg {
+    height: 1.5em;
+    width: 3.3em;
+    margin: 1px 1px 1px 15px;
+    position: relative;
+    left: 30px;
+  }
+
+  .download {
+    margin: 1px 1px 1px 1px;
+    position: relative;
+    right: 45px;
+  }
+
+  .download .playstore img {
+    margin: 1px 1px 1px 1px;
+    border-radius: 5px;
+    width: 75px;
+    height: 30px;
+    position: relative;
+    top: 23px;
+
+  }
+
+  .download .appstore img {
+    margin: 1px 1px 1px 1px;
+    width: 75px;
+    height: 30px;
+    border-radius: 5px;
+    position: relative;
+    left: 90px;
+    bottom: 15px;
+  }
+
+  .start-img {
+    width: 100%;
+    margin: 1px 135px 1px 1px;
+  }
+
+  .start-img .start {
+    margin: 1px 1px 1px 22px;
+    width: 135%;
+    position: relative;
+    top: 60px;
+  }
+
+
+  .Main-container,
+  .mid-container,
+  .lower-container,
+  .fourth-container,
+  .fifth-container {
+    grid-template-columns: 1fr;
+  }
+
+  .Main-container {
+    margin: 15px 1px 5px 45px;
+    padding: 5px;
+    width: 80%;
+    position: relative;
+    right: 50px;
+    top: 100px;
+  }
+
+  .Main-container .grid-1 .title {
+    padding: 0px;
+  }
+
+  .Main-container .grid-1 .title .highlight {
+    font-size: 0.9em;
+  }
+
+  .Main-container .grid-1 {
+    width: 80%;
+  }
+
+  .Main-container .grid-1 .landing-page-text {
+    width: 100%;
+  }
+
+  .Main-container .grid-1 .landing-page-text p,
+  h2 {
+    padding: 10px 1px 1px 1px;
+    font-size: 0.78em;
+  }
+
+  .Main-container .grid-2 {
+    width: 75%;
+    height: 88%;
+    position: relative;
+    bottom: 30px;
+    left: 10px;
+  }
+
+  .Main-container .grid-2 .landing-page-image .bankimage {
+    position: relative;
+    right: 30px;
+    top: 15px;
+    width: 80%;
+    height: 90%;
+  }
+
+  .Main-container .grid-3 {
+    position: relative;
+    bottom: 150px;
+    font-size: 0.9em;
+    width: 80%;
+  }
+
+  .Main-container .grid-3 .bullet-text {
+    margin: 5px 5px 5px 5px;
+    width: 100%;
+    font-weight: normal;
+  }
+
+  .mid-container {
+    margin: 5px 1px 5px 40px;
+    padding: 2px;
+    position: relative;
+    right: 35px;
+    width: 90%;
+    top: 220px;
+  }
+
+  .mid-container .grid-1 {
+    width: 80%;
+    position: relative;
+    left: 5px;
+    bottom: 150px;
+  }
+
+  .mid-container .grid-1 .title .highlight {
+    font-size: 0.8em;
+    right: 5px;
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+  }
+
+  .mid-container .grid-1 .title .lowlight {
+    font-size: 0.8em;
+    right: 5px;
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+
+  }
+
+  .mid-container .grid-1 .landing-page-text {
+    width: 100%;
+    left: 0px;
+    font-size: 0.78em;
+  }
+
+  .mid-container .grid-2 {
+    height: 70%;
+    position: relative;
+    right: 10px;
+    bottom: 170px;
+    width: 85%;
+  }
+
+  .mid-container .grid-2 .landing-page-image .bankimage {
+    margin: 10px 1px 1px 1px;
+    width: 80%;
+    position: relative;
+    left: 20px;
+    height: 90%;
+  }
+
+  .mid-container .grid-3 {
+    margin: 1px 1px 1px 1px;
+    position: relative;
+    left: 10px;
+    bottom: 440px;
+    width: 85%;
+  }
+
+  .mid-container .grid-3 .bullet-text h2 {
+    font-size: 0.87em;
+  }
+
+  .mid-container .grid-3 .bullet-text p {
+    width: 100%;
+    left: 0px;
+    position: relative;
+    top: 5px;
+    font-size: 0.78em;
+  }
+
+  .lower-container {
+    margin: 5px 1px 1px 50px;
+    width: 90%;
+    padding: 5px;
+    position: relative;
+    right: 40px;
+    bottom: 100px;
+  }
+
+  .lower-container .grid-1 {
+    width: 80%;
+    position: relative;
+    left: 5px;
+  }
+
+  .lower-container .grid-1 .title .highlight {
+    font-size: 0.99em;
+  }
+
+  .lower-container .grid-1 .landing-page-text {
+    width: 95%;
+    font-size: 0.78em;
+  }
+
+  .lower-container .grid-2 {
+    height: 95%;
+    width: 65%;
+    position: relative;
+    bottom: 60px;
+    left: 5px;
+  }
+
+  .lower-container .grid-2 .landing-page-image .bankimage {
+    position: relative;
+    right: 25px;
+    top: 50px;
+    width: 80%;
+    height: 80%;
+  }
+
+  .lower-container .grid-3 {
+    position: relative;
+    bottom: 185px;
+    width: 90%;
+  }
+
+  .lower-container .grid-3 .bullet-text h2 {
+    font-size: 0.92em;
+  }
+
+  .lower-container .grid-3 .bullet-text p {
+    width: 100%;
+    left: 55px;
+    font-size: 0.78em;
+  }
+
+  .fourth-container {
+    margin: 5px 1px 5px 15px;
+    padding: 5px;
+    position: relative;
+    right: 35px;
+    width: 80%;
+    bottom: 180px;
+  }
+
+  .fourth-container .grid-1 .title .highlight {
+    font-size: 0.95em;
+  }
+
+  .fourth-container .grid-1 .title .lowlight {
+    font-size: 0.95em;
+  }
+
+  .fourth-container .grid-1 {
+    width: 90%;
+  }
+
+  .fourth-container .grid-1 .landing-page-text {
+    width: 95%;
+    font-size: 0.78em;
+  }
+
+  .fourth-container .grid-2 {
+    height: 70%;
+    width: 70%;
+    position: relative;
+    left: 30px;
+    top: 30px;
+  }
+
+  .fourth-container .grid-2 .landing-page-image .cell {
+    position: relative;
+    margin: 1px;
+    right: 40px;
+    width: 100%;
+    height: 110%;
+  }
+
+  .fourth-container .grid-3 {
+    position: relative;
+    left: 10px;
+    bottom: 65px;
+    width: 95%;
+    margin: 5px 1px 1px 1px;
+  }
+
+  .fifth-container {
+    margin: 5px 1px 5px 15px;
+    padding: 4px;
+    width: 85%;
+    position: relative;
+    right: 20px;
+    bottom: 100px;
+  }
+
+  .fifth-container .grid-1 {
+    width: 90%;
+    position: relative;
+    right: 10px;
+  }
+
+  .fifth-container .grid-1 .bullet-text h2 {
+    font-size: 0.87em;
+  }
+
+  .fifth-container .grid-1 .bullet-text p {
+    width: 100%;
+    font-size: 0.78em;
+  }
+
+  .fifth-container .grid-1 .title {
+    padding: 0px;
+  }
+
+  .fifth-container .grid-1 .title .business {
+    font-size: 0.98em;
+
+  }
+
+  .fifth-container .grid-2 {
+    margin: 1px;
+    height: 90%;
+    width: 70%;
+    position: relative;
+    left: 45px;
+    bottom: 10px;
+  }
+
+  .fifth-container .grid-2 .landing-page-image .bankimage {
+    width: 100%;
+    height: 65%;
+    margin: 30px 1px 1px 30px;
+    position: relative;
+    right: 90px;
+    bottom: 35px;
+  }
+
+  .fifth-container .grid-3 {
+    width: 90%;
+    position: relative;
+    bottom: 225px;
+    right: 10px;
+  }
+
+  .fifth-container .grid-3 .landing-page-text {
+    width: 100%;
+    margin: 1px;
+    font-size: 0.78em;
+  }
+
+
+  .perks {
+    margin: 20px 20px 20px 40px;
+    padding: 10px 10px 10px 10px;
+    position: relative;
+    left: 5px;
+    bottom: 50px;
+  }
+
+  .perks .title {
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+  }
+
+  .perks .title h1 {
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    right: 10px;
+  }
+
+  .perks .perk-heading {
+    gap: 35px;
+    margin: 20px 0px 20px 100px;
+    padding: 0px;
+    width: 70%;
+    position: relative;
+    left: 4px;
+    grid-template-columns: 1fr;
+  }
+
+  .rewards,
+  .top-up,
+  .redefine {
+    position: relative;
+    right: 100px;
+    width: 235px;
+    height: 320px;
+    padding: 20px;
+  }
+
+  .rewards p {
+    font-size: 0.9em;
+  }
+
+  .rewards h2 {
+    font-size: 1.2em;
+  }
+
+  .top-up p {
+    font-size: 0.9em;
+  }
+
+  .top-up h2 {
+    font-size: 1.2em;
+  }
+
+  .redefine p {
+    font-size: 0.9em;
+  }
+
+  .redefine h2 {
+    font-size: 1.2em;
+  }
+
+  .ant-layout-footer {
+    margin: 1px 1px 1px 1px;
+  }
+
+  .Logo-Image .footer-img {
+    height: 45px;
+    width: 45px;
+    margin: 1px 1px 1px 1px;
+    position: relative;
+    right: 25px;
+    bottom: 2px;
+  }
+
+  .ContactUs {
+    font-size: 0.53em;
+    position: relative;
+    right: 10px;
+  }
+
+  .Connect {
+    position: relative;
+    right: 25px;
+  }
+
+  .Connect .con {
+    font-size: 0.42em;
+    position: relative;
+  }
+
+  .NavBar.Content {
+    position: relative;
+    right: 20px;
+    font-size: 0.48em;
+  }
+
+  .Footer {
+    margin: 1px 1px 1px 1px;
+    position: relative;
+    right: 10px;
+    font-size: 0.48em;
+  }
+
+  .social .social-logo {
+    height: 20px;
+    width: 20px;
+  }
+
+  .infos {
+    font-size: 0.52em;
+    padding: 0px;
+  }
+
+  .carousel-container {
+    height: 5px;
+    width: 10px;
+  }
+
+  .carousel-container img.carouselimage {
+    display: none;
+  }
+}
+
+@media (max-width:320px) and (min-width: 280px) {
+
+  .body-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .navbar_bot {
+    width: 100%;
+  }
+
+  .navMenu {
+    height: 98px;
+    margin: 1px 1px 1px 1px;
+    padding: 2px 2px 2px 2px;
+  }
+
+  .navMenu .Logo-Image img {
+    width: 65px;
+    height: 65px;
+    margin: 6px 1px 1px 1px;
+    position: relative;
+    left: 20px;
+    bottom: 3px;
+  }
+
+  .hamburgerIconContainer .Logo-Image img {
+    display: none;
+  }
+
+  .hamburgerIconContainer {
+    width: 100%;
+    margin: 1px 1px 1px 1px;
+  }
+
+  .hamburgerIconContainer svg {
+    height: 1.5em;
+    width: 3.3em;
+    margin: 1px 1px 1px 1px;
+    position: relative;
+    left: 30px;
+  }
+
+  .download {
+    margin: 1px 1px 1px 15px;
+    position: relative;
+    right: 50px;
+  }
+
+  .download .playstore img {
+    margin: 1px 1px 1px 1px;
+    border-radius: 5px;
+    width: 75px;
+    height: 30px;
+    position: relative;
+    top: 23px;
+
+  }
+
+  .download .appstore img {
+    margin: 1px 1px 1px 1px;
+    width: 75px;
+    height: 30px;
+    border-radius: 5px;
+    position: relative;
+    left: 90px;
+    bottom: 15px;
+  }
+
+  .start-img {
+    width: 95%;
+    margin: 1px 122px 1px 1px;
+    position: relative;
+    right: 5px;
+  }
+
+  .start-img .start {
+    margin: 1px 1px 1px 13px;
+    width: 150%;
+    position: relative;
+    top: 30px;
+  }
+
+
+  .Main-container,
+  .mid-container,
+  .lower-container,
+  .fourth-container,
+  .fifth-container {
+    grid-template-columns: 1fr;
+  }
+
+  .Main-container {
+    margin: 15px 1px 5px 45px;
+    padding: 5px;
+    width: 80%;
+    position: relative;
+    right: 65px;
+  }
+
+  .Main-container .grid-1 .title {
+    padding: 0px;
+  }
+
+  .Main-container .grid-1 .title .highlight {
+    font-size: 0.9em;
+  }
+
+  .Main-container .grid-1 {
+    width: 80%;
+  }
+
+  .Main-container .grid-1 .landing-page-text {
+    width: 100%;
+  }
+
+  .Main-container .grid-1 .landing-page-text p,
+  h2 {
+    padding: 10px 1px 1px 1px;
+    font-size: 0.78em;
+  }
+
+  .Main-container .grid-2 {
+    width: 75%;
+    height: 88%;
+    position: relative;
+    bottom: 40px;
+    left: 10px;
+  }
+
+  .Main-container .grid-2 .landing-page-image .bankimage {
+    position: relative;
+    right: 30px;
+    top: 15px;
+    width: 80%;
+    height: 90%;
+  }
+
+  .Main-container .grid-3 {
+    position: relative;
+    bottom: 150px;
+    right: 10px;
+    font-size: 0.9em;
+    width: 95%;
+  }
+
+  .Main-container .grid-3 .bullet-text {
+    margin: 5px 5px 5px 5px;
+    width: 100%;
+    font-weight: normal;
+  }
+
+  .mid-container {
+    margin: 5px 1px 5px 40px;
+    padding: 2px;
+    position: relative;
+    right: 50px;
+    width: 90%;
+  }
+
+  .mid-container .grid-1 {
+    width: 80%;
+    position: relative;
+    left: 5px;
+  }
+
+  .mid-container .grid-1 .title .highlight {
+    font-size: 0.8em;
+    right: 5px;
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+  }
+
+  .mid-container .grid-1 .title .lowlight {
+    font-size: 0.8em;
+    right: 5px;
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+
+  }
+
+  .mid-container .grid-1 .landing-page-text {
+    width: 100%;
+    left: 0px;
+    font-size: 0.78em;
+  }
+
+  .mid-container .grid-2 {
+    height: 70%;
+    position: relative;
+    right: 10px;
+    top: 0px;
+    width: 85%;
+  }
+
+  .mid-container .grid-2 .landing-page-image .bankimage {
+    margin: 10px 1px 1px 1px;
+    width: 80%;
+    position: relative;
+    left: 20px;
+    height: 90%;
+  }
+
+  .mid-container .grid-3 {
+    margin: 1px 1px 1px 1px;
+    position: relative;
+    left: 10px;
+    bottom: 210px;
+    width: 85%;
+  }
+
+  .mid-container .grid-3 .bullet-text h2 {
+    font-size: 0.87em;
+  }
+
+  .mid-container .grid-3 .bullet-text p {
+    width: 100%;
+    left: 0px;
+    position: relative;
+    top: 5px;
+    font-size: 0.78em;
+  }
+
+  .lower-container {
+    margin: 5px 1px 1px 50px;
+    width: 90%;
+    padding: 5px;
+    position: relative;
+    right: 60px;
+  }
+
+  .lower-container .grid-1 {
+    width: 80%;
+    position: relative;
+    left: 5px;
+  }
+
+  .lower-container .grid-1 .title .highlight {
+    font-size: 0.99em;
+  }
+
+  .lower-container .grid-1 .landing-page-text {
+    width: 95%;
+    font-size: 0.78em;
+  }
+
+  .lower-container .grid-2 {
+    height: 95%;
+    width: 65%;
+    position: relative;
+    bottom: 60px;
+    left: 5px;
+  }
+
+  .lower-container .grid-2 .landing-page-image .bankimage {
+    position: relative;
+    right: 25px;
+    top: 50px;
+    width: 80%;
+    height: 80%;
+  }
+
+  .lower-container .grid-3 {
+    position: relative;
+    bottom: 185px;
+    width: 90%;
+  }
+
+  .lower-container .grid-3 .bullet-text h2 {
+    font-size: 0.92em;
+  }
+
+  .lower-container .grid-3 .bullet-text p {
+    width: 100%;
+    left: 55px;
+    font-size: 0.78em;
+  }
+
+  .fourth-container {
+    margin: 5px 1px 5px 15px;
+    padding: 5px;
+    position: relative;
+    right: 50px;
+    width: 80%;
+  }
+
+  .fourth-container .grid-1 .title .highlight {
+    font-size: 0.95em;
+  }
+
+  .fourth-container .grid-1 .title .lowlight {
+    font-size: 0.95em;
+  }
+
+  .fourth-container .grid-1 {
+    width: 90%;
+  }
+
+  .fourth-container .grid-1 .landing-page-text {
+    width: 95%;
+    font-size: 0.78em;
+  }
+
+  .fourth-container .grid-2 {
+    height: 70%;
+    width: 70%;
+    position: relative;
+    left: 30px;
+    bottom: 20px;
+  }
+
+  .fourth-container .grid-2 .landing-page-image {
+    position: relative;
+    right: 30px;
+  }
+
+  .fourth-container .grid-2 .landing-page-image .cell {
+    position: relative;
+    margin: 1px;
+    left: 10px;
+    width: 80%;
+    height: 100%;
+  }
+
+  .fourth-container .grid-3 {
+    position: relative;
+    left: 10px;
+    bottom: 200px;
+    width: 85%;
+    margin: 5px 1px 1px 1px;
+  }
+
+  .fifth-container {
+    margin: 5px 1px 5px 15px;
+    padding: 4px;
+    width: 85%;
+    position: relative;
+    right: 35px;
+  }
+
+  .fifth-container .grid-1 {
+    width: 90%;
+    position: relative;
+    right: 10px;
+  }
+
+  .fifth-container .grid-1 .bullet-text h2 {
+    font-size: 0.87em;
+  }
+
+  .fifth-container .grid-1 .bullet-text p {
+    width: 100%;
+    font-size: 0.78em;
+  }
+
+  .fifth-container .grid-1 .title {
+    padding: 0px;
+  }
+
+  .fifth-container .grid-1 .title .business {
+    font-size: 0.98em;
+
+  }
+
+  .fifth-container .grid-2 {
+    margin: 1px;
+    height: 90%;
+    width: 70%;
+    position: relative;
+    left: 45px;
+    bottom: 40px;
+  }
+
+  .fifth-container .landing-page-image {
+    position: relative;
+    right: 50px;
+  }
+
+  .fifth-container .grid-2 .landing-page-image .bankimage {
+    width: 100%;
+    height: 65%;
+    margin: 30px 1px 1px 30px;
+    position: relative;
+    right: 40px;
+    bottom: 35px;
+  }
+
+  .fifth-container .grid-3 {
+    width: 90%;
+    position: relative;
+    bottom: 270px;
+    right: 10px;
+  }
+
+  .fifth-container .grid-3 .landing-page-text {
+    width: 100%;
+    margin: 1px;
+    font-size: 0.78em;
+  }
+
+
+  .perks {
+    margin: 20px 20px 20px 40px;
+    padding: 10px 10px 10px 10px;
+    position: relative;
+    left: 5px;
+  }
+
+  .perks .title {
+    margin: 1px 1px 1px 1px;
+    padding: 0px;
+  }
+
+  .perks .title h1 {
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    right: 10px;
+  }
+
+  .perks .perk-heading {
+    gap: 35px;
+    margin: 20px 0px 20px 0px;
+    padding: 0px;
+    width: 100%;
+    position: relative;
+    right: 7px;
+    grid-template-columns: 1fr;
+  }
+
+  .rewards,
+  .top-up,
+  .redefine {
+    position: relative;
+    right: 15px;
+    width: 235px;
+    height: 320px;
+    padding: 20px;
+  }
+
+  .rewards p {
+    font-size: 0.9em;
+  }
+
+  .rewards h2 {
+    font-size: 1.2em;
+  }
+
+  .top-up p {
+    font-size: 0.9em;
+  }
+
+  .top-up h2 {
+    font-size: 1.2em;
+  }
+
+  .redefine p {
+    font-size: 0.9em;
+  }
+
+  .redefine h2 {
+    font-size: 1.2em;
+  }
+
+  .ant-layout-footer {
+    margin: 1px 1px 1px 1px;
+  }
+
+  .Logo-Image .footer-img {
+    height: 45px;
+    width: 45px;
+    margin: 1px 1px 1px 1px;
+    position: relative;
+    right: 17px;
+    bottom: 2px;
+  }
+
+  .ContactUs {
+    font-size: 0.53em;
+    position: relative;
+    right: 10px;
+  }
+
+  .Connect {
+    position: relative;
+    right: 25px;
+  }
+
+  .Connect .con {
+    font-size: 0.42em;
+    position: relative;
+  }
+
+  .NavBar.Content {
+    position: relative;
+    right: 20px;
+    font-size: 0.48em;
+  }
+
+  .Footer {
+    margin: 1px 1px 1px 1px;
+    position: relative;
+    right: 10px;
+    font-size: 0.48em;
+  }
+
+  .social .social-logo {
+    height: 20px;
+    width: 20px;
+  }
+
+  .infos {
+    font-size: 0.52em;
+    padding: 0px;
+  }
+
+}
