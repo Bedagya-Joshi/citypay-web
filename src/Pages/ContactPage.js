@@ -6,7 +6,7 @@ const ContactPage = () => {
     <div className="contact">
 
       <div>
-        <h2>City Wallet Private Limited</h2><br></br>
+        <h2>City Wallet Pvt. Ltd.</h2><br></br>
         <div className="Office">
           <h3>Registered Office</h3>
           <p>City Express Complex, 5th Floor</p>

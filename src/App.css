@@ -459,8 +459,8 @@ h4.navbarItems:hover {
   .navMenu .appstore img {
     margin: 1px;
     border-radius: 5px;
-    width: 15.8vh;
-    height: 5.3vh;
+    width: 16.8vh;
+    height: 6.3vh;
   }
 
   .Main-container .grid-1 .landing-page-text p,
@@ -605,12 +605,11 @@ h4.navbarItems:hover {
   }
 
 
-  .navMenu .playstore img,
-  .navMenu .appstore img {
+  .navMenu .playstore img, .navMenu .appstore img {
     margin: 1px;
     border-radius: 5px;
-    width: 15.8vh;
-    height: 5.3vh;
+    width: 16.8vh;
+    height: 6.3vh;
   }
 
   .Main-container .grid-1 .landing-page-text p,
@@ -766,8 +765,8 @@ h4.navbarItems:hover {
   .navMenu .appstore img {
     margin: 1px;
     border-radius: 5px;
-    width: 12.8vh;
-    height: 4.3vh;
+    width: 16.8vh;
+    height: 6.3vh;
   }
 
   .Main-container,
@@ -1031,8 +1030,8 @@ h4.navbarItems:hover {
   .navMenu .appstore img {
     margin: 1px;
     border-radius: 5px;
-    width: 12.8vh;
-    height: 4.3vh;
+    width: 16.8vh;
+    height: 6.3vh;
   }
 
   .Main-container,
@@ -1291,8 +1290,8 @@ h4.navbarItems:hover {
   .navMenu .appstore img {
     margin: 1px;
     border-radius: 5px;
-    width: 12.8vh;
-    height: 4.3vh;
+    width: 16.8vh;
+    height: 6.3vh;
   }
 
   .Main-container,
@@ -1537,8 +1536,8 @@ h4.navbarItems:hover {
   .navMenu .appstore img {
     margin: 1px;
     border-radius: 5px;
-    width: 12.8vh;
-    height: 4.3vh;
+    width: 16.8vh;
+    height: 6.3vh;
   }
 
   .Main-container,
@@ -1873,8 +1872,8 @@ h4.navbarItems:hover {
   .navMenu .appstore img {
     margin: 1px;
     border-radius: 5px;
-    width: 9.9vh;
-    height: 3.9vh;
+    width: 16.8vh;
+    height: 6.9vh;
   }
 
   .Main-container,
@@ -2183,8 +2182,8 @@ h4.navbarItems:hover {
   .navMenu .appstore img {
     margin: 1px;
     border-radius: 5px;
-    width: 9.8vh;
-    height: 3.8vh;
+    width: 16.8vh;
+    height: 6.8vh;
   }
 
   .Main-container,
