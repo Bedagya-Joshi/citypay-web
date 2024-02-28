@@ -310,7 +310,7 @@ const App = () => {
                           experience is not only fulfilling but also rewarding.
                           Earn a thrilling 25 points for every successful
                           referral. Earn a thrilling 25 points for every
-                          successful referral
+                          successful referral.
                         </p>
                       </div>
 
