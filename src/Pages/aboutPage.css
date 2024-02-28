@@ -1,108 +1,108 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap");
 
 * {
-    font-family: "Work Sans", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    outline: none;
-    border: none;
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
 }
 
 .top-section {
-    width: 100%;
-    height: 600px;
-    background: linear-gradient(#0e83e3, #65c7f7, #88e7f8);
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 40px;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(#0e83e3, #65c7f7, #88e7f8);
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 40px;
 }
 
 .top-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 35px;
 }
 
 .top-content h1 {
-    color: white;
-    font-size: 110px;
-    text-decoration: underline 15px;
+  color: white;
+  font-size: 110px;
+  text-decoration: underline 15px;
 }
 
 .top-paragraph {
-    width: 450px;
-    color: black;
-    line-height: 1.7rem;
+  width: 450px;
+  color: black;
+  line-height: 1.7rem;
 }
 
 .top-paragraph h3 {
-    font-family: "Work Sans", serif;
-    font-weight: 450;
+  font-family: "Work Sans", serif;
+  font-weight: 450;
 }
 
 .top-image {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .top-image img {
-    width: 100%;
-    height: auto;
-    object-fit: none;
-    padding-bottom: 50px;
+  width: 100%;
+  height: auto;
+  object-fit: none;
+  padding-bottom: 50px;
 }
 
 .box-container {
-    position: relative;
-    bottom: 0;
-    top: -57px;
+  position: relative;
+  bottom: 0;
+  top: -57px;
 }
 
 .headingTxt h1 {
-    font-family: "Work Sans";
-    font-weight: 700;
-    font-size: 90px;
-    color: rgb(62, 62, 62);
-    text-align: center;
-    background-clip: text;
-    margin-bottom: 20px;
+  font-family: "Work Sans";
+  font-weight: 700;
+  font-size: 90px;
+  color: rgb(62, 62, 62);
+  text-align: center;
+  background-clip: text;
+  margin-bottom: 20px;
 }
 
 .containter {
-    width: 400px;
-    height: 700px;
+  width: 400px;
+  height: 700px;
 }
 
 .wallet {
-    position: absolute;
-    margin-top: 10px;
-    top: -30px;
-    left: 29px;
-    width: 80px;
+  position: absolute;
+  margin-top: 10px;
+  top: -30px;
+  left: 29px;
+  width: 80px;
 }
 
 .underline {
-    background-color: lightgray;
-    /* border: px solid red; */
-    width: 100%;
-    height: 0.5px;
-    margin-top: 25px;
+  background-color: lightgray;
+  /* border: px solid red; */
+  width: 100%;
+  height: 0.5px;
+  margin-top: 25px;
 }
 
 .sub-heading {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 30px;
-    margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  margin-bottom: 25px;
 }
 
 .what h2,
@@ -111,10 +111,10 @@
 .Innovation h2,
 .Reliability h2,
 .approach h2 {
-    font-family: "Work Sans", sans-serif;
-    font-size: 28px;
-    font-weight: 600;
-    text-align: left;
+  font-family: "Work Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: left;
 }
 
 .what,
@@ -123,15 +123,15 @@
 .Innovation,
 .Reliability,
 .approach {
-    border: none;
-    border-radius: 10px;
-    padding: 20px 30px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    justify-content: flex-start;
-    position: relative;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
 }
 
 .what p,
@@ -140,673 +140,673 @@
 .vision p,
 .Innovation p,
 .Reliability p {
-    font-family: "Work Sans";
-    font-weight: 400;
-    text-align: left;
+  font-family: "Work Sans";
+  font-weight: 400;
+  text-align: left;
 }
 
 p {
-    font-family: "Work Sans";
-    font-weight: 400;
-    font-size: 17px;
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 17px;
 }
 
 .promo-section {
-    background-color: rgba(202, 202, 199, 0.601);
-    height: 500px;
-    position: relative;
+  background-color: rgba(202, 202, 199, 0.601);
+  height: 500px;
+  position: relative;
 }
 
 .promotors {
-    position: absolute;
-    padding: 70px;
-    height: 100%;
+  position: absolute;
+  padding: 70px;
+  height: 100%;
 }
 
 .promotors h1 {
-    font-family: "Work Sans";
-    font-weight: 700;
-    font-size: 90px;
-    color: rgb(62, 62, 62);
-    text-align: center;
-    background-clip: text;
+  font-family: "Work Sans";
+  font-weight: 700;
+  font-size: 90px;
+  color: rgb(62, 62, 62);
+  text-align: center;
+  background-clip: text;
 }
 
 .cityxp-logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-    max-height: 100%;
-    max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .cityxp-logo p {
-    text-align: justify;
-    padding-top: 20px;
+  text-align: justify;
+  padding-top: 20px;
 }
 
 .cityxp-logo img {
-    max-width: 70%;
-    height: auto;
-    object-fit: contain;
+  max-width: 70%;
+  height: auto;
+  object-fit: contain;
 }
 
 @media only screen and (max-width: 1080px) {
-    .container {
-        max-width: 100%;
-    }
+  .container {
+    max-width: 100%;
+  }
 
-    .promo-section {
-        max-width: 100%;
-    }
+  .promo-section {
+    max-width: 100%;
+  }
 
-    .box-container {
-        max-width: 100%;
-        max-height: 100%;
-    }
+  .box-container {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-    .sub-heading {
-        display: grid;
-        grid-template-columns: 1fr;
-        max-width: 100%;
-        margin: 0;
-        padding: 0;
-    }
+  .sub-heading {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
-    .what,
-    .mission,
-    .vision {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
+  .what,
+  .mission,
+  .vision {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
 
-    .promo-section {
-        max-width: 100%;
-        max-height: 100%;
-    }
+  .promo-section {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-    .cityxp-logo img {
-        max-width: 50%;
-        display: flex;
-    }
+  .cityxp-logo img {
+    max-width: 50%;
+    display: flex;
+  }
 
-    .cityxp-logo p {
-        text-align: justify;
-        padding-top: 40px;
-    }
+  .cityxp-logo p {
+    text-align: justify;
+    padding-top: 40px;
+  }
 
-    .promotors {
-        max-width: 100%;
-    }
+  .promotors {
+    max-width: 100%;
+  }
 
-    .promotors h1 {
-        max-width: 100%;
-    }
+  .promotors h1 {
+    max-width: 100%;
+  }
 }
 
 @media only screen and (max-width: 959px) {
-    .container {
-        max-width: 100%;
-    }
+  .container {
+    max-width: 100%;
+  }
 
-    .promo-section {
-        max-width: 100%;
-    }
+  .promo-section {
+    max-width: 100%;
+  }
 
-    .box-container {
-        max-width: 100%;
-        max-height: 100%;
-    }
+  .box-container {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-    .sub-heading {
-        display: grid;
-        grid-template-columns: 1fr;
-        max-width: 100%;
-        margin: 0;
-        padding: 0;
-    }
+  .sub-heading {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
-    .what,
-    .mission,
-    .vision {
-        max-width: 100%;
-    }
+  .what,
+  .mission,
+  .vision {
+    max-width: 100%;
+  }
 
-    .promo-section {
-        max-width: 100%;
-        max-height: 100%;
-    }
+  .promo-section {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-    .cityxp-logo {
-        max-width: 70%;
-        display: flex;
-        flex-direction: column;
-    }
+  .cityxp-logo {
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
 
-    .cityxp-logo img {
-        max-width: 100%;
-    }
+  .cityxp-logo img {
+    max-width: 100%;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-    .container {
-        max-width: 100%;
-    }
+  .container {
+    max-width: 100%;
+  }
 
-    .promo-section {
-        max-width: 100%;
-        max-height: auto;
-    }
+  .promo-section {
+    max-width: 100%;
+    max-height: auto;
+  }
 
-    .top-section {
-        padding: 0;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-    }
+  .top-section {
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
 
-    .top-image {
-        display: none;
-    }
+  .top-image {
+    display: none;
+  }
 
-    .box-container {
-        max-width: 100%;
-        max-height: 100%;
-    }
+  .box-container {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-    .sub-heading {
-        display: grid;
-        grid-template-columns: 1fr;
-        max-width: 100%;
-        margin: 0;
-        padding: 0;
-    }
+  .sub-heading {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
-    .what,
-    .mission,
-    .vision {
-        max-width: 100%;
-    }
+  .what,
+  .mission,
+  .vision {
+    max-width: 100%;
+  }
 
-    .promo-section {
-        max-width: 100%;
-        max-height: 100%;
-    }
+  .promo-section {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-    .cityxp-logo img {
-        max-width: 60%;
-    }
+  .cityxp-logo img {
+    max-width: 60%;
+  }
 
-    .cityxp-logo {
-        max-width: 100%;
-        display: flex;
-        gap: 0;
-        margin-top: 20px;
-        font-size: 3px;
-    }
+  .cityxp-logo {
+    max-width: 100%;
+    display: flex;
+    gap: 0;
+    margin-top: 20px;
+    font-size: 3px;
+  }
 
-    .promotors h1 {
-        font-size: 70px;
-    }
+  .promotors h1 {
+    font-size: 70px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
-    .container {
-        max-width: 100%;
-    }
+  .container {
+    max-width: 100%;
+  }
 
-    .promo-section {
-        max-width: 100%;
-        max-height: auto;
-    }
+  .promo-section {
+    max-width: 100%;
+    max-height: auto;
+  }
 
-    .top-section {
-        padding: 0;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-    }
+  .top-section {
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
 
-    .top-image {
-        display: none;
-    }
+  .top-image {
+    display: none;
+  }
 
-    .box-container {
-        max-width: 100%;
-        max-height: 100%;
-    }
+  .box-container {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-    .sub-heading {
-        display: grid;
-        grid-template-columns: 1fr;
-        max-width: 100%;
-        margin: 0;
-        padding: 0;
-    }
+  .sub-heading {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
-    .what,
-    .mission,
-    .vision {
-        max-width: 100%;
-    }
+  .what,
+  .mission,
+  .vision {
+    max-width: 100%;
+  }
 
-    .promo-section {
-        max-width: 100%;
-        max-height: 100%;
-    }
+  .promo-section {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-    .cityxp-logo img {
-        max-width: 50%;
-    }
+  .cityxp-logo img {
+    max-width: 50%;
+  }
 
-    .cityxp-logo {
-        max-width: 100%;
-        display: flex;
-        gap: 0;
-        margin-top: 20px;
-        font-size: 3px;
-    }
+  .cityxp-logo {
+    max-width: 100%;
+    display: flex;
+    gap: 0;
+    margin-top: 20px;
+    font-size: 3px;
+  }
 
-    .promotors h1 {
-        font-size: 70px;
-    }
+  .promotors h1 {
+    font-size: 70px;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-    .container {
-        max-width: 100%;
-    }
+  .container {
+    max-width: 100%;
+  }
 
-    .promo-section {
-        max-width: 100%;
-        max-height: auto;
-    }
+  .promo-section {
+    max-width: 100%;
+    max-height: auto;
+  }
 
-    .top-section {
-        padding: 0;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-    }
+  .top-section {
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
 
-    .top-image {
-        display: none;
-    }
+  .top-image {
+    display: none;
+  }
 
-    .box-container {
-        max-width: 100%;
-        max-height: 100%;
-    }
+  .box-container {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-    .sub-heading {
-        display: grid;
-        grid-template-columns: 1fr;
-        max-width: 100%;
-        margin: 0;
-        padding: 0;
-    }
+  .sub-heading {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
-    .what,
-    .mission,
-    .vision {
-        max-width: 100%;
-    }
+  .what,
+  .mission,
+  .vision {
+    max-width: 100%;
+  }
 
-    .promo-section {
-        max-width: 100%;
-        max-height: 100%;
-    }
+  .promo-section {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-    .cityxp-logo {
-        max-width: 100%;
-        display: flex;
-        gap: 0;
-        margin-top: 20px;
-        font-size: 3px;
-    }
+  .cityxp-logo {
+    max-width: 100%;
+    display: flex;
+    gap: 0;
+    margin-top: 20px;
+    font-size: 3px;
+  }
 
-    .promotors h1,
-    .headingTxt h1 {
-        font-size: 60px;
-    }
+  .promotors h1,
+  .headingTxt h1 {
+    font-size: 60px;
+  }
 }
 
 @media only screen and (max-width: 620px) {
-    .container {
-        max-width: 100%;
-    }
+  .container {
+    max-width: 100%;
+  }
 
-    .promo-section {
-        max-width: 100%;
-        max-height: auto;
-    }
+  .promo-section {
+    max-width: 100%;
+    max-height: auto;
+  }
 
-    .top-section {
-        padding: 0;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-    }
+  .top-section {
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
 
-    .top-image {
-        display: none;
-    }
+  .top-image {
+    display: none;
+  }
 
-    .box-container {
-        max-width: 100%;
-        max-height: 100%;
-    }
+  .box-container {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-    .sub-heading {
-        display: grid;
-        grid-template-columns: 1fr;
-        max-width: 100%;
-        margin: 0;
-        padding: 0;
-    }
+  .sub-heading {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
-    .what,
-    .mission,
-    .vision {
-        max-width: 100%;
-    }
+  .what,
+  .mission,
+  .vision {
+    max-width: 100%;
+  }
 
-    .promo-section {
-        max-width: 100%;
-        max-height: 100%;
-    }
+  .promo-section {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-    .cityxp-logo {
-        max-width: 100%;
-        display: flex;
-        gap: 0;
-        margin-top: 20px;
-        font-size: 3px;
-    }
+  .cityxp-logo {
+    max-width: 100%;
+    display: flex;
+    gap: 0;
+    margin-top: 20px;
+    font-size: 3px;
+  }
 
-    .cityxp-logo img {
-        max-width: 39%;
-    }
+  .cityxp-logo img {
+    max-width: 39%;
+  }
 
-    .promotors h1,
-    .headingTxt h1 {
-        font-size: 60px;
-    }
+  .promotors h1,
+  .headingTxt h1 {
+    font-size: 60px;
+  }
 }
 
 @media only screen and (max-width: 580px) {
-    .container {
-        max-width: 100%;
-    }
+  .container {
+    max-width: 100%;
+  }
 
-    .promo-section {
-        max-width: 100%;
-        max-height: auto;
-    }
+  .promo-section {
+    max-width: 100%;
+    max-height: auto;
+  }
 
-    .top-content {
-        max-width: 100%;
-        justify-content: space-between;
-        gap: 90px;
-    }
+  .top-content {
+    max-width: 100%;
+    justify-content: space-between;
+    gap: 90px;
+  }
 
-    .top-paragraph {
-        max-width: 100%;
-    }
+  .top-paragraph {
+    max-width: 100%;
+  }
 
-    .top-content h1 {
-        font-size: 70px;
-    }
+  .top-content h1 {
+    font-size: 70px;
+  }
 
-    .top-paragraph h3 {
-        font-size: 13px;
-        max-width: 100%;
-    }
+  .top-paragraph h3 {
+    font-size: 13px;
+    max-width: 100%;
+  }
 
-    .top-section {
-        padding: 0;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-    }
+  .top-section {
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
 
-    .top-image {
-        display: none;
-    }
+  .top-image {
+    display: none;
+  }
 
-    .box-container {
-        max-width: 100%;
-        max-height: 100%;
-    }
+  .box-container {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-    .sub-heading {
-        display: grid;
-        grid-template-columns: 1fr;
-        max-width: 100%;
-        margin: 0;
-        padding: 0;
-    }
+  .sub-heading {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
-    .what,
-    .mission,
-    .vision {
-        max-width: 100%;
-    }
+  .what,
+  .mission,
+  .vision {
+    max-width: 100%;
+  }
 
-    .promotors {
-        padding: 20px;
-        padding-top: 70px;
-    }
+  .promotors {
+    padding: 20px;
+    padding-top: 70px;
+  }
 
-    .promo-section {
-        max-width: 100%;
-        max-height: 100%;
-    }
+  .promo-section {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-    .cityxp-logo {
-        max-width: 100%;
-        display: flex;
-        gap: 0;
-        margin-top: 20px;
-        font-size: 3px;
-    }
+  .cityxp-logo {
+    max-width: 100%;
+    display: flex;
+    gap: 0;
+    margin-top: 20px;
+    font-size: 3px;
+  }
 
-    .promotors h1 {
-        font-size: 50px;
-    }
+  .promotors h1 {
+    font-size: 50px;
+  }
 
-    .headingTxt h1 {
-        font-size: 70px;
-    }
+  .headingTxt h1 {
+    font-size: 70px;
+  }
 
-    .cityxp-logo p {
-        font-size: 15px;
-    }
+  .cityxp-logo p {
+    font-size: 15px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-    .container {
-        max-width: 100%;
-    }
+  .container {
+    max-width: 100%;
+  }
 
-    .promo-section {
-        max-width: 100%;
-        max-height: auto;
-    }
+  .promo-section {
+    max-width: 100%;
+    max-height: auto;
+  }
 
-    .top-content {
-        padding-top: 30px;
-        padding-left: 30px;
-        justify-content: space-between;
-        gap: 90px;
-    }
+  .top-content {
+    padding-top: 30px;
+    padding-left: 30px;
+    justify-content: space-between;
+    gap: 90px;
+  }
 
-    .top-content h1 {
-        font-size: 70px;
-    }
+  .top-content h1 {
+    font-size: 70px;
+  }
 
-    .top-content h3 {
-        font-size: 15px;
-        max-width: 100%;
-    }
+  .top-content h3 {
+    font-size: 15px;
+    max-width: 100%;
+  }
 
-    .top-section {
-        padding: 0;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-    }
+  .top-section {
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
 
-    .top-image {
-        display: none;
-    }
+  .top-image {
+    display: none;
+  }
 
-    .box-container {
-        max-width: 100%;
-        max-height: 100%;
-    }
+  .box-container {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-    .sub-heading {
-        display: grid;
-        grid-template-columns: 1fr;
-        max-width: 100%;
-        margin: 0;
-        padding: 0;
-    }
+  .sub-heading {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
-    .what,
-    .mission,
-    .vision {
-        max-width: 100%;
-    }
+  .what,
+  .mission,
+  .vision {
+    max-width: 100%;
+  }
 
-    .promotors {
-        padding: 20px;
-        padding-top: 70px;
-    }
+  .promotors {
+    padding: 20px;
+    padding-top: 70px;
+  }
 
-    .promo-section {
-        max-width: 100%;
-        max-height: 100%;
-    }
+  .promo-section {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-    .cityxp-logo {
-        max-width: 100%;
-        display: flex;
-        gap: 0;
-        margin-top: 20px;
-        font-size: 3px;
-    }
+  .cityxp-logo {
+    max-width: 100%;
+    display: flex;
+    gap: 0;
+    margin-top: 20px;
+    font-size: 3px;
+  }
 
-    .cityxp-logo img {
-        max-width: 60%;
-    }
+  .cityxp-logo img {
+    max-width: 60%;
+  }
 
-    .promotors h1 {
-        font-size: 50px;
-    }
+  .promotors h1 {
+    font-size: 50px;
+  }
 
-    .headingTxt h1 {
-        font-size: 70px;
-    }
+  .headingTxt h1 {
+    font-size: 70px;
+  }
 
-    .cityxp-logo p {
-        font-size: 15px;
-    }
+  .cityxp-logo p {
+    font-size: 15px;
+  }
 }
 
 @media only screen and (max-width: 420px) {
-    .container {
-        max-width: 100%;
-    }
+  .container {
+    max-width: 100%;
+  }
 
-    .promo-section {
-        max-width: 100%;
-        max-height: auto;
-    }
+  .promo-section {
+    max-width: 100%;
+    max-height: auto;
+  }
 
-    .top-content {
-        padding-top: 30px;
-        padding-left: 30px;
-        justify-content: space-between;
-        gap: 20px;
-    }
+  .top-content {
+    padding-top: 30px;
+    padding-left: 30px;
+    justify-content: space-between;
+    gap: 20px;
+  }
 
-    .top-content h1 {
-        font-size: 70px;
-    }
+  .top-content h1 {
+    font-size: 70px;
+  }
 
-    .top-content h3 {
-        font-size: 15px;
-        max-width: 100%;
-    }
+  .top-content h3 {
+    font-size: 15px;
+    max-width: 100%;
+  }
 
-    .top-section {
-        padding: 0;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-    }
+  .top-section {
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
 
-    .top-image {
-        display: none;
-    }
+  .top-image {
+    display: none;
+  }
 
-    .box-container {
-        max-width: 100%;
-        max-height: 100%;
-    }
+  .box-container {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-    .sub-heading {
-        display: grid;
-        grid-template-columns: 1fr;
-        max-width: 100%;
-        margin: 0;
-        padding: 0;
-    }
+  .sub-heading {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
-    .what,
-    .mission,
-    .vision {
-        max-width: 100%;
-    }
+  .what,
+  .mission,
+  .vision {
+    max-width: 100%;
+  }
 
-    .promotors {
-        padding: 20px;
-        padding-top: 70px;
-    }
+  .promotors {
+    padding: 20px;
+    padding-top: 70px;
+  }
 
-    .promo-section {
-        max-width: 100%;
-        max-height: 100%;
-    }
+  .promo-section {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-    .cityxp-logo {
-        max-width: 100%;
-        display: flex;
-        gap: 0;
-        margin-top: 20px;
-        font-size: 3px;
-    }
+  .cityxp-logo {
+    max-width: 100%;
+    display: flex;
+    gap: 0;
+    margin-top: 20px;
+    font-size: 3px;
+  }
 
-    .cityxp-logo img {
-        max-width: 0%;
-    }
+  .cityxp-logo img {
+    max-width: 0%;
+  }
 
-    .cityxp-logo p {
-        padding: 0;
-    }
+  .cityxp-logo p {
+    padding: 0;
+  }
 
-    .promotors h1 {
-        font-size: 30px;
-    }
+  .promotors h1 {
+    font-size: 30px;
+  }
 
-    .headingTxt h1 {
-        font-size: 70px;
-    }
+  .headingTxt h1 {
+    font-size: 70px;
+  }
 
-    .cityxp-logo p {
-        font-size: 15px;
-    }
+  .cityxp-logo p {
+    font-size: 15px;
+  }
 }

@@ -1,39 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600&display=swap");
 
-/* *{
-    margin: 0;
-    padding: 0;
-}
-
-nav{
-    width: 100%;
-    height: 5em;
-    background-color: rgb(37, 38, 39);
-    display: flex;
-    justify-content: flex-start;
-    padding: 1em;
-}
-
-.burger-menu{
-    height: 100%;
-    width: 4em;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    cursor: pointer; */
-/* } */
-
 .menu {
-  /* flex: 1; */
   min-width: 0;
-  /* background: #0e83e3; */
 }
 
 .navbarItems {
   display: flex;
   flex-direction: row;
-  /* flex-wrap: nowrap; */
   align-content: center;
   align-items: center;
   justify-content: space-between;
@@ -42,9 +15,8 @@ nav{
 }
 
 .Logo-Image {
-  /* padding-top: 15px; */
-  height: 60px;
-  width: 90px;
+  height: 80px;
+  width: 120px;
   margin-left: 15px;
   margin-bottom: 15px;
 }
@@ -86,12 +58,9 @@ nav{
   width: 130px;
 }
 
-/* new navbar */
-
 .downloadButtons {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
   gap: 20px;
 }
 
@@ -108,11 +77,9 @@ nav{
   gap: 10px;
   align-items: center;
   justify-content: center;
-  /* display: none; */
 }
 
 .navBarItemsContainer {
-  /* border: 4px solid blue; */
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -123,11 +90,10 @@ nav{
 }
 
 .navMenu {
-  width: 1190px;
+  width: 100%;
   font-family: "Work Sans";
   font-weight: 400;
   font-size: 20px;
-  /* background-color: #0e83e3; */
   display: flex;
   padding: 16px;
   align-items: center;
@@ -140,10 +106,6 @@ nav{
   color: white;
 }
 
-.itemsContainer {
-  /* border: 2px solid orangered; */
-}
-
 .hamburgerIconContainer {
   display: none;
 }
@@ -154,6 +116,10 @@ nav{
   }
 
   .itemsContainer {
+    display: none;
+  }
+
+  .downloadButtons {
     display: none;
   }
 
@@ -180,7 +146,6 @@ nav{
     justify-content: space-between;
     align-items: center;
     color: white;
-    /* background-color: white; */
     height: auto;
     padding-left: 50px;
   }
@@ -201,11 +166,9 @@ nav{
     height: auto;
     width: 100%;
     color: white;
-    /* border: 2px solid red; */
     background-color: grey;
     display: flex;
     flex-direction: column;
-    /* gap: ; */
     align-items: center;
     justify-content: space-evenly;
     gap: 20px;
@@ -221,30 +184,3 @@ nav{
     color: darkblue;
   }
 }
-
-/* @media screen and (min-width: 720px) { */
-/* .burgerActiveClass { */
-/* border: 1px solid blue;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    color: white; */
-/* display: none; */
-/* } */
-/* } */
-/* 
-.navModal {
-  height: auto;
-  width: 100%;
-  color: white;
-  border: 2px solid red;
-  background-color: grey;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  display: none;
-} */

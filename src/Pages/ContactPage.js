@@ -4,30 +4,25 @@ import "./contactPage.css";
 const ContactPage = () => {
   return (
     <div className="contact">
-      <h1>Contact Us</h1>
+
       <div>
-        <h2>CityPay Pvt. Ltd.</h2>
+        <h2>City Wallet Pvt. Ltd.</h2><br></br>
         <div className="Office">
           <h3>Registered Office</h3>
-          <p>Kamaladi, Kathmandu, Nepal</p>
+          <p>City Express Complex, 5th Floor</p>
+          <p>Bank Road, Kamaladi, Kathmandu, Nepal</p>
+          <p>Po. Box. No. 21766</p><br></br>
         </div>
         <div className="Support">
-          <h3>Customer Support</h3>
-          <p>Toll-Free No: (For NTC only)</p>
-          <p>Toll-Free No: (For Ncell only)</p>
-          <p>Email: </p>
-          <p>Phone No: </p>
-          <p>Phone No: </p>
-          <p>Phone No: </p>
-          <p>Phone No: </p>
-          <p>Phone No: </p>
-          <p>(For general inquiry and technical assistance)</p>
+
+          <div className="cont1">
+            <h3>Contact Details</h3>
+            <p>Email: citywallet@ctxpress.com </p>
+            <p>TelePhone No: 00977-1-4531900 ext -116, 117, 162, 205</p>
+            <p>Call Center: 00977-1-5970225</p>
+            <p>Toll-Free No: +16600 11 12 13</p>
+          </div>
         </div>
-        <div className="Branch">
-          <h3>Branch Offices:</h3>
-          <p></p>
-        </div>
-        
       </div>
     </div>
   );
