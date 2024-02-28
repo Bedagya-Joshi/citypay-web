@@ -8,7 +8,6 @@ import photo2 from "../Assets/downloadcitypay.png";
 import photo3 from "../Assets/Carousel-img2.jpg";
 import photo4 from "../Assets/Carousel-img3.png";
 
-
 const CarouselItem = () => (
   <Carousel
     autoplay

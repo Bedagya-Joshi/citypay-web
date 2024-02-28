@@ -50,7 +50,7 @@
     width: 100%;
 }
 
-/*Responsive Part*/
+/Responsive Part/
 
 @media(width<=1280) {
 
@@ -320,6 +320,6 @@
         border-radius: 15px;
         padding: 12px;
         margin: 8px;
-        width: 100%;
-    }
+        width: 100%;
+    }
 }
