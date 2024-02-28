@@ -22,6 +22,10 @@ body {
   cursor: pointer;
 }
 
+i.fa-solid::before {
+  width: 60px;
+}
+
 .bar {
   width: 30px;
   height: 3px;
