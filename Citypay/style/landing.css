@@ -43,9 +43,13 @@ body {
 
 /* css for landing page */
 
+.layout-container {
+  height: 100vh;
+}
+
 .header {
   /* background-color: #81b1ce; */
-  color: white;
+  /* color: white; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,20 +59,20 @@ body {
 }
 
 .logo {
-  width: 84px;
-  font-weight: bold;
+  width: 90px;
+  height: auto;
 }
 
-/* .menu-toggle {
+.menu-toggle {
   flex-direction: column;
   cursor: pointer;
   height: 20px;
-} */
+}
 
-/* .fa-bars {
+.fa-bars {
   font-size: 40px;
-  background-color: #1472cf;
-} */
+  color: #1472cf;
+}
 
 .nav {
   display: none;
@@ -85,12 +89,13 @@ body {
 .nav ul {
   list-style-type: none;
   padding: 0;
-  background-color: #81b1ce;
+  background-color: #1472cf;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
   gap: 10px;
+  padding-top: 20px;
 }
 
 .nav li {
@@ -104,4 +109,14 @@ body {
   font-weight: 700;
   font-size: 25px;
   color: white;
+}
+
+.download-container {
+  background-image: "../Assets/Flow.png";
+  background-position: 0%;
+  background-image: none;
+  background-size: auto;
+  background-color: #1472cf;
+  width: 100%;
+  height: 100%;
 }
