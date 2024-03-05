@@ -44,18 +44,27 @@ body {
 /* css for landing page */
 
 .layout-container {
-  height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  z-index: 1;
+  position: sticky;
+  top: 0;
 }
 
 .header {
-  /* background-color: #81b1ce; */
-  /* color: white; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding-top: 10px;
   padding-left: 60px;
-  padding-right: 60px;
+  padding-right: 20px;
+  /* border: 2px solid red; */
 }
 
 .logo {
@@ -82,20 +91,31 @@ body {
   display: block;
   position: absolute;
   right: 20px;
-  width: 370px;
+  /* top: 60px; */
+  width: 350px;
   height: 600px;
+}
+
+.underline {
+  background-color: white;
+  height: 1px;
+  width: 80%;
 }
 
 .nav ul {
   list-style-type: none;
   padding: 0;
-  background-color: #1472cf;
+  background-color: #194a7a;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  padding-top: 20px;
+  padding-top: 15px;
+  z-index: 1;
+  top: 0;
+  position: sticky;
+  border-radius: 15px;
 }
 
 .nav li {
@@ -111,12 +131,138 @@ body {
   color: white;
 }
 
-.download-container {
-  background-image: "../Assets/Flow.png";
-  background-position: 0%;
-  background-image: none;
-  background-size: auto;
-  background-color: #1472cf;
+section {
+  height: 675px;
+}
+.first-section {
   width: 100%;
-  height: 100%;
+  background-image: url("../Assets/Flow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+}
+
+.body-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 80%;
+  max-height: 100%;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+.gplay-btn {
+  width: 290px;
+  height: 85px;
+}
+
+.appstore-btn {
+  width: 290px;
+  height: 85px;
+}
+
+.dwnld-img img {
+  object-fit: contain;
+  overflow: hidden;
+  width: 100%;
+  height: 700px;
+}
+
+.dwnld-img {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  right: 130px;
+}
+
+.dwnld-desc {
+  width: 50%;
+}
+
+.description h1 {
+  font-family: "PT Sans";
+  font-size: 55px;
+  color: #0d60b5;
+}
+
+.description p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+/* CSS for second section starts here */
+
+.second-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.second-title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.second-title h1 {
+  font-family: "PT Sans";
+  font-size: 55px;
+  color: #0d60b5;
+  margin-bottom: 0;
+}
+.second-title p {
+  margin-top: 0;
+  font-size: 20px;
+  text-align: center;
+}
+.second-body {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  width: 100%;
+  max-height: 100%;
+}
+.second-img {
+  width: 100%;
+}
+
+.second-img img {
+  width: 500px;
+  height: 600px;
+  object-fit: contain;
+}
+.second-grid {
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  height: auto;
+}
+.second-grid1,
+.second-grid2,
+.second-grid3 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* width: 615px; */
+  background-color: rgb(231, 229, 229);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.grid-content h2 {
+  margin: 0;
+  padding: 0;
+}
+.grid-content p {
+  margin: 0;
+  padding: 0;
 }
