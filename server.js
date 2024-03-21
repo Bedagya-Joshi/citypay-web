@@ -2,7 +2,7 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const PORT = 3001; // Choose a port for your backend
+const PORT = 3000; // Choose a port for your backend
 
 // Enable CORS for all routes
 app.use(cors());

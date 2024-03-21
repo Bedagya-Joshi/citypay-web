@@ -442,7 +442,8 @@ h4.navbarItems:hover {
 
 @media (min-width: 1800px) and (max-width: 2560px) {
   .body-container {
-    margin-left: 310px;
+    width: 100%;
+    margin: 0;
   }
 
   .navMenu a {
@@ -488,95 +489,145 @@ h4.navbarItems:hover {
 
   .Main-container {
     position: relative;
-    right: 10px;
   }
 
   .Main-container .grid-1 {
-    width: 140%;
+    width: 100%;
+    position: relative;
+    left: 200px;
   }
 
   .Main-container .grid-1 .landing-page-text {
-    width: 100%;
+    width: 90%;
   }
 
   .Main-container .grid-2 {
     position: relative;
-    left: 75px;
-    top: 80px;
+    left: 180px;
+    top: 60px;
   }
 
   .Main-container .grid-3 {
     position: relative;
-    top: 60px;
+    top: 40px;
+    left: 0px;
+  }
+
+  .mid-container {
+    position: relative;
+  }
+
+  .mid-container .grid-1 {
+    width: 80%;
+    position: relative;
+    left: 200px;
+    bottom: 30px;
+  }
+
+  .mid-container .grid-1 .landing-page-text {
+    width: 100%;
+  }
+
+  .mid-container .grid-2 {
+    position: relative;
+    left: 105px;
+  }
+
+  .mid-container .grid-3 {
+    position: relative;
+    right: 100px;
+    width: 85%;
   }
 
   .lower-container {
     position: relative;
-    right: 30px;
+  }
+
+  .lower-container .grid-1 {
+    width: 100%;
+    position: relative;
+    left: 220px;
+  }
+
+  .lower-container .grid-1 .landing-page-text {
+    width: 90%;
+  }
+
+  .lower-container .grid-2 {
+    width: 60%;
+    position: relative;
+    left: 180px;
+  }
+
+  .lower-container .grid-3 {
+    position: relative;
+    right: 100px;
   }
 
   .fourth-container {
     position: relative;
-    left: 60px;
   }
 
   .fourth-container .grid-1 {
-    width: 150%;
+    width: 100%;
+    position: relative;
+    left: 310px;
   }
 
   .fourth-container .grid-1 .landing-page-text {
-    width: 90%;
+    width: 85%;
   }
 
   .fourth-container .grid-2 {
     position: relative;
-    left: 120px;
+    left: 240px;
+    width: 60%;
   }
 
   .fourth-container .grid-2 .landing-page-image .cell {
-    margin: 1px 1px 1px 20px;
+    margin: 1px 1px 1px 0px;
     padding: 5px;
     width: 100%;
   }
 
   .fourth-container .grid-3 {
     position: relative;
-    left: 35px;
+    right: 120px;
     margin: 5px 1px 1px 1px;
   }
 
-
   .fifth-container {
     position: relative;
-    right: 30px;
   }
 
   .fifth-container .grid-1 {
     width: 140%;
+    position: relative;
+    left: 210px;
   }
 
-  .fifth-container .grid-1 .landing-page-text {
-    width: 90%;
+  .fifth-container .grid-1 .bullet-text {
+    width: 60%;
   }
 
   .fifth-container .grid-2 {
     position: relative;
-    left: 120px;
-    width: 120%;
+    left: 130px;
+    width: 75%;
   }
 
   .fifth-container .grid-2 .landing-page-image .bankimage {
     width: 140%;
     height: 85%;
     position: relative;
-    left: 10px;
+    left: 25px;
     top: 35px;
     margin: 0px;
   }
 
   .fifth-container .grid-3 {
     position: relative;
-    left: 170px;
+    right: 50px;
   }
 
 
