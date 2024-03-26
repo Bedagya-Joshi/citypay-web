@@ -12,7 +12,7 @@
 }
 
 .contact {
-    padding-top:30px;
+    padding-top: 30px;
     padding-left: 35px;
     padding-bottom: 20%;
     font-size: larger;
@@ -24,24 +24,87 @@
     padding-top: 15px;
 }
 
-.Office h3{
+.Office h3 {
     padding-bottom: 10px;
     text-decoration: underline;
 }
 
-.Office{
+.Office {
     display: flex;
     flex-direction: column;
     font-size: large;
     padding-bottom: 10px;
-    gap:  10px;
+    gap: 10px;
 }
-.cont1 h3{
+
+.address-container {
+    display: flex;
+    align-items: center;
+    /* Align items vertically in the center */
+}
+
+.address-container i {
+    margin-right: 10px;
+}
+
+.po-container {
+    display: flex;
+    align-items: center;
+    /* Align items vertically in the center */
+}
+
+.po-container i {
+    margin-right: 10px;
+}
+
+.Email {
+    display: flex;
+    align-items: center;
+    /* Align items vertically in the center */
+}
+
+.Email i {
+    margin-right: 10px;
+}
+
+.Tel {
+    display: flex;
+    align-iTems: center;
+    /* Align items vertically in the center */
+}
+
+.Tel i {
+    margin-right: 10px;
+}
+
+.Call {
+    display: flex;
+    align-iTems: center;
+    /* Align items vertically in the center */
+}
+
+.Call i {
+    margin-right: 10px;
+}
+
+.tol {
+    display: flex;
+    align-iTems: center;
+    /* Align items vertitoly in the center */
+}
+
+.tol i {
+    margin-right: 10px;
+}
+
+
+
+.cont1 h3 {
     padding-bottom: 10px;
     text-decoration: underline;
 }
 
-.cont1{
+.cont1 {
     display: flex;
     flex-direction: column;
     gap: 10px;
