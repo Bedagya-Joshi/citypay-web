@@ -20,9 +20,9 @@ import BlogPage from "./Pages/BlogPage";
 import NewsPage from "./Pages/NewsPage";
 import FAQPage from "./Pages/FAQPage";
 import OurTeamPage from "./Pages/OurTeamPage";
-import LegalPage from "./Pages/LegalPage";
+// import LegalPage from "./Pages/LegalPage";
 import DownloadPage from "./Pages/DownloadPage";
-import UnderConstruction from "./Pages/UnderConstruction";
+import PrivacyPolicy from "./Pages/privacypolicy";
 
 //Component Import
 import CarouselItem from "./Components/Carousel";
@@ -351,9 +351,8 @@ const App = () => {
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/ourTeam" element={<OurTeamPage />} />
             <Route path="/news/*" element={<NewsPage />} />
-            <Route path="/legal" element={<LegalPage />} />
+            <Route path="/privacypolicy" element={<PrivacyPolicy/>} />
             <Route path="/downloads" element={<DownloadPage />} />
-            <Route path="/underconstruction" element={<UnderConstruction />} />
           </Routes>
         </Content>
         <script src="C:/citipay/citypay-web/src/scrollscript.js"></script>

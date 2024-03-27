@@ -77,7 +77,7 @@ div.news p.summary {
   position: sticky;
   top: 0;
   z-index: 1;
-  height: auto;
+  height: 95px;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -86,6 +86,7 @@ div.news p.summary {
   background: #0e83e3;
   box-shadow: grey 1px 1px 100px 1px;
 }
+
 
 .carousel-container {
   max-width: 100%;
@@ -435,17 +436,17 @@ h4.navbarItems:hover {
     width: 100px;
     height: 100px;
     position: relative;
-    right: 70px;
+    right: 60px;
     bottom: 0px;
   }
 
   .navMenu .Logo-Image img {
     margin: 1px 1px 1px 1px;
     padding: 1px;
-    width: 100px;
-    height: 100px;
+    width: 95px;
+    height: 95px;
     position: relative;
-    bottom: 10px;
+    bottom: 0px;
   }
 
   .navMenu {
@@ -459,8 +460,8 @@ h4.navbarItems:hover {
   .navMenu .appstore img {
     margin: 1px;
     border-radius: 5px;
-    width: 16.8vh;
-    height: 6.3vh;
+    width: 11.5vh;
+    height: 4vh;
   }
 
   .Main-container .grid-1 .landing-page-text p,
@@ -585,15 +586,18 @@ h4.navbarItems:hover {
     margin-left: 150px;
   }
 
-  .navMenu .Logo-Image img,
+  .navMenu .Logo-Image img {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    top: 13px;
+  }
+
   .navMenu a {
     margin: 1px;
     padding: 2px;
-    width: 100px;
-    height: 100px;
     position: relative;
-    right: 70px;
-    bottom: 0px;
+    right: 60px;
     font-size: larger;
   }
 
@@ -609,8 +613,8 @@ h4.navbarItems:hover {
   .navMenu .appstore img {
     margin: 1px;
     border-radius: 5px;
-    width: 16.8vh;
-    height: 6.3vh;
+    width: 9.6vh;
+    height: 3.2vh;
   }
 
   .Main-container .grid-1 .landing-page-text p,
@@ -738,11 +742,11 @@ h4.navbarItems:hover {
   .navMenu .Logo-Image img {
     margin: 1px;
     padding: 2px;
-    width: 100px;
-    height: 100px;
+    width: 95px;
+    height: 95px;
     position: relative;
-    right: 70px;
-    bottom: 10px;
+    right: 40px;
+    bottom: 0px;
   }
 
   .navMenu {
@@ -753,8 +757,8 @@ h4.navbarItems:hover {
   }
 
   .navMenu a {
-    margin-left: auto;
-    margin-right: 0;
+    position: relative;
+    right: 40px;
     font-size: 1.17em;
   }
 
@@ -766,8 +770,8 @@ h4.navbarItems:hover {
   .navMenu .appstore img {
     margin: 1px;
     border-radius: 5px;
-    width: 16.8vh;
-    height: 6.3vh;
+    width: 9vh;
+    height: 2.9vh;
   }
 
   .Main-container,
@@ -1003,11 +1007,11 @@ h4.navbarItems:hover {
   .navMenu .Logo-Image img {
     margin: 1px;
     padding: 2px;
-    width: 100px;
-    height: 100px;
+    width: 95px;
+    height: 95px;
     position: relative;
-    right: 70px;
-    bottom: 10px;
+    right: 30px;
+    bottom: 0px;
   }
 
   .navMenu {
@@ -1018,8 +1022,8 @@ h4.navbarItems:hover {
   }
 
   .navMenu a {
-    margin-left: auto;
-    margin-right: 0;
+    position: relative;
+    right: 60px;
     font-size: 1.17em;
   }
 
@@ -1031,8 +1035,10 @@ h4.navbarItems:hover {
   .navMenu .appstore img {
     margin: 1px;
     border-radius: 5px;
-    width: 16.8vh;
-    height: 6.3vh;
+    width: 8.4vh;
+    height: 3vh;
+    position: relative;
+    right: 40px;
   }
 
   .Main-container,
@@ -1254,7 +1260,7 @@ h4.navbarItems:hover {
   }
 }
 
-@media (min-width: 1116px) and (max-width: 1170px) {
+@media (min-width:993px) and (max-width: 1170px) {
   .body-container {
     width: 100%;
     margin: 0;
@@ -1262,258 +1268,12 @@ h4.navbarItems:hover {
 
   .navMenu .Logo-Image img {
     margin: 1px;
-    padding: 2px;
-    width: 100px;
-    height: 100px;
-    position: relative;
-    right: 70px;
-    bottom: 10px;
-  }
-
-  .navMenu {
-    margin: 1px 120px 1px 1px;
-    gap: 10px;
-    width: 100%;
-    padding: 0;
-  }
-
-  .navMenu a {
-    margin-left: auto;
-    margin-right: 0;
-    font-size: 1.15em;
-  }
-
-  .downloadButtons {
-    margin: 1px 45px 1px 1px;
-  }
-
-  .navMenu .playstore img,
-  .navMenu .appstore img {
-    margin: 1px;
-    border-radius: 5px;
-    width: 16.8vh;
-    height: 6.3vh;
-  }
-
-  .Main-container,
-  .mid-container,
-  .lower-container,
-  .fourth-container,
-  .fifth-container {
-    margin: 5px 5px 5px 25px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .Main-container .grid-1,
-  .Main-container .grid-2,
-  .Main-container .grid-3,
-  .mid-container .grid-1,
-  .lower-container .grid-1,
-  .fifth-container .grid-1 {
-    margin: 5px;
-    width: calc(100% + 5px);
-  }
-
-  .Main-container .grid-1 .landing-page-text,
-  .Main-container .grid-1 .title,
-  .mid-container .grid-1 .title,
-  .lower-container .grid-1 .title,
-  .fifth-container .grid-1 .title {
-    padding: 0;
-  }
-
-  .Main-container .grid-1 .landing-page-text p,
-  .Main-container .grid-1 .landing-page-text h2,
-  .Main-container .grid-1 .title,
-  .mid-container .grid-1 .bullet-text,
-  .lower-container .grid-1 .landing-page-text,
-  .fourth-container .grid-1 .title,
-  .fifth-container .grid-1 .bullet-text {
-    margin: 1px;
-  }
-
-  .Main-container .grid-1 .landing-page-text,
-  .Main-container .grid-1 .title,
-  .mid-container .grid-1 .title,
-  .lower-container .grid-1 .title,
-  .fifth-container .grid-1 .title {
-    width: 100%;
-  }
-
-  .Main-container .grid-2 .landing-page-image .bankimage,
-  .mid-container .grid-2 .landing-page-image .bankimage {
-    margin: 30px 0 0 55px;
-    left: 20px;
-  }
-
-  .Main-container .grid-3,
-  .mid-container .grid-3 {
-    margin: 5px 5px 5px 5px;
-    width: 110%;
-    right: 50px;
-  }
-
-  .Main-container .grid-1 h2 {
-    padding: 7px 1px 1px 1px;
-  }
-
-  .Main-container .grid-1 p {
-    padding: 7px 1px 1px 1px;
-  }
-
-  .Main-container .grid-3 .bullet-text {
-    margin: 5px 5px 5px 5px;
-    width: 95%;
-  }
-
-  .lower-container {
-    position: relative;
-    right: 3px;
-  }
-
-  .lower-container .grid-1 {
-    margin: 1px 55px 1px 1px;
-    padding: 0;
-  }
-
-
-  .lower-container .grid-1 .title {
-    position: relative;
-    left: 45px;
-  }
-
-  .lower-container .grid-1 .landing-page-text {
-    margin: 1px 15px 1px 1px;
-    position: relative;
-    left: 45px;
-  }
-
-  .lower-container .grid-2 .landing-page-image .bankimage {
-    margin: 1px 1px 1px 25px;
-    position: relative;
-    right: 30px;
-  }
-
-  .lower-container .grid-3 {
-    right: 25px;
-    margin: 100px 1px 1px 1px;
-  }
-
-  .fourth-container {
-    padding-bottom: 85px;
-    position: relative;
-    right: 35px;
-  }
-
-  .fourth-container .grid-1 {
-    margin: 50px 1px 1px 45px;
-    width: calc(130% + 70px);
-  }
-
-  .fourth-container .grid-1 .landing-page-text {
-    width: 90%;
-  }
-
-  .fourth-container .grid-2 {
-    margin: 65px 1px 1px 85px;
-    padding: 5px;
-    height: 90%;
-    width: 80%;
-  }
-
-  .fourth-container .grid-2 .landing-page-image .cell {
-    margin: 1px 1px 1px 75px;
-    padding: 5px;
-    width: 100%;
-  }
-
-  .fourth-container .grid-3 {
-    position: relative;
-    left: 55px;
-    margin: 5px 1px 1px 1px;
-  }
-
-  .fifth-container {
-    margin: 5px 5px 5px 35px;
-    padding: 4px 4px 45px 4px;
-    top: 50px;
-  }
-
-  .fifth-container .grid-1 {
-    margin: 1px;
-    width: calc(120% + 25px);
-  }
-
-  .fifth-container .grid-2 {
-    position: relative;
-    left: 100px;
-    width: 125%;
-  }
-
-  .fifth-container .grid-2 .landing-page-image .bankimage {
-    width: 120%;
-    height: 65%;
-    position: relative;
-    right: 20px;
-    top: 120px;
-    margin: 0px;
-  }
-
-  .fifth-container .grid-3 {
-    width: 80%;
-    position: relative;
-    left: 95px;
-    top: 5px;
-    margin: 1px 1px 1px 10px;
-  }
-
-
-  .fifth-container .grid-3 .landing-page-text {
-    position: relative;
-    right: 10px;
-    top: 5px;
-    width: 100%;
-    margin: 1px 1px 1px 10px;
-    font-size: 0.89em;
-  }
-
-  .perks {
-    margin: 1px;
-    padding: 40px 4px;
-  }
-
-  .perks .perk-heading {
-    gap: 40px;
-    margin: 1px;
-    padding: 2px;
-  }
-
-  .ant-layout-footer {
-    padding-top: 10px;
-  }
-
-  .carousel-container {
-    margin: 1px 1px 1px 1px;
-    position: relative;
-
-  }
-}
-
-
-@media (min-width:993px) and (max-width: 1115px) {
-  .body-container {
-    width: 100%;
-    margin: 0;
-  }
-
-  .navMenu .Logo-Image img {
-    margin: 1px;
-    padding: 2px;
-    width: 100px;
-    height: 100px;
+    padding: 1px;
+    width: 95px;
+    height: 95px;
     position: relative;
     left: 5px;
-    top: 0px;
+    top: 10px;
   }
 
   .navMenu {
@@ -1537,8 +1297,8 @@ h4.navbarItems:hover {
   .navMenu .appstore img {
     margin: 1px;
     border-radius: 5px;
-    width: 16.8vh;
-    height: 6.3vh;
+    width: 9.5vh;
+    height: 3.4vh;
   }
 
   .Main-container,
@@ -1845,11 +1605,11 @@ h4.navbarItems:hover {
   .navMenu .Logo-Image img {
     margin: 1px;
     padding: 2px;
-    width: 100px;
-    height: 100px;
+    width: 95px;
+    height: 95px;
     position: relative;
     right: 10px;
-    bottom: 10px;
+    bottom: 0px;
   }
 
   .navMenu {
@@ -1863,6 +1623,8 @@ h4.navbarItems:hover {
     margin-left: auto;
     margin-right: 0;
     font-size: 1.10em;
+    position: relative;
+    right: 15px;
   }
 
   .downloadButtons {
@@ -1873,8 +1635,10 @@ h4.navbarItems:hover {
   .navMenu .appstore img {
     margin: 1px;
     border-radius: 5px;
-    width: 16.8vh;
-    height: 6.9vh;
+    width: 9.3vh;
+    height: 3.2vh;
+    position: relative;
+    right: 10px;
   }
 
   .Main-container,
@@ -2155,11 +1919,11 @@ h4.navbarItems:hover {
   .navMenu .Logo-Image img {
     margin: 1px;
     padding: 2px;
-    width: 100px;
-    height: 100px;
+    width: 92px;
+    height: 92px;
     position: relative;
-    right: 20px;
-    bottom: 10px;
+    right: 0px;
+    bottom: 0px;
   }
 
   .navMenu {
@@ -2172,7 +1936,7 @@ h4.navbarItems:hover {
   .navMenu a {
     margin-left: auto;
     margin-right: 0;
-    font-size: 1.0em;
+    font-size: 0.9em;
   }
 
   .downloadButtons {
@@ -2183,8 +1947,8 @@ h4.navbarItems:hover {
   .navMenu .appstore img {
     margin: 1px;
     border-radius: 5px;
-    width: 16.8vh;
-    height: 6.8vh;
+    width: 7.6vh;
+    height: 2.7vh;
   }
 
   .Main-container,
@@ -2480,11 +2244,11 @@ h4.navbarItems:hover {
   }
 
   .navMenu .Logo-Image img {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     margin: 1px 1px 1px 1px;
     position: relative;
-    bottom: 10px;
+    top: 1px;
     left: 5px;
   }
 
@@ -2917,6 +2681,7 @@ h4.navbarItems:hover {
     margin: 1px 1px 1px 1px;
     position: relative;
     left: 20px;
+    top: 5px;
   }
 
   .hamburgerIconContainer {
@@ -2943,14 +2708,14 @@ h4.navbarItems:hover {
   .download .playstore img {
     margin: 1px 15px 1px 1px;
     border-radius: 5px;
-    width: 97px;
-    height: 35px;
+    width: 100px;
+    height: 40px;
   }
 
   .download .appstore img {
     margin: 1px 1px 1px 1px;
-    width: 97px;
-    height: 35px;
+    width: 100px;
+    height: 40px;
     border-radius: 5px;
   }
 
@@ -3341,6 +3106,7 @@ h4.navbarItems:hover {
     margin: 1px 1px 1px 1px;
     position: relative;
     right: 12px;
+    top: 7px;
   }
 
   .hamburgerIconContainer {
@@ -3372,14 +3138,14 @@ h4.navbarItems:hover {
     width: 115px;
     height: 40px;
     position: relative;
-    top: 31px;
+    top: 29px;
 
   }
 
   .download .appstore img {
     margin: 1px 1px 1px 1px;
     width: 115px;
-    height: 42px;
+    height: 40px;
     border-radius: 5px;
     position: relative;
     left: 130px;
