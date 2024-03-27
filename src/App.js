@@ -351,12 +351,13 @@ const App = () => {
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/ourTeam" element={<OurTeamPage />} />
             <Route path="/news/*" element={<NewsPage />} />
-            <Route path="/privacypolicy" element={<PrivacyPolicy/>} />
+            <Route path="/privacypolicy" element={<PrivacyPolicy />} />
             <Route path="/downloads" element={<DownloadPage />} />
           </Routes>
         </Content>
+        {window.location.pathname !== "/privacypolicy" && <Footer />}
         <script src="C:/citipay/citypay-web/src/scrollscript.js"></script>
-        <Footer />
+        {/* <Footer /> */}
       </Layout>
     </Router>
   );
