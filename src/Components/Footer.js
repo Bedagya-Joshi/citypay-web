@@ -89,10 +89,10 @@ const CustomFooter = () => {
         }}
       >
         <Link to="/about">About</Link>
-        <Link to="/underconstruction">Services</Link>
+        {/* <Link to="/underconstruction">Services</Link> */}
         <Link to="/contact">Contact Us</Link>
-        <Link to="/underconstruction">Blog</Link>
-        <Link to="/underconstruction">News</Link>
+        {/* <Link to="/underconstruction">Blog</Link> */}
+        {/* <Link to="/underconstruction">News</Link> */}
         <a
           href="https://agent.citywallet.com.np/auth/signup"
           target="_blank"
@@ -111,8 +111,8 @@ const CustomFooter = () => {
           textAlign: "left",
         }}
       >
-        <Link to="/underconstruction">FAQ</Link>
-        <Link to="/underconstruction">Our Team</Link>
+        {/* <Link to="/underconstruction">FAQ</Link> */}
+        {/* <Link to="/underconstruction">Our Team</Link> */}
         <a
           href="https://agent.citywallet.com.np/auth/signup"
           target="_blank"
