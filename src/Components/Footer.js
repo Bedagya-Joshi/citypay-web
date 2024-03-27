@@ -120,7 +120,7 @@ const CustomFooter = () => {
         >
           Become an Agent
         </a>
-        <Link to="/underconstruction">Legal</Link>
+        <Link to="/privacypolicy">Privacy Policy</Link>
         <Link to="https://www.citywallet.com.np">Downloads</Link>
       </div>
     </Footer>
