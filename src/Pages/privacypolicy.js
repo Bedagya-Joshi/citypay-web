@@ -25,17 +25,18 @@ const privacypolicy = () => {
           you use the Services. This information may include:
         </h3>
         <p class="point-1-para">
-          Personal Information: Your name, email address, phone number, and
-          other identifying information when you create an account. Transaction
-          Information: Details about your transactions using City Wallet,
-          including the date, time, amount, recipient's information, and
-          transaction history. Location Information: We may collect your precise
-          location information if you enable location services for the App. This
-          information is used to provide location-based services such as finding
-          nearby merchants. Device Information: Information about your mobile
-          device, including its operating system, device type, and unique device
-          identifiers. Usage Information: Information about how you use the App,
-          such as your interactions with features, content, and other users.
+          - Personal Information: Your name, email address, phone number, and
+          other identifying information when you create an account. <br></br>-
+          Transaction Information: Details about your transactions using City
+          Wallet, including the date, time, amount, recipient's information, and
+          transaction history.<br></br>- Location Information: We may collect
+          your precise location information if you enable location services for
+          the App. This information is used to provide location-based services
+          such as finding nearby merchants.<br></br>- Device Information:
+          Information about your mobile device, including its operating system,
+          device type, and unique device identifiers. <br></br>- Usage
+          Information: Information about how you use the App, such as your
+          interactions with features, content, and other users.
         </p>
       </div>
       <div class="point-2">
@@ -43,6 +44,7 @@ const privacypolicy = () => {
           2. How We Use Your Information We use your information for various
           purposes, including:
         </h3>
+        
         <p class="point-1-para">
           Providing and maintaining the Services. Processing transactions and
           providing customer support. Personalizing and improving the App's
