@@ -355,9 +355,8 @@ const App = () => {
             <Route path="/downloads" element={<DownloadPage />} />
           </Routes>
         </Content>
-        {window.location.pathname !== "/privacypolicy" && <Footer />}
         <script src="C:/citipay/citypay-web/src/scrollscript.js"></script>
-        {/* <Footer /> */}
+        <Footer />
       </Layout>
     </Router>
   );
