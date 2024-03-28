@@ -13,8 +13,10 @@
 
 .background {
     background: linear-gradient(#fcfcfc, #bce9ff, #88e7f8);
+    position: relative;
+    left: 0px;
     height: 1200px;
-    width: max-content;
+    width: 100%;
     padding: 0;
 }
 
@@ -125,8 +127,8 @@
 }
 
 .map {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
+    position: relative;
+    left: 200px;
     width: 100%;
     height: 500px;
     bottom: 350px;
@@ -150,220 +152,50 @@
     padding-bottom: 10px;
 }
 
-@media (max-width: 2560px) and (min-width: 1799px) {
-    .background {
-        width: 100%;
-        position: relative;
-    }
-
-    .contact {
-        margin: 10px 10px 10px 1px;
-        padding: 5px 5px 5px 5px;
-        position: relative;
-        left: 130px;
-        width: 100%;
-        height: 100%;
-    }
-
-    .contact h2 {
-        position: relative;
-        top: 90px;
-        right: 60px;
-        font-size: xx-large;
-        font-weight: bold;
-    }
-
-    .contact .Office {
-        width: max-content;
-        position: relative;
-        top: 150px;
-        padding: 1px 15px 1px 1px;
-        margin: 1px 25px 1px 1px;
-    }
-
-    .contact .Office p {
-        width: 100%;
-    }
-
-    .Support .cont1 {
-        width: 130%;
-        height: 230px;
-        position: relative;
-        top: 100px;
-        padding: 1px 15px 1px 1px;
-        margin: 1px 15px 1px 1px;
-    }
-
-    .Support .cont1 p {
-        width: 100%;
-    }
-
-    .Support .cont1 .map {
-        width: 80%;
-        position: relative;
-        bottom: 350px;
-        left: 560px;
-        margin: 1px 1px 1px 1px;
-        padding: 2px 2px 2px 2px;
-    }
-
-    .Support .cont1 .map iframe {
-        margin: 1px 1px 1px 1px;
-        padding: 10px 10px 10px 10px;
-        width: 55%;
-        position: relative;
-        right: 0px;
-    }
-}
+@media (max-width: 2560px) and (min-width: 1799px) {}
 
 
 @media (max-width: 1800px) and (min-width: 1441px) {
-
-    .background {
-        width: 100%;
-        position: relative;
-    }
-
     .contact {
-        margin: 10px 10px 10px 1px;
+        margin: 100px 10px 10px 150px;
         padding: 5px 5px 5px 5px;
-        position: relative;
-        left: 130px;
-        width: 100%;
-        height: 100%;
-    }
-
-    .contact h2 {
-        position: relative;
-        top: 90px;
-        right: 60px;
-        font-size: xx-large;
-        font-weight: bold;
-    }
-
-    .contact .Office {
-        width: max-content;
-        position: relative;
-        top: 150px;
-        padding: 1px 15px 1px 1px;
-        margin: 1px 25px 1px 1px;
-    }
-
-    .contact .Office p {
-        width: 100%;
-    }
-
-    .Support .cont1 {
-        width: 130%;
-        height: 230px;
-        position: relative;
-        top: 100px;
-        padding: 1px 15px 1px 1px;
-        margin: 1px 15px 1px 1px;
-    }
-
-    .Support .cont1 p {
-        width: 100%;
-    }
-
-    .Support .cont1 .map {
-        width: 80%;
-        position: relative;
-        bottom: 350px;
-        left: 560px;
-        margin: 1px 1px 1px 1px;
-        padding: 2px 2px 2px 2px;
-    }
-
-    .Support .cont1 .map iframe {
-        margin: 1px 1px 1px 1px;
-        padding: 10px 10px 10px 10px;
-        width: 55%;
-        position: relative;
-        right: 0px;
     }
 }
 
 
 @media (max-width: 1440px) and (min-width: 1025px) {
-
-
-    .background {
-        width: 100%;
-        position: relative;
-    }
-
     .contact {
-        margin: 10px 10px 10px 1px;
+        margin: 150px 10px 10px 10px;
         padding: 5px 5px 5px 5px;
-        position: relative;
-        left: 30px;
-        width: 100%;
-        height: 100%;
     }
 
     .contact h2 {
         position: relative;
-        top: 40px;
-        right: 60px;
+        right: 120px;
     }
 
-    .contact .Office {
-        width: max-content;
-        position: relative;
-        left: 120px;
-        padding: 1px 15px 1px 1px;
-        margin: 1px 25px 1px 1px;
-    }
-
-    .contact .Office p {
-        width: 100%;
-    }
-
-    .Support .cont1 {
-        position: relative;
-        left: 70px;
-        width: 130%;
-        height: 230px;
-        padding: 1px 15px 1px 1px;
-        margin: 1px 15px 1px 1px;
-    }
-
-    .Support .cont1 p {
-        width: 100%;
-    }
-
-    .Support .cont1 .map {
-        position: relative;
-        top: 130px;
-        right: 0px;
-        margin: 1px 1px 1px 1px;
-        padding: 2px 2px 2px 2px;
-    }
-
-    .Support .cont1 .map iframe {
-        margin: 1px 1px 1px 1px;
-        padding: 10px 10px 10px 10px;
-        width: 100%;
-        position: relative;
-        right: 0px;
+    .map iframe {
+        width: 65%;
     }
 }
 
 
 @media (max-width: 1024px) and (min-width: 769px) {
-
+    .navMenu a {
+        font-size: 0.9em;
+    }
 
     .background {
-        width: 100%;
+        width: max-content;
         position: relative;
+        left: 125px;
     }
 
     .contact {
         margin: 10px 10px 10px 1px;
         padding: 5px 5px 5px 5px;
         position: relative;
-        left: 30px;
+        right: 25px;
         width: 100%;
         height: 100%;
     }
@@ -371,7 +203,6 @@
     .contact h2 {
         position: relative;
         top: 40px;
-        right: 60px;
     }
 
     .contact .Office {
@@ -398,15 +229,15 @@
     .Support .cont1 .map {
         position: relative;
         top: 200px;
-        right: 5px;
+        right: 90px;
     }
 
     .Support .cont1 .map iframe {
         margin: 1px 1px 1px 1px;
         padding: 10px 10px 10px 10px;
-        width: 100%;
+        width: 120%;
         position: relative;
-        right: 0px;
+        right: 205px;
     }
 }
 
@@ -417,26 +248,23 @@
     }
 
     .background {
-        width: 100%;
-        margin: 0;
+        width: max-content;
         position: relative;
+        left: 125px;
     }
 
     .contact {
         margin: 10px 10px 10px 1px;
         padding: 5px 5px 5px 5px;
         position: relative;
-        right: 35px;
+        right: 25px;
         width: 100%;
         height: 100%;
     }
 
     .contact h2 {
         position: relative;
-        left: 20px;
         top: 40px;
-        margin: 1px;
-        padding: 1px;
     }
 
     .contact .Office {
@@ -461,18 +289,17 @@
     }
 
     .Support .cont1 .map {
-        width: 120%;
         position: relative;
         top: 200px;
-        left: 7px;
+        right: 90px;
     }
 
     .Support .cont1 .map iframe {
         margin: 1px 1px 1px 1px;
         padding: 10px 10px 10px 10px;
-        width: 100%;
+        width: 120%;
         position: relative;
-        right: 0px;
+        right: 205px;
     }
 }
 
@@ -482,117 +309,29 @@
         font-size: 0.9em;
     }
 
-    .body-container {
-        width: max-content;
-        margin: 0;
-    }
-
     .background {
-        width: 120%;
-        margin: 0;
+        width: max-content;
         position: relative;
-        right: 50px;
+        left: 125px;
     }
 
     .contact {
         margin: 10px 10px 10px 1px;
         padding: 5px 5px 5px 5px;
         position: relative;
-        left: 40px;
-        width: 90%;
-        height: 100%;
-    }
-
-    .contact h1 {
-        position: relative;
-        right: 30px;
-    }
-
-    .contact h2 {
-        position: relative;
-        top: 40px;
-        right: 20px;
-    }
-
-    .contact .Office {
-        width: 80%;
-        padding: 1px 15px 1px 1px;
-        margin: 1px 25px 1px 1px;
-    }
-
-    .contact .Office p {
-        width: 100%;
-    }
-
-    .Support .cont1 {
-        width: 130%;
-        height: 230px;
-        padding: 1px 15px 1px 1px;
-        margin: 1px 15px 1px 1px;
-    }
-
-    .Support .cont1 p {
-        width: 100%;
-    }
-
-    .Support .cont1 .map {
-        position: relative;
-        top: 80px;
         right: 25px;
-        width: 110%;
-
-    }
-
-    .Support .cont1 .map iframe {
-        margin: 1px 1px 1px 1px;
-        padding: 10px 10px 10px 10px;
         width: 100%;
-        height: 400px;
-        position: relative;
-    }
-}
-
-
-@media (max-width: 425px) and (min-width: 376px) {
-    .navMenu a {
-        font-size: 0.9em;
-    }
-
-    .body-container {
-        width: max-content;
-        margin: 0;
-    }
-
-    .background {
-        width: max-content;
-        margin: 0;
-        position: relative;
-        left: -200px;
-    }
-
-    .contact {
-        margin: 10px 10px 10px 1px;
-        padding: 5px 5px 5px 5px;
-        position: relative;
-        left: 99px;
-        width: 90%;
         height: 100%;
-    }
-
-    .contact h1 {
-        position: relative;
-        right: 10px;
     }
 
     .contact h2 {
         position: relative;
         top: 40px;
-        right: 10px;
     }
 
     .contact .Office {
-        width: 80%;
-        padding: 1px 15px 1px 15px;
+        width: max-content;
+        padding: 1px 15px 1px 1px;
         margin: 1px 25px 1px 1px;
     }
 
@@ -603,7 +342,7 @@
     .Support .cont1 {
         width: 130%;
         height: 230px;
-        padding: 1px 15px 1px 15px;
+        padding: 1px 15px 1px 1px;
         margin: 1px 15px 1px 1px;
     }
 
@@ -614,15 +353,77 @@
     .Support .cont1 .map {
         position: relative;
         top: 200px;
-        right: 15px;
-        width: 110%;
+        right: 90px;
     }
 
     .Support .cont1 .map iframe {
         margin: 1px 1px 1px 1px;
         padding: 10px 10px 10px 10px;
-        width: 100%;
+        width: 120%;
         position: relative;
+        right: 205px;
+    }
+}
+
+
+@media (max-width: 425px) and (min-width: 376px) {
+    .navMenu a {
+        font-size: 0.9em;
+    }
+
+    .background {
+        width: max-content;
+        position: relative;
+        left: 125px;
+    }
+
+    .contact {
+        margin: 10px 10px 10px 1px;
+        padding: 5px 5px 5px 5px;
+        position: relative;
+        right: 25px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact h2 {
+        position: relative;
+        top: 40px;
+    }
+
+    .contact .Office {
+        width: max-content;
+        padding: 1px 15px 1px 1px;
+        margin: 1px 25px 1px 1px;
+    }
+
+    .contact .Office p {
+        width: 100%;
+    }
+
+    .Support .cont1 {
+        width: 130%;
+        height: 230px;
+        padding: 1px 15px 1px 1px;
+        margin: 1px 15px 1px 1px;
+    }
+
+    .Support .cont1 p {
+        width: 100%;
+    }
+
+    .Support .cont1 .map {
+        position: relative;
+        top: 200px;
+        right: 90px;
+    }
+
+    .Support .cont1 .map iframe {
+        margin: 1px 1px 1px 1px;
+        padding: 10px 10px 10px 10px;
+        width: 120%;
+        position: relative;
+        right: 205px;
     }
 }
 
@@ -632,43 +433,28 @@
         font-size: 0.9em;
     }
 
-    .body-container {
-        width: max-content;
-        margin: 0;
-        padding: 0;
-    }
-
     .background {
-        width: 134%;
-        margin: 0;
+        width: max-content;
         position: relative;
-        right: 50px;
+        left: 125px;
     }
 
     .contact {
         margin: 10px 10px 10px 1px;
         padding: 5px 5px 5px 5px;
         position: relative;
-        right: 15px;
-        width: 75%;
-        height: 100%;
-    }
-
-    .contact h1 {
-        position: relative;
-        right: 0px;
+        right: 25px;
         width: 100%;
-        font-size: 1.5em;
+        height: 100%;
     }
 
     .contact h2 {
         position: relative;
         top: 40px;
-        left: 35px;
     }
 
     .contact .Office {
-        width: 100%;
+        width: max-content;
         padding: 1px 15px 1px 1px;
         margin: 1px 25px 1px 1px;
     }
@@ -678,7 +464,7 @@
     }
 
     .Support .cont1 {
-        width: 200%;
+        width: 130%;
         height: 230px;
         padding: 1px 15px 1px 1px;
         margin: 1px 15px 1px 1px;
@@ -690,16 +476,16 @@
 
     .Support .cont1 .map {
         position: relative;
-        top: 100px;
-        right: 35px;
-        width: 110%;
+        top: 200px;
+        right: 90px;
     }
 
     .Support .cont1 .map iframe {
         margin: 1px 1px 1px 1px;
         padding: 10px 10px 10px 10px;
-        width: 100%;
+        width: 120%;
         position: relative;
+        right: 205px;
     }
 }
 
@@ -709,43 +495,28 @@
         font-size: 0.9em;
     }
 
-    .body-container {
-        width: max-content;
-        margin: 0;
-        padding: 0;
-    }
-
     .background {
-        width: 170%;
-        margin: 0;
+        width: max-content;
         position: relative;
-        right: 85px;
+        left: 125px;
     }
 
     .contact {
         margin: 10px 10px 10px 1px;
         padding: 5px 5px 5px 5px;
         position: relative;
-        right: 2px;
-        width: 75%;
-        height: 100%;
-    }
-
-    .contact h1 {
-        position: relative;
-        right: 0px;
+        right: 25px;
         width: 100%;
-        font-size: 1.5em;
+        height: 100%;
     }
 
     .contact h2 {
         position: relative;
         top: 40px;
-        left: 35px;
     }
 
     .contact .Office {
-        width: 100%;
+        width: max-content;
         padding: 1px 15px 1px 1px;
         margin: 1px 25px 1px 1px;
     }
@@ -755,7 +526,7 @@
     }
 
     .Support .cont1 {
-        width: 200%;
+        width: 130%;
         height: 230px;
         padding: 1px 15px 1px 1px;
         margin: 1px 15px 1px 1px;
@@ -767,15 +538,15 @@
 
     .Support .cont1 .map {
         position: relative;
-        top: 100px;
-        right: 24px;
-        width: 112%;
+        top: 200px;
+        right: 90px;
     }
 
     .Support .cont1 .map iframe {
         margin: 1px 1px 1px 1px;
         padding: 10px 10px 10px 10px;
-        width: 100%;
+        width: 120%;
         position: relative;
+        right: 205px;
     }
 }
