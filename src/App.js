@@ -301,40 +301,23 @@ const App = () => {
                       <div className="rewards">
                         <h2>More Reward Points</h2>
                         <p>
-                          Embark on an exciting journey with City Wallet and
-                          unlock a world of exclusive perks! Begin your
-                          adventure by earning 10 points simply by signing in.
-                          Boost your account security and stature with an
-                          exhilarating 50 point when you complete the KYC
-                          verification process. Sharing the City Wallet
-                          experience is not only fulfilling but also rewarding.
-                          Earn a thrilling 25 points for every successful
-                          referral. Earn a thrilling 25 points for every
-                          successful referral.
+                          Embark on an enthralling journey with City Wallet and unlock a treasure trove of exclusive perks! Your adventure begins with a generous welcome - earn 10 points just by signing in. Elevate your account's security and status with an exciting 50-point boost upon completing the KYC verification process. Sharing the City Wallet experience isn't just fulfilling; it's rewarding too. Earn an electrifying 25 points for every successful referral, and watch your rewards multiply with each connection made.
+
+
                         </p>
                       </div>
 
                       <div className="top-up">
                         <h2>Mobile Top-Up Thrills</h2>
                         <p>
-                          Recharge your mobile phone with City Wallet and
-                          experience the joy of 3.5% cashback on NTC top-ups.
-                          We're not just a wallet; We're your passport to saving
-                          and conveniences. Enjoy the seamless process of
-                          topping up your phone and witnessing the exciting
-                          cashback rewards that follow.
+                          Recharge your mobile phone effortlessly with City Wallet and revel in the delight of receiving 3.5% cashback on NTC & 2.5% cashback on Ncell top-ups. Beyond being just a wallet, we are your ultimate companion for savings and convenience. Experience the seamless process of topping up your phone and indulge in the exhilarating cashback rewards that await.
                         </p>
                       </div>
 
                       <div className="redefine">
                         <h2>Loyalty points</h2>
                         <p>
-                          Unlock exclusive benefits and rewards with City Pay's
-                          loyalty points program. Earn points with each
-                          transaction and move up tiers to access increased
-                          rewards and benefits. Redeem your accumulated points
-                          for valuable perks or choose to upgrade your loyalty
-                          tier for even greater benefits.
+                          Unlock a realm of exclusive benefits and rewards through City Pay's esteemed loyalty points program. With every transaction, you earn points that propel you through tiers, granting access to enhanced rewards and privileges. Redeem your accrued points for valuable perks or elevate your loyalty tier for even more remarkable benefits.
                         </p>
                       </div>
                     </div>
@@ -351,7 +334,7 @@ const App = () => {
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/ourTeam" element={<OurTeamPage />} />
             <Route path="/news/*" element={<NewsPage />} />
-            <Route path="/privacypolicy" element={<PrivacyPolicy/>} />
+            <Route path="/privacypolicy" element={<PrivacyPolicy />} />
             <Route path="/downloads" element={<DownloadPage />} />
           </Routes>
         </Content>
