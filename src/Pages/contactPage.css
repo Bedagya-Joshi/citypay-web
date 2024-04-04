@@ -11,22 +11,34 @@
     border: none;
 }
 
+.background {
+    background: linear-gradient(#fcfcfc, #bce9ff, #88e7f8);
+    height: 1200px;
+    width: max-content;
+    padding: 0;
+}
+
 .contact {
-    padding-top: 30px;
-    padding-left: 35px;
-    padding-bottom: 20%;
+    padding: 0px;
     font-size: larger;
+    position: relative;
+    top: 40px;
+
 }
 
 .contact h2 {
     text-align: center;
-    text-decoration: underline;
     padding-top: 15px;
+    color: #0D60B5;
+}
+
+.contact i {
+    color: #0D60B5;
 }
 
 .Office h3 {
     padding-bottom: 10px;
-    text-decoration: underline;
+    color: #0D60B5;
 }
 
 .Office {
@@ -35,12 +47,31 @@
     font-size: large;
     padding-bottom: 10px;
     gap: 10px;
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 28%;
+}
+
+.Office h1 {
+    color: #0D60B5;
+}
+
+.Support {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    width: 60%;
+    height: 30%;
+}
+
+.Support h3 {
+    color: #0D60B5;
 }
 
 .address-container {
     display: flex;
     align-items: center;
-    /* Align items vertically in the center */
 }
 
 .address-container i {
@@ -50,7 +81,7 @@
 .po-container {
     display: flex;
     align-items: center;
-    /* Align items vertically in the center */
+    width: 60%;
 }
 
 .po-container i {
@@ -60,7 +91,6 @@
 .Email {
     display: flex;
     align-items: center;
-    /* Align items vertically in the center */
 }
 
 .Email i {
@@ -70,7 +100,6 @@
 .Tel {
     display: flex;
     align-iTems: center;
-    /* Align items vertically in the center */
 }
 
 .Tel i {
@@ -80,7 +109,6 @@
 .Call {
     display: flex;
     align-iTems: center;
-    /* Align items vertically in the center */
 }
 
 .Call i {
@@ -90,371 +118,723 @@
 .tol {
     display: flex;
     align-iTems: center;
-    /* Align items vertitoly in the center */
 }
 
 .tol i {
     margin-right: 10px;
 }
 
+.map {
+    margin: 1px 1px 1px 1px;
+    padding: 1px 1px 1px 1px;
+    width: 100%;
+    height: 500px;
+    bottom: 350px;
+}
 
+.map iframe {
+    position: relative;
+}
 
 .cont1 h3 {
     padding-bottom: 10px;
-    text-decoration: underline;
 }
 
 .cont1 {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 46%;
+    height: 10%;
     font-size: large;
     padding-bottom: 10px;
 }
 
-@media only screen and (max-width: 1080px) {
-    .Support .cont2 {
-        width: 30%;
-        margin-left: 440px;
-        margin-top: -230px;
+@media (max-width: 2560px) and (min-width: 1801px) {
+    .background {
+        width: 100%;
+        position: relative;
     }
-}
 
-@media(width<=1300px) {
     .contact {
-        padding-top: 15px;
-    }
-
-    .contact h1 {
-        font-size: 2.5em;
+        margin: 10px 10px 10px 1px;
+        padding: 5px 5px 5px 5px;
+        position: relative;
+        left: 130px;
+        width: 100%;
+        height: 100%;
     }
 
     .contact h2 {
-        font-size: 1.3em;
+        position: relative;
+        top: 90px;
+        right: 60px;
+        font-size: xx-large;
+        font-weight: bold;
     }
 
-    .Office h3 {
-        font-size: 1.0em;
+    .contact .Office {
+        width: max-content;
+        position: relative;
+        top: 150px;
+        padding: 1px 15px 1px 1px;
+        margin: 1px 25px 1px 1px;
     }
 
-    .Office p {
-        font-size: 1.0em;
+    .contact .Office p {
+        width: 100%;
     }
 
-    .Support h3 {
-        font-size: 1.0em;
+    .Support .cont1 {
+        width: 130%;
+        height: 230px;
+        position: relative;
+        top: 100px;
+        padding: 1px 15px 1px 1px;
+        margin: 1px 15px 1px 1px;
     }
 
-    .Support p {
-        font-size: 1.0em;
+    .Support .cont1 p {
+        width: 100%;
     }
 
-    .Branch h3 {
-        font-size: 1.0em;
+    .Support .cont1 .map {
+        width: 80%;
+        position: relative;
+        bottom: 350px;
+        left: 560px;
+        margin: 1px 1px 1px 1px;
+        padding: 2px 2px 2px 2px;
     }
 
-    .Support .cont2 {
-        width: 30%;
-        margin-left: 340px;
-        margin-top: -192px;
-    }
-}
-
-
-
-@media(width<=1115px) {
-    .contact {
-        padding-top: 15px;
-    }
-
-    .contact h1 {
-        font-size: 2.3em;
-    }
-
-    .contact h2 {
-        font-size: 1.15em;
-    }
-
-    .Office h3 {
-        font-size: 0.9em;
-    }
-
-    .Office p {
-        font-size: 0.9em;
-    }
-
-    .Support h3 {
-        font-size: 0.9em;
-    }
-
-    .Support p {
-        font-size: 0.9em;
-    }
-
-    .Branch h3 {
-        font-size: 0.9em;
-    }
-
-    .Support .cont2 {
-        width: 30%;
-        margin-left: 350px;
-        margin-top: -180px;
+    .Support .cont1 .map iframe {
+        margin: 1px 1px 1px 1px;
+        padding: 10px 10px 10px 10px;
+        width: 55%;
+        position: relative;
+        right: 0px;
     }
 }
 
 
-@media(width<=923px) {
+@media (max-width: 1800px) and (min-width: 1441px) {
 
-    .contact {
-        padding-top: 15px;
+    .background {
+        width: 100%;
+        position: relative;
     }
 
-    .contact h1 {
-        font-size: 2.3em;
+    .contact {
+        margin: 10px 10px 10px 1px;
+        padding: 5px 5px 5px 5px;
+        position: relative;
+        left: 130px;
+        width: 100%;
+        height: 100%;
     }
 
     .contact h2 {
-        font-size: 1.15em;
+        position: relative;
+        top: 90px;
+        right: 60px;
+        font-size: xx-large;
+        font-weight: bold;
     }
 
-    .Office h3 {
-        font-size: 0.9em;
+    .contact .Office {
+        width: max-content;
+        position: relative;
+        top: 150px;
+        padding: 1px 15px 1px 1px;
+        margin: 1px 25px 1px 1px;
     }
 
-    .Office p {
-        font-size: 0.9em;
+    .contact .Office p {
+        width: 100%;
     }
 
-    .Support h3 {
-        font-size: 0.9em;
+    .Support .cont1 {
+        width: 130%;
+        height: 230px;
+        position: relative;
+        top: 100px;
+        padding: 1px 15px 1px 1px;
+        margin: 1px 15px 1px 1px;
     }
 
-    .Support p {
-        font-size: 0.9em;
+    .Support .cont1 p {
+        width: 100%;
     }
 
-    .Branch h3 {
-        font-size: 0.9em;
+    .Support .cont1 .map {
+        width: 80%;
+        position: relative;
+        bottom: 350px;
+        left: 560px;
+        margin: 1px 1px 1px 1px;
+        padding: 2px 2px 2px 2px;
     }
 
-    .Support .cont2 {
-
-        width: 40%;
-        margin-left: 350px;
-        margin-top: -180px;
+    .Support .cont1 .map iframe {
+        margin: 1px 1px 1px 1px;
+        padding: 10px 10px 10px 10px;
+        width: 55%;
+        position: relative;
+        right: 0px;
     }
 }
 
 
-@media(width<=840px) {
+@media (max-width: 1440px) and (min-width: 1025px) {
 
-    .contact {
-        padding-top: 15px;
+
+    .background {
+        width: 100%;
+        position: relative;
     }
 
-    .contact h1 {
-        font-size: 2.11em;
+    .contact {
+        margin: 10px 10px 10px 1px;
+        padding: 5px 5px 5px 5px;
+        position: relative;
+        left: 30px;
+        width: 100%;
+        height: 100%;
     }
 
     .contact h2 {
-        font-size: 1.07em;
+        position: relative;
+        top: 40px;
+        right: 60px;
     }
 
-    .Office h3 {
-        font-size: 0.8em;
+    .contact .Office {
+        width: max-content;
+        position: relative;
+        left: 120px;
+        padding: 1px 15px 1px 1px;
+        margin: 1px 25px 1px 1px;
     }
 
-    .Office p {
-        font-size: 0.8em;
+    .contact .Office p {
+        width: 100%;
     }
 
-    .Support h3 {
-        font-size: 0.8em;
+    .Support .cont1 {
+        position: relative;
+        left: 70px;
+        width: 130%;
+        height: 230px;
+        padding: 1px 15px 1px 1px;
+        margin: 1px 15px 1px 1px;
     }
 
-    .Support p {
-        font-size: 0.8em;
+    .Support .cont1 p {
+        width: 100%;
     }
 
-    .Branch h3 {
-        font-size: 0.8em;
+    .Support .cont1 .map {
+        position: relative;
+        top: 130px;
+        right: 0px;
+        margin: 1px 1px 1px 1px;
+        padding: 2px 2px 2px 2px;
     }
 
-    .Support .cont2 {
-        width: 40%;
-        margin-left: 330px;
-        margin-top: -160px;
+    .Support .cont1 .map iframe {
+        margin: 1px 1px 1px 1px;
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+        position: relative;
+        right: 0px;
     }
 }
 
 
-@media(width<=720px) {
-    .contact {
-        padding-top: 15px;
-        padding-left: 30px;
+@media (max-width: 1024px) and (min-width: 769px) {
+
+
+    .background {
+        width: 100%;
+        position: relative;
     }
 
-    .contact h1 {
-        font-size: 2.11em;
+    .contact {
+        margin: 10px 10px 10px 1px;
+        padding: 5px 5px 5px 5px;
+        position: relative;
+        left: 30px;
+        width: 100%;
+        height: 100%;
     }
 
     .contact h2 {
-        font-size: 1.07em;
+        position: relative;
+        top: 40px;
+        right: 60px;
     }
 
-    .Office h3 {
-        font-size: 0.8em;
+    .contact .Office {
+        width: max-content;
+        padding: 1px 15px 1px 1px;
+        margin: 1px 25px 1px 1px;
     }
 
-    .Office p {
-        font-size: 0.8em;
+    .contact .Office p {
+        width: 100%;
     }
 
-    .Support h3 {
-        font-size: 0.8em;
+    .Support .cont1 {
+        width: 130%;
+        height: 230px;
+        padding: 1px 15px 1px 1px;
+        margin: 1px 15px 1px 1px;
     }
 
-    .Support p {
-        font-size: 0.8em;
+    .Support .cont1 p {
+        width: 100%;
     }
 
-    .Branch h3 {
-        font-size: 0.8em;
+    .Support .cont1 .map {
+        position: relative;
+        top: 200px;
+        right: 5px;
     }
 
-    .Support .cont2 {
-        width: 40%;
-        margin-left: 270px;
-        margin-top: -160px;
+    .Support .cont1 .map iframe {
+        margin: 1px 1px 1px 1px;
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+        position: relative;
+        right: 0px;
     }
 }
 
 
+@media (max-width: 768px) and (min-width: 721px) {
 
-@media(width<=640px) {
-
-    .contact {
-        padding-top: 15px;
-        padding-left: 10px;
+    .background {
+        width: 100%;
+        position: relative;
     }
 
-    .contact h1 {
-        font-size: 2.11em;
+    .contact {
+        margin: 10px 10px 10px 1px;
+        padding: 5px 5px 5px 5px;
+        position: relative;
+        left: 30px;
+        width: 100%;
+        height: 100%;
     }
 
     .contact h2 {
-        font-size: 1.07em;
+        position: relative;
+        top: 40px;
+        right: 60px;
     }
 
-    .Office h3 {
-        font-size: 0.8em;
+    .contact .Office {
+        width: max-content;
+        padding: 1px 15px 1px 1px;
+        margin: 1px 25px 1px 1px;
     }
 
-    .Office p {
-        font-size: 0.8em;
+    .contact .Office p {
+        width: 100%;
     }
 
-    .Support h3 {
-        font-size: 0.8em;
+    .Support .cont1 {
+        width: 130%;
+        height: 230px;
+        padding: 1px 15px 1px 1px;
+        margin: 1px 15px 1px 1px;
     }
 
-    .Support p {
-        font-size: 0.8em;
+    .Support .cont1 p {
+        width: 100%;
     }
 
-    .Branch h3 {
-        font-size: 0.8em;
+    .Support .cont1 .map {
+        position: relative;
+        top: 200px;
+        right: 5px;
     }
 
-    .Support .cont2 {
-        width: 50%;
-        margin-left: 230px;
-        margin-top: -160px;
+    .Support .cont1 .map iframe {
+        margin: 1px 1px 1px 1px;
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+        position: relative;
+        right: 0px;
     }
 }
 
 
-@media(width<=557px) {
-
-    .contact {
-        padding-top: 15px;
-        padding-left: 1px;
+@media (max-width: 720px) and (min-width: 562px) {
+    .navMenu a {
+        font-size: 0.9em;
     }
 
-    .contact h1 {
-        font-size: 2.0em;
+    .background {
+        width: 100%;
+        margin: 0;
+        position: relative;
+    }
+
+    .contact {
+        margin: 10px 10px 10px 1px;
+        padding: 5px 5px 5px 5px;
+        position: relative;
+        right: 35px;
+        width: 100%;
+        height: 100%;
     }
 
     .contact h2 {
-        font-size: 1.01em;
+        position: relative;
+        left: 20px;
+        top: 40px;
+        margin: 1px;
+        padding: 1px;
     }
 
-    .Office h3 {
-        font-size: 0.7em;
+    .contact .Office {
+        width: max-content;
+        padding: 1px 15px 1px 1px;
+        margin: 1px 25px 1px 1px;
     }
 
-    .Office p {
-        font-size: 0.7em;
+    .contact .Office p {
+        width: 100%;
     }
 
-    .Support h3 {
-        font-size: 0.7em;
+    .Support .cont1 {
+        width: 130%;
+        height: 230px;
+        padding: 1px 15px 1px 1px;
+        margin: 1px 15px 1px 1px;
     }
 
-    .Support p {
-        font-size: 0.7em;
+    .Support .cont1 p {
+        width: 100%;
     }
 
-    .Branch h3 {
-        font-size: 0.7em;
+    .Support .cont1 .map {
+        width: 120%;
+        position: relative;
+        top: 200px;
+        left: 7px;
     }
 
-    .Support .cont2 {
-        width: 50%;
-        margin-left: 200px;
-        margin-top: -142px;
+    .Support .cont1 .map iframe {
+        margin: 1px 1px 1px 1px;
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+        position: relative;
+        right: 0px;
     }
 }
 
 
+@media (max-width: 561px) and (min-width: 426px) {
+    .navMenu a {
+        font-size: 0.9em;
+    }
 
-@media(width<=390px) {
+    .body-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .background {
+        width: 130%;
+        margin: 0;
+        position: relative;
+        right: 50px;
+    }
 
     .contact {
-        padding-top: 15px;
+        margin: 10px 10px 10px 1px;
+        padding: 5px 5px 5px 5px;
+        position: relative;
+        left: 40px;
+        width: 90%;
+        height: 100%;
     }
 
     .contact h1 {
-        font-size: 2.0em;
+        position: relative;
+        right: 30px;
     }
 
     .contact h2 {
-        font-size: 1.01em;
+        position: relative;
+        top: 40px;
+        right: 20px;
     }
 
-    .Office h3 {
-        font-size: 0.7em;
+    .contact .Office {
+        width: 80%;
+        padding: 1px 15px 1px 1px;
+        margin: 1px 25px 1px 1px;
     }
 
-    .Office p {
-        font-size: 0.7em;
+    .contact .Office p {
+        width: 100%;
     }
 
-    .Support h3 {
-        font-size: 0.7em;
+    .Support .cont1 {
+        width: 130%;
+        height: 230px;
+        padding: 1px 15px 1px 1px;
+        margin: 1px 15px 1px 1px;
     }
 
-    .Support p {
-        font-size: 0.7em;
+    .Support .cont1 p {
+        width: 100%;
     }
 
-    .Branch h3 {
-        font-size: 0.7em;
+    .Support .cont1 .map {
+        position: relative;
+        top: 80px;
+        right: 25px;
+        width: 110%;
+
     }
 
-    .Support .cont2 {
-        width: 50%;
-        margin-left: 170px;
-        margin-top: -209px;
+    .Support .cont1 .map iframe {
+        margin: 1px 1px 1px 1px;
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+        height: 400px;
+        position: relative;
+    }
+}
+
+
+@media (max-width: 425px) and (min-width: 376px) {
+    .navMenu a {
+        font-size: 0.9em;
+    }
+
+    .body-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .background {
+        width: max-content;
+        margin: 0;
+        position: relative;
+        left: -200px;
+    }
+
+    .contact {
+        margin: 10px 10px 10px 1px;
+        padding: 5px 5px 5px 5px;
+        position: relative;
+        left: 99px;
+        width: 90%;
+        height: 100%;
+    }
+
+    .contact h1 {
+        position: relative;
+        right: 10px;
+    }
+
+    .contact h2 {
+        position: relative;
+        top: 40px;
+        right: 10px;
+    }
+
+    .contact .Office {
+        width: 80%;
+        padding: 1px 15px 1px 15px;
+        margin: 1px 25px 1px 1px;
+    }
+
+    .contact .Office p {
+        width: 100%;
+    }
+
+    .Support .cont1 {
+        width: 130%;
+        height: 230px;
+        padding: 1px 15px 1px 15px;
+        margin: 1px 15px 1px 1px;
+    }
+
+    .Support .cont1 p {
+        width: 100%;
+    }
+
+    .Support .cont1 .map {
+        position: relative;
+        top: 200px;
+        right: 15px;
+        width: 110%;
+    }
+
+    .Support .cont1 .map iframe {
+        margin: 1px 1px 1px 1px;
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+        position: relative;
+    }
+}
+
+
+@media (max-width: 375px) and (min-width: 321px) {
+    .navMenu a {
+        font-size: 0.9em;
+    }
+
+    .body-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .background {
+        width: 134%;
+        margin: 0;
+        position: relative;
+        right: 50px;
+    }
+
+    .contact {
+        margin: 10px 10px 10px 1px;
+        padding: 5px 5px 5px 5px;
+        position: relative;
+        right: 15px;
+        width: 75%;
+        height: 100%;
+    }
+
+    .contact h1 {
+        position: relative;
+        right: 0px;
+        width: 100%;
+        font-size: 1.5em;
+    }
+
+    .contact h2 {
+        position: relative;
+        top: 40px;
+        left: 35px;
+    }
+
+    .contact .Office {
+        width: 100%;
+        padding: 1px 15px 1px 1px;
+        margin: 1px 25px 1px 1px;
+    }
+
+    .contact .Office p {
+        width: 100%;
+    }
+
+    .Support .cont1 {
+        width: 200%;
+        height: 230px;
+        padding: 1px 15px 1px 1px;
+        margin: 1px 15px 1px 1px;
+    }
+
+    .Support .cont1 p {
+        width: 100%;
+    }
+
+    .Support .cont1 .map {
+        position: relative;
+        top: 100px;
+        right: 35px;
+        width: 110%;
+    }
+
+    .Support .cont1 .map iframe {
+        margin: 1px 1px 1px 1px;
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+        position: relative;
+    }
+}
+
+
+@media (max-width: 320px) and (min-width: 280px) {
+    .navMenu a {
+        font-size: 0.9em;
+    }
+
+    .body-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .background {
+        width: 170%;
+        margin: 0;
+        position: relative;
+        right: 85px;
+    }
+
+    .contact {
+        margin: 10px 10px 10px 1px;
+        padding: 5px 5px 5px 5px;
+        position: relative;
+        right: 2px;
+        width: 75%;
+        height: 100%;
+    }
+
+    .contact h1 {
+        position: relative;
+        right: 0px;
+        width: 100%;
+        font-size: 1.5em;
+    }
+
+    .contact h2 {
+        position: relative;
+        top: 40px;
+        left: 35px;
+    }
+
+    .contact .Office {
+        width: 100%;
+        padding: 1px 15px 1px 1px;
+        margin: 1px 25px 1px 1px;
+    }
+
+    .contact .Office p {
+        width: 100%;
+    }
+
+    .Support .cont1 {
+        width: 200%;
+        height: 230px;
+        padding: 1px 15px 1px 1px;
+        margin: 1px 15px 1px 1px;
+    }
+
+    .Support .cont1 p {
+        width: 100%;
+    }
+
+    .Support .cont1 .map {
+        position: relative;
+        top: 100px;
+        right: 24px;
+        width: 112%;
+    }
+
+    .Support .cont1 .map iframe {
+        margin: 1px 1px 1px 1px;
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+        position: relative;
     }
 }
