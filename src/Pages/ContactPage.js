@@ -48,15 +48,16 @@ const ContactPage = () => {
               </div>
 
               <div className="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.2411303126355!2d85.3189306751358!3d27.709840325382153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19008dcc9663%3A0xd213f8fcbca10475!2sCity%20Express%20Money%20Transfer%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1711432417213!5m2!1sen!2snp"
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14128.953087876642!2d85.3214572!3d27.7099286!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb192a39209f03%3A0xd017817e67ececb6!2sCity%20Wallet%20Private%20Limited!5e0!3m2!1sen!2snp!4v1711884790874!5m2!1sen!2snp"
                   width="600"
                   height="450"
                   title="Map"
                   style={{ border: "0" }}
                   allowFullScreen=""
                   loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade">
+                  referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
+
               </div>
 
             </div>
