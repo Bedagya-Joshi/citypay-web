@@ -34,7 +34,7 @@ const ContactPage = () => {
 
               <div className="Tel">
                 <i class='bx bx-phone' ></i>
-                <p>TelePhone No: 00977-1-4531900 ext -116, 117, 162, 205</p>
+                <p>TelePhone No: +977-1-4531900 ext -116, 117, 162, 205</p>
               </div>
 
               <div className="tol">
@@ -44,7 +44,7 @@ const ContactPage = () => {
 
               <div className="Call">
                 <i class='bx bx-phone-call'></i>
-                <p>Call Center: 00977-1-5970225</p><br></br>
+                <p>Call Center: +977-1-5970225</p><br></br>
               </div>
 
               <div className="map">
