@@ -204,6 +204,18 @@ body {
   text-align: justify;
 }
 
+.body-container .bottom {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  /* Ensure the image covers the entire viewport width */
+  height: auto;
+  z-index: -1;
+  /* Ensure the image stays behind the content */
+}
+
 /* CSS for second section starts here */
 
 .second-section {
@@ -268,7 +280,7 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
-  background-color: rgb(231, 229, 229);
+  background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
   border-radius: 20px;
   padding: 20px;
   margin-bottom: 20px;
@@ -281,12 +293,13 @@ p {
   padding: 0;
 }
 
-.grid-content h2 {
+.second-grid .grid-content h2 {
   font-size: 20px;
-  color: #0d60b5;
+  color: #ffffff;
 }
 
-.grid-content p {
+.second-grid .grid-content p {
+  color: #ffffff;
   font-size: 15px;
   text-align: justify;
 }
@@ -374,7 +387,7 @@ p {
   gap: 20px;
   width: 400px;
   height: 220px;
-  background-color: rgb(231, 229, 229);
+  background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
   border-radius: 20px;
   padding: 20px;
   margin-bottom: 20px;
@@ -387,12 +400,13 @@ p {
   padding: 0;
 }
 
-.grid-content h2 {
+.third-grid .third-grid2, .third-grid3 h2 {
   font-size: 20px;
-  color: #0d60b5;
+  color: #ffffff;
 }
 
-.grid-content p {
+.third-grid .third-grid2, .third-grid3 p {
+  color: #ffffff;
   font-size: 15px;
   text-align: justify;
 }
@@ -459,7 +473,7 @@ p {
   gap: 20px;
   width: 400px;
   height: 220px;
-  background-color: rgb(231, 229, 229);
+  background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
   border-radius: 50px;
   padding: 20px;
   margin-bottom: 20px;
@@ -487,12 +501,13 @@ p {
   padding: 0;
 }
 
-.grid-content-bank h2 {
+.fourth-grid .fourth-grid2, .fourth-grid3 h2 {
   font-size: 20px;
-  color: #0d60b5;
+  color: #ffffff;
 }
 
-.grid-content-bank p {
+.fourth-grid .fourth-grid2, .fourth-grid3 p {
+  color: #ffffff;
   font-size: 15px;
   text-align: justify;
 }
@@ -582,8 +597,8 @@ p {
   gap: 20px;
   width: 320px;
   height: 240px;
-  background-color: rgb(231, 229, 229);
-  border: 7px solid #0D60B5;
+  background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
+  border: 7px solid #F53F4A;
   border-radius: 50px;
   padding: 20px;
   margin-bottom: 20px;
@@ -600,13 +615,14 @@ p {
 
 .grid-content-4 h2 {
   font-size: 20px;
-  color: #0d60b5;
+  color: #ffffff;
   position: relative;
   text-align: center;
   align-items: center;
 }
 
 .grid-content-4 p {
+  color: #ffffff;
   font-size: 15px;
   text-align: justify;
   position: relative;
@@ -682,7 +698,7 @@ p {
   grid-template-columns: 1fr 2fr;
   width: 357px;
   height: 210px;
-  background-color: rgb(231, 229, 229);
+  background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
   border-radius: 20px;
   padding: 20px 20px 20px 20px;
   margin: 50px 10px 10px 10px;
@@ -698,12 +714,13 @@ p {
   padding: 0;
 }
 
-.grid-content h2 {
+.sixth-grid .grid-content h2 {
   font-size: 20px;
-  color: #0d60b5;
+  color: #ffffff;
 }
 
-.grid-content p {
+.sixth-grid .grid-content p {
+  color: #ffffff;
   font-size: 15px;
   text-align: justify;
   width: 100%;
@@ -750,9 +767,10 @@ p {
 
 .seventh-title p {
   margin-top: 0;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: bold;
   text-align: center;
+  width: 80%;
 }
 
 .seventh-body {
@@ -782,6 +800,9 @@ p {
   width: 100%;
   margin: 0;
   padding: 0;
+  justify-content: center;
+  position: relative;
+  left: 60px;
 }
 
 .seventh-grid1,
@@ -793,7 +814,7 @@ p {
   grid-template-columns: 1fr;
   width: 294px;
   height: 500px;
-  background-color: rgb(231, 229, 229);
+  background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
   border-radius: 20px;
   padding: 20px 20px 0px 20px;
   margin: 50px 10px 10px 10px;
@@ -812,12 +833,13 @@ p {
 
 .grid-content h2 {
   font-size: 20px;
-  color: #0d60b5;
+  color: #ffffff;
   text-align: center;
 }
 
 .grid-content p {
   font-size: 15px;
+  color: #ffffff;
   text-align: justify;
   width: 100%;
 }
