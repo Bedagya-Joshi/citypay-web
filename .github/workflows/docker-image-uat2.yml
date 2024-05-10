@@ -3,10 +3,10 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main
+      - UAT-v2.0
   pull_request:
     branches:
-      - main
+      - UAT-v2.0
 
 jobs:
   build-and-push:
@@ -23,13 +23,13 @@ jobs:
           password: ${{ secrets.DPSW }}
 
       - name: Build Docker Image
-        run: docker build . --file Dockerfile --tag citypay:latest
+        run: docker build . --file Dockerfile --tag citytest-v2.0:latest
 
       - name: Delete Previous Docker Image from Registry
         run: |
-          docker image rm -f ${{ secrets.DUSERNAME }}/citypay:latest || true
+          docker image rm -f ${{ secrets.DUSERNAME }}/citytest-v2.0:latest || true
 
       - name: Push Docker Image to Registry
         run: |
-          docker tag citypay:latest ${{ secrets.DUSERNAME }}/citypay:latest
-          docker push ${{ secrets.DUSERNAME }}/citypay:latest
+          docker tag citytest-v2.0:latest ${{ secrets.DUSERNAME }}/citytest-v2.0:latest
+          docker push ${{ secrets.DUSERNAME }}/citytest-v2.0:latest
