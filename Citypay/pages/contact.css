@@ -233,6 +233,18 @@ body {
     flex-direction: row;
     gap: 170px;
     align-items: center;
+    position: relative;
+    right: 170px;
+}
+
+.info .basic {
+    margin: 4px 4px 4px 4px;
+    padding: 4px 4px 4px 4px;
+    width: 100%;
+}
+
+.info .basic p {
+    font-weight: bold;
 }
 
 .info .basic .connect p {
@@ -243,7 +255,7 @@ body {
 
 .logoQR {
     position: relative;
-    top: 80px;
+    top: 40px;
     left: 40px;
 }
 
@@ -261,6 +273,14 @@ body {
     height: auto;
     margin: 25px 2px 2px 2px;
     padding: 25px 5px 5px 15px;
+}
+
+.connect {
+    width: 100%;
+}
+
+.connect p {
+    font-weight: bolder;
 }
 
 .connect .fb {
@@ -282,6 +302,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.footer .foot .footer-links h5 {
+    font-weight: bolder;
 }
 
 .copyright {
