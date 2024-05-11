@@ -432,3 +432,50 @@ body {
     text-align: center;
     color: white;
 }
+
+
+/* Media Query Responsiveness */
+
+@media (max-width:2560px) and (min-width: 1441px) {
+    .container {}
+
+    .footer {}
+
+}
+
+
+@media (max-width:1440px) and (min-width: 1025px) {
+    .container {}
+
+    .footer {}
+}
+
+@media (max-width:1024px) and (min-width: 769px) {
+    .container {}
+
+    .footer {}
+}
+
+@media (max-width:768px) and (min-width: 426px) {
+    .container {}
+
+    .footer {}
+}
+
+@media (max-width:425px) and (min-width: 376px) {
+    .container {}
+
+    .footer {}
+}
+
+@media (max-width:375px) and (min-width: 321px) {
+    .container {}
+
+    .footer {}
+}
+
+@media (max-width:320px) and (min-width: 280px) {
+    .container {}
+
+    .footer {}
+}
