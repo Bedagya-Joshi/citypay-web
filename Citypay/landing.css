@@ -135,9 +135,9 @@ body {
 /* first section starts here */
 
 .first-section {
-  height: 100vh;
+  height: 87vh;
   width: 100%;
-  background-image: url("../Assets/Flow.png");
+  background-image: url("./Assets/Flow.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -202,18 +202,6 @@ body {
   font-size: 20px;
   font-weight: bold;
   text-align: justify;
-}
-
-.body-container .bottom {
-  overflow: hidden;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
-  /* Ensure the image covers the entire viewport width */
-  height: auto;
-  z-index: -1;
-  /* Ensure the image stays behind the content */
 }
 
 /* CSS for second section starts here */
