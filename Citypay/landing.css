@@ -183,11 +183,16 @@ body {
   position: absolute;
   right: 0;
   top: 10px;
-  right: 180px;
+  right: 250px;
 }
 
 .dwnld-desc {
   width: 50%;
+}
+
+.description {
+  width: 80%;
+  padding: 10px;
 }
 
 .description h1 {
@@ -449,8 +454,8 @@ p {
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0px;
   width: 100%;
-  margin: 10px 10px 10px 700px;
-  padding: 10px 10px 10px 100px;
+  margin: 10px 10px 10px 200px;
+  padding: 10px 10px 10px 200px;
   padding: 0;
   justify-content: end;
   position: relative;
@@ -469,6 +474,7 @@ p {
   padding: 20px;
   margin-bottom: 20px;
   margin-top: 80px;
+  margin: 20px 10px 20px 600px;
 }
 
 .fourth-grid .Pic-Grid {
@@ -479,7 +485,7 @@ p {
 
 .Pic-Grid .bank {
   width: 70%;
-  height: 75%;
+  height: 100%;
   position: relative;
   bottom: 500px;
   left: 100px;
@@ -562,17 +568,22 @@ p {
   padding: 0;
 }
 
-.Pic-Grid {
-  float: right;
-  width: 45%;
+.fifth-section .body-container .Pic-Grid {
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+  position: relative;
+  right: 0px;
+  bottom: 630px;
+  width: 50%;
+  height: 90%;
 }
 
-.Pic-Grid .pic-icon .ScanQR {
-  width: 70%;
-  height: 75%;
-  float: right;
+.fifth-section .body-container .Pic-Grid .ScanQR {
   position: relative;
-  top: 65px;
+  margin: 5px 5px 5px 165px;
+  top: 5px;
+  left: 0px;
+  width: 60%;
 }
 
 .fifth-grid .icon {
@@ -592,8 +603,7 @@ p {
   border: 7px solid #F53F4A;
   border-radius: 50px;
   padding: 20px;
-  margin-bottom: 20px;
-  margin-top: 30px;
+  margin: 20px 10px 20px 700px;
   position: relative;
   left: 250px;
 }
@@ -659,15 +669,14 @@ p {
 }
 
 .sixth-img {
-  width: 100%;
+  width: 80%;
   height: 100%;
-  /* object-fit: contain; */
 }
 
 .sixth-img img {
-  width: 100%;
+  width: 65%;
   height: 80%;
-  margin-top: 60px;
+  margin: 60px 10px 10px 70px;
 }
 
 .sixth-grid {
@@ -687,8 +696,8 @@ p {
   flex-direction: column;
   align-items: center;
   grid-template-columns: 1fr 2fr;
-  width: 357px;
-  height: 210px;
+  width: 275px;
+  height: 275px;
   background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
   border-radius: 20px;
   padding: 20px 20px 20px 20px;
@@ -1389,6 +1398,77 @@ p {
   .sixth-section {
     height: 100vh;
   }
+
+  .sixth-section .sixth-body .sixth-img {
+    margin: 2px 2px 2px 2px;
+    padding: 4px 4px 4px 4px;
+    width: 50%;
+  }
+
+  .sixth-section .sixth-body .sixth-img .Utility {
+    margin: 1px 1px 1px 0px;
+    padding: 1px 1px 1px 1px;
+    width: 80%;
+  }
+
+  .sixth-body {
+    margin: 4px 4px 4px 4px;
+    padding: 5px 5px 5px 65px;
+  }
+
+  .sixth-grid {
+    margin: 1px 1px 1px 1px;
+    padding: 1px 1px 1px 1px;
+    width: 100%;
+  }
+
+  .sixth-section .body-container .sixth-grid h2 {
+    font-size: 15px;
+  }
+
+  .sixth-section .body-container .sixth-grid p {
+    font-size: 13px;
+  }
+
+
+  .sixth-section .body-container .sixth-grid .Mobile {
+    width: 70px;
+    height: auto;
+  }
+
+  .sixth-section .body-container .sixth-grid .Domestic Ticketing {
+    width: 70px;
+    height: auto;
+  }
+
+  .sixth-section .body-container .sixth-grid .gov {
+    width: 70px;
+    height: auto;
+  }
+
+
+  .sixth-grid .sixth-grid1 {
+    width: 100%;
+    margin: 20px 2px 20px 0px;
+    padding: 15px 15px 15px 15px;
+    position: relative;
+    left: 5px;
+  }
+
+  .sixth-grid .sixth-grid2 {
+    width: 80%;
+    margin: 20px 2px 20px 0px;
+    padding: 15px 15px 15px 15px;
+    position: relative;
+    left: 65px;
+  }
+
+  .sixth-grid .sixth-grid3 {
+    width: 100%;
+    margin: 20px 2px 20px 0px;
+    padding: 15px 15px 15px 15px;
+  }
+
 
   .seventh-section {
     height: 100vh;
