@@ -1326,9 +1326,64 @@ p {
     width: 100%;
   }
 
-
   .fifth-section {
     height: 100vh;
+  }
+
+  .fifth-section .body-container .fifth-grid {
+    margin: 10px 60px 10px 90px;
+    padding: 10px 60px 10px 90px;
+    width: 60%;
+  }
+
+  .fifth-section .body-container .fifth-grid h2 {
+    font-size: 15px;
+  }
+
+  .fifth-section .body-container .fifth-grid p {
+    font-size: 13px;
+  }
+
+  .fifth-section .body-container .fifth-grid .fifth-grid2 {
+    margin: 2px 2px 10px 30px;
+    padding: 15px 15px 15px 30px;
+    width: 55%;
+    height: 160px;
+  }
+
+  .fifth-section .body-container .fifth-grid .fifth-grid3 {
+    margin: 2px 2px 10px 30px;
+    padding: 15px 10px 15px 30px;
+    width: 55%;
+    height: 160px;
+  }
+
+  .fifth-section .body-container .fifth-grid .CityPay-QR {
+    width: 120px;
+    height: auto;
+  }
+
+  .fifth-section .body-container .fifth-grid .NepalPay-SmartQR {
+    width: 120px;
+    height: auto;
+  }
+
+  .fifth-section .body-container .Pic-Grid {
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    position: relative;
+    right: 0px;
+    bottom: 470px;
+    width: 50%;
+    height: 90%;
+  }
+
+  .fifth-section .body-container .Pic-Grid .ScanQR {
+    position: relative;
+    margin: 5px 5px 5px 5px;
+    top: 5px;
+    left: 0px;
+    width: 85%;
   }
 
   .sixth-section {
