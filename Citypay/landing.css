@@ -2200,7 +2200,7 @@ p {
 
 @media (max-width:768px) and (min-width: 426px) {
   .first-section {
-    height: 70vh;
+    height: 87vh;
   }
 
   .first-section .body-container .dwnld-desc {
@@ -2208,24 +2208,24 @@ p {
   }
 
   .first-section .description h1 {
-    font-size: 26px;
+    font-size: 36px;
   }
 
   .first-section .description p {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .first-section .body-container .dwnld-desc .description {
-    margin: 50px 1px 1px 5px;
-    width: 65%;
+    margin: 80px 1px 1px 5px;
+    width: 50%;
   }
 
   .first-section .dwnld-img .handmobile {
     margin: 10px 1px 1px 20px;
     padding: 10px 1px 1px 20px;
     position: relative;
-    left: 210px;
-    width: 85%;
+    left: 350px;
+    width: 65%;
   }
 
   .buttons {
@@ -2774,17 +2774,69 @@ p {
 @media (max-width:425px) and (min-width: 376px) {
   .first-section {}
 
-  .second-section {}
+  .second-section {
+    grid-template-columns: 1fr;
+  }
 
-  .third-section {}
+  .second-grid1, .second-grid2, .second-grid3 {
+    grid-template-columns: 1fr;
+  }
 
-  .fourth-section {}
 
-  .fifth-section {}
+  .second-section .second-body .second-img {
+    width: 100px;
+    height: 200px;
+  }
 
-  .sixth-section {}
+  .second-section .second-body .second-img .remittance-img {
+    height: 200px;
+    width: 145px;
+    position: relative;
+    top: 50px;
+  }
 
-  .seventh-section {}
+  .second-section .body-container .second-body .second-grid h2 {
+    font-size: 12px;
+  }
+
+  .second-section .body-container .second-body .second-grid p {
+    font-size: 8px;
+  }
+
+  .second-section .second-body .second-grid .remit-icon {
+    width: 60px;
+    height: auto;
+  }
+
+  .second-section .second-body .second-grid .withdraw-icon {
+    width: 60px;
+    height: auto;
+  }
+
+  .second-section .second-body .second-grid .track-remittance {
+    width: 60px;
+    height: auto;
+  }
+
+  .third-section {
+    grid-template-columns: 1fr;
+  }
+
+  .fourth-section {
+    grid-template-columns: 1fr;
+  }
+
+  .fifth-section {
+    grid-template-columns: 1fr;
+  }
+
+  .sixth-section {
+    grid-template-columns: 1fr;
+  }
+
+  .seventh-section {
+    grid-template-columns: 1fr;
+  }
 
   .footer {}
 
