@@ -1142,21 +1142,538 @@ p {
 
 
 @media (max-width:1440px) and (min-width: 1025px) {
-  .first-section {}
+  .first-section {
+    height: 87vh;
+  }
 
-  .second-section {}
+  .first-section .body-container .dwnld-desc {
+    width: 70%;
+  }
 
-  .third-section {}
+  .first-section .description h1 {
+    font-size: 40px;
+    padding-bottom: 30px;
+  }
 
-  .fourth-section {}
+  .first-section .description p {
+    font-size: 22px;
+    padding-bottom: 30px;
+  }
 
-  .fifth-section {}
+  .first-section .body-container .dwnld-desc .description {
+    margin: 55px 1px 1px 5px;
+    padding: 25px 1px 1px 5px;
+    width: 70%;
+  }
 
-  .sixth-section {}
+  .first-section .dwnld-img .handmobile {
+    margin: 20px 1px 1px 20px;
+    padding: 20px 1px 1px 20px;
+    position: relative;
+    left: 390px;
+    width: 75%;
+  }
 
-  .seventh-section {}
+  .buttons .gplay-btn {
+    width: 200px;
+    height: 60px;
+  }
 
-  .footer {}
+  .buttons .appstore-btn {
+    width: 200px;
+    height: 60px;
+  }
+
+  .second-section {
+    height: 100vh;
+    margin: 35px 5px 5px 5px;
+    padding: 35px 5px 5px 5px;
+  }
+
+  .second-section .second-body {
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+  }
+
+  .second-section .second-body .second-img {
+    width: 900px;
+    height: 400px;
+  }
+
+  .second-section .second-body .second-img .remittance-img {
+    height: 520px;
+    width: 370px;
+    position: relative;
+    top: 40px;
+  }
+
+  .second-section .second-body .second-grid h2 {
+    font-size: 15px;
+  }
+
+  .second-section .second-body .second-grid p {
+    font-size: 13px;
+  }
+
+  .second-section .second-body .second-grid .remit-icon {
+    width: 120px;
+    height: auto;
+  }
+
+  .second-section .second-body .second-grid .withdraw-icon {
+    width: 120px;
+    height: auto;
+  }
+
+  .second-section .second-body .second-grid .remittance-icon {
+    width: 120px;
+    height: auto;
+  }
+
+  .second-section .second-body .second-grid .second-grid1 {
+    margin: 2px 2px 10px 2px;
+    padding: 15px 25px 20px 10px;
+    width: 350px;
+    height: 185px;
+  }
+
+  .second-section .second-body .second-grid .second-grid2 {
+    margin: 2px 2px 10px 2px;
+    padding: 15px 25px 20px 10px;
+    width: 350px;
+    height: 185px;
+  }
+
+  .second-section .second-body .second-grid .second-grid3 {
+    margin: 2px 2px 10px 2px;
+    padding: 15px 25px 20px 10px;
+    width: 350px;
+    height: 185px;
+  }
+
+  .second-grid1, .second-grid2 {
+    gap: 20px;
+  }
+
+  .third-section {
+    height: 100vh;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+  }
+
+  .third-section .body-container .third-grid h2 {
+    font-size: 16px;
+  }
+
+  .third-section .body-container .third-grid p {
+    font-size: 14px;
+  }
+
+  .third-section .body-container .third-grid .Extra-Grid {
+    position: relative;
+    bottom: 500px;
+    margin: 2px 2px 2px 20px;
+  }
+
+  .third-section .body-container .third-grid .Extra-Grid .Family-Friends {
+    width: 400px;
+    position: relative;
+    left: 50px;
+  }
+
+  .third-section .body-container .third-grid .third-grid2 {
+    margin: 50px 2px 10px 2px;
+    padding: 50px 30px 60px 10px;
+    width: 350px;
+    height: 150px;
+  }
+
+  .third-section .body-container .third-grid .third-grid3 {
+    margin: 50px 2px 10px 2px;
+    padding: 50px 30px 60px 10px;
+    width: 350px;
+    height: 150px;
+  }
+
+  .third-section .body-container .third-grid .Fund-T {
+    width: 120px;
+    height: auto;
+  }
+
+  .third-section .body-container .third-grid .Send-R {
+    width: 120px;
+    height: auto;
+  }
+
+  .fourth-section {
+    height: 100vh;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+  }
+
+  .fourth-section .body-container .fourth-grid {
+    margin: 50px 60px 10px 90px;
+    padding: 10px 60px 10px 90px;
+    width: 60%;
+  }
+
+  .fourth-section .body-container .fourth-grid h2 {
+    font-size: 16px;
+  }
+
+  .fourth-section .body-container .fourth-grid p {
+    font-size: 14px;
+  }
+
+  .fourth-section .body-container .fourth-grid .fourth-grid2 {
+    margin: 2px 2px 10px 210px;
+    padding: 15px 15px 25px 30px;
+    width: 75%;
+    height: 200px;
+    display: grid;
+  }
+
+  .fourth-section .body-container .fourth-grid .fourth-grid3 {
+    margin: 2px 2px 10px 210px;
+    padding: 15px 15px 25px 30px;
+    width: 75%;
+    height: 200px;
+  }
+
+  .fourth-section .body-container .fourth-grid .BT {
+    width: 120px;
+    height: auto;
+  }
+
+  .fourth-section .body-container .fourth-grid .LB {
+    width: 120px;
+    height: auto;
+  }
+
+  .fourth-section .body-container .Pic-Grid {
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    position: relative;
+    right: 60px;
+    bottom: 420px;
+    width: 50%;
+    height: 90%;
+  }
+
+  .fourth-section .body-container .Pic-Grid .bank {
+    position: relative;
+    margin: 5px 5px 5px 5px;
+    top: 5px;
+    left: 0px;
+    width: 100%;
+  }
+
+  .fifth-section {
+    height: 100vh;
+    margin: 5px 5px 10px 5px;
+    padding: 5px 5px 10px 5px;
+  }
+
+  .fifth-section .body-container .fifth-grid {
+    margin: 40px 60px 10px 50px;
+    padding: 40px 60px 10px 50px;
+    width: 60%;
+  }
+
+  .fifth-section .body-container .fifth-grid h2 {
+    font-size: 16px;
+  }
+
+  .fifth-section .body-container .fifth-grid p {
+    font-size: 14px;
+  }
+
+  .fifth-section .body-container .fifth-grid .fifth-grid2 {
+    margin: 2px 2px 10px 30px;
+    padding: 15px 15px 15px 5px;
+    width: 65%;
+    height: 180px;
+  }
+
+  .fifth-section .body-container .fifth-grid .fifth-grid3 {
+    margin: 35px 2px 10px 30px;
+    padding: 25px 10px 15px 5px;
+    width: 65%;
+    height: 180px;
+  }
+
+  .fifth-section .body-container .fifth-grid .CityPay-QR {
+    width: 120px;
+    height: auto;
+  }
+
+  .fifth-section .body-container .fifth-grid .NepalPay-SmartQR {
+    width: 120px;
+    height: auto;
+  }
+
+  .fifth-section .body-container .Pic-Grid {
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    position: relative;
+    right: 0px;
+    bottom: 480px;
+    width: 50%;
+    height: 90%;
+  }
+
+  .fifth-section .body-container .Pic-Grid .ScanQR {
+    position: relative;
+    margin: 5px 5px 5px 5px;
+    top: 0px;
+    left: 0px;
+    width: 85%;
+  }
+
+  .sixth-section {
+    height: 100vh;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+  }
+
+  .sixth-body {
+    margin: 4px 4px 4px 4px;
+    padding: 5px 5px 5px 5px;
+  }
+
+
+  .sixth-section .sixth-body .sixth-grid {
+    margin: 1px 1px 1px 1px;
+    padding: 1px 10px 1px 1px;
+  }
+
+  .sixth-section .sixth-body .sixth-img {
+    margin: 2px 2px 2px 2px;
+    padding: 4px 4px 4px 4px;
+    width: 320px;
+  }
+
+  .sixth-section .sixth-body .sixth-img .Utility {
+    margin: 55px 1px 1px 0px;
+    padding: 55px 1px 1px 1px;
+    width: 320px;
+    height: 360px;
+    position: relative;
+    right: 30px;
+  }
+
+  .sixth-section .body-container .sixth-grid h2 {
+    font-size: 16px;
+  }
+
+  .sixth-section .body-container .sixth-grid p {
+    font-size: 14px;
+  }
+
+
+  .sixth-section .body-container .sixth-grid .Mobile {
+    width: 70px;
+    height: auto;
+  }
+
+  .sixth-section .body-container .sixth-grid .Domestic {
+    width: 70px;
+    height: auto;
+  }
+
+  .sixth-section .body-container .sixth-grid .gov {
+    width: 70px;
+    height: auto;
+  }
+
+  .sixth-section .body-container .sixth-grid {
+    width: 100%;
+    position: relative;
+    right: 25px;
+    margin: 35px 1px 1px 0px;
+  }
+
+  .sixth-grid .sixth-grid1 {
+    width: 210px;
+    height: 250px;
+    margin: 25px 1px 1px 0px;
+  }
+
+  .sixth-grid .sixth-grid2 {
+    width: 210px;
+    height: 250px;
+    margin: 25px 1px 1px 0px;
+  }
+
+  .sixth-grid .sixth-grid3 {
+    width: 210px;
+    height: 250px;
+    margin: 10px 1px 1px 0px;
+  }
+
+  .seventh-section {
+    height: 100vh;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+  }
+
+  .seventh-section .body-container.seventh-title {
+    margin: 1px 1px 1px 1px;
+    padding: 2px 2px 2px 2px;
+  }
+
+  .seventh-section .body-container .seventh-grid {
+    margin: 10px 60px 10px 90px;
+    padding: 10px 60px 10px 90px;
+    width: 60%;
+    position: relative;
+    left: -30px;
+  }
+
+  .seventh-section .body-container .seventh-grid h2 {
+    font-size: 15px;
+  }
+
+  .seventh-section .body-container .seventh-grid p {
+    font-size: 13px;
+  }
+
+  .seventh-section .body-container .seventh-grid .seventh-grid1 {
+    margin: 2px 2px 100px 15px;
+    padding: 15px 15px 75px 10px;
+    width: 235px;
+    height: 310px;
+  }
+
+  .seventh-section .body-container .seventh-grid .seventh-grid2 {
+    margin: 2px 2px 100px 15px;
+    padding: 15px 15px 75px 10px;
+    width: 235px;
+    height: 310px;
+  }
+
+  .seventh-section .body-container .seventh-grid .seventh-grid3 {
+    margin: 2px 2px 75px 15px;
+    padding: 15px 10px 75px 10px;
+    width: 235px;
+    height: 310px;
+  }
+
+  .seventh-section .body-container .seventh-grid .Reward {
+    width: 120px;
+    height: auto;
+  }
+
+  .seventh-section .body-container .seventh-grid .MobileTop-Up {
+    width: 120px;
+    height: auto;
+  }
+
+  .seventh-section .body-container .seventh-grid .conv {
+    width: 120px;
+    height: auto;
+  }
+
+  /* Perks Signature Image */
+  .seventh-section .body-container .seventh-grid .seventh-grid1 .base {
+    position: relative;
+    top: 20px;
+  }
+
+  .seventh-section .body-container .seventh-grid .seventh-grid2 .base {
+    position: relative;
+    top: 60px;
+  }
+
+  .seventh-section .body-container .seventh-grid .seventh-grid3 .base {
+    position: relative;
+    top: 40px;
+  }
+
+  .seventh-section .body-container .seventh-grid .base {
+    position: relative;
+    width: 100%;
+    height: 100px;
+  }
+
+  .seventh-section .body-container .seventh-grid .base img {
+    position: absolute;
+    bottom: 0;
+    left: 51%;
+    transform: translateX(-50%);
+    width: auto;
+    height: 100%;
+  }
+
+
+
+
+  /* Footer */
+
+  .footer .logoQR .citypaylog {
+    width: 22%;
+  }
+
+  .footer .logoQR .QRcode {
+    width: 22%;
+  }
+
+  .footer .info .basic {
+    position: relative;
+    left: 50px;
+  }
+
+  .footer .info p {
+    font-size: 13px;
+  }
+
+  .footer .footer-links {
+    margin: 1px 50px 1px 1px;
+    padding: 1px 20px 1px 1px;
+  }
+
+  .footer .footer-links a {
+    font-size: small;
+  }
+
+  .footer-links h4 {
+    font-size: medium;
+  }
+
+  .footer .logimg .download-btn {
+    width: 90px;
+    height: 30px;
+    margin: 2px 2px 2px 5px;
+  }
+
+  .connect {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+  }
+
+  .connect .soc {
+    position: relative;
+    left: 7px;
+  }
+
+  .connect .fb {
+    width: 22px;
+    height: auto;
+  }
+
+  .connect .ytb {
+    width: 22px;
+    height: auto;
+  }
+
+  .connect .lkdn {
+    width: 22px;
+    height: auto;
+  }
+
 }
 
 @media (max-width:1024px) and (min-width: 769px) {
