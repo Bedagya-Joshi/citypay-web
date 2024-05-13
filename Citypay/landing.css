@@ -1410,13 +1410,13 @@ p {
   .sixth-section .sixth-body .sixth-img {
     margin: 2px 2px 2px 2px;
     padding: 4px 4px 4px 4px;
-    width: 50%;
+    width: 100%;
   }
 
   .sixth-section .sixth-body .sixth-img .Utility {
-    margin: 1px 1px 1px 0px;
-    padding: 1px 1px 1px 1px;
-    width: 80%;
+    margin: 55px 1px 1px 0px;
+    padding: 55px 1px 1px 1px;
+    width: 100%;
   }
 
   .sixth-body {
@@ -1454,29 +1454,27 @@ p {
     height: auto;
   }
 
+  .sixth-grid {
+    width: 100%;
+    position: relative;
+    left: 60px;
+  }
+
 
   .sixth-grid .sixth-grid1 {
-    width: 100%;
-    margin: 20px 2px 20px 0px;
-    padding: 15px 15px 15px 15px;
-    position: relative;
-    left: 5px;
+    width: 200px;
+    height: 240px;
   }
 
   .sixth-grid .sixth-grid2 {
-    width: 80%;
-    margin: 20px 2px 20px 0px;
-    padding: 15px 15px 15px 15px;
-    position: relative;
-    left: 65px;
+    width: 200px;
+    height: 240px;
   }
 
   .sixth-grid .sixth-grid3 {
-    width: 100%;
-    margin: 20px 2px 20px 0px;
-    padding: 15px 15px 15px 15px;
+    width: 200px;
+    height: 240px;
   }
-
 
   .seventh-section {
     height: 100vh;
@@ -1484,77 +1482,140 @@ p {
     padding: 75px 5px 80px 5px;
   }
 
-  .footer {}
-}
 
-@media (max-width:768px) and (min-width: 426px) {
-  .first-section {}
+  .seventh-section .body-container.seventh-title {
+    margin: 1px 1px 1px 1px;
+    padding: 2px 2px 2px 2px;
+  }
 
-  .second-section {}
 
-  .third-section {}
+  .seventh-section .body-container .seventh-grid {
+    margin: 10px 60px 10px 90px;
+    padding: 10px 60px 10px 90px;
+    width: 60%;
+    position: relative;
+    left: -30px;
+  }
 
-  .fourth-section {}
+  .seventh-section .body-container .seventh-grid h2 {
+    font-size: 15px;
+  }
 
-  .fifth-section {}
+  .seventh-section .body-container .seventh-grid p {
+    font-size: 13px;
+  }
 
-  .sixth-section {}
+  .seventh-section .body-container .seventh-grid .seventh-grid1 {
+    margin: 2px 2px 100px 20px;
+    padding: 15px 15px 65px 15px;
+    width: 210px;
+    height: 310px;
+  }
 
-  .seventh-section {}
+  .seventh-section .body-container .seventh-grid .seventh-grid2 {
+    margin: 2px 2px 100px 20px;
+    padding: 15px 15px 65px 15px;
+    width: 210px;
+    height: 310px;
+  }
 
-  .footer {}
-}
+  .seventh-section .body-container .seventh-grid .seventh-grid3 {
+    margin: 2px 2px 100px 20px;
+    padding: 15px 10px 65px 15px;
+    width: 210px;
+    height: 310px;
+  }
 
-@media (max-width:425px) and (min-width: 376px) {
-  .first-section {}
+  .seventh-section .body-container .seventh-grid .Reward {
+    width: 120px;
+    height: auto;
+  }
 
-  .second-section {}
+  .seventh-section .body-container .seventh-grid .MobileTop-Up {
+    width: 120px;
+    height: auto;
+  }
 
-  .third-section {}
+  .seventh-section .body-container .seventh-grid .conv {
+    width: 120px;
+    height: auto;
+  }
 
-  .fourth-section {}
 
-  .fifth-section {}
 
-  .sixth-section {}
-
-  .seventh-section {}
-
-  .footer {}
-}
-
-@media (max-width:375px) and (min-width: 321px) {
-  .first-section {}
-
-  .second-section {}
-
-  .third-section {}
-
-  .fourth-section {}
-
-  .fifth-section {}
-
-  .sixth-section {}
-
-  .seventh-section {}
-
-  .footer {}
-}
-
-@media (max-width:320px) and (min-width: 280px) {
-  .first-section {}
-
-  .second-section {}
-
-  .third-section {}
-
-  .fourth-section {}
-
-  .fifth-section {}
-
-  .sixth-section {}
-
-  .seventh-section {}
 
   .footer {}
+
 }
+
+  @media (max-width:768px) and (min-width: 426px) {
+    .first-section {}
+
+    .second-section {}
+
+    .third-section {}
+
+    .fourth-section {}
+
+    .fifth-section {}
+
+    .sixth-section {}
+
+    .seventh-section {}
+
+    .footer {}
+  }
+
+  @media (max-width:425px) and (min-width: 376px) {
+    .first-section {}
+
+    .second-section {}
+
+    .third-section {}
+
+    .fourth-section {}
+
+    .fifth-section {}
+
+    .sixth-section {}
+
+    .seventh-section {}
+
+    .footer {}
+  }
+
+  @media (max-width:375px) and (min-width: 321px) {
+    .first-section {}
+
+    .second-section {}
+
+    .third-section {}
+
+    .fourth-section {}
+
+    .fifth-section {}
+
+    .sixth-section {}
+
+    .seventh-section {}
+
+    .footer {}
+  }
+
+  @media (max-width:320px) and (min-width: 280px) {
+    .first-section {}
+
+    .second-section {}
+
+    .third-section {}
+
+    .fourth-section {}
+
+    .fifth-section {}
+
+    .sixth-section {}
+
+    .seventh-section {}
+
+    .footer {}
+  }
