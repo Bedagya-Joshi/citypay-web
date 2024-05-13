@@ -1677,7 +1677,7 @@ p {
 
 @media (max-width:1024px) and (min-width: 769px) {
   .first-section {
-    height: 82vh;
+    height: 86vh;
   }
 
   .first-section .body-container .dwnld-desc {
@@ -1693,16 +1693,16 @@ p {
   }
 
   .first-section .body-container .dwnld-desc .description {
-    margin: 7px 1px 1px 5px;
-    width: 70%;
+    margin: 50px 1px 1px 5px;
+    width: 55%;
   }
 
   .first-section .dwnld-img .handmobile {
     margin: 10px 1px 1px 20px;
     padding: 10px 1px 1px 20px;
     position: relative;
-    left: 288px;
-    width: 78%;
+    left: 350px;
+    width: 72%;
   }
 
   .buttons .gplay-btn {
@@ -1717,8 +1717,8 @@ p {
 
   .second-section {
     height: 100vh;
-    margin: 35px 5px 55px 5px;
-    padding: 35px 5px 45px 5px;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
   }
 
   .second-section .second-body {
@@ -1788,8 +1788,8 @@ p {
 
   .third-section {
     height: 100vh;
-    margin: 55px 5px 30px 5px;
-    padding: 55px 5px 30px 5px;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
   }
 
   .third-section .body-container .third-grid h2 {
@@ -1840,8 +1840,8 @@ p {
 
   .fourth-section {
     height: 100vh;
-    margin: 25px 5px 25px 5px;
-    padding: 25px 5px 25px 5px;
+    margin: 5px 5px 25px 5px;
+    padding: 5px 5px 25px 5px;
   }
 
   .fourth-section .body-container .fourth-grid {
@@ -1887,10 +1887,11 @@ p {
     margin: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
     position: relative;
-    right: 60px;
+    right: 0px;
     bottom: 360px;
     width: 50%;
     height: 90%;
+
   }
 
   .fourth-section .body-container .Pic-Grid .bank {
@@ -1903,14 +1904,16 @@ p {
 
   .fifth-section {
     height: 100vh;
-    margin: 5px 5px 20px 5px;
-    padding: 5px 5px 20px 5px;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
   }
 
   .fifth-section .body-container .fifth-grid {
-    margin: 10px 60px 10px 50px;
-    padding: 10px 60px 10px 50px;
+    margin: 10px 80px 10px 50px;
+    padding: 10px 80px 10px 50px;
     width: 60%;
+    position: relative;
+    right: 50px;
   }
 
   .fifth-section .body-container .fifth-grid h2 {
@@ -1949,7 +1952,7 @@ p {
     margin: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
     position: relative;
-    right: 0px;
+    left: 400px;
     bottom: 430px;
     width: 50%;
     height: 90%;
@@ -1965,8 +1968,8 @@ p {
 
   .sixth-section {
     height: 100vh;
-    margin: 5px 5px 45px 5px;
-    padding: 5px 5px 45px 5px;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
   }
 
   .sixth-section .sixth-body .sixth-img {
@@ -2042,8 +2045,8 @@ p {
 
   .seventh-section {
     height: 100vh;
-    margin: 75px 5px 120px 5px;
-    padding: 75px 5px 80px 5px;
+    margin: 5px 5px 5px 5px;
+    padding: 75px 5px 10px 5px;
   }
 
 
