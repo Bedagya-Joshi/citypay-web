@@ -901,7 +901,6 @@ p {
 }
 
 /* Footer styles */
-
 .footer {
   background: rgb(161, 159, 159);
   background: linear-gradient(0deg, rgb(152, 170, 230) 0%, rgb(241, 242, 245) 55%);
@@ -1022,7 +1021,7 @@ p {
 .info .basic p {
   font-weight: 510;
   padding-top: 10px;
-  font-size: medium;
+  font-size: smaller;
 }
 
 .info .basic .connect p {
@@ -1032,26 +1031,14 @@ p {
 }
 
 .connect {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  margin: 10px;
+  width: 100%;
+  margin: 10px 10px 10px 30px;
+  padding: 10px 50px 50px 30px;
 }
 
 .connect .soc {
   position: relative;
-  left: 3px;
-}
-
-.soc svg:hover {
-  transform: scale(1.2);
-  /* Increase the size of the icon on hover */
-}
-
-.connect {
-  width: 100%;
-  margin: 10px 10px 10px 30px;
-  padding: 10px 50px 50px 30px;
+  left: 12px;
 }
 
 .connect p {
@@ -1071,6 +1058,11 @@ p {
 .connect .lkdn {
   width: 25px;
   height: auto;
+}
+
+.soc svg:hover {
+  transform: scale(1.2);
+  /* Increase the size of the icon on hover */
 }
 
 .footer-links {

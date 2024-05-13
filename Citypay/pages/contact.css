@@ -229,8 +229,9 @@ body {
 
 .footer {
     background: rgb(161, 159, 159);
-    background: linear-gradient(0deg, rgb(103, 125, 196) 0%, rgb(241, 242, 245) 55%);
-    box-shadow: 0px -12px 25px rgba(193, 219, 255, 0.8);
+    background: linear-gradient(0deg, rgb(152, 170, 230) 0%, rgb(241, 242, 245) 55%);
+    box-shadow: 0px -12px 25px rgba(228, 237, 250, 0.8);
+    /* Adjusted to have a negative y-offset */
     bottom: 0;
     left: 0;
     width: 100%;
@@ -300,6 +301,7 @@ body {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    transition: transform 0.3s ease;
     padding: 0;
     margin: 0;
 }
@@ -317,6 +319,12 @@ body {
 .appstore {
     width: 100%;
     height: 100%;
+}
+
+.playstore:hover,
+.appstore:hover {
+    transform: scale(1.1);
+    /* Increase size on hover */
 }
 
 .info {
@@ -338,6 +346,7 @@ body {
 
 .info .basic p {
     font-weight: 510;
+    padding-top: 0px;
     font-size: smaller;
 }
 
@@ -351,6 +360,11 @@ body {
     width: 100%;
     margin: 10px 10px 10px 30px;
     padding: 10px 50px 50px 30px;
+}
+
+.connect .soc {
+    position: relative;
+    left: 12px;
 }
 
 .connect p {
@@ -370,6 +384,11 @@ body {
 .connect .lkdn {
     width: 25px;
     height: auto;
+}
+
+.soc svg:hover {
+    transform: scale(1.2);
+    /* Increase the size of the icon on hover */
 }
 
 .footer-links {

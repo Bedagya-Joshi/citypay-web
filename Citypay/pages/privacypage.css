@@ -229,6 +229,7 @@ h1 {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  transition: transform 0.3s ease;
   padding: 0;
   margin: 0;
 }
@@ -246,6 +247,12 @@ h1 {
 .appstore {
   width: 100%;
   height: 100%;
+}
+
+.playstore:hover,
+.appstore:hover {
+  transform: scale(1.1);
+  /* Increase size on hover */
 }
 
 .info {
@@ -283,6 +290,11 @@ h1 {
   padding: 10px 50px 50px 30px;
 }
 
+.connect .soc {
+  position: relative;
+  left: 20px;
+}
+
 .connect p {
   font-weight: bolder;
 }
@@ -302,6 +314,11 @@ h1 {
   height: auto;
 }
 
+.soc svg:hover {
+  transform: scale(1.2);
+  /* Increase the size of the icon on hover */
+}
+
 .footer-links {
   display: flex;
   flex-direction: column;
@@ -313,12 +330,14 @@ h1 {
 
 .footer-links ul {
   list-style: none;
-  padding: 0;
+  padding: 10px;
   margin: 0;
+  font-weight: 100;
 }
 
 .footer-links li {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+
 }
 
 .footer-links a {
