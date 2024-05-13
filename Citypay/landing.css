@@ -2772,11 +2772,96 @@ p {
 }
 
 @media (max-width:425px) and (min-width: 376px) {
-  .first-section {}
 
+  .navbar {
+    position: relative;
+    right: 30px;
+  }
+
+  .navbar .logo {
+    position: relative;
+    top: 6px;
+  }
+
+  .body-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 88vh;
+  }
+
+  .body-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dwnld-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 60px;
+    /* Add margin to create space between the two divs */
+  }
+
+  .first-section .dwnld-desc .description {
+    width: 280px;
+  }
+
+  .first-section .dwnld-desc .description h1 {
+    font-size: 26px;
+  }
+
+  .first-section .dwnld-desc .description p {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .buttons {
+    width: 100px;
+    height: 40px;
+    position: relative;
+    right: 60px;
+  }
+
+  .dwnld-img .handmobile {
+    position: relative;
+    top: 250px;
+    left: 180px;
+    width: 280px;
+  }
+
+
+  /* second section */
   .second-section {
     grid-template-columns: 1fr;
   }
+
+  .second-section .second-title h1 {
+    font-size: 26px;
+  }
+
+  .second-section .second-title p {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .second-section .second-body .second-img {
+    position: relative;
+    left: 100px;
+    bottom: 70px;
+  }
+
+  .second-section .second-body .second-img .remittance-img{
+    width: 200px;
+  }
+
 
   .second-grid1, .second-grid2, .second-grid3 {
     grid-template-columns: 1fr;
@@ -2794,6 +2879,19 @@ p {
     position: relative;
     top: 50px;
   }
+
+  .second-section .second-body .second-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+  }
+
+  .second-grid1, .second-grid2, .second-grid3 {
+    width: 200px;
+    height: 130px;
+    margin: 30px 40px 11px 1px;
+  }
+
 
   .second-section .body-container .second-body .second-grid h2 {
     font-size: 12px;
@@ -2813,7 +2911,7 @@ p {
     height: auto;
   }
 
-  .second-section .second-body .second-grid .track-remittance {
+  .second-section .second-body .second-grid .Track-remittance {
     width: 60px;
     height: auto;
   }
