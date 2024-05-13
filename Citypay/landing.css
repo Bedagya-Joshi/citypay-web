@@ -2627,10 +2627,11 @@ p {
 
   .seventh-section .body-container .seventh-grid {
     margin: 10px 60px 10px 10px;
-    padding: 10px 60px 10px 80px;
+    padding: 10px 60px 10px 50px;
     width: 60%;
     position: relative;
     left: 0px;
+    gap: 5px;
   }
 
   .seventh-section .body-container .seventh-grid h2 {
@@ -2643,9 +2644,9 @@ p {
 
   .seventh-section .body-container .seventh-grid .seventh-grid1 {
     margin: 2px 2px 100px 15px;
-    padding: 15px 15px 75px 10px;
+    padding: 15px 15px 85px 10px;
     width: 85px;
-    height: 130px;
+    height: 135px;
   }
 
   .base .signature {
@@ -2654,16 +2655,16 @@ p {
 
   .seventh-section .body-container .seventh-grid .seventh-grid2 {
     margin: 2px 2px 100px 15px;
-    padding: 15px 15px 75px 10px;
+    padding: 15px 15px 85px 10px;
     width: 85px;
-    height: 130px;
+    height: 135px;
   }
 
   .seventh-section .body-container .seventh-grid .seventh-grid3 {
     margin: 2px 2px 100px 15px;
-    padding: 15px 10px 75px 10px;
+    padding: 15px 10px 85px 10px;
     width: 85px;
-    height: 130px;
+    height: 135px;
   }
 
   .seventh-section .body-container .seventh-grid .Reward {
@@ -2681,19 +2682,27 @@ p {
     height: auto;
   }
 
+  .body .footer {
+    width: 100%;
+  }
+
   .footer .row {
     position: relative;
     right: 50px;
+    width: 100%;
   }
 
   .footer .logoQR .citypaylog {
-    width: 30%;
+    width: 20%;
   }
 
   .footer .logoQR .QRcode {
-    width: 30%;
+    width: 20%;
   }
 
+  .footer .info {
+    width: 70%;
+  }
 
   .footer .info .basic {
     position: relative;
@@ -2701,58 +2710,68 @@ p {
   }
 
   .footer .info p {
-    font-size: 11px;
+    font-size: 5px;
+  }
+
+  .dwbuttons .tit h3 {
+    font-size: xx-small;
   }
 
   .footer .footer-links {
-    margin: 1px 50px 1px 1px;
-    padding: 1px 20px 1px 1px;
+    margin: 1px 10px 1px 1px;
+    padding: 1px 10px 1px 1px;
+    position: relative;
+    right: 70px;
   }
 
   .footer .footer-links a {
-    font-size: x-small;
+    font-size: 6px;
   }
 
   .footer-links h4 {
-    font-size: medium;
+    font-size: 8px;
   }
 
   .footer .logimg .download-btn {
-    width: 70px;
-    height: 25px;
-    margin: 2px 2px 2px 5px;
+    width: 45px;
+    height: 15px;
+    margin: 2px 2px 2px 0px;
   }
 
   .connect {
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    margin: 10px;
-    width: 200px;
+    padding: 5px;
+    margin: 5px;
+    width: 150px;
   }
 
   .connect .soc {
     position: relative;
-    left: 3px;
+    right: 65px;
   }
 
   .connect .fb {
-    width: 20px;
+    width: 12px;
     height: auto;
   }
 
   .connect .ytb {
-    width: 20px;
+    width: 12px;
     height: auto;
   }
 
   .connect .lkdn {
-    width: 20px;
+    width: 12px;
     height: auto;
   }
 
+  .footer .agent {
+    font-size: 5px;
+  }
+
   .footer .copyright p {
-    font-size: smaller;
+    font-size: xx-small;
   }
 
 }
