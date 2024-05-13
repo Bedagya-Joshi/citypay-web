@@ -165,11 +165,21 @@ body {
 .gplay-btn {
   width: 100%;
   height: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .appstore-btn {
   width: 100%;
   height: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gplay-btn:hover,
+.appstore-btn:hover {
+  transform: scale(1.1);
+  /* Increase size on hover */
 }
 
 .dwnld-img img {
