@@ -608,7 +608,7 @@ p {
   padding: 20px;
   margin: 20px 10px 20px 700px;
   position: relative;
-  left: 250px;
+  left: 0px;
 }
 
 .grid-content-4 h2,
@@ -1119,7 +1119,7 @@ p {
 
 /* Media Query Responsiveness */
 
-/* @media (max-width:2560px) and (min-width: 1441px) {
+/* @media (max-width:2560px) and (min-width: 1921px) {
   .first-section {}
 
   .second-section {
@@ -1163,14 +1163,14 @@ p {
   .first-section .body-container .dwnld-desc .description {
     margin: 55px 1px 1px 5px;
     padding: 25px 1px 1px 5px;
-    width: 70%;
+    width: 65%;
   }
 
   .first-section .dwnld-img .handmobile {
-    margin: 20px 1px 1px 20px;
-    padding: 20px 1px 1px 20px;
+    margin: 20px 1px 1px 10px;
+    padding: 20px 1px 1px 10px;
     position: relative;
-    left: 390px;
+    left: 330px;
     width: 75%;
   }
 
@@ -1315,6 +1315,8 @@ p {
     margin: 50px 60px 10px 90px;
     padding: 10px 60px 10px 90px;
     width: 60%;
+    position: relative;
+    left: 260px;
   }
 
   .fourth-section .body-container .fourth-grid h2 {
@@ -1326,17 +1328,17 @@ p {
   }
 
   .fourth-section .body-container .fourth-grid .fourth-grid2 {
-    margin: 2px 2px 10px 210px;
+    margin: 2px 2px 10px 130px;
     padding: 15px 15px 25px 30px;
-    width: 75%;
+    width: 55%;
     height: 200px;
     display: grid;
   }
 
   .fourth-section .body-container .fourth-grid .fourth-grid3 {
-    margin: 2px 2px 10px 210px;
+    margin: 2px 2px 10px 130px;
     padding: 15px 15px 25px 30px;
-    width: 75%;
+    width: 55%;
     height: 200px;
   }
 
@@ -1354,10 +1356,10 @@ p {
     margin: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
     position: relative;
-    right: 60px;
+    right: 0px;
     bottom: 420px;
     width: 50%;
-    height: 90%;
+    height: 80%;
   }
 
   .fourth-section .body-container .Pic-Grid .bank {
@@ -1365,7 +1367,7 @@ p {
     margin: 5px 5px 5px 5px;
     top: 5px;
     left: 0px;
-    width: 100%;
+    width: 80%;
   }
 
   .fifth-section {
@@ -1416,8 +1418,8 @@ p {
     margin: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
     position: relative;
-    right: 0px;
-    bottom: 480px;
+    left: 580px;
+    bottom: 590px;
     width: 50%;
     height: 90%;
   }
@@ -1427,7 +1429,7 @@ p {
     margin: 5px 5px 5px 5px;
     top: 0px;
     left: 0px;
-    width: 85%;
+    width: 80%;
   }
 
   .sixth-section {
@@ -1604,9 +1606,6 @@ p {
     width: auto;
     height: 100%;
   }
-
-
-
 
   /* Footer */
 
