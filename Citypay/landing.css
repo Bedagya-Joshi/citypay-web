@@ -2523,6 +2523,14 @@ p {
     padding: 5px 5px 5px 5px;
   }
 
+  .sixth-section .sixth-title h1 {
+    font-size: 26px;
+  }
+
+  .sixth-section .sixth-title p {
+    font-size: 12px;
+  }
+
   .sixth-section .sixth-body .sixth-img {
     margin: 2px 2px 2px 2px;
     padding: 4px 4px 4px 4px;
@@ -2532,8 +2540,10 @@ p {
   .sixth-section .sixth-body .sixth-img .Utility {
     margin: 55px 1px 1px 0px;
     padding: 55px 1px 1px 1px;
-    width: 280px;
-    height: 320px;
+    width: 115px;
+    height: 150px;
+    position: relative;
+    right: 15px;
   }
 
   .sixth-body {
@@ -2541,57 +2551,57 @@ p {
     padding: 5px 5px 5px 5px;
   }
 
-  .sixth-grid {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 10px 1px 1px;
-  }
-
   .sixth-section .body-container .sixth-grid h2 {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .sixth-section .body-container .sixth-grid p {
-    font-size: 12px;
+    font-size: 8px;
   }
 
 
   .sixth-section .body-container .sixth-grid .Mobile {
-    width: 70px;
+    width: 40px;
     height: auto;
   }
 
   .sixth-section .body-container .sixth-grid .Domestic {
-    width: 70px;
+    width: 40px;
     height: auto;
   }
 
   .sixth-section .body-container .sixth-grid .gov {
-    width: 70px;
+    width: 40px;
     height: auto;
   }
 
   .sixth-grid {
     width: 100%;
     position: relative;
-    left: 80px;
+    right: 20px;
+    gap: 14px;
+    height: 50%;
   }
 
   .sixth-grid .sixth-grid1 {
-    width: 150px;
-    height: 220px;
-    margin: 25px 1px 1px 0px;
+    width: 100px;
+    height: 180px;
+    margin: 5px 1px 1px 0px;
+    padding: 5px;
   }
 
   .sixth-grid .sixth-grid2 {
-    width: 150px;
-    height: 220px;
-    margin: 25px 1px 1px 0px;
+    width: 100px;
+    height: 180px;
+    margin: 5px 1px 1px 0px;
+    padding: 5px 5px 5px 5px;
   }
 
   .sixth-grid .sixth-grid3 {
-    width: 150px;
-    height: 220px;
-    margin: 20px 1px 1px 0px;
+    width: 100px;
+    height: 180px;
+    margin: 5px 1px 1px 0px;
+    padding: 5px;
   }
 
   .seventh-section {
@@ -2606,56 +2616,68 @@ p {
     padding: 2px 2px 2px 2px;
   }
 
+  .seventh-section .seventh-title h1 {
+    font-size: 26px;
+  }
+
+  .seventh-section .seventh-title p {
+    font-size: 12px;
+  }
+
 
   .seventh-section .body-container .seventh-grid {
-    margin: 10px 60px 10px 90px;
-    padding: 10px 60px 10px 90px;
+    margin: 10px 60px 10px 10px;
+    padding: 10px 60px 10px 80px;
     width: 60%;
     position: relative;
     left: 0px;
   }
 
   .seventh-section .body-container .seventh-grid h2 {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .seventh-section .body-container .seventh-grid p {
-    font-size: 13px;
+    font-size: 8px;
   }
 
   .seventh-section .body-container .seventh-grid .seventh-grid1 {
     margin: 2px 2px 100px 15px;
     padding: 15px 15px 75px 10px;
-    width: 185px;
-    height: 310px;
+    width: 105px;
+    height: 200px;
+  }
+
+  .base .signature {
+    position: relative;
   }
 
   .seventh-section .body-container .seventh-grid .seventh-grid2 {
     margin: 2px 2px 100px 15px;
     padding: 15px 15px 75px 10px;
-    width: 185px;
-    height: 310px;
+    width: 105px;
+    height: 200px;
   }
 
   .seventh-section .body-container .seventh-grid .seventh-grid3 {
     margin: 2px 2px 100px 15px;
     padding: 15px 10px 75px 10px;
-    width: 185px;
-    height: 310px;
+    width: 105px;
+    height: 200px;
   }
 
   .seventh-section .body-container .seventh-grid .Reward {
-    width: 120px;
+    width: 60px;
     height: auto;
   }
 
   .seventh-section .body-container .seventh-grid .MobileTop-Up {
-    width: 120px;
+    width: 55px;
     height: auto;
   }
 
   .seventh-section .body-container .seventh-grid .conv {
-    width: 120px;
+    width: 60px;
     height: auto;
   }
 
