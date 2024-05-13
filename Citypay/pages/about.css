@@ -272,6 +272,7 @@ body {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    transition: transform 0.3s ease;
     padding: 0;
     margin: 0;
 }
@@ -289,6 +290,12 @@ body {
 .appstore {
     width: 100%;
     height: 100%;
+}
+
+.playstore:hover,
+.appstore:hover {
+    transform: scale(1.1);
+    /* Increase size on hover */
 }
 
 .info {
@@ -343,6 +350,11 @@ body {
 .connect .lkdn {
     width: 25px;
     height: auto;
+}
+
+.soc svg:hover {
+    transform: scale(1.2);
+    /* Increase the size of the icon on hover */
 }
 
 .footer-links {
