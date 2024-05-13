@@ -677,7 +677,7 @@ p {
 }
 
 .sixth-img img {
-  width: 65%;
+  width: 80%;
   height: 80%;
   margin: 60px 10px 10px 70px;
 }
@@ -1005,7 +1005,7 @@ p {
 .info .basic p {
   font-weight: 510;
   padding-top: 10px;
-  font-size: smaller;
+  font-size: medium;
 }
 
 .info .basic .connect p {
