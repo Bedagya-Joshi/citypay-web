@@ -2858,7 +2858,7 @@ p {
     bottom: 70px;
   }
 
-  .second-section .second-body .second-img .remittance-img{
+  .second-section .second-body .second-img .remittance-img {
     width: 200px;
   }
 
@@ -2884,12 +2884,16 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     width: 50%;
+    position: relative;
+    right: 65px;
+    top: 220px;
   }
 
   .second-grid1, .second-grid2, .second-grid3 {
+    grid-template-columns: 1fr;
     width: 200px;
     height: 130px;
-    margin: 30px 40px 11px 1px;
+    margin: 40px 40px 10px 1px;
   }
 
 
@@ -2916,8 +2920,72 @@ p {
     height: auto;
   }
 
+
+
   .third-section {
     grid-template-columns: 1fr;
+    margin: 60px;
+  }
+
+
+  .third-section .third-title h1 {
+    font-size: 26px;
+  }
+
+  .third-section .third-title p {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .third-section .third-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    position: relative;
+    right: 40px;
+    bottom: 100px;
+  }
+
+  .third-grid1, .third-grid2, .third-grid3 {
+    grid-template-columns: 1fr;
+    width: 200px;
+    height: 130px;
+    margin: 40px 40px 10px 1px;
+  }
+
+
+  .third-section .body-container .third-grid h2 {
+    font-size: 12px;
+  }
+
+  .third-section .body-container .third-grid p {
+    font-size: 8px;
+  }
+
+
+  .third-section .third-grid .third-grid2 .Fund-T {
+    width: 60px;
+    height: auto;
+  }
+
+  .third-section .third-grid .Send-R {
+    width: 60px;
+    height: auto;
+  }
+
+  .third-section .third-grid .Track-remittance {
+    width: 60px;
+    height: auto;
+  }
+
+  .third-section .Extra-Grid {
+    position: relative;
+    top: 70px;
+    width: 100%;
+  }
+
+  .third-section .Extra-Grid .icon .Family-Friends {
+    width: 0px;
   }
 
   .fourth-section {
