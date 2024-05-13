@@ -2186,7 +2186,7 @@ p {
 
 @media (max-width:768px) and (min-width: 426px) {
   .first-section {
-    height: 86vh;
+    height: 70vh;
   }
 
   .first-section .body-container .dwnld-desc {
@@ -2194,40 +2194,53 @@ p {
   }
 
   .first-section .description h1 {
-    font-size: 36px;
+    font-size: 26px;
   }
 
   .first-section .description p {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .first-section .body-container .dwnld-desc .description {
     margin: 50px 1px 1px 5px;
-    width: 55%;
+    width: 65%;
   }
 
   .first-section .dwnld-img .handmobile {
     margin: 10px 1px 1px 20px;
     padding: 10px 1px 1px 20px;
     position: relative;
-    left: 350px;
-    width: 72%;
+    left: 210px;
+    width: 85%;
+  }
+
+  .buttons {
+    margin: 4px 1px 1px 12px;
   }
 
   .buttons .gplay-btn {
-    width: 120px;
-    height: 40px;
+    width: 80px;
+    height: 30px;
   }
 
   .buttons .appstore-btn {
-    width: 120px;
-    height: 40px;
+    width: 80px;
+    height: 30px;
   }
 
+  /* second section */
   .second-section {
     height: 100vh;
     margin: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
+  }
+
+  .second-section .second-title h1 {
+    font-size: 26px;
+  }
+
+  .second-section .second-title p {
+    font-size: 12px;
   }
 
   .second-section .second-body {
@@ -2236,59 +2249,59 @@ p {
   }
 
   .second-section .second-body .second-img {
-    width: 900px;
-    height: 400px;
+    width: 100px;
+    height: 200px;
   }
 
   .second-section .second-body .second-img .remittance-img {
-    height: 400px;
-    width: 320px;
+    height: 200px;
+    width: 145px;
     position: relative;
-    top: 60px;
+    top: 50px;
   }
 
-  .second-section .second-body .second-grid h2 {
-    font-size: 15px;
+  .second-section .body-container .second-body .second-grid h2 {
+    font-size: 12px;
   }
 
-  .second-section .second-body .second-grid p {
-    font-size: 13px;
+  .second-section .body-container .second-body .second-grid p {
+    font-size: 8px;
   }
 
   .second-section .second-body .second-grid .remit-icon {
-    width: 120px;
+    width: 60px;
     height: auto;
   }
 
   .second-section .second-body .second-grid .withdraw-icon {
-    width: 120px;
+    width: 60px;
     height: auto;
   }
 
   .second-section .second-body .second-grid .remittance-icon {
-    width: 120px;
+    width: 60px;
     height: auto;
   }
 
   .second-section .second-body .second-grid .second-grid1 {
-    margin: 2px 2px 10px 2px;
+    margin: 2px 2px 10px 30px;
     padding: 15px 15px 20px 10px;
-    width: 335px;
-    height: 165px;
+    width: 195px;
+    height: 95px;
   }
 
   .second-section .second-body .second-grid .second-grid2 {
-    margin: 2px 2px 10px 2px;
+    margin: 2px 2px 10px 30px;
     padding: 15px 15px 20px 10px;
-    width: 335px;
-    height: 165px;
+    width: 195px;
+    height: 95px;
   }
 
   .second-section .second-body .second-grid .second-grid3 {
-    margin: 2px 2px 10px 2px;
+    margin: 2px 2px 10px 30px;
     padding: 15px 15px 20px 10px;
-    width: 335px;
-    height: 165px;
+    width: 195px;
+    height: 95px;
   }
 
   .second-grid1, .second-grid2 {
@@ -2301,48 +2314,56 @@ p {
     padding: 5px 5px 5px 5px;
   }
 
+  .third-section .third-title h1 {
+    font-size: 26px;
+  }
+
+  .third-section .third-title p {
+    font-size: 12px;
+  }
+
   .third-section .body-container .third-grid h2 {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .third-section .body-container .third-grid p {
-    font-size: 13px;
+    font-size: 8px;
   }
 
   .third-section .body-container .third-grid .Extra-Grid {
     position: relative;
-    bottom: 400px;
+    bottom: 330px;
     margin: 2px 2px 2px 20px;
   }
 
   .third-section .body-container .third-grid .Extra-Grid .Family-Friends {
-    width: 290px;
+    width: 150px;
     position: relative;
-    left: 50px;
+    left: 40px;
   }
 
   .third-section .body-container .third-grid .third-grid2 {
     margin: 10px 2px 10px 2px;
-    padding: 50px 20px 70px 10px;
-    width: 300px;
-    height: 100px;
+    padding: 50px 10px 70px 10px;
+    width: 185px;
+    height: 70px;
   }
 
   .third-section .body-container .third-grid .third-grid3 {
     margin: 10px 2px 10px 2px;
-    padding: 50px 20px 70px 10px;
-    width: 300px;
-    height: 100px;
+    padding: 50px 10px 70px 10px;
+    width: 185px;
+    height: 70px;
   }
 
 
   .third-section .body-container .third-grid .Fund-T {
-    width: 120px;
+    width: 80px;
     height: auto;
   }
 
   .third-section .body-container .third-grid .Send-R {
-    width: 120px;
+    width: 80px;
     height: auto;
   }
 
