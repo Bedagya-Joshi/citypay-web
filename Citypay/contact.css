@@ -20,7 +20,7 @@ body {
 
 .navbar {
     z-index: 1;
-    position: relative;
+    position: sticky;
     top: 0;
 }
 
@@ -47,7 +47,9 @@ body {
 
 .fa-bars {
     font-size: 40px;
-    color: #cf1414;
+    color: #1472cf;
+    position: relative;
+    left: 1650px;
 }
 
 .nav {
