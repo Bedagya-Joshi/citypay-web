@@ -2806,16 +2806,16 @@ p {
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
-    margin-top: 60px;
-    /* Add margin to create space between the two divs */
+    margin-top: 30px;
+
   }
 
   .first-section .dwnld-desc .description {
-    width: 280px;
+    width: 230px;
   }
 
   .first-section .dwnld-desc .description h1 {
-    font-size: 26px;
+    font-size: 20px;
   }
 
   .first-section .dwnld-desc .description p {
@@ -2824,10 +2824,10 @@ p {
   }
 
   .buttons {
-    width: 100px;
-    height: 40px;
+    width: 110px;
+    height: 38px;
     position: relative;
-    right: 60px;
+    right: 65px;
   }
 
   .dwnld-img .handmobile {
@@ -2836,7 +2836,6 @@ p {
     left: 180px;
     width: 280px;
   }
-
 
   /* second section */
   .second-section {
@@ -2854,30 +2853,17 @@ p {
 
   .second-section .second-body .second-img {
     position: relative;
-    left: 100px;
-    bottom: 70px;
+    left: 80px;
+    bottom: 40px;
   }
 
-  .second-section .second-body .second-img .remittance-img {
-    width: 200px;
+  .second-section .body-container .second-body .second-img .remittance-img {
+    width: 180px;
+    height: 235px;
   }
-
 
   .second-grid1, .second-grid2, .second-grid3 {
     grid-template-columns: 1fr;
-  }
-
-
-  .second-section .second-body .second-img {
-    width: 100px;
-    height: 200px;
-  }
-
-  .second-section .second-body .second-img .remittance-img {
-    height: 200px;
-    width: 145px;
-    position: relative;
-    top: 50px;
   }
 
   .second-section .second-body .second-grid {
@@ -2885,17 +2871,18 @@ p {
     grid-template-columns: 1fr;
     width: 50%;
     position: relative;
-    right: 65px;
-    top: 220px;
+    right: 145px;
+    top: 270px;
+    height: 50%;
+    gap: 10px;
   }
 
   .second-grid1, .second-grid2, .second-grid3 {
     grid-template-columns: 1fr;
-    width: 200px;
-    height: 130px;
-    margin: 40px 40px 10px 1px;
+    width: 190px;
+    height: 120px;
+    margin: 5px 40px 10px 1px;
   }
-
 
   .second-section .body-container .second-body .second-grid h2 {
     font-size: 12px;
@@ -2920,15 +2907,13 @@ p {
     height: auto;
   }
 
-
-
   .third-section {
     grid-template-columns: 1fr;
     margin: 60px;
+    height: 100vh;
   }
 
-
-  .third-section .third-title h1 {
+  .third-section .body-container .third-title h1 {
     font-size: 26px;
   }
 
@@ -2941,18 +2926,19 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     width: 50%;
+    height: 50%;
+    gap: 10px;
     position: relative;
     right: 40px;
-    bottom: 100px;
+    bottom: 300px;
   }
 
   .third-grid1, .third-grid2, .third-grid3 {
     grid-template-columns: 1fr;
     width: 200px;
     height: 130px;
-    margin: 40px 40px 10px 1px;
+    margin: 5px 30px 10px 1px;
   }
-
 
   .third-section .body-container .third-grid h2 {
     font-size: 12px;
@@ -2961,7 +2947,6 @@ p {
   .third-section .body-container .third-grid p {
     font-size: 8px;
   }
-
 
   .third-section .third-grid .third-grid2 .Fund-T {
     width: 60px;
@@ -2978,31 +2963,267 @@ p {
     height: auto;
   }
 
-  .third-section .Extra-Grid {
+  .third-section .Extra-Grid .icon {
     position: relative;
-    top: 70px;
+    top: 620px;
+    left: 70px;
     width: 100%;
   }
 
-  .third-section .Extra-Grid .icon .Family-Friends {
-    width: 0px;
+  .third-section .third-grid .Extra-Grid .icon .Family-Friends {
+    width: 200px;
   }
 
   .fourth-section {
     grid-template-columns: 1fr;
+    height: 80vh;
+  }
+
+  .fourth-section .body-container .fourth-title h1 {
+    font-size: 26px;
+  }
+
+  .fourth-section .body-container .fourth-title p {
+    font-size: 12px;
+  }
+
+  .fourth-section .body-container .Pic-Grid {
+    width: 200px;
+    position: relative;
+    right: 100px;
+  }
+
+  .fourth-section .body-container .Pic-Grid .bank {
+    position: relative;
+    top: 0px;
+  }
+
+  .fourth-section .fourth-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    right: 30px;
+    gap: 10px;
+  }
+
+  .fourth-section .fourth-grid .fourth-grid2 .BT {
+    width: 60px;
+    height: auto;
+  }
+
+  .fourth-section .fourth-grid .LB {
+    width: 60px;
+    height: auto;
+  }
+
+  .fourth-grid1, .fourth-grid2, .fourth-grid3 {
+    grid-template-columns: 1fr;
+    width: 200px;
+    height: 100px;
+    margin: 5px 30px 10px 1px;
+    border-radius: 35px;
+  }
+
+  .fourth-section .body-container .fourth-grid h2 {
+    font-size: 12px;
+  }
+
+  .fourth-section .body-container .fourth-grid p {
+    font-size: 8px;
   }
 
   .fifth-section {
     grid-template-columns: 1fr;
   }
 
+  .fifth-section .body-container .fifth-title h1 {
+    font-size: 26px;
+  }
+
+  .fifth-section .body-container .fifth-title p {
+    font-size: 12px;
+  }
+
+  .fifth-section .fifth-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    position: relative;
+    right: 10px;
+  }
+
+  .fifth-section .body-container .fifth-grid h2 {
+    font-size: 12px;
+  }
+
+  .fifth-section .body-container .fifth-grid p {
+    font-size: 8px;
+  }
+
+  .fifth-section .fifth-grid .fifth-grid2 .CityPay-QR {
+    width: 60px;
+    height: auto;
+  }
+
+  .fifth-section .fifth-grid .fifth-grid3 .NepalPay-SmartQR {
+    width: 60px;
+    height: auto;
+  }
+
+  .fifth-grid1, .fifth-grid2, .fifth-grid3 {
+    grid-template-columns: 1fr;
+    width: 140px;
+    height: 110px;
+    margin: 30px 30px 10px 1px;
+  }
+
+  .fifth-section .body-container .Pic-Grid {
+    position: relative;
+    top: 0px;
+    width: 70%;
+  }
+
+  .fifth-section .body-container .Pic-Grid .ScanQR {
+    position: relative;
+    margin: 0;
+    width: 230px;
+    left: 0px;
+  }
+
   .sixth-section {
     grid-template-columns: 1fr;
+    margin: 1px 1px 100px 1px;
+  }
+
+  .sixth-section .body-container .sixth-title h1 {
+    font-size: 26px;
+  }
+
+  .sixth-section .body-container .sixth-title p {
+    font-size: 12px;
+  }
+
+  .sixth-section .body-container .sixth-body {
+    grid-template-columns: 1fr;
+  }
+
+  .sixth-section .sixth-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    position: relative;
+    top: 250px;
+    right: 135px;
+    gap: 10px;
+    height: 50%;
+  }
+
+
+  .sixth-section .sixth-body .sixth-img {
+    height: 180px;
+    position: relative;
+    left: 80px;
+  }
+
+  .sixth-section .sixth-body .sixth-img .Utility {
+    margin: 0;
+    width: 180px;
+    height: 180px;
+    position: relative;
+    bottom: 20px;
+  }
+
+  .sixth-section .body-container .sixth-grid h2 {
+    font-size: 12px;
+  }
+
+  .sixth-section .body-container .sixth-grid p {
+    font-size: 8px;
+  }
+
+  .sixth-section .sixth-grid .sixth-grid1 .Mobile {
+    width: 60px;
+    height: auto;
+  }
+
+  .sixth-section .sixth-grid .sixth-grid2 .Domestic {
+    width: 60px;
+    height: auto;
+  }
+
+  .sixth-section .sixth-grid .sixth-grid3 .gov {
+    width: 60px;
+    height: auto;
+  }
+
+  .sixth-grid1, .sixth-grid2, .sixth-grid3 {
+    grid-template-columns: 1fr;
+    width: 170px;
+    height: 160px;
+    margin: 0px 30px 10px 1px;
   }
 
   .seventh-section {
     grid-template-columns: 1fr;
   }
+
+  .seventh-section .body-container .seventh-title h1 {
+    font-size: 26px;
+  }
+
+  .seventh-section .body-container .seventh-title p {
+    font-size: 12px;
+  }
+
+  .seventh-section .body-container .seventh-body {
+    grid-template-columns: 1fr;
+  }
+
+  .seventh-section .body-container .seventh-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    position: relative;
+    top: 0px;
+    right: 185px;
+  }
+
+  .seventh-section .seventh-grid .seventh-grid1 .Reward {
+    width: 60px;
+    height: auto;
+  }
+
+  .seventh-section .seventh-grid .seventh-grid2 .MobileTop-Up {
+    width: 60px;
+    height: auto;
+  }
+
+  .seventh-section .seventh-grid .seventh-grid3 .conv {
+    width: 60px;
+    height: auto;
+  }
+
+  .seventh-grid1, .seventh-grid2, .seventh-grid3 {
+    grid-template-columns: 1fr;
+    width: 170px;
+    height: 200px;
+    margin: 30px 110px 10px 1px;
+  }
+
+  .seventh-section .body-container .seventh-grid h2 {
+    font-size: 12px;
+  }
+
+  .seventh-section .body-container .seventh-grid p {
+    font-size: 8px;
+  }
+
+  .seventh-section .body-container .base {
+    display: none;
+  }
+
 
   .footer {}
 
