@@ -2918,7 +2918,6 @@ p {
   .third-section {
     grid-template-columns: 1fr;
     margin: 30px;
-    height: 100vh;
   }
 
   .third-section .body-container .third-title h1 {
@@ -2938,7 +2937,7 @@ p {
     gap: 10px;
     position: relative;
     right: 40px;
-    bottom: 300px;
+    bottom: 250px;
   }
 
   .third-grid1, .third-grid2, .third-grid3 {
@@ -3012,6 +3011,7 @@ p {
     width: 50%;
     height: 50%;
     position: relative;
+
     right: 30px;
     gap: 10px;
   }
@@ -3096,13 +3096,13 @@ p {
   .fifth-section .body-container .Pic-Grid .ScanQR {
     position: relative;
     margin: 0;
-    width: 230px;
-    left: 0px;
+    width: 210px;
+    left: 10px;
   }
 
   .sixth-section {
     grid-template-columns: 1fr;
-    margin: 1px 1px 100px 1px;
+    margin: 1px 1px 120px 1px;
   }
 
   .sixth-section .body-container .sixth-title h1 {
@@ -3169,12 +3169,13 @@ p {
   .sixth-grid1, .sixth-grid2, .sixth-grid3 {
     grid-template-columns: 1fr;
     width: 170px;
-    height: 160px;
+    height: 140px;
     margin: 0px 30px 10px 1px;
   }
 
   .seventh-section {
     grid-template-columns: 1fr;
+    margin: 0px 0px 70px 0px;
   }
 
   .seventh-section .body-container .seventh-title h1 {
@@ -3192,7 +3193,7 @@ p {
   .seventh-section .body-container .seventh-grid {
     display: grid;
     grid-template-columns: 1fr;
-    width: 50%;
+    width: 30%;
     position: relative;
     top: 0px;
     right: 185px;
@@ -3235,8 +3236,8 @@ p {
   /* Footer */
 
   .footer {
-    margin: 30px 0px 90px 1px;
-    padding: 10px 0px 10px 30px;
+    margin: 30px 0px 0px 1px;
+    padding: 10px 0px 5px 30px;
     box-shadow: 0px -12px 25px rgba(228, 237, 250, 0.8);
   }
 
@@ -3437,7 +3438,7 @@ p {
   .dwnld-img .handmobile {
     position: relative;
     top: 245px;
-    left: 190px;
+    left: 170px;
     width: 200px;
   }
 
@@ -3967,7 +3968,7 @@ p {
 
   .header .menu-toggle {
     position: relative;
-    left: 25px;
+    left: 5px;
   }
 
   .navbar .logo {
@@ -4002,62 +4003,63 @@ p {
     margin-top: 25px;
   }
 
+  /* First Section */
   .first-section {
     background-image: none;
   }
 
   .first-section .dwnld-desc .description {
-    width: 290px;
+    width: 220px;
   }
 
   .first-section .dwnld-desc .description h1 {
-    font-size: 27px;
-    padding-bottom: 15px;
+    font-size: 25px;
+    padding-bottom: 10px;
   }
 
   .first-section .dwnld-desc .description p {
-    font-size: 14px;
+    font-size: 12px;
     width: 100%;
   }
 
   .buttons {
-    width: 110px;
-    height: 38px;
+    width: 90px;
+    height: 35px;
     position: relative;
     right: 65px;
   }
 
   .dwnld-img .handmobile {
     position: relative;
-    top: 280px;
-    left: 230px;
-    width: 300px;
+    top: 315px;
+    left: 225px;
+    width: 250px;
   }
 
-  /* second section */
+  /* Second Section */
   .second-section {
     grid-template-columns: 1fr;
     padding: 1px 1px 50px 1px;
   }
 
   .second-section .second-title h1 {
-    font-size: 26px;
+    font-size: 23px;
   }
 
   .second-section .second-title p {
-    font-size: 12px;
+    font-size: 11px;
     width: 100%;
   }
 
   .second-section .second-body .second-img {
     position: relative;
-    left: 80px;
+    left: 60px;
     bottom: 40px;
   }
 
   .second-section .body-container .second-body .second-img .remittance-img {
-    width: 180px;
-    height: 235px;
+    width: 170px;
+    height: 225px;
   }
 
   .second-section .second-body .second-grid {
@@ -4073,35 +4075,36 @@ p {
 
   .second-grid1, .second-grid2, .second-grid3 {
     grid-template-columns: 1fr;
-    width: 190px;
-    height: 120px;
+    width: 160px;
+    height: 80px;
     margin: 5px 40px 10px 1px;
     padding: 10px 20px 20px 20px;
   }
 
   .second-section .body-container .second-body .second-grid h2 {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .second-section .body-container .second-body .second-grid p {
-    font-size: 8px;
+    font-size: 6px;
   }
 
   .second-section .second-body .second-grid .remit-icon {
-    width: 60px;
+    width: 50px;
     height: auto;
   }
 
   .second-section .second-body .second-grid .withdraw-icon {
-    width: 60px;
+    width: 50px;
     height: auto;
   }
 
   .second-section .second-body .second-grid .Track-remittance {
-    width: 60px;
+    width: 50px;
     height: auto;
   }
 
+  /* Third Section */
   .third-section {
     grid-template-columns: 1fr;
     margin: 30px;
@@ -4109,11 +4112,11 @@ p {
   }
 
   .third-section .body-container .third-title h1 {
-    font-size: 26px;
+    font-size: 23px;
   }
 
   .third-section .third-title p {
-    font-size: 12px;
+    font-size: 11px;
     width: 100%;
   }
 
@@ -4125,22 +4128,22 @@ p {
     gap: 10px;
     position: relative;
     right: 40px;
-    bottom: 300px;
+    bottom: 140px;
   }
 
   .third-grid1, .third-grid2, .third-grid3 {
     grid-template-columns: 1fr;
-    width: 200px;
-    height: 130px;
+    width: 170px;
+    height: 80px;
     margin: 5px 30px 10px 1px;
   }
 
   .third-section .body-container .third-grid h2 {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .third-section .body-container .third-grid p {
-    font-size: 8px;
+    font-size: 6px;
   }
 
   .third-section .third-grid .third-grid2 .Fund-T {
@@ -4153,10 +4156,6 @@ p {
     height: auto;
   }
 
-  .third-section .third-grid .Track-remittance {
-    width: 60px;
-    height: auto;
-  }
 
   .third-section .Extra-Grid .icon {
     position: relative;
@@ -4166,24 +4165,25 @@ p {
   }
 
   .third-section .third-grid .Extra-Grid .icon .Family-Friends {
-    width: 200px;
+    width: 165px;
   }
 
+  /* Fourth Section */
   .fourth-section {
     grid-template-columns: 1fr;
     height: 80vh;
   }
 
   .fourth-section .body-container .fourth-title h1 {
-    font-size: 26px;
+    font-size: 23px;
   }
 
   .fourth-section .body-container .fourth-title p {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .fourth-section .body-container .Pic-Grid {
-    width: 200px;
+    width: 160px;
     position: relative;
     right: 100px;
   }
@@ -4199,7 +4199,7 @@ p {
     width: 50%;
     height: 50%;
     position: relative;
-    right: 30px;
+    right: 43px;
     gap: 10px;
   }
 
@@ -4215,30 +4215,31 @@ p {
 
   .fourth-grid1, .fourth-grid2, .fourth-grid3 {
     grid-template-columns: 1fr;
-    width: 200px;
-    height: 100px;
+    width: 130px;
+    height: 60px;
     margin: 5px 30px 10px 1px;
-    border-radius: 35px;
+    border-radius: 25px;
   }
 
   .fourth-section .body-container .fourth-grid h2 {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .fourth-section .body-container .fourth-grid p {
-    font-size: 8px;
+    font-size: 6px;
   }
 
+  /* Fifth Section */
   .fifth-section {
     grid-template-columns: 1fr;
   }
 
   .fifth-section .body-container .fifth-title h1 {
-    font-size: 26px;
+    font-size: 23px;
   }
 
   .fifth-section .body-container .fifth-title p {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .fifth-section .fifth-grid {
@@ -4250,28 +4251,29 @@ p {
   }
 
   .fifth-section .body-container .fifth-grid h2 {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .fifth-section .body-container .fifth-grid p {
-    font-size: 8px;
+    font-size: 6px;
   }
 
   .fifth-section .fifth-grid .fifth-grid2 .CityPay-QR {
-    width: 60px;
+    width: 50px;
     height: auto;
   }
 
   .fifth-section .fifth-grid .fifth-grid3 .NepalPay-SmartQR {
-    width: 60px;
+    width: 50px;
     height: auto;
   }
 
-  .fifth-grid1, .fifth-grid2, .fifth-grid3 {
+  .fifth-grid2, .fifth-grid3 {
     grid-template-columns: 1fr;
-    width: 140px;
-    height: 110px;
+    width: 120px;
+    height: 95px;
     margin: 30px 30px 10px 1px;
+    border-radius: 20px;
   }
 
   .fifth-section .body-container .Pic-Grid {
@@ -4283,21 +4285,22 @@ p {
   .fifth-section .body-container .Pic-Grid .ScanQR {
     position: relative;
     margin: 0;
-    width: 230px;
-    left: 0px;
+    width: 170px;
+    left: 20px;
   }
 
+  /* Sixth Section */
   .sixth-section {
     grid-template-columns: 1fr;
-    margin: 1px 1px 100px 1px;
+    margin: 60px 1px 100px 1px;
   }
 
   .sixth-section .body-container .sixth-title h1 {
-    font-size: 26px;
+    font-size: 23px;
   }
 
   .sixth-section .body-container .sixth-title p {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .sixth-section .body-container .sixth-body {
@@ -4315,11 +4318,10 @@ p {
     height: 50%;
   }
 
-
   .sixth-section .sixth-body .sixth-img {
     height: 180px;
     position: relative;
-    left: 80px;
+    left: 40px;
   }
 
   .sixth-section .sixth-body .sixth-img .Utility {
@@ -4331,45 +4333,48 @@ p {
   }
 
   .sixth-section .body-container .sixth-grid h2 {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .sixth-section .body-container .sixth-grid p {
-    font-size: 8px;
+    font-size: 6px;
   }
 
   .sixth-section .sixth-grid .sixth-grid1 .Mobile {
-    width: 60px;
+    width: 50px;
     height: auto;
   }
 
   .sixth-section .sixth-grid .sixth-grid2 .Domestic {
-    width: 60px;
+    width: 50px;
     height: auto;
   }
 
   .sixth-section .sixth-grid .sixth-grid3 .gov {
-    width: 60px;
+    width: 50px;
     height: auto;
   }
 
   .sixth-grid1, .sixth-grid2, .sixth-grid3 {
     grid-template-columns: 1fr;
-    width: 170px;
-    height: 160px;
+    width: 100px;
+    height: 135px;
     margin: 0px 30px 10px 1px;
   }
 
+  /* Seventh Section */
   .seventh-section {
     grid-template-columns: 1fr;
+    margin: 160px 1px 160px 1px;
+    padding: 10px 1px 50px 1px;
   }
 
   .seventh-section .body-container .seventh-title h1 {
-    font-size: 26px;
+    font-size: 23px;
   }
 
   .seventh-section .body-container .seventh-title p {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .seventh-section .body-container .seventh-body {
@@ -4402,17 +4407,17 @@ p {
 
   .seventh-grid1, .seventh-grid2, .seventh-grid3 {
     grid-template-columns: 1fr;
-    width: 170px;
-    height: 200px;
+    width: 100px;
+    height: 190px;
     margin: 30px 110px 10px 1px;
   }
 
   .seventh-section .body-container .seventh-grid h2 {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .seventh-section .body-container .seventh-grid p {
-    font-size: 8px;
+    font-size: 6px;
   }
 
   .seventh-section .body-container .base {
@@ -4422,9 +4427,10 @@ p {
   /* Footer */
 
   .footer {
-    margin: 30px 0px 90px 1px;
-    padding: 10px 0px 10px 30px;
+    margin: 30px 0px 0px 1px;
+    padding: 10px 0px 0px 30px;
     box-shadow: 0px -12px 25px rgba(228, 237, 250, 0.8);
+    overflow: hidden;
   }
 
   .footer .row {
@@ -4476,7 +4482,7 @@ p {
   }
 
   .footer .info p {
-    font-size: 6px;
+    font-size: 5px;
   }
 
   .footer .info .connect {
@@ -4486,12 +4492,12 @@ p {
     margin: 5px;
     width: 110px;
     position: relative;
-    right: 30px;
+    right: 45px;
   }
 
   .connect .soc {
     position: relative;
-    left: 3px;
+    left: 0px;
   }
 
   .connect .fb {
@@ -4510,10 +4516,10 @@ p {
   }
 
   .footer .footer-links {
-    margin: 7px 40px 1px 1px;
-    padding: 10px 20px 1px 1px;
+    margin: 8px 40px 1px 1px;
+    padding: 15px 20px 1px 1px;
     position: relative;
-    right: 70px;
+    right: 100px;
     width: 75%;
   }
 
@@ -4522,24 +4528,24 @@ p {
   }
 
   .footer .footer-links a {
-    font-size: 6px;
+    font-size: 5px;
     margin: 0;
   }
 
   .footer-links h4 {
-    font-size: 8px;
+    font-size: 7px;
     margin: 0;
   }
 
   .footer-links .agent {
-    font-size: 6px;
+    font-size: 5px;
     padding: 4px;
     border-radius: 5px;
   }
 
   .footer .copyright {
     position: relative;
-    bottom: 10px;
+    bottom: 30px;
   }
 
   .footer .copyright p {
