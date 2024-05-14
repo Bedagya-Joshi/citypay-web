@@ -465,14 +465,13 @@ p {
 
 .fourth-grid {
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px;
+  gap: 10px;
   width: 100%;
   margin: 10px 10px 10px 200px;
   padding: 10px 10px 10px 200px;
   padding: 0;
-  justify-content: end;
   position: relative;
-
+  bottom: 300px;
 }
 
 .fourth-grid2,
@@ -486,22 +485,22 @@ p {
   border-radius: 50px;
   padding: 20px;
   margin-bottom: 20px;
-  margin-top: 80px;
+  margin-top: 0px;
   margin: 20px 10px 20px 600px;
 }
 
-.fourth-grid .Pic-Grid {
-
+.fourth-section .body-container .Pic-Grid {
   width: 45%;
   margin: 1px;
+  position: relative;
+  top: 190px;
 }
 
 .Pic-Grid .bank {
   width: 100%;
   height: 100%;
   position: relative;
-  bottom: 500px;
-  left: 100px;
+  bottom: 0px;
 }
 
 
