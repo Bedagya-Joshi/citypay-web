@@ -2775,11 +2775,17 @@ p {
 
   .navbar {
     position: relative;
-    right: 30px;
+    right: 10px;
+  }
+
+  .header .menu-toggle {
+    position: relative;
+    left: 25px;
   }
 
   .navbar .logo {
     position: relative;
+    right: 10px;
     top: 6px;
   }
 
@@ -2806,7 +2812,7 @@ p {
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
-    margin-top: 30px;
+    margin-top: 25px;
   }
 
   .first-section {
@@ -2814,15 +2820,16 @@ p {
   }
 
   .first-section .dwnld-desc .description {
-    width: 230px;
+    width: 290px;
   }
 
   .first-section .dwnld-desc .description h1 {
-    font-size: 20px;
+    font-size: 27px;
+    padding-bottom: 15px;
   }
 
   .first-section .dwnld-desc .description p {
-    font-size: 12px;
+    font-size: 14px;
     width: 100%;
   }
 
@@ -2835,14 +2842,15 @@ p {
 
   .dwnld-img .handmobile {
     position: relative;
-    top: 250px;
-    left: 180px;
-    width: 280px;
+    top: 280px;
+    left: 230px;
+    width: 300px;
   }
 
   /* second section */
   .second-section {
     grid-template-columns: 1fr;
+    padding: 1px 1px 50px 1px;
   }
 
   .second-section .second-title h1 {
@@ -2865,10 +2873,6 @@ p {
     height: 235px;
   }
 
-  .second-grid1, .second-grid2, .second-grid3 {
-    grid-template-columns: 1fr;
-  }
-
   .second-section .second-body .second-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -2885,6 +2889,7 @@ p {
     width: 190px;
     height: 120px;
     margin: 5px 40px 10px 1px;
+    padding: 10px 20px 20px 20px;
   }
 
   .second-section .body-container .second-body .second-grid h2 {
@@ -2912,7 +2917,7 @@ p {
 
   .third-section {
     grid-template-columns: 1fr;
-    margin: 60px;
+    margin: 30px;
     height: 100vh;
   }
 
@@ -3230,7 +3235,8 @@ p {
   /* Footer */
 
   .footer {
-    margin: 1px 1px 70px 1px;
+    margin: 30px 0px 90px 1px;
+    padding: 10px 0px 10px 30px;
     box-shadow: 0px -12px 25px rgba(228, 237, 250, 0.8);
   }
 
@@ -3238,7 +3244,6 @@ p {
     position: relative;
     right: 50px;
   }
-
   .footer .logoQR {
     position: relative;
     bottom: 100px;
@@ -3283,7 +3288,7 @@ p {
   }
 
   .footer .info p {
-    font-size: 7px;
+    font-size: 6px;
   }
 
   .footer .info .connect {
@@ -3291,9 +3296,9 @@ p {
     flex-direction: column;
     padding: 5px;
     margin: 5px;
-    width: 200px;
+    width: 110px;
     position: relative;
-    right: 40px;
+    right: 30px;
   }
 
   .connect .soc {
@@ -3317,10 +3322,10 @@ p {
   }
 
   .footer .footer-links {
-    margin: 7px 50px 1px 1px;
-    padding: 10px 40px 1px 1px;
+    margin: 7px 40px 1px 1px;
+    padding: 10px 20px 1px 1px;
     position: relative;
-    right: 150px;
+    right: 70px;
     width: 75%;
   }
 
