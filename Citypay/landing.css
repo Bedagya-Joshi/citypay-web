@@ -1272,7 +1272,7 @@ p {
   .third-section {
     height: 100vh;
     margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
+    padding: 100px 5px 5px 5px;
   }
 
   .third-section .body-container .third-grid h2 {
@@ -1530,7 +1530,7 @@ p {
   .seventh-section {
     height: 100vh;
     margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
+    padding: 40px 5px 5px 5px;
   }
 
   .seventh-section .body-container.seventh-title {
