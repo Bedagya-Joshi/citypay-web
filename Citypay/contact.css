@@ -218,6 +218,8 @@ body {
 
 .map iframe {
     position: relative;
+    width: 600px;
+    height: 450px;
 }
 
 
@@ -557,6 +559,25 @@ body {
 }
 
 @media (max-width:425px) and (min-width: 376px) {
+
+    .header {
+        padding: 10px 10px 20px 20px;
+        width: 50%;
+    }
+
+    .navbar .logo {
+        width: 70%;
+    }
+
+    .navbar .title h1 {
+        font-size: 16px;
+    }
+
+    .container {
+        width: "max-width";
+        padding: 20px;
+    }
+
     .container h3 {
         font-size: x-small;
     }
@@ -571,146 +592,265 @@ body {
 
     .container .office {
         width: 100%;
+        margin: 10px 1px 1px 1px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .contact-detail {
+        display: flex;
+        flex-direction: column;
     }
 
     .container.office .cont1 {
+        width: 50%;
+    }
+
+    .address-container {
+        display: flex;
+        align-items: center;
+        width: 195px;
+    }
+
+    .address-container p {
         width: 100%;
+        position: relative;
+        right: 27px;
     }
 
-
-    /* Footer */
-
-    .footer {
-        margin: 30px 0px 0px 1px;
-        padding: 10px 0px 5px 30px;
-        box-shadow: 0px -12px 25px rgba(228, 237, 250, 0.8);
+    .address-container i {
+        margin-right: 10px;
     }
 
-    .footer .row {
+    .po-container {
+        display: flex;
+        align-items: center;
+        width: 195px;
+    }
+
+    .po-container p {
+        position: relative;
+        right: 62px;
+    }
+
+    .po-container i {
+        margin-right: 10px;
+    }
+
+    .Email {
+        display: flex;
+    }
+
+    .Email i {
+        margin-right: 10px;
+        width: 150px;
+    }
+
+    .Email p {
+        width: 100%;
+        position: relative;
+        right: 60px;
+    }
+
+    .Tel {
+        display: flex;
+        width: 250px;
+    }
+
+    .Tel i {
+        margin-right: 10px;
+    }
+
+    .Tel p {
+        width: 100%;
+        position: relative;
+        right: 45px;
+    }
+
+    .tol {
+        display: flex;
+        width: 265px;
+    }
+
+    .tol i {
+        margin-right: 10px;
+    }
+
+    .tol p {
+        width: 100%;
         position: relative;
         right: 50px;
     }
 
-    .footer .logoQR {
-        position: relative;
-        bottom: 100px;
-    }
-
-    .footer .logoQR .dwbuttons {
-        width: 80%;
-        position: relative;
-        right: 20px;
-        bottom: 40px;
-    }
-
-    .footer .logimg .download-btn {
-        width: 30px;
-        height: 10px;
-        margin: 2px 2px 2px 1px;
-        position: relative;
-    }
-
-    .footer .logoQR .dwbuttons h3 {
-        font-size: 7px;
-    }
-
-    .footer .logoQR .citypaylog {
-        width: 23%;
-        padding: 0;
-        position: relative;
-        bottom: 25px;
-    }
-
-    .footer .logoQR .QRcode {
-        width: 23%;
-        padding: 0;
-        position: relative;
-        bottom: 25px;
-    }
-
-    .footer .info .basic {
-        position: relative;
-        left: 30px;
-        width: 40%;
-    }
-
-    .footer .info p {
-        font-size: 6px;
-    }
-
-    .footer .info .connect {
+    .Call {
         display: flex;
-        flex-direction: column;
-        padding: 5px;
-        margin: 5px;
-        width: 110px;
+        width: 245px;
+    }
+
+    .Call i {
+        margin-right: 10px;
+    }
+
+    .Call p {
+        width: 100%;
         position: relative;
-        right: 30px;
-    }
-
-    .connect .soc {
-        position: relative;
-        left: 3px;
-    }
-
-    .connect .fb {
-        width: 10px;
-        height: auto;
-    }
-
-    .connect .ytb {
-        width: 10px;
-        height: auto;
-    }
-
-    .connect .lkdn {
-        width: 10px;
-        height: auto;
-    }
-
-    .footer .footer-links {
-        margin: 7px 60px 1px 1px;
-        padding: 10px 20px 1px 1px;
-        position: relative;
-        right: 60px;
-        width: 75%;
-    }
-
-    .footer .footer-links li {
-        margin: 0;
-    }
-
-    .footer .footer-links a {
-        font-size: 6px;
-        margin: 0;
-    }
-
-    .footer-links h4 {
-        font-size: 8px;
-        margin: 0;
-    }
-
-    .footer-links .agent {
-        font-size: 5px;
-        padding: 4px;
-        border-radius: 5px;
-        width: 55%;
-    }
-
-    .footer .copyright {
-        position: relative;
-        bottom: 30px;
-    }
-
-    .footer .copyright p {
-        font-size: 5px;
-    }
-
-    .soc svg:hover {
-        transform: none;
-        /* Remove the hover effect on mobile devices */
+        right: 43px;
     }
 }
+
+.container .contact-detail .map {
+    width: 250px;
+    height: 150px;
+    margin: 80px 10px 10px 30px;
+    padding: 20px 10px 10px 10px;
+    width: 70%;
+}
+
+.container .contact-detail .map .map-iframe {
+    width: 230px;
+    height: 160px;
+    position: relative;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer */
+
+.footer {
+    margin: 30px 0px 0px 1px;
+    padding: 10px 0px 5px 30px;
+    box-shadow: 0px -12px 25px rgba(228, 237, 250, 0.8);
+}
+
+.footer .row {
+    position: relative;
+    right: 50px;
+}
+
+.footer .logoQR {
+    position: relative;
+    bottom: 100px;
+}
+
+.footer .logoQR .dwbuttons {
+    width: 80%;
+    position: relative;
+    right: 20px;
+    bottom: 40px;
+}
+
+.footer .logimg .download-btn {
+    width: 30px;
+    height: 10px;
+    margin: 2px 2px 2px 1px;
+    position: relative;
+}
+
+.footer .logoQR .dwbuttons h3 {
+    font-size: 7px;
+}
+
+.footer .logoQR .citypaylog {
+    width: 23%;
+    padding: 0;
+    position: relative;
+    bottom: 25px;
+}
+
+.footer .logoQR .QRcode {
+    width: 23%;
+    padding: 0;
+    position: relative;
+    bottom: 25px;
+}
+
+.footer .info .basic {
+    position: relative;
+    left: 30px;
+    width: 40%;
+}
+
+.footer .info p {
+    font-size: 6px;
+}
+
+.footer .info .connect {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+    width: 110px;
+    position: relative;
+    right: 30px;
+}
+
+.connect .soc {
+    position: relative;
+    left: 3px;
+}
+
+.connect .fb {
+    width: 10px;
+    height: auto;
+}
+
+.connect .ytb {
+    width: 10px;
+    height: auto;
+}
+
+.connect .lkdn {
+    width: 10px;
+    height: auto;
+}
+
+.footer .footer-links {
+    margin: 7px 60px 1px 1px;
+    padding: 10px 20px 1px 1px;
+    position: relative;
+    right: 60px;
+    width: 75%;
+}
+
+.footer .footer-links li {
+    margin: 0;
+}
+
+.footer .footer-links a {
+    font-size: 6px;
+    margin: 0;
+}
+
+.footer-links h4 {
+    font-size: 8px;
+    margin: 0;
+}
+
+.footer-links .agent {
+    font-size: 5px;
+    padding: 4px;
+    border-radius: 5px;
+    width: 55%;
+}
+
+.footer .copyright {
+    position: relative;
+    bottom: 30px;
+}
+
+.footer .copyright p {
+    font-size: 5px;
+}
+
+.soc svg:hover {
+    transform: none;
+    /* Remove the hover effect on mobile devices */
+}
+
+
+
+
 
 @media (max-width:375px) and (min-width: 321px) {
     .container {}
