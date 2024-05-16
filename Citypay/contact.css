@@ -214,14 +214,14 @@ body {
 .container .contact-detail .map {
     margin: 120px 10px 10px 160px;
     padding: 20px 10px 10px 20px;
-    width: 600px;
-    height: 300px;
+    width: 620px;
+    height: 350px;
 }
 
 .container .contact-detail .map .map-iframe {
     position: relative;
     width: 600px;
-    height: 350px;
+    height: 330px;
     border: 0;
 }
 

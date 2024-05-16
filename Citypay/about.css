@@ -442,22 +442,60 @@ body {
 
 
 @media (max-width:1440px) and (min-width: 1025px) {
-    .first-section {}
 
-    .second-section {}
+    .body-container {
+        max-width: 100%;
+    }
 
-    .third-section {}
+    .First-container .curtain .content {
+        width: 80%;
+        position: relative;
+        right: 0px;
+        padding: 10px;
+    }
 
-    .fourth-section {}
+    .curtain {
+        width: 99%;
+        padding: 13px;
+    }
 
-    .fifth-section {}
+    .curtain .content p {
+        text-align: justify;
+    }
 
-    .sixth-section {}
+    .curtain .aboutimg {
+        float: right;
+        position: relative;
+        bottom: 530px;
 
-    .seventh-section {}
+    }
 
+    .aboutimg .about-img {
+        position: relative;
+        bottom: 0px;
+        margin: 0px 360px 10px 0px;
+    }
+
+    .Second-Container .grids {
+        margin: 1px 20px 1px 1px;
+    }
+
+
+    .Second-Container .grid-1, .grid-2, .grid-3 {
+        width: 280px;
+        height: 330px;
+        padding: 20px 20px 20px 25px;
+        margin: 5px 5px 15px 100px;
+    }
+
+    .base {
+        width: 98%;
+    }
 
     /* Footer */
+    .footer {
+        width: 98%;
+    }
 
     .footer .logoQR .citypaylog {
         width: 22%;
@@ -469,24 +507,30 @@ body {
 
     .footer .info .basic {
         position: relative;
-        left: 50px;
+        left: 0px;
+        margin: 20px 1px 1px 1px;
     }
 
     .footer .info p {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .footer .footer-links {
-        margin: 1px 50px 1px 1px;
+        margin: 40px 5px 1px 80px;
         padding: 1px 20px 1px 1px;
+        width: 75%;
     }
 
     .footer .footer-links a {
-        font-size: small;
+        font-size: medium;
     }
 
     .footer-links h4 {
-        font-size: medium;
+        font-size: large;
+    }
+
+    .footer-links .agent {
+        font-size: 16px;
     }
 
     .footer .logimg .download-btn {
@@ -500,12 +544,12 @@ body {
         flex-direction: column;
         padding: 10px;
         margin: 10px;
-        width: 200px;
+        width: 250px;
     }
 
     .connect .soc {
         position: relative;
-        left: 7px;
+        left: 20px;
     }
 
     .connect .fb {
@@ -526,20 +570,86 @@ body {
 }
 
 @media (max-width:1024px) and (min-width: 769px) {
-    .first-section {}
+    .body-container {
+        max-width: 100%;
+    }
 
-    .second-section {}
+    .First-container .curtain .content {
+        width: 100%;
+        position: relative;
+        right: 0px;
+        padding: 10px;
+    }
 
-    .third-section {}
+    .content p {
+        width: 40%;
+        text-align: justify;
+    }
 
-    .fourth-section {}
+    .curtain {
+        max-width: 1024px;
+        padding: 20px;
+    }
 
-    .fifth-section {}
+    .curtain .aboutimg {
+        float: right;
+        position: relative;
+        bottom: 480px;
 
-    .sixth-section {}
+    }
 
-    .seventh-section {}
+    .aboutimg .about-img {
+        position: relative;
+        bottom: 50px;
+        margin: 0px 60px 10px 80px;
+    }
 
+    .Second-Container .grids {
+        margin: 1px 20px 1px 1px;
+    }
+
+    .grids p {
+        text-align: justify;
+        font-size: 14px;
+    }
+
+
+    .Second-Container .grid-1, .grid-2, .grid-3 {
+        width: 230px;
+        height: 370px;
+        padding: 20px 15px 20px 25px;
+        margin: 5px 5px 15px 60px;
+    }
+
+    .base {
+        width: 100%;
+    }
+
+
+    .base h1 {
+        margin-bottom: 10px;
+        text-align: center;
+
+        /* Add some space below the heading */
+    }
+
+    .ctxlogo {
+        margin: 10px 10px 20px 10px;
+        /* Add some space below the logo */
+    }
+
+    .base .paragraph {
+        margin: 40px 50px 40px 65px;
+        width: 35%;
+        float: right;
+    }
+
+    .paragraph p {
+        margin-bottom: 0px;
+        text-align: justify;
+        font-weight: bold;
+        /* Add some space below the paragraph */
+    }
 
     /* footer */
     .footer .row {
@@ -555,23 +665,23 @@ body {
         width: 30%;
     }
 
-
     .footer .info .basic {
         position: relative;
         left: 50px;
+        margin: 30px 1px 1px 1px;
     }
 
     .footer .info p {
-        font-size: 11px;
+        font-size: 14px;
     }
 
     .footer .footer-links {
-        margin: 1px 50px 1px 1px;
+        margin: 50px 50px 1px 40px;
         padding: 1px 20px 1px 1px;
     }
 
     .footer .footer-links a {
-        font-size: x-small;
+        font-size: small;
     }
 
     .footer-links h4 {
@@ -588,13 +698,13 @@ body {
         display: flex;
         flex-direction: column;
         padding: 10px;
-        margin: 10px;
+        margin: 30px 10px 10px 40px;
         width: 200px;
     }
 
     .connect .soc {
         position: relative;
-        left: 3px;
+        left: 14px;
     }
 
     .connect .fb {
