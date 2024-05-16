@@ -1603,34 +1603,137 @@ body {
 }
 
 @media (max-width:320px) and (min-width: 280px) {
-    .first-section {}
+    .header {
+        padding: 0px;
+        width: 100%;
+    }
 
-    .second-section {}
+    .header .logo {
+        width: 50%;
+        margin: 5px;
+    }
 
-    .third-section {}
+    .body-container {
+        max-width: 100%;
+    }
 
-    .fourth-section {}
+    .First-container .curtain .content {
+        width: 100%;
+        position: relative;
+        right: 0px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
 
-    .fifth-section {}
+    .content h1 {
+        margin: 20px 20px 40px 50px;
+        font-size: 50px;
+    }
 
-    .sixth-section {}
+    .content p {
+        width: 95%;
+        margin: 20px 10px 40px 10px;
+        text-align: justify;
+        font-size: small;
+    }
 
-    .seventh-section {}
+    .curtain {
+        width: 100%;
+        padding: 0px;
+    }
 
+    .curtain .aboutimg {
+
+        position: relative;
+        bottom: 35px;
+        width: 100%;
+    }
+
+    .aboutimg .about-img {
+        position: relative;
+        bottom: 0px;
+        margin: 6px;
+        width: 90%;
+    }
+
+    .Second-Container .grids {
+        margin: 1px 1px 1px 1px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .grids p {
+        text-align: justify;
+        font-size: 10px;
+        grid-gap: 0px;
+    }
+
+    .Second-Container .grid-1, .grid-2, .grid-3 {
+        width: 170px;
+        height: 280px;
+        padding: 20px 20px 20px 20px;
+        margin: 15px 15px 15px 15px;
+        position: relative;
+        left: 35px;
+    }
+
+    .icon1, .icon2, .icon3 {
+        margin: 5px 2px 5px 10px;
+        padding: 2px 2px 2px 2px;
+        width: 70%;
+    }
+
+    .base {
+        width: 99%;
+        padding: 1px 1px 1px 1px;
+    }
+
+    .base h1 {
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .ctxlogo {
+        margin: 15px 10px 20px 10px;
+    }
+
+    .Ctxpress-Logo {
+        width: 45%;
+    }
+
+    .base .paragraph {
+        margin: 0px 0px 0px 50px;
+        width: 45%;
+        float: right;
+        position: relative;
+        bottom: 85px;
+    }
+
+    .paragraph p {
+        margin-bottom: 0px;
+        text-align: justify;
+        font-weight: bold;
+        font-size: 7px;
+    }
 
     /* Footer */
 
     .footer {
-        width: 100%;
+        width: 93%;
         margin: 0px;
-        padding: 0px;
-        box-shadow: 0px -12px 25px rgba(72, 182, 255, 0.8);
+        padding: 5px 10px 5px 5px;
+    }
+
+    .footer .foot {
+        display: grid;
     }
 
     .footer .foot .row {
         position: relative;
         right: 0px;
-        max-width: 320px;
+        width: 70%;
     }
 
     .footer .foot .row .logoQR {
@@ -1651,19 +1754,19 @@ body {
     }
 
     .footer .foot .logoQR .citypaylog {
-        width: 55%;
+        width: 50%;
         padding: 0;
         position: relative;
-        bottom: 40px;
-        right: 18px;
+        bottom: 50px;
+        right: 15px;
     }
 
     .footer .foot .logoQR .QRcode {
-        width: 55%;
+        width: 50%;
         padding: 0;
         position: relative;
-        bottom: 45px;
-        right: 18px;
+        bottom: 55px;
+        right: 15px;
     }
 
     .logoQR .dwbuttons {
@@ -1697,17 +1800,17 @@ body {
         margin: auto;
         width: 100%;
         position: relative;
-        right: 70px;
+        right: 57px;
     }
 
     .footer .info .basic {
         display: flex;
         flex-direction: column;
         position: relative;
-        left: 80px;
+        left: 65px;
         bottom: 0px;
-        width: 50%;
-        margin: 55px 2px 2px 2px;
+        width: 70%;
+        margin: 65px 2px 2px 2px;
         padding: 2px 2px 2px 2px;
     }
 
@@ -1728,6 +1831,7 @@ body {
     .footer .info .basic .Email p {
         position: relative;
         left: 15px;
+        width: 100px;
     }
 
     .footer .info .basic .Tel {
@@ -1737,33 +1841,37 @@ body {
     .footer .info .basic .Tel p {
         position: relative;
         left: 15px;
+        width: 100px;
     }
 
     .footer .info .basic .ext p {
         position: relative;
         left: 15px;
+        width: 100px;
     }
 
     .footer .info .basic .tol {
-        width: 130px;
+        width: 150px;
     }
 
     .footer .info .basic .tol p {
         position: relative;
         left: 15px;
+        width: 100px;
     }
 
     .footer .info .basic .Call {
-        width: 120px;
+        width: 150px;
     }
 
     .footer .info .basic .Call p {
         position: relative;
         left: 15px;
+        width: 100px;
     }
 
     .footer .info .connect {
-        left: 105px;
+        left: 90px;
         padding: 5px;
         margin: 5px;
         width: 70px;
@@ -1772,8 +1880,8 @@ body {
     }
 
     .footer .info .connect p {
-        font-size: 9px;
-        width: 120%;
+        font-size: 8px;
+        width: 100%;
     }
 
     .connect .soc {
@@ -1781,7 +1889,7 @@ body {
         flex-direction: row;
         position: relative;
         left: 6px;
-        width: 80%;
+        width: 70%;
     }
 
     .connect .fb {
@@ -1803,8 +1911,8 @@ body {
         margin: auto;
         position: relative;
         right: 35px;
-        bottom: 30px;
-        width: 100%;
+        bottom: 10px;
+        width: 90%;
     }
 
     .footer .footer-links li {
@@ -1813,13 +1921,13 @@ body {
     }
 
     .footer .footer-links a {
-        font-size: 6px;
+        font-size: 7px;
         margin: 0;
         padding: 5px;
     }
 
     .footer-links h4 {
-        font-size: 7px;
+        font-size: 8px;
         margin: 0;
         padding: 0px;
     }
@@ -1844,13 +1952,12 @@ body {
     }
 
     .footer .copyright p {
-        font-size: 7px;
+        font-size: 6px;
     }
 
     .soc svg:hover {
         transform: none;
         /* Remove the hover effect on mobile devices */
     }
-
 
 }
