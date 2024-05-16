@@ -903,145 +903,347 @@ body {
 }
 
 @media (max-width:425px) and (min-width: 376px) {
-    .first-section {}
+    .header {
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+    }
 
-    .second-section {}
+    .body-container {
+        max-width: 100%;
+    }
 
-    .third-section {}
+    .First-container .curtain .content {
+        width: 100%;
+        position: relative;
+        right: 0px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
 
-    .fourth-section {}
+    .content h1 {
+        margin: 20px 20px 20px 20px;
+    }
 
-    .fifth-section {}
+    .content p {
+        width: 100%;
+        text-align: justify;
+        font-size: medium;
+    }
 
-    .sixth-section {}
+    .curtain {
+        width: 425px;
+        padding: 20px;
+    }
 
-    .seventh-section {}
+    .curtain .aboutimg {
+
+        position: relative;
+        bottom: 0px;
+        width: 75%;
+        height: 50%;
+
+    }
+
+    .aboutimg .about-img {
+        position: relative;
+        bottom: 5px;
+        margin: 0px;
+        width: 80%;
+    }
+
+    .Second-Container .grids {
+        margin: 1px 1px 1px 1px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .grids p {
+        text-align: justify;
+        font-size: 10px;
+        grid-gap: 0px;
+    }
+
+    .Second-Container .grid-1, .grid-2, .grid-3 {
+        width: 170px;
+        height: 280px;
+        padding: 20px 20px 20px 20px;
+        margin: 15px 15px 15px 15px;
+        position: relative;
+        left: 100px;
+    }
+
+    .icon1, .icon2, .icon3 {
+        margin: 5px 2px 5px 10px;
+        padding: 2px 2px 2px 2px;
+        width: 70%;
+    }
+
+    .base {
+        width: 100%;
+    }
+
+
+    .base h1 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .ctxlogo {
+        margin: 10px 10px 20px 0px;
+    }
+
+    .Ctxpress-Logo {
+        width: 45%;
+    }
+
+    .base .paragraph {
+        margin: 0px 0px 0px 50px;
+        width: 45%;
+        float: right;
+        position: relative;
+        bottom: 115px;
+    }
+
+    .paragraph p {
+        margin-bottom: 0px;
+        text-align: justify;
+        font-weight: bold;
+        font-size: xx-small;
+    }
 
     /* Footer */
 
     .footer {
-        margin: 30px 0px 0px 1px;
-        padding: 10px 0px 5px 30px;
-        box-shadow: 0px -12px 25px rgba(228, 237, 250, 0.8);
+        width: 100%;
+        margin: 0px;
+        padding: 20px;
+        box-shadow: 0px -12px 25px rgba(72, 182, 255, 0.8);
+
     }
 
-    .footer .row {
-        position: relative;
-        right: 50px;
+    .footer .foot {
+        display: grid;
     }
 
-    .footer .logoQR {
+    .footer .foot .row {
         position: relative;
-        bottom: 100px;
+        right: 0px;
+        width: 70%;
     }
 
-    .footer .logoQR .dwbuttons {
-        width: 80%;
+    .footer .foot .row .logoQR {
         position: relative;
-        right: 20px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .footer .foot .logoQR {
+        margin: auto;
+        position: relative;
+    }
+
+    .logoQR .dwbuttons h3 {
+        font-size: 9px;
+        width: 120%;
+    }
+
+    .footer .foot .logoQR .citypaylog {
+        width: 65%;
+        padding: 0;
+        position: relative;
+        bottom: 50px;
+        right: 18px;
+    }
+
+    .footer .foot .logoQR .QRcode {
+        width: 65%;
+        padding: 0;
+        position: relative;
+        bottom: 55px;
+        right: 18px;
+    }
+
+    .logoQR .dwbuttons {
+        width: 100%;
+        position: relative;
+        right: 40px;
         bottom: 40px;
     }
 
-    .footer .logimg .download-btn {
-        width: 30px;
-        height: 10px;
-        margin: 2px 2px 2px 1px;
+    .logoQR .dwbuttons .logimg {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logimg .playstore .download-btn {
+        width: 52px;
+        height: 18px;
+        margin: 7px 2px 2px 8px;
         position: relative;
     }
 
-    .footer .logoQR .dwbuttons h3 {
-        font-size: 7px;
+    .logimg .appstore .download-btn {
+        width: 52px;
+        height: 18px;
+        margin: 7px 2px 2px 8px;
+        position: relative;
     }
 
-    .footer .logoQR .citypaylog {
-        width: 23%;
-        padding: 0;
+    .footer .info {
+        display: grid;
+        margin: auto;
+        width: 100%;
         position: relative;
-        bottom: 25px;
-    }
-
-    .footer .logoQR .QRcode {
-        width: 23%;
-        padding: 0;
-        position: relative;
-        bottom: 25px;
+        right: 57px;
     }
 
     .footer .info .basic {
+        display: flex;
+        flex-direction: column;
         position: relative;
-        left: 30px;
-        width: 40%;
+        left: 100px;
+        bottom: 0px;
+        width: 100%;
+        margin: 45px 2px 2px 2px;
+        padding: 2px 2px 2px 2px;
     }
 
-    .footer .info p {
-        font-size: 6px;
+    .footer .info .basic>div {
+        flex: 1;
+    }
+
+    .footer .info .basic p {
+        margin: 0;
+        padding: 8px 8px 5px 1px;
+        font-size: 10px;
+    }
+
+    .footer .info .basic .Email {
+        width: 150px;
+    }
+
+    .footer .info .basic .Email p {
+        position: relative;
+        left: 15px;
+    }
+
+    .footer .info .basic .Tel {
+        width: 170px;
+    }
+
+    .footer .info .basic .Tel p {
+        position: relative;
+        left: 15px;
+    }
+
+    .footer .info .basic .ext p {
+        position: relative;
+        left: 15px;
+    }
+
+    .footer .info .basic .tol {
+        width: 150px;
+    }
+
+    .footer .info .basic .tol p {
+        position: relative;
+        left: 15px;
+    }
+
+    .footer .info .basic .Call {
+        width: 150px;
+    }
+
+    .footer .info .basic .Call p {
+        position: relative;
+        left: 15px;
     }
 
     .footer .info .connect {
-        display: flex;
-        flex-direction: column;
+        left: 140px;
         padding: 5px;
         margin: 5px;
-        width: 110px;
+        width: 70px;
         position: relative;
-        right: 30px;
+        bottom: 70px;
+    }
+
+    .footer .info .connect p {
+        font-size: 9px;
+        width: 120%;
     }
 
     .connect .soc {
+        display: flex;
+        flex-direction: row;
         position: relative;
-        left: 3px;
+        left: 6px;
+        width: 80%;
     }
 
     .connect .fb {
-        width: 10px;
+        width: 70px;
         height: auto;
     }
 
     .connect .ytb {
-        width: 10px;
+        width: 60px;
         height: auto;
     }
 
     .connect .lkdn {
-        width: 10px;
+        width: 60px;
         height: auto;
     }
 
-    .footer .footer-links {
-        margin: 7px 40px 1px 1px;
-        padding: 10px 20px 1px 1px;
+    .footer .foot .footer-links {
+        margin: auto;
         position: relative;
-        right: 70px;
-        width: 75%;
+        left: 65px;
+        bottom: 30px;
+        width: 100%;
     }
 
     .footer .footer-links li {
         margin: 0;
+        padding: 1px;
     }
 
     .footer .footer-links a {
-        font-size: 6px;
+        font-size: 9px;
         margin: 0;
+        padding: 5px;
     }
 
     .footer-links h4 {
-        font-size: 8px;
+        font-size: 10px;
         margin: 0;
+        padding: 0px;
     }
 
     .footer-links .agent {
-        font-size: 6px;
-        padding: 4px;
+        font-size: 8px;
+        padding: 5px;
+        margin-top: 7px;
         border-radius: 5px;
+        width: 85%;
+        position: relative;
+        right: 5px;
     }
 
     .footer .copyright {
         position: relative;
-        bottom: 30px;
+        bottom: 15px;
+        left: 70px;
+        width: 65%;
+        padding: 0;
+        margin: 0;
     }
 
     .footer .copyright p {
-        font-size: 5px;
+        font-size: 8px;
     }
 
     .soc svg:hover {
