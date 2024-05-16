@@ -221,11 +221,8 @@ body {
 .container .contact-detail .map .map-iframe {
     position: relative;
     width: 600px;
-    /* Changed to 100% to match parent .map */
     height: 350px;
-    /* Changed to 100% to match parent .map */
     border: 0;
-    /* Remove iframe border if any */
 }
 
 .cont1 h3 {
