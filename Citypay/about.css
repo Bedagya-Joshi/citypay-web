@@ -728,20 +728,97 @@ body {
 }
 
 @media (max-width:768px) and (min-width: 426px) {
-    .first-section {}
+    .body-container {
+        max-width: 100%;
+    }
 
-    .second-section {}
+    .First-container .curtain .content {
+        width: 100%;
+        position: relative;
+        right: 0px;
+        padding: 10px;
+    }
 
-    .third-section {}
+    .content p {
+        width: 42%;
+        text-align: justify;
+        font-size: large;
+    }
 
-    .fourth-section {}
+    .curtain {
+        max-width: 1024px;
+        padding: 20px;
+    }
 
-    .fifth-section {}
+    .curtain .aboutimg {
+        float: right;
+        position: relative;
+        bottom: 390px;
+        width: 55%;
+        height: 50%;
 
-    .sixth-section {}
+    }
 
-    .seventh-section {}
+    .aboutimg .about-img {
+        position: relative;
+        bottom: 50px;
+        margin: 0px 60px 10px 30px;
+        width: 85%;
+    }
 
+    .Second-Container .grids {
+        margin: 1px 20px 1px 1px;
+    }
+
+    .grids p {
+        text-align: justify;
+        font-size: 10px;
+        grid-gap: 0px;
+    }
+
+    .Second-Container .grid-1, .grid-2, .grid-3 {
+        width: 170px;
+        height: 280px;
+        padding: 10px 10px 20px 10px;
+        margin: 5px 5px 15px 55px;
+    }
+
+    .icon1, .icon2, .icon3 {
+        margin: 5px 2px 5px 5px;
+        padding: 2px 2px 2px 2px;
+        width: 70%;
+    }
+
+    .base {
+        width: 100%;
+    }
+
+
+    .base h1 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .ctxlogo {
+        margin: 10px 10px 20px 10px;
+    }
+
+    .Ctxpress-Logo {
+        width: 40%;
+    }
+
+    .base .paragraph {
+        margin: 10px 50px 40px 85px;
+        width: 35%;
+        float: right;
+    }
+
+    .paragraph p {
+        margin-bottom: 0px;
+        text-align: justify;
+        font-weight: bold;
+        font-size: small;
+    }
 
     /* footer */
     .footer .row {
@@ -757,7 +834,6 @@ body {
         width: 30%;
     }
 
-
     .footer .info .basic {
         position: relative;
         left: 50px;
@@ -768,8 +844,10 @@ body {
     }
 
     .footer .footer-links {
-        margin: 1px 50px 1px 1px;
-        padding: 1px 20px 1px 1px;
+        margin: 20px 10px 1px 1px;
+        padding: 1px 10px 1px 1px;
+        position: relative;
+        left: 30px;
     }
 
     .footer .footer-links a {
@@ -778,6 +856,10 @@ body {
 
     .footer-links h4 {
         font-size: medium;
+    }
+
+    .agent {
+        font-size: 10px;
     }
 
     .footer .logimg .download-btn {
