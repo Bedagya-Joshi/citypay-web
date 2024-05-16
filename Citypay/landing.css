@@ -65,7 +65,6 @@ body {
   padding-top: 10px;
   padding-left: 60px;
   padding-right: 20px;
-  /* border: 2px solid red; */
 }
 
 .logo {
@@ -1784,7 +1783,12 @@ p {
 
 @media (max-width:1024px) and (min-width: 769px) {
   .first-section {
-    height: 86vh;
+    height: 90vh;
+    background-image: url("./Assets/Flow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    object-fit: contain;
   }
 
   .first-section .body-container .dwnld-desc {
@@ -1796,37 +1800,37 @@ p {
   }
 
   .first-section .description p {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .first-section .body-container .dwnld-desc .description {
-    margin: 20px 1px 1px 2px;
+    margin: 100px 1px 1px 2px;
     padding: 2px;
     width: 55%;
   }
 
   .first-section .dwnld-img .handmobile {
-    margin: 10px 10px 1px 20px;
-    padding: 10px 10px 1px 20px;
+    margin: 10px 10px 1px 0px;
+    padding: 10px 10px 1px 0px;
     position: relative;
-    left: 300px;
-    width: 72%;
+    left: 380px;
+    width: 70%;
   }
 
   .buttons .gplay-btn {
-    width: 120px;
-    height: 40px;
+    width: 145px;
+    height: 50px;
   }
 
   .buttons .appstore-btn {
-    width: 120px;
-    height: 40px;
+    width: 145px;
+    height: 50px;
   }
 
   .second-section {
     height: 100vh;
-    margin: 5px 5px 55px 5px;
-    padding: 5px 5px 55px 5px;
+    margin: 5px 0px 55px 5px;
+    padding: 5px 0px 55px 5px;
   }
 
   .second-section .second-body {
@@ -1840,11 +1844,11 @@ p {
   }
 
   .second-section .second-body .second-img .remittance-img {
-    height: 400px;
-    width: 320px;
+    height: 500px;
+    width: 360px;
     position: relative;
     top: 0px;
-    left: 20px;
+    left: 0px;
   }
 
   .second-section .second-body .second-grid {
@@ -1877,21 +1881,21 @@ p {
   }
 
   .second-section .second-body .second-grid .second-grid1 {
-    margin: 2px 2px 10px 2px;
+    margin: 20px 2px 10px 2px;
     padding: 15px 15px 25px 10px;
     width: 385px;
     height: 135px;
   }
 
   .second-section .second-body .second-grid .second-grid2 {
-    margin: 2px 2px 10px 2px;
+    margin: 35px 2px 10px 2px;
     padding: 15px 15px 25px 10px;
     width: 385px;
     height: 135px;
   }
 
   .second-section .second-body .second-grid .second-grid3 {
-    margin: 2px 2px 10px 2px;
+    margin: 35px 2px 10px 2px;
     padding: 15px 15px 25px 10px;
     width: 385px;
     height: 135px;
@@ -1902,9 +1906,9 @@ p {
   }
 
   .third-section {
-    height: 100vh;
-    margin: 5px 5px 55px 5px;
-    padding: 5px 5px 55px 5px;
+    height: 90vh;
+    margin: 5px 0px 55px 5px;
+    padding: 5px 0px 55px 5px;
   }
 
   .third-section .body-container .third-grid h2 {
@@ -1917,28 +1921,28 @@ p {
 
   .third-section .body-container .third-grid .Extra-Grid {
     position: relative;
-    bottom: 400px;
-    margin: 2px 2px 2px 20px;
+    bottom: 470px;
+    margin: 2px 55px 2px 2px;
   }
 
   .third-section .body-container .third-grid .Extra-Grid .Family-Friends {
-    width: 290px;
+    width: 350px;
     position: relative;
     left: 50px;
   }
 
   .third-section .body-container .third-grid .third-grid2 {
-    margin: 10px 2px 10px 2px;
+    margin: 35px 2px 10px 20px;
     padding: 50px 20px 70px 10px;
-    width: 300px;
-    height: 100px;
+    width: 340px;
+    height: 120px;
   }
 
   .third-section .body-container .third-grid .third-grid3 {
-    margin: 10px 2px 10px 2px;
+    margin: 35px 2px 10px 20px;
     padding: 50px 20px 70px 10px;
-    width: 300px;
-    height: 100px;
+    width: 340px;
+    height: 120px;
   }
 
 
@@ -1952,11 +1956,10 @@ p {
     height: auto;
   }
 
-
   .fourth-section {
-    height: 100vh;
-    margin: 5px 5px 25px 5px;
-    padding: 5px 5px 25px 5px;
+    height: 90vh;
+    margin: 5px 0px 25px 5px;
+    padding: 5px 0px 25px 5px;
   }
 
   .fourth-section .body-container .fourth-grid {
@@ -1974,17 +1977,17 @@ p {
   }
 
   .fourth-section .body-container .fourth-grid .fourth-grid2 {
-    margin: 2px 2px 10px 245px;
-    padding: 15px 15px 15px 30px;
-    width: 65%;
+    margin: 2px 2px 10px 285px;
+    padding: 15px 35px 15px 30px;
+    width: 55%;
     height: 180px;
     display: grid;
   }
 
   .fourth-section .body-container .fourth-grid .fourth-grid3 {
-    margin: 2px 2px 10px 245px;
-    padding: 15px 15px 15px 30px;
-    width: 65%;
+    margin: 2px 2px 10px 285px;
+    padding: 15px 35px 15px 30px;
+    width: 55%;
     height: 180px;
   }
 
@@ -2015,17 +2018,17 @@ p {
     bottom: 50px;
     left: 0px;
     width: 100%;
-    height: 80%;
+    height: 90%;
   }
 
   .fifth-section {
-    height: 100vh;
-    margin: 5px 5px 25px 5px;
-    padding: 5px 5px 25px 5px;
+    height: 90vh;
+    margin: 5px 0px 25px 5px;
+    padding: 5px 0px 25px 5px;
   }
 
   .fifth-section .body-container .fifth-grid {
-    margin: 10px 80px 10px 50px;
+    margin: 40px 80px 10px 50px;
     padding: 10px 80px 10px 50px;
     width: 60%;
     position: relative;
@@ -2041,15 +2044,15 @@ p {
   }
 
   .fifth-section .body-container .fifth-grid .fifth-grid2 {
-    margin: 2px 2px 10px 30px;
-    padding: 15px 15px 15px 5px;
+    margin: 10px 2px 10px 30px;
+    padding: 15px 15px 35px 5px;
     width: 55%;
     height: 160px;
   }
 
   .fifth-section .body-container .fifth-grid .fifth-grid3 {
-    margin: 2px 2px 10px 30px;
-    padding: 15px 10px 15px 5px;
+    margin: 35px 2px 10px 30px;
+    padding: 15px 10px 35px 5px;
     width: 55%;
     height: 160px;
   }
@@ -2069,7 +2072,7 @@ p {
     padding: 5px 5px 5px 5px;
     position: relative;
     left: 450px;
-    bottom: 480px;
+    bottom: 490px;
     width: 50%;
     height: 90%;
   }
@@ -2083,9 +2086,9 @@ p {
   }
 
   .sixth-section {
-    height: 100vh;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
+    height: 90vh;
+    margin: 5px 0px 5px 5px;
+    padding: 5px 0px 5px 5px;
   }
 
   .sixth-section .sixth-body .sixth-img {
@@ -2107,8 +2110,8 @@ p {
   }
 
   .sixth-grid {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 10px 1px 1px;
+    margin: 1px 0px 1px 1px;
+    padding: 1px 0px 1px 1px;
   }
 
   .sixth-section .body-container .sixth-grid h2 {
@@ -2160,11 +2163,10 @@ p {
   }
 
   .seventh-section {
-    height: 100vh;
-    margin: 5px 5px 5px 5px;
-    padding: 75px 5px 10px 5px;
+    height: 90vh;
+    margin: 5px 0px 5px 5px;
+    padding: 35px 0px 10px 5px;
   }
-
 
   .seventh-section .body-container.seventh-title {
     margin: 1px 1px 1px 1px;
@@ -2190,23 +2192,23 @@ p {
 
   .seventh-section .body-container .seventh-grid .seventh-grid1 {
     margin: 2px 2px 100px 15px;
-    padding: 15px 15px 75px 10px;
-    width: 185px;
-    height: 310px;
+    padding: 35px 25px 75px 25px;
+    width: 215px;
+    height: 315px;
   }
 
   .seventh-section .body-container .seventh-grid .seventh-grid2 {
     margin: 2px 2px 100px 15px;
-    padding: 15px 15px 75px 10px;
-    width: 185px;
-    height: 310px;
+    padding: 35px 25px 75px 25px;
+    width: 215px;
+    height: 315px;
   }
 
   .seventh-section .body-container .seventh-grid .seventh-grid3 {
     margin: 2px 2px 100px 15px;
-    padding: 15px 10px 75px 10px;
-    width: 185px;
-    height: 310px;
+    padding: 35px 25px 75px 25px;
+    width: 215px;
+    height: 315px;
   }
 
   .seventh-section .body-container .seventh-grid .Reward {
@@ -2225,6 +2227,11 @@ p {
   }
 
   /* footer */
+
+  .footer {
+    padding: 10px 0px 10px 0px;
+  }
+
   .footer .row {
     position: relative;
     right: 50px;
@@ -2232,29 +2239,45 @@ p {
 
   .footer .logoQR .citypaylog {
     width: 30%;
+    position: relative;
+    left: 20px;
   }
 
   .footer .logoQR .QRcode {
     width: 30%;
   }
 
-
-  .footer .info .basic {
+  .footer .dwbuttons {
     position: relative;
     left: 50px;
   }
 
+  .footer .dwbuttons .download-btn {
+    position: relative;
+    right: 10px;
+  }
+
+
+  .footer .info .basic {
+    position: relative;
+    left: 50px;
+    width: 80%;
+    margin: 25px 0px 10px 0px;
+  }
+
   .footer .info p {
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .footer .footer-links {
-    margin: 1px 50px 1px 1px;
-    padding: 1px 20px 1px 1px;
+    margin: 30px 10px 10px 10px;
+    padding: 10px 20px 1px 1px;
+    position: relative;
+    left: 10px;
   }
 
   .footer .footer-links a {
-    font-size: x-small;
+    font-size: small;
   }
 
   .footer-links h4 {
@@ -2277,7 +2300,7 @@ p {
 
   .connect .soc {
     position: relative;
-    left: 3px;
+    left: 16px;
   }
 
   .connect .fb {
