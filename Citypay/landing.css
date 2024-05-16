@@ -1132,7 +1132,7 @@ p {
 
 /* Media Query Responsiveness */
 
-/* @media (max-width:2560px) and (min-width: 1921px) {
+@media (max-width:2560px) and (min-width: 1921px) {
   .first-section {}
 
   .second-section {
@@ -1149,9 +1149,88 @@ p {
 
   .seventh-section {}
 
-  .footer {}
 
-} */
+  /* Footer */
+
+  .footer .logoQR .citypaylog {
+    width: 22%;
+  }
+
+  .footer .logoQR .QRcode {
+    width: 22%;
+  }
+
+  .dwbuttons {
+    position: relative;
+    left: 20px;
+  }
+
+  .download-btn {
+    position: relative;
+    right: 20px;
+  }
+
+  .footer .info .basic {
+    position: relative;
+    right: 30px;
+    margin: 40px 1px 1px 1px;
+  }
+
+  .footer .info p {
+    font-size: 15px;
+  }
+
+  .footer .footer-links {
+    margin: 80px 50px 1px 40px;
+    padding: 1px 10px 1px 1px;
+    width: 80%;
+    position: relative;
+    left: 50px;
+  }
+
+  .footer .footer-links a {
+    font-size: small;
+  }
+
+  .footer-links h4 {
+    font-size: medium;
+  }
+
+  .footer .logimg .download-btn {
+    width: 90px;
+    height: 30px;
+    margin: 2px 2px 2px 5px;
+  }
+
+  .connect {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+  }
+
+  .connect .soc {
+    position: relative;
+    left: 20px;
+  }
+
+  .connect .fb {
+    width: 22px;
+    height: auto;
+  }
+
+  .connect .ytb {
+    width: 22px;
+    height: auto;
+  }
+
+  .connect .lkdn {
+    width: 22px;
+    height: auto;
+  }
+
+}
 
 
 @media (max-width:1440px) and (min-width: 1025px) {
@@ -1620,6 +1699,7 @@ p {
     height: 100%;
   }
 
+
   /* Footer */
 
   .footer .logoQR .citypaylog {
@@ -1630,18 +1710,32 @@ p {
     width: 22%;
   }
 
+  .dwbuttons {
+    position: relative;
+    left: 20px;
+  }
+
+  .download-btn {
+    position: relative;
+    right: 20px;
+  }
+
   .footer .info .basic {
     position: relative;
-    left: 50px;
+    right: 30px;
+    margin: 40px 1px 1px 1px;
   }
 
   .footer .info p {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .footer .footer-links {
-    margin: 1px 50px 1px 1px;
-    padding: 1px 20px 1px 1px;
+    margin: 50px 50px 1px 40px;
+    padding: 1px 10px 1px 1px;
+    width: 80%;
+    position: relative;
+    left: 50px;
   }
 
   .footer .footer-links a {
@@ -1663,12 +1757,12 @@ p {
     flex-direction: column;
     padding: 10px;
     margin: 10px;
-    width: 200px;
+    width: 250px;
   }
 
   .connect .soc {
     position: relative;
-    left: 7px;
+    left: 20px;
   }
 
   .connect .fb {
