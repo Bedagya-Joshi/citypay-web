@@ -2876,7 +2876,6 @@ p {
 }
 
 @media (max-width:425px) and (min-width: 376px) {
-
   .navbar {
     position: relative;
     right: 10px;
@@ -2884,12 +2883,12 @@ p {
 
   .header .menu-toggle {
     position: relative;
-    left: 25px;
+    left: 5px;
   }
 
   .navbar .logo {
     position: relative;
-    right: 10px;
+    right: 15px;
     top: 6px;
   }
 
@@ -2919,62 +2918,68 @@ p {
     margin-top: 25px;
   }
 
+  /* First Section */
   .first-section {
     background-image: none;
+    margin: 0px 1px 50px 10px;
   }
 
   .first-section .dwnld-desc .description {
-    width: 290px;
+    width: 280px;
+    margin: 2px 2px 2px 2px;
+    position: relative;
+    left: 10px;
   }
 
   .first-section .dwnld-desc .description h1 {
     font-size: 27px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
   }
 
   .first-section .dwnld-desc .description p {
-    font-size: 14px;
+    font-size: 15px;
     width: 100%;
   }
 
   .buttons {
-    width: 110px;
-    height: 38px;
+    width: 90px;
+    height: 35px;
     position: relative;
     right: 65px;
   }
 
   .dwnld-img .handmobile {
     position: relative;
-    top: 280px;
+    top: 365px;
     left: 230px;
-    width: 300px;
+    width: 310px;
   }
 
-  /* second section */
+  /* Second Section */
   .second-section {
     grid-template-columns: 1fr;
-    padding: 1px 1px 50px 1px;
+    padding: 1px 1px 0px 1px;
+    margin: 40px 1px 90px 30px;
   }
 
   .second-section .second-title h1 {
-    font-size: 26px;
+    font-size: 27px;
   }
 
   .second-section .second-title p {
-    font-size: 12px;
+    font-size: 15px;
     width: 100%;
   }
 
   .second-section .second-body .second-img {
     position: relative;
-    left: 80px;
+    left: 65px;
     bottom: 40px;
   }
 
   .second-section .body-container .second-body .second-img .remittance-img {
-    width: 180px;
-    height: 235px;
+    width: 230px;
+    height: 300px;
   }
 
   .second-section .second-body .second-grid {
@@ -2982,26 +2987,26 @@ p {
     grid-template-columns: 1fr;
     width: 50%;
     position: relative;
-    right: 145px;
-    top: 270px;
+    right: 210px;
+    top: 340px;
     height: 50%;
     gap: 10px;
   }
 
   .second-grid1, .second-grid2, .second-grid3 {
     grid-template-columns: 1fr;
-    width: 190px;
-    height: 120px;
+    width: 230px;
+    height: 100px;
     margin: 5px 40px 10px 1px;
-    padding: 10px 20px 20px 20px;
+    padding: 20px 20px 30px 20px;
   }
 
   .second-section .body-container .second-body .second-grid h2 {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .second-section .body-container .second-body .second-grid p {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .second-section .second-body .second-grid .remit-icon {
@@ -3019,17 +3024,21 @@ p {
     height: auto;
   }
 
+  /* Third Section */
   .third-section {
     grid-template-columns: 1fr;
-    margin: 30px;
+    margin: 120px 0px 80px 0px;
+    height: 100vh;
+    padding: 0px;
   }
 
   .third-section .body-container .third-title h1 {
-    font-size: 26px;
+    font-size: 27px;
+    text-align: center;
   }
 
   .third-section .third-title p {
-    font-size: 12px;
+    font-size: 15px;
     width: 100%;
   }
 
@@ -3040,73 +3049,75 @@ p {
     height: 50%;
     gap: 10px;
     position: relative;
-    right: 40px;
-    bottom: 250px;
+    right: 50px;
+    bottom: 200px;
   }
 
-  .third-grid1, .third-grid2, .third-grid3 {
+  .third-grid2, .third-grid3 {
     grid-template-columns: 1fr;
-    width: 200px;
-    height: 130px;
+    width: 240px;
+    height: 80px;
     margin: 5px 30px 10px 1px;
+    padding: 50px 20px 60px 30px;
   }
 
   .third-section .body-container .third-grid h2 {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .third-section .body-container .third-grid p {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .third-section .third-grid .third-grid2 .Fund-T {
-    width: 60px;
+    width: 70px;
     height: auto;
   }
 
   .third-section .third-grid .Send-R {
-    width: 60px;
+    width: 70px;
     height: auto;
   }
 
-  .third-section .third-grid .Track-remittance {
-    width: 60px;
-    height: auto;
-  }
 
   .third-section .Extra-Grid .icon {
     position: relative;
     top: 620px;
-    left: 70px;
+    left: 110px;
     width: 100%;
   }
 
   .third-section .third-grid .Extra-Grid .icon .Family-Friends {
-    width: 200px;
+    width: 260px;
   }
 
+  /* Fourth Section */
   .fourth-section {
     grid-template-columns: 1fr;
     height: 80vh;
+    padding: 15px 0px 15px 0px;
+    margin: 100px 0px 50px 0px;
   }
 
   .fourth-section .body-container .fourth-title h1 {
-    font-size: 26px;
+    font-size: 27px;
   }
 
   .fourth-section .body-container .fourth-title p {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .fourth-section .body-container .Pic-Grid {
-    width: 200px;
+    width: 280px;
     position: relative;
-    right: 100px;
+    bottom: 40px;
+    right: 0px;
   }
 
   .fourth-section .body-container .Pic-Grid .bank {
     position: relative;
-    top: 0px;
+    bottom: 160px;
+    left: 50px;
   }
 
   .fourth-section .fourth-grid {
@@ -3115,18 +3126,19 @@ p {
     width: 50%;
     height: 50%;
     position: relative;
-
-    right: 30px;
+    top: 35px;
+    right: 55px;
     gap: 10px;
+    margin: 1px 10px 1px 50px;
   }
 
   .fourth-section .fourth-grid .fourth-grid2 .BT {
-    width: 60px;
+    width: 70px;
     height: auto;
   }
 
   .fourth-section .fourth-grid .LB {
-    width: 60px;
+    width: 70px;
     height: auto;
   }
 
@@ -3135,27 +3147,30 @@ p {
     width: 200px;
     height: 100px;
     margin: 5px 30px 10px 1px;
-    border-radius: 35px;
+    padding: 25px 25px 25px 25px;
+    border-radius: 25px;
   }
 
   .fourth-section .body-container .fourth-grid h2 {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .fourth-section .body-container .fourth-grid p {
-    font-size: 8px;
+    font-size: 10px;
   }
 
+  /* Fifth Section */
   .fifth-section {
     grid-template-columns: 1fr;
+    margin: 20px 1px 100px 1px;
   }
 
   .fifth-section .body-container .fifth-title h1 {
-    font-size: 26px;
+    font-size: 27px;
   }
 
   .fifth-section .body-container .fifth-title p {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .fifth-section .fifth-grid {
@@ -3163,58 +3178,67 @@ p {
     grid-template-columns: 1fr;
     width: 50%;
     position: relative;
-    right: 10px;
+    right: 25px;
   }
 
   .fifth-section .body-container .fifth-grid h2 {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .fifth-section .body-container .fifth-grid p {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .fifth-section .fifth-grid .fifth-grid2 .CityPay-QR {
-    width: 60px;
+    width: 70px;
     height: auto;
   }
 
   .fifth-section .fifth-grid .fifth-grid3 .NepalPay-SmartQR {
-    width: 60px;
+    width: 70px;
     height: auto;
   }
 
-  .fifth-grid1, .fifth-grid2, .fifth-grid3 {
+  .fifth-grid2, .fifth-grid3 {
     grid-template-columns: 1fr;
-    width: 140px;
-    height: 110px;
+    width: 165px;
+    height: 135px;
     margin: 30px 30px 10px 1px;
+    border-radius: 20px;
   }
 
   .fifth-section .body-container .Pic-Grid {
     position: relative;
-    top: 0px;
+    right: 15px;
+    top: 25px;
     width: 70%;
   }
 
   .fifth-section .body-container .Pic-Grid .ScanQR {
     position: relative;
     margin: 0;
-    width: 210px;
-    left: 10px;
+    width: 260px;
   }
 
+  /* Sixth Section */
   .sixth-section {
     grid-template-columns: 1fr;
-    margin: 1px 1px 120px 1px;
+    margin: 100px 1px 120px 1px;
+    padding: 5px 1px 120px 1px;
+    height: 100vh;
+  }
+
+
+  .sixth-section .body-container .sixth-title {
+    margin: 5px 5px 5px 25px;
   }
 
   .sixth-section .body-container .sixth-title h1 {
-    font-size: 26px;
+    font-size: 27px;
   }
 
   .sixth-section .body-container .sixth-title p {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .sixth-section .body-container .sixth-body {
@@ -3226,68 +3250,74 @@ p {
     grid-template-columns: 1fr;
     width: 50%;
     position: relative;
-    top: 250px;
-    right: 135px;
+    top: 310px;
+    right: 180px;
     gap: 10px;
     height: 50%;
   }
 
-
   .sixth-section .sixth-body .sixth-img {
     height: 180px;
     position: relative;
-    left: 80px;
+    left: 55px;
   }
 
   .sixth-section .sixth-body .sixth-img .Utility {
     margin: 0;
-    width: 180px;
-    height: 180px;
+    width: 240px;
+    height: 240px;
     position: relative;
     bottom: 20px;
   }
 
   .sixth-section .body-container .sixth-grid h2 {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .sixth-section .body-container .sixth-grid p {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .sixth-section .sixth-grid .sixth-grid1 .Mobile {
-    width: 60px;
+    width: 70px;
     height: auto;
   }
 
   .sixth-section .sixth-grid .sixth-grid2 .Domestic {
-    width: 60px;
+    width: 70px;
     height: auto;
   }
 
   .sixth-section .sixth-grid .sixth-grid3 .gov {
-    width: 60px;
+    width: 70px;
     height: auto;
   }
 
   .sixth-grid1, .sixth-grid2, .sixth-grid3 {
     grid-template-columns: 1fr;
-    width: 170px;
-    height: 140px;
+    width: 160px;
+    height: 215px;
     margin: 0px 30px 10px 1px;
+    padding: 20px 20px 20px 20px;
   }
 
+  /* Seventh Section */
   .seventh-section {
     grid-template-columns: 1fr;
-    margin: 0px 0px 70px 0px;
+    margin: 120px 1px 180px 1px;
+    padding: 120px 1px 200px 1px;
+  }
+
+  .seventh-section .body-container .seventh-title {
+    margin: 15px 15px 15px 25px;
   }
 
   .seventh-section .body-container .seventh-title h1 {
-    font-size: 26px;
+    font-size: 27px;
   }
 
   .seventh-section .body-container .seventh-title p {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .seventh-section .body-container .seventh-body {
@@ -3297,171 +3327,275 @@ p {
   .seventh-section .body-container .seventh-grid {
     display: grid;
     grid-template-columns: 1fr;
-    width: 30%;
+    width: 50%;
     position: relative;
     top: 0px;
-    right: 185px;
   }
 
   .seventh-section .seventh-grid .seventh-grid1 .Reward {
-    width: 60px;
+    width: 70px;
     height: auto;
   }
 
   .seventh-section .seventh-grid .seventh-grid2 .MobileTop-Up {
-    width: 60px;
+    width: 70px;
     height: auto;
   }
 
   .seventh-section .seventh-grid .seventh-grid3 .conv {
-    width: 60px;
+    width: 70px;
     height: auto;
   }
 
   .seventh-grid1, .seventh-grid2, .seventh-grid3 {
     grid-template-columns: 1fr;
-    width: 170px;
-    height: 200px;
+    width: 160px;
+    height: 270px;
     margin: 30px 110px 10px 1px;
+    padding: 20px 20px 20px 20px;
+    position: relative;
   }
 
   .seventh-section .body-container .seventh-grid h2 {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .seventh-section .body-container .seventh-grid p {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .seventh-section .body-container .base {
     display: none;
   }
 
+
   /* Footer */
 
   .footer {
-    margin: 30px 0px 0px 1px;
-    padding: 10px 0px 5px 30px;
-    box-shadow: 0px -12px 25px rgba(228, 237, 250, 0.8);
+    width: 100%;
+    margin: 100px 0px 0px 0px;
+    padding: 10px 0px 20px 15px;
+    box-shadow: 10px -17px 265px rgba(180, 226, 255, 0.8);
   }
 
-  .footer .row {
+  .footer .foot .row {
     position: relative;
-    right: 50px;
+    right: 0px;
+    width: 70%;
   }
 
-  .footer .logoQR {
+  .footer .foot .row .logoQR {
     position: relative;
-    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
   }
 
-  .footer .logoQR .dwbuttons {
-    width: 80%;
+  .footer .foot .logoQR {
+    margin: auto;
     position: relative;
-    right: 20px;
+  }
+
+  .logoQR .dwbuttons h3 {
+    font-size: 9px;
+    width: 120%;
+  }
+
+  .footer .foot .logoQR .citypaylog {
+    width: 55%;
+    padding: 0;
+    position: relative;
+    bottom: 40px;
+    right: 18px;
+  }
+
+  .footer .foot .logoQR .QRcode {
+    width: 55%;
+    padding: 0;
+    position: relative;
+    bottom: 45px;
+    right: 18px;
+  }
+
+  .logoQR .dwbuttons {
+    width: 100%;
+    position: relative;
+    right: 40px;
     bottom: 40px;
   }
 
-  .footer .logimg .download-btn {
-    width: 30px;
-    height: 10px;
-    margin: 2px 2px 2px 1px;
+  .logoQR .dwbuttons .logimg {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logimg .playstore .download-btn {
+    width: 52px;
+    height: 18px;
+    margin: 7px 2px 2px 8px;
     position: relative;
   }
 
-  .footer .logoQR .dwbuttons h3 {
-    font-size: 7px;
+  .logimg .appstore .download-btn {
+    width: 52px;
+    height: 18px;
+    margin: 7px 2px 2px 8px;
+    position: relative;
   }
 
-  .footer .logoQR .citypaylog {
-    width: 23%;
-    padding: 0;
+  .footer .info {
+    display: grid;
+    margin: auto;
+    width: 100%;
     position: relative;
-    bottom: 25px;
-  }
-
-  .footer .logoQR .QRcode {
-    width: 23%;
-    padding: 0;
-    position: relative;
-    bottom: 25px;
+    right: 45px;
   }
 
   .footer .info .basic {
+    display: flex;
+    flex-direction: column;
     position: relative;
-    left: 30px;
-    width: 40%;
+    left: 90px;
+    bottom: 0px;
+    width: 50%;
+    margin: 65px 2px 2px 2px;
+    padding: 2px 2px 2px 2px;
   }
 
-  .footer .info p {
-    font-size: 6px;
+  .footer .info .basic>div {
+    flex: 1;
+  }
+
+  .footer .info .basic p {
+    margin: 0;
+    padding: 8px 8px 5px 1px;
+    font-size: 9px;
+  }
+
+  .footer .info .basic .Email {
+    width: 150px;
+  }
+
+  .footer .info .basic .Email p {
+    position: relative;
+    left: 15px;
+  }
+
+  .footer .info .basic .Tel {
+    width: 210px;
+  }
+
+  .footer .info .basic .Tel p {
+    position: relative;
+    left: 15px;
+  }
+
+  .footer .info .basic .ext p {
+    position: relative;
+    left: 15px;
+  }
+
+  .footer .info .basic .tol {
+    width: 130px;
+  }
+
+  .footer .info .basic .tol p {
+    position: relative;
+    left: 15px;
+  }
+
+  .footer .info .basic .Call {
+    width: 150px;
+  }
+
+  .footer .info .basic .Call p {
+    position: relative;
+    left: 15px;
   }
 
   .footer .info .connect {
-    display: flex;
-    flex-direction: column;
+    left: 125px;
     padding: 5px;
     margin: 5px;
-    width: 110px;
+    width: 70px;
     position: relative;
-    right: 30px;
+    bottom: 70px;
+  }
+
+  .footer .info .connect p {
+    font-size: 9px;
+    width: 120%;
   }
 
   .connect .soc {
+    display: flex;
+    flex-direction: row;
     position: relative;
-    left: 3px;
+    left: 6px;
+    width: 80%;
   }
 
   .connect .fb {
-    width: 10px;
+    width: 70px;
     height: auto;
   }
 
   .connect .ytb {
-    width: 10px;
+    width: 60px;
     height: auto;
   }
 
   .connect .lkdn {
-    width: 10px;
+    width: 60px;
     height: auto;
   }
 
-  .footer .footer-links {
-    margin: 7px 40px 1px 1px;
-    padding: 10px 20px 1px 1px;
+  .footer .foot .footer-links {
+    margin: auto;
     position: relative;
-    right: 70px;
-    width: 75%;
+    left: 15px;
+    bottom: 10px;
+    width: 100%;
   }
 
   .footer .footer-links li {
     margin: 0;
+    padding: 1px;
   }
 
   .footer .footer-links a {
-    font-size: 6px;
+    font-size: 8px;
     margin: 0;
+    padding: 5px;
   }
 
   .footer-links h4 {
-    font-size: 8px;
+    font-size: 9px;
     margin: 0;
+    padding: 0px;
   }
 
   .footer-links .agent {
-    font-size: 6px;
-    padding: 4px;
+    font-size: 7px;
+    padding: 5px;
+    margin-top: 7px;
     border-radius: 5px;
+    width: 75%;
+    position: relative;
+    right: 5px;
   }
 
   .footer .copyright {
     position: relative;
-    bottom: 30px;
+    bottom: 5px;
+    left: 70px;
+    width: 65%;
+    padding: 0;
+    margin: 0;
   }
 
   .footer .copyright p {
-    font-size: 5px;
+    font-size: 8px;
   }
 
   .soc svg:hover {
