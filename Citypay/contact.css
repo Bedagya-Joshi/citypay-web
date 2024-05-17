@@ -475,240 +475,12 @@ body {
 
 
     /* Footer styles */
-    .footer {
-        background: rgb(161, 159, 159);
-        background: linear-gradient(0deg, rgb(152, 170, 230) 0%, rgb(241, 242, 245) 55%);
-        box-shadow: 0px -12px 25px rgba(228, 237, 250, 0.8);
-        /* Adjusted to have a negative y-offset */
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        padding: 20px;
-        margin-top: auto;
-    }
-
-    .footer .foot .row {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        /* grid-gap: 10px; */
-    }
-
-    .logoQR {
-        position: relative;
-        top: 40px;
-        left: 40px;
-    }
-
-    .logoQR .citypaylog {
-        position: relative;
-        width: 18%;
-        height: auto;
-        margin: 22px 2px 2px 2px;
-        padding: 25px 5px 5px 15px;
-    }
-
-    .logoQR .QRcode {
-        position: relative;
-        width: 18%;
-        height: auto;
-        margin: 25px 2px 2px 2px;
-        padding: 25px 5px 5px 15px;
-    }
-
-    .dwbuttons {
-        margin: 5px 2px 2px 10px;
-        padding: 7px 2px 2px 5px;
-    }
-
-    .logimg {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-
-    .dwbuttons .logimg .download-btn {
-        width: 100px;
-        height: 35px;
-        display: flex;
-        gap: 10px;
-        margin-top: 10px;
-        align-items: center;
-        align-content: center;
-    }
-
-    .dwbuttons .tit {
-        width: 100%;
-    }
-
-    .dwbuttons .tit h3 {
-        font-size: medium;
-        font-weight: bold;
-        width: 100%;
-    }
-
-    .playstore, .appstore {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        transition: transform 0.3s ease;
-        padding: 0;
-        margin: 0;
-    }
-
-    .download-btn {
-        width: 200px;
-        height: auto;
-    }
-
-    .playstore {
-        width: 100%;
-        height: 100%;
-    }
-
-    .appstore {
-        width: 100%;
-        height: 100%;
-    }
-
-    .playstore:hover,
-    .appstore:hover {
-        transform: scale(1.1);
-        /* Increase size on hover */
-    }
-
-    .info {
-        display: flex;
-        flex-direction: row;
-        gap: 70px;
-        align-items: center;
-        position: relative;
-        right: 0px;
-    }
-
-    .info .basic {
-        margin: 4px 0px 4px 0px;
-        padding: 4px 10px 4px 0px;
-        width: 100%;
-        position: relative;
-        right: 80px;
-    }
-
-    .info .basic p {
-        font-weight: 510;
-        padding-top: 10px;
-        font-size: smaller;
-    }
-
-    .info .basic .connect p {
-        font-weight: bold;
-        color: #0D60B5;
-        font-size: large;
-    }
-
-    .connect {
-        width: 100%;
-        margin: 10px 10px 10px 30px;
-        padding: 10px 50px 50px 30px;
-    }
-
-    .connect .soc {
-        position: relative;
-        left: 12px;
-    }
-
-    .connect p {
-        font-weight: bolder;
-    }
-
-    .connect .fb {
-        width: 25px;
-        height: auto;
-    }
-
-    .connect .ytb {
-        width: 25px;
-        height: auto;
-    }
-
-    .connect .lkdn {
-        width: 25px;
-        height: auto;
-    }
-
-    .soc svg:hover {
-        transform: scale(1.2);
-        /* Increase the size of the icon on hover */
-    }
-
-    .footer-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 4px 4px 4px 4px;
-        padding: 4px 4px 4px 4px;
-        width: 100%;
-    }
-
-    .footer-links ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .footer-links li {
-        margin-bottom: 10px;
-    }
-
-    .footer-links a {
-        text-decoration: none;
-        color: #000000;
-        font-weight: bold;
-        transition: color 0.3s;
-    }
-
-    .footer-links a:hover {
-        color: #ff6b6b;
-    }
-
-    /* Become Agent Button */
-    .agent {
-        float: right;
-        border-radius: 10px;
-        background-color: #0d60b5;
-        padding: 10px 10px;
-        border: none;
-        font-size: 12px;
-        color: white;
-        cursor: pointer;
-        margin: 1px 20px 20px 30px;
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
-            0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    .agent:hover {
-        background-color: white;
-        color: #0d60b5;
-    }
-
-    .copyright {
-        align-items: center;
-        margin: 10px 1px 1px 1px;
-        padding: 30px 1px 1px 1px;
-    }
-
-    .copyright p {
-        text-align: center;
-        color: white;
-    }
-
-}
-
-
-@media (max-width:1440px) and (min-width: 1025px) {
-    .container {}
-
-
 
     /* Footer */
+    .footer {
+        margin: 1px 1px 1px 1px;
+        padding: 10px 10px 10px 10px;
+    }
 
     .footer .logoQR .citypaylog {
         width: 22%;
@@ -718,18 +490,32 @@ body {
         width: 22%;
     }
 
+    .dwbuttons {
+        position: relative;
+        left: 20px;
+    }
+
+    .download-btn {
+        position: relative;
+        right: 20px;
+    }
+
     .footer .info .basic {
         position: relative;
-        left: 50px;
+        right: 30px;
+        margin: 40px 1px 1px 1px;
     }
 
     .footer .info p {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .footer .footer-links {
-        margin: 1px 50px 1px 1px;
-        padding: 1px 20px 1px 1px;
+        margin: 50px 50px 1px 40px;
+        padding: 1px 10px 1px 1px;
+        width: 80%;
+        position: relative;
+        left: 50px;
     }
 
     .footer .footer-links a {
@@ -751,12 +537,106 @@ body {
         flex-direction: column;
         padding: 10px;
         margin: 10px;
-        width: 200px;
+        width: 250px;
     }
 
     .connect .soc {
         position: relative;
-        left: 7px;
+        left: 20px;
+    }
+
+    .connect .fb {
+        width: 22px;
+        height: auto;
+    }
+
+    .connect .ytb {
+        width: 22px;
+        height: auto;
+    }
+
+    .connect .lkdn {
+        width: 22px;
+        height: auto;
+    }
+}
+
+
+@media (max-width:1440px) and (min-width: 1025px) {
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        /* height: auto; */
+    }
+
+
+
+    /* Footer */
+
+    .footer .logoQR .citypaylog {
+        width: 22%;
+    }
+
+    .footer .logoQR .QRcode {
+        width: 22%;
+    }
+
+    .dwbuttons {
+        position: relative;
+        left: 20px;
+    }
+
+    .download-btn {
+        position: relative;
+        right: 20px;
+    }
+
+    .footer .info .basic {
+        position: relative;
+        right: 30px;
+        margin: 40px 1px 1px 1px;
+    }
+
+    .footer .info p {
+        font-size: 15px;
+    }
+
+    .footer .footer-links {
+        margin: 50px 50px 1px 40px;
+        padding: 1px 10px 1px 1px;
+        width: 80%;
+        position: relative;
+        left: 50px;
+    }
+
+    .footer .footer-links a {
+        font-size: small;
+    }
+
+    .footer-links h4 {
+        font-size: medium;
+    }
+
+    .footer .logimg .download-btn {
+        width: 90px;
+        height: 30px;
+        margin: 2px 2px 2px 5px;
+    }
+
+    .connect {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
+        width: 250px;
+    }
+
+    .connect .soc {
+        position: relative;
+        left: 20px;
     }
 
     .connect .fb {
@@ -1196,7 +1076,7 @@ body {
 }
 
 .footer .foot .logoQR .citypaylog {
-    width: 65%;
+    width: ;
     padding: 0;
     position: relative;
     bottom: 40px;

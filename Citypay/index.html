@@ -31,7 +31,7 @@
           <div class="underline"></div>
           <!-- <li><a href>Services</a></li>
           <div class="underline"></div> -->
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="/contact.html">Contact</a></li>
           <div class="underline"></div>
           <!-- <li><a href="pages/ourteam.html">Our Team</a></li>
           <div class="underline"></div>
@@ -60,14 +60,16 @@
               </p>
             </div>
             <div class="buttons">
-              <img
-                src="./Assets/gplay-btn.png"
-                alt="download CityPay"
-                class="gplay-btn" />
-              <img
-                src="./Assets/appstore-btn.png"
-                alt="download CityPay"
-                class="appstore-btn" />
+              <button class="playstore"
+                onclick="window.open('https://play.google.com/store/apps/details?id=com.ctxpress.citypay', '_blank')">
+                <img src="./Assets/gplay-btn.png"
+                  alt="Download CityPay from Google Play" class="dow-btn">
+              </button>
+              <button class="appstore"
+                onclick="window.open('https://apps.apple.com/nz/app/citypay-nepal/id1643110573', '_blank')">
+                <img src="./Assets/appstore-btn.png"
+                  alt="Download CityPay from App Store" class="dow-btn">
+              </button>
             </div>
 
           </div>
@@ -610,6 +612,7 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
 >>>>>>> 581afe989c6e57bd59050eb8d464d35b9a59e3fa
