@@ -1915,7 +1915,7 @@ p {
     gap: 25px;
     width: 30%;
     position: relative;
-    left: 85px;
+    left: 75px;
   }
 
   .buttons .playstore .dow-btn {
@@ -2488,46 +2488,47 @@ p {
   }
 
   .buttons {
-    width: 180px;
-    height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
-    margin-top: 20px;
+    gap: 10px;
+    width: 30%;
     position: relative;
-    left: 40px;
+    left: 65px;
   }
 
-  .buttons .gplay-btn-container, .appstore-btn-container {
-    width: 50%;
+  .buttons .playstore .dow-btn {
+    width: 130px;
+    height: 40px;
     display: flex;
-    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+    align-content: center;
   }
 
-  .gplay-btn-container .gplay-btn {
-    width: 120px;
+  .buttons .appstore .dow-btn {
+    width: 130px;
     height: 40px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+    align-content: center;
+  }
+
+  .playstore, .appstore {
+    background: none;
+    border: none;
+    padding: 0;
     cursor: pointer;
     transition: transform 0.3s ease;
-    margin: 0 10px;
   }
 
-  .appstore-btn-container .appstore-btn {
-    width: 120px;
-    height: 40px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    margin: 0 10px;
-  }
-
-  .gplay-btn-container .gplay-btn:hover {
+  .playstore:hover, .appstore:hover {
     transform: scale(1.1);
   }
 
-  .appstore-btn-container .appstore-btn:hover {
-    transform: scale(1.1);
-  }
 
   .first-section .dwnld-img .handmobile {
     margin: 70px 10px 1px 0px;
@@ -3125,30 +3126,45 @@ p {
 
   .buttons {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 5px;
+    width: 100%;
+    position: relative;
   }
 
-  .gplay-btn,
-  .appstore-btn {
+  .buttons .playstore .dow-btn {
+    width: 100px;
+    height: 38px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin: 5px 5px 5px 5px;
+    position: relative;
+    right: 30px;
+  }
+
+  .buttons .appstore .dow-btn {
+    width: 100px;
+    height: 38px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin: 5px 5px 5px 5px;
+    position: relative;
+    right: 30px;
+  }
+
+  .playstore, .appstore {
+    background: none;
+    border: none;
+    padding: 0;
     cursor: pointer;
     transition: transform 0.3s ease;
-    /* Add transition for smooth hover effect */
   }
 
-  .gplay-btn:hover,
-  .appstore-btn:hover {
+  .playstore:hover, .appstore:hover {
     transform: scale(1.1);
-    /* Increase size on hover */
   }
 
-
-  .buttons {
-    width: 90px;
-    height: 35px;
-    position: relative;
-    right: 65px;
-  }
 
   .dwnld-img .handmobile {
     position: relative;
@@ -3874,30 +3890,43 @@ p {
 
   .buttons {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 5px;
+    width: 100%;
+    position: relative;
   }
 
-  .gplay-btn,
-  .appstore-btn {
+  .buttons .playstore .dow-btn {
+    width: 95px;
+    height: 38px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin: 5px 5px 5px 5px;
+    position: relative;
+    right: 25px;
+  }
 
+  .buttons .appstore .dow-btn {
+    width: 95px;
+    height: 38px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin: 5px 5px 5px 5px;
+    position: relative;
+    right: 25px;
+  }
+
+  .playstore, .appstore {
+    background: none;
+    border: none;
+    padding: 0;
     cursor: pointer;
     transition: transform 0.3s ease;
-    /* Add transition for smooth hover effect */
   }
 
-  .gplay-btn:hover,
-  .appstore-btn:hover {
+  .playstore:hover, .appstore:hover {
     transform: scale(1.1);
-    /* Increase size on hover */
-  }
-
-
-  .buttons {
-    width: 90px;
-    height: 35px;
-    position: relative;
-    right: 65px;
   }
 
   .dwnld-img .handmobile {
@@ -4620,29 +4649,43 @@ p {
 
   .buttons {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 5px;
+    width: 100%;
+    position: relative;
   }
 
-  .gplay-btn,
-  .appstore-btn {
+  .buttons .playstore .dow-btn {
+    width: 95px;
+    height: 35px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin: 5px 5px 5px 5px;
+    position: relative;
+    right: 35px;
+  }
+
+  .buttons .appstore .dow-btn {
+    width: 95px;
+    height: 35px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin: 5px 5px 5px 5px;
+    position: relative;
+    right: 35px;
+  }
+
+  .playstore, .appstore {
+    background: none;
+    border: none;
+    padding: 0;
     cursor: pointer;
     transition: transform 0.3s ease;
-    /* Add transition for smooth hover effect */
   }
 
-  .gplay-btn:hover,
-  .appstore-btn:hover {
+  .playstore:hover, .appstore:hover {
     transform: scale(1.1);
-    /* Increase size on hover */
-  }
-
-
-  .buttons {
-    width: 90px;
-    height: 35px;
-    position: relative;
-    right: 65px;
   }
 
   .dwnld-img .handmobile {
