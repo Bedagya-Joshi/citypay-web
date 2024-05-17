@@ -65,7 +65,6 @@ body {
   padding-top: 10px;
   padding-left: 60px;
   padding-right: 20px;
-  /* border: 2px solid red; */
 }
 
 .logo {
@@ -94,7 +93,7 @@ body {
   right: 20px;
   /* top: 60px; */
   width: 350px;
-  height: 250px;
+  height: 500px;
 }
 
 .underline {
@@ -155,31 +154,45 @@ body {
 }
 
 .buttons {
-  width: 270px;
-  height: 85px;
   display: flex;
-  gap: 20px;
-  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  width: 30%;
+  position: relative;
+  left: 35px;
 }
 
-.gplay-btn {
-  width: 100%;
-  height: 100%;
+.buttons .playstore .dow-btn {
+  width: 125px;
+  height: 45px;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  align-items: center;
+  align-content: center;
+}
+
+.buttons .appstore .dow-btn {
+  width: 125px;
+  height: 45px;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  align-items: center;
+  align-content: center;
+}
+
+.playstore, .appstore {
+  background: none;
+  border: none;
+  padding: 0;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
-.appstore-btn {
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.gplay-btn:hover,
-.appstore-btn:hover {
+.playstore:hover, .appstore:hover {
   transform: scale(1.1);
-  /* Increase size on hover */
 }
 
 .dwnld-img img {
@@ -291,7 +304,7 @@ body {
   margin-top: 60px;
 }
 
-.grid-content h2,
+.second-grid1:hover .grid-content h2,
 p {
   margin: 0;
   padding: 0;
@@ -376,11 +389,11 @@ p {
   width: 45%;
   position: relative;
   bottom: 600px;
-  margin: 2px 2px 2px 20px;
+  margin: 2px 2px 2px 15px;
 }
 
 .third-section .body-container .third-grid .Extra-Grid .Family-Friends {
-  width: 90%;
+  width: 80%;
   height: 75%;
   float: right;
   position: relative;
@@ -465,14 +478,13 @@ p {
 
 .fourth-grid {
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px;
+  gap: 10px;
   width: 100%;
   margin: 10px 10px 10px 200px;
   padding: 10px 10px 10px 200px;
   padding: 0;
-  justify-content: end;
   position: relative;
-
+  bottom: 300px;
 }
 
 .fourth-grid2,
@@ -486,22 +498,22 @@ p {
   border-radius: 50px;
   padding: 20px;
   margin-bottom: 20px;
-  margin-top: 80px;
+  margin-top: 0px;
   margin: 20px 10px 20px 600px;
 }
 
-.fourth-grid .Pic-Grid {
-
-  width: 45%;
+.fourth-section .body-container .Pic-Grid {
+  width: 50%;
   margin: 1px;
+  position: relative;
+  top: 190px;
 }
 
 .Pic-Grid .bank {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 90%;
   position: relative;
-  bottom: 500px;
-  left: 100px;
+  bottom: 0px;
 }
 
 
@@ -740,8 +752,8 @@ p {
 }
 
 .sixth-img {
-  width: 100%;
-  height: 75%;
+  width: 80%;
+  height: 95%;
   position: relative;
   top: 50px;
   left: 0px;
@@ -1133,8 +1145,48 @@ p {
 
 /* Media Query Responsiveness */
 
-/* @media (max-width:2560px) and (min-width: 1921px) {
-  .first-section {}
+@media (max-width:2560px) and (min-width: 1921px) {
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 30%;
+    position: relative;
+    left: 35px;
+  }
+
+  .buttons .playstore .dow-btn {
+    width: 155px;
+    height: 55px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+    align-content: center;
+  }
+
+  .buttons .appstore .dow-btn {
+    width: 155px;
+    height: 55px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+    align-content: center;
+  }
+
+  .playstore, .appstore {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .playstore:hover, .appstore:hover {
+    transform: scale(1.1);
+  }
 
   .second-section {
     height: 100vh;
@@ -1150,14 +1202,93 @@ p {
 
   .seventh-section {}
 
-  .footer {}
 
-} */
+  /* Footer */
+
+  .footer .logoQR .citypaylog {
+    width: 22%;
+  }
+
+  .footer .logoQR .QRcode {
+    width: 22%;
+  }
+
+  .dwbuttons {
+    position: relative;
+    left: 20px;
+  }
+
+  .download-btn {
+    position: relative;
+    right: 20px;
+  }
+
+  .footer .info .basic {
+    position: relative;
+    right: 30px;
+    margin: 40px 1px 1px 1px;
+  }
+
+  .footer .info p {
+    font-size: 15px;
+  }
+
+  .footer .footer-links {
+    margin: 80px 50px 1px 40px;
+    padding: 1px 10px 1px 1px;
+    width: 80%;
+    position: relative;
+    left: 50px;
+  }
+
+  .footer .footer-links a {
+    font-size: small;
+  }
+
+  .footer-links h4 {
+    font-size: medium;
+  }
+
+  .footer .logimg .download-btn {
+    width: 90px;
+    height: 30px;
+    margin: 2px 2px 2px 5px;
+  }
+
+  .connect {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+  }
+
+  .connect .soc {
+    position: relative;
+    left: 20px;
+  }
+
+  .connect .fb {
+    width: 22px;
+    height: auto;
+  }
+
+  .connect .ytb {
+    width: 22px;
+    height: auto;
+  }
+
+  .connect .lkdn {
+    width: 22px;
+    height: auto;
+  }
+
+}
 
 
 @media (max-width:1440px) and (min-width: 1025px) {
   .first-section {
-    height: 87vh;
+    height: 90vh;
   }
 
   .first-section .body-container .dwnld-desc {
@@ -1180,22 +1311,54 @@ p {
     width: 65%;
   }
 
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 30%;
+    position: relative;
+    left: 35px;
+  }
+
+  .buttons .playstore .dow-btn {
+    width: 155px;
+    height: 55px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+    align-content: center;
+  }
+
+  .buttons .appstore .dow-btn {
+    width: 155px;
+    height: 55px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+    align-content: center;
+  }
+
+  .playstore, .appstore {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .playstore:hover, .appstore:hover {
+    transform: scale(1.1);
+  }
+
   .first-section .dwnld-img .handmobile {
     margin: 20px 1px 1px 10px;
     padding: 20px 1px 1px 10px;
     position: relative;
     left: 240px;
     width: 80%;
-  }
-
-  .buttons .gplay-btn {
-    width: 200px;
-    height: 60px;
-  }
-
-  .buttons .appstore-btn {
-    width: 200px;
-    height: 60px;
   }
 
   .second-section {
@@ -1215,18 +1378,19 @@ p {
   }
 
   .second-section .second-body .second-img .remittance-img {
-    height: 520px;
-    width: 370px;
+    height: 590px;
+    width: 420px;
     position: relative;
-    top: 40px;
+    top: 30px;
+    left: 50px;
   }
 
   .second-section .second-body .second-grid h2 {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .second-section .second-body .second-grid p {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   .second-section .second-body .second-grid .remit-icon {
@@ -1239,30 +1403,30 @@ p {
     height: auto;
   }
 
-  .second-section .second-body .second-grid .remittance-icon {
+  .second-section .second-body .second-grid .Track-remittance {
     width: 120px;
     height: auto;
   }
 
   .second-section .second-body .second-grid .second-grid1 {
-    margin: 2px 2px 10px 2px;
-    padding: 15px 25px 20px 10px;
-    width: 350px;
-    height: 185px;
+    margin: 2px 2px 10px 30px;
+    padding: 15px 25px 20px 30px;
+    width: 380px;
+    height: 200px;
   }
 
   .second-section .second-body .second-grid .second-grid2 {
-    margin: 2px 2px 10px 2px;
-    padding: 15px 25px 20px 10px;
-    width: 350px;
-    height: 185px;
+    margin: 2px 2px 10px 30px;
+    padding: 15px 25px 20px 30px;
+    width: 380px;
+    height: 200px;
   }
 
   .second-section .second-body .second-grid .second-grid3 {
-    margin: 2px 2px 10px 2px;
-    padding: 15px 25px 20px 10px;
-    width: 350px;
-    height: 185px;
+    margin: 2px 2px 10px 30px;
+    padding: 15px 25px 20px 30px;
+    width: 380px;
+    height: 200px;
   }
 
   .second-grid1, .second-grid2 {
@@ -1272,15 +1436,15 @@ p {
   .third-section {
     height: 100vh;
     margin: 5px 5px 5px 5px;
-    padding: 100px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
   }
 
   .third-section .body-container .third-grid h2 {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .third-section .body-container .third-grid p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .third-section .body-container .third-grid .Extra-Grid {
@@ -1298,15 +1462,15 @@ p {
   .third-section .body-container .third-grid .third-grid2 {
     margin: 50px 2px 10px 70px;
     padding: 50px 30px 60px 20px;
-    width: 350px;
-    height: 150px;
+    width: 370px;
+    height: 170px;
   }
 
   .third-section .body-container .third-grid .third-grid3 {
     margin: 50px 2px 10px 70px;
     padding: 50px 30px 60px 20px;
-    width: 350px;
-    height: 150px;
+    width: 370px;
+    height: 170px;
   }
 
   .third-section .body-container .third-grid .Fund-T {
@@ -1334,11 +1498,11 @@ p {
   }
 
   .fourth-section .body-container .fourth-grid h2 {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .fourth-section .body-container .fourth-grid p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .fourth-section .body-container .fourth-grid .fourth-grid2 {
@@ -1397,25 +1561,25 @@ p {
   }
 
   .fifth-section .body-container .fifth-grid h2 {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .fifth-section .body-container .fifth-grid p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .fifth-section .body-container .fifth-grid .fifth-grid2 {
     margin: 2px 2px 10px 30px;
-    padding: 15px 15px 15px 5px;
-    width: 65%;
-    height: 180px;
+    padding: 25px 25px 25px 25px;
+    width: 55%;
+    height: 210px;
   }
 
   .fifth-section .body-container .fifth-grid .fifth-grid3 {
     margin: 35px 2px 10px 30px;
-    padding: 25px 10px 15px 5px;
-    width: 65%;
-    height: 180px;
+    padding: 25px 25px 25px 25px;
+    width: 55%;
+    height: 210px;
   }
 
   .fifth-section .body-container .fifth-grid .CityPay-QR {
@@ -1433,8 +1597,8 @@ p {
     padding: 5px 5px 5px 5px;
     position: relative;
     left: 720px;
-    bottom: 600px;
-    width: 47%;
+    bottom: 630px;
+    width: 45%;
     height: 90%;
   }
 
@@ -1443,7 +1607,7 @@ p {
     margin: 5px 5px 5px 5px;
     top: 0px;
     left: 0px;
-    width: 80%;
+    width: 90%;
   }
 
   .sixth-section {
@@ -1466,26 +1630,25 @@ p {
   .sixth-section .sixth-body .sixth-img {
     margin: 2px 2px 2px 2px;
     padding: 4px 4px 4px 4px;
-    width: 320px;
+    width: 390px;
   }
 
   .sixth-section .sixth-body .sixth-img .Utility {
     margin: 55px 1px 1px 0px;
     padding: 55px 1px 1px 1px;
-    width: 320px;
-    height: 360px;
+    width: 380px;
+    height: 420px;
     position: relative;
     right: 30px;
   }
 
   .sixth-section .body-container .sixth-grid h2 {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .sixth-section .body-container .sixth-grid p {
-    font-size: 14px;
+    font-size: 16px;
   }
-
 
   .sixth-section .body-container .sixth-grid .Mobile {
     width: 70px;
@@ -1505,32 +1668,36 @@ p {
   .sixth-section .body-container .sixth-grid {
     width: 100%;
     position: relative;
-    right: 25px;
-    margin: 35px 1px 1px 0px;
+    right: 5px;
+    margin: 35px 1px 1px 80px;
   }
 
   .sixth-grid .sixth-grid1 {
     width: 210px;
-    height: 250px;
-    margin: 25px 1px 1px 0px;
+    height: 290px;
+    margin: 25px 1px 1px 30px;
+    padding: 25px;
   }
 
   .sixth-grid .sixth-grid2 {
     width: 210px;
-    height: 250px;
-    margin: 25px 1px 1px 0px;
+    height: 290px;
+    margin: 25px 1px 1px 30px;
+    padding: 25px;
   }
 
   .sixth-grid .sixth-grid3 {
     width: 210px;
-    height: 250px;
-    margin: 10px 1px 1px 0px;
+    height: 290px;
+    margin: 25px 1px 1px 30px;
+    padding: 25px;
   }
 
   .seventh-section {
-    height: 100vh;
+    height: 90vh;
+    width: 90%;
     margin: 5px 5px 5px 5px;
-    padding: 40px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
   }
 
   .seventh-section .body-container.seventh-title {
@@ -1547,32 +1714,32 @@ p {
   }
 
   .seventh-section .body-container .seventh-grid h2 {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .seventh-section .body-container .seventh-grid p {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   .seventh-section .body-container .seventh-grid .seventh-grid1 {
     margin: 2px 2px 100px 15px;
-    padding: 15px 15px 75px 10px;
-    width: 235px;
-    height: 310px;
+    padding: 35px 25px 75px 20px;
+    width: 245px;
+    height: 360px;
   }
 
   .seventh-section .body-container .seventh-grid .seventh-grid2 {
     margin: 2px 2px 100px 15px;
-    padding: 15px 15px 75px 10px;
-    width: 235px;
-    height: 310px;
+    padding: 35px 25px 75px 20px;
+    width: 245px;
+    height: 360px;
   }
 
   .seventh-section .body-container .seventh-grid .seventh-grid3 {
     margin: 2px 2px 75px 15px;
-    padding: 15px 10px 75px 10px;
-    width: 235px;
-    height: 310px;
+    padding: 35px 25px 75px 20px;
+    width: 245px;
+    height: 360px;
   }
 
   .seventh-section .body-container .seventh-grid .Reward {
@@ -1621,7 +1788,17 @@ p {
     height: 100%;
   }
 
+
   /* Footer */
+
+  .footer {
+    padding: 20px 1px 20px 1px;
+    width: 100%;
+  }
+
+  .footer .row {
+    width: 100%;
+  }
 
   .footer .logoQR .citypaylog {
     width: 22%;
@@ -1631,18 +1808,32 @@ p {
     width: 22%;
   }
 
+  .dwbuttons {
+    position: relative;
+    left: 20px;
+  }
+
+  .download-btn {
+    position: relative;
+    right: 20px;
+  }
+
   .footer .info .basic {
     position: relative;
-    left: 50px;
+    right: 30px;
+    margin: 40px 1px 1px 1px;
   }
 
   .footer .info p {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .footer .footer-links {
-    margin: 1px 50px 1px 1px;
-    padding: 1px 20px 1px 1px;
+    margin: 50px 10px 1px 40px;
+    padding: 1px 10px 1px 1px;
+    width: 80%;
+    position: relative;
+    left: 0px;
   }
 
   .footer .footer-links a {
@@ -1664,12 +1855,12 @@ p {
     flex-direction: column;
     padding: 10px;
     margin: 10px;
-    width: 200px;
+    width: 250px;
   }
 
   .connect .soc {
     position: relative;
-    left: 7px;
+    left: 20px;
   }
 
   .connect .fb {
@@ -1691,7 +1882,12 @@ p {
 
 @media (max-width:1024px) and (min-width: 769px) {
   .first-section {
-    height: 86vh;
+    height: 95vh;
+    background-image: url("./Assets/Flow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    object-fit: contain;
   }
 
   .first-section .body-container .dwnld-desc {
@@ -1703,36 +1899,69 @@ p {
   }
 
   .first-section .description p {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .first-section .body-container .dwnld-desc .description {
-    margin: 50px 1px 1px 5px;
+    margin: 100px 1px 1px 2px;
+    padding: 2px;
     width: 55%;
   }
 
-  .first-section .dwnld-img .handmobile {
-    margin: 10px 1px 1px 20px;
-    padding: 10px 1px 1px 20px;
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 30%;
     position: relative;
-    left: 350px;
-    width: 72%;
+    left: 75px;
   }
 
-  .buttons .gplay-btn {
-    width: 120px;
-    height: 40px;
+  .buttons .playstore .dow-btn {
+    width: 155px;
+    height: 55px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+    align-content: center;
   }
 
-  .buttons .appstore-btn {
-    width: 120px;
-    height: 40px;
+  .buttons .appstore .dow-btn {
+    width: 155px;
+    height: 55px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+    align-content: center;
+  }
+
+  .playstore, .appstore {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .playstore:hover, .appstore:hover {
+    transform: scale(1.1);
+  }
+
+  .first-section .dwnld-img .handmobile {
+    margin: 10px 10px 1px 0px;
+    padding: 10px 10px 1px 0px;
+    position: relative;
+    left: 380px;
+    width: 70%;
   }
 
   .second-section {
     height: 100vh;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
+    margin: 5px 0px 55px 5px;
+    padding: 5px 0px 55px 5px;
   }
 
   .second-section .second-body {
@@ -1742,58 +1971,65 @@ p {
 
   .second-section .second-body .second-img {
     width: 900px;
-    height: 400px;
+    height: 00px;
   }
 
   .second-section .second-body .second-img .remittance-img {
-    height: 400px;
-    width: 320px;
+    height: 500px;
+    width: 360px;
     position: relative;
-    top: 60px;
+    top: 0px;
+    left: 0px;
+  }
+
+  .second-section .second-body .second-grid {
+    position: relative;
+    right: 25px;
+    gap: 20px;
   }
 
   .second-section .second-body .second-grid h2 {
     font-size: 15px;
   }
 
-  .second-section .second-body .second-grid p {
+  .second-se0ion .second-body .second-grid p {
     font-size: 13px;
   }
 
   .second-section .second-body .second-grid .remit-icon {
-    width: 120px;
+    width: 90px;
     height: auto;
   }
 
   .second-section .second-body .second-grid .withdraw-icon {
-    width: 120px;
+    width: 90px;
     height: auto;
   }
 
-  .second-section .second-body .second-grid .remittance-icon {
-    width: 120px;
+  .second-section .second-body .second-grid .Track-remittance {
+    width: 90px;
     height: auto;
   }
 
   .second-section .second-body .second-grid .second-grid1 {
-    margin: 2px 2px 10px 2px;
-    padding: 15px 15px 20px 10px;
-    width: 335px;
-    height: 165px;
+    margin: 20px 2px 10px 2px;
+    padding: 15px 15px 25px 10px;
+    width: 385px;
+    height: 135px;
   }
 
   .second-section .second-body .second-grid .second-grid2 {
-    margin: 2px 2px 10px 2px;
-    padding: 15px 15px 20px 10px;
-    width: 335px;
-    height: 165px;
+    margin: 35px 2px 10px 2px;
+    padding: 15px 15px 25px 10px;
+    width: 385px;
+    height: 135px;
   }
 
   .second-section .second-body .second-grid .second-grid3 {
-    margin: 2px 2px 10px 2px;
-    padding: 15px 15px 20px 10px;
-    width: 335px;
-    height: 165px;
+    margin: 35px 2px 10px 2px;
+    padding: 15px 15px 25px 10px;
+    width: 385px;
+    height: 135px;
   }
 
   .second-grid1, .second-grid2 {
@@ -1801,9 +2037,9 @@ p {
   }
 
   .third-section {
-    height: 100vh;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
+    height: 90vh;
+    margin: 5px 0px 55px 5px;
+    padding: 5px 0px 55px 5px;
   }
 
   .third-section .body-container .third-grid h2 {
@@ -1816,28 +2052,28 @@ p {
 
   .third-section .body-container .third-grid .Extra-Grid {
     position: relative;
-    bottom: 400px;
-    margin: 2px 2px 2px 20px;
+    bottom: 470px;
+    margin: 2px 55px 2px 2px;
   }
 
   .third-section .body-container .third-grid .Extra-Grid .Family-Friends {
-    width: 290px;
+    width: 350px;
     position: relative;
     left: 50px;
   }
 
   .third-section .body-container .third-grid .third-grid2 {
-    margin: 10px 2px 10px 2px;
+    margin: 35px 2px 10px 20px;
     padding: 50px 20px 70px 10px;
-    width: 300px;
-    height: 100px;
+    width: 340px;
+    height: 120px;
   }
 
   .third-section .body-container .third-grid .third-grid3 {
-    margin: 10px 2px 10px 2px;
+    margin: 35px 2px 10px 20px;
     padding: 50px 20px 70px 10px;
-    width: 300px;
-    height: 100px;
+    width: 340px;
+    height: 120px;
   }
 
 
@@ -1851,11 +2087,10 @@ p {
     height: auto;
   }
 
-
   .fourth-section {
-    height: 100vh;
-    margin: 5px 5px 25px 5px;
-    padding: 5px 5px 25px 5px;
+    height: 90vh;
+    margin: 5px 0px 25px 5px;
+    padding: 5px 0px 25px 5px;
   }
 
   .fourth-section .body-container .fourth-grid {
@@ -1873,17 +2108,17 @@ p {
   }
 
   .fourth-section .body-container .fourth-grid .fourth-grid2 {
-    margin: 2px 2px 10px 245px;
-    padding: 15px 15px 15px 30px;
-    width: 65%;
+    margin: 2px 2px 10px 285px;
+    padding: 15px 35px 15px 30px;
+    width: 55%;
     height: 180px;
     display: grid;
   }
 
   .fourth-section .body-container .fourth-grid .fourth-grid3 {
-    margin: 2px 2px 10px 245px;
-    padding: 15px 15px 15px 30px;
-    width: 65%;
+    margin: 2px 2px 10px 285px;
+    padding: 15px 35px 15px 30px;
+    width: 55%;
     height: 180px;
   }
 
@@ -1902,28 +2137,29 @@ p {
     padding: 5px 5px 5px 5px;
     position: relative;
     right: 0px;
-    bottom: 360px;
-    width: 45%;
-    height: 90%;
+    bottom: 0px;
+    width: 50%;
+    height: 80%;
 
   }
 
   .fourth-section .body-container .Pic-Grid .bank {
     position: relative;
     margin: 5px 5px 5px 5px;
-    top: 5px;
+    bottom: 50px;
     left: 0px;
     width: 100%;
+    height: 90%;
   }
 
   .fifth-section {
-    height: 100vh;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
+    height: 90vh;
+    margin: 5px 0px 25px 5px;
+    padding: 5px 0px 25px 5px;
   }
 
   .fifth-section .body-container .fifth-grid {
-    margin: 10px 80px 10px 50px;
+    margin: 40px 80px 10px 50px;
     padding: 10px 80px 10px 50px;
     width: 60%;
     position: relative;
@@ -1939,15 +2175,15 @@ p {
   }
 
   .fifth-section .body-container .fifth-grid .fifth-grid2 {
-    margin: 2px 2px 10px 30px;
-    padding: 15px 15px 15px 5px;
+    margin: 10px 2px 10px 30px;
+    padding: 15px 15px 35px 5px;
     width: 55%;
     height: 160px;
   }
 
   .fifth-section .body-container .fifth-grid .fifth-grid3 {
-    margin: 2px 2px 10px 30px;
-    padding: 15px 10px 15px 5px;
+    margin: 35px 2px 10px 30px;
+    padding: 15px 10px 35px 5px;
     width: 55%;
     height: 160px;
   }
@@ -1967,7 +2203,7 @@ p {
     padding: 5px 5px 5px 5px;
     position: relative;
     left: 450px;
-    bottom: 480px;
+    bottom: 490px;
     width: 50%;
     height: 90%;
   }
@@ -1981,9 +2217,9 @@ p {
   }
 
   .sixth-section {
-    height: 100vh;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
+    height: 90vh;
+    margin: 5px 0px 5px 5px;
+    padding: 5px 0px 5px 5px;
   }
 
   .sixth-section .sixth-body .sixth-img {
@@ -2005,8 +2241,8 @@ p {
   }
 
   .sixth-grid {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 10px 1px 1px;
+    margin: 1px 0px 1px 1px;
+    padding: 1px 0px 1px 1px;
   }
 
   .sixth-section .body-container .sixth-grid h2 {
@@ -2058,11 +2294,10 @@ p {
   }
 
   .seventh-section {
-    height: 100vh;
-    margin: 5px 5px 5px 5px;
-    padding: 75px 5px 10px 5px;
+    height: 90vh;
+    margin: 5px 0px 5px 5px;
+    padding: 35px 0px 10px 5px;
   }
-
 
   .seventh-section .body-container.seventh-title {
     margin: 1px 1px 1px 1px;
@@ -2088,23 +2323,23 @@ p {
 
   .seventh-section .body-container .seventh-grid .seventh-grid1 {
     margin: 2px 2px 100px 15px;
-    padding: 15px 15px 75px 10px;
-    width: 185px;
-    height: 310px;
+    padding: 35px 25px 75px 25px;
+    width: 215px;
+    height: 315px;
   }
 
   .seventh-section .body-container .seventh-grid .seventh-grid2 {
     margin: 2px 2px 100px 15px;
-    padding: 15px 15px 75px 10px;
-    width: 185px;
-    height: 310px;
+    padding: 35px 25px 75px 25px;
+    width: 215px;
+    height: 315px;
   }
 
   .seventh-section .body-container .seventh-grid .seventh-grid3 {
     margin: 2px 2px 100px 15px;
-    padding: 15px 10px 75px 10px;
-    width: 185px;
-    height: 310px;
+    padding: 35px 25px 75px 25px;
+    width: 215px;
+    height: 315px;
   }
 
   .seventh-section .body-container .seventh-grid .Reward {
@@ -2122,6 +2357,12 @@ p {
     height: auto;
   }
 
+  /* footer */
+
+  .footer {
+    padding: 10px 0px 10px 0px;
+  }
+
   .footer .row {
     position: relative;
     right: 50px;
@@ -2129,29 +2370,44 @@ p {
 
   .footer .logoQR .citypaylog {
     width: 30%;
+    position: relative;
+    left: 20px;
   }
 
   .footer .logoQR .QRcode {
     width: 30%;
   }
 
-
-  .footer .info .basic {
+  .footer .dwbuttons {
     position: relative;
     left: 50px;
   }
 
+  .footer .dwbuttons .download-btn {
+    position: relative;
+    right: 10px;
+  }
+
+  .footer .info .basic {
+    position: relative;
+    left: 50px;
+    width: 80%;
+    margin: 25px 0px 10px 0px;
+  }
+
   .footer .info p {
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .footer .footer-links {
-    margin: 1px 50px 1px 1px;
-    padding: 1px 20px 1px 1px;
+    margin: 30px 10px 10px 10px;
+    padding: 10px 20px 1px 1px;
+    position: relative;
+    left: 10px;
   }
 
   .footer .footer-links a {
-    font-size: x-small;
+    font-size: small;
   }
 
   .footer-links h4 {
@@ -2174,7 +2430,7 @@ p {
 
   .connect .soc {
     position: relative;
-    left: 3px;
+    left: 16px;
   }
 
   .connect .fb {
@@ -2199,8 +2455,18 @@ p {
 }
 
 @media (max-width:768px) and (min-width: 426px) {
+
+  .header {
+    width: 85%;
+  }
+
   .first-section {
     height: 87vh;
+    background-image: url("./Assets/Flow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    object-fit: contain;
   }
 
   .first-section .body-container .dwnld-desc {
@@ -2212,49 +2478,72 @@ p {
   }
 
   .first-section .description p {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .first-section .body-container .dwnld-desc .description {
-    margin: 80px 1px 1px 5px;
-    width: 50%;
-  }
-
-  .first-section .dwnld-img .handmobile {
-    margin: 10px 1px 1px 20px;
-    padding: 10px 1px 1px 20px;
-    position: relative;
-    left: 350px;
-    width: 65%;
+    margin: 20px 1px 1px 2px;
+    padding: 2px;
+    width: 55%;
   }
 
   .buttons {
-    margin: 4px 1px 1px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 30%;
+    position: relative;
+    left: 65px;
   }
 
-  .buttons .gplay-btn {
-    width: 80px;
-    height: 30px;
+  .buttons .playstore .dow-btn {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+    align-content: center;
   }
 
-  .buttons .appstore-btn {
-    width: 80px;
-    height: 30px;
+  .buttons .appstore .dow-btn {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+    align-content: center;
   }
 
-  /* second section */
+  .playstore, .appstore {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .playstore:hover, .appstore:hover {
+    transform: scale(1.1);
+  }
+
+
+  .first-section .dwnld-img .handmobile {
+    margin: 70px 10px 1px 0px;
+    padding: 10px 10px 1px 0px;
+    position: relative;
+    left: 390px;
+    width: 70%;
+  }
+
+
   .second-section {
     height: 100vh;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .second-section .second-title h1 {
-    font-size: 26px;
-  }
-
-  .second-section .second-title p {
-    font-size: 12px;
+    margin: 5px 0px 95px 5px;
+    padding: 5px 0px 55px 5px;
+    width: 80%;
   }
 
   .second-section .second-body {
@@ -2263,59 +2552,66 @@ p {
   }
 
   .second-section .second-body .second-img {
-    width: 100px;
-    height: 200px;
+    width: 860px;
+    height: 0px;
   }
 
   .second-section .second-body .second-img .remittance-img {
-    height: 200px;
-    width: 145px;
+    height: 410px;
+    width: 280px;
     position: relative;
-    top: 50px;
+    top: 100px;
+    right: 90px;
   }
 
-  .second-section .body-container .second-body .second-grid h2 {
-    font-size: 12px;
+  .second-section .second-body .second-grid {
+    position: relative;
+    right: 95px;
+    gap: 20px;
   }
 
-  .second-section .body-container .second-body .second-grid p {
-    font-size: 8px;
+  .second-section .second-body .second-grid h2 {
+    font-size: 15px;
+  }
+
+  .second-se0ion .second-body .second-grid p {
+    font-size: 13px;
   }
 
   .second-section .second-body .second-grid .remit-icon {
-    width: 60px;
+    width: 90px;
     height: auto;
   }
 
   .second-section .second-body .second-grid .withdraw-icon {
-    width: 60px;
+    width: 90px;
     height: auto;
   }
 
-  .second-section .second-body .second-grid .remittance-icon {
-    width: 60px;
+  .second-section .second-body .second-grid .Track-remittance {
+    width: 90px;
     height: auto;
   }
 
   .second-section .second-body .second-grid .second-grid1 {
-    margin: 2px 2px 10px 30px;
-    padding: 15px 15px 20px 10px;
-    width: 195px;
-    height: 95px;
+    margin: 20px 2px 10px 5px;
+    padding: 25px 25px 45px 10px;
+    width: 280px;
+    height: 155px;
   }
 
   .second-section .second-body .second-grid .second-grid2 {
-    margin: 2px 2px 10px 30px;
-    padding: 15px 15px 20px 10px;
-    width: 195px;
-    height: 95px;
+    margin: 35px 2px 10px 5px;
+    padding: 55px 25px 70px 10px;
+    width: 280px;
+    height: 155px;
   }
 
   .second-section .second-body .second-grid .second-grid3 {
-    margin: 2px 2px 10px 30px;
-    padding: 15px 15px 20px 10px;
-    width: 195px;
-    height: 95px;
+    margin: 35px 2px 10px 5px;
+    padding: 45px 25px 45px 10px;
+    width: 280px;
+    height: 155px;
   }
 
   .second-grid1, .second-grid2 {
@@ -2323,118 +2619,105 @@ p {
   }
 
   .third-section {
-    height: 100vh;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
+    height: 90vh;
+    margin: 35px 0px 55px 5px;
+    padding: 5px 0px 55px 5px;
+    width: 80%;
   }
 
-  .third-section .third-title h1 {
-    font-size: 26px;
-  }
-
-  .third-section .third-title p {
-    font-size: 12px;
+  .third-section .body-container .third-grid {
+    position: relative;
+    right: 65px;
   }
 
   .third-section .body-container .third-grid h2 {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .third-section .body-container .third-grid p {
-    font-size: 8px;
+    font-size: 13px;
   }
 
   .third-section .body-container .third-grid .Extra-Grid {
     position: relative;
-    bottom: 330px;
-    margin: 2px 2px 2px 20px;
+    bottom: 440px;
+    margin: 2px 55px 2px 2px;
   }
 
   .third-section .body-container .third-grid .Extra-Grid .Family-Friends {
-    width: 150px;
+    width: 260px;
     position: relative;
-    left: 40px;
+    left: 170px;
   }
 
   .third-section .body-container .third-grid .third-grid2 {
-    margin: 10px 2px 10px 2px;
-    padding: 50px 10px 70px 10px;
-    width: 185px;
-    height: 70px;
+    margin: 45px 2px 10px 10px;
+    padding: 50px 20px 70px 10px;
+    width: 290px;
+    height: 140px;
   }
 
   .third-section .body-container .third-grid .third-grid3 {
-    margin: 10px 2px 10px 2px;
-    padding: 50px 10px 70px 10px;
-    width: 185px;
-    height: 70px;
+    margin: 35px 2px 10px 10px;
+    padding: 50px 20px 70px 10px;
+    width: 290px;
+    height: 140px;
   }
 
 
   .third-section .body-container .third-grid .Fund-T {
-    width: 80px;
+    width: 120px;
     height: auto;
   }
 
   .third-section .body-container .third-grid .Send-R {
-    width: 80px;
+    width: 120px;
     height: auto;
   }
 
-
   .fourth-section {
-    height: 100vh;
-    margin: 5px 5px 25px 5px;
-    padding: 5px 5px 25px 5px;
-  }
-
-  .fourth-section .fourth-title h1 {
-    font-size: 26px;
-  }
-
-  .fourth-section .fourth-title p {
-    font-size: 12px;
+    height: 90vh;
+    margin: 5px 0px 25px 5px;
+    padding: 5px 0px 25px 5px;
+    width: 80%;
   }
 
   .fourth-section .body-container .fourth-grid {
-    margin: 10px 60px 10px 90px;
-    padding: 10px 60px 10px 90px;
+    margin: 50px 60px 10px 10px;
+    padding: 10px 60px 10px 10px;
     width: 60%;
   }
 
   .fourth-section .body-container .fourth-grid h2 {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .fourth-section .body-container .fourth-grid p {
-    font-size: 8px;
+    font-size: 13px;
   }
 
   .fourth-section .body-container .fourth-grid .fourth-grid2 {
-    margin: 2px 2px 10px 10px;
-    padding: 15px 10px 15px 20px;
-    width: 120px;
-    height: 140px;
+    margin: 65px 2px 10px 245px;
+    padding: 15px 25px 15px 30px;
+    width: 220px;
+    height: 180px;
     display: grid;
-    border-radius: 20px;
   }
 
   .fourth-section .body-container .fourth-grid .fourth-grid3 {
-    margin: 2px 2px 10px 10px;
-    padding: 15px 10px 15px 20px;
-    width: 120px;
-    height: 140px;
-    display: grid;
-    border-radius: 20px;
+    margin: 25px 2px 10px 245px;
+    padding: 15px 25px 15px 30px;
+    width: 220px;
+    height: 180px;
   }
 
   .fourth-section .body-container .fourth-grid .BT {
-    width: 60px;
+    width: 120px;
     height: auto;
   }
 
   .fourth-section .body-container .fourth-grid .LB {
-    width: 60px;
+    width: 120px;
     height: auto;
   }
 
@@ -2443,73 +2726,65 @@ p {
     padding: 5px 5px 5px 5px;
     position: relative;
     right: 0px;
-    bottom: 295px;
-    width: 270px;
-    height: 120px;
+    bottom: 0px;
+    width: 50%;
+    height: 80%;
 
   }
 
   .fourth-section .body-container .Pic-Grid .bank {
     position: relative;
     margin: 5px 5px 5px 5px;
-    top: 5px;
-    left: 0px;
-    width: 55%;
+    bottom: 10px;
+    right: 50px;
+    width: 100%;
+    height: 90%;
   }
 
   .fifth-section {
-    height: 100vh;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .fifth-section .fifth-title h1 {
-    font-size: 26px;
-  }
-
-  .fifth-section .fifth-title p {
-    font-size: 12px;
+    height: 90vh;
+    margin: 5px 0px 25px 5px;
+    padding: 5px 0px 25px 5px;
+    width: 80%;
   }
 
   .fifth-section .body-container .fifth-grid {
-    margin: 10px 80px 10px 50px;
-    padding: 10px 80px 10px 10px;
+    margin: 30px 80px 10px 50px;
+    padding: 10px 80px 10px 50px;
     width: 60%;
     position: relative;
-    right: 50px;
+    right: 120px;
   }
 
   .fifth-section .body-container .fifth-grid h2 {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .fifth-section .body-container .fifth-grid p {
-    font-size: 8px;
+    font-size: 13px;
   }
 
   .fifth-section .body-container .fifth-grid .fifth-grid2 {
-    margin: 2px 2px 10px 10px;
-    padding: 15px 15px 15px 5px;
-    width: 150px;
-    height: 130px;
-    border-radius: 30px;
+    margin: 10px 2px 10px 30px;
+    padding: 25px 15px 35px 5px;
+    width: 70%;
+    height: 180px;
   }
 
   .fifth-section .body-container .fifth-grid .fifth-grid3 {
-    margin: 20px 2px 10px 10px;
-    padding: 15px 10px 15px 5px;
-    width: 150px;
-    height: 130px;
-    border-radius: 30px;
+    margin: 35px 2px 10px 30px;
+    padding: 25px 15px 35px 5px;
+    width: 70%;
+    height: 180px;
   }
 
   .fifth-section .body-container .fifth-grid .CityPay-QR {
-    width: 80px;
+    width: 120px;
     height: auto;
   }
 
   .fifth-section .body-container .fifth-grid .NepalPay-SmartQR {
-    width: 80px;
+    width: 120px;
     height: auto;
   }
 
@@ -2517,10 +2792,10 @@ p {
     margin: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
     position: relative;
-    left: 220px;
-    bottom: 320px;
-    width: 55%;
-    height: 100px;
+    left: 300px;
+    bottom: 490px;
+    width: 260px;
+    height: 290px;
   }
 
   .fifth-section .body-container .Pic-Grid .ScanQR {
@@ -2528,36 +2803,31 @@ p {
     margin: 5px 5px 5px 5px;
     top: 5px;
     left: 0px;
-    width: 85%;
+    width: 95%;
   }
 
   .sixth-section {
-    height: 100vh;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .sixth-section .sixth-title h1 {
-    font-size: 26px;
-  }
-
-  .sixth-section .sixth-title p {
-    font-size: 12px;
+    height: 95vh;
+    margin: 5px 0px 5px 5px;
+    padding: 5px 0px 5px 5px;
+    width: 80%;
   }
 
   .sixth-section .sixth-body .sixth-img {
-    margin: 2px 2px 2px 2px;
+    margin: 2px 20px 2px 2px;
     padding: 4px 4px 4px 4px;
     width: 200px;
+    position: relative;
+    right: 120px;
   }
 
   .sixth-section .sixth-body .sixth-img .Utility {
-    margin: 55px 1px 1px 0px;
+    margin: 55px 15px 1px 0px;
     padding: 55px 1px 1px 1px;
-    width: 115px;
-    height: 150px;
+    width: 260px;
+    height: 300px;
     position: relative;
-    right: 15px;
+    right: 120px;
   }
 
   .sixth-body {
@@ -2566,133 +2836,130 @@ p {
   }
 
   .sixth-section .body-container .sixth-grid h2 {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .sixth-section .body-container .sixth-grid p {
-    font-size: 8px;
+    font-size: 12px;
   }
 
 
   .sixth-section .body-container .sixth-grid .Mobile {
-    width: 40px;
+    width: 55px;
     height: auto;
   }
 
   .sixth-section .body-container .sixth-grid .Domestic {
-    width: 40px;
+    width: 55px;
     height: auto;
   }
 
   .sixth-section .body-container .sixth-grid .gov {
-    width: 40px;
+    width: 60px;
     height: auto;
   }
 
   .sixth-grid {
-    width: 100%;
+    width: 80%;
     position: relative;
-    right: 20px;
-    gap: 14px;
-    height: 50%;
+    right: 70px;
+    gap: 20px;
   }
 
   .sixth-grid .sixth-grid1 {
-    width: 100px;
-    height: 180px;
-    margin: 5px 1px 1px 0px;
-    padding: 5px;
+    width: 120px;
+    height: 250px;
+    margin: 25px 1px 1px 0px;
+    padding: 25px;
   }
 
   .sixth-grid .sixth-grid2 {
-    width: 100px;
-    height: 180px;
-    margin: 5px 1px 1px 0px;
-    padding: 5px 5px 5px 5px;
+    width: 120px;
+    height: 250px;
+    margin: 25px 1px 1px 0px;
+    padding: 25px;
   }
 
   .sixth-grid .sixth-grid3 {
-    width: 100px;
-    height: 180px;
-    margin: 5px 1px 1px 0px;
-    padding: 5px;
+    width: 120px;
+    height: 250px;
+    margin: 20px 1px 1px 0px;
+    padding: 25px;
   }
 
   .seventh-section {
-    height: 100vh;
-    margin: 5px 5px 5px 5px;
-    padding: 75px 5px 10px 5px;
+    height: 90vh;
+    margin: 5px 0px 5px 5px;
+    padding: 35px 0px 10px 5px;
+    width: 80%;
   }
-
 
   .seventh-section .body-container.seventh-title {
     margin: 1px 1px 1px 1px;
     padding: 2px 2px 2px 2px;
   }
 
-  .seventh-section .seventh-title h1 {
-    font-size: 26px;
-  }
-
-  .seventh-section .seventh-title p {
-    font-size: 12px;
-  }
-
 
   .seventh-section .body-container .seventh-grid {
-    margin: 10px 60px 10px 10px;
-    padding: 10px 60px 10px 80px;
-    width: 60%;
+    margin: 10px 75px 10px 45px;
+    padding: 10px 70px 10px 60px;
+    width: 50%;
     position: relative;
     left: 0px;
   }
 
   .seventh-section .body-container .seventh-grid h2 {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .seventh-section .body-container .seventh-grid p {
-    font-size: 6px;
+    font-size: 13px;
   }
 
   .seventh-section .body-container .seventh-grid .seventh-grid1 {
-    margin: 2px 2px 100px 15px;
-    padding: 15px 15px 75px 10px;
-    width: 85px;
-    height: 130px;
-  }
-
-  .base .signature {
-    position: relative;
+    margin: 2px 2px 100px 13px;
+    padding: 35px 25px 75px 25px;
+    width: 160px;
+    height: 315px;
   }
 
   .seventh-section .body-container .seventh-grid .seventh-grid2 {
-    margin: 2px 2px 100px 15px;
-    padding: 15px 15px 75px 10px;
-    width: 85px;
-    height: 130px;
+    margin: 2px 2px 100px 13px;
+    padding: 35px 25px 75px 25px;
+    width: 160px;
+    height: 315px;
   }
 
   .seventh-section .body-container .seventh-grid .seventh-grid3 {
-    margin: 2px 2px 100px 15px;
-    padding: 15px 10px 75px 10px;
-    width: 85px;
-    height: 130px;
+    margin: 2px 2px 100px 13px;
+    padding: 35px 25px 75px 25px;
+    width: 160px;
+    height: 315px;
   }
 
   .seventh-section .body-container .seventh-grid .Reward {
-    width: 60px;
+    width: 100px;
     height: auto;
   }
 
   .seventh-section .body-container .seventh-grid .MobileTop-Up {
-    width: 55px;
+    width: 100px;
     height: auto;
   }
 
   .seventh-section .body-container .seventh-grid .conv {
-    width: 60px;
+    width: 100px;
     height: auto;
+  }
+
+  .seventh-section .base {
+    display: none;
+  }
+
+  /* footer */
+
+  .footer {
+    padding: 10px 0px 10px 0px;
   }
 
   .footer .row {
@@ -2702,33 +2969,54 @@ p {
 
   .footer .logoQR .citypaylog {
     width: 30%;
+    position: relative;
+    left: 20px;
   }
 
   .footer .logoQR .QRcode {
     width: 30%;
   }
 
+  .footer .dwbuttons {
+    position: relative;
+    left: 20px;
+  }
+
+  .footer .dwbuttons .download-btn {
+    position: relative;
+    right: 12px;
+  }
 
   .footer .info .basic {
     position: relative;
-    left: 50px;
+    left: 90px;
+    width: 80%;
+    margin: 25px 0px 10px 0px;
   }
 
   .footer .info p {
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .footer .footer-links {
-    margin: 1px 50px 1px 1px;
-    padding: 1px 20px 1px 1px;
+    margin: 30px 5px 5px 5px;
+    padding: 10px 10px 1px 1px;
+    position: relative;
+    right: 15px;
+    width: 100%;
   }
 
   .footer .footer-links a {
-    font-size: x-small;
+    font-size: small;
   }
 
   .footer-links h4 {
-    font-size: medium;
+    font-size: 13px;
+  }
+
+  .footer-links .agent {
+    font-size: 9px;
+    margin: 1px;
   }
 
   .footer .logimg .download-btn {
@@ -2747,7 +3035,7 @@ p {
 
   .connect .soc {
     position: relative;
-    left: 3px;
+    left: 16px;
   }
 
   .connect .fb {
@@ -2768,31 +3056,930 @@ p {
   .footer .copyright p {
     font-size: smaller;
   }
-
 }
 
 @media (max-width:425px) and (min-width: 376px) {
-  .first-section {}
+  .navbar {
+    position: relative;
+    right: 10px;
+  }
 
+  .header .menu-toggle {
+    position: relative;
+    left: 5px;
+  }
+
+  .navbar .logo {
+    position: relative;
+    right: 15px;
+    top: 6px;
+  }
+
+  .body-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 88vh;
+  }
+
+  .body-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dwnld-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 25px;
+  }
+
+  /* First Section */
+  .first-section {
+    background-image: none;
+    margin: 0px 1px 50px 10px;
+  }
+
+  .first-section .dwnld-desc .description {
+    width: 280px;
+    margin: 2px 2px 2px 2px;
+    position: relative;
+    left: 10px;
+  }
+
+  .first-section .dwnld-desc .description h1 {
+    font-size: 27px;
+    padding-bottom: 10px;
+  }
+
+  .first-section .dwnld-desc .description p {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    position: relative;
+  }
+
+  .buttons .playstore .dow-btn {
+    width: 100px;
+    height: 38px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin: 5px 5px 5px 5px;
+    position: relative;
+    right: 30px;
+  }
+
+  .buttons .appstore .dow-btn {
+    width: 100px;
+    height: 38px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin: 5px 5px 5px 5px;
+    position: relative;
+    right: 30px;
+  }
+
+  .playstore, .appstore {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .playstore:hover, .appstore:hover {
+    transform: scale(1.1);
+  }
+
+
+  .dwnld-img .handmobile {
+    position: relative;
+    top: 365px;
+    left: 230px;
+    width: 310px;
+  }
+
+  /* Second Section */
   .second-section {
     grid-template-columns: 1fr;
+    padding: 1px 1px 0px 1px;
+    margin: 40px 1px 90px 30px;
+  }
+
+  .second-section .second-title h1 {
+    font-size: 27px;
+  }
+
+  .second-section .second-title p {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .second-section .second-body .second-img {
+    position: relative;
+    left: 65px;
+    bottom: 40px;
+  }
+
+  .second-section .body-container .second-body .second-img .remittance-img {
+    width: 230px;
+    height: 300px;
+  }
+
+  .second-section .second-body .second-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    position: relative;
+    right: 210px;
+    top: 340px;
+    height: 50%;
+    gap: 10px;
   }
 
   .second-grid1, .second-grid2, .second-grid3 {
     grid-template-columns: 1fr;
+    width: 230px;
+    height: 100px;
+    margin: 5px 40px 10px 1px;
+    padding: 20px 20px 30px 20px;
   }
 
+  .second-section .body-container .second-body .second-grid h2 {
+    font-size: 14px;
+  }
+
+  .second-section .body-container .second-body .second-grid p {
+    font-size: 10px;
+  }
+
+  .second-section .second-body .second-grid .remit-icon {
+    width: 60px;
+    height: auto;
+  }
+
+  .second-section .second-body .second-grid .withdraw-icon {
+    width: 60px;
+    height: auto;
+  }
+
+  .second-section .second-body .second-grid .Track-remittance {
+    width: 60px;
+    height: auto;
+  }
+
+  /* Third Section */
+  .third-section {
+    grid-template-columns: 1fr;
+    margin: 120px 0px 80px 0px;
+    height: 100vh;
+    padding: 0px;
+  }
+
+  .third-section .body-container .third-title h1 {
+    font-size: 27px;
+    text-align: center;
+  }
+
+  .third-section .third-title p {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .third-section .third-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    height: 50%;
+    gap: 10px;
+    position: relative;
+    right: 50px;
+    bottom: 200px;
+  }
+
+  .third-grid2, .third-grid3 {
+    grid-template-columns: 1fr;
+    width: 240px;
+    height: 80px;
+    margin: 5px 30px 10px 1px;
+    padding: 50px 20px 60px 30px;
+  }
+
+  .third-section .body-container .third-grid h2 {
+    font-size: 14px;
+  }
+
+  .third-section .body-container .third-grid p {
+    font-size: 10px;
+  }
+
+  .third-section .third-grid .third-grid2 .Fund-T {
+    width: 70px;
+    height: auto;
+  }
+
+  .third-section .third-grid .Send-R {
+    width: 70px;
+    height: auto;
+  }
+
+
+  .third-section .Extra-Grid .icon {
+    position: relative;
+    top: 620px;
+    left: 110px;
+    width: 100%;
+  }
+
+  .third-section .third-grid .Extra-Grid .icon .Family-Friends {
+    width: 260px;
+  }
+
+  /* Fourth Section */
+  .fourth-section {
+    grid-template-columns: 1fr;
+    height: 80vh;
+    padding: 15px 0px 15px 0px;
+    margin: 100px 0px 50px 0px;
+  }
+
+  .fourth-section .body-container .fourth-title h1 {
+    font-size: 27px;
+  }
+
+  .fourth-section .body-container .fourth-title p {
+    font-size: 15px;
+  }
+
+  .fourth-section .body-container .Pic-Grid {
+    width: 280px;
+    position: relative;
+    bottom: 40px;
+    right: 0px;
+  }
+
+  .fourth-section .body-container .Pic-Grid .bank {
+    position: relative;
+    bottom: 160px;
+    left: 50px;
+  }
+
+  .fourth-section .fourth-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    top: 35px;
+    right: 55px;
+    gap: 10px;
+    margin: 1px 10px 1px 50px;
+  }
+
+  .fourth-section .fourth-grid .fourth-grid2 .BT {
+    width: 70px;
+    height: auto;
+  }
+
+  .fourth-section .fourth-grid .LB {
+    width: 70px;
+    height: auto;
+  }
+
+  .fourth-grid1, .fourth-grid2, .fourth-grid3 {
+    grid-template-columns: 1fr;
+    width: 200px;
+    height: 100px;
+    margin: 5px 30px 10px 1px;
+    padding: 25px 25px 25px 25px;
+    border-radius: 25px;
+  }
+
+  .fourth-section .body-container .fourth-grid h2 {
+    font-size: 14px;
+  }
+
+  .fourth-section .body-container .fourth-grid p {
+    font-size: 10px;
+  }
+
+  /* Fifth Section */
+  .fifth-section {
+    grid-template-columns: 1fr;
+    margin: 20px 1px 100px 1px;
+  }
+
+  .fifth-section .body-container .fifth-title h1 {
+    font-size: 27px;
+  }
+
+  .fifth-section .body-container .fifth-title p {
+    font-size: 15px;
+  }
+
+  .fifth-section .fifth-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    position: relative;
+    right: 25px;
+  }
+
+  .fifth-section .body-container .fifth-grid h2 {
+    font-size: 14px;
+  }
+
+  .fifth-section .body-container .fifth-grid p {
+    font-size: 10px;
+  }
+
+  .fifth-section .fifth-grid .fifth-grid2 .CityPay-QR {
+    width: 70px;
+    height: auto;
+  }
+
+  .fifth-section .fifth-grid .fifth-grid3 .NepalPay-SmartQR {
+    width: 70px;
+    height: auto;
+  }
+
+  .fifth-grid2, .fifth-grid3 {
+    grid-template-columns: 1fr;
+    width: 165px;
+    height: 135px;
+    margin: 30px 30px 10px 1px;
+    border-radius: 20px;
+  }
+
+  .fifth-section .body-container .Pic-Grid {
+    position: relative;
+    right: 15px;
+    top: 25px;
+    width: 70%;
+  }
+
+  .fifth-section .body-container .Pic-Grid .ScanQR {
+    position: relative;
+    margin: 0;
+    width: 260px;
+  }
+
+  /* Sixth Section */
+  .sixth-section {
+    grid-template-columns: 1fr;
+    margin: 100px 1px 120px 1px;
+    padding: 5px 1px 120px 1px;
+    height: 100vh;
+  }
+
+
+  .sixth-section .body-container .sixth-title {
+    margin: 5px 5px 5px 25px;
+  }
+
+  .sixth-section .body-container .sixth-title h1 {
+    font-size: 27px;
+  }
+
+  .sixth-section .body-container .sixth-title p {
+    font-size: 15px;
+  }
+
+  .sixth-section .body-container .sixth-body {
+    grid-template-columns: 1fr;
+  }
+
+  .sixth-section .sixth-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    position: relative;
+    top: 310px;
+    right: 180px;
+    gap: 10px;
+    height: 50%;
+  }
+
+  .sixth-section .sixth-body .sixth-img {
+    height: 180px;
+    position: relative;
+    left: 55px;
+  }
+
+  .sixth-section .sixth-body .sixth-img .Utility {
+    margin: 0;
+    width: 240px;
+    height: 240px;
+    position: relative;
+    bottom: 20px;
+  }
+
+  .sixth-section .body-container .sixth-grid h2 {
+    font-size: 14px;
+  }
+
+  .sixth-section .body-container .sixth-grid p {
+    font-size: 10px;
+  }
+
+  .sixth-section .sixth-grid .sixth-grid1 .Mobile {
+    width: 70px;
+    height: auto;
+  }
+
+  .sixth-section .sixth-grid .sixth-grid2 .Domestic {
+    width: 70px;
+    height: auto;
+  }
+
+  .sixth-section .sixth-grid .sixth-grid3 .gov {
+    width: 70px;
+    height: auto;
+  }
+
+  .sixth-grid1, .sixth-grid2, .sixth-grid3 {
+    grid-template-columns: 1fr;
+    width: 160px;
+    height: 215px;
+    margin: 0px 30px 10px 1px;
+    padding: 20px 20px 20px 20px;
+  }
+
+  /* Seventh Section */
+  .seventh-section {
+    grid-template-columns: 1fr;
+    margin: 120px 1px 180px 1px;
+    padding: 120px 1px 200px 1px;
+  }
+
+  .seventh-section .body-container .seventh-title {
+    margin: 15px 15px 15px 25px;
+  }
+
+  .seventh-section .body-container .seventh-title h1 {
+    font-size: 27px;
+  }
+
+  .seventh-section .body-container .seventh-title p {
+    font-size: 15px;
+  }
+
+  .seventh-section .body-container .seventh-body {
+    grid-template-columns: 1fr;
+  }
+
+  .seventh-section .body-container .seventh-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    position: relative;
+    top: 0px;
+  }
+
+  .seventh-section .seventh-grid .seventh-grid1 .Reward {
+    width: 70px;
+    height: auto;
+  }
+
+  .seventh-section .seventh-grid .seventh-grid2 .MobileTop-Up {
+    width: 70px;
+    height: auto;
+  }
+
+  .seventh-section .seventh-grid .seventh-grid3 .conv {
+    width: 70px;
+    height: auto;
+  }
+
+  .seventh-grid1, .seventh-grid2, .seventh-grid3 {
+    grid-template-columns: 1fr;
+    width: 160px;
+    height: 270px;
+    margin: 30px 110px 10px 1px;
+    padding: 20px 20px 20px 20px;
+    position: relative;
+  }
+
+  .seventh-section .body-container .seventh-grid h2 {
+    font-size: 14px;
+  }
+
+  .seventh-section .body-container .seventh-grid p {
+    font-size: 10px;
+  }
+
+  .seventh-section .body-container .base {
+    display: none;
+  }
+
+
+  /* Footer */
+
+  .footer {
+    width: 100%;
+    margin: 100px 0px 0px 0px;
+    padding: 10px 0px 20px 15px;
+    box-shadow: 10px -17px 265px rgba(180, 226, 255, 0.8);
+  }
+
+  .footer .foot .row {
+    position: relative;
+    right: 0px;
+    width: 70%;
+  }
+
+  .footer .foot .row .logoQR {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .footer .foot .logoQR {
+    margin: auto;
+    position: relative;
+  }
+
+  .logoQR .dwbuttons h3 {
+    font-size: 9px;
+    width: 120%;
+  }
+
+  .footer .foot .logoQR .citypaylog {
+    width: 55%;
+    padding: 0;
+    position: relative;
+    bottom: 40px;
+    right: 18px;
+  }
+
+  .footer .foot .logoQR .QRcode {
+    width: 55%;
+    padding: 0;
+    position: relative;
+    bottom: 45px;
+    right: 18px;
+  }
+
+  .logoQR .dwbuttons {
+    width: 100%;
+    position: relative;
+    right: 40px;
+    bottom: 40px;
+  }
+
+  .logoQR .dwbuttons .logimg {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logimg .playstore .download-btn {
+    width: 52px;
+    height: 18px;
+    margin: 7px 2px 2px 8px;
+    position: relative;
+  }
+
+  .logimg .appstore .download-btn {
+    width: 52px;
+    height: 18px;
+    margin: 7px 2px 2px 8px;
+    position: relative;
+  }
+
+  .footer .info {
+    display: grid;
+    margin: auto;
+    width: 100%;
+    position: relative;
+    right: 45px;
+  }
+
+  .footer .info .basic {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 90px;
+    bottom: 0px;
+    width: 50%;
+    margin: 65px 2px 2px 2px;
+    padding: 2px 2px 2px 2px;
+  }
+
+  .footer .info .basic>div {
+    flex: 1;
+  }
+
+  .footer .info .basic p {
+    margin: 0;
+    padding: 8px 8px 5px 1px;
+    font-size: 9px;
+  }
+
+  .footer .info .basic .Email {
+    width: 150px;
+  }
+
+  .footer .info .basic .Email p {
+    position: relative;
+    left: 15px;
+  }
+
+  .footer .info .basic .Tel {
+    width: 210px;
+  }
+
+  .footer .info .basic .Tel p {
+    position: relative;
+    left: 15px;
+  }
+
+  .footer .info .basic .ext p {
+    position: relative;
+    left: 15px;
+  }
+
+  .footer .info .basic .tol {
+    width: 130px;
+  }
+
+  .footer .info .basic .tol p {
+    position: relative;
+    left: 15px;
+  }
+
+  .footer .info .basic .Call {
+    width: 150px;
+  }
+
+  .footer .info .basic .Call p {
+    position: relative;
+    left: 15px;
+  }
+
+  .footer .info .connect {
+    left: 125px;
+    padding: 5px;
+    margin: 5px;
+    width: 70px;
+    position: relative;
+    bottom: 70px;
+  }
+
+  .footer .info .connect p {
+    font-size: 9px;
+    width: 120%;
+  }
+
+  .connect .soc {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 6px;
+    width: 80%;
+  }
+
+  .connect .fb {
+    width: 70px;
+    height: auto;
+  }
+
+  .connect .ytb {
+    width: 60px;
+    height: auto;
+  }
+
+  .connect .lkdn {
+    width: 60px;
+    height: auto;
+  }
+
+  .footer .foot .footer-links {
+    margin: auto;
+    position: relative;
+    left: 15px;
+    bottom: 10px;
+    width: 100%;
+  }
+
+  .footer .footer-links li {
+    margin: 0;
+    padding: 1px;
+  }
+
+  .footer .footer-links a {
+    font-size: 8px;
+    margin: 0;
+    padding: 5px;
+  }
+
+  .footer-links h4 {
+    font-size: 9px;
+    margin: 0;
+    padding: 0px;
+  }
+
+  .footer-links .agent {
+    font-size: 7px;
+    padding: 5px;
+    margin-top: 7px;
+    border-radius: 5px;
+    width: 75%;
+    position: relative;
+    right: 5px;
+  }
+
+  .footer .copyright {
+    position: relative;
+    bottom: 5px;
+    left: 70px;
+    width: 65%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer .copyright p {
+    font-size: 8px;
+  }
+
+  .soc svg:hover {
+    transform: none;
+    /* Remove the hover effect on mobile devices */
+  }
+
+}
+
+@media (max-width:375px) and (min-width: 321px) {
+  .navbar {
+    position: relative;
+    right: 10px;
+  }
+
+  .header .menu-toggle {
+    position: relative;
+    left: 5px;
+  }
+
+  .navbar .logo {
+    position: relative;
+    right: 10px;
+    top: 6px;
+  }
+
+  .body-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 88vh;
+  }
+
+  .body-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dwnld-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 25px;
+  }
+
+  /* First Section */
+  .first-section {
+    background-image: none;
+  }
+
+  .first-section .dwnld-desc .description {
+    width: 260px;
+    margin: 2px 2px 2px 2px;
+    position: relative;
+    left: 20px;
+  }
+
+  .first-section .dwnld-desc .description h1 {
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
+
+  .first-section .dwnld-desc .description p {
+    font-size: 13px;
+    width: 100%;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    position: relative;
+  }
+
+  .buttons .playstore .dow-btn {
+    width: 95px;
+    height: 38px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin: 5px 5px 5px 5px;
+    position: relative;
+    right: 25px;
+  }
+
+  .buttons .appstore .dow-btn {
+    width: 95px;
+    height: 38px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin: 5px 5px 5px 5px;
+    position: relative;
+    right: 25px;
+  }
+
+  .playstore, .appstore {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .playstore:hover, .appstore:hover {
+    transform: scale(1.1);
+  }
+
+  .dwnld-img .handmobile {
+    position: relative;
+    top: 300px;
+    left: 230px;
+    width: 280px;
+  }
+
+  /* Second Section */
+  .second-section {
+    grid-template-columns: 1fr;
+    padding: 1px 1px 0px 1px;
+    margin: 30px 1px 40px 30px;
+  }
+
+  .second-section .second-title h1 {
+    font-size: 25px;
+  }
+
+  .second-section .second-title p {
+    font-size: 13px;
+    width: 100%;
+  }
 
   .second-section .second-body .second-img {
-    width: 100px;
-    height: 200px;
+    position: relative;
+    left: 45px;
+    bottom: 40px;
   }
 
-  .second-section .second-body .second-img .remittance-img {
-    height: 200px;
-    width: 145px;
+  .second-section .body-container .second-body .second-img .remittance-img {
+    width: 200px;
+    height: 285px;
+  }
+
+  .second-section .second-body .second-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
     position: relative;
-    top: 50px;
+    right: 195px;
+    top: 320px;
+    height: 50%;
+    gap: 10px;
+  }
+
+  .second-grid1, .second-grid2, .second-grid3 {
+    grid-template-columns: 1fr;
+    width: 210px;
+    height: 90px;
+    margin: 5px 40px 10px 1px;
+    padding: 10px 20px 30px 20px;
   }
 
   .second-section .body-container .second-body .second-grid h2 {
@@ -2813,81 +4000,1329 @@ p {
     height: auto;
   }
 
-  .second-section .second-body .second-grid .track-remittance {
+  .second-section .second-body .second-grid .Track-remittance {
     width: 60px;
     height: auto;
   }
 
+  /* Third Section */
   .third-section {
     grid-template-columns: 1fr;
+    margin: 70px 0px 50px 0px;
+    height: 100vh;
+    padding: 0px;
   }
 
+  .third-section .body-container .third-title h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .third-section .third-title p {
+    font-size: 13px;
+    width: 100%;
+  }
+
+  .third-section .third-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    height: 50%;
+    gap: 10px;
+    position: relative;
+    right: 35px;
+    bottom: 150px;
+  }
+
+  .third-grid2, .third-grid3 {
+    grid-template-columns: 1fr;
+    width: 190px;
+    height: 80px;
+    margin: 5px 30px 10px 1px;
+    padding: 30px 30px 45px 30px;
+  }
+
+  .third-section .body-container .third-grid h2 {
+    font-size: 12px;
+  }
+
+  .third-section .body-container .third-grid p {
+    font-size: 8px;
+  }
+
+  .third-section .third-grid .third-grid2 .Fund-T {
+    width: 60px;
+    height: auto;
+  }
+
+  .third-section .third-grid .Send-R {
+    width: 60px;
+    height: auto;
+  }
+
+
+  .third-section .Extra-Grid .icon {
+    position: relative;
+    top: 620px;
+    left: 80px;
+    width: 100%;
+  }
+
+  .third-section .third-grid .Extra-Grid .icon .Family-Friends {
+    width: 220px;
+  }
+
+  /* Fourth Section */
   .fourth-section {
+    grid-template-columns: 1fr;
+    height: 80vh;
+    padding: 15px 0px 15px 0px;
+    margin: 80px 0px 10px 0px;
+  }
+
+  .fourth-section .body-container .fourth-title h1 {
+    font-size: 25px;
+  }
+
+  .fourth-section .body-container .fourth-title p {
+    font-size: 13px;
+  }
+
+  .fourth-section .body-container .Pic-Grid {
+    width: 280px;
+    position: relative;
+    bottom: 40px;
+    right: 0px;
+  }
+
+  .fourth-section .body-container .Pic-Grid .bank {
+    position: relative;
+    bottom: 180px;
+    left: 40px;
+  }
+
+  .fourth-section .fourth-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    top: 10px;
+    right: 55px;
+    gap: 10px;
+    margin: 1px 10px 1px 50px;
+  }
+
+  .fourth-section .fourth-grid .fourth-grid2 .BT {
+    width: 60px;
+    height: auto;
+  }
+
+  .fourth-section .fourth-grid .LB {
+    width: 60px;
+    height: auto;
+  }
+
+  .fourth-grid1, .fourth-grid2, .fourth-grid3 {
+    grid-template-columns: 1fr;
+    width: 170px;
+    height: 80px;
+    margin: 5px 30px 10px 1px;
+    padding: 25px 25px 25px 25px;
+    border-radius: 25px;
+  }
+
+  .fourth-section .body-container .fourth-grid h2 {
+    font-size: 12px;
+  }
+
+  .fourth-section .body-container .fourth-grid p {
+    font-size: 8px;
+  }
+
+  /* Fifth Section */
+  .fifth-section {
+    grid-template-columns: 1fr;
+    margin: 10px 1px 50px 1px;
+  }
+
+  .fifth-section .body-container .fifth-title h1 {
+    font-size: 25px;
+  }
+
+  .fifth-section .body-container .fifth-title p {
+    font-size: 13px;
+  }
+
+  .fifth-section .fifth-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    position: relative;
+    right: 15px;
+  }
+
+  .fifth-section .body-container .fifth-grid h2 {
+    font-size: 12px;
+  }
+
+  .fifth-section .body-container .fifth-grid p {
+    font-size: 8px;
+  }
+
+  .fifth-section .fifth-grid .fifth-grid2 .CityPay-QR {
+    width: 60px;
+    height: auto;
+  }
+
+  .fifth-section .fifth-grid .fifth-grid3 .NepalPay-SmartQR {
+    width: 60px;
+    height: auto;
+  }
+
+  .fifth-grid2, .fifth-grid3 {
+    grid-template-columns: 1fr;
+    width: 135px;
+    height: 110px;
+    margin: 30px 30px 10px 1px;
+    border-radius: 20px;
+  }
+
+  .fifth-section .body-container .Pic-Grid {
+    position: relative;
+    right: 20px;
+    top: 25px;
+    width: 70%;
+  }
+
+  .fifth-section .body-container .Pic-Grid .ScanQR {
+    position: relative;
+    margin: 0;
+    width: 240px;
+  }
+
+  /* Sixth Section */
+  .sixth-section {
+    grid-template-columns: 1fr;
+    margin: 70px 1px 70px 1px;
+    height: 100vh;
+  }
+
+
+  .sixth-section .body-container .sixth-title {
+    margin: 5px 5px 5px 25px;
+  }
+
+  .sixth-section .body-container .sixth-title h1 {
+    font-size: 25px;
+  }
+
+  .sixth-section .body-container .sixth-title p {
+    font-size: 13px;
+  }
+
+  .sixth-section .body-container .sixth-body {
     grid-template-columns: 1fr;
   }
 
+  .sixth-section .sixth-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    position: relative;
+    top: 270px;
+    right: 165px;
+    gap: 10px;
+    height: 50%;
+  }
+
+  .sixth-section .sixth-body .sixth-img {
+    height: 180px;
+    position: relative;
+    left: 55px;
+  }
+
+  .sixth-section .sixth-body .sixth-img .Utility {
+    margin: 0;
+    width: 210px;
+    height: 210px;
+    position: relative;
+    bottom: 20px;
+  }
+
+  .sixth-section .body-container .sixth-grid h2 {
+    font-size: 12px;
+  }
+
+  .sixth-section .body-container .sixth-grid p {
+    font-size: 8px;
+  }
+
+  .sixth-section .sixth-grid .sixth-grid1 .Mobile {
+    width: 60px;
+    height: auto;
+  }
+
+  .sixth-section .sixth-grid .sixth-grid2 .Domestic {
+    width: 60px;
+    height: auto;
+  }
+
+  .sixth-section .sixth-grid .sixth-grid3 .gov {
+    width: 60px;
+    height: auto;
+  }
+
+  .sixth-grid1, .sixth-grid2, .sixth-grid3 {
+    grid-template-columns: 1fr;
+    width: 140px;
+    height: 155px;
+    margin: 0px 30px 10px 1px;
+    padding: 20px 20px 20px 20px;
+  }
+
+  /* Seventh Section */
+  .seventh-section {
+    grid-template-columns: 1fr;
+    margin: 170px 1px 100px 1px;
+    padding: 10px 1px 50px 1px;
+  }
+
+  .seventh-section .body-container .seventh-title {
+    margin: 15px 15px 15px 25px;
+  }
+
+  .seventh-section .body-container .seventh-title h1 {
+    font-size: 25px;
+  }
+
+  .seventh-section .body-container .seventh-title p {
+    font-size: 13px;
+  }
+
+  .seventh-section .body-container .seventh-body {
+    grid-template-columns: 1fr;
+  }
+
+  .seventh-section .body-container .seventh-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    position: relative;
+    top: 0px;
+  }
+
+  .seventh-section .seventh-grid .seventh-grid1 .Reward {
+    width: 60px;
+    height: auto;
+  }
+
+  .seventh-section .seventh-grid .seventh-grid2 .MobileTop-Up {
+    width: 60px;
+    height: auto;
+  }
+
+  .seventh-section .seventh-grid .seventh-grid3 .conv {
+    width: 60px;
+    height: auto;
+  }
+
+  .seventh-grid1, .seventh-grid2, .seventh-grid3 {
+    grid-template-columns: 1fr;
+    width: 140px;
+    height: 195px;
+    margin: 30px 110px 10px 1px;
+    padding: 20px 20px 20px 20px;
+    position: relative;
+  }
+
+  .seventh-section .body-container .seventh-grid h2 {
+    font-size: 12px;
+  }
+
+  .seventh-section .body-container .seventh-grid p {
+    font-size: 8px;
+  }
+
+  .seventh-section .body-container .base {
+    display: none;
+  }
+
+
+  /* Footer */
+
+  .footer {
+    width: 100%;
+    margin: 80px 0px 0px 0px;
+    padding: 0px 0px 0px 15px;
+    box-shadow: 10px -17px 265px rgba(180, 226, 255, 0.8);
+  }
+
+  .footer .foot .row {
+    position: relative;
+    right: 0px;
+    width: 70%;
+  }
+
+  .footer .foot .row .logoQR {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .footer .foot .logoQR {
+    margin: auto;
+    position: relative;
+  }
+
+  .logoQR .dwbuttons h3 {
+    font-size: 9px;
+    width: 120%;
+  }
+
+  .footer .foot .logoQR .citypaylog {
+    width: 55%;
+    padding: 0;
+    position: relative;
+    bottom: 40px;
+    right: 18px;
+  }
+
+  .footer .foot .logoQR .QRcode {
+    width: 55%;
+    padding: 0;
+    position: relative;
+    bottom: 45px;
+    right: 18px;
+  }
+
+  .logoQR .dwbuttons {
+    width: 100%;
+    position: relative;
+    right: 40px;
+    bottom: 40px;
+  }
+
+  .logoQR .dwbuttons .logimg {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logimg .playstore .download-btn {
+    width: 52px;
+    height: 18px;
+    margin: 7px 2px 2px 8px;
+    position: relative;
+  }
+
+  .logimg .appstore .download-btn {
+    width: 52px;
+    height: 18px;
+    margin: 7px 2px 2px 8px;
+    position: relative;
+  }
+
+  .footer .info {
+    display: grid;
+    margin: auto;
+    width: 100%;
+    position: relative;
+    right: 57px;
+  }
+
+  .footer .info .basic {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 70px;
+    bottom: 0px;
+    width: 50%;
+    margin: 65px 2px 2px 2px;
+    padding: 2px 2px 2px 2px;
+  }
+
+  .footer .info .basic>div {
+    flex: 1;
+  }
+
+  .footer .info .basic p {
+    margin: 0;
+    padding: 8px 8px 5px 1px;
+    font-size: 9px;
+  }
+
+  .footer .info .basic .Email {
+    width: 150px;
+  }
+
+  .footer .info .basic .Email p {
+    position: relative;
+    left: 15px;
+  }
+
+  .footer .info .basic .Tel {
+    width: 210px;
+  }
+
+  .footer .info .basic .Tel p {
+    position: relative;
+    left: 15px;
+  }
+
+  .footer .info .basic .ext p {
+    position: relative;
+    left: 15px;
+  }
+
+  .footer .info .basic .tol {
+    width: 130px;
+  }
+
+  .footer .info .basic .tol p {
+    position: relative;
+    left: 15px;
+  }
+
+  .footer .info .basic .Call {
+    width: 150px;
+  }
+
+  .footer .info .basic .Call p {
+    position: relative;
+    left: 15px;
+  }
+
+  .footer .info .connect {
+    left: 105px;
+    padding: 5px;
+    margin: 5px;
+    width: 70px;
+    position: relative;
+    bottom: 70px;
+  }
+
+  .footer .info .connect p {
+    font-size: 9px;
+    width: 120%;
+  }
+
+  .connect .soc {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 6px;
+    width: 80%;
+  }
+
+  .connect .fb {
+    width: 70px;
+    height: auto;
+  }
+
+  .connect .ytb {
+    width: 60px;
+    height: auto;
+  }
+
+  .connect .lkdn {
+    width: 60px;
+    height: auto;
+  }
+
+  .footer .foot .footer-links {
+    margin: auto;
+    position: relative;
+    right: 25px;
+    bottom: 30px;
+    width: 100%;
+  }
+
+  .footer .footer-links li {
+    margin: 0;
+    padding: 1px;
+  }
+
+  .footer .footer-links a {
+    font-size: 8px;
+    margin: 0;
+    padding: 5px;
+  }
+
+  .footer-links h4 {
+    font-size: 9px;
+    margin: 0;
+    padding: 0px;
+  }
+
+  .footer-links .agent {
+    font-size: 7px;
+    padding: 5px;
+    margin-top: 7px;
+    border-radius: 5px;
+    width: 75%;
+    position: relative;
+    right: 5px;
+  }
+
+  .footer .copyright {
+    position: relative;
+    bottom: 5px;
+    left: 70px;
+    width: 65%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer .copyright p {
+    font-size: 8px;
+  }
+
+  .soc svg:hover {
+    transform: none;
+    /* Remove the hover effect on mobile devices */
+  }
+
+}
+
+@media (max-width:320px) and (min-width: 280px) {
+  .navbar {
+    position: relative;
+    right: 10px;
+  }
+
+  .header .menu-toggle {
+    position: relative;
+    left: 5px;
+  }
+
+  .navbar .logo {
+    position: relative;
+    right: 10px;
+    top: 6px;
+  }
+
+  .body-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 88vh;
+  }
+
+  .body-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dwnld-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 25px;
+  }
+
+  /* First Section */
+  .first-section {
+    background-image: none;
+  }
+
+  .first-section .dwnld-desc .description {
+    width: 220px;
+  }
+
+  .first-section .dwnld-desc .description h1 {
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
+
+  .first-section .dwnld-desc .description p {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    position: relative;
+  }
+
+  .buttons .playstore .dow-btn {
+    width: 95px;
+    height: 35px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin: 5px 5px 5px 5px;
+    position: relative;
+    right: 35px;
+  }
+
+  .buttons .appstore .dow-btn {
+    width: 95px;
+    height: 35px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin: 5px 5px 5px 5px;
+    position: relative;
+    right: 35px;
+  }
+
+  .playstore, .appstore {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .playstore:hover, .appstore:hover {
+    transform: scale(1.1);
+  }
+
+  .dwnld-img .handmobile {
+    position: relative;
+    top: 290px;
+    left: 225px;
+    width: 250px;
+  }
+
+  /* Second Section */
+  .second-section {
+    grid-template-columns: 1fr;
+    padding: 1px 1px 0px 1px;
+  }
+
+  .second-section .second-title h1 {
+    font-size: 23px;
+  }
+
+  .second-section .second-title p {
+    font-size: 11px;
+    width: 100%;
+  }
+
+  .second-section .second-body .second-img {
+    position: relative;
+    left: 45px;
+    bottom: 40px;
+  }
+
+  .second-section .body-container .second-body .second-img .remittance-img {
+    width: 170px;
+    height: 225px;
+  }
+
+  .second-section .second-body .second-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    position: relative;
+    right: 160px;
+    top: 270px;
+    height: 50%;
+    gap: 10px;
+  }
+
+  .second-grid1, .second-grid2, .second-grid3 {
+    grid-template-columns: 1fr;
+    width: 160px;
+    height: 80px;
+    margin: 5px 40px 10px 1px;
+    padding: 10px 20px 20px 20px;
+  }
+
+  .second-section .body-container .second-body .second-grid h2 {
+    font-size: 10px;
+  }
+
+  .second-section .body-container .second-body .second-grid p {
+    font-size: 6px;
+  }
+
+  .second-section .second-body .second-grid .remit-icon {
+    width: 50px;
+    height: auto;
+  }
+
+  .second-section .second-body .second-grid .withdraw-icon {
+    width: 50px;
+    height: auto;
+  }
+
+  .second-section .second-body .second-grid .Track-remittance {
+    width: 50px;
+    height: auto;
+  }
+
+  /* Third Section */
+  .third-section {
+    grid-template-columns: 1fr;
+    margin: 30px;
+    height: 100vh;
+    padding: 0px;
+  }
+
+  .third-section .body-container .third-title h1 {
+    font-size: 23px;
+    text-align: center;
+  }
+
+  .third-section .third-title p {
+    font-size: 11px;
+    width: 100%;
+  }
+
+  .third-section .third-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    height: 50%;
+    gap: 10px;
+    position: relative;
+    right: 40px;
+    bottom: 220px;
+  }
+
+  .third-grid1, .third-grid2, .third-grid3 {
+    grid-template-columns: 1fr;
+    width: 170px;
+    height: 80px;
+    margin: 5px 30px 10px 1px;
+  }
+
+  .third-section .body-container .third-grid h2 {
+    font-size: 10px;
+  }
+
+  .third-section .body-container .third-grid p {
+    font-size: 6px;
+  }
+
+  .third-section .third-grid .third-grid2 .Fund-T {
+    width: 60px;
+    height: auto;
+  }
+
+  .third-section .third-grid .Send-R {
+    width: 60px;
+    height: auto;
+  }
+
+
+  .third-section .Extra-Grid .icon {
+    position: relative;
+    top: 620px;
+    left: 80px;
+    width: 100%;
+  }
+
+  .third-section .third-grid .Extra-Grid .icon .Family-Friends {
+    width: 220px;
+  }
+
+  /* Fourth Section */
+  .fourth-section {
+    grid-template-columns: 1fr;
+    height: 80vh;
+    padding: 1px;
+  }
+
+  .fourth-section .body-container .fourth-title h1 {
+    font-size: 23px;
+  }
+
+  .fourth-section .body-container .fourth-title p {
+    font-size: 11px;
+  }
+
+  .fourth-section .body-container .Pic-Grid {
+    width: 220px;
+    position: relative;
+    bottom: 40px;
+    right: 0px;
+  }
+
+  .fourth-section .body-container .Pic-Grid .bank {
+    position: relative;
+    bottom: 180px;
+    left: 35px;
+  }
+
+  .fourth-section .fourth-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    top: 10px;
+    right: 43px;
+    gap: 10px;
+    margin: 1px 10px 1px 50px;
+  }
+
+  .fourth-section .fourth-grid .fourth-grid2 .BT {
+    width: 60px;
+    height: auto;
+  }
+
+  .fourth-section .fourth-grid .LB {
+    width: 60px;
+    height: auto;
+  }
+
+  .fourth-grid1, .fourth-grid2, .fourth-grid3 {
+    grid-template-columns: 1fr;
+    width: 130px;
+    height: 60px;
+    margin: 5px 30px 10px 1px;
+    border-radius: 25px;
+  }
+
+  .fourth-section .body-container .fourth-grid h2 {
+    font-size: 10px;
+  }
+
+  .fourth-section .body-container .fourth-grid p {
+    font-size: 6px;
+  }
+
+  /* Fifth Section */
   .fifth-section {
     grid-template-columns: 1fr;
   }
 
+  .fifth-section .body-container .fifth-title h1 {
+    font-size: 23px;
+  }
+
+  .fifth-section .body-container .fifth-title p {
+    font-size: 11px;
+  }
+
+  .fifth-section .fifth-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    position: relative;
+    right: 20px;
+  }
+
+  .fifth-section .body-container .fifth-grid h2 {
+    font-size: 10px;
+  }
+
+  .fifth-section .body-container .fifth-grid p {
+    font-size: 6px;
+  }
+
+  .fifth-section .fifth-grid .fifth-grid2 .CityPay-QR {
+    width: 50px;
+    height: auto;
+  }
+
+  .fifth-section .fifth-grid .fifth-grid3 .NepalPay-SmartQR {
+    width: 50px;
+    height: auto;
+  }
+
+  .fifth-grid2, .fifth-grid3 {
+    grid-template-columns: 1fr;
+    width: 120px;
+    height: 95px;
+    margin: 30px 30px 10px 1px;
+    border-radius: 20px;
+  }
+
+  .fifth-section .body-container .Pic-Grid {
+    position: relative;
+    right: 20px;
+    top: 25px;
+    width: 70%;
+  }
+
+  .fifth-section .body-container .Pic-Grid .ScanQR {
+    position: relative;
+    margin: 0;
+    width: 220px;
+  }
+
+  /* Sixth Section */
   .sixth-section {
     grid-template-columns: 1fr;
+    margin: 30px 1px 10px 1px;
+    height: 100vh;
   }
 
-  .seventh-section {
+  .sixth-section .body-container .sixth-title h1 {
+    font-size: 23px;
+  }
+
+  .sixth-section .body-container .sixth-title p {
+    font-size: 11px;
+  }
+
+  .sixth-section .body-container .sixth-body {
     grid-template-columns: 1fr;
   }
 
-  .footer {}
+  .sixth-section .sixth-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    position: relative;
+    top: 250px;
+    right: 140px;
+    gap: 10px;
+    height: 50%;
+  }
+
+  .sixth-section .sixth-body .sixth-img {
+    height: 180px;
+    position: relative;
+    left: 40px;
+  }
+
+  .sixth-section .sixth-body .sixth-img .Utility {
+    margin: 0;
+    width: 180px;
+    height: 180px;
+    position: relative;
+    bottom: 20px;
+  }
+
+  .sixth-section .body-container .sixth-grid h2 {
+    font-size: 10px;
+  }
+
+  .sixth-section .body-container .sixth-grid p {
+    font-size: 6px;
+  }
+
+  .sixth-section .sixth-grid .sixth-grid1 .Mobile {
+    width: 50px;
+    height: auto;
+  }
+
+  .sixth-section .sixth-grid .sixth-grid2 .Domestic {
+    width: 50px;
+    height: auto;
+  }
+
+  .sixth-section .sixth-grid .sixth-grid3 .gov {
+    width: 50px;
+    height: auto;
+  }
+
+  .sixth-grid1, .sixth-grid2, .sixth-grid3 {
+    grid-template-columns: 1fr;
+    width: 100px;
+    height: 135px;
+    margin: 0px 30px 10px 1px;
+  }
+
+  /* Seventh Section */
+  .seventh-section {
+    grid-template-columns: 1fr;
+    margin: 150px 1px 70px 1px;
+    padding: 10px 1px 50px 1px;
+  }
+
+  .seventh-section .body-container .seventh-title h1 {
+    font-size: 23px;
+  }
+
+  .seventh-section .body-container .seventh-title p {
+    font-size: 11px;
+  }
+
+  .seventh-section .body-container .seventh-body {
+    grid-template-columns: 1fr;
+  }
+
+  .seventh-section .body-container .seventh-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    position: relative;
+    top: 0px;
+    right: 185px;
+  }
+
+  .seventh-section .seventh-grid .seventh-grid1 .Reward {
+    width: 60px;
+    height: auto;
+  }
+
+  .seventh-section .seventh-grid .seventh-grid2 .MobileTop-Up {
+    width: 60px;
+    height: auto;
+  }
+
+  .seventh-section .seventh-grid .seventh-grid3 .conv {
+    width: 60px;
+    height: auto;
+  }
+
+  .seventh-grid1, .seventh-grid2, .seventh-grid3 {
+    grid-template-columns: 1fr;
+    width: 100px;
+    height: 190px;
+    margin: 30px 110px 10px 1px;
+  }
+
+  .seventh-section .body-container .seventh-grid h2 {
+    font-size: 10px;
+  }
+
+  .seventh-section .body-container .seventh-grid p {
+    font-size: 6px;
+  }
+
+  .seventh-section .body-container .base {
+    display: none;
+  }
+
+  /* Footer */
+  .footer {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 10px -17px 265px rgba(180, 226, 255, 0.8);
+  }
+
+  .footer .foot .row {
+    position: relative;
+    right: 0px;
+    max-width: 320px;
+  }
+
+  .footer .foot .row .logoQR {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .footer .foot .logoQR {
+    margin: auto;
+    position: relative;
+  }
+
+  .logoQR .dwbuttons h3 {
+    font-size: 9px;
+    width: 120%;
+  }
+
+  .footer .foot .logoQR .citypaylog {
+    width: 55%;
+    padding: 0;
+    position: relative;
+    bottom: 40px;
+    right: 18px;
+  }
+
+  .footer .foot .logoQR .QRcode {
+    width: 55%;
+    padding: 0;
+    position: relative;
+    bottom: 45px;
+    right: 18px;
+  }
+
+  .logoQR .dwbuttons {
+    width: 100%;
+    position: relative;
+    right: 40px;
+    bottom: 40px;
+  }
+
+  .logoQR .dwbuttons .logimg {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logimg .playstore .download-btn {
+    width: 52px;
+    height: 18px;
+    margin: 7px 2px 2px 8px;
+    position: relative;
+  }
+
+  .logimg .appstore .download-btn {
+    width: 52px;
+    height: 18px;
+    margin: 7px 2px 2px 8px;
+    position: relative;
+  }
+
+  .footer .info {
+    display: grid;
+    margin: auto;
+    width: 100%;
+    position: relative;
+    right: 70px;
+  }
+
+  .footer .info .basic {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 80px;
+    bottom: 0px;
+    width: 50%;
+    margin: 55px 2px 2px 2px;
+    padding: 2px 2px 2px 2px;
+  }
+
+  .footer .info .basic>div {
+    flex: 1;
+  }
+
+  .footer .info .basic p {
+    margin: 0;
+    padding: 8px 8px 5px 1px;
+    font-size: 7px;
+  }
+
+  .footer .info .basic .Email {
+    width: 150px;
+  }
+
+  .footer .info .basic .Email p {
+    position: relative;
+    left: 15px;
+  }
+
+  .footer .info .basic .Tel {
+    width: 170px;
+  }
+
+  .footer .info .basic .Tel p {
+    position: relative;
+    left: 15px;
+  }
+
+  .footer .info .basic .ext p {
+    position: relative;
+    left: 15px;
+  }
+
+  .footer .info .basic .tol {
+    width: 130px;
+  }
+
+  .footer .info .basic .tol p {
+    position: relative;
+    left: 15px;
+  }
+
+  .footer .info .basic .Call {
+    width: 120px;
+  }
+
+  .footer .info .basic .Call p {
+    position: relative;
+    left: 15px;
+  }
+
+  .footer .info .connect {
+    left: 105px;
+    padding: 5px;
+    margin: 5px;
+    width: 70px;
+    position: relative;
+    bottom: 70px;
+  }
+
+  .footer .info .connect p {
+    font-size: 9px;
+    width: 120%;
+  }
+
+  .connect .soc {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 6px;
+    width: 80%;
+  }
+
+  .connect .fb {
+    width: 70px;
+    height: auto;
+  }
+
+  .connect .ytb {
+    width: 60px;
+    height: auto;
+  }
+
+  .connect .lkdn {
+    width: 60px;
+    height: auto;
+  }
+
+  .footer .foot .footer-links {
+    margin: auto;
+    position: relative;
+    right: 35px;
+    bottom: 30px;
+    width: 100%;
+  }
+
+  .footer .footer-links li {
+    margin: 0;
+    padding: 1px;
+  }
+
+  .footer .footer-links a {
+    font-size: 6px;
+    margin: 0;
+    padding: 5px;
+  }
+
+  .footer-links h4 {
+    font-size: 7px;
+    margin: 0;
+    padding: 0px;
+  }
+
+  .footer-links .agent {
+    font-size: 6px;
+    padding: 5px;
+    margin-top: 7px;
+    border-radius: 5px;
+    width: 75%;
+    position: relative;
+    right: 5px;
+  }
+
+  .footer .copyright {
+    position: relative;
+    bottom: 5px;
+    left: 55px;
+    width: 65%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer .copyright p {
+    font-size: 7px;
+  }
 
   .soc svg:hover {
     transform: none;
     /* Remove the hover effect on mobile devices */
   }
-}
 
-@media (max-width:375px) and (min-width: 321px) {
-  .first-section {}
 
-  .second-section {}
-
-  .third-section {}
-
-  .fourth-section {}
-
-  .fifth-section {}
-
-  .sixth-section {}
-
-  .seventh-section {}
-
-  .footer {}
-
-  .soc svg:hover {
-    transform: none;
-    /* Remove the hover effect on mobile devices */
-  }
-}
-
-@media (max-width:320px) and (min-width: 280px) {
-  .first-section {}
-
-  .second-section {}
-
-  .third-section {}
-
-  .fourth-section {}
-
-  .fifth-section {}
-
-  .sixth-section {}
-
-  .seventh-section {}
-
-  .footer {}
-
-  .soc svg:hover {
-    transform: none;
-    /* Remove the hover effect on mobile devices */
-  }
 }
