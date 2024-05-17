@@ -767,7 +767,7 @@ body {
 
     .footer .foot .row .dwbuttons {
         position: relative;
-        right: 8px;
+        right: 22px;
     }
 
     .footer .foot .row .dwbuttons .tit h3 {
@@ -790,7 +790,7 @@ body {
 
     .footer .foot .row .info .basic {
         position: relative;
-        left: 160px;
+        left: 100px;
         width: 100%;
         margin: 45px 0px 10px 0px;
     }
@@ -799,7 +799,17 @@ body {
         font-size: 11px;
     }
 
-    .footer .foot .row .info .connect {}
+    .footer .foot .row .info .connect {
+        width: 100%;
+        margin: 95px 0px 10px 0px;
+    }
+
+    .footer .foot .row .info .connect .soc {
+        width: 30%;
+        gap: 5px;
+        position: relative;
+        left: 8px;
+    }
 
     .footer .foot .row .footer-links {
         margin: 100px 5px 5px 5px;
