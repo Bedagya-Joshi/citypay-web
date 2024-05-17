@@ -2327,6 +2327,11 @@ p {
 @media (max-width:768px) and (min-width: 426px) {
   .first-section {
     height: 87vh;
+    background-image: url("./Assets/Flow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    object-fit: contain;
   }
 
   .first-section .body-container .dwnld-desc {
@@ -2338,49 +2343,37 @@ p {
   }
 
   .first-section .description p {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .first-section .body-container .dwnld-desc .description {
-    margin: 80px 1px 1px 5px;
-    width: 50%;
+    margin: 20px 1px 1px 2px;
+    padding: 2px;
+    width: 55%;
   }
 
   .first-section .dwnld-img .handmobile {
-    margin: 10px 1px 1px 20px;
-    padding: 10px 1px 1px 20px;
+    margin: 70px 10px 1px 0px;
+    padding: 10px 10px 1px 0px;
     position: relative;
-    left: 350px;
-    width: 65%;
-  }
-
-  .buttons {
-    margin: 4px 1px 1px 12px;
+    left: 390px;
+    width: 70%;
   }
 
   .buttons .gplay-btn {
-    width: 80px;
-    height: 30px;
+    width: 145px;
+    height: 50px;
   }
 
   .buttons .appstore-btn {
-    width: 80px;
-    height: 30px;
+    width: 145px;
+    height: 50px;
   }
 
-  /* second section */
   .second-section {
     height: 100vh;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .second-section .second-title h1 {
-    font-size: 26px;
-  }
-
-  .second-section .second-title p {
-    font-size: 12px;
+    margin: 5px 0px 55px 5px;
+    padding: 5px 0px 55px 5px;
   }
 
   .second-section .second-body {
@@ -2389,59 +2382,66 @@ p {
   }
 
   .second-section .second-body .second-img {
-    width: 100px;
-    height: 200px;
+    width: 880px;
+    height: 0px;
   }
 
   .second-section .second-body .second-img .remittance-img {
-    height: 200px;
-    width: 145px;
+    height: 430px;
+    width: 320px;
     position: relative;
-    top: 50px;
+    top: 70px;
+    left: 0px;
   }
 
-  .second-section .body-container .second-body .second-grid h2 {
-    font-size: 12px;
+  .second-section .second-body .second-grid {
+    position: relative;
+    right: 45px;
+    gap: 20px;
   }
 
-  .second-section .body-container .second-body .second-grid p {
-    font-size: 8px;
+  .second-section .second-body .second-grid h2 {
+    font-size: 15px;
+  }
+
+  .second-se0ion .second-body .second-grid p {
+    font-size: 13px;
   }
 
   .second-section .second-body .second-grid .remit-icon {
-    width: 60px;
+    width: 90px;
     height: auto;
   }
 
   .second-section .second-body .second-grid .withdraw-icon {
-    width: 60px;
+    width: 90px;
     height: auto;
   }
 
-  .second-section .second-body .second-grid .remittance-icon {
-    width: 60px;
+  .second-section .second-body .second-grid .Track-remittance {
+    width: 90px;
     height: auto;
   }
 
   .second-section .second-body .second-grid .second-grid1 {
-    margin: 2px 2px 10px 30px;
-    padding: 15px 15px 20px 10px;
-    width: 195px;
-    height: 95px;
+    margin: 20px 2px 10px 35px;
+    padding: 25px 25px 45px 10px;
+    width: 300px;
+    height: 135px;
   }
 
   .second-section .second-body .second-grid .second-grid2 {
-    margin: 2px 2px 10px 30px;
-    padding: 15px 15px 20px 10px;
-    width: 195px;
-    height: 95px;
+    margin: 35px 2px 10px 35px;
+    padding: 45px 25px 60px 10px;
+    width: 300px;
+    height: 135px;
   }
 
   .second-section .second-body .second-grid .second-grid3 {
-    margin: 2px 2px 10px 30px;
-    padding: 15px 15px 20px 10px;
-    width: 195px;
-    height: 95px;
+    margin: 35px 2px 10px 35px;
+    padding: 35px 25px 45px 10px;
+    width: 300px;
+    height: 135px;
   }
 
   .second-grid1, .second-grid2 {
@@ -2449,118 +2449,98 @@ p {
   }
 
   .third-section {
-    height: 100vh;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .third-section .third-title h1 {
-    font-size: 26px;
-  }
-
-  .third-section .third-title p {
-    font-size: 12px;
+    height: 90vh;
+    margin: 5px 0px 55px 5px;
+    padding: 5px 0px 55px 5px;
   }
 
   .third-section .body-container .third-grid h2 {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .third-section .body-container .third-grid p {
-    font-size: 8px;
+    font-size: 13px;
   }
 
   .third-section .body-container .third-grid .Extra-Grid {
     position: relative;
-    bottom: 330px;
-    margin: 2px 2px 2px 20px;
+    bottom: 470px;
+    margin: 2px 55px 2px 2px;
   }
 
   .third-section .body-container .third-grid .Extra-Grid .Family-Friends {
-    width: 150px;
+    width: 300px;
     position: relative;
-    left: 40px;
+    left: 90px;
   }
 
   .third-section .body-container .third-grid .third-grid2 {
-    margin: 10px 2px 10px 2px;
-    padding: 50px 10px 70px 10px;
-    width: 185px;
-    height: 70px;
+    margin: 45px 2px 10px 20px;
+    padding: 50px 20px 70px 10px;
+    width: 290px;
+    height: 140px;
   }
 
   .third-section .body-container .third-grid .third-grid3 {
-    margin: 10px 2px 10px 2px;
-    padding: 50px 10px 70px 10px;
-    width: 185px;
-    height: 70px;
+    margin: 35px 2px 10px 20px;
+    padding: 50px 20px 70px 10px;
+    width: 290px;
+    height: 140px;
   }
 
 
   .third-section .body-container .third-grid .Fund-T {
-    width: 80px;
+    width: 120px;
     height: auto;
   }
 
   .third-section .body-container .third-grid .Send-R {
-    width: 80px;
+    width: 120px;
     height: auto;
   }
 
-
   .fourth-section {
-    height: 100vh;
-    margin: 5px 5px 25px 5px;
-    padding: 5px 5px 25px 5px;
-  }
-
-  .fourth-section .fourth-title h1 {
-    font-size: 26px;
-  }
-
-  .fourth-section .fourth-title p {
-    font-size: 12px;
+    height: 90vh;
+    margin: 5px 0px 25px 5px;
+    padding: 5px 0px 25px 5px;
   }
 
   .fourth-section .body-container .fourth-grid {
-    margin: 10px 60px 10px 90px;
-    padding: 10px 60px 10px 90px;
+    margin: 50px 60px 10px 60px;
+    padding: 10px 60px 10px 60px;
     width: 60%;
   }
 
   .fourth-section .body-container .fourth-grid h2 {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .fourth-section .body-container .fourth-grid p {
-    font-size: 8px;
+    font-size: 13px;
   }
 
   .fourth-section .body-container .fourth-grid .fourth-grid2 {
-    margin: 2px 2px 10px 10px;
-    padding: 15px 10px 15px 20px;
-    width: 120px;
-    height: 140px;
+    margin: 65px 2px 10px 245px;
+    padding: 15px 25px 15px 30px;
+    width: 220px;
+    height: 180px;
     display: grid;
-    border-radius: 20px;
   }
 
   .fourth-section .body-container .fourth-grid .fourth-grid3 {
-    margin: 2px 2px 10px 10px;
-    padding: 15px 10px 15px 20px;
-    width: 120px;
-    height: 140px;
-    display: grid;
-    border-radius: 20px;
+    margin: 25px 2px 10px 245px;
+    padding: 15px 25px 15px 30px;
+    width: 220px;
+    height: 180px;
   }
 
   .fourth-section .body-container .fourth-grid .BT {
-    width: 60px;
+    width: 120px;
     height: auto;
   }
 
   .fourth-section .body-container .fourth-grid .LB {
-    width: 60px;
+    width: 120px;
     height: auto;
   }
 
@@ -2569,73 +2549,64 @@ p {
     padding: 5px 5px 5px 5px;
     position: relative;
     right: 0px;
-    bottom: 295px;
-    width: 270px;
-    height: 120px;
+    bottom: 0px;
+    width: 50%;
+    height: 80%;
 
   }
 
   .fourth-section .body-container .Pic-Grid .bank {
     position: relative;
     margin: 5px 5px 5px 5px;
-    top: 5px;
+    bottom: 10px;
     left: 0px;
-    width: 55%;
+    width: 100%;
+    height: 90%;
   }
 
   .fifth-section {
-    height: 100vh;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .fifth-section .fifth-title h1 {
-    font-size: 26px;
-  }
-
-  .fifth-section .fifth-title p {
-    font-size: 12px;
+    height: 90vh;
+    margin: 5px 0px 25px 5px;
+    padding: 5px 0px 25px 5px;
   }
 
   .fifth-section .body-container .fifth-grid {
-    margin: 10px 80px 10px 50px;
-    padding: 10px 80px 10px 10px;
+    margin: 30px 80px 10px 50px;
+    padding: 10px 80px 10px 50px;
     width: 60%;
     position: relative;
     right: 50px;
   }
 
   .fifth-section .body-container .fifth-grid h2 {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .fifth-section .body-container .fifth-grid p {
-    font-size: 8px;
+    font-size: 13px;
   }
 
   .fifth-section .body-container .fifth-grid .fifth-grid2 {
-    margin: 2px 2px 10px 10px;
-    padding: 15px 15px 15px 5px;
-    width: 150px;
-    height: 130px;
-    border-radius: 30px;
+    margin: 10px 2px 10px 30px;
+    padding: 25px 15px 35px 5px;
+    width: 60%;
+    height: 180px;
   }
 
   .fifth-section .body-container .fifth-grid .fifth-grid3 {
-    margin: 20px 2px 10px 10px;
-    padding: 15px 10px 15px 5px;
-    width: 150px;
-    height: 130px;
-    border-radius: 30px;
+    margin: 35px 2px 10px 30px;
+    padding: 25px 15px 35px 5px;
+    width: 60%;
+    height: 180px;
   }
 
   .fifth-section .body-container .fifth-grid .CityPay-QR {
-    width: 80px;
+    width: 120px;
     height: auto;
   }
 
   .fifth-section .body-container .fifth-grid .NepalPay-SmartQR {
-    width: 80px;
+    width: 120px;
     height: auto;
   }
 
@@ -2643,10 +2614,10 @@ p {
     margin: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
     position: relative;
-    left: 220px;
-    bottom: 320px;
-    width: 55%;
-    height: 100px;
+    left: 360px;
+    bottom: 490px;
+    width: 260px;
+    height: 290px;
   }
 
   .fifth-section .body-container .Pic-Grid .ScanQR {
@@ -2654,36 +2625,30 @@ p {
     margin: 5px 5px 5px 5px;
     top: 5px;
     left: 0px;
-    width: 85%;
+    width: 95%;
   }
 
   .sixth-section {
-    height: 100vh;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
-  }
-
-  .sixth-section .sixth-title h1 {
-    font-size: 26px;
-  }
-
-  .sixth-section .sixth-title p {
-    font-size: 12px;
+    height: 95vh;
+    margin: 5px 0px 5px 5px;
+    padding: 5px 0px 5px 5px;
   }
 
   .sixth-section .sixth-body .sixth-img {
-    margin: 2px 2px 2px 2px;
+    margin: 2px 20px 2px 2px;
     padding: 4px 4px 4px 4px;
     width: 200px;
+    position: relative;
+    right: 20px;
   }
 
   .sixth-section .sixth-body .sixth-img .Utility {
-    margin: 55px 1px 1px 0px;
+    margin: 55px 15px 1px 0px;
     padding: 55px 1px 1px 1px;
-    width: 115px;
-    height: 150px;
+    width: 260px;
+    height: 300px;
     position: relative;
-    right: 15px;
+    right: 20px;
   }
 
   .sixth-body {
@@ -2692,136 +2657,131 @@ p {
   }
 
   .sixth-section .body-container .sixth-grid h2 {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .sixth-section .body-container .sixth-grid p {
-    font-size: 8px;
+    font-size: 12px;
   }
 
 
   .sixth-section .body-container .sixth-grid .Mobile {
-    width: 40px;
+    width: 60px;
     height: auto;
   }
 
   .sixth-section .body-container .sixth-grid .Domestic {
-    width: 40px;
+    width: 60px;
     height: auto;
   }
 
   .sixth-section .body-container .sixth-grid .gov {
-    width: 40px;
+    width: 60px;
     height: auto;
   }
 
   .sixth-grid {
-    width: 100%;
+    width: 80%;
     position: relative;
-    right: 20px;
-    gap: 14px;
-    height: 50%;
+    left: 25px;
+    gap: 20px;
   }
 
   .sixth-grid .sixth-grid1 {
-    width: 100px;
-    height: 180px;
-    margin: 5px 1px 1px 0px;
-    padding: 5px;
+    width: 140px;
+    height: 220px;
+    margin: 25px 1px 1px 0px;
+    padding: 20px;
   }
 
   .sixth-grid .sixth-grid2 {
-    width: 100px;
-    height: 180px;
-    margin: 5px 1px 1px 0px;
-    padding: 5px 5px 5px 5px;
+    width: 140px;
+    height: 220px;
+    margin: 25px 1px 1px 0px;
+    padding: 20px;
   }
 
   .sixth-grid .sixth-grid3 {
-    width: 100px;
-    height: 180px;
-    margin: 5px 1px 1px 0px;
-    padding: 5px;
+    width: 140px;
+    height: 220px;
+    margin: 20px 1px 1px 0px;
+    padding: 20px;
   }
 
   .seventh-section {
-    height: 100vh;
-    margin: 5px 5px 5px 5px;
-    padding: 75px 5px 10px 5px;
+    height: 90vh;
+    margin: 5px 0px 5px 5px;
+    padding: 35px 0px 10px 5px;
   }
-
 
   .seventh-section .body-container.seventh-title {
     margin: 1px 1px 1px 1px;
     padding: 2px 2px 2px 2px;
   }
 
-  .seventh-section .seventh-title h1 {
-    font-size: 26px;
-  }
-
-  .seventh-section .seventh-title p {
-    font-size: 12px;
-  }
-
 
   .seventh-section .body-container .seventh-grid {
-    margin: 10px 60px 10px 10px;
-    padding: 10px 60px 10px 80px;
+    margin: 10px 75px 10px 60px;
+    padding: 10px 70px 10px 60px;
     width: 60%;
     position: relative;
     left: 0px;
   }
 
   .seventh-section .body-container .seventh-grid h2 {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .seventh-section .body-container .seventh-grid p {
-    font-size: 6px;
+    font-size: 13px;
   }
 
   .seventh-section .body-container .seventh-grid .seventh-grid1 {
-    margin: 2px 2px 100px 15px;
-    padding: 15px 15px 75px 10px;
-    width: 85px;
-    height: 130px;
-  }
-
-  .base .signature {
-    display: none;
+    margin: 2px 2px 100px 13px;
+    padding: 35px 25px 75px 25px;
+    width: 175px;
+    height: 315px;
   }
 
   .seventh-section .body-container .seventh-grid .seventh-grid2 {
-    margin: 2px 2px 100px 15px;
-    padding: 15px 15px 75px 10px;
-    width: 85px;
-    height: 130px;
+    margin: 2px 2px 100px 13px;
+    padding: 35px 25px 75px 25px;
+    width: 175px;
+    height: 315px;
   }
 
   .seventh-section .body-container .seventh-grid .seventh-grid3 {
-    margin: 2px 2px 100px 15px;
-    padding: 15px 10px 75px 10px;
-    width: 85px;
-    height: 130px;
+    margin: 2px 2px 100px 13px;
+    padding: 35px 25px 75px 25px;
+    width: 175px;
+    height: 315px;
   }
 
   .seventh-section .body-container .seventh-grid .Reward {
-    width: 60px;
+    width: 100px;
     height: auto;
   }
 
   .seventh-section .body-container .seventh-grid .MobileTop-Up {
-    width: 55px;
+    width: 100px;
     height: auto;
   }
 
   .seventh-section .body-container .seventh-grid .conv {
-    width: 60px;
+    width: 100px;
     height: auto;
   }
 
+  .seventh-section .base {
+    display: none;
+  }
+
   /* footer */
+
+  .footer {
+    padding: 10px 0px 10px 0px;
+  }
+
   .footer .row {
     position: relative;
     right: 50px;
@@ -2829,33 +2789,54 @@ p {
 
   .footer .logoQR .citypaylog {
     width: 30%;
+    position: relative;
+    left: 20px;
   }
 
   .footer .logoQR .QRcode {
     width: 30%;
   }
 
+  .footer .dwbuttons {
+    position: relative;
+    left: 20px;
+  }
+
+  .footer .dwbuttons .download-btn {
+    position: relative;
+    right: 12px;
+  }
 
   .footer .info .basic {
     position: relative;
-    left: 50px;
+    left: 90px;
+    width: 80%;
+    margin: 25px 0px 10px 0px;
   }
 
   .footer .info p {
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .footer .footer-links {
-    margin: 1px 50px 1px 1px;
-    padding: 1px 20px 1px 1px;
+    margin: 30px 5px 5px 5px;
+    padding: 10px 10px 1px 1px;
+    position: relative;
+    right: 15px;
+    width: 100%;
   }
 
   .footer .footer-links a {
-    font-size: x-small;
+    font-size: small;
   }
 
   .footer-links h4 {
-    font-size: medium;
+    font-size: 13px;
+  }
+
+  .footer-links .agent {
+    font-size: 9px;
+    margin: 1px;
   }
 
   .footer .logimg .download-btn {
@@ -2874,7 +2855,7 @@ p {
 
   .connect .soc {
     position: relative;
-    left: 3px;
+    left: 16px;
   }
 
   .connect .fb {
@@ -2895,7 +2876,6 @@ p {
   .footer .copyright p {
     font-size: smaller;
   }
-
 }
 
 @media (max-width:425px) and (min-width: 376px) {
