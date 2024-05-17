@@ -737,45 +737,89 @@ body {
 }
 
 @media (max-width:768px) and (min-width: 426px) {
-    .container {}
 
 
 
     /* footer */
-    .footer .row {
+
+    .footer {
+        padding: 10px 0px 10px 0px;
+    }
+
+    .footer .foot {
+        width: 100%;
+    }
+
+    .footer .foot .row {
+        width: 100%;
+    }
+
+    .footer .foot .row .logoQR .citypaylog {
+        width: 50%;
         position: relative;
-        right: 50px;
+        left: 10px;
     }
 
-    .footer .logoQR .citypaylog {
-        width: 30%;
+    .footer .foot .row .logoQR .QRcode {
+        width: 50%;
+        left: 10px;
     }
 
-    .footer .logoQR .QRcode {
-        width: 30%;
-    }
-
-
-    .footer .info .basic {
+    .footer .foot .row .dwbuttons {
         position: relative;
-        left: 50px;
+        right: 8px;
     }
 
-    .footer .info p {
+    .footer .foot .row .dwbuttons .tit h3 {
+        font-size: 13px;
+    }
+
+    .footer .foot .row .dwbuttons .download-btn {
+        width: 90px;
+        height: 30px;
+    }
+
+
+    .footer .foot .row .info {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: 0px;
+    }
+
+    .footer .foot .row .info .basic {
+        position: relative;
+        left: 160px;
+        width: 100%;
+        margin: 45px 0px 10px 0px;
+    }
+
+    .footer .foot .row .info p {
         font-size: 11px;
     }
 
-    .footer .footer-links {
-        margin: 1px 50px 1px 1px;
-        padding: 1px 20px 1px 1px;
+    .footer .foot .row .info .connect {}
+
+    .footer .foot .row .footer-links {
+        margin: 100px 5px 5px 5px;
+        padding: 10px 10px 1px 1px;
+        position: relative;
+        left: 175px;
+        width: 100%;
     }
 
-    .footer .footer-links a {
+    .footer .foot .row .footer-links a {
         font-size: x-small;
     }
 
-    .footer-links h4 {
-        font-size: medium;
+    .footer .foot .row .footer-links h4 {
+        font-size: 12px;
+    }
+
+    .footer-links .agent {
+        font-size: 9px;
+        margin: 1px;
     }
 
     .footer .logimg .download-btn {
@@ -794,7 +838,7 @@ body {
 
     .connect .soc {
         position: relative;
-        left: 3px;
+        left: 16px;
     }
 
     .connect .fb {
@@ -1076,7 +1120,7 @@ body {
 }
 
 .footer .foot .logoQR .citypaylog {
-    width: ;
+    width: 65%;
     padding: 0;
     position: relative;
     bottom: 40px;
