@@ -1854,8 +1854,8 @@ p {
   }
 
   .second-section .second-body .second-img .remittance-img {
-    height: 400px;
-    width: 320px;
+    height: 390px;
+    width: 265px;
     position: relative;
     top: 60px;
   }
@@ -1878,7 +1878,7 @@ p {
     height: auto;
   }
 
-  .second-section .second-body .second-grid .remittance-icon {
+  .second-section .second-body .second-grid .Track-remittance {
     width: 120px;
     height: auto;
   }
@@ -1910,7 +1910,7 @@ p {
 
   .third-section {
     height: 100vh;
-    margin: 5px 5px 5px 5px;
+    margin: 25px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
   }
 
@@ -1925,50 +1925,52 @@ p {
   .third-section .body-container .third-grid .Extra-Grid {
     position: relative;
     bottom: 400px;
-    margin: 2px 2px 2px 20px;
+    margin: 2px 2px 2px 0px;
   }
 
   .third-section .body-container .third-grid .Extra-Grid .Family-Friends {
-    width: 290px;
+    width: 280px;
     position: relative;
-    left: 50px;
+    left: 30px;
+    bottom: 20px;
   }
 
   .third-section .body-container .third-grid .third-grid2 {
-    margin: 10px 2px 10px 2px;
+    margin: 50px 2px 10px 20px;
     padding: 50px 20px 70px 10px;
-    width: 300px;
+    width: 290px;
     height: 100px;
   }
 
   .third-section .body-container .third-grid .third-grid3 {
-    margin: 10px 2px 10px 2px;
+    margin: 20px 2px 10px 20px;
     padding: 50px 20px 70px 10px;
-    width: 300px;
+    width: 290px;
     height: 100px;
   }
 
 
   .third-section .body-container .third-grid .Fund-T {
-    width: 120px;
+    width: 90px;
     height: auto;
   }
 
   .third-section .body-container .third-grid .Send-R {
-    width: 120px;
+    width: 90px;
     height: auto;
   }
 
 
   .fourth-section {
     height: 100vh;
-    margin: 5px 5px 25px 5px;
-    padding: 5px 5px 25px 5px;
+    width: 90%;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
   }
 
   .fourth-section .body-container .fourth-grid {
-    margin: 10px 60px 10px 90px;
-    padding: 10px 60px 10px 90px;
+    margin: 120px 60px 10px 90px;
+    padding: 100px 60px 10px 90px;
     width: 60%;
   }
 
@@ -1981,7 +1983,7 @@ p {
   }
 
   .fourth-section .body-container .fourth-grid .fourth-grid2 {
-    margin: 2px 2px 10px 245px;
+    margin: 20px 2px 10px 165px;
     padding: 15px 15px 15px 30px;
     width: 65%;
     height: 180px;
@@ -1989,19 +1991,19 @@ p {
   }
 
   .fourth-section .body-container .fourth-grid .fourth-grid3 {
-    margin: 2px 2px 10px 245px;
+    margin: 20px 2px 10px 165px;
     padding: 15px 15px 15px 30px;
     width: 65%;
     height: 180px;
   }
 
   .fourth-section .body-container .fourth-grid .BT {
-    width: 120px;
+    width: 90px;
     height: auto;
   }
 
   .fourth-section .body-container .fourth-grid .LB {
-    width: 120px;
+    width: 90px;
     height: auto;
   }
 
@@ -2009,11 +2011,10 @@ p {
     margin: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
     position: relative;
-    right: 0px;
-    bottom: 360px;
+    right: 50px;
+    top: 160px;
     width: 45%;
     height: 90%;
-
   }
 
   .fourth-section .body-container .Pic-Grid .bank {
@@ -2022,10 +2023,12 @@ p {
     top: 5px;
     left: 0px;
     width: 100%;
+    height: 95%;
   }
 
   .fifth-section {
     height: 100vh;
+    width: 90%;
     margin: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
   }
@@ -2049,15 +2052,15 @@ p {
   .fifth-section .body-container .fifth-grid .fifth-grid2 {
     margin: 2px 2px 10px 30px;
     padding: 15px 15px 15px 5px;
-    width: 55%;
-    height: 160px;
+    width: 65%;
+    height: 210px;
   }
 
   .fifth-section .body-container .fifth-grid .fifth-grid3 {
     margin: 2px 2px 10px 30px;
     padding: 15px 10px 15px 5px;
-    width: 55%;
-    height: 160px;
+    width: 65%;
+    height: 210px;
   }
 
   .fifth-section .body-container .fifth-grid .CityPay-QR {
@@ -2074,9 +2077,9 @@ p {
     margin: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
     position: relative;
-    left: 450px;
-    bottom: 480px;
-    width: 50%;
+    left: 370px;
+    bottom: 470px;
+    width: 45%;
     height: 90%;
   }
 
@@ -2085,11 +2088,12 @@ p {
     margin: 5px 5px 5px 5px;
     top: 5px;
     left: 0px;
-    width: 85%;
+    width: 100%;
   }
 
   .sixth-section {
     height: 100vh;
+    width: 90%;
     margin: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
   }
@@ -2105,16 +2109,13 @@ p {
     padding: 55px 1px 1px 1px;
     width: 280px;
     height: 320px;
+    position: relative;
+    right: 80px;
   }
 
   .sixth-body {
     margin: 4px 4px 4px 4px;
     padding: 5px 5px 5px 5px;
-  }
-
-  .sixth-grid {
-    margin: 1px 1px 1px 1px;
-    padding: 1px 10px 1px 1px;
   }
 
   .sixth-section .body-container .sixth-grid h2 {
@@ -2142,9 +2143,11 @@ p {
   }
 
   .sixth-grid {
-    width: 100%;
+    width: 80%;
     position: relative;
-    left: 80px;
+    left: 10px;
+    padding: 1px 10px 1px 1px;
+    gap: 15px;
   }
 
   .sixth-grid .sixth-grid1 {
@@ -2162,11 +2165,12 @@ p {
   .sixth-grid .sixth-grid3 {
     width: 150px;
     height: 220px;
-    margin: 20px 1px 1px 0px;
+    margin: 0px 1px 1px 0px;
   }
 
   .seventh-section {
     height: 100vh;
+    width: 90%;
     margin: 5px 5px 5px 5px;
     padding: 75px 5px 10px 5px;
   }
@@ -2179,8 +2183,8 @@ p {
 
 
   .seventh-section .body-container .seventh-grid {
-    margin: 10px 60px 10px 90px;
-    padding: 10px 60px 10px 90px;
+    margin: 10px 60px 10px 40px;
+    padding: 10px 60px 10px 55px;
     width: 60%;
     position: relative;
     left: 0px;
@@ -2228,6 +2232,12 @@ p {
   .seventh-section .body-container .seventh-grid .conv {
     width: 120px;
     height: auto;
+  }
+
+  /* Footer */
+
+  .footer {
+    padding: 20px 0px 20px 0px;
   }
 
   .footer .row {
