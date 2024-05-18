@@ -14,13 +14,50 @@ body {
     box-sizing: border-box;
 }
 
+
+* {
+    font-family: "PT Sans";
+}
+
+/* css for the font */
+.pt-sans-regular {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pt-sans-regular-italic {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.pt-sans-regular-italic {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.pt-sans-bold {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.pt-sans-bold-italic {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
 .container {
     flex: 1;
 }
 
 .navbar {
     z-index: 1;
-    position: sticky;
+    position: relative;
     top: 0;
 }
 
@@ -31,7 +68,6 @@ body {
     padding-top: 10px;
     padding-left: 60px;
     padding-right: 20px;
-    /* border: 2px solid red; */
 }
 
 .logo {
@@ -48,12 +84,11 @@ body {
 .fa-bars {
     font-size: 40px;
     color: #1472cf;
-    position: relative;
-    left: 1650px;
 }
 
 .nav {
     display: none;
+    transition: display 0.3s ease-in-out;
 }
 
 .nav.active {
@@ -454,7 +489,6 @@ body {
 }
 
 
-
 /* Media Query Responsiveness */
 
 @media (max-width:2560px) and (min-width: 1441px) {
@@ -463,7 +497,8 @@ body {
         width: 100%;
         height: auto;
         position: relative;
-        overflow: hidden;
+        overflow-y: hidden;
+        overflow-x: visible;
     }
 
     .map .iframe {
@@ -1114,78 +1149,22 @@ body {
 }
 
 @media (max-width:425px) and (min-width: 376px) {
+    .navbar {
+        position: relative;
+        right: 10px;
+    }
 
-    .header {
-        padding: 10px 10px 10px 20px;
-        width: 75%;
+    .header .menu-toggle {
+        position: relative;
+        left: 5px;
     }
 
     .navbar .logo {
-        width: 60%;
+        position: relative;
+        right: 15px;
+        top: 0px;
     }
 
-    .navbar .title h1 {
-        font-size: 18px;
-    }
-
-    .menu-toggle {
-        flex-direction: column;
-        cursor: pointer;
-        height: 20px;
-    }
-
-    .fa-bars {
-        font-size: 40px;
-        color: #1472cf;
-    }
-
-    .nav {
-        display: none;
-    }
-
-    .nav.active {
-        display: block;
-        position: absolute;
-        right: 20px;
-        /* top: 60px; */
-        width: 350px;
-        height: 500px;
-    }
-
-    .underline {
-        background-color: rgb(255, 255, 255);
-        height: 1px;
-        width: 80%;
-    }
-
-    .nav ul {
-        list-style-type: none;
-        padding: 0;
-        background-color: #194a7a;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-        padding-top: 15px;
-        z-index: 1;
-        top: 0;
-        position: sticky;
-        border-radius: 15px;
-    }
-
-    .nav li {
-        padding: 10px;
-        text-align: center;
-    }
-
-    .nav a {
-        text-decoration: none;
-        color: #333;
-        font-weight: 700;
-        font-size: 25px;
-        color: white;
-    }
 
     .container {
         width: 100%;
@@ -1570,76 +1549,20 @@ body {
 }
 
 @media (max-width:375px) and (min-width: 321px) {
-    .header {
-        padding: 10px 10px 10px 20px;
-        width: 75%;
+    .navbar {
+        position: relative;
+        right: 10px;
+    }
+
+    .header .menu-toggle {
+        position: relative;
+        left: 5px;
     }
 
     .navbar .logo {
-        width: 60%;
-    }
-
-    .navbar .title h1 {
-        font-size: 18px;
-    }
-
-    .menu-toggle {
-        flex-direction: column;
-        cursor: pointer;
-        height: 20px;
-    }
-
-    .fa-bars {
-        font-size: 40px;
-        color: #1472cf;
-    }
-
-    .nav {
-        display: none;
-    }
-
-    .nav.active {
-        display: block;
-        position: absolute;
-        right: 20px;
-        /* top: 60px; */
-        width: 350px;
-        height: 500px;
-    }
-
-    .underline {
-        background-color: rgb(255, 255, 255);
-        height: 1px;
-        width: 80%;
-    }
-
-    .nav ul {
-        list-style-type: none;
-        padding: 0;
-        background-color: #194a7a;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-        padding-top: 15px;
-        z-index: 1;
-        top: 0;
-        position: sticky;
-        border-radius: 15px;
-    }
-
-    .nav li {
-        padding: 10px;
-        text-align: center;
-    }
-
-    .nav a {
-        text-decoration: none;
-        color: #333;
-        font-weight: 700;
-        font-size: 25px;
-        color: white;
+        position: relative;
+        right: 10px;
+        top: 0px;
     }
 
     .container {
@@ -2021,77 +1944,22 @@ body {
 
 
 @media (max-width:320px) and (min-width: 280px) {
-    .header {
-        padding: 10px 10px 10px 20px;
-        width: 75%;
+    .navbar {
+        position: relative;
+        right: 10px;
+    }
+
+    .header .menu-toggle {
+        position: relative;
+        left: 5px;
     }
 
     .navbar .logo {
-        width: 60%;
+        position: relative;
+        right: 10px;
+        top: 0px;
     }
 
-    .navbar .title h1 {
-        font-size: 16px;
-    }
-
-    .menu-toggle {
-        flex-direction: column;
-        cursor: pointer;
-        height: 20px;
-    }
-
-    .fa-bars {
-        font-size: 40px;
-        color: #1472cf;
-    }
-
-    .nav {
-        display: none;
-    }
-
-    .nav.active {
-        display: block;
-        position: absolute;
-        right: 20px;
-        /* top: 60px; */
-        width: 350px;
-        height: 500px;
-    }
-
-    .underline {
-        background-color: rgb(255, 255, 255);
-        height: 1px;
-        width: 80%;
-    }
-
-    .nav ul {
-        list-style-type: none;
-        padding: 0;
-        background-color: #194a7a;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-        padding-top: 15px;
-        z-index: 1;
-        top: 0;
-        position: sticky;
-        border-radius: 15px;
-    }
-
-    .nav li {
-        padding: 10px;
-        text-align: center;
-    }
-
-    .nav a {
-        text-decoration: none;
-        color: #333;
-        font-weight: 700;
-        font-size: 25px;
-        color: white;
-    }
 
     .container {
         width: 100%;
