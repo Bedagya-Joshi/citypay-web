@@ -304,6 +304,14 @@ body {
   padding: 20px;
   margin-bottom: 20px;
   margin-top: 60px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.second-grid1:hover, .second-grid2:hover, .second-grid3:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(#0e83e3, #1868aa, #65c7f7);
+  /* Slight change in gradient */
 }
 
 .grid-content h2,
@@ -414,6 +422,13 @@ p {
   padding: 20px;
   margin-bottom: 20px;
   margin-top: 60px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.third-grid2:hover, .third-grid3:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(#0e83e3, #1868aa, #65c7f7);
 }
 
 .grid-content h2,
@@ -479,15 +494,15 @@ p {
 }
 
 .fourth-grid {
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 0px;
-  width: 100%;
+  width: 80%;
+  bottom: 420px;
   margin: 10px 10px 10px 200px;
   padding: 10px 10px 10px 200px;
   padding: 0;
   justify-content: end;
   position: relative;
-
 }
 
 .fourth-grid2,
@@ -500,25 +515,31 @@ p {
   background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
   border-radius: 50px;
   padding: 20px;
-  margin-bottom: 20px;
-  margin-top: 80px;
   margin: 20px 10px 20px 600px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.fourth-grid2:hover, .fourth-grid3:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(#0e83e3, #1868aa, #65c7f7);
 }
 
 .fourth-grid .Pic-Grid {
-
-  width: 45%;
-  margin: 1px;
+  position: relative;
+  top: 0px;
+  width: 35%;
+  margin: 50px;
 }
 
 .Pic-Grid .bank {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 70%;
   position: relative;
-  bottom: 500px;
-  left: 100px;
+  bottom: 0px;
+  left: 10px;
+  margin: 150px 20px 20px 70px;
 }
-
 
 .grid-content-bank h2,
 p {
@@ -634,6 +655,14 @@ p {
   margin: 20px 10px 20px 700px;
   position: relative;
   left: 0px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.fifth-grid2:hover, .fifth-grid3:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(#0e83e3, #1868aa, #65c7f7);
+  /* Slight change in gradient */
 }
 
 .grid-content-4 h2,
@@ -730,6 +759,14 @@ p {
   border-radius: 20px;
   padding: 20px 20px 20px 20px;
   margin: 50px 10px 10px 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.sixth-grid1:hover, .sixth-grid2:hover, .sixth-grid3:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(#0e83e3, #1868aa, #65c7f7);
+  /* Slight change in gradient */
 }
 
 .grid-content {
@@ -755,8 +792,8 @@ p {
 }
 
 .sixth-img {
-  width: 100%;
-  height: 75%;
+  width: 90%;
+  height: 95%;
   position: relative;
   top: 50px;
   left: 0px;
@@ -846,6 +883,14 @@ p {
   border-radius: 20px;
   padding: 20px 20px 0px 20px;
   margin: 50px 10px 10px 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.seventh-grid1:hover, .seventh-grid2:hover, .seventh-grid3:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(#0e83e3, #1868aa, #65c7f7);
+  /* Slight change in gradient */
 }
 
 .grid-content {
@@ -1168,7 +1213,13 @@ p {
 
 @media (max-width:1440px) and (min-width: 1025px) {
   .first-section {
-    height: 87vh;
+    height: 90vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    object-fit: contain;
+    display: flex;
+    align-items: flex-end;
   }
 
   .first-section .body-container .dwnld-desc {
@@ -1186,7 +1237,7 @@ p {
   }
 
   .first-section .body-container .dwnld-desc .description {
-    margin: 55px 1px 1px 5px;
+    margin: 20px 1px 1px 5px;
     padding: 25px 1px 1px 5px;
     width: 65%;
   }
@@ -1198,7 +1249,7 @@ p {
     gap: 25px;
     width: 30%;
     position: relative;
-    left: 35px;
+    left: 80px;
   }
 
   .buttons .playstore .dow-btn {
@@ -1243,8 +1294,9 @@ p {
 
   .second-section {
     height: 100vh;
-    margin: 35px 5px 5px 5px;
-    padding: 35px 5px 5px 5px;
+    width: 90%;
+    margin: 35px 0px 5px 5px;
+    padding: 35px 0px 5px 5px;
   }
 
   .second-section .second-body {
@@ -1258,8 +1310,8 @@ p {
   }
 
   .second-section .second-body .second-img .remittance-img {
-    height: 520px;
-    width: 370px;
+    height: 500px;
+    width: 360px;
     position: relative;
     top: 40px;
   }
@@ -1282,7 +1334,7 @@ p {
     height: auto;
   }
 
-  .second-section .second-body .second-grid .remittance-icon {
+  .second-section .second-body .second-grid .Track-remittance {
     width: 120px;
     height: auto;
   }
@@ -1314,8 +1366,9 @@ p {
 
   .third-section {
     height: 100vh;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
+    width: 90%;
+    margin: 5px 0px 5px 5px;
+    padding: 5px 0px 5px 5px;
   }
 
   .third-section .body-container .third-grid h2 {
@@ -1328,25 +1381,25 @@ p {
 
   .third-section .body-container .third-grid .Extra-Grid {
     position: relative;
-    bottom: 560px;
+    bottom: 555px;
     margin: 2px 2px 2px 2px;
   }
 
   .third-section .body-container .third-grid .Extra-Grid .Family-Friends {
-    width: 430px;
+    width: 360px;
     position: relative;
-    left: 0px;
+    left: 60px;
   }
 
   .third-section .body-container .third-grid .third-grid2 {
-    margin: 50px 2px 10px 70px;
+    margin: 50px 2px 10px 10px;
     padding: 50px 30px 60px 20px;
     width: 350px;
     height: 150px;
   }
 
   .third-section .body-container .third-grid .third-grid3 {
-    margin: 50px 2px 10px 70px;
+    margin: 50px 2px 10px 10px;
     padding: 50px 30px 60px 20px;
     width: 350px;
     height: 150px;
@@ -1364,13 +1417,14 @@ p {
 
   .fourth-section {
     height: 100vh;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
+    width: 90%;
+    margin: 5px 0px 5px 5px;
+    padding: 5px 0px 5px 5px;
   }
 
   .fourth-section .body-container .fourth-grid {
-    margin: 50px 60px 10px 90px;
-    padding: 10px 60px 10px 90px;
+    margin: 150px 30px 10px 20px;
+    padding: 10px 30px 10px 20px;
     width: 60%;
     position: relative;
     left: 260px;
@@ -1385,7 +1439,7 @@ p {
   }
 
   .fourth-section .body-container .fourth-grid .fourth-grid2 {
-    margin: 2px 2px 10px 130px;
+    margin: 70px 2px 10px 100px;
     padding: 15px 15px 25px 30px;
     width: 55%;
     height: 200px;
@@ -1393,7 +1447,7 @@ p {
   }
 
   .fourth-section .body-container .fourth-grid .fourth-grid3 {
-    margin: 2px 2px 10px 130px;
+    margin: 20px 2px 10px 100px;
     padding: 15px 15px 25px 30px;
     width: 55%;
     height: 200px;
@@ -1414,7 +1468,7 @@ p {
     padding: 5px 5px 5px 5px;
     position: relative;
     right: 0px;
-    bottom: 420px;
+    bottom: 0px;
     width: 50%;
     height: 80%;
   }
@@ -1422,15 +1476,17 @@ p {
   .fourth-section .body-container .Pic-Grid .bank {
     position: relative;
     margin: 5px 5px 5px 5px;
-    top: 5px;
+    top: 150px;
     left: 0px;
-    width: 80%;
+    width: 70%;
+    height: 90%;
   }
 
   .fifth-section {
     height: 100vh;
-    margin: 5px 5px 10px 5px;
-    padding: 5px 5px 10px 5px;
+    margin: 5px 0px 10px 5px;
+    padding: 5px 0px 10px 5px;
+    width: 90%;
   }
 
   .fifth-section .body-container .fifth-grid {
@@ -1448,17 +1504,17 @@ p {
   }
 
   .fifth-section .body-container .fifth-grid .fifth-grid2 {
-    margin: 2px 2px 10px 30px;
+    margin: 2px 2px 10px 50px;
     padding: 15px 15px 15px 5px;
     width: 65%;
-    height: 180px;
+    height: 195px;
   }
 
   .fifth-section .body-container .fifth-grid .fifth-grid3 {
-    margin: 35px 2px 10px 30px;
+    margin: 35px 2px 10px 50px;
     padding: 25px 10px 15px 5px;
     width: 65%;
-    height: 180px;
+    height: 195px;
   }
 
   .fifth-section .body-container .fifth-grid .CityPay-QR {
@@ -1475,9 +1531,9 @@ p {
     margin: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
     position: relative;
-    left: 720px;
-    bottom: 600px;
-    width: 47%;
+    left: 520px;
+    bottom: 530px;
+    width: 45%;
     height: 90%;
   }
 
@@ -1486,13 +1542,14 @@ p {
     margin: 5px 5px 5px 5px;
     top: 0px;
     left: 0px;
-    width: 80%;
+    width: 100%;
   }
 
   .sixth-section {
     height: 100vh;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
+    margin: 5px 0px 5px 5px;
+    padding: 5px 0px 5px 5px;
+    width: 90%;
   }
 
   .sixth-body {
@@ -1515,10 +1572,10 @@ p {
   .sixth-section .sixth-body .sixth-img .Utility {
     margin: 55px 1px 1px 0px;
     padding: 55px 1px 1px 1px;
-    width: 320px;
-    height: 360px;
+    width: 330px;
+    height: 380px;
     position: relative;
-    right: 30px;
+    right: 70px;
   }
 
   .sixth-section .body-container .sixth-grid h2 {
@@ -1548,7 +1605,7 @@ p {
   .sixth-section .body-container .sixth-grid {
     width: 100%;
     position: relative;
-    right: 25px;
+    right: 55px;
     margin: 35px 1px 1px 0px;
   }
 
@@ -1572,8 +1629,9 @@ p {
 
   .seventh-section {
     height: 100vh;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
+    width: 90%;
+    margin: 5px 0px 5px 5px;
+    padding: 5px 0px 5px 5px;
   }
 
   .seventh-section .body-container.seventh-title {
@@ -1586,7 +1644,7 @@ p {
     padding: 10px 60px 10px 90px;
     width: 60%;
     position: relative;
-    left: 50px;
+    left: 0px;
   }
 
   .seventh-section .body-container .seventh-grid h2 {
@@ -1597,74 +1655,48 @@ p {
     font-size: 13px;
   }
 
-  .seventh-section .body-container .seventh-grid .seventh-grid1 {
-    margin: 2px 2px 100px 15px;
-    padding: 15px 15px 75px 10px;
-    width: 235px;
-    height: 310px;
-  }
-
-  .seventh-section .body-container .seventh-grid .seventh-grid2 {
-    margin: 2px 2px 100px 15px;
-    padding: 15px 15px 75px 10px;
-    width: 235px;
-    height: 310px;
-  }
-
+  .seventh-section .body-container .seventh-grid .seventh-grid1,
+  .seventh-section .body-container .seventh-grid .seventh-grid2,
   .seventh-section .body-container .seventh-grid .seventh-grid3 {
-    margin: 2px 2px 75px 15px;
-    padding: 15px 10px 75px 10px;
+    margin: 2px 2px 100px 15px;
+    padding: 15px 15px 75px 10px;
     width: 235px;
     height: 310px;
+    position: relative;
+    /* Add this to ensure absolute positioning works */
   }
 
-  .seventh-section .body-container .seventh-grid .Reward {
-    width: 120px;
-    height: auto;
-  }
-
-  .seventh-section .body-container .seventh-grid .MobileTop-Up {
-    width: 120px;
-    height: auto;
-  }
-
+  .seventh-section .body-container .seventh-grid .Reward,
+  .seventh-section .body-container .seventh-grid .MobileTop-Up,
   .seventh-section .body-container .seventh-grid .conv {
     width: 120px;
     height: auto;
   }
 
   /* Perks Signature Image */
-  .seventh-section .body-container .seventh-grid .seventh-grid1 .base {
-    position: relative;
-    top: 20px;
-  }
-
-  .seventh-section .body-container .seventh-grid .seventh-grid2 .base {
-    position: relative;
-    top: 60px;
-  }
-
-  .seventh-section .body-container .seventh-grid .seventh-grid3 .base {
-    position: relative;
-    top: 40px;
-  }
-
   .seventh-section .body-container .seventh-grid .base {
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
     height: 100px;
+    display: none;
   }
 
   .seventh-section .body-container .seventh-grid .base img {
-    position: absolute;
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
     bottom: 0;
-    left: 51%;
-    transform: translateX(-50%);
-    width: auto;
-    height: 100%;
+    top: 250px;
   }
 
   /* Footer */
+
+  .footer {
+    padding: 20px 0px 20px 20px;
+  }
 
   .footer .logoQR .citypaylog {
     width: 22%;
@@ -1684,8 +1716,9 @@ p {
   }
 
   .footer .footer-links {
-    margin: 1px 50px 1px 1px;
-    padding: 1px 20px 1px 1px;
+    margin: 1px 0px 1px 1px;
+    padding: 1px 0px 1px 1px;
+    width: 80%;
   }
 
   .footer .footer-links a {
