@@ -697,10 +697,14 @@ body {
     color: white;
 }
 
-
-
 /* Media Queries */
 @media (max-width:2560px) and (min-width: 1441px) {
+    .nav ul {
+        margin: 20px 10px 10px 210px;
+        width: 40%;
+        padding: 10px;
+    }
+
     .footer-links {
         position: relative;
         right: 20px;
@@ -709,6 +713,11 @@ body {
 
 
 @media (max-width:1440px) and (min-width: 1025px) {
+    .nav ul {
+        margin: 20px 10px 10px 229px;
+        width: 40%;
+        padding: 10px;
+    }
 
     .services .serv-grid .serv1 .serv-img1,
     .services .serv-grid .serv2 .serv-img2,
@@ -809,6 +818,11 @@ body {
 }
 
 @media (max-width:1024px) and (min-width: 769px) {
+    .nav ul {
+        margin: 20px 10px 10px 214px;
+        width: 40%;
+        padding: 10px;
+    }
 
     .services .serv-grid .serv1 .serv-img1,
     .services .serv-grid .serv2 .serv-img2,
@@ -963,6 +977,10 @@ body {
 }
 
 @media (max-width: 768px) and (min-width:426px) {
+    .nav ul {
+        margin: 20px 0px 10px 190px;
+        padding: 10px;
+    }
 
     .body-container {
         padding: 0px;
@@ -971,6 +989,7 @@ body {
         flex-direction: column;
         align-items: center;
     }
+
 
     .services {
         padding: 10px;
@@ -1213,6 +1232,11 @@ body {
 }
 
 @media (max-width: 425px) and (min-width:376px) {
+    .nav ul {
+        margin: 20px 10px 10px 25px;
+        width: 80%;
+        padding: 10px;
+    }
 
     .body-container {
         padding: 0px;
@@ -1449,6 +1473,12 @@ body {
 }
 
 @media (max-width: 375px) and (min-width:321px) {
+
+    .nav ul {
+        margin: 20px 20px 10px 61px;
+        width: 70%;
+        padding: 10px;
+    }
 
     .body-container {
         padding: 0px;
@@ -1687,6 +1717,12 @@ body {
 }
 
 @media (max-width: 320px) and (min-width:280px) {
+    .nav ul {
+        margin: 20px 10px 10px 62px;
+        width: 60%;
+        padding: 10px;
+    }
+
 
     .body-container {
         padding: 0px;
