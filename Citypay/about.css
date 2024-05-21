@@ -44,6 +44,7 @@ body {
 
 .nav {
     display: none;
+    transition: display 0.3s ease-in-out;
 }
 
 .nav.active {
@@ -155,8 +156,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     /* Center the child elements vertically */
 }
+
+.grid-1:hover, .grid-2:hover, .grid-3:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(#0e83e3, #1868aa, #65c7f7);
+    /* Slight change in gradient */
+}
+
 
 .icon1, .icon2, .icon3 {
     margin-bottom: 5px;
@@ -1969,5 +1979,4 @@ body {
         transform: none;
         /* Remove the hover effect on mobile devices */
     }
-
 }

@@ -3,58 +3,211 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <link rel="stylesheet" href="ourteam.css">
         <title>Our Team</title>
-        <link rel="icon" type="nabar-icon" href="../Assets/citypay-favicon.png">
+        <link rel="icon" type="nabar-icon" href="./Assets/citypay-favicon.png">
     </head>
-    <body>
-
-        <div class="team">
-            <img src="./Images/Upper Flow.png" alt="Upper Flow"
-                class="upper-flow" />
-            <h1>Our Team</h1>
-            <div class="team-box">
-                <div class="grid-one">
-                    <div class="content1">
-                        <p></p>
-                    </div>
+    <body class="body-container">
+        <header class="navbar">
+            <div class="header">
+                <div class="logo">
+                    <a href="/"> <img src="Assets/citypay_logo.png"
+                            alt="citypay-logo" class="logo" /> </a>
                 </div>
-                <div class="grid-two">
-                    <div class="content2">
-                        <p></p>
-                    </div>
-                </div>
-                <div class="grid-three">
-                    <div class="content3">
-                        <p></p>
-                    </div>
-                </div>
-                <div class="grid-four">
-                    <div class="content4">
-                        <p></p>
-                    </div>
-                </div>
-                <div class="grid-five">
-                    <div class="content5">
-                        <p></p>
-                    </div>
-                </div>
-                <div class="grid-six">
-                    <div class="content6">
-                        <p></p>
-                    </div>
+                <div class="menu-toggle" id="menu-toggle">
+                    <i class="fa fa-bars" aria-hidden="true" class="burger"></i>
                 </div>
             </div>
-             <button id="Button" class="back">Return Home</button>
-        <script type="text/javascript">
-    document.getElementById("Button").onclick = function () {
-        location.href = "../index.html"; // Using a relative path to navigate up one directory level
-    };
-</script>
+            <div class="nav" id="nav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <div class="underline"></div>
+                    <li><a href="/about">About</a></li>
+                    <div class="underline"></div>
+                    <li><a href>Services</a></li>
+                    <div class="underline"></div>
+                    <li><a href="/contact">Contact</a></li>
+                    <div class="underline"></div>
+                    <li><a href="/ourteam">Our Team</a></li>
+          <!-- <div class="underline"></div>
+          <li><a href="#">News and Blogs</a></li>
+          <div class="underline"></div>  -->
+                    <li><a
+                            href="https://agent.citywallet.com.np/auth/signup">Agent
+                            Sign-Up</a></li>
+                    <div class="underline"></div>
+                    <li><a href="/privacypolicy">Privacy & Policy</a></li>
+                </ul>
+            </div>
+        </header>
+<div class="body-container">
+ <div class="team">
+            <div class="title">
+                <h1>OUR TEAM</h1>
+            </div>
+            
+                 <div class="head">
+                <h2>Office Heads</h2>
+            </div>
+          <div class="off-head-grid">
+                 <!-- Heads of Office -->
+              
+                <div class="team1">
+                  <div class="team-img1">
+                      <img src="./Assets/S-R Nepal.png" alt="team-img1" class="team-img1">
+                  </div>
+
+                  <div class="team-cont1">
+                    <p>Binay Regmi</p>
+                    <p>CEO</p>
+                  </div>
+                </div>
+
+                <div class="team2">
+                   <div class="team-img2">
+                      <img src="./Assets/S-R Nepal.png" alt="team-img2" class="team-img2">
+                  </div>
+
+                  <div class="team-cont2">
+                      <p>Prakash Chalise</p>
+                    <p>CBO</p>
+                  </div>
+                </div>
+
+                <div class="team3">
+                   <div class="team-img3">
+                      <img src="./Assets/S-R Nepal.png" alt="team-img3" class="team-img3">
+                  </div>
+
+                  <div class="team-cont3">
+                      <p>Pratik Regmi</p>
+                    <p>CTO</p>
+                  </div>
+                </div>
+          </div>
+             
+          <div class="unit-heads">
+    <nav class="nav">
+        <ul>
+            <li data-role="accounts">ACCOUNTS</li>
+            <li data-role="audit">AUDIT</li>
+            <li data-role="business-development">BUSINESS DEVELOPMENT</li>
+            <li data-role="compliance">COMPLIANCE</li>
+            <!-- <li data-role="gsd">GSD</li> -->
+            <li data-role="hr">HR</li>
+            <li data-role="it">IT</li>
+            <!-- <li data-role="legal">LEGAL</li> -->
+            <li data-role="marketing">MARKETING</li>
+            <li data-role="operations">OPERATIONS</li>
+            <!-- <li data-role="treasury-and-research">TREASURY AND RESEARCH</li> -->
+        </ul>
+    </nav>
+
+    <div class="details">
+        <div id="accounts" class="detail-grid">Accounts Employees Details</div>
+        <div id="audit" class="detail-grid">Audit Employees Details</div>
+        <div id="business-development" class="detail-grid">Business Development Employees Details</div>
+        <div id="compliance" class="detail-grid">Compliance Employees Details</div>
+        <!-- <div id="gsd" class="detail-grid">GSD Employees Details</div> -->
+        <div id="hr" class="detail-grid">HR Employees Details</div>
+        <div id="it" class="detail-grid">IT Employees Details</div>
+        <!-- <div id="legal" class="detail-grid">Legal Employees Details</div> -->
+        <div id="marketing" class="detail-grid">Marketing Employees Details</div>
+        <div id="operations" class="detail-grid">Operations Employees Details</div>
+        <!-- <div id="treasury-and-research" class="detail-grid">Treasury and Research Employees Details</div> -->
+    </div>
+</div>
+                <div class="buss">
+                  <h2>Business Department</h2>
+               </div>
+        <div class="buss-depart-grid">
+              <!-- Bussiness Department -->
+             
+           
+                <div class="team4">
+                   <div class="team-img4">
+                      <img src="./Assets/S-R Nepal.png" alt="team-img4" class="team-img4">
+                  </div>
+
+                  <div class="team-cont4">
+                    <p>Utsav Wagle</p>
+                    <p>Compliance Head</p>
+                  </div>
+                </div>
+
+                <div class="team5">
+                   <div class="team-img5">
+                      <img src="./Assets/S-R Nepal.png" alt="team-img5" class="team-img5">
+                  </div>
+
+                  <div class="team-cont5">
+                    <p>Shaili Dhakal</p>
+                    <p>HR</p>
+                  </div>
+                </div>
+
+                <div class="team6">
+                   <div class="team-img6">
+                      <img src="./Assets/S-R Nepal.png" alt="team-img6" class="team-img6">
+                  </div>
+
+                  <div class="team-cont6">
+                    <p>Nishant Thapa</p>
+                    <p>Senior Relationship Manager</p>
+                  </div>
+                </div>
+
+                <div class="team7">
+                   <div class="team-img7">
+                      <img src="./Assets/S-R Nepal.png" alt="team-img7" class="team-img7">
+                  </div>
+
+                  <div class="team-cont7">
+                    <p>Sandeep Dutta</p>
+                    <p>Junior Relationship Manager</p>
+                  </div>
+                </div>
+        </div>
+          
+                  <div class="it">
+                  <h2>IT Department</h2>
+               </div>
+        <div class="it-depart-grid">
+               <!-- IT Department -->
+          
+             
+                <div class="team8">
+                   <div class="team-img8">
+                      <img src="./Assets/S-R Nepal.png" alt="team-img8" class="team-img8">
+                  </div>
+
+                  <div class="team-cont8">
+                    <p>Bedagya Raj Joshi</p>
+                    <p>Assistant Trainee</p>
+                  </div>
+                </div>
+
+                <div class="team9">
+                   <div class="team-img9">
+                      <img src="./Assets/S-R Nepal.png" alt="team-img9" class="team-img9">
+                  </div>
+
+                  <div class="team-cont9">
+                    <p>Shishir Basnet</p>
+                    <p>Assistant Trainee</p>
+                  </div>
+                </div>
         </div>
 
-       
- <!-- Footer Part -->
+              
+            
+      </div>
+
+        
+<!-- Footer Part -->
       <footer class="footer">
         <div class="foot">
           <div class="row">
@@ -137,25 +290,30 @@
             <div class="footer-links">
               <h4>Other Information</h4>
               <ul>
-                <!-- <li><a href="./faq.html">FAQ</a></li> -->
-                <!-- <li><a href="./ourteam.html">Our Team</a></li> -->
-                <!-- <li><a href="./News&Blogs.html">News & Blogs</a></li> -->
+                <!-- <li><a href="/faq">FAQ</a></li> -->
+                <!-- <li><a href="/ourteam">Our Team</a></li> -->
+                <!-- <li><a href="/News&Blogs">News & Blogs</a></li> -->
                 <li><a href="/privacypolicy">Privacy Policy</a></li>
                 <li><a href="/downloads">Downloads</a></li>
               </ul>
               <button id="myButton" class="agent">Become an Agent</button>
               <script type="text/javascript">
-    document.getElementById("myButton").onclick = function () {
-        location.href = "https://agent.citywallet.com.np/auth/signup"; // Using a relative path to navigate up one directory level
-    };
-</script>
+                 document.getElementById("myButton").onclick = function () {
+                  location.href = "https://agent.citywallet.com.np/auth/signup";
+                  };
+                  </script>
             </div>
+
           </div>
         </div>
         <div class="copyright">
-          <p>© 2024 City Wallet Private Limited. All rights reserved.</p>
+          <p>© 2024 City Wallet Private Limited. All rights reteamed.</p>
         </div>
       </div>
     </footer>
+</div>
+
+    <script src="./js/script.js"></script>
+       
     </body>
 </html>

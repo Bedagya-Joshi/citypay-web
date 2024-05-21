@@ -1,7 +1,8 @@
 # Use a lightweight base image
 FROM nginx:alpine
 
-# Copy the entire website directory to the container's /usr/share/nginx/html directory
+# Copy the entire website directory to the container's /usr/share/nginx/html director
+
 COPY /Citypay /usr/share/nginx/html/
 
 # Expose port 80 for web traffic

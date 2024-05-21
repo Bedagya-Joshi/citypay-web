@@ -1,0 +1,1961 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    /* height: auto; */
+}
+
+* {
+    font-family: "PT Sans";
+}
+
+/* css for the font */
+.pt-sans-regular {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.layout-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+}
+
+/* Navbar Styles */
+.navbar {
+    z-index: 10;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 40px;
+}
+
+.logo {
+    width: 90px;
+    height: auto;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-bars {
+    font-size: 40px;
+    color: #1472cf;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-toggle:hover .fa-bars {
+    transform: rotate(90deg);
+}
+
+.nav {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.nav.active {
+    display: block;
+    opacity: 1;
+    position: absolute;
+    right: 20px;
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    top: 60px;
+    animation: dropdown 0.5s ease-in-out forwards;
+}
+
+@keyframes dropdown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.underline {
+    background-color: white;
+    height: 1px;
+    width: 80%;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    background: linear-gradient(135deg, #1472cf, #65c7f7);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    width: 45%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin: 20px 0px 10px 170px;
+    padding: 10px;
+    z-index: 1;
+    top: 0;
+    position: sticky;
+    border-radius: 20px;
+}
+
+.nav li {
+    padding: 10px;
+    text-align: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav a:hover {
+    color: #ffdd57;
+    /* Hover color */
+}
+
+/* Additional Menu Toggle Animation */
+@keyframes menuToggleAnimation {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+.body-container {
+    padding: 5px 0px 0px 0px;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+}
+
+.services .title h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1472cf;
+}
+
+.serv-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    width: 80%;
+    gap: 60px;
+    align-content: center;
+}
+
+/* Service 1 */
+.services .serv-grid .serv1 {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 40px;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.serv-img1 {
+    width: 190px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.serv-cont1 {
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+    padding: 3px;
+}
+
+/* Service 2 */
+.services .serv-grid .serv2 {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 40px;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.serv-img2 {
+    width: 190px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.serv-cont2 {
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+    padding: 3px;
+}
+
+/* Service 3 */
+.services .serv-grid .serv3 {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 40px;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.serv-img3 {
+    width: 190px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.serv-cont3 {
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+    padding: 3px;
+}
+
+/* Service 4 */
+.services .serv-grid .serv4 {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 40px;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.serv-img4 {
+    width: 190px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.serv-cont4 {
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+    padding: 3px;
+}
+
+/* Service 5 */
+.services .serv-grid .serv5 {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 40px;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.serv-img5 {
+    width: 190px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.serv-cont5 {
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+    padding: 3px;
+}
+
+/* Service 6 */
+.services .serv-grid .serv6 {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 40px;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.serv-img6 {
+    width: 190px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.serv-cont6 {
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+    padding: 3px;
+}
+
+/* Service 7 */
+.services .serv-grid .serv7 {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 40px;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.serv-img7 {
+    width: 190px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.serv-cont7 {
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+    padding: 3px;
+}
+
+/* Service 8 */
+.services .serv-grid .serv8 {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 40px;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.serv-img8 {
+    width: 190px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.serv-cont8 {
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+    padding: 3px;
+}
+
+
+/* Service 9 */
+.services .serv-grid .serv9 {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 40px;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.serv-img9 {
+    width: 190px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.serv-cont9 {
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+    padding: 3px;
+}
+
+.serv1:hover, .serv2:hover, .serv3:hover, .serv4:hover, .serv5:hover, .serv6:hover, .serv7:hover, .serv8:hover, .serv9:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(#0e83e3, #99d1ff, #65c7f7);
+}
+
+
+/* Footer styles */
+
+.footer {
+    background: rgb(161, 159, 159);
+    background: linear-gradient(0deg, rgb(152, 170, 230) 0%, rgb(241, 242, 245) 55%);
+    box-shadow: 0px -12px 25px rgba(228, 237, 250, 0.8);
+    /* Adjusted to have a negative y-offset */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px;
+    margin-top: auto;
+}
+
+.footer .foot .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-gap: 10px; */
+}
+
+.logoQR {
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+
+.logoQR .citypaylog {
+    position: relative;
+    width: 18%;
+    height: auto;
+    margin: 22px 2px 2px 2px;
+    padding: 25px 5px 5px 15px;
+}
+
+.logoQR .QRcode {
+    position: relative;
+    width: 18%;
+    height: auto;
+    margin: 25px 2px 2px 2px;
+    padding: 25px 5px 5px 15px;
+}
+
+.dwbuttons {
+    margin: 5px 2px 2px 10px;
+    padding: 7px 2px 2px 5px;
+}
+
+.logimg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.dwbuttons .logimg .download-btn {
+    width: 100px;
+    height: 35px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+    align-content: center;
+}
+
+.dwbuttons .tit {
+    width: 100%;
+}
+
+.dwbuttons .tit h3 {
+    font-size: medium;
+    font-weight: bold;
+    width: 100%;
+}
+
+.playstore, .appstore {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.download-btn {
+    width: 200px;
+    height: auto;
+}
+
+.playstore {
+    width: 100%;
+    height: 100%;
+}
+
+.appstore {
+    width: 100%;
+    height: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    align-items: center;
+    position: relative;
+    right: 0px;
+}
+
+.info .basic {
+    margin: 4px 0px 4px 0px;
+    padding: 4px 10px 4px 0px;
+    width: 100%;
+    position: relative;
+    right: 80px;
+}
+
+.info .basic p {
+    font-weight: normal;
+    padding-top: 10px;
+    font-size: medium;
+}
+
+.info .basic .Email p {
+    width: 220px;
+}
+
+.info .basic .connect p {
+    font-weight: bold;
+    color: #0D60B5;
+    font-size: large;
+}
+
+.connect {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+
+.connect .soc {
+    position: relative;
+    left: 12px;
+}
+
+.connect {
+    width: 100%;
+    margin: 10px 10px 10px 30px;
+    padding: 10px 50px 50px 30px;
+}
+
+.connect p {
+    font-weight: bolder;
+}
+
+.connect .fb {
+    width: 25px;
+    height: auto;
+}
+
+.connect .ytb {
+    width: 25px;
+    height: auto;
+}
+
+.connect .lkdn {
+    width: 25px;
+    height: auto;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4px 4px 4px 4px;
+    padding: 4px 4px 4px 4px;
+    width: 100%;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ff6b6b;
+}
+
+/* Become Agent Button */
+.agent {
+    float: right;
+    border-radius: 10px;
+    background-color: #0d60b5;
+    padding: 10px 10px;
+    border: none;
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+    margin: 1px 20px 20px 30px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.agent:hover {
+    background-color: white;
+    color: #0d60b5;
+}
+
+.copyright {
+    align-items: center;
+    margin: 10px 1px 1px 1px;
+    padding: 30px 1px 1px 1px;
+}
+
+.copyright p {
+    text-align: center;
+    color: white;
+}
+
+/* Media Queries */
+@media (max-width:2560px) and (min-width: 1441px) {
+    .nav ul {
+        margin: 20px 10px 10px 210px;
+        width: 40%;
+        padding: 10px;
+    }
+
+    .footer-links {
+        position: relative;
+        right: 20px;
+    }
+}
+
+
+@media (max-width:1440px) and (min-width: 1025px) {
+    .nav ul {
+        margin: 20px 10px 10px 229px;
+        width: 40%;
+        padding: 10px;
+    }
+
+    .services .serv-grid .serv1 .serv-img1,
+    .services .serv-grid .serv2 .serv-img2,
+    .services .serv-grid .serv3 .serv-img3,
+    .services .serv-grid .serv4 .serv-img4,
+    .services .serv-grid .serv5 .serv-img5,
+    .services .serv-grid .serv6 .serv-img6,
+    .services .serv-grid .serv7 .serv-img7,
+    .services .serv-grid .serv8 .serv-img8,
+    .services .serv-grid .serv9 .serv-img9 {
+        width: 160px;
+        height: 150px;
+    }
+
+    .serv-cont1,
+    .serv-cont2,
+    .serv-cont3,
+    .serv-cont4,
+    .serv-cont5,
+    .serv-cont6,
+    .serv-cont7,
+    .serv-cont8,
+    .serv-cont9 {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    /* Footer */
+
+    .footer {
+        padding: 20px 0px 20px 20px;
+    }
+
+    .footer .logoQR .citypaylog {
+        width: 22%;
+    }
+
+    .footer .logoQR .QRcode {
+        width: 22%;
+    }
+
+    .footer .info .basic {
+        position: relative;
+        left: 50px;
+    }
+
+    .footer .info p {
+        font-size: 13px;
+    }
+
+    .footer .footer-links {
+        margin: 1px 0px 1px 1px;
+        padding: 1px 0px 1px 1px;
+        width: 80%;
+    }
+
+    .footer .footer-links a {
+        font-size: small;
+    }
+
+    .footer-links h4 {
+        font-size: medium;
+    }
+
+    .footer .logimg .download-btn {
+        width: 90px;
+        height: 30px;
+        margin: 2px 2px 2px 5px;
+    }
+
+    .connect {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
+        width: 200px;
+    }
+
+    .connect .soc {
+        position: relative;
+        left: 7px;
+    }
+
+    .connect .fb {
+        width: 22px;
+        height: auto;
+    }
+
+    .connect .ytb {
+        width: 22px;
+        height: auto;
+    }
+
+    .connect .lkdn {
+        width: 22px;
+        height: auto;
+    }
+}
+
+@media (max-width:1024px) and (min-width: 769px) {
+    .nav ul {
+        margin: 20px 10px 10px 214px;
+        width: 40%;
+        padding: 10px;
+    }
+
+    .services .serv-grid .serv1 .serv-img1,
+    .services .serv-grid .serv2 .serv-img2,
+    .services .serv-grid .serv3 .serv-img3,
+    .services .serv-grid .serv4 .serv-img4,
+    .services .serv-grid .serv5 .serv-img5,
+    .services .serv-grid .serv6 .serv-img6,
+    .services .serv-grid .serv7 .serv-img7,
+    .services .serv-grid .serv8 .serv-img8,
+    .services .serv-grid .serv9 .serv-img9 {
+        width: 130px;
+        height: 130px;
+    }
+
+    .serv-cont1,
+    .serv-cont2,
+    .serv-cont3,
+    .serv-cont4,
+    .serv-cont5,
+    .serv-cont6,
+    .serv-cont7,
+    .serv-cont8,
+    .serv-cont9 {
+        font-size: 13px;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    /* Footer */
+
+    .footer {
+        padding: 0px;
+    }
+
+    .footer .row {
+        position: relative;
+        right: 50px;
+    }
+
+    .footer .logoQR {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .logoQR .citypaylog {
+        width: 30%;
+        position: relative;
+        left: 40px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .footer .logoQR .QRcode {
+        width: 30%;
+        position: relative;
+        left: 40px;
+        padding: 5px;
+    }
+
+    .footer .dwbuttons {
+        position: relative;
+        left: 20px;
+    }
+
+    .footer .dwbuttons .tit h3 {
+        font-size: 12px;
+    }
+
+    .footer .dwbuttons .logimg {
+        position: relative;
+        left: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .dwbuttons .logimg .download-btn {
+        position: relative;
+        right: 42px;
+    }
+
+    .footer .info .basic {
+        position: relative;
+        left: 70px;
+        width: 80%;
+    }
+
+    .footer .info p {
+        font-size: 11px;
+    }
+
+    .footer .footer-links {
+        margin: 1px 10px 1px 1px;
+        padding: 1px 20px 1px 1px;
+        position: relative;
+        right: 100px;
+        top: 50px;
+    }
+
+    .footer .footer-links a {
+        font-size: x-small;
+    }
+
+    .footer-links h4 {
+        font-size: medium;
+    }
+
+    .footer-links .agent {
+        font-size: 10px;
+        padding: 10px;
+        width: 50%;
+    }
+
+    .footer .logimg .download-btn {
+        width: 70px;
+        height: 25px;
+        margin: 2px 2px 2px 5px;
+    }
+
+    .connect {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
+        width: 200px;
+        position: relative;
+        right: 100px;
+    }
+
+    .connect .soc {
+        position: relative;
+        left: 3px;
+    }
+
+    .connect .fb {
+        width: 20px;
+        height: auto;
+    }
+
+    .connect .ytb {
+        width: 20px;
+        height: auto;
+    }
+
+    .connect .lkdn {
+        width: 20px;
+        height: auto;
+    }
+
+    .footer .copyright p {
+        font-size: smaller;
+    }
+}
+
+@media (max-width: 768px) and (min-width:426px) {
+    .nav ul {
+        margin: 20px 0px 10px 190px;
+        padding: 10px;
+    }
+
+    .body-container {
+        padding: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .services {
+        padding: 10px;
+        margin: 10px;
+        width: 90%;
+    }
+
+    .serv-grid {
+        grid-template-columns: 1fr 1fr;
+        /* Stack all items in a single column */
+        width: 80%;
+        gap: 50px;
+        padding: 5px;
+        margin: 0;
+        align-self: center;
+    }
+
+    .services .serv-grid .serv1,
+    .services .serv-grid .serv2,
+    .services .serv-grid .serv3,
+    .services .serv-grid .serv4,
+    .services .serv-grid .serv5,
+    .services .serv-grid .serv6,
+    .services .serv-grid .serv7,
+    .services .serv-grid .serv8,
+    .services .serv-grid .serv9 {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    .services .serv-grid .serv1 .serv-img1,
+    .services .serv-grid .serv2 .serv-img2,
+    .services .serv-grid .serv3 .serv-img3,
+    .services .serv-grid .serv4 .serv-img4,
+    .services .serv-grid .serv5 .serv-img5,
+    .services .serv-grid .serv6 .serv-img6,
+    .services .serv-grid .serv7 .serv-img7,
+    .services .serv-grid .serv8 .serv-img8,
+    .services .serv-grid .serv9 .serv-img9 {
+        width: 130px;
+        height: 120px;
+    }
+
+    .serv-cont1,
+    .serv-cont2,
+    .serv-cont3,
+    .serv-cont4,
+    .serv-cont5,
+    .serv-cont6,
+    .serv-cont7,
+    .serv-cont8,
+    .serv-cont9 {
+        font-size: 13px;
+        text-align: center;
+        margin-top: 70px;
+        padding: 5px;
+    }
+
+    /* Footer */
+
+    .footer {
+        padding: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer .foot {
+        width: 100%;
+        position: relative;
+    }
+
+    .footer .row {
+        width: 100%;
+        position: relative;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px;
+
+    }
+
+    .footer .row .logoQR {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        align-content: center;
+        top: 0;
+        left: 0;
+        margin: 30px 0px 0px 0px;
+    }
+
+    .footer .row .logoQR .citypaylog {
+        width: 50%;
+        position: relative;
+        right: 0px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .footer .row .logoQR .QRcode {
+        width: 50%;
+        position: relative;
+        right: 0px;
+        padding: 5px;
+        margin: 2px 0px 0px 0px;
+    }
+
+    .footer .row .logoQR .dwbuttons {
+        position: relative;
+        right: 0px;
+        width: 50%;
+        align-items: center;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .footer .dwbuttons .tit h3 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .footer .dwbuttons .logimg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer .dwbuttons .logimg .download-btn {
+        width: 80px;
+        height: auto;
+        margin: 0px 0px 0px 10px;
+    }
+
+    .footer .info {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+    }
+
+    .footer .info .basic {
+        padding: 5px;
+        margin: 95px 5px 0px 25px;
+        width: 70%;
+        position: relative;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .basic div {
+        width: 100%;
+    }
+
+    .info .basic p {
+        font-size: 11px;
+        margin: 2px;
+        padding: 2px;
+        text-align: left;
+    }
+
+    .footer .info .basic .Email p {
+        width: 100%;
+    }
+
+    .connect {
+        padding: 5px;
+        margin: 5px 5px 35px 5px;
+        width: 100%;
+        position: relative;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .connect p {
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .connect .soc {
+        position: relative;
+        left: 0px;
+    }
+
+    .connect .fb {
+        width: 25px;
+        height: auto;
+    }
+
+    .connect .ytb {
+        width: 25px;
+        height: auto;
+    }
+
+    .connect .lkdn {
+        width: 25px;
+        height: auto;
+    }
+
+    .footer .footer-links {
+        margin: 80px 0px 1px 1px;
+        padding: 1px 0px 1px 1px;
+        position: relative;
+        top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .footer-links a {
+        font-size: 10px;
+    }
+
+    .footer-links h4 {
+        font-size: 12px;
+    }
+
+    .footer-links .agent {
+        font-size: 6px;
+        padding: 5px;
+        width: 50%;
+    }
+
+    .footer .copyright p {
+        font-size: x-small;
+    }
+}
+
+@media (max-width: 425px) and (min-width:376px) {
+    .nav ul {
+        margin: 20px 10px 10px 25px;
+        width: 80%;
+        padding: 10px;
+    }
+
+    .body-container {
+        padding: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services {
+        padding: 10px;
+        margin: 10px;
+        width: 90%;
+    }
+
+    .serv-grid {
+        grid-template-columns: 1fr;
+        /* Stack all items in a single column */
+        width: 80%;
+    }
+
+    .services .serv-grid .serv1 .serv-img1,
+    .services .serv-grid .serv2 .serv-img2,
+    .services .serv-grid .serv3 .serv-img3,
+    .services .serv-grid .serv4 .serv-img4,
+    .services .serv-grid .serv5 .serv-img5,
+    .services .serv-grid .serv6 .serv-img6,
+    .services .serv-grid .serv7 .serv-img7,
+    .services .serv-grid .serv8 .serv-img8,
+    .services .serv-grid .serv9 .serv-img9 {
+        width: 130px;
+        height: 120px;
+    }
+
+    .serv-cont1,
+    .serv-cont2,
+    .serv-cont3,
+    .serv-cont4,
+    .serv-cont5,
+    .serv-cont6,
+    .serv-cont7,
+    .serv-cont8,
+    .serv-cont9 {
+        text-align: center;
+        margin-top: 70px;
+        padding: 5px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer .foot {
+        width: 100%;
+        position: relative;
+    }
+
+    .footer .row {
+        width: 100%;
+        position: relative;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px;
+
+    }
+
+    .footer .row .logoQR {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        align-content: center;
+        top: 0;
+        left: 0;
+        margin: 90px 0px 0px 0px;
+    }
+
+    .footer .row .logoQR .citypaylog {
+        width: 40%;
+        position: relative;
+        right: 0px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .footer .row .logoQR .QRcode {
+        width: 40%;
+        position: relative;
+        right: 0px;
+        padding: 5px;
+        margin: 2px 0px 0px 0px;
+    }
+
+    .footer .row .logoQR .dwbuttons {
+        position: relative;
+        right: 0px;
+        width: 80%;
+        align-items: center;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .footer .dwbuttons .tit h3 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .footer .dwbuttons .logimg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer .dwbuttons .logimg .download-btn {
+        width: 70px;
+        height: 25px;
+        margin: 0px 0px 0px 20px;
+    }
+
+    .footer .info {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+    }
+
+    .footer .info .basic {
+        padding: 5px;
+        margin: 135px 5px 0px 5px;
+        width: 100%;
+        position: relative;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .basic div {
+        width: 100%;
+    }
+
+    .info .basic p {
+        font-size: 10px;
+        margin: 2px;
+        padding: 2px;
+        text-align: left;
+    }
+
+    .footer .info .basic .Email p {
+        width: 100%;
+    }
+
+    .connect {
+        padding: 5px;
+        margin: 5px 5px 35px 5px;
+        width: 100%;
+        position: relative;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .connect p {
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .connect .soc {
+        position: relative;
+        left: 0px;
+    }
+
+    .connect .fb {
+        width: 25px;
+        height: auto;
+    }
+
+    .connect .ytb {
+        width: 25px;
+        height: auto;
+    }
+
+    .connect .lkdn {
+        width: 25px;
+        height: auto;
+    }
+
+    .footer .footer-links {
+        margin: 150px 0px 1px 1px;
+        padding: 1px 0px 1px 1px;
+        position: relative;
+        top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .footer-links a {
+        font-size: 10px;
+    }
+
+    .footer-links h4 {
+        font-size: 12px;
+    }
+
+    .footer-links .agent {
+        font-size: 8px;
+        padding: 6px;
+        width: 55%;
+    }
+
+    .footer .copyright p {
+        font-size: x-small;
+    }
+
+    .soc svg:hover {
+        transform: none;
+        /* Remove the hover effect on mobile devices */
+    }
+
+}
+
+@media (max-width: 375px) and (min-width:321px) {
+
+    .nav ul {
+        margin: 20px 20px 10px 61px;
+        width: 70%;
+        padding: 10px;
+    }
+
+    .body-container {
+        padding: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services {
+        padding: 10px;
+        margin: 10px;
+        width: 90%;
+    }
+
+    .serv-grid {
+        grid-template-columns: 1fr;
+        /* Stack all items in a single column */
+        width: 80%;
+    }
+
+    .services .serv-grid .serv1 .serv-img1,
+    .services .serv-grid .serv2 .serv-img2,
+    .services .serv-grid .serv3 .serv-img3,
+    .services .serv-grid .serv4 .serv-img4,
+    .services .serv-grid .serv5 .serv-img5,
+    .services .serv-grid .serv6 .serv-img6,
+    .services .serv-grid .serv7 .serv-img7,
+    .services .serv-grid .serv8 .serv-img8,
+    .services .serv-grid .serv9 .serv-img9 {
+        width: 130px;
+        height: 125px;
+    }
+
+    .serv-cont1,
+    .serv-cont2,
+    .serv-cont3,
+    .serv-cont4,
+    .serv-cont5,
+    .serv-cont6,
+    .serv-cont7,
+    .serv-cont8,
+    .serv-cont9 {
+        text-align: center;
+        margin-top: 70px;
+        padding: 5px;
+    }
+
+
+    /* Footer */
+    .footer {
+        padding: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer .foot {
+        width: 100%;
+        position: relative;
+    }
+
+    .footer .row {
+        width: 100%;
+        position: relative;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px;
+
+    }
+
+    .footer .row .logoQR {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        align-content: center;
+        top: 0;
+        left: 0;
+        margin: 90px 0px 0px 0px;
+    }
+
+    .footer .row .logoQR .citypaylog {
+        width: 50%;
+        position: relative;
+        right: 0px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .footer .row .logoQR .QRcode {
+        width: 50%;
+        position: relative;
+        right: 0px;
+        padding: 5px;
+        margin: 2px 0px 0px 0px;
+    }
+
+    .footer .row .logoQR .dwbuttons {
+        position: relative;
+        right: 0px;
+        width: 80%;
+        align-items: center;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .footer .dwbuttons .tit h3 {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .footer .dwbuttons .logimg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer .dwbuttons .logimg .download-btn {
+        width: 65px;
+        height: 23px;
+        margin: 0px 0px 0px 15px;
+    }
+
+    .footer .info {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+    }
+
+    .footer .info .basic {
+        padding: 5px;
+        margin: 135px 5px 0px 5px;
+        width: 100%;
+        position: relative;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .basic div {
+        width: 100%;
+    }
+
+    .info .basic p {
+        font-size: 9px;
+        margin: 2px;
+        padding: 2px;
+        text-align: left;
+    }
+
+    .footer .info .basic .Email p {
+        width: 100%;
+    }
+
+    .connect {
+        padding: 5px;
+        margin: 5px 5px 35px 5px;
+        width: 100%;
+        position: relative;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .connect p {
+        font-size: 11px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .connect .soc {
+        position: relative;
+        left: 0px;
+    }
+
+    .connect .fb {
+        width: 20px;
+        height: auto;
+    }
+
+    .connect .ytb {
+        width: 20px;
+        height: auto;
+    }
+
+    .connect .lkdn {
+        width: 20px;
+        height: auto;
+    }
+
+    .footer .footer-links {
+        margin: 165px 0px 1px 1px;
+        padding: 1px 0px 1px 1px;
+        position: relative;
+        top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .footer-links a {
+        font-size: 8px;
+    }
+
+    .footer-links h4 {
+        font-size: 10px;
+    }
+
+    .footer-links .agent {
+        font-size: 7px;
+        padding: 6px;
+        width: 55%;
+        border-radius: 5px;
+    }
+
+    .footer .copyright p {
+        font-size: x-small;
+    }
+
+    .soc svg:hover {
+        transform: none;
+        /* Remove the hover effect on mobile devices */
+    }
+
+}
+
+@media (max-width: 320px) and (min-width:280px) {
+    .nav ul {
+        margin: 20px 10px 10px 62px;
+        width: 60%;
+        padding: 10px;
+    }
+
+
+    .body-container {
+        padding: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services {
+        padding: 10px;
+        margin: 10px;
+        width: 90%;
+    }
+
+    .serv-grid {
+        grid-template-columns: 1fr;
+        /* Stack all items in a single column */
+        width: 80%;
+    }
+
+    .services .serv-grid .serv1 .serv-img1,
+    .services .serv-grid .serv2 .serv-img2,
+    .services .serv-grid .serv3 .serv-img3,
+    .services .serv-grid .serv4 .serv-img4,
+    .services .serv-grid .serv5 .serv-img5,
+    .services .serv-grid .serv6 .serv-img6,
+    .services .serv-grid .serv7 .serv-img7,
+    .services .serv-grid .serv8 .serv-img8,
+    .services .serv-grid .serv9 .serv-img9 {
+        width: 130px;
+        height: 125px;
+    }
+
+    .serv-cont1,
+    .serv-cont2,
+    .serv-cont3,
+    .serv-cont4,
+    .serv-cont5,
+    .serv-cont6,
+    .serv-cont7,
+    .serv-cont8,
+    .serv-cont9 {
+        text-align: center;
+        margin-top: 70px;
+        padding: 5px;
+    }
+
+    /* Footer */
+
+    .footer {
+        padding: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer .foot {
+        width: 100%;
+        position: relative;
+    }
+
+    .footer .row {
+        width: 100%;
+        position: relative;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px;
+
+    }
+
+    .footer .row .logoQR {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        align-content: center;
+        top: 0;
+        left: 0;
+        margin: 90px 0px 0px 0px;
+    }
+
+    .footer .row .logoQR .citypaylog {
+        width: 50%;
+        position: relative;
+        right: 0px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .footer .row .logoQR .QRcode {
+        width: 50%;
+        position: relative;
+        right: 0px;
+        padding: 5px;
+        margin: 2px 0px 0px 0px;
+    }
+
+    .footer .row .logoQR .dwbuttons {
+        position: relative;
+        right: 0px;
+        width: 80%;
+        align-items: center;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .footer .dwbuttons .tit h3 {
+        font-size: 9px;
+        text-align: center;
+    }
+
+    .footer .dwbuttons .logimg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer .dwbuttons .logimg .download-btn {
+        width: 50px;
+        height: 18px;
+        margin: 0px 0px 0px 15px;
+    }
+
+    .footer .info {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+    }
+
+    .footer .info .basic {
+        padding: 5px;
+        margin: 135px 0px 0px 0px;
+        width: 110%;
+        position: relative;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .basic div {
+        width: 100%;
+    }
+
+    .info .basic p {
+        font-size: 8px;
+        margin: 2px;
+        padding: 2px;
+        text-align: left;
+    }
+
+    .footer .info .basic .Email p {
+        width: 100%;
+    }
+
+    .connect {
+        padding: 5px;
+        margin: 5px 5px 35px 5px;
+        width: 100%;
+        position: relative;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .connect p {
+        font-size: 11px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .connect .soc {
+        position: relative;
+        left: 0px;
+    }
+
+    .connect .fb {
+        width: 20px;
+        height: auto;
+    }
+
+    .connect .ytb {
+        width: 20px;
+        height: auto;
+    }
+
+    .connect .lkdn {
+        width: 20px;
+        height: auto;
+    }
+
+    .footer .footer-links {
+        margin: 165px 0px 1px 1px;
+        padding: 1px 0px 1px 1px;
+        position: relative;
+        top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .footer-links a {
+        font-size: 7px;
+    }
+
+    .footer-links h4 {
+        font-size: 9px;
+    }
+
+    .footer-links .agent {
+        font-size: 6px;
+        padding: 5px;
+        width: 65%;
+        border-radius: 5px;
+    }
+
+    .footer .copyright p {
+        font-size: x-small;
+    }
+
+    .soc svg:hover {
+        transform: none;
+        /* Remove the hover effect on mobile devices */
+    }
+
+}

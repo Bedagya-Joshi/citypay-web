@@ -1,27 +1,44 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap");
 
-* {
-    font-family: "Work Sans", sans-serif;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    text-decoration: none;
+body {
+    margin: 0;
+    padding: 0;
+    /* height: auto; */
 }
 
+* {
+    font-family: "PT Sans";
+}
+
+/* css for the font */
+.pt-sans-regular {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.layout-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+}
+
+/* Navbar Styles */
 .navbar {
-    z-index: 1;
+    z-index: 10;
     position: relative;
     top: 0;
+    width: 100%;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
-    padding-left: 60px;
-    padding-right: 20px;
-    /* border: 2px solid red; */
+    padding: 10px 10px 10px 40px;
 }
 
 .logo {
@@ -30,27 +47,52 @@
 }
 
 .menu-toggle {
+    display: flex;
     flex-direction: column;
     cursor: pointer;
-    height: 20px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 .fa-bars {
     font-size: 40px;
-    color: #cf1414;
+    color: #1472cf;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-toggle:hover .fa-bars {
+    transform: rotate(90deg);
 }
 
 .nav {
     display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .nav.active {
     display: block;
+    opacity: 1;
     position: absolute;
     right: 20px;
-    /* top: 60px; */
-    width: 350px;
-    height: 500px;
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    top: 60px;
+    animation: dropdown 0.5s ease-in-out forwards;
+}
+
+@keyframes dropdown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .underline {
@@ -62,17 +104,21 @@
 .nav ul {
     list-style-type: none;
     padding: 0;
-    background-color: #194a7a;
+    background: linear-gradient(135deg, #1472cf, #65c7f7);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: 100%;
+    width: 45%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
-    padding-top: 15px;
+    margin: 20px 0px 10px 170px;
+    padding: 10px;
     z-index: 1;
     top: 0;
     position: sticky;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 .nav li {
@@ -82,109 +128,474 @@
 
 .nav a {
     text-decoration: none;
-    color: #333;
-    font-weight: 700;
-    font-size: 25px;
     color: white;
+    font-weight: 700;
+    font-size: 17px;
+    transition: color 0.3s ease-in-out;
 }
 
-.upper-flow {
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    /* Ensure the image covers the entire viewport width */
-    height: auto;
-    z-index: -1;
-    /* Ensure the image stays behind the content */
+.nav a:hover {
+    color: #ffdd57;
+    /* Hover color */
 }
 
-h1 {
-    font-family: "PT Sans";
-    font-size: 45px;
-    color: #0d60b5;
-    margin-top: 30px;
+/* Additional Menu Toggle Animation */
+@keyframes menuToggleAnimation {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+.body-container {
+    padding: 5px 0px 0px 0px;
 }
 
 .team {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
-    padding: 50px;
-    text-align: justify;
-    overflow: hidden;
-}
-
-.team-box {
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    gap: 10px;
-    row-gap: 0px;
+    padding: 10px 0px 10px 0px;
     width: 100%;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    position: relative;
-    left: 60px;
+
 }
 
-.grid-one,
-.grid-two, .grid-three,
-.grid-four, .grid-five, .grid-six {
+.team .title h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1472cf;
+}
+
+.off-head-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 60px;
+    justify-items: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    width: 40%;
+}
+
+.team .head h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1472cf;
+}
+
+/* team 1 */
+.team .off-head-grid .team1 {
+    width: 40%;
+    height: 330px;
+    background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
+    margin-bottom: 20px;
+    padding: 10px;
+    grid-column: 1 / 3;
+    /* Span across both columns */
+    grid-row: 1;
+    /* Place in the first row */
+    text-align: center;
+    /* Center the content of team1 */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.team-img1 {
+    width: 190px;
+    height: 170px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    grid-template-columns: 2fr 1fr;
-    width: 364px;
-    height: 414px;
-    background-color: rgb(231, 229, 229);
-    border-radius: 20px;
-    padding: 20px 10px 0px 10px;
-    margin: 50px 10px 10px 10px;
+    margin-top: 0px;
 }
 
-
-.content1, .content2, .content3, .content4, .content5, .content6 {
-    width: 364px;
-    height: 80px;
-    background-color: #CFCDCD;
-    border-radius: 20px;
-    margin-top: auto;
-}
-
-.back {
-    float: right;
-    border-radius: 20px;
-    background-color: #0d60b5;
-    padding: 15px 32px;
-    border: none;
-    font-size: 16px;
+.team-cont1 {
+    text-align: center;
     color: white;
-    cursor: pointer;
-    margin: 1px 20px 20px 1px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 25px;
+    padding: 3px;
 }
 
-.back:hover {
-    background-color: white;
-    color: #0d60b5;
+/* team 2 */
+.team .off-head-grid .team2 {
+    width: 85%;
+    height: 330px;
+    background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
+    margin-bottom: 20px;
+    padding: 10px;
+    grid-column: 1;
+    /* Place in the first column */
+    grid-row: 2;
+    /* Place in the second row */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.team-img2 {
+    width: 190px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.team-cont2 {
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+    padding: 3px;
+}
+
+/* team 3 */
+.team .off-head-grid .team3 {
+    width: 85%;
+    height: 330px;
+    background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
+    margin-bottom: 20px;
+    padding: 10px;
+    grid-column: 2;
+    /* Place in the second column */
+    grid-row: 2;
+    /* Place in the second row */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.team-img3 {
+    width: 190px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.team-cont3 {
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+    padding: 3px;
+}
+
+
+.buss-depart-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    width: 50%;
+    column-gap: 300px;
+    row-gap: 50px;
+    align-content: center;
+}
+
+/* team 4 */
+.team .buss h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1472cf;
+}
+
+.team .buss-depart-grid .team4 {
+    width: 100%;
+    height: 330px;
+    background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.team-img4 {
+    width: 190px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.team-cont4 {
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+    padding: 3px;
+}
+
+/* team 5 */
+.team .buss-depart-grid .team5 {
+    width: 100%;
+    height: 330px;
+    background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.team-img5 {
+    width: 190px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.team-cont5 {
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+    padding: 3px;
+}
+
+/* team 6 */
+.team .buss-depart-grid .team6 {
+    width: 100%;
+    height: 330px;
+    background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.team-img6 {
+    width: 190px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.team-cont6 {
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+    padding: 3px;
+}
+
+/* team 7 */
+.team .buss-depart-grid .team7 {
+    width: 100%;
+    height: 330px;
+    background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.team-img7 {
+    width: 190px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.team-cont7 {
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+    padding: 3px;
+}
+
+.it-depart-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    width: 70%;
+    gap: 60px;
+    align-content: center;
+}
+
+/* team 8 */
+.team .it h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1472cf;
+}
+
+.team .it-depart-grid .team8 {
+    width: 70%;
+    height: 330px;
+    background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.team-img8 {
+    width: 190px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.team-cont8 {
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+    padding: 3px;
+}
+
+
+/* team 9 */
+.team .it-depart-grid .team9 {
+    width: 70%;
+    height: 330px;
+    background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.team-img9 {
+    width: 190px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.team-cont9 {
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+    padding: 3px;
+}
+
+.team1:hover, .team2:hover, .team3:hover, .team4:hover, .team5:hover, .team6:hover, .team7:hover, .team8:hover, .team9:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(#0e83e3, #99d1ff, #65c7f7);
+}
+
+
+/* Unit Heads */
+
+.team .unit-heads {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team .unit-heads .nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.team .unit-heads .nav li {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.team .unit-heads .nav li:hover {
+    background-color: #0056b3;
+}
+
+.team .unit-heads .details {
+    display: none;
+    /* Hide all details initially */
+}
+
+.team .unit-heads .details .detail-grid {
+    display: none;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
 }
 
 /* Footer styles */
 
 .footer {
-    background: rgb(161, 159, 159);
-    background: linear-gradient(0deg, rgb(103, 125, 196) 0%, rgb(241, 242, 245) 55%);
+    background: rgb(255, 255, 255);
+    /* background: linear-gradient(0deg, rgb(152, 170, 230) 0%, rgb(241, 242, 245) 55%); */
     box-shadow: 0px -12px 25px rgba(228, 237, 250, 0.8);
     /* Adjusted to have a negative y-offset */
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 20px;
+    padding: 0px;
     margin-top: auto;
 }
 
@@ -223,7 +634,7 @@ h1 {
 
 .logimg {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .dwbuttons .logimg .download-btn {
@@ -287,14 +698,31 @@ h1 {
 }
 
 .info .basic p {
-    font-weight: 500;
-    font-size: smaller;
+    font-weight: normal;
+    padding-top: 10px;
+    font-size: medium;
+}
+
+.info .basic .Email p {
+    width: 220px;
 }
 
 .info .basic .connect p {
     font-weight: bold;
     color: #0D60B5;
     font-size: large;
+}
+
+.connect {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+
+.connect .soc {
+    position: relative;
+    left: 12px;
 }
 
 .connect {
@@ -331,11 +759,6 @@ h1 {
     width: 100%;
 }
 
-.footer-links h4 {
-    font-weight: bolder;
-    font-size: large;
-}
-
 .footer-links ul {
     list-style: none;
     padding: 0;
@@ -344,12 +767,12 @@ h1 {
 
 .footer-links li {
     margin-bottom: 10px;
-    margin-top: 10px;
 }
 
 .footer-links a {
     text-decoration: none;
     color: #000000;
+    font-weight: bold;
     transition: color 0.3s;
 }
 
@@ -388,275 +811,772 @@ h1 {
     color: white;
 }
 
-
-/* Media Query Responsiveness */
-
+/* Media Queries */
 @media (max-width:2560px) and (min-width: 1441px) {
-    .team {}
+    .nav ul {
+        margin: 20px 10px 10px 210px;
+        width: 40%;
+        padding: 10px;
+    }
 
-    .footer {}
-
+    .footer-links {
+        position: relative;
+        right: 20px;
+    }
 }
 
 
 @media (max-width:1440px) and (min-width: 1025px) {
-    .team {}
+    .nav ul {
+        margin: 20px 10px 10px 229px;
+        width: 40%;
+        padding: 10px;
+    }
 
-    .footer {}
-}
+    .team .team-grid .team1 .team-img1,
+    .team .team-grid .team2 .team-img2,
+    .team .team-grid .team3 .team-img3,
+    .team .team-grid .team4 .team-img4,
+    .team .team-grid .team5 .team-img5,
+    .team .team-grid .team6 .team-img6,
+    .team .team-grid .team7 .team-img7,
+    .team .team-grid .team8 .team-img8,
+    .team .team-grid .team9 .team-img9 {
+        width: 160px;
+        height: 150px;
+    }
 
-@media (max-width:1024px) and (min-width: 769px) {
-    .team {}
+    .team-cont1,
+    .team-cont2,
+    .team-cont3,
+    .team-cont4,
+    .team-cont5,
+    .team-cont6,
+    .team-cont7,
+    .team-cont8,
+    .team-cont9 {
+        text-align: center;
+        margin-top: 50px;
+    }
 
-    .footer {}
-}
-
-@media (max-width:768px) and (min-width: 426px) {
-    .team {}
-
-    .footer {}
-}
-
-@media (max-width:425px) and (min-width: 376px) {
-    .team {}
-
-    .footer {}
-}
-
-@media (max-width:375px) and (min-width: 321px) {
-    .team {}
-
-    .footer {}
-}
-
-@media (max-width:320px) and (min-width: 280px) {
-    .team {}
+    /* Footer */
 
     .footer {
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-        box-shadow: 0px -12px 25px rgba(72, 182, 255, 0.8);
+        padding: 20px 0px 20px 20px;
     }
 
-    .footer .foot .row {
-        position: relative;
-        right: 0px;
-        max-width: 320px;
+    .footer .logoQR .citypaylog {
+        width: 22%;
     }
 
-    .footer .foot .row .logoQR {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-    }
-
-    .footer .foot .logoQR {
-        margin: auto;
-        position: relative;
-    }
-
-    .logoQR .dwbuttons h3 {
-        font-size: 9px;
-        width: 120%;
-    }
-
-    .footer .foot .logoQR .citypaylog {
-        width: 55%;
-        padding: 0;
-        position: relative;
-        bottom: 40px;
-        right: 18px;
-    }
-
-    .footer .foot .logoQR .QRcode {
-        width: 55%;
-        padding: 0;
-        position: relative;
-        bottom: 45px;
-        right: 18px;
-    }
-
-    .logoQR .dwbuttons {
-        width: 100%;
-        position: relative;
-        right: 40px;
-        bottom: 40px;
-    }
-
-    .logoQR .dwbuttons .logimg {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .logimg .playstore .download-btn {
-        width: 52px;
-        height: 18px;
-        margin: 7px 2px 2px 8px;
-        position: relative;
-    }
-
-    .logimg .appstore .download-btn {
-        width: 52px;
-        height: 18px;
-        margin: 7px 2px 2px 8px;
-        position: relative;
-    }
-
-    .footer .info {
-        display: grid;
-        margin: auto;
-        width: 100%;
-        position: relative;
-        right: 70px;
+    .footer .logoQR .QRcode {
+        width: 22%;
     }
 
     .footer .info .basic {
-        display: flex;
-        flex-direction: column;
         position: relative;
-        left: 80px;
-        bottom: 0px;
-        width: 50%;
-        margin: 55px 2px 2px 2px;
-        padding: 2px 2px 2px 2px;
+        left: 50px;
     }
 
-    .footer .info .basic>div {
-        flex: 1;
+    .footer .info p {
+        font-size: 13px;
     }
 
-    .footer .info .basic p {
-        margin: 0;
-        padding: 8px 8px 5px 1px;
-        font-size: 7px;
-    }
-
-    .footer .info .basic .Email {
-        width: 150px;
-    }
-
-    .footer .info .basic .Email p {
-        position: relative;
-        left: 15px;
-    }
-
-    .footer .info .basic .Tel {
-        width: 170px;
-    }
-
-    .footer .info .basic .Tel p {
-        position: relative;
-        left: 15px;
-    }
-
-    .footer .info .basic .ext p {
-        position: relative;
-        left: 15px;
-    }
-
-    .footer .info .basic .tol {
-        width: 130px;
-    }
-
-    .footer .info .basic .tol p {
-        position: relative;
-        left: 15px;
-    }
-
-    .footer .info .basic .Call {
-        width: 120px;
-    }
-
-    .footer .info .basic .Call p {
-        position: relative;
-        left: 15px;
-    }
-
-    .footer .info .connect {
-        left: 105px;
-        padding: 5px;
-        margin: 5px;
-        width: 70px;
-        position: relative;
-        bottom: 70px;
-    }
-
-    .footer .info .connect p {
-        font-size: 9px;
-        width: 120%;
-    }
-
-    .connect .soc {
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        left: 6px;
+    .footer .footer-links {
+        margin: 1px 0px 1px 1px;
+        padding: 1px 0px 1px 1px;
         width: 80%;
     }
 
+    .footer .footer-links a {
+        font-size: small;
+    }
+
+    .footer-links h4 {
+        font-size: medium;
+    }
+
+    .footer .logimg .download-btn {
+        width: 90px;
+        height: 30px;
+        margin: 2px 2px 2px 5px;
+    }
+
+    .connect {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
+        width: 200px;
+    }
+
+    .connect .soc {
+        position: relative;
+        left: 7px;
+    }
+
     .connect .fb {
-        width: 70px;
+        width: 22px;
         height: auto;
     }
 
     .connect .ytb {
-        width: 60px;
+        width: 22px;
         height: auto;
     }
 
     .connect .lkdn {
-        width: 60px;
+        width: 22px;
         height: auto;
     }
+}
 
-    .footer .foot .footer-links {
-        margin: auto;
+@media (max-width:1024px) and (min-width: 769px) {
+    .nav ul {
+        margin: 20px 10px 10px 214px;
+        width: 40%;
+        padding: 10px;
+    }
+
+    .team .team-grid .team1 .team-img1,
+    .team .team-grid .team2 .team-img2,
+    .team .team-grid .team3 .team-img3,
+    .team .team-grid .team4 .team-img4,
+    .team .team-grid .team5 .team-img5,
+    .team .team-grid .team6 .team-img6,
+    .team .team-grid .team7 .team-img7,
+    .team .team-grid .team8 .team-img8,
+    .team .team-grid .team9 .team-img9 {
+        width: 130px;
+        height: 130px;
+    }
+
+    .team-cont1,
+    .team-cont2,
+    .team-cont3,
+    .team-cont4,
+    .team-cont5,
+    .team-cont6,
+    .team-cont7,
+    .team-cont8,
+    .team-cont9 {
+        font-size: 13px;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    /* Footer */
+
+    .footer {
+        padding: 0px;
+    }
+
+    .footer .row {
         position: relative;
-        right: 35px;
-        bottom: 30px;
-        width: 100%;
+        right: 50px;
     }
 
-    .footer .footer-links li {
-        margin: 0;
-        padding: 1px;
+    .footer .logoQR {
+        display: flex;
+        flex-direction: column;
     }
 
-    .footer .footer-links a {
-        font-size: 6px;
-        margin: 0;
+    .footer .logoQR .citypaylog {
+        width: 30%;
+        position: relative;
+        left: 40px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .footer .logoQR .QRcode {
+        width: 30%;
+        position: relative;
+        left: 40px;
         padding: 5px;
     }
 
+    .footer .dwbuttons {
+        position: relative;
+        left: 20px;
+    }
+
+    .footer .dwbuttons .tit h3 {
+        font-size: 12px;
+    }
+
+    .footer .dwbuttons .logimg {
+        position: relative;
+        left: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .dwbuttons .logimg .download-btn {
+        position: relative;
+        right: 42px;
+    }
+
+    .footer .info .basic {
+        position: relative;
+        left: 70px;
+        width: 80%;
+    }
+
+    .footer .info p {
+        font-size: 11px;
+    }
+
+    .footer .footer-links {
+        margin: 1px 10px 1px 1px;
+        padding: 1px 20px 1px 1px;
+        position: relative;
+        right: 100px;
+        top: 50px;
+    }
+
+    .footer .footer-links a {
+        font-size: x-small;
+    }
+
     .footer-links h4 {
-        font-size: 7px;
-        margin: 0;
+        font-size: medium;
+    }
+
+    .footer-links .agent {
+        font-size: 10px;
+        padding: 10px;
+        width: 50%;
+    }
+
+    .footer .logimg .download-btn {
+        width: 70px;
+        height: 25px;
+        margin: 2px 2px 2px 5px;
+    }
+
+    .connect {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
+        width: 200px;
+        position: relative;
+        right: 100px;
+    }
+
+    .connect .soc {
+        position: relative;
+        left: 3px;
+    }
+
+    .connect .fb {
+        width: 20px;
+        height: auto;
+    }
+
+    .connect .ytb {
+        width: 20px;
+        height: auto;
+    }
+
+    .connect .lkdn {
+        width: 20px;
+        height: auto;
+    }
+
+    .footer .copyright p {
+        font-size: smaller;
+    }
+}
+
+@media (max-width: 768px) and (min-width:426px) {
+    .nav ul {
+        margin: 20px 0px 10px 190px;
+        padding: 10px;
+    }
+
+    .body-container {
         padding: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .team {
+        padding: 10px;
+        margin: 10px;
+        width: 90%;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr 1fr;
+        /* Stack all items in a single column */
+        width: 80%;
+        gap: 50px;
+        padding: 5px;
+        margin: 0;
+        align-self: center;
+    }
+
+    .team .team-grid .team1,
+    .team .team-grid .team2,
+    .team .team-grid .team3,
+    .team .team-grid .team4,
+    .team .team-grid .team5,
+    .team .team-grid .team6,
+    .team .team-grid .team7,
+    .team .team-grid .team8,
+    .team .team-grid .team9 {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    .team .team-grid .team1 .team-img1,
+    .team .team-grid .team2 .team-img2,
+    .team .team-grid .team3 .team-img3,
+    .team .team-grid .team4 .team-img4,
+    .team .team-grid .team5 .team-img5,
+    .team .team-grid .team6 .team-img6,
+    .team .team-grid .team7 .team-img7,
+    .team .team-grid .team8 .team-img8,
+    .team .team-grid .team9 .team-img9 {
+        width: 130px;
+        height: 120px;
+    }
+
+    .team-cont1,
+    .team-cont2,
+    .team-cont3,
+    .team-cont4,
+    .team-cont5,
+    .team-cont6,
+    .team-cont7,
+    .team-cont8,
+    .team-cont9 {
+        font-size: 13px;
+        text-align: center;
+        margin-top: 70px;
+        padding: 5px;
+    }
+
+    /* Footer */
+
+    .footer {
+        padding: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer .foot {
+        width: 100%;
+        position: relative;
+    }
+
+    .footer .row {
+        width: 100%;
+        position: relative;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px;
+
+    }
+
+    .footer .row .logoQR {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        align-content: center;
+        top: 0;
+        left: 0;
+        margin: 30px 0px 0px 0px;
+    }
+
+    .footer .row .logoQR .citypaylog {
+        width: 50%;
+        position: relative;
+        right: 0px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .footer .row .logoQR .QRcode {
+        width: 50%;
+        position: relative;
+        right: 0px;
+        padding: 5px;
+        margin: 2px 0px 0px 0px;
+    }
+
+    .footer .row .logoQR .dwbuttons {
+        position: relative;
+        right: 0px;
+        width: 50%;
+        align-items: center;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .footer .dwbuttons .tit h3 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .footer .dwbuttons .logimg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer .dwbuttons .logimg .download-btn {
+        width: 80px;
+        height: auto;
+        margin: 0px 0px 0px 10px;
+    }
+
+    .footer .info {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+    }
+
+    .footer .info .basic {
+        padding: 5px;
+        margin: 95px 5px 0px 25px;
+        width: 70%;
+        position: relative;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .basic div {
+        width: 100%;
+    }
+
+    .info .basic p {
+        font-size: 11px;
+        margin: 2px;
+        padding: 2px;
+        text-align: left;
+    }
+
+    .footer .info .basic .Email p {
+        width: 100%;
+    }
+
+    .connect {
+        padding: 5px;
+        margin: 5px 5px 35px 5px;
+        width: 100%;
+        position: relative;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .connect p {
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .connect .soc {
+        position: relative;
+        left: 0px;
+    }
+
+    .connect .fb {
+        width: 25px;
+        height: auto;
+    }
+
+    .connect .ytb {
+        width: 25px;
+        height: auto;
+    }
+
+    .connect .lkdn {
+        width: 25px;
+        height: auto;
+    }
+
+    .footer .footer-links {
+        margin: 80px 0px 1px 1px;
+        padding: 1px 0px 1px 1px;
+        position: relative;
+        top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .footer-links a {
+        font-size: 10px;
+    }
+
+    .footer-links h4 {
+        font-size: 12px;
     }
 
     .footer-links .agent {
         font-size: 6px;
         padding: 5px;
-        margin-top: 7px;
-        border-radius: 5px;
-        width: 75%;
-        position: relative;
-        right: 5px;
-    }
-
-    .footer .copyright {
-        position: relative;
-        bottom: 5px;
-        left: 55px;
-        width: 65%;
-        padding: 0;
-        margin: 0;
+        width: 50%;
     }
 
     .footer .copyright p {
-        font-size: 7px;
+        font-size: x-small;
+    }
+}
+
+@media (max-width: 425px) and (min-width:376px) {
+    .nav ul {
+        margin: 20px 10px 10px 25px;
+        width: 80%;
+        padding: 10px;
+    }
+
+    .body-container {
+        padding: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team {
+        padding: 10px;
+        margin: 10px;
+        width: 90%;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        /* Stack all items in a single column */
+        width: 80%;
+    }
+
+    .team .team-grid .team1 .team-img1,
+    .team .team-grid .team2 .team-img2,
+    .team .team-grid .team3 .team-img3,
+    .team .team-grid .team4 .team-img4,
+    .team .team-grid .team5 .team-img5,
+    .team .team-grid .team6 .team-img6,
+    .team .team-grid .team7 .team-img7,
+    .team .team-grid .team8 .team-img8,
+    .team .team-grid .team9 .team-img9 {
+        width: 130px;
+        height: 120px;
+    }
+
+    .team-cont1,
+    .team-cont2,
+    .team-cont3,
+    .team-cont4,
+    .team-cont5,
+    .team-cont6,
+    .team-cont7,
+    .team-cont8,
+    .team-cont9 {
+        text-align: center;
+        margin-top: 70px;
+        padding: 5px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer .foot {
+        width: 100%;
+        position: relative;
+    }
+
+    .footer .row {
+        width: 100%;
+        position: relative;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px;
+
+    }
+
+    .footer .row .logoQR {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        align-content: center;
+        top: 0;
+        left: 0;
+        margin: 90px 0px 0px 0px;
+    }
+
+    .footer .row .logoQR .citypaylog {
+        width: 40%;
+        position: relative;
+        right: 0px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .footer .row .logoQR .QRcode {
+        width: 40%;
+        position: relative;
+        right: 0px;
+        padding: 5px;
+        margin: 2px 0px 0px 0px;
+    }
+
+    .footer .row .logoQR .dwbuttons {
+        position: relative;
+        right: 0px;
+        width: 80%;
+        align-items: center;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .footer .dwbuttons .tit h3 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .footer .dwbuttons .logimg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer .dwbuttons .logimg .download-btn {
+        width: 70px;
+        height: 25px;
+        margin: 0px 0px 0px 20px;
+    }
+
+    .footer .info {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+    }
+
+    .footer .info .basic {
+        padding: 5px;
+        margin: 135px 5px 0px 5px;
+        width: 100%;
+        position: relative;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .basic div {
+        width: 100%;
+    }
+
+    .info .basic p {
+        font-size: 10px;
+        margin: 2px;
+        padding: 2px;
+        text-align: left;
+    }
+
+    .footer .info .basic .Email p {
+        width: 100%;
+    }
+
+    .connect {
+        padding: 5px;
+        margin: 5px 5px 35px 5px;
+        width: 100%;
+        position: relative;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .connect p {
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .connect .soc {
+        position: relative;
+        left: 0px;
+    }
+
+    .connect .fb {
+        width: 25px;
+        height: auto;
+    }
+
+    .connect .ytb {
+        width: 25px;
+        height: auto;
+    }
+
+    .connect .lkdn {
+        width: 25px;
+        height: auto;
+    }
+
+    .footer .footer-links {
+        margin: 150px 0px 1px 1px;
+        padding: 1px 0px 1px 1px;
+        position: relative;
+        top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .footer-links a {
+        font-size: 10px;
+    }
+
+    .footer-links h4 {
+        font-size: 12px;
+    }
+
+    .footer-links .agent {
+        font-size: 8px;
+        padding: 6px;
+        width: 55%;
+    }
+
+    .footer .copyright p {
+        font-size: x-small;
     }
 
     .soc svg:hover {
@@ -664,4 +1584,491 @@ h1 {
         /* Remove the hover effect on mobile devices */
     }
 
+}
+
+@media (max-width: 375px) and (min-width:321px) {
+
+    .nav ul {
+        margin: 20px 20px 10px 61px;
+        width: 70%;
+        padding: 10px;
+    }
+
+    .body-container {
+        padding: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team {
+        padding: 10px;
+        margin: 10px;
+        width: 90%;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        /* Stack all items in a single column */
+        width: 80%;
+    }
+
+    .team .team-grid .team1 .team-img1,
+    .team .team-grid .team2 .team-img2,
+    .team .team-grid .team3 .team-img3,
+    .team .team-grid .team4 .team-img4,
+    .team .team-grid .team5 .team-img5,
+    .team .team-grid .team6 .team-img6,
+    .team .team-grid .team7 .team-img7,
+    .team .team-grid .team8 .team-img8,
+    .team .team-grid .team9 .team-img9 {
+        width: 130px;
+        height: 125px;
+    }
+
+    .team-cont1,
+    .team-cont2,
+    .team-cont3,
+    .team-cont4,
+    .team-cont5,
+    .team-cont6,
+    .team-cont7,
+    .team-cont8,
+    .team-cont9 {
+        text-align: center;
+        margin-top: 70px;
+        padding: 5px;
+    }
+
+
+    /* Footer */
+    .footer {
+        padding: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer .foot {
+        width: 100%;
+        position: relative;
+    }
+
+    .footer .row {
+        width: 100%;
+        position: relative;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px;
+
+    }
+
+    .footer .row .logoQR {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        align-content: center;
+        top: 0;
+        left: 0;
+        margin: 90px 0px 0px 0px;
+    }
+
+    .footer .row .logoQR .citypaylog {
+        width: 50%;
+        position: relative;
+        right: 0px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .footer .row .logoQR .QRcode {
+        width: 50%;
+        position: relative;
+        right: 0px;
+        padding: 5px;
+        margin: 2px 0px 0px 0px;
+    }
+
+    .footer .row .logoQR .dwbuttons {
+        position: relative;
+        right: 0px;
+        width: 80%;
+        align-items: center;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .footer .dwbuttons .tit h3 {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .footer .dwbuttons .logimg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer .dwbuttons .logimg .download-btn {
+        width: 65px;
+        height: 23px;
+        margin: 0px 0px 0px 15px;
+    }
+
+    .footer .info {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+    }
+
+    .footer .info .basic {
+        padding: 5px;
+        margin: 135px 5px 0px 5px;
+        width: 100%;
+        position: relative;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .basic div {
+        width: 100%;
+    }
+
+    .info .basic p {
+        font-size: 9px;
+        margin: 2px;
+        padding: 2px;
+        text-align: left;
+    }
+
+    .footer .info .basic .Email p {
+        width: 100%;
+    }
+
+    .connect {
+        padding: 5px;
+        margin: 5px 5px 35px 5px;
+        width: 100%;
+        position: relative;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .connect p {
+        font-size: 11px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .connect .soc {
+        position: relative;
+        left: 0px;
+    }
+
+    .connect .fb {
+        width: 20px;
+        height: auto;
+    }
+
+    .connect .ytb {
+        width: 20px;
+        height: auto;
+    }
+
+    .connect .lkdn {
+        width: 20px;
+        height: auto;
+    }
+
+    .footer .footer-links {
+        margin: 165px 0px 1px 1px;
+        padding: 1px 0px 1px 1px;
+        position: relative;
+        top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .footer-links a {
+        font-size: 8px;
+    }
+
+    .footer-links h4 {
+        font-size: 10px;
+    }
+
+    .footer-links .agent {
+        font-size: 7px;
+        padding: 6px;
+        width: 55%;
+        border-radius: 5px;
+    }
+
+    .footer .copyright p {
+        font-size: x-small;
+    }
+
+    .soc svg:hover {
+        transform: none;
+        /* Remove the hover effect on mobile devices */
+    }
+
+}
+
+@media (max-width: 320px) and (min-width:280px) {
+    .nav ul {
+        margin: 20px 10px 10px 62px;
+        width: 60%;
+        padding: 10px;
+    }
+
+
+    .body-container {
+        padding: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team {
+        padding: 10px;
+        margin: 10px;
+        width: 90%;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        /* Stack all items in a single column */
+        width: 80%;
+    }
+
+    .team .team-grid .team1 .team-img1,
+    .team .team-grid .team2 .team-img2,
+    .team .team-grid .team3 .team-img3,
+    .team .team-grid .team4 .team-img4,
+    .team .team-grid .team5 .team-img5,
+    .team .team-grid .team6 .team-img6,
+    .team .team-grid .team7 .team-img7,
+    .team .team-grid .team8 .team-img8,
+    .team .team-grid .team9 .team-img9 {
+        width: 130px;
+        height: 125px;
+    }
+
+    .team-cont1,
+    .team-cont2,
+    .team-cont3,
+    .team-cont4,
+    .team-cont5,
+    .team-cont6,
+    .team-cont7,
+    .team-cont8,
+    .team-cont9 {
+        text-align: center;
+        margin-top: 70px;
+        padding: 5px;
+    }
+
+    /* Footer */
+
+    .footer {
+        padding: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer .foot {
+        width: 100%;
+        position: relative;
+    }
+
+    .footer .row {
+        width: 100%;
+        position: relative;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px;
+
+    }
+
+    .footer .row .logoQR {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        align-content: center;
+        top: 0;
+        left: 0;
+        margin: 90px 0px 0px 0px;
+    }
+
+    .footer .row .logoQR .citypaylog {
+        width: 50%;
+        position: relative;
+        right: 0px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .footer .row .logoQR .QRcode {
+        width: 50%;
+        position: relative;
+        right: 0px;
+        padding: 5px;
+        margin: 2px 0px 0px 0px;
+    }
+
+    .footer .row .logoQR .dwbuttons {
+        position: relative;
+        right: 0px;
+        width: 80%;
+        align-items: center;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .footer .dwbuttons .tit h3 {
+        font-size: 9px;
+        text-align: center;
+    }
+
+    .footer .dwbuttons .logimg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer .dwbuttons .logimg .download-btn {
+        width: 50px;
+        height: 18px;
+        margin: 0px 0px 0px 15px;
+    }
+
+    .footer .info {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+    }
+
+    .footer .info .basic {
+        padding: 5px;
+        margin: 135px 0px 0px 0px;
+        width: 110%;
+        position: relative;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .basic div {
+        width: 100%;
+    }
+
+    .info .basic p {
+        font-size: 8px;
+        margin: 2px;
+        padding: 2px;
+        text-align: left;
+    }
+
+    .footer .info .basic .Email p {
+        width: 100%;
+    }
+
+    .connect {
+        padding: 5px;
+        margin: 5px 5px 35px 5px;
+        width: 100%;
+        position: relative;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .connect p {
+        font-size: 11px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .connect .soc {
+        position: relative;
+        left: 0px;
+    }
+
+    .connect .fb {
+        width: 20px;
+        height: auto;
+    }
+
+    .connect .ytb {
+        width: 20px;
+        height: auto;
+    }
+
+    .connect .lkdn {
+        width: 20px;
+        height: auto;
+    }
+
+    .footer .footer-links {
+        margin: 165px 0px 1px 1px;
+        padding: 1px 0px 1px 1px;
+        position: relative;
+        top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .footer-links a {
+        font-size: 7px;
+    }
+
+    .footer-links h4 {
+        font-size: 9px;
+    }
+
+    .footer-links .agent {
+        font-size: 6px;
+        padding: 5px;
+        width: 65%;
+        border-radius: 5px;
+    }
+
+    .footer .copyright p {
+        font-size: x-small;
+    }
+
+    .soc svg:hover {
+        transform: none;
+        /* Remove the hover effect on mobile devices */
+    }
 }
