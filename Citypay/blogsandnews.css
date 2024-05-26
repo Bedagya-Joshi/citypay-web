@@ -1583,7 +1583,7 @@ body {
     }
 
     .footer .footer-links {
-        margin: 80px 0px 1px 1px;
+        margin: 45px 0px 1px 1px;
         padding: 1px 0px 1px 1px;
         position: relative;
         top: 70px;
@@ -1616,6 +1616,12 @@ body {
 @media (max-width: 425px) and (min-width: 376px) {
 
     .header {
+        padding: 10px;
+    }
+
+    .nav ul {
+        margin: 20px 10px 10px 25px;
+        width: 80%;
         padding: 10px;
     }
 
@@ -1907,7 +1913,7 @@ body {
     }
 
     .footer .footer-links {
-        margin: 150px 0px 1px 1px;
+        margin: 45px 0px 1px 1px;
         padding: 1px 0px 1px 1px;
         position: relative;
         top: 70px;
@@ -1942,6 +1948,12 @@ body {
 
 
 @media (max-width: 375px) and (min-width: 321px) {
+
+    .nav ul {
+        margin: 20px 20px 10px 61px;
+        width: 70%;
+        padding: 10px;
+    }
 
     .main {
         display: grid;
@@ -2232,7 +2244,7 @@ body {
     }
 
     .footer .footer-links {
-        margin: 165px 0px 1px 1px;
+        margin: 45px 0px 1px 1px;
         padding: 1px 0px 1px 1px;
         position: relative;
         top: 70px;
@@ -2273,6 +2285,13 @@ body {
         grid-template-columns: 1fr;
         gap: 50px;
     }
+
+    .nav ul {
+        margin: 20px 10px 10px 62px;
+        width: 60%;
+        padding: 10px;
+    }
+
 
     .main .left {
         width: 100%;
@@ -2556,7 +2575,7 @@ body {
     }
 
     .footer .footer-links {
-        margin: 165px 0px 1px 1px;
+        margin: 45px 0px 1px 1px;
         padding: 1px 0px 1px 1px;
         position: relative;
         top: 70px;
