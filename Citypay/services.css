@@ -477,7 +477,6 @@ body {
     background: rgb(161, 159, 159);
     background: linear-gradient(0deg, rgb(152, 170, 230) 0%, rgb(241, 242, 245) 55%);
     box-shadow: 0px -12px 25px rgba(228, 237, 250, 0.8);
-    /* Adjusted to have a negative y-offset */
     bottom: 0;
     left: 0;
     width: 100%;
@@ -488,7 +487,6 @@ body {
 .footer .foot .row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* grid-gap: 10px; */
 }
 
 .logoQR {

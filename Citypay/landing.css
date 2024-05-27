@@ -1009,7 +1009,6 @@ p {
   background: rgb(161, 159, 159);
   background: linear-gradient(0deg, rgb(152, 170, 230) 0%, rgb(241, 242, 245) 55%);
   box-shadow: 0px -12px 25px rgba(228, 237, 250, 0.8);
-  /* Adjusted to have a negative y-offset */
   bottom: 0;
   left: 0;
   width: 100%;
@@ -1018,15 +1017,17 @@ p {
 }
 
 .footer .foot .row {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  /* grid-gap: 10px; */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
 }
 
 .logoQR {
-  position: relative;
-  top: 40px;
-  left: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
 }
 
 .logoQR .citypaylog {
@@ -1844,7 +1845,7 @@ p {
 
   .first-section .body-container .dwnld-desc .description {
     margin: 5px 1px 1px 5px;
-    width: 65%;
+    width: 55%;
   }
 
   .buttons {
@@ -1858,8 +1859,8 @@ p {
   }
 
   .buttons .playstore .dow-btn {
-    width: 140px;
-    height: 40px;
+    width: 135px;
+    height: 55px;
     display: flex;
     gap: 10px;
     margin-top: 10px;
@@ -1868,8 +1869,8 @@ p {
   }
 
   .buttons .appstore .dow-btn {
-    width: 140px;
-    height: 40px;
+    width: 145px;
+    height: 45px;
     display: flex;
     gap: 10px;
     margin-top: 10px;

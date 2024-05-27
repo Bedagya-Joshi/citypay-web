@@ -318,7 +318,7 @@ h1 {
 }
 
 .info .basic p {
-    font-weight: 510;
+    font-weight: normal;
     padding-top: 10px;
     font-size: smaller;
 }
