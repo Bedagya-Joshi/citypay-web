@@ -6,7 +6,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* height: auto; */
 }
 
 * {
@@ -14,24 +13,72 @@ body {
     box-sizing: border-box;
 }
 
+
+* {
+    font-family: "PT Sans";
+}
+
+/* css for the font */
+.pt-sans-regular {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pt-sans-regular-italic {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.pt-sans-regular-italic {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.pt-sans-bold {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.pt-sans-bold-italic {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
 .container {
     flex: 1;
 }
 
+/* Navbar Styles */
 .navbar {
-    z-index: 1;
-    position: sticky;
+    z-index: 10;
+    position: relative;
     top: 0;
+    width: 100%;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
-    padding-left: 60px;
-    padding-right: 20px;
-    /* border: 2px solid red; */
+    padding: 10px 10px 10px 40px;
+}
+
+.navbar .header .title {
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+.navbar .header .title h1 {
+    text-align: center;
+    padding-top: 15px;
+    color: #0D60B5;
 }
 
 .logo {
@@ -40,29 +87,52 @@ body {
 }
 
 .menu-toggle {
+    display: flex;
     flex-direction: column;
     cursor: pointer;
-    height: 20px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 .fa-bars {
     font-size: 40px;
     color: #1472cf;
-    position: relative;
-    left: 1650px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-toggle:hover .fa-bars {
+    transform: rotate(90deg);
 }
 
 .nav {
     display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .nav.active {
     display: block;
+    opacity: 1;
     position: absolute;
     right: 20px;
-    /* top: 60px; */
-    width: 350px;
-    height: 500px;
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    top: 60px;
+    animation: dropdown 0.5s ease-in-out forwards;
+}
+
+@keyframes dropdown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .underline {
@@ -74,17 +144,21 @@ body {
 .nav ul {
     list-style-type: none;
     padding: 0;
-    background-color: #194a7a;
+    background: linear-gradient(135deg, #1472cf, #65c7f7);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: 100%;
+    width: 45%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
-    padding-top: 15px;
+    margin: 20px 0px 10px 170px;
+    padding: 10px;
     z-index: 1;
     top: 0;
     position: sticky;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 .nav li {
@@ -94,10 +168,34 @@ body {
 
 .nav a {
     text-decoration: none;
-    color: #333;
-    font-weight: 700;
-    font-size: 25px;
     color: white;
+    font-weight: 700;
+    font-size: 17px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav a:hover {
+    color: #ffdd57;
+    /* Hover color */
+}
+
+/* Additional Menu Toggle Animation */
+@keyframes menuToggleAnimation {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+.body-container {
+    padding: 5px 0px 0px 0px;
 }
 
 .container {
@@ -112,18 +210,6 @@ body {
     align-items: flex-start;
     justify-content: space-between;
     padding: 40px;
-}
-
-.navbar .header .title {
-    align-items: center;
-    align-content: center;
-    width: 100%;
-}
-
-.navbar .header .title h1 {
-    text-align: center;
-    padding-top: 15px;
-    color: #0D60B5;
 }
 
 .container i {
@@ -211,17 +297,14 @@ body {
     width: 100%;
 }
 
-.container .contact-detail .map {
-    margin: 120px 10px 10px 160px;
-    padding: 20px 10px 10px 20px;
-    width: 620px;
-    height: 350px;
+.map {
+    width: 100%;
+    height: auto;
+    position: relative;
 }
 
-.container .contact-detail .map .map-iframe {
-    position: relative;
-    width: 600px;
-    height: 330px;
+.map .iframe {
+    width: 100%;
     border: 0;
 }
 
@@ -231,7 +314,6 @@ body {
 
 
 /* Footer styles */
-
 .footer {
     background: rgb(161, 159, 159);
     background: linear-gradient(0deg, rgb(152, 170, 230) 0%, rgb(241, 242, 245) 55%);
@@ -245,10 +327,8 @@ body {
 }
 
 .footer .foot .row {
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* grid-gap: 10px; */
 }
 
 .logoQR {
@@ -351,7 +431,7 @@ body {
 }
 
 .info .basic p {
-    font-weight: 510;
+    font-weight: normal;
     padding-top: 10px;
     font-size: smaller;
 }
@@ -458,107 +538,177 @@ body {
     color: white;
 }
 
+
 /* Media Query Responsiveness */
 
 @media (max-width:2560px) and (min-width: 1441px) {
-    /* .map {
-        margin: 50px 10px 10px 140px;
-        padding: 20px 10px 10px 20px;
+
+    .map {
         width: 100%;
+        height: auto;
+        position: relative;
+        overflow-y: hidden;
+        overflow-x: visible;
     }
 
-    .map .map-iframe {
-        position: relative;
-        width: 600px;
-        height: 450px;
-    } */
+    .map .iframe {
+        width: 100%;
+        border: 0;
+    }
 
-
-    /* Footer styles */
 
     /* Footer */
     .footer {
-        margin: 1px 1px 1px 1px;
+        width: 100%;
         padding: 10px 10px 10px 10px;
     }
 
-    .footer .logoQR .citypaylog {
-        width: 22%;
+    .footer .row {
+        width: 100%;
     }
 
-    .footer .logoQR .QRcode {
-        width: 22%;
-    }
-
-    .dwbuttons {
+    .footer .foot .row .logoQR {
+        width: 80%;
         position: relative;
-        left: 20px;
+        right: 60px;
+        display: flex;
+        flex-direction: row;
     }
 
-    .download-btn {
-        position: relative;
-        right: 20px;
+    .footer .foot .row .logoQR .logimg {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
-    .footer .info .basic {
+    .footer .foot .row .logoQR .citypaylog {
+        width: 45%;
         position: relative;
-        right: 30px;
+        left: 45px;
+    }
+
+    .footer .foot .row .logoQR .QRcode {
+        width: 45%;
+        position: relative;
+        left: 45px;
+    }
+
+    .foot .row .logoQR .dwbuttons {
+        position: relative;
+        left: 25px;
+        width: 50%;
+    }
+
+    .foot .row .logoQR .dwbuttons h3 {
+        font-size: 16px;
+    }
+
+    .footer .foot .row .logimg .download-btn {
+        width: 125px;
+        height: 40px;
+        margin: 2px 2px 2px 5px;
+        position: relative;
+        right: 60px;
+    }
+
+    .footer .foot .row .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer .foot .row .info .basic {
+        position: relative;
+        left: 70px;
         margin: 40px 1px 1px 1px;
+        width: 100%;
     }
 
-    .footer .info p {
+    .footer .foot .row .info .basic p {
+        font-size: 17px;
+    }
+
+    .footer .foot .row .info .basic .Email {
+        width: 130%;
+    }
+
+    .footer .foot .row .info .basic .Tel {
+        width: 130%;
+    }
+
+    .footer .foot .row .info .basic .ext {
+        width: 130%;
+    }
+
+    .footer .foot .row .info .basic .tol {
+        width: 130%;
+    }
+
+    .footer .foot .row .info .basic .Call {
+        width: 130%;
+    }
+
+    .footer .foot .row .info p {
+        font-size: 13px;
+    }
+
+    .footer .foot .row .info .connect {
+        padding: 10px;
+        margin: 10px 0px 0px 280px;
+        width: 100%;
+        position: relative;
+        top: 5px;
+    }
+
+    .footer .foot .row .info .connect p {
+        font-size: 18px;
+    }
+
+    .footer .foot .row .info .connect .soc {
+        position: relative;
+        left: 0px;
+    }
+
+    .footer .foot .row .info .connect .fb {
+        width: 45px;
+        height: auto;
+    }
+
+    .footer .foot .row .info .connect .ytb {
+        width: 45px;
+        height: auto;
+    }
+
+    .footer .foot .row .info .connect .lkdn {
+        width: 45px;
+        height: auto;
+    }
+
+    .footer .foot .row .footer-links {
+        margin: 150px 50px 1px 40px;
+        padding: 1px 10px 1px 1px;
+        width: 100%;
+        position: relative;
+        left: 350px;
+    }
+
+    .footer .foot .row .footer-links .agent {
+        width: 55%;
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    .footer .foot .row .footer-links a {
         font-size: 15px;
     }
 
-    .footer .footer-links {
-        margin: 50px 50px 1px 40px;
-        padding: 1px 10px 1px 1px;
-        width: 80%;
-        position: relative;
-        left: 50px;
+    .footer .foot .row .footer-links h4 {
+        font-size: 20px;
     }
 
-    .footer .footer-links a {
-        font-size: small;
+    .copyright p {
+        font-size: 25px;
+        margin: 0px 0px 0px 520px;
     }
 
-    .footer-links h4 {
-        font-size: medium;
-    }
-
-    .footer .logimg .download-btn {
-        width: 90px;
-        height: 30px;
-        margin: 2px 2px 2px 5px;
-    }
-
-    .connect {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        margin: 10px;
-        width: 250px;
-    }
-
-    .connect .soc {
-        position: relative;
-        left: 20px;
-    }
-
-    .connect .fb {
-        width: 22px;
-        height: auto;
-    }
-
-    .connect .ytb {
-        width: 22px;
-        height: auto;
-    }
-
-    .connect .lkdn {
-        width: 22px;
-        height: auto;
-    }
 }
 
 
@@ -572,172 +722,184 @@ body {
         /* height: auto; */
     }
 
-
-
-    /* Footer */
-
-    .footer .logoQR .citypaylog {
-        width: 22%;
+    .map {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
     }
 
-    .footer .logoQR .QRcode {
-        width: 22%;
+    .map .iframe {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 5px;
     }
 
-    .dwbuttons {
+    /* footer */
+
+    .footer {
+        padding: 10px 0px 10px 0px;
+    }
+
+    .footer .row {
+        position: relative;
+        right: 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footer .foot .row .logoQR .citypaylog {
+        width: 50%;
+        position: relative;
+        left: 40px;
+    }
+
+    .footer .foot .row .logoQR .QRcode {
+        width: 60%;
+        position: relative;
+
+        left: 40px;
+    }
+
+    .footer .foot .row .dwbuttons {
         position: relative;
         left: 20px;
     }
 
-    .download-btn {
+    .footer .foot .row .logoQR .dwbuttons .logimg .download-btn {
+        position: relative;
+        right: 30px;
+        width: 165px;
+        height: 60px;
+    }
+
+    .footer .foot .row .logoQR .dwbuttons .tit {
+        margin: 1px;
         position: relative;
         right: 20px;
     }
 
-    .footer .info .basic {
+    .footer .foot .row .logoQR .dwbuttons .tit h3 {
+        font-size: 20px;
+
+    }
+
+    .footer .foot .row .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         position: relative;
-        right: 30px;
-        margin: 40px 1px 1px 1px;
+        left: 10px;
+        width: 100%;
     }
 
-    .footer .info p {
-        font-size: 15px;
-    }
-
-    .footer .footer-links {
-        margin: 50px 50px 1px 40px;
-        padding: 1px 10px 1px 1px;
-        width: 80%;
+    .footer .foot .row .info .basic {
         position: relative;
         left: 50px;
+        width: 100%;
+        margin: 20px 0px 10px 0px;
     }
 
-    .footer .footer-links a {
-        font-size: small;
+    .footer .foot .row .info p {
+        font-size: 20px;
     }
 
-    .footer-links h4 {
-        font-size: medium;
+    .footer .foot .row .info .Email {
+        width: 300px;
     }
 
-    .footer .logimg .download-btn {
-        width: 90px;
-        height: 30px;
-        margin: 2px 2px 2px 5px;
+    .footer .foot .row .info .Tel {
+        width: 300px;
     }
 
-    .connect {
-        display: flex;
-        flex-direction: column;
+    .footer .foot .row .info .tol {
+        width: 300px;
+    }
+
+    .footer .foot .row .info .Call {
+        width: 300px;
+    }
+
+    .footer .foot .row .connect {
         padding: 10px;
-        margin: 10px;
-        width: 250px;
+        margin: 95px 0px 0px 60px;
+        padding: 0px 50px 0px 0px;
+        width: 180px;
     }
 
-    .connect .soc {
+    .footer .foot .row .connect .soc {
         position: relative;
-        left: 20px;
+        left: 16px;
     }
 
-    .connect .fb {
-        width: 22px;
+    .footer .foot .row .connect .fb {
+        width: 50px;
         height: auto;
     }
 
-    .connect .ytb {
-        width: 22px;
+    .footer .foot .row .connect .ytb {
+        width: 50px;
         height: auto;
     }
 
-    .connect .lkdn {
-        width: 22px;
+    .footer .foot .row .connect .lkdn {
+        width: 50px;
         height: auto;
+    }
+
+
+    .footer .foot .row .footer-links {
+        margin: 180px 10px 10px 10px;
+        padding: 10px 20px 1px 1px;
+        position: relative;
+        left: 370px;
+        width: 180px;
+    }
+
+    .footer .foot .row .footer-links .agent {
+        font-size: 16px;
+        padding: 12px;
+        width: 90%;
+    }
+
+    .footer .foot .row .footer-links a {
+        font-size: medium;
+        padding: 5px;
+    }
+
+    .footer .foot .row .footer-links h4 {
+        font-size: 20px;
+    }
+
+    .copyright {
+        position: relative;
+        bottom: 5px;
+        left: 200px;
+        width: 75%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer .foot .row .copyright p {
+        font-size: 17px;
+        position: relative;
+        text-align: center;
     }
 
 }
 
 @media (max-width:1024px) and (min-width: 769px) {
-    .container {}
-
-
-    /* footer */
-    .footer .row {
-        position: relative;
-        right: 50px;
-    }
-
-    .footer .logoQR .citypaylog {
-        width: 30%;
-    }
-
-    .footer .logoQR .QRcode {
-        width: 30%;
-    }
-
-
-    .footer .info .basic {
-        position: relative;
-        left: 50px;
-    }
-
-    .footer .info p {
-        font-size: 11px;
-    }
-
-    .footer .footer-links {
-        margin: 1px 50px 1px 1px;
-        padding: 1px 20px 1px 1px;
-    }
-
-    .footer .footer-links a {
-        font-size: x-small;
-    }
-
-    .footer-links h4 {
-        font-size: medium;
-    }
-
-    .footer .logimg .download-btn {
-        width: 70px;
-        height: 25px;
-        margin: 2px 2px 2px 5px;
-    }
-
-    .connect {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        margin: 10px;
-        width: 200px;
-    }
-
-    .connect .soc {
-        position: relative;
-        left: 3px;
-    }
-
-    .connect .fb {
-        width: 20px;
+    .map {
+        width: 100%;
         height: auto;
+        overflow: hidden;
     }
 
-    .connect .ytb {
-        width: 20px;
-        height: auto;
+    .map .iframe {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 5px;
     }
-
-    .connect .lkdn {
-        width: 20px;
-        height: auto;
-    }
-
-    .footer .copyright p {
-        font-size: smaller;
-    }
-}
-
-@media (max-width:768px) and (min-width: 426px) {
-
 
 
     /* footer */
@@ -746,12 +908,180 @@ body {
         padding: 10px 0px 10px 0px;
     }
 
+    .footer .row {
+        position: relative;
+        right: 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footer .foot .row .logoQR .citypaylog {
+        width: 70%;
+        position: relative;
+        left: 20px;
+    }
+
+    .footer .foot .row .logoQR .QRcode {
+        width: 70%;
+        position: relative;
+        left: 20px;
+    }
+
+    .footer .foot .row .dwbuttons {
+        position: relative;
+        left: 20px;
+    }
+
+    .footer .foot .row .logoQR .dwbuttons .logimg .download-btn {
+        position: relative;
+        right: 26px;
+        width: 120px;
+        height: 40px;
+    }
+
+    .footer .foot .row .logoQR .dwbuttons .tit {
+        margin: 1px;
+        position: relative;
+        right: 20px;
+    }
+
+    .footer .foot .row .logoQR .dwbuttons .tit h3 {
+        font-size: 15px;
+
+    }
+
+    .footer .foot .row .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        left: 30px;
+        width: 100%;
+    }
+
+    .footer .foot .row .info .basic {
+        position: relative;
+        left: 50px;
+        width: 100%;
+        margin: 25px 0px 10px 0px;
+    }
+
+    .footer .foot .row .info p {
+        font-size: 15px;
+    }
+
+    .footer .foot .row .info .Email {
+        width: 220px;
+    }
+
+    .footer .foot .row .info .Tel {
+        width: 220px;
+    }
+
+
+    .footer .foot .row .info .tol {
+        width: 220px;
+    }
+
+    .footer .foot .row .info .Call {
+        width: 200px;
+    }
+
+    .footer .foot .row .connect {
+        padding: 10px;
+        margin: 95px 0px 0px 0px;
+        padding: 0px 50px 0px 0px;
+        width: 150px;
+    }
+
+    .footer .foot .row .connect .soc {
+        position: relative;
+        left: 16px;
+    }
+
+    .footer .foot .row .connect .fb {
+        width: 30px;
+        height: auto;
+    }
+
+    .footer .foot .row .connect .ytb {
+        width: 30px;
+        height: auto;
+    }
+
+    .footer .foot .row .connect .lkdn {
+        width: 30px;
+        height: auto;
+    }
+
+
+    .footer .foot .row .footer-links {
+        margin: 170px 10px 10px 10px;
+        padding: 10px 20px 1px 1px;
+        position: relative;
+        left: 240px;
+        width: 150px;
+    }
+
+    .footer .foot .row .footer-links .agent {
+        font-size: 12px;
+        padding: 9px;
+    }
+
+    .footer .foot .row .footer-links a {
+        font-size: small;
+    }
+
+    .footer .foot .row .footer-links h4 {
+        font-size: medium;
+    }
+
+    .copyright {
+        position: relative;
+        bottom: 5px;
+        left: 110px;
+        width: 75%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer .foot .row .copyright p {
+        font-size: 7px;
+        position: relative;
+        text-align: center;
+    }
+}
+
+@media (max-width:768px) and (min-width: 426px) {
+
+    .map {
+        width: 80%;
+        height: auto;
+        overflow-y: hidden;
+
+    }
+
+    .map .iframe {
+        width: 80%;
+        height: 100%;
+        position: relative;
+        top: 5px;
+        border: 0;
+    }
+
+    /* footer */
+
+    .footer {
+        padding: 10px 0px 1px 0px;
+    }
+
     .footer .foot {
         width: 100%;
     }
 
     .footer .foot .row {
         width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     .footer .foot .row .logoQR .citypaylog {
@@ -785,21 +1115,28 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         position: relative;
-        left: 0px;
+        right: 80px;
     }
 
     .footer .foot .row .info .basic {
         position: relative;
-        left: 50px;
-        width: 100%;
+        left: 120px;
         margin: 0px 0px 60px 0px;
     }
 
+    .footer .foot .row .info .basic p {
+        font-size: 10px;
+        width: 100%;
+    }
 
     .footer .foot .row .info .connect {
         margin: 45px 0px 0px 0px;
         position: relative;
+        width: 40%;
+    }
 
+    .footer .foot .row .info .connect p {
+        font-size: 12px;
     }
 
     .footer .foot .row .info .connect .soc {
@@ -813,22 +1150,26 @@ body {
         margin: 100px 5px 5px 5px;
         padding: 10px 10px 1px 1px;
         position: relative;
-        left: 125px;
-        width: 100%;
+        right: 35px;
+        width: 130%;
     }
 
     .footer .foot .row .footer-links a {
         font-size: x-small;
+        text-align: justify;
     }
 
     .footer .foot .row .footer-links h4 {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .footer .foot .row .footer-links .agent {
-        font-size: 8px;
+        position: relative;
+        left: 0px;
+        font-size: 10px;
         margin: 1px;
-        width: 100%;
+        padding: 6px;
+        width: 95%;
     }
 
     .footer .logimg .download-btn {
@@ -838,89 +1179,45 @@ body {
     }
 
 
-    .footer .foot .row .copyright {
+    .footer .copyright {
         position: relative;
-        left: 100px;
+        bottom: 15px;
+        left: 70px;
+        width: 65%;
+        padding: 0;
+        margin: 0;
     }
 
-    .footer .foot .row .copyright p {
+    .copyright p {
         font-size: small;
+        position: relative;
+        text-align: center;
     }
 }
 
 @media (max-width:425px) and (min-width: 376px) {
-
-    .header {
-        padding: 10px 10px 10px 20px;
-        width: 75%;
-    }
-
-    .navbar .logo {
-        width: 60%;
-    }
-
-    .navbar .title h1 {
-        font-size: 18px;
-    }
-
-    .menu-toggle {
-        flex-direction: column;
-        cursor: pointer;
-        height: 20px;
-    }
-
-    .fa-bars {
-        font-size: 40px;
-        color: #1472cf;
-    }
-
-    .nav {
-        display: none;
-    }
-
-    .nav.active {
-        display: block;
-        position: absolute;
-        right: 20px;
-        /* top: 60px; */
-        width: 350px;
-        height: 500px;
-    }
-
-    .underline {
-        background-color: rgb(255, 255, 255);
-        height: 1px;
-        width: 80%;
+    .navbar {
+        position: relative;
+        right: 10px;
     }
 
     .nav ul {
-        list-style-type: none;
-        padding: 0;
-        background-color: #194a7a;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-        padding-top: 15px;
-        z-index: 1;
-        top: 0;
-        position: sticky;
-        border-radius: 15px;
-    }
-
-    .nav li {
+        margin: 20px 10px 10px 25px;
+        width: 80%;
         padding: 10px;
-        text-align: center;
     }
 
-    .nav a {
-        text-decoration: none;
-        color: #333;
-        font-weight: 700;
-        font-size: 25px;
-        color: white;
+    .header .menu-toggle {
+        position: relative;
+        left: 5px;
     }
+
+    .navbar .logo {
+        position: relative;
+        right: 15px;
+        top: 0px;
+    }
+
 
     .container {
         width: 100%;
@@ -1051,22 +1348,17 @@ body {
     }
 }
 
-.container .contact-detail .map {
-    width: 340px;
-    height: 250px;
-    margin: 60px 10px 10px 16px;
-    padding: 20px 10px 10px 10px;
-    width: 70%;
+.map {
+    width: 100%;
+    height: auto;
 }
 
-.container .contact-detail .map .map-iframe {
-    width: 340px;
-    height: 220px;
+.map .iframe {
+    width: 160%;
+    height: 170%;
     position: relative;
-    bottom: 10px;
-    right: 20px;
-    margin: 0;
-    padding: 0;
+    top: 6px;
+    left: 6px;
 }
 
 /* Footer */
@@ -1163,7 +1455,7 @@ body {
     left: 80px;
     bottom: 0px;
     width: 100%;
-    margin: 65px 2px 2px 2px;
+    margin: 65px 50px 2px 2px;
     padding: 2px 2px 2px 2px;
 }
 
@@ -1293,14 +1585,15 @@ body {
 .footer .copyright {
     position: relative;
     bottom: 15px;
-    left: 70px;
+    /* left: 70px; */
     width: 65%;
     padding: 0;
-    margin: 0;
+    margin: 0 10px 10px 70px;
 }
 
 .footer .copyright p {
     font-size: 8px;
+    text-align: center;
 }
 
 .soc svg:hover {
@@ -1309,76 +1602,26 @@ body {
 }
 
 @media (max-width:375px) and (min-width: 321px) {
-    .header {
-        padding: 10px 10px 10px 20px;
-        width: 75%;
-    }
-
-    .navbar .logo {
-        width: 60%;
-    }
-
-    .navbar .title h1 {
-        font-size: 18px;
-    }
-
-    .menu-toggle {
-        flex-direction: column;
-        cursor: pointer;
-        height: 20px;
-    }
-
-    .fa-bars {
-        font-size: 40px;
-        color: #1472cf;
-    }
-
-    .nav {
-        display: none;
-    }
-
-    .nav.active {
-        display: block;
-        position: absolute;
-        right: 20px;
-        /* top: 60px; */
-        width: 350px;
-        height: 500px;
-    }
-
-    .underline {
-        background-color: rgb(255, 255, 255);
-        height: 1px;
-        width: 80%;
+    .navbar {
+        position: relative;
+        right: 10px;
     }
 
     .nav ul {
-        list-style-type: none;
-        padding: 0;
-        background-color: #194a7a;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-        padding-top: 15px;
-        z-index: 1;
-        top: 0;
-        position: sticky;
-        border-radius: 15px;
-    }
-
-    .nav li {
+        margin: 20px 20px 10px 61px;
+        width: 70%;
         padding: 10px;
-        text-align: center;
     }
 
-    .nav a {
-        text-decoration: none;
-        color: #333;
-        font-weight: 700;
-        font-size: 25px;
-        color: white;
+    .header .menu-toggle {
+        position: relative;
+        left: 5px;
+    }
+
+    .navbar .logo {
+        position: relative;
+        right: 10px;
+        top: 0px;
     }
 
     .container {
@@ -1509,23 +1752,17 @@ body {
         right: 51px;
     }
 
-
-    .container .contact-detail .map {
-        width: 340px;
-        height: 250px;
-        margin: 60px 10px 10px 15px;
-        padding: 20px 10px 10px 10px;
-        width: 60%;
+    .map {
+        width: 100%;
+        height: auto;
     }
 
-    .container .contact-detail .map .map-iframe {
-        width: 280px;
-        height: 200px;
+    .map .iframe {
+        width: 160%;
+        height: 170%;
         position: relative;
-        bottom: 10px;
-        right: 0px;
-        margin: 0;
-        padding: 0;
+        top: 6px;
+        left: 6px;
     }
 
     /* Footer */
@@ -1766,77 +2003,28 @@ body {
 
 
 @media (max-width:320px) and (min-width: 280px) {
-    .header {
-        padding: 10px 10px 10px 20px;
-        width: 75%;
-    }
-
-    .navbar .logo {
-        width: 60%;
-    }
-
-    .navbar .title h1 {
-        font-size: 16px;
-    }
-
-    .menu-toggle {
-        flex-direction: column;
-        cursor: pointer;
-        height: 20px;
-    }
-
-    .fa-bars {
-        font-size: 40px;
-        color: #1472cf;
-    }
-
-    .nav {
-        display: none;
-    }
-
-    .nav.active {
-        display: block;
-        position: absolute;
-        right: 20px;
-        /* top: 60px; */
-        width: 350px;
-        height: 500px;
-    }
-
-    .underline {
-        background-color: rgb(255, 255, 255);
-        height: 1px;
-        width: 80%;
+    .navbar {
+        position: relative;
+        right: 10px;
     }
 
     .nav ul {
-        list-style-type: none;
-        padding: 0;
-        background-color: #194a7a;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-        padding-top: 15px;
-        z-index: 1;
-        top: 0;
-        position: sticky;
-        border-radius: 15px;
-    }
-
-    .nav li {
+        margin: 20px 10px 10px 62px;
+        width: 60%;
         padding: 10px;
-        text-align: center;
     }
 
-    .nav a {
-        text-decoration: none;
-        color: #333;
-        font-weight: 700;
-        font-size: 25px;
-        color: white;
+    .header .menu-toggle {
+        position: relative;
+        left: 5px;
     }
+
+    .navbar .logo {
+        position: relative;
+        right: 10px;
+        top: 0px;
+    }
+
 
     .container {
         width: 100%;
@@ -1966,23 +2154,17 @@ body {
         right: 51px;
     }
 
-
-    .container .contact-detail .map {
-        width: 340px;
-        height: 250px;
-        margin: 80px 5px 10px 5px;
-        padding: 20px 10px 10px 5px;
-        width: 60%;
+    .map {
+        width: 100%;
+        height: auto;
     }
 
-    .container .contact-detail .map .map-iframe {
-        width: 260px;
-        height: 200px;
+    .map .iframe {
+        width: 160%;
+        height: 170%;
         position: relative;
-        bottom: 10px;
-        right: 0px;
-        margin: 0;
-        padding: 0;
+        top: 6px;
+        left: 6px;
     }
 
     /* Footer */

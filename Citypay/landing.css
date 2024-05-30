@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
 
 body {
   margin: 0;
@@ -50,21 +52,23 @@ body {
   align-items: center;
   gap: 40px;
   justify-content: center;
+  padding: 5px 0px 5px 0px;
+  overflow-x: hidden;
 }
 
+/* Navbar Styles */
 .navbar {
-  z-index: 1;
+  z-index: 10;
   position: relative;
   top: 0;
+  width: 100%;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
-  padding-left: 60px;
-  padding-right: 20px;
+  padding: 10px 10px 10px 10px;
 }
 
 .logo {
@@ -73,27 +77,52 @@ body {
 }
 
 .menu-toggle {
+  display: flex;
   flex-direction: column;
   cursor: pointer;
-  height: 20px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .fa-bars {
   font-size: 40px;
   color: #1472cf;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-toggle:hover .fa-bars {
+  transform: rotate(90deg);
 }
 
 .nav {
   display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .nav.active {
   display: block;
+  opacity: 1;
   position: absolute;
   right: 20px;
-  /* top: 60px; */
-  width: 350px;
-  height: 500px;
+  width: 90%;
+  max-width: 350px;
+  height: auto;
+  top: 60px;
+  animation: dropdown 0.5s ease-in-out forwards;
+}
+
+@keyframes dropdown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .underline {
@@ -105,17 +134,21 @@ body {
 .nav ul {
   list-style-type: none;
   padding: 0;
-  background-color: #194a7a;
+  background: linear-gradient(135deg, #1472cf, #65c7f7);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   height: 100%;
+  width: 45%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5px;
-  padding-top: 15px;
+  margin: 20px 0px 10px 170px;
+  padding: 10px;
   z-index: 1;
   top: 0;
   position: sticky;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 .nav li {
@@ -125,11 +158,32 @@ body {
 
 .nav a {
   text-decoration: none;
-  color: #333;
-  font-weight: 700;
-  font-size: 25px;
   color: white;
+  font-weight: 700;
+  font-size: 17px;
+  transition: color 0.3s ease-in-out;
 }
+
+.nav a:hover {
+  color: #ffdd57;
+  /* Hover color */
+}
+
+/* Additional Menu Toggle Animation */
+@keyframes menuToggleAnimation {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
 
 /* first section starts here */
 
@@ -260,7 +314,7 @@ body {
 .second-title p {
   margin-top: 0;
   font-size: 15px;
-  font-weight: bold;
+  font-weight: normal;
   text-align: center;
 }
 
@@ -302,9 +356,17 @@ body {
   padding: 20px;
   margin-bottom: 20px;
   margin-top: 60px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
-.second-grid1:hover .grid-content h2,
+.second-grid1:hover, .second-grid2:hover, .second-grid3:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(#0e83e3, #1868aa, #65c7f7);
+  /* Slight change in gradient */
+}
+
+.grid-content h2,
 p {
   margin: 0;
   padding: 0;
@@ -353,7 +415,7 @@ p {
 .third-title p {
   margin-top: 0;
   font-size: 15px;
-  font-weight: bold;
+  font-weight: normal;
   text-align: center;
 }
 
@@ -367,7 +429,6 @@ p {
 .third-img {
   width: 100%;
   height: 100%;
-  /* object-fit: contain; */
 }
 
 .third-img img {
@@ -378,7 +439,6 @@ p {
 .third-grid {
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0px;
-  /* height: 100%; */
   width: 100%;
   margin: 0;
   padding: 0;
@@ -389,11 +449,11 @@ p {
   width: 45%;
   position: relative;
   bottom: 600px;
-  margin: 2px 2px 2px 15px;
+  margin: 2px 2px 2px 20px;
 }
 
 .third-section .body-container .third-grid .Extra-Grid .Family-Friends {
-  width: 80%;
+  width: 90%;
   height: 75%;
   float: right;
   position: relative;
@@ -412,6 +472,13 @@ p {
   padding: 20px;
   margin-bottom: 20px;
   margin-top: 60px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.third-grid2:hover, .third-grid3:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(#0e83e3, #1868aa, #65c7f7);
 }
 
 .grid-content h2,
@@ -472,19 +539,20 @@ p {
 .fourth-title p {
   margin-top: 0;
   font-size: 15px;
-  font-weight: bold;
+  font-weight: normal;
   text-align: center;
 }
 
 .fourth-grid {
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 10px;
-  width: 100%;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px;
+  width: 80%;
+  bottom: 420px;
   margin: 10px 10px 10px 200px;
   padding: 10px 10px 10px 200px;
   padding: 0;
+  justify-content: end;
   position: relative;
-  bottom: 300px;
 }
 
 .fourth-grid2,
@@ -497,25 +565,31 @@ p {
   background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
   border-radius: 50px;
   padding: 20px;
-  margin-bottom: 20px;
-  margin-top: 0px;
   margin: 20px 10px 20px 600px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
-.fourth-section .body-container .Pic-Grid {
-  width: 50%;
-  margin: 1px;
+.fourth-grid2:hover, .fourth-grid3:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(#0e83e3, #1868aa, #65c7f7);
+}
+
+.fourth-grid .Pic-Grid {
   position: relative;
-  top: 190px;
+  top: 0px;
+  width: 35%;
+  margin: 50px;
 }
 
 .Pic-Grid .bank {
-  width: 70%;
-  height: 90%;
+  width: 80%;
+  height: 70%;
   position: relative;
   bottom: 0px;
+  left: 10px;
+  margin: 150px 20px 20px 70px;
 }
-
 
 .grid-content-bank h2,
 p {
@@ -533,8 +607,6 @@ p {
   font-size: 15px;
   text-align: justify;
 }
-
-
 
 /* CSS for fifth-section starts here */
 .fifth-section {
@@ -562,7 +634,7 @@ p {
 .fifth-title p {
   margin-top: 0;
   font-size: 15px;
-  font-weight: bold;
+  font-weight: normal;
   text-align: center;
 }
 
@@ -613,7 +685,7 @@ p {
 
 .fifth-grid .icon {
   position: relative;
-  top: 10px;
+  top: 30px;
 }
 
 .fifth-grid2,
@@ -625,12 +697,20 @@ p {
   width: 320px;
   height: 240px;
   background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
-  border: 7px solid #F53F4A;
+  border: none;
   border-radius: 50px;
   padding: 20px;
   margin: 20px 10px 20px 700px;
   position: relative;
   left: 0px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.fifth-grid2:hover, .fifth-grid3:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(#0e83e3, #1868aa, #65c7f7);
+  /* Slight change in gradient */
 }
 
 .grid-content-4 h2,
@@ -682,7 +762,7 @@ p {
 .sixth-title p {
   margin-top: 0;
   font-size: 15px;
-  font-weight: bold;
+  font-weight: normal;
   text-align: center;
 }
 
@@ -727,6 +807,14 @@ p {
   border-radius: 20px;
   padding: 20px 20px 20px 20px;
   margin: 50px 10px 10px 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.sixth-grid1:hover, .sixth-grid2:hover, .sixth-grid3:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(#0e83e3, #1868aa, #65c7f7);
+  /* Slight change in gradient */
 }
 
 .grid-content {
@@ -752,7 +840,7 @@ p {
 }
 
 .sixth-img {
-  width: 80%;
+  width: 90%;
   height: 95%;
   position: relative;
   top: 50px;
@@ -763,9 +851,6 @@ p {
   position: relative;
 
 }
-
-
-
 
 /* CSS for seventh-section starts here  */
 .seventh-section {
@@ -793,7 +878,7 @@ p {
 .seventh-title p {
   margin-top: 0;
   font-size: 17px;
-  font-weight: bold;
+  font-weight: normal;
   text-align: center;
   width: 80%;
 }
@@ -843,6 +928,14 @@ p {
   border-radius: 20px;
   padding: 20px 20px 0px 20px;
   margin: 50px 10px 10px 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.seventh-grid1:hover, .seventh-grid2:hover, .seventh-grid3:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(#0e83e3, #1868aa, #65c7f7);
+  /* Slight change in gradient */
 }
 
 .grid-content {
@@ -921,7 +1014,7 @@ p {
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 20px;
+  padding: 20px 0px 20px 0px;
   margin-top: auto;
 }
 
@@ -1031,7 +1124,7 @@ p {
 }
 
 .info .basic p {
-  font-weight: 510;
+  font-weight: normal;
   padding-top: 10px;
   font-size: smaller;
 }
@@ -1143,9 +1236,19 @@ p {
 
 
 
+
 /* Media Query Responsiveness */
 
 @media (max-width:2560px) and (min-width: 1921px) {
+
+  .header {
+    padding: 10px 15px 10px 15px;
+  }
+
+  .layout-container {
+    overflow-x: hidden;
+  }
+
   .buttons {
     display: flex;
     justify-content: center;
@@ -1287,8 +1390,20 @@ p {
 
 
 @media (max-width:1440px) and (min-width: 1025px) {
+  .nav ul {
+    margin: 20px 10px 10px 229px;
+    width: 40%;
+    padding: 10px;
+  }
+
   .first-section {
     height: 90vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    object-fit: contain;
+    display: flex;
+    align-items: flex-end;
   }
 
   .first-section .body-container .dwnld-desc {
@@ -1306,7 +1421,7 @@ p {
   }
 
   .first-section .body-container .dwnld-desc .description {
-    margin: 55px 1px 1px 5px;
+    margin: 20px 1px 1px 5px;
     padding: 25px 1px 1px 5px;
     width: 65%;
   }
@@ -1318,7 +1433,7 @@ p {
     gap: 25px;
     width: 30%;
     position: relative;
-    left: 35px;
+    left: 80px;
   }
 
   .buttons .playstore .dow-btn {
@@ -1363,8 +1478,9 @@ p {
 
   .second-section {
     height: 100vh;
-    margin: 35px 5px 5px 5px;
-    padding: 35px 5px 5px 5px;
+    width: 90%;
+    margin: 35px 0px 5px 5px;
+    padding: 35px 0px 5px 5px;
   }
 
   .second-section .second-body {
@@ -1378,19 +1494,18 @@ p {
   }
 
   .second-section .second-body .second-img .remittance-img {
-    height: 590px;
-    width: 420px;
+    height: 500px;
+    width: 360px;
     position: relative;
-    top: 30px;
-    left: 50px;
+    top: 40px;
   }
 
   .second-section .second-body .second-grid h2 {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .second-section .second-body .second-grid p {
-    font-size: 16px;
+    font-size: 13px;
   }
 
   .second-section .second-body .second-grid .remit-icon {
@@ -1409,24 +1524,24 @@ p {
   }
 
   .second-section .second-body .second-grid .second-grid1 {
-    margin: 2px 2px 10px 30px;
-    padding: 15px 25px 20px 30px;
-    width: 380px;
-    height: 200px;
+    margin: 2px 2px 10px 2px;
+    padding: 15px 25px 20px 10px;
+    width: 350px;
+    height: 185px;
   }
 
   .second-section .second-body .second-grid .second-grid2 {
-    margin: 2px 2px 10px 30px;
-    padding: 15px 25px 20px 30px;
-    width: 380px;
-    height: 200px;
+    margin: 2px 2px 10px 2px;
+    padding: 15px 25px 20px 10px;
+    width: 350px;
+    height: 185px;
   }
 
   .second-section .second-body .second-grid .second-grid3 {
-    margin: 2px 2px 10px 30px;
-    padding: 15px 25px 20px 30px;
-    width: 380px;
-    height: 200px;
+    margin: 2px 2px 10px 2px;
+    padding: 15px 25px 20px 10px;
+    width: 350px;
+    height: 185px;
   }
 
   .second-grid1, .second-grid2 {
@@ -1435,42 +1550,43 @@ p {
 
   .third-section {
     height: 100vh;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
+    width: 90%;
+    margin: 5px 0px 5px 5px;
+    padding: 5px 0px 5px 5px;
   }
 
   .third-section .body-container .third-grid h2 {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .third-section .body-container .third-grid p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .third-section .body-container .third-grid .Extra-Grid {
     position: relative;
-    bottom: 560px;
+    bottom: 555px;
     margin: 2px 2px 2px 2px;
   }
 
   .third-section .body-container .third-grid .Extra-Grid .Family-Friends {
-    width: 430px;
+    width: 360px;
     position: relative;
-    left: 0px;
+    left: 60px;
   }
 
   .third-section .body-container .third-grid .third-grid2 {
-    margin: 50px 2px 10px 70px;
+    margin: 50px 2px 10px 10px;
     padding: 50px 30px 60px 20px;
-    width: 370px;
-    height: 170px;
+    width: 350px;
+    height: 150px;
   }
 
   .third-section .body-container .third-grid .third-grid3 {
-    margin: 50px 2px 10px 70px;
+    margin: 50px 2px 10px 10px;
     padding: 50px 30px 60px 20px;
-    width: 370px;
-    height: 170px;
+    width: 350px;
+    height: 150px;
   }
 
   .third-section .body-container .third-grid .Fund-T {
@@ -1485,28 +1601,29 @@ p {
 
   .fourth-section {
     height: 100vh;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
+    width: 90%;
+    margin: 5px 0px 5px 5px;
+    padding: 5px 0px 5px 5px;
   }
 
   .fourth-section .body-container .fourth-grid {
-    margin: 50px 60px 10px 90px;
-    padding: 10px 60px 10px 90px;
+    margin: 150px 30px 10px 20px;
+    padding: 10px 30px 10px 20px;
     width: 60%;
     position: relative;
     left: 260px;
   }
 
   .fourth-section .body-container .fourth-grid h2 {
-    font-size: 20px;
-  }
-
-  .fourth-section .body-container .fourth-grid p {
     font-size: 16px;
   }
 
+  .fourth-section .body-container .fourth-grid p {
+    font-size: 14px;
+  }
+
   .fourth-section .body-container .fourth-grid .fourth-grid2 {
-    margin: 2px 2px 10px 130px;
+    margin: 70px 2px 10px 100px;
     padding: 15px 15px 25px 30px;
     width: 55%;
     height: 200px;
@@ -1514,7 +1631,7 @@ p {
   }
 
   .fourth-section .body-container .fourth-grid .fourth-grid3 {
-    margin: 2px 2px 10px 130px;
+    margin: 20px 2px 10px 100px;
     padding: 15px 15px 25px 30px;
     width: 55%;
     height: 200px;
@@ -1535,7 +1652,7 @@ p {
     padding: 5px 5px 5px 5px;
     position: relative;
     right: 0px;
-    bottom: 420px;
+    bottom: 0px;
     width: 50%;
     height: 80%;
   }
@@ -1543,15 +1660,17 @@ p {
   .fourth-section .body-container .Pic-Grid .bank {
     position: relative;
     margin: 5px 5px 5px 5px;
-    top: 5px;
+    top: 150px;
     left: 0px;
-    width: 80%;
+    width: 70%;
+    height: 90%;
   }
 
   .fifth-section {
     height: 100vh;
-    margin: 5px 5px 10px 5px;
-    padding: 5px 5px 10px 5px;
+    margin: 5px 0px 10px 5px;
+    padding: 5px 0px 10px 5px;
+    width: 90%;
   }
 
   .fifth-section .body-container .fifth-grid {
@@ -1561,25 +1680,25 @@ p {
   }
 
   .fifth-section .body-container .fifth-grid h2 {
-    font-size: 20px;
-  }
-
-  .fifth-section .body-container .fifth-grid p {
     font-size: 16px;
   }
 
+  .fifth-section .body-container .fifth-grid p {
+    font-size: 14px;
+  }
+
   .fifth-section .body-container .fifth-grid .fifth-grid2 {
-    margin: 2px 2px 10px 30px;
-    padding: 25px 25px 25px 25px;
-    width: 55%;
-    height: 210px;
+    margin: 2px 2px 10px 50px;
+    padding: 15px 15px 15px 5px;
+    width: 65%;
+    height: 195px;
   }
 
   .fifth-section .body-container .fifth-grid .fifth-grid3 {
-    margin: 35px 2px 10px 30px;
-    padding: 25px 25px 25px 25px;
-    width: 55%;
-    height: 210px;
+    margin: 35px 2px 10px 50px;
+    padding: 25px 10px 15px 5px;
+    width: 65%;
+    height: 195px;
   }
 
   .fifth-section .body-container .fifth-grid .CityPay-QR {
@@ -1596,8 +1715,8 @@ p {
     margin: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
     position: relative;
-    left: 720px;
-    bottom: 630px;
+    left: 520px;
+    bottom: 530px;
     width: 45%;
     height: 90%;
   }
@@ -1607,13 +1726,14 @@ p {
     margin: 5px 5px 5px 5px;
     top: 0px;
     left: 0px;
-    width: 90%;
+    width: 100%;
   }
 
   .sixth-section {
     height: 100vh;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
+    margin: 5px 0px 5px 5px;
+    padding: 5px 0px 5px 5px;
+    width: 90%;
   }
 
   .sixth-body {
@@ -1630,25 +1750,26 @@ p {
   .sixth-section .sixth-body .sixth-img {
     margin: 2px 2px 2px 2px;
     padding: 4px 4px 4px 4px;
-    width: 390px;
+    width: 320px;
   }
 
   .sixth-section .sixth-body .sixth-img .Utility {
     margin: 55px 1px 1px 0px;
     padding: 55px 1px 1px 1px;
-    width: 380px;
-    height: 420px;
+    width: 330px;
+    height: 380px;
     position: relative;
-    right: 30px;
+    right: 70px;
   }
 
   .sixth-section .body-container .sixth-grid h2 {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .sixth-section .body-container .sixth-grid p {
-    font-size: 16px;
+    font-size: 14px;
   }
+
 
   .sixth-section .body-container .sixth-grid .Mobile {
     width: 70px;
@@ -1668,36 +1789,33 @@ p {
   .sixth-section .body-container .sixth-grid {
     width: 100%;
     position: relative;
-    right: 5px;
-    margin: 35px 1px 1px 80px;
+    right: 55px;
+    margin: 35px 1px 1px 0px;
   }
 
   .sixth-grid .sixth-grid1 {
     width: 210px;
-    height: 290px;
-    margin: 25px 1px 1px 30px;
-    padding: 25px;
+    height: 250px;
+    margin: 25px 1px 1px 0px;
   }
 
   .sixth-grid .sixth-grid2 {
     width: 210px;
-    height: 290px;
-    margin: 25px 1px 1px 30px;
-    padding: 25px;
+    height: 250px;
+    margin: 25px 1px 1px 0px;
   }
 
   .sixth-grid .sixth-grid3 {
     width: 210px;
-    height: 290px;
-    margin: 25px 1px 1px 30px;
-    padding: 25px;
+    height: 250px;
+    margin: 10px 1px 1px 0px;
   }
 
   .seventh-section {
-    height: 90vh;
+    height: 100vh;
     width: 90%;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
+    margin: 5px 0px 5px 5px;
+    padding: 5px 0px 5px 5px;
   }
 
   .seventh-section .body-container.seventh-title {
@@ -1710,94 +1828,58 @@ p {
     padding: 10px 60px 10px 90px;
     width: 60%;
     position: relative;
-    left: 50px;
+    left: 0px;
   }
 
   .seventh-section .body-container .seventh-grid h2 {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .seventh-section .body-container .seventh-grid p {
-    font-size: 16px;
+    font-size: 13px;
   }
 
-  .seventh-section .body-container .seventh-grid .seventh-grid1 {
-    margin: 2px 2px 100px 15px;
-    padding: 35px 25px 75px 20px;
-    width: 245px;
-    height: 360px;
-  }
-
-  .seventh-section .body-container .seventh-grid .seventh-grid2 {
-    margin: 2px 2px 100px 15px;
-    padding: 35px 25px 75px 20px;
-    width: 245px;
-    height: 360px;
-  }
-
+  .seventh-section .body-container .seventh-grid .seventh-grid1,
+  .seventh-section .body-container .seventh-grid .seventh-grid2,
   .seventh-section .body-container .seventh-grid .seventh-grid3 {
-    margin: 2px 2px 75px 15px;
-    padding: 35px 25px 75px 20px;
-    width: 245px;
-    height: 360px;
+    margin: 2px 2px 100px 15px;
+    padding: 15px 15px 75px 10px;
+    width: 235px;
+    height: 310px;
+    position: relative;
+    /* Add this to ensure absolute positioning works */
   }
 
-  .seventh-section .body-container .seventh-grid .Reward {
-    width: 120px;
-    height: auto;
-  }
-
-  .seventh-section .body-container .seventh-grid .MobileTop-Up {
-    width: 120px;
-    height: auto;
-  }
-
+  .seventh-section .body-container .seventh-grid .Reward,
+  .seventh-section .body-container .seventh-grid .MobileTop-Up,
   .seventh-section .body-container .seventh-grid .conv {
     width: 120px;
     height: auto;
   }
 
   /* Perks Signature Image */
-  .seventh-section .body-container .seventh-grid .seventh-grid1 .base {
-    position: relative;
-    top: 20px;
-  }
-
-  .seventh-section .body-container .seventh-grid .seventh-grid2 .base {
-    position: relative;
-    top: 60px;
-  }
-
-  .seventh-section .body-container .seventh-grid .seventh-grid3 .base {
-    position: relative;
-    top: 40px;
-  }
-
   .seventh-section .body-container .seventh-grid .base {
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
     height: 100px;
+    display: none;
   }
 
   .seventh-section .body-container .seventh-grid .base img {
-    position: absolute;
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
     bottom: 0;
-    left: 51%;
-    transform: translateX(-50%);
-    width: auto;
-    height: 100%;
+    top: 250px;
   }
-
 
   /* Footer */
 
   .footer {
-    padding: 20px 1px 20px 1px;
-    width: 100%;
-  }
-
-  .footer .row {
-    width: 100%;
+    padding: 20px 0px 20px 20px;
   }
 
   .footer .logoQR .citypaylog {
@@ -1808,32 +1890,19 @@ p {
     width: 22%;
   }
 
-  .dwbuttons {
-    position: relative;
-    left: 20px;
-  }
-
-  .download-btn {
-    position: relative;
-    right: 20px;
-  }
-
   .footer .info .basic {
     position: relative;
-    right: 30px;
-    margin: 40px 1px 1px 1px;
+    left: 50px;
   }
 
   .footer .info p {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .footer .footer-links {
-    margin: 50px 10px 1px 40px;
-    padding: 1px 10px 1px 1px;
+    margin: 1px 0px 1px 1px;
+    padding: 1px 0px 1px 1px;
     width: 80%;
-    position: relative;
-    left: 0px;
   }
 
   .footer .footer-links a {
@@ -1855,12 +1924,12 @@ p {
     flex-direction: column;
     padding: 10px;
     margin: 10px;
-    width: 250px;
+    width: 200px;
   }
 
   .connect .soc {
     position: relative;
-    left: 20px;
+    left: 7px;
   }
 
   .connect .fb {
@@ -1881,13 +1950,15 @@ p {
 }
 
 @media (max-width:1024px) and (min-width: 769px) {
+
+  .nav ul {
+    margin: 20px 10px 10px 214px;
+    width: 40%;
+    padding: 10px;
+  }
+
   .first-section {
-    height: 95vh;
-    background-image: url("./Assets/Flow.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    object-fit: contain;
+    height: 86vh;
   }
 
   .first-section .body-container .dwnld-desc {
@@ -1899,12 +1970,11 @@ p {
   }
 
   .first-section .description p {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .first-section .body-container .dwnld-desc .description {
-    margin: 100px 1px 1px 2px;
-    padding: 2px;
+    margin: 5px 1px 1px 5px;
     width: 55%;
   }
 
@@ -1919,7 +1989,7 @@ p {
   }
 
   .buttons .playstore .dow-btn {
-    width: 155px;
+    width: 135px;
     height: 55px;
     display: flex;
     gap: 10px;
@@ -1929,8 +1999,8 @@ p {
   }
 
   .buttons .appstore .dow-btn {
-    width: 155px;
-    height: 55px;
+    width: 145px;
+    height: 45px;
     display: flex;
     gap: 10px;
     margin-top: 10px;
@@ -1951,17 +2021,17 @@ p {
   }
 
   .first-section .dwnld-img .handmobile {
-    margin: 10px 10px 1px 0px;
-    padding: 10px 10px 1px 0px;
+    margin: 10px 1px 1px 20px;
+    padding: 10px 1px 1px 20px;
     position: relative;
-    left: 380px;
-    width: 70%;
+    left: 300px;
+    width: 72%;
   }
 
   .second-section {
     height: 100vh;
-    margin: 5px 0px 55px 5px;
-    padding: 5px 0px 55px 5px;
+    margin: 5px 5px 45px 5px;
+    padding: 5px 5px 65px 5px;
   }
 
   .second-section .second-body {
@@ -1971,65 +2041,58 @@ p {
 
   .second-section .second-body .second-img {
     width: 900px;
-    height: 00px;
+    height: 400px;
   }
 
   .second-section .second-body .second-img .remittance-img {
-    height: 500px;
-    width: 360px;
+    height: 390px;
+    width: 265px;
     position: relative;
-    top: 0px;
-    left: 0px;
-  }
-
-  .second-section .second-body .second-grid {
-    position: relative;
-    right: 25px;
-    gap: 20px;
+    top: 60px;
   }
 
   .second-section .second-body .second-grid h2 {
     font-size: 15px;
   }
 
-  .second-se0ion .second-body .second-grid p {
+  .second-section .second-body .second-grid p {
     font-size: 13px;
   }
 
   .second-section .second-body .second-grid .remit-icon {
-    width: 90px;
+    width: 100px;
     height: auto;
   }
 
   .second-section .second-body .second-grid .withdraw-icon {
-    width: 90px;
+    width: 100px;
     height: auto;
   }
 
   .second-section .second-body .second-grid .Track-remittance {
-    width: 90px;
+    width: 100px;
     height: auto;
   }
 
   .second-section .second-body .second-grid .second-grid1 {
-    margin: 20px 2px 10px 2px;
-    padding: 15px 15px 25px 10px;
-    width: 385px;
-    height: 135px;
+    margin: 2px 2px 10px 2px;
+    padding: 5px 15px 20px 10px;
+    width: 365px;
+    height: 160px;
   }
 
   .second-section .second-body .second-grid .second-grid2 {
-    margin: 35px 2px 10px 2px;
-    padding: 15px 15px 25px 10px;
-    width: 385px;
-    height: 135px;
+    margin: 2px 2px 10px 2px;
+    padding: 5px 15px 20px 10px;
+    width: 365px;
+    height: 160px;
   }
 
   .second-section .second-body .second-grid .second-grid3 {
-    margin: 35px 2px 10px 2px;
-    padding: 15px 15px 25px 10px;
-    width: 385px;
-    height: 135px;
+    margin: 2px 2px 10px 2px;
+    padding: 5px 15px 20px 10px;
+    width: 365px;
+    height: 160px;
   }
 
   .second-grid1, .second-grid2 {
@@ -2037,9 +2100,9 @@ p {
   }
 
   .third-section {
-    height: 90vh;
-    margin: 5px 0px 55px 5px;
-    padding: 5px 0px 55px 5px;
+    height: 100vh;
+    margin: 25px 5px 25px 5px;
+    padding: 5px 5px 25px 5px;
   }
 
   .third-section .body-container .third-grid h2 {
@@ -2052,50 +2115,52 @@ p {
 
   .third-section .body-container .third-grid .Extra-Grid {
     position: relative;
-    bottom: 470px;
-    margin: 2px 55px 2px 2px;
+    bottom: 400px;
+    margin: 2px 2px 2px 0px;
   }
 
   .third-section .body-container .third-grid .Extra-Grid .Family-Friends {
-    width: 350px;
+    width: 280px;
     position: relative;
-    left: 50px;
+    left: 30px;
+    bottom: 20px;
   }
 
   .third-section .body-container .third-grid .third-grid2 {
-    margin: 35px 2px 10px 20px;
+    margin: 50px 2px 10px 20px;
     padding: 50px 20px 70px 10px;
-    width: 340px;
-    height: 120px;
+    width: 330px;
+    height: 80px;
   }
 
   .third-section .body-container .third-grid .third-grid3 {
-    margin: 35px 2px 10px 20px;
+    margin: 20px 2px 10px 20px;
     padding: 50px 20px 70px 10px;
-    width: 340px;
-    height: 120px;
+    width: 330px;
+    height: 80px;
   }
 
 
   .third-section .body-container .third-grid .Fund-T {
-    width: 120px;
+    width: 90px;
     height: auto;
   }
 
   .third-section .body-container .third-grid .Send-R {
-    width: 120px;
+    width: 90px;
     height: auto;
   }
 
   .fourth-section {
-    height: 90vh;
-    margin: 5px 0px 25px 5px;
-    padding: 5px 0px 25px 5px;
+    height: 100vh;
+    width: 90%;
+    margin: 5px 5px 25px 5px;
+    padding: 5px 5px 25px 5px;
   }
 
   .fourth-section .body-container .fourth-grid {
-    margin: 10px 60px 10px 90px;
-    padding: 10px 60px 10px 90px;
+    margin: 120px 60px 10px 90px;
+    padding: 100px 60px 10px 90px;
     width: 60%;
   }
 
@@ -2108,27 +2173,27 @@ p {
   }
 
   .fourth-section .body-container .fourth-grid .fourth-grid2 {
-    margin: 2px 2px 10px 285px;
-    padding: 15px 35px 15px 30px;
-    width: 55%;
-    height: 180px;
+    margin: 20px 2px 10px 165px;
+    padding: 15px 15px 15px 30px;
+    width: 80%;
+    height: 160px;
     display: grid;
   }
 
   .fourth-section .body-container .fourth-grid .fourth-grid3 {
-    margin: 2px 2px 10px 285px;
-    padding: 15px 35px 15px 30px;
-    width: 55%;
-    height: 180px;
+    margin: 20px 2px 10px 165px;
+    padding: 15px 15px 15px 30px;
+    width: 80%;
+    height: 160px;
   }
 
   .fourth-section .body-container .fourth-grid .BT {
-    width: 120px;
+    width: 90px;
     height: auto;
   }
 
   .fourth-section .body-container .fourth-grid .LB {
-    width: 120px;
+    width: 90px;
     height: auto;
   }
 
@@ -2136,34 +2201,34 @@ p {
     margin: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
     position: relative;
-    right: 0px;
-    bottom: 0px;
-    width: 50%;
-    height: 80%;
-
+    right: 50px;
+    top: 160px;
+    width: 45%;
+    height: 90%;
   }
 
   .fourth-section .body-container .Pic-Grid .bank {
     position: relative;
     margin: 5px 5px 5px 5px;
-    bottom: 50px;
+    top: 5px;
     left: 0px;
     width: 100%;
-    height: 90%;
+    height: 95%;
   }
 
   .fifth-section {
-    height: 90vh;
-    margin: 5px 0px 25px 5px;
-    padding: 5px 0px 25px 5px;
+    height: 100vh;
+    width: 90%;
+    margin: 15px 5px 25px 5px;
+    padding: 15px 5px 25px 5px;
   }
 
   .fifth-section .body-container .fifth-grid {
-    margin: 40px 80px 10px 50px;
+    margin: 10px 80px 10px 50px;
     padding: 10px 80px 10px 50px;
     width: 60%;
     position: relative;
-    right: 50px;
+    right: 70px;
   }
 
   .fifth-section .body-container .fifth-grid h2 {
@@ -2175,36 +2240,40 @@ p {
   }
 
   .fifth-section .body-container .fifth-grid .fifth-grid2 {
-    margin: 10px 2px 10px 30px;
-    padding: 15px 15px 35px 5px;
-    width: 55%;
-    height: 160px;
+    margin: 2px 2px 10px 30px;
+    padding: 15px 15px 15px 15px;
+    width: 75%;
+    height: 180px;
   }
 
   .fifth-section .body-container .fifth-grid .fifth-grid3 {
-    margin: 35px 2px 10px 30px;
-    padding: 15px 10px 35px 5px;
-    width: 55%;
-    height: 160px;
+    margin: 20px 2px 10px 30px;
+    padding: 15px 10px 15px 15px;
+    width: 75%;
+    height: 180px;
   }
 
   .fifth-section .body-container .fifth-grid .CityPay-QR {
     width: 120px;
     height: auto;
+    position: relative;
+    bottom: 20px;
   }
 
   .fifth-section .body-container .fifth-grid .NepalPay-SmartQR {
     width: 120px;
     height: auto;
+    position: relative;
+    bottom: 20px;
   }
 
   .fifth-section .body-container .Pic-Grid {
     margin: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
     position: relative;
-    left: 450px;
-    bottom: 490px;
-    width: 50%;
+    left: 400px;
+    bottom: 470px;
+    width: 45%;
     height: 90%;
   }
 
@@ -2213,13 +2282,14 @@ p {
     margin: 5px 5px 5px 5px;
     top: 5px;
     left: 0px;
-    width: 85%;
+    width: 100%;
   }
 
   .sixth-section {
-    height: 90vh;
-    margin: 5px 0px 5px 5px;
-    padding: 5px 0px 5px 5px;
+    height: 100vh;
+    width: 90%;
+    margin: 15px 5px 25px 5px;
+    padding: 15px 5px 25px 5px;
   }
 
   .sixth-section .sixth-body .sixth-img {
@@ -2233,16 +2303,13 @@ p {
     padding: 55px 1px 1px 1px;
     width: 280px;
     height: 320px;
+    position: relative;
+    right: 80px;
   }
 
   .sixth-body {
     margin: 4px 4px 4px 4px;
     padding: 5px 5px 5px 5px;
-  }
-
-  .sixth-grid {
-    margin: 1px 0px 1px 1px;
-    padding: 1px 0px 1px 1px;
   }
 
   .sixth-section .body-container .sixth-grid h2 {
@@ -2270,9 +2337,11 @@ p {
   }
 
   .sixth-grid {
-    width: 100%;
+    width: 80%;
     position: relative;
-    left: 80px;
+    left: 10px;
+    padding: 1px 10px 1px 1px;
+    gap: 15px;
   }
 
   .sixth-grid .sixth-grid1 {
@@ -2290,13 +2359,14 @@ p {
   .sixth-grid .sixth-grid3 {
     width: 150px;
     height: 220px;
-    margin: 20px 1px 1px 0px;
+    margin: 0px 1px 1px 0px;
   }
 
   .seventh-section {
-    height: 90vh;
-    margin: 5px 0px 5px 5px;
-    padding: 35px 0px 10px 5px;
+    height: 100vh;
+    width: 90%;
+    margin: 25px 5px 45px 5px;
+    padding: 75px 5px 25px 5px;
   }
 
   .seventh-section .body-container.seventh-title {
@@ -2306,8 +2376,8 @@ p {
 
 
   .seventh-section .body-container .seventh-grid {
-    margin: 10px 60px 10px 90px;
-    padding: 10px 60px 10px 90px;
+    margin: 10px 60px 10px 40px;
+    padding: 10px 60px 10px 55px;
     width: 60%;
     position: relative;
     left: 0px;
@@ -2323,23 +2393,23 @@ p {
 
   .seventh-section .body-container .seventh-grid .seventh-grid1 {
     margin: 2px 2px 100px 15px;
-    padding: 35px 25px 75px 25px;
-    width: 215px;
-    height: 315px;
+    padding: 15px 15px 75px 10px;
+    width: 185px;
+    height: 310px;
   }
 
   .seventh-section .body-container .seventh-grid .seventh-grid2 {
     margin: 2px 2px 100px 15px;
-    padding: 35px 25px 75px 25px;
-    width: 215px;
-    height: 315px;
+    padding: 15px 15px 75px 10px;
+    width: 185px;
+    height: 310px;
   }
 
   .seventh-section .body-container .seventh-grid .seventh-grid3 {
     margin: 2px 2px 100px 15px;
-    padding: 35px 25px 75px 25px;
-    width: 215px;
-    height: 315px;
+    padding: 15px 10px 75px 10px;
+    width: 185px;
+    height: 310px;
   }
 
   .seventh-section .body-container .seventh-grid .Reward {
@@ -2357,10 +2427,10 @@ p {
     height: auto;
   }
 
-  /* footer */
+  /* Footer */
 
   .footer {
-    padding: 10px 0px 10px 0px;
+    padding: 20px 0px 20px 0px;
   }
 
   .footer .row {
@@ -2370,8 +2440,6 @@ p {
 
   .footer .logoQR .citypaylog {
     width: 30%;
-    position: relative;
-    left: 20px;
   }
 
   .footer .logoQR .QRcode {
@@ -2391,23 +2459,19 @@ p {
   .footer .info .basic {
     position: relative;
     left: 50px;
-    width: 80%;
-    margin: 25px 0px 10px 0px;
   }
 
   .footer .info p {
-    font-size: 15px;
+    font-size: 11px;
   }
 
   .footer .footer-links {
-    margin: 30px 10px 10px 10px;
-    padding: 10px 20px 1px 1px;
-    position: relative;
-    left: 10px;
+    margin: 1px 20px 1px 1px;
+    padding: 1px 20px 1px 1px;
   }
 
   .footer .footer-links a {
-    font-size: small;
+    font-size: x-small;
   }
 
   .footer-links h4 {
@@ -2430,7 +2494,7 @@ p {
 
   .connect .soc {
     position: relative;
-    left: 16px;
+    left: 3px;
   }
 
   .connect .fb {
@@ -2455,9 +2519,14 @@ p {
 }
 
 @media (max-width:768px) and (min-width: 426px) {
-
   .header {
-    width: 85%;
+    width: 95%;
+    padding: 10px;
+  }
+
+  .nav ul {
+    margin: 20px 0px 10px 190px;
+    padding: 10px;
   }
 
   .first-section {
@@ -2625,6 +2694,10 @@ p {
     width: 80%;
   }
 
+  .third-section h1 {
+    text-align: center;
+  }
+
   .third-section .body-container .third-grid {
     position: relative;
     right: 65px;
@@ -2683,8 +2756,8 @@ p {
   }
 
   .fourth-section .body-container .fourth-grid {
-    margin: 50px 60px 10px 10px;
-    padding: 10px 60px 10px 10px;
+    margin: 130px 60px 10px 10px;
+    padding: 50px 60px 10px 10px;
     width: 60%;
   }
 
@@ -2735,9 +2808,9 @@ p {
   .fourth-section .body-container .Pic-Grid .bank {
     position: relative;
     margin: 5px 5px 5px 5px;
-    bottom: 10px;
-    right: 50px;
-    width: 100%;
+    top: 150px;
+    right: 150px;
+    width: 90%;
     height: 90%;
   }
 
@@ -2753,7 +2826,7 @@ p {
     padding: 10px 80px 10px 50px;
     width: 60%;
     position: relative;
-    right: 120px;
+    right: 150px;
   }
 
   .fifth-section .body-container .fifth-grid h2 {
@@ -2766,16 +2839,16 @@ p {
 
   .fifth-section .body-container .fifth-grid .fifth-grid2 {
     margin: 10px 2px 10px 30px;
-    padding: 25px 15px 35px 5px;
-    width: 70%;
-    height: 180px;
+    padding: 25px 15px 45px 5px;
+    width: 90%;
+    height: 190px;
   }
 
   .fifth-section .body-container .fifth-grid .fifth-grid3 {
     margin: 35px 2px 10px 30px;
-    padding: 25px 15px 35px 5px;
-    width: 70%;
-    height: 180px;
+    padding: 25px 15px 45px 5px;
+    width: 90%;
+    height: 190px;
   }
 
   .fifth-section .body-container .fifth-grid .CityPay-QR {
@@ -3056,12 +3129,13 @@ p {
   .footer .copyright p {
     font-size: smaller;
   }
+
 }
 
 @media (max-width:425px) and (min-width: 376px) {
   .navbar {
     position: relative;
-    right: 10px;
+
   }
 
   .header .menu-toggle {
@@ -3071,8 +3145,14 @@ p {
 
   .navbar .logo {
     position: relative;
-    right: 15px;
+    right: 0px;
     top: 6px;
+  }
+
+  .nav ul {
+    margin: 20px 10px 10px 25px;
+    width: 80%;
+    padding: 10px;
   }
 
   .body-container {
@@ -3327,15 +3407,15 @@ p {
 
   .fourth-section .body-container .Pic-Grid {
     width: 280px;
+    height: 210px;
     position: relative;
     bottom: 40px;
-    right: 0px;
+    right: 50px;
   }
 
   .fourth-section .body-container .Pic-Grid .bank {
     position: relative;
-    bottom: 160px;
-    left: 50px;
+    bottom: 90px;
   }
 
   .fourth-section .fourth-grid {
@@ -3344,8 +3424,8 @@ p {
     width: 50%;
     height: 50%;
     position: relative;
-    top: 35px;
-    right: 55px;
+    bottom: 25px;
+    left: 55px;
     gap: 10px;
     margin: 1px 10px 1px 50px;
   }
@@ -3396,7 +3476,7 @@ p {
     grid-template-columns: 1fr;
     width: 50%;
     position: relative;
-    right: 25px;
+    right: 50px;
   }
 
   .fifth-section .body-container .fifth-grid h2 {
@@ -3419,9 +3499,10 @@ p {
 
   .fifth-grid2, .fifth-grid3 {
     grid-template-columns: 1fr;
-    width: 165px;
+    width: 220px;
     height: 135px;
     margin: 30px 30px 10px 1px;
+    padding: 25px;
     border-radius: 20px;
   }
 
@@ -3824,20 +3905,15 @@ p {
 }
 
 @media (max-width:375px) and (min-width: 321px) {
-  .navbar {
-    position: relative;
-    right: 10px;
+
+  .header {
+    padding: 10px;
   }
 
-  .header .menu-toggle {
-    position: relative;
-    left: 5px;
-  }
-
-  .navbar .logo {
-    position: relative;
-    right: 10px;
-    top: 6px;
+  .nav ul {
+    margin: 20px 20px 10px 61px;
+    width: 70%;
+    padding: 10px;
   }
 
   .body-container {
@@ -4089,16 +4165,16 @@ p {
   }
 
   .fourth-section .body-container .Pic-Grid {
-    width: 280px;
+    width: 260px;
+    height: 200px;
     position: relative;
     bottom: 40px;
-    right: 0px;
+    right: 50px;
   }
 
   .fourth-section .body-container .Pic-Grid .bank {
     position: relative;
-    bottom: 180px;
-    left: 40px;
+    bottom: 90px;
   }
 
   .fourth-section .fourth-grid {
@@ -4107,10 +4183,19 @@ p {
     width: 50%;
     height: 50%;
     position: relative;
-    top: 10px;
-    right: 55px;
+    bottom: 25px;
+    left: 55px;
     gap: 10px;
     margin: 1px 10px 1px 50px;
+  }
+
+  .fourth-grid1, .fourth-grid2, .fourth-grid3 {
+    grid-template-columns: 1fr;
+    width: 180px;
+    height: 70px;
+    margin: 5px 30px 10px 1px;
+    padding: 25px 25px 25px 25px;
+    border-radius: 25px;
   }
 
   .fourth-section .fourth-grid .fourth-grid2 .BT {
@@ -4123,14 +4208,7 @@ p {
     height: auto;
   }
 
-  .fourth-grid1, .fourth-grid2, .fourth-grid3 {
-    grid-template-columns: 1fr;
-    width: 170px;
-    height: 80px;
-    margin: 5px 30px 10px 1px;
-    padding: 25px 25px 25px 25px;
-    border-radius: 25px;
-  }
+
 
   .fourth-section .body-container .fourth-grid h2 {
     font-size: 12px;
@@ -4159,7 +4237,7 @@ p {
     grid-template-columns: 1fr;
     width: 50%;
     position: relative;
-    right: 15px;
+    right: 35px;
   }
 
   .fifth-section .body-container .fifth-grid h2 {
@@ -4167,7 +4245,8 @@ p {
   }
 
   .fifth-section .body-container .fifth-grid p {
-    font-size: 8px;
+    font-size: 9px;
+    padding: 5px;
   }
 
   .fifth-section .fifth-grid .fifth-grid2 .CityPay-QR {
@@ -4182,9 +4261,10 @@ p {
 
   .fifth-grid2, .fifth-grid3 {
     grid-template-columns: 1fr;
-    width: 135px;
+    width: 195px;
     height: 110px;
     margin: 30px 30px 10px 1px;
+    padding: 15px 15px 45px 15px;
     border-radius: 20px;
   }
 
@@ -4534,7 +4614,7 @@ p {
     margin: auto;
     position: relative;
     right: 25px;
-    bottom: 30px;
+    bottom: 50px;
     width: 100%;
   }
 
@@ -4586,20 +4666,16 @@ p {
 }
 
 @media (max-width:320px) and (min-width: 280px) {
-  .navbar {
-    position: relative;
-    right: 10px;
+
+  .header {
+    padding: 10px;
   }
 
-  .header .menu-toggle {
-    position: relative;
-    left: 5px;
-  }
 
-  .navbar .logo {
-    position: relative;
-    right: 10px;
-    top: 6px;
+  .nav ul {
+    margin: 20px 10px 10px 62px;
+    width: 60%;
+    padding: 10px;
   }
 
   .body-container {
@@ -4845,16 +4921,16 @@ p {
   }
 
   .fourth-section .body-container .Pic-Grid {
-    width: 220px;
+    width: 230px;
+    height: 170px;
     position: relative;
     bottom: 40px;
-    right: 0px;
+    right: 55px;
   }
 
   .fourth-section .body-container .Pic-Grid .bank {
     position: relative;
-    bottom: 180px;
-    left: 35px;
+    bottom: 90px;
   }
 
   .fourth-section .fourth-grid {
@@ -4863,10 +4939,19 @@ p {
     width: 50%;
     height: 50%;
     position: relative;
-    top: 10px;
-    right: 43px;
+    bottom: 25px;
+    left: 40px;
     gap: 10px;
     margin: 1px 10px 1px 50px;
+  }
+
+  .fourth-grid1, .fourth-grid2, .fourth-grid3 {
+    grid-template-columns: 1fr;
+    width: 150px;
+    height: 50px;
+    margin: 5px 30px 10px 1px;
+    padding: 25px 15px 25px 15px;
+    border-radius: 25px;
   }
 
   .fourth-section .fourth-grid .fourth-grid2 .BT {
@@ -4877,14 +4962,6 @@ p {
   .fourth-section .fourth-grid .LB {
     width: 60px;
     height: auto;
-  }
-
-  .fourth-grid1, .fourth-grid2, .fourth-grid3 {
-    grid-template-columns: 1fr;
-    width: 130px;
-    height: 60px;
-    margin: 5px 30px 10px 1px;
-    border-radius: 25px;
   }
 
   .fourth-section .body-container .fourth-grid h2 {
@@ -4913,7 +4990,7 @@ p {
     grid-template-columns: 1fr;
     width: 50%;
     position: relative;
-    right: 20px;
+    right: 42px;
   }
 
   .fifth-section .body-container .fifth-grid h2 {
@@ -4921,7 +4998,8 @@ p {
   }
 
   .fifth-section .body-container .fifth-grid p {
-    font-size: 6px;
+    font-size: 8px;
+    padding: 5px;
   }
 
   .fifth-section .fifth-grid .fifth-grid2 .CityPay-QR {
@@ -4936,17 +5014,18 @@ p {
 
   .fifth-grid2, .fifth-grid3 {
     grid-template-columns: 1fr;
-    width: 120px;
-    height: 95px;
-    margin: 30px 30px 10px 1px;
+    width: 170px;
+    height: 120px;
+    margin: 10px 30px 10px 1px;
+    padding: 15px 15px 35px 15px;
     border-radius: 20px;
   }
 
   .fifth-section .body-container .Pic-Grid {
     position: relative;
-    right: 20px;
-    top: 25px;
-    width: 70%;
+    right: 40px;
+    top: 0px;
+    width: 60%;
   }
 
   .fifth-section .body-container .Pic-Grid .ScanQR {

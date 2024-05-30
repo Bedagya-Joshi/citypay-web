@@ -3,27 +3,25 @@
 body {
     margin: 0;
     padding: 0;
-    /* height: auto; */
 }
 
 * {
     font-family: "PT Sans";
 }
 
+/* Navbar Styles */
 .navbar {
-    z-index: 1;
-    position: sticky;
+    z-index: 10;
+    position: relative;
     top: 0;
+    width: 100%;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
-    padding-left: 60px;
-    padding-right: 20px;
-    /* border: 2px solid red; */
+    padding: 10px 10px 10px 10px;
 }
 
 .logo {
@@ -32,27 +30,52 @@ body {
 }
 
 .menu-toggle {
+    display: flex;
     flex-direction: column;
     cursor: pointer;
-    height: 20px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 .fa-bars {
     font-size: 40px;
     color: #1472cf;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-toggle:hover .fa-bars {
+    transform: rotate(90deg);
 }
 
 .nav {
     display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .nav.active {
     display: block;
+    opacity: 1;
     position: absolute;
     right: 20px;
-    /* top: 60px; */
-    width: 350px;
-    height: 500px;
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    top: 60px;
+    animation: dropdown 0.5s ease-in-out forwards;
+}
+
+@keyframes dropdown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .underline {
@@ -64,17 +87,21 @@ body {
 .nav ul {
     list-style-type: none;
     padding: 0;
-    background-color: #194a7a;
+    background: linear-gradient(135deg, #1472cf, #65c7f7);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: 100%;
+    width: 45%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
-    padding-top: 15px;
+    margin: 20px 0px 10px 170px;
+    padding: 10px;
     z-index: 1;
     top: 0;
     position: sticky;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 .nav li {
@@ -84,24 +111,50 @@ body {
 
 .nav a {
     text-decoration: none;
-    color: #333;
-    font-weight: 700;
-    font-size: 25px;
     color: white;
+    font-weight: 700;
+    font-size: 17px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav a:hover {
+    color: #ffdd57;
+    /* Hover color */
+}
+
+/* Additional Menu Toggle Animation */
+@keyframes menuToggleAnimation {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+
+.body-container {
+    padding: 5px;
+    overflow: hidden;
 }
 
 
 .curtain {
     background: linear-gradient(#0e83e3, #65c7f7, #88e7f8);
     height: 680px;
-    width: 100%;
+    width: 95%;
     border-bottom-right-radius: 60px;
     border-bottom-left-radius: 60px;
     position: relative;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 40px;
+    padding: 10px 10px 10px 10px;
 }
 
 .curtain h1 {
@@ -117,7 +170,6 @@ body {
 
 .curtain .aboutimg {
     float: right;
-
 }
 
 .aboutimg .about-img {
@@ -134,7 +186,6 @@ body {
 .Second-Container .grids {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* grid-gap: 10px; */
 }
 
 .grids h3 {
@@ -155,7 +206,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     /* Center the child elements vertically */
+}
+
+.grid-1:hover, .grid-2:hover, .grid-3:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(#0e83e3, #1868aa, #65c7f7);
+    /* Slight change in gradient */
 }
 
 .icon1, .icon2, .icon3 {
@@ -164,23 +223,17 @@ body {
 
 .base {
     background: linear-gradient(#0e83e3, #65c7f7, #88e7f8);
-    /* Adjust background color as needed */
-    padding: 20px;
-    /* Add padding to create space around the content */
+    padding: 10px 10px 10px 10px;
     margin-top: auto;
-    /* Move the div to the bottom of its container */
 }
 
 .base h1 {
     margin-bottom: 10px;
     text-align: center;
-
-    /* Add some space below the heading */
 }
 
 .ctxlogo {
     margin: 10px 10px 20px 70px;
-    /* Add some space below the logo */
 }
 
 .paragraph {
@@ -193,7 +246,6 @@ body {
     margin-bottom: 0px;
     text-align: justify;
     font-weight: bold;
-    /* Add some space below the paragraph */
 }
 
 /* Footer styles */
@@ -202,11 +254,10 @@ body {
     background: rgb(161, 159, 159);
     background: linear-gradient(0deg, rgb(152, 170, 230) 0%, rgb(241, 242, 245) 55%);
     box-shadow: 0px -12px 25px rgba(228, 237, 250, 0.8);
-    /* Adjusted to have a negative y-offset */
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 20px;
+    padding: 10px 10px 10px 10px;
     margin-top: auto;
 }
 
@@ -316,7 +367,7 @@ body {
 }
 
 .info .basic p {
-    font-weight: 510;
+    font-weight: normal;
     padding-top: 10px;
     font-size: smaller;
 }
@@ -363,7 +414,7 @@ body {
     align-items: center;
     margin: 4px 4px 4px 4px;
     padding: 4px 4px 4px 4px;
-    width: 100%;
+    width: 70%;
 }
 
 .footer-links ul {
@@ -422,29 +473,300 @@ body {
 /* Media Query Responsiveness */
 
 @media (max-width:2560px) and (min-width: 1441px) {
-    .first-section {}
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0px 10px 10px;
+        width: 98%;
+    }
 
-    .second-section {}
+    .nav ul {
+        margin: 20px 10px 10px 210px;
+        width: 40%;
+        padding: 10px;
+    }
 
-    .third-section {}
+    .logo {
+        width: 90px;
+        height: auto;
+    }
 
-    .fourth-section {}
+    .menu-toggle {
+        flex-direction: column;
+        cursor: pointer;
+        height: 20px;
+    }
 
-    .fifth-section {}
+    .body-container {
+        padding: 0;
+    }
 
-    .sixth-section {}
+    .curtain {
 
-    .seventh-section {}
+        height: 680px;
+        width: 100%;
+        border-bottom-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 10px 10px 10px 10px;
+    }
 
-    .footer {}
+    .curtain .aboutimg {
+        float: right;
+    }
+
+    .aboutimg .about-img {
+        position: relative;
+        bottom: 450px;
+        margin: 0px 380px 10px 0px;
+    }
+
+    .Second-Container h1 {
+        text-align: center;
+        font-weight: 2000;
+    }
+
+    .Second-Container .grids {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .grids h3 {
+        text-align: center;
+    }
+
+    .grids p {
+        text-align: justify;
+    }
+
+    .grid-1, .grid-2, .grid-3 {
+        width: 350px;
+        height: 300px;
+        border-radius: 25px;
+        padding: 20px 20px 20px 25px;
+        margin: 5px 5px 15px 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon1, .icon2, .icon3 {
+        margin-bottom: 5px;
+    }
+
+    .base {
+        padding: 10px 10px 10px 10px;
+        margin-top: auto;
+    }
+
+    .base h1 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .ctxlogo {
+        margin: 10px 10px 20px 70px;
+    }
+
+    .paragraph {
+        margin: 80px 150px 40px 0px;
+        width: 35%;
+        float: right;
+    }
+
+    .paragraph p {
+        margin-bottom: 0px;
+        text-align: justify;
+        font-weight: bold;
+    }
+
+    /* Footer styles */
+
+    .footer {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 10px 10px 10px;
+        margin-top: auto;
+    }
+
+    .footer .foot .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .logoQR {
+        position: relative;
+        top: 40px;
+        left: 40px;
+    }
+
+    .logoQR .citypaylog {
+        position: relative;
+        width: 18%;
+        height: auto;
+        margin: 22px 2px 2px 2px;
+        padding: 25px 5px 5px 15px;
+    }
+
+    .logoQR .QRcode {
+        position: relative;
+        width: 18%;
+        height: auto;
+        margin: 25px 2px 2px 2px;
+        padding: 25px 5px 5px 15px;
+    }
+
+    .dwbuttons {
+        margin: 5px 2px 2px 10px;
+        padding: 7px 2px 2px 5px;
+    }
+
+    .logimg {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .dwbuttons .logimg .download-btn {
+        width: 100px;
+        height: 35px;
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+        align-items: center;
+        align-content: center;
+    }
+
+    .dwbuttons .tit {
+        width: 100%;
+    }
+
+    .dwbuttons .tit h3 {
+        font-size: medium;
+        font-weight: bold;
+        width: 100%;
+    }
+
+    .playstore, .appstore {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        padding: 0;
+        margin: 0;
+    }
+
+    .download-btn {
+        width: 200px;
+        height: auto;
+    }
+
+    .playstore {
+        width: 100%;
+        height: 100%;
+    }
+
+    .appstore {
+        width: 100%;
+        height: 100%;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: row;
+        gap: 70px;
+        align-items: center;
+        position: relative;
+        right: 0px;
+    }
+
+    .info .basic {
+        margin: 4px 0px 4px 0px;
+        padding: 4px 10px 4px 0px;
+        width: 100%;
+        position: relative;
+        right: 80px;
+    }
+
+    .info .basic p {
+        font-weight: normal;
+        padding-top: 10px;
+        font-size: smaller;
+    }
+
+    .connect {
+        width: 100%;
+        margin: 10px 10px 10px 30px;
+        padding: 10px 50px 50px 30px;
+    }
+
+    .connect p {
+        font-weight: bolder;
+    }
+
+    .connect .fb {
+        width: 25px;
+        height: auto;
+    }
+
+    .connect .ytb {
+        width: 25px;
+        height: auto;
+    }
+
+    .connect .lkdn {
+        width: 25px;
+        height: auto;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 4px 4px 4px 4px;
+        padding: 4px 4px 4px 4px;
+        width: 70%;
+    }
+
+
+
+    /* Become Agent Button */
+    .agent {
+        float: right;
+        border-radius: 10px;
+        padding: 10px 10px;
+        cursor: pointer;
+        margin: 1px 20px 20px 30px;
+    }
+
+
+    .copyright {
+        align-items: center;
+        margin: 10px 1px 1px 1px;
+        padding: 30px 1px 1px 1px;
+    }
+
+    .copyright p {
+        text-align: center;
+        color: white;
+    }
 
 }
 
 
 @media (max-width:1440px) and (min-width: 1025px) {
 
+    .header {
+        width: 98%;
+        padding: 10px 5px 0px 5px;
+    }
+
     .body-container {
-        max-width: 100%;
+        padding: 0;
     }
 
     .First-container .curtain .content {
@@ -455,7 +777,7 @@ body {
     }
 
     .curtain {
-        width: 99%;
+        width: 100%;
         padding: 13px;
     }
 
@@ -489,12 +811,12 @@ body {
     }
 
     .base {
-        width: 98%;
+        width: 100%;
     }
 
     /* Footer */
     .footer {
-        width: 98%;
+        width: 100%;
     }
 
     .footer .logoQR .citypaylog {
@@ -518,7 +840,7 @@ body {
     .footer .footer-links {
         margin: 40px 5px 1px 80px;
         padding: 1px 20px 1px 1px;
-        width: 75%;
+        width: 65%;
     }
 
     .footer .footer-links a {
@@ -570,8 +892,18 @@ body {
 }
 
 @media (max-width:1024px) and (min-width: 769px) {
+    .header {
+        width: 95%;
+    }
+
+    .nav ul {
+        margin: 20px 10px 10px 214px;
+        width: 40%;
+        padding: 10px;
+    }
+
     .body-container {
-        max-width: 100%;
+        padding: 0;
     }
 
     .First-container .curtain .content {
@@ -587,7 +919,7 @@ body {
     }
 
     .curtain {
-        max-width: 1024px;
+        width: 100%;
         padding: 20px;
     }
 
@@ -728,8 +1060,18 @@ body {
 }
 
 @media (max-width:768px) and (min-width: 426px) {
+    .header {
+        width: 95%;
+        padding: 10px 5px 1px 5px;
+    }
+
+    .nav ul {
+        margin: 20px 0px 10px 190px;
+        padding: 10px;
+    }
+
     .body-container {
-        max-width: 100%;
+        padding: 0;
     }
 
     .First-container .curtain .content {
@@ -746,7 +1088,7 @@ body {
     }
 
     .curtain {
-        max-width: 1024px;
+        width: 100%;
         padding: 20px;
     }
 
@@ -905,34 +1247,45 @@ body {
 @media (max-width:425px) and (min-width: 376px) {
     .header {
         padding: 10px 10px 10px 10px;
-        width: 100%;
+        width: 95%;
+    }
+
+    .nav ul {
+        margin: 20px 10px 10px 25px;
+        width: 80%;
+        padding: 10px;
     }
 
     .body-container {
-        max-width: 100%;
+        padding: 0;
+    }
+
+    .curtain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .First-container .curtain .content {
         width: 100%;
-        position: relative;
-        right: 0px;
         padding: 10px;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .content h1 {
-        margin: 20px 20px 20px 20px;
+        margin: 20px 5px 20px 5px;
     }
 
     .content p {
-        width: 100%;
+        width: 85%;
         text-align: justify;
         font-size: medium;
     }
 
     .curtain {
-        width: 425px;
+        width: 100%;
         padding: 20px;
     }
 
@@ -991,6 +1344,8 @@ body {
 
     .ctxlogo {
         margin: 10px 10px 20px 0px;
+        display: flex;
+        flex-direction: row;
     }
 
     .Ctxpress-Logo {
@@ -998,11 +1353,11 @@ body {
     }
 
     .base .paragraph {
-        margin: 0px 0px 0px 50px;
-        width: 45%;
+        margin: 0px 0px 0px 35px;
+        width: 40%;
         float: right;
         position: relative;
-        bottom: 115px;
+        bottom: 5px;
     }
 
     .paragraph p {
@@ -1016,8 +1371,10 @@ body {
 
     .footer {
         width: 100%;
+        display: flex;
+        flex-direction: row;
         margin: 0px;
-        padding: 20px;
+        padding: 5px;
         box-shadow: 0px -12px 25px rgba(72, 182, 255, 0.8);
 
     }
@@ -1028,8 +1385,9 @@ body {
 
     .footer .foot .row {
         position: relative;
-        right: 0px;
-        width: 70%;
+        width: 100%;
+        display: flex;
+        align-items: center;
     }
 
     .footer .foot .row .logoQR {
@@ -1092,26 +1450,20 @@ body {
     }
 
     .footer .info {
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin: auto;
         width: 100%;
-        position: relative;
-        right: 57px;
+
     }
 
     .footer .info .basic {
-        display: flex;
-        flex-direction: column;
+        padding: 5px;
+        margin: 30px 0px 0px 0px;
+        left: 0;
+        width: 85%;
         position: relative;
-        left: 100px;
-        bottom: 0px;
-        width: 100%;
-        margin: 45px 2px 2px 2px;
-        padding: 2px 2px 2px 2px;
-    }
-
-    .footer .info .basic>div {
-        flex: 1;
     }
 
     .footer .info .basic p {
@@ -1162,7 +1514,6 @@ body {
     }
 
     .footer .info .connect {
-        left: 140px;
         padding: 5px;
         margin: 5px;
         width: 70px;
@@ -1201,8 +1552,11 @@ body {
     .footer .foot .footer-links {
         margin: auto;
         position: relative;
-        left: 65px;
-        bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        bottom: 20px;
+        right: 0;
+        float: right;
         width: 100%;
     }
 
@@ -1228,9 +1582,8 @@ body {
         padding: 5px;
         margin-top: 7px;
         border-radius: 5px;
-        width: 85%;
+        width: 80%;
         position: relative;
-        right: 5px;
     }
 
     .footer .copyright {
@@ -1255,8 +1608,8 @@ body {
 
 @media (max-width:375px) and (min-width: 321px) {
     .header {
-        padding: 0px;
-        width: 100%;
+        width: 98%;
+        padding: 10px 0px 1px 0px;
     }
 
     .header .logo {
@@ -1264,8 +1617,10 @@ body {
         margin: 5px;
     }
 
-    .body-container {
-        max-width: 100%;
+    .nav ul {
+        margin: 20px 20px 10px 61px;
+        width: 70%;
+        padding: 10px;
     }
 
     .First-container .curtain .content {
@@ -1287,6 +1642,10 @@ body {
         margin: 20px 10px 40px 10px;
         text-align: justify;
         font-size: small;
+    }
+
+    .body-container {
+        padding: 0;
     }
 
     .curtain {
@@ -1336,7 +1695,7 @@ body {
     }
 
     .base {
-        width: 99%;
+        width: 100%;
         padding: 1px 1px 1px 1px;
     }
 
@@ -1372,9 +1731,9 @@ body {
     /* Footer */
 
     .footer {
-        width: 93%;
+        width: 100%;
         margin: 0px;
-        padding: 5px 10px 5px 5px;
+        padding: 5px 1px 5px 1px;
     }
 
     .footer .foot {
@@ -1614,7 +1973,7 @@ body {
 
 @media (max-width:320px) and (min-width: 280px) {
     .header {
-        padding: 0px;
+        padding: 10px 1px 2px 0px;
         width: 100%;
     }
 
@@ -1623,8 +1982,18 @@ body {
         margin: 5px;
     }
 
+    .header .menu-toggle {
+        padding: 1px 15px 0px 0px;
+    }
+
+    .nav ul {
+        margin: 20px 10px 10px 62px;
+        width: 60%;
+        padding: 10px;
+    }
+
     .body-container {
-        max-width: 100%;
+        padding: 0;
     }
 
     .First-container .curtain .content {
@@ -1643,7 +2012,7 @@ body {
 
     .content p {
         width: 95%;
-        margin: 20px 10px 40px 10px;
+        margin: 20px 5px 40px 10px;
         text-align: justify;
         font-size: small;
     }
@@ -1654,7 +2023,6 @@ body {
     }
 
     .curtain .aboutimg {
-
         position: relative;
         bottom: 35px;
         width: 100%;
@@ -1695,7 +2063,7 @@ body {
     }
 
     .base {
-        width: 99%;
+        width: 100%;
         padding: 1px 1px 1px 1px;
     }
 
@@ -1731,9 +2099,9 @@ body {
     /* Footer */
 
     .footer {
-        width: 93%;
+        width: 100%;
         margin: 0px;
-        padding: 5px 10px 5px 5px;
+        padding: 5px 5px 5px 5px;
     }
 
     .footer .foot {
