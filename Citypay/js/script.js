@@ -6,13 +6,22 @@ menuToggle.addEventListener("click", () => {
   menuToggle.classList.toggle("active");
 });
 
+function showDetail(role) {
+  const details = document.querySelectorAll('.detail-grid');
+  details.forEach(detail => {
+    detail.classList.remove('active');
+  });
+  document.getElementById(role).classList.add('active');
+}
+
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  const navItems = document.querySelectorAll('.nav li');
+  const navvItems = document.querySelectorAll('.navv li');
   const detailGrids = document.querySelectorAll('.detail-grid');
 
-  navItems.forEach(item => {
+  navvItems.forEach(item => {
     item.addEventListener('click', () => {
       // Hide all detail grids
       detailGrids.forEach(grid => grid.style.display = 'none');

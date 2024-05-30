@@ -330,7 +330,6 @@ body {
 .footer .foot .row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* grid-gap: 10px; */
 }
 
 .logoQR {
@@ -433,7 +432,7 @@ body {
 }
 
 .info .basic p {
-    font-weight: 510;
+    font-weight: normal;
     padding-top: 10px;
     font-size: smaller;
 }
@@ -562,12 +561,12 @@ body {
     /* Footer */
     .footer {
         width: 100%;
+        padding: 10px 10px 10px 10px;
     }
 
     .footer .row {
         width: 100%;
     }
-
 
     .footer .foot .row .logoQR {
         width: 80%;
@@ -576,7 +575,6 @@ body {
         display: flex;
         flex-direction: row;
     }
-
 
     .footer .foot .row .logoQR .logimg {
         display: grid;
@@ -602,7 +600,7 @@ body {
     }
 
     .foot .row .logoQR .dwbuttons h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .footer .foot .row .logimg .download-btn {
@@ -620,13 +618,13 @@ body {
 
     .footer .foot .row .info .basic {
         position: relative;
-        left: 50px;
+        left: 70px;
         margin: 40px 1px 1px 1px;
         width: 100%;
     }
 
     .footer .foot .row .info .basic p {
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .footer .foot .row .info .basic .Email {
@@ -650,7 +648,7 @@ body {
     }
 
     .footer .foot .row .info p {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .footer .foot .row .info .connect {
@@ -662,21 +660,18 @@ body {
     }
 
     .footer .foot .row .info .connect p {
-        font-size: 20px;
+        font-size: 18px;
     }
-
 
     .footer .foot .row .info .connect .soc {
         position: relative;
         left: 0px;
     }
 
-
     .footer .foot .row .info .connect .fb {
         width: 45px;
         height: auto;
     }
-
 
     .footer .foot .row .info .connect .ytb {
         width: 45px;
@@ -689,7 +684,7 @@ body {
     }
 
     .footer .foot .row .footer-links {
-        margin: 210px 50px 1px 40px;
+        margin: 150px 50px 1px 40px;
         padding: 1px 10px 1px 1px;
         width: 100%;
         position: relative;
@@ -697,21 +692,22 @@ body {
     }
 
     .footer .foot .row .footer-links .agent {
-        width: 40%;
-        font-size: 16px;
+        width: 55%;
+        font-size: 11px;
         padding: 10px;
     }
 
     .footer .foot .row .footer-links a {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .footer .foot .row .footer-links h4 {
         font-size: 20px;
     }
 
-    .paragraph p {
+    .copyright p {
         font-size: 25px;
+        margin: 0px 0px 0px 520px;
     }
 
 }

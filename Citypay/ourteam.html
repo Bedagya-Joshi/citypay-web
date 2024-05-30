@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <base href="/"> <link rel="stylesheet" href="ourteam.css">
+  <link rel="stylesheet" href="ourteam.css">
   <title>Our Team</title>
   <link rel="icon" type="nabar-icon" href="./Assets/citypay-favicon.png">
 </head>
@@ -48,14 +48,14 @@
       </div>
 
       <div class="head">
-        <h2>Office Heads</h2>
+        <h2>BOD</h2>
       </div>
       <div class="off-head-grid">
-        <!-- Heads of Office -->
+        <!-- Board Of Directors -->
 
         <div class="team1">
           <div class="team-img1">
-            <img src="./Assets/S-R Nepal.png" alt="team-img1" class="team-img1">
+            <img src="./Assets/Binay Sir.png" alt="team-img1" class="img1">
           </div>
 
           <div class="team-cont1">
@@ -66,7 +66,7 @@
 
         <div class="team2">
           <div class="team-img2">
-            <img src="./Assets/S-R Nepal.png" alt="team-img2" class="team-img2">
+            <img src="./Assets/Prakash Sir.png" alt="team-img2" class="img2">
           </div>
 
           <div class="team-cont2">
@@ -77,7 +77,7 @@
 
         <div class="team3">
           <div class="team-img3">
-            <img src="./Assets/S-R Nepal.png" alt="team-img3" class="team-img3">
+            <img src="./Assets/Pratik Sir.png" alt="team-img3" class="img3">
           </div>
 
           <div class="team-cont3">
@@ -87,114 +87,189 @@
         </div>
       </div>
 
+      
       <div class="unit-heads">
-        <nav class="nav">
+        <div class="unit">
+          <h2>Our Unit Heads</h2>
+        </div>
+        <nav class="navv">
           <ul>
             <li data-role="accounts">ACCOUNTS</li>
-            <li data-role="audit">AUDIT</li>
+            <li data-role="compliance">RISK AND COMPLIANCE</li>
             <li data-role="business-development">BUSINESS DEVELOPMENT</li>
-            <li data-role="compliance">COMPLIANCE</li>
             <!-- <li data-role="gsd">GSD</li> -->
-            <li data-role="hr">HR</li>
-            <li data-role="it">IT</li>
+            <li data-role="hr">HR AND ADMIN</li>
+            <li data-role="it">INFORMATION AND SECURITY</li>
             <!-- <li data-role="legal">LEGAL</li> -->
-            <li data-role="marketing">MARKETING</li>
             <li data-role="operations">OPERATIONS</li>
+            <li data-role="marketing">MARKETING</li>
             <!-- <li data-role="treasury-and-research">TREASURY AND RESEARCH</li> -->
           </ul>
         </nav>
 
         <div class="details">
-          <div id="accounts" class="detail-grid">Accounts Employees Details</div>
-          <div id="audit" class="detail-grid">Audit Employees Details</div>
-          <div id="business-development" class="detail-grid">Business Development Employees Details</div>
-          <div id="compliance" class="detail-grid">Compliance Employees Details</div>
+          <div id="accounts" class="detail-grid">Laxman Pradhan</div>
+          <div id="compliance" class="detail-grid">Utsav Wagle</div>
+          <div id="business-development" class="detail-grid">Ishwor Khadka</div>
           <!-- <div id="gsd" class="detail-grid">GSD Employees Details</div> -->
-          <div id="hr" class="detail-grid">HR Employees Details</div>
-          <div id="it" class="detail-grid">IT Employees Details</div>
+          <div id="hr" class="detail-grid">Shaili Dhakal</div>
+          <div id="it" class="detail-grid">Bedagya Raj Joshi</div>
           <!-- <div id="legal" class="detail-grid">Legal Employees Details</div> -->
-          <div id="marketing" class="detail-grid">Marketing Employees Details</div>
-          <div id="operations" class="detail-grid">Operations Employees Details</div>
+          <div id="operations" class="detail-grid">Nishan Thapa</div>
+          <div id="marketing" class="detail-grid">Sandeep Dutta</div>
           <!-- <div id="treasury-and-research" class="detail-grid">Treasury and Research Employees Details</div> -->
         </div>
       </div>
+
       <div class="buss">
-        <h2>Business Department</h2>
+        <h2>Management Team</h2>
       </div>
       <div class="buss-depart-grid">
-        <!-- Bussiness Department -->
-
-
-        <div class="team4">
-          <div class="team-img4">
-            <img src="./Assets/S-R Nepal.png" alt="team-img4" class="team-img4">
-          </div>
-
+        <!-- Toggle Button -->
+        <button class="toggle-button" onclick="toggleTeamGrids()">
+          Management Team
+          <i class="arrow"></i>
+        </button>
+        <!-- Management Team -->
+        <div class="team4" id="team4">
+          <!-- <div class="team-img4">
+                <img src="./Assets/S-R Nepal.png" alt="team-img4" class="img4">
+            </div> -->
           <div class="team-cont4">
-            <p>Utsav Wagle</p>
-            <p>Compliance Head</p>
+            <p onclick="showTeam('team4')">Utsav Wagle</p>
+            <p>Risk and Compliance</p>
           </div>
         </div>
-
-        <div class="team5">
-          <div class="team-img5">
-            <img src="./Assets/S-R Nepal.png" alt="team-img5" class="team-img5">
-          </div>
-
+        <div class="team5" id="team5">
+          <!-- <div class="team-img5">
+                <img src="./Assets/S-R Nepal.png" alt="team-img5" class="img5">
+            </div> -->
           <div class="team-cont5">
-            <p>Shaili Dhakal</p>
+            <p onclick="showTeam('team5')">Shaili Dhakal</p>
             <p>HR</p>
           </div>
         </div>
-
-        <div class="team6">
-          <div class="team-img6">
-            <img src="./Assets/S-R Nepal.png" alt="team-img6" class="team-img6">
-          </div>
-
+        <div class="team6" id="team6">
+          <!-- <div class="team-img6">
+                <img src="./Assets/S-R Nepal.png" alt="team-img6" class="img6">
+            </div> -->
           <div class="team-cont6">
-            <p>Nishant Thapa</p>
+            <p onclick="showTeam('team6')">Nishant Thapa</p>
             <p>Senior Relationship Manager</p>
           </div>
         </div>
-
-        <div class="team7">
-          <div class="team-img7">
-            <img src="./Assets/S-R Nepal.png" alt="team-img7" class="team-img7">
-          </div>
-
+        <div class="team7" id="team7">
+          <!-- <div class="team-img7">
+                <img src="./Assets/S-R Nepal.png" alt="team-img7" class="img7">
+            </div> -->
           <div class="team-cont7">
-            <p>Sandeep Dutta</p>
-            <p>Junior Relationship Manager</p>
+            <p onclick="showTeam('team7')">Sandeep Dutta</p>
+            <p>Relationship Manager</p>
+          </div>
+        </div>
+        <div class="team8" id="team8">
+          <!-- <div class="team-img8">
+                <img src="./Assets/S-R Nepal.png" alt="team-img8" class="img8">
+            </div> -->
+          <div class="team-cont8">
+            <p onclick="showTeam('team8')">Laxman Pradhan</p>
+            <p>Accountant</p>
+          </div>
+        </div>
+        <div class="team9" id="team9">
+          <!-- <div class="team-img9">
+                <img src="./Assets/S-R Nepal.png" alt="team-img9" class="img9">
+            </div> -->
+          <div class="team-cont9">
+            <p onclick="showTeam('team9')">Ishwor Khadka</p>
+            <p>Business Development Officer</p>
+          </div>
+        </div>
+        <div class="team10" id="team10">
+          <!-- <div class="team-img10">
+                <img src="./Assets/S-R Nepal.png" alt="team-img10" class="img10">
+            </div> -->
+          <div class="team-cont10">
+            <p onclick="showTeam('team10')">Sunita Sunar</p>
+            <p>Assistant Trainee</p>
+          </div>
+        </div>
+        <div class="team11" id="team11">
+          <!-- <div class="team-img11">
+                <img src="./Assets/S-R Nepal.png" alt="team-img11" class="img11">
+            </div> -->
+          <div class="team-cont11">
+            <p onclick="showTeam('team11')">Reeyaz Neupane</p>
+            <p>Assistant Trainee</p>
           </div>
         </div>
       </div>
 
+      <script>
+        function toggleTeamGrids() {
+          const grids = document.querySelectorAll('.buss-depart-grid > div');
+          const button = document.querySelector('.toggle-button');
+          grids.forEach(grid => {
+            if (grid.style.display === 'none' || grid.style.display === '') {
+              grid.style.display = 'flex';
+            }
+          });
+          button.style.display = 'none'; // Hide the button after clicking
+        }
+
+        function showTeam(teamId) {
+          // Hide all team divs
+          const teams = document.querySelectorAll('.buss-depart-grid > div');
+          teams.forEach(team => team.style.display = 'none');
+
+          // Show the selected team div
+          const selectedTeam = document.getElementById(teamId);
+          selectedTeam.style.display = 'flex';
+        }
+
+        // Hide all grids initially
+        document.addEventListener('DOMContentLoaded', () => {
+          const grids = document.querySelectorAll('.buss-depart-grid > div');
+          grids.forEach(grid => grid.style.display = 'none');
+        });
+      </script>
+
       <div class="it">
-        <h2>IT Department</h2>
+        <h2>IT Team</h2>
       </div>
       <div class="it-depart-grid">
-        <!-- IT Department -->
+        <!-- IT Team -->
 
 
-        <div class="team8">
-          <div class="team-img8">
-            <img src="./Assets/S-R Nepal.png" alt="team-img8" class="team-img8">
-          </div>
+        <div class="team12">
+          <!-- <div class="team-img12">
+            <img src="./Assets/S-R Nepal.png" alt="team-img12" class="img12">
+          </div> -->
 
-          <div class="team-cont8">
+          <div class="team-cont12">
             <p>Bedagya Raj Joshi</p>
             <p>Assistant Trainee</p>
           </div>
         </div>
 
-        <div class="team9">
-          <div class="team-img9">
-            <img src="./Assets/S-R Nepal.png" alt="team-img9" class="team-img9">
-          </div>
+        <div class="team13">
+          <!-- <div class="team-img13">
+            <img src="./Assets/S-R Nepal.png" alt="team-img13" class="img13">
+          </div> -->
 
-          <div class="team-cont9">
+          <div class="team-cont13">
             <p>Shishir Basnet</p>
+            <p>Assistant Trainee</p>
+          </div>
+        </div>
+
+        <div class="team14">
+          <!-- <div class="team-img14">
+            <img src="./Assets/S-R Nepal.png" alt="team-img14" class="img14">
+          </div> -->
+
+          <div class="team-cont14">
+            <p>Anupam Paudel</p>
             <p>Assistant Trainee</p>
           </div>
         </div>
@@ -300,7 +375,7 @@
         </div>
       </div>
       <div class="copyright">
-        <p>© 2024 City Wallet Private Limited. All rights reteamed.</p>
+        <p>© 2024 City Wallet Private Limited. All rights reserved.</p>
       </div>
   </div>
   </footer>
