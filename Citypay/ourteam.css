@@ -209,6 +209,8 @@ body {
     flex-wrap: wrap;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     align-items: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
@@ -245,6 +247,8 @@ body {
     flex-wrap: wrap;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     align-items: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
@@ -281,6 +285,8 @@ body {
     flex-wrap: wrap;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     align-items: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
@@ -333,6 +339,8 @@ body {
     flex-wrap: wrap;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     align-items: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
@@ -400,7 +408,7 @@ body {
 }
 
 .team .it-depart-grid .team12 {
-    width: 70%;
+    width: 100%;
     height: 170px;
     background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
     margin-bottom: 20px;
@@ -410,6 +418,8 @@ body {
     flex-wrap: wrap;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     align-items: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
@@ -431,8 +441,8 @@ body {
 }
 
 
-/* team 11 */
-.team .it-depart-grid .team11 {
+/* team 13 */
+.team .it-depart-grid .team13 {
     width: 100%;
     height: 170px;
     background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
@@ -443,6 +453,8 @@ body {
     flex-wrap: wrap;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     align-items: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
@@ -463,8 +475,8 @@ body {
     padding: 3px;
 }
 
-/* team 12 */
-.team .it-depart-grid .team12 {
+/* team 14 */
+.team .it-depart-grid .team14 {
     width: 100%;
     height: 170px;
     background: linear-gradient(#5ed5eb, #1a98ff, #4876b9, #5ed5eb);
@@ -475,6 +487,8 @@ body {
     flex-wrap: wrap;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     align-items: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
