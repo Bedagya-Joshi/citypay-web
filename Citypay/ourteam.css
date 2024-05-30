@@ -378,6 +378,10 @@ body {
     left: 45%
 }
 
+.toggle-button:hover {
+    color: #ff6b6b;
+}
+
 .toggle-button .arrow {
     margin-left: 35px;
     border: solid white;
@@ -619,6 +623,10 @@ body {
     color: white;
     border-radius: 4px;
     transition: background 0.3s ease;
+}
+
+.navv ul li:hover {
+    color: #ff6b6b;
 }
 
 .nav ul li:hover {

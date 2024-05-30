@@ -1004,11 +1004,11 @@ p {
 }
 
 /* Footer styles */
-
 .footer {
   background: rgb(161, 159, 159);
   background: linear-gradient(0deg, rgb(152, 170, 230) 0%, rgb(241, 242, 245) 55%);
   box-shadow: 0px -12px 25px rgba(228, 237, 250, 0.8);
+  /* Adjusted to have a negative y-offset */
   bottom: 0;
   left: 0;
   width: 100%;
@@ -1017,17 +1017,15 @@ p {
 }
 
 .footer .foot .row {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-gap: 10px; */
 }
 
 .logoQR {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 25px;
+  position: relative;
+  top: 40px;
+  left: 40px;
 }
 
 .logoQR .citypaylog {
@@ -1080,6 +1078,7 @@ p {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  transition: transform 0.3s ease;
   padding: 0;
   margin: 0;
 }
@@ -1097,6 +1096,12 @@ p {
 .appstore {
   width: 100%;
   height: 100%;
+}
+
+.playstore:hover,
+.appstore:hover {
+  transform: scale(1.1);
+  /* Increase size on hover */
 }
 
 .info {
@@ -1119,11 +1124,7 @@ p {
 .info .basic p {
   font-weight: normal;
   padding-top: 10px;
-  font-size: medium;
-}
-
-.info .basic .Email p {
-  width: 220px;
+  font-size: smaller;
 }
 
 .info .basic .connect p {
@@ -1133,21 +1134,14 @@ p {
 }
 
 .connect {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  margin: 10px;
+  width: 100%;
+  margin: 10px 10px 10px 30px;
+  padding: 10px 50px 50px 30px;
 }
 
 .connect .soc {
   position: relative;
   left: 12px;
-}
-
-.connect {
-  width: 100%;
-  margin: 10px 10px 10px 30px;
-  padding: 10px 50px 50px 30px;
 }
 
 .connect p {
@@ -1167,6 +1161,11 @@ p {
 .connect .lkdn {
   width: 25px;
   height: auto;
+}
+
+.soc svg:hover {
+  transform: scale(1.2);
+  /* Increase the size of the icon on hover */
 }
 
 .footer-links {
@@ -1235,10 +1234,51 @@ p {
 
 
 
+
 /* Media Query Responsiveness */
 
-/* @media (max-width:2560px) and (min-width: 1921px) {
-  .first-section {}
+@media (max-width:2560px) and (min-width: 1921px) {
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 30%;
+    position: relative;
+    left: 35px;
+  }
+
+  .buttons .playstore .dow-btn {
+    width: 155px;
+    height: 55px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+    align-content: center;
+  }
+
+  .buttons .appstore .dow-btn {
+    width: 155px;
+    height: 55px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+    align-content: center;
+  }
+
+  .playstore, .appstore {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .playstore:hover, .appstore:hover {
+    transform: scale(1.1);
+  }
 
   .second-section {
     height: 100vh;
@@ -1254,9 +1294,88 @@ p {
 
   .seventh-section {}
 
-  .footer {}
 
-} */
+  /* Footer */
+
+  .footer .logoQR .citypaylog {
+    width: 22%;
+  }
+
+  .footer .logoQR .QRcode {
+    width: 22%;
+  }
+
+  .dwbuttons {
+    position: relative;
+    left: 20px;
+  }
+
+  .download-btn {
+    position: relative;
+    right: 20px;
+  }
+
+  .footer .info .basic {
+    position: relative;
+    right: 30px;
+    margin: 40px 1px 1px 1px;
+  }
+
+  .footer .info p {
+    font-size: 15px;
+  }
+
+  .footer .footer-links {
+    margin: 80px 50px 1px 40px;
+    padding: 1px 10px 1px 1px;
+    width: 80%;
+    position: relative;
+    left: 50px;
+  }
+
+  .footer .footer-links a {
+    font-size: small;
+  }
+
+  .footer-links h4 {
+    font-size: medium;
+  }
+
+  .footer .logimg .download-btn {
+    width: 90px;
+    height: 30px;
+    margin: 2px 2px 2px 5px;
+  }
+
+  .connect {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+  }
+
+  .connect .soc {
+    position: relative;
+    left: 20px;
+  }
+
+  .connect .fb {
+    width: 22px;
+    height: auto;
+  }
+
+  .connect .ytb {
+    width: 22px;
+    height: auto;
+  }
+
+  .connect .lkdn {
+    width: 22px;
+    height: auto;
+  }
+
+}
 
 
 @media (max-width:1440px) and (min-width: 1025px) {
