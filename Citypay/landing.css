@@ -52,6 +52,8 @@ body {
   align-items: center;
   gap: 40px;
   justify-content: center;
+  padding: 5px 0px 5px 0px;
+  overflow-x: hidden;
 }
 
 /* Navbar Styles */
@@ -66,7 +68,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 10px 10px 40px;
+  padding: 10px 10px 10px 10px;
 }
 
 .logo {
@@ -1012,7 +1014,7 @@ p {
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 20px;
+  padding: 20px 0px 20px 0px;
   margin-top: auto;
 }
 
@@ -1238,6 +1240,15 @@ p {
 /* Media Query Responsiveness */
 
 @media (max-width:2560px) and (min-width: 1921px) {
+
+  .header {
+    padding: 10px 15px 10px 15px;
+  }
+
+  .layout-container {
+    overflow-x: hidden;
+  }
+
   .buttons {
     display: flex;
     justify-content: center;
@@ -2509,7 +2520,8 @@ p {
 
 @media (max-width:768px) and (min-width: 426px) {
   .header {
-    width: 85%;
+    width: 95%;
+    padding: 10px;
   }
 
   .nav ul {
@@ -3123,7 +3135,7 @@ p {
 @media (max-width:425px) and (min-width: 376px) {
   .navbar {
     position: relative;
-    right: 10px;
+
   }
 
   .header .menu-toggle {
@@ -3893,20 +3905,9 @@ p {
 }
 
 @media (max-width:375px) and (min-width: 321px) {
-  .navbar {
-    position: relative;
-    right: 10px;
-  }
 
-  .header .menu-toggle {
-    position: relative;
-    left: 5px;
-  }
-
-  .navbar .logo {
-    position: relative;
-    right: 10px;
-    top: 6px;
+  .header {
+    padding: 10px;
   }
 
   .nav ul {
@@ -4613,7 +4614,7 @@ p {
     margin: auto;
     position: relative;
     right: 25px;
-    bottom: 30px;
+    bottom: 50px;
     width: 100%;
   }
 
@@ -4665,21 +4666,11 @@ p {
 }
 
 @media (max-width:320px) and (min-width: 280px) {
-  .navbar {
-    position: relative;
-    right: 10px;
+
+  .header {
+    padding: 10px;
   }
 
-  .header .menu-toggle {
-    position: relative;
-    left: 5px;
-  }
-
-  .navbar .logo {
-    position: relative;
-    right: 10px;
-    top: 6px;
-  }
 
   .nav ul {
     margin: 20px 10px 10px 62px;
