@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     /* height: auto; */
+    overflow-x: hidden;
 }
 
 * {
@@ -17,13 +18,8 @@ body {
     font-style: normal;
 }
 
-.layout-container {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    justify-content: center;
+.body-container {
+    overflow: hidden;
 }
 
 /* Navbar Styles */
@@ -38,7 +34,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px 10px 40px;
+    padding: 10px 10px 10px 10px;
+    width: 90%;
 }
 
 .logo {
@@ -154,9 +151,6 @@ body {
     }
 }
 
-.body-container {
-    padding: 30px;
-}
 
 
 .content {
@@ -263,7 +257,7 @@ body {
 @media (max-width: 2560px) and (min-width: 1441px) {
 
     .header {
-        width: 100%;
+        width: 98%;
         padding: 10px;
     }
 
@@ -440,7 +434,7 @@ body {
 
 @media (max-width: 1024px) and (min-width: 769px) {
     .header {
-        width: 100%;
+        width: 95%;
         padding: 10px;
     }
 
