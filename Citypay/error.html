@@ -3,14 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News & Blogs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Mukta:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <base href="/"> <link rel="stylesheet" href="error.css">
+    <title>Page Not Found</title>
+    <link rel="icon" type="nabar-icon" href="./Assets/citypay-favicon.png">
 </head>
 <body>
-    
+    <div class="oops">
+        <h1>Oops!</h1>
 
+        <div class="oops-img">
+            <img src="./Assets/Oops.png" alt="Oops" class="oops">
+        </div>
+        <div class="oops-content">
+            <h2>404</h2><br>
+            <h3>PAGE NOT FOUND</h3><br>
+            <P>Sorry, the page you're looking for doesn't exist</P><br>
+ <div class="but">
+ <button id="Button" class="back">Return Home</button>
+        <script type="text/javascript">
+    document.getElementById("Button").onclick = function () {
+        location.href = "/"; // Using a relative path to navigate up one directory level
+    };
+</script>
 
+ <button id="Button" class="conta">Contact Us</button>
+        <script type="text/javascript">
+    document.getElementById("Button").onclick = function () {
+        location.href = "/contact.html"; // Using a relative path to navigate up one directory level
+    };
+</script>
+ </div>
+           
+        </div>
+    </div>
+   
 
-     <!-- Footer Part -->
+       <!-- Footer Part -->
       <footer class="footer">
         <div class="foot">
           <div class="row">
@@ -96,8 +125,8 @@
                 <!-- <li><a href="pages/faq.html">FAQ</a></li> -->
                 <!-- <li><a href="pages/ourteam.html">Our Team</a></li> -->
                 <!-- <li><a href="pages/News&Blogs.html">News & Blogs</a></li> -->
-                <li><a href="./privacypolicy.html">Privacy Policy</a></li>
-                <li><a href="./downloads.html">Downloads</a></li>
+                <li><a href="/privacypolicy">Privacy Policy</a></li>
+                <li><a href="/downloads">Downloads</a></li>
               </ul>
               <button id="myButton" class="agent">Become an Agent</button>
               <script type="text/javascript">
@@ -113,6 +142,10 @@
         </div>
       </div>
     </footer>
-    <script src="./js/hideHtmlExtension.js"></script>
 </body>
 </html>
+
+
+
+
+    
