@@ -196,9 +196,7 @@ body {
     text-align: justify;
 }
 
-.grid-1,
-.grid-2,
-.grid-3 {
+.grid-1, .grid-2, .grid-3 {
     width: 350px;
     height: 300px;
     background: linear-gradient(#0e83e3, #65c7f7, #88e7f8);
@@ -212,18 +210,14 @@ body {
     /* Center the child elements vertically */
 }
 
-.grid-1:hover,
-.grid-2:hover,
-.grid-3:hover {
+.grid-1:hover, .grid-2:hover, .grid-3:hover {
     transform: translateY(-10px) scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     background: linear-gradient(#0e83e3, #1868aa, #65c7f7);
     /* Slight change in gradient */
 }
 
-.icon1,
-.icon2,
-.icon3 {
+.icon1, .icon2, .icon3 {
     margin-bottom: 5px;
 }
 
@@ -325,8 +319,7 @@ body {
     width: 100%;
 }
 
-.playstore,
-.appstore {
+.playstore, .appstore {
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -494,7 +487,6 @@ body {
         padding: 10px;
     }
 
-
     .logo {
         width: 90px;
         height: auto;
@@ -504,40 +496,6 @@ body {
         flex-direction: column;
         cursor: pointer;
         height: 20px;
-    }
-
-    .nav {
-        display: none;
-        transition: display 0.3s ease-in-out;
-    }
-
-    .nav ul {
-        list-style-type: none;
-        padding: 0;
-        background-color: #194a7a;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-        padding-top: 15px;
-        z-index: 1;
-        top: 0;
-        position: sticky;
-        border-radius: 15px;
-    }
-
-    .nav li {
-        padding: 10px;
-        text-align: center;
-    }
-
-    .nav a {
-        text-decoration: none;
-        color: #333;
-        font-weight: 700;
-        font-size: 25px;
-        color: white;
     }
 
     .body-container {
@@ -585,9 +543,7 @@ body {
         text-align: justify;
     }
 
-    .grid-1,
-    .grid-2,
-    .grid-3 {
+    .grid-1, .grid-2, .grid-3 {
         width: 350px;
         height: 300px;
         border-radius: 25px;
@@ -598,9 +554,7 @@ body {
         align-items: center;
     }
 
-    .icon1,
-    .icon2,
-    .icon3 {
+    .icon1, .icon2, .icon3 {
         margin-bottom: 5px;
     }
 
@@ -697,8 +651,7 @@ body {
         width: 100%;
     }
 
-    .playstore,
-    .appstore {
+    .playstore, .appstore {
         background-color: transparent;
         border: none;
         cursor: pointer;
@@ -850,9 +803,7 @@ body {
     }
 
 
-    .Second-Container .grid-1,
-    .grid-2,
-    .grid-3 {
+    .Second-Container .grid-1, .grid-2, .grid-3 {
         width: 280px;
         height: 330px;
         padding: 20px 20px 20px 25px;
@@ -945,6 +896,12 @@ body {
         width: 95%;
     }
 
+    .nav ul {
+        margin: 20px 10px 10px 214px;
+        width: 40%;
+        padding: 10px;
+    }
+
     .body-container {
         padding: 0;
     }
@@ -989,9 +946,7 @@ body {
     }
 
 
-    .Second-Container .grid-1,
-    .grid-2,
-    .grid-3 {
+    .Second-Container .grid-1, .grid-2, .grid-3 {
         width: 230px;
         height: 370px;
         padding: 20px 15px 20px 25px;
@@ -1110,6 +1065,11 @@ body {
         padding: 10px 5px 1px 5px;
     }
 
+    .nav ul {
+        margin: 20px 0px 10px 190px;
+        padding: 10px;
+    }
+
     .body-container {
         padding: 0;
     }
@@ -1158,18 +1118,14 @@ body {
         grid-gap: 0px;
     }
 
-    .Second-Container .grid-1,
-    .grid-2,
-    .grid-3 {
+    .Second-Container .grid-1, .grid-2, .grid-3 {
         width: 170px;
         height: 280px;
         padding: 10px 10px 20px 10px;
         margin: 5px 5px 15px 55px;
     }
 
-    .icon1,
-    .icon2,
-    .icon3 {
+    .icon1, .icon2, .icon3 {
         margin: 5px 2px 5px 5px;
         padding: 2px 2px 2px 2px;
         width: 70%;
@@ -1361,9 +1317,7 @@ body {
         grid-gap: 0px;
     }
 
-    .Second-Container .grid-1,
-    .grid-2,
-    .grid-3 {
+    .Second-Container .grid-1, .grid-2, .grid-3 {
         width: 170px;
         height: 280px;
         padding: 20px 20px 20px 20px;
@@ -1372,9 +1326,7 @@ body {
         left: 100px;
     }
 
-    .icon1,
-    .icon2,
-    .icon3 {
+    .icon1, .icon2, .icon3 {
         margin: 5px 2px 5px 10px;
         padding: 2px 2px 2px 2px;
         width: 70%;
@@ -1727,9 +1679,7 @@ body {
         grid-gap: 0px;
     }
 
-    .Second-Container .grid-1,
-    .grid-2,
-    .grid-3 {
+    .Second-Container .grid-1, .grid-2, .grid-3 {
         width: 170px;
         height: 280px;
         padding: 20px 20px 20px 20px;
@@ -1738,9 +1688,7 @@ body {
         left: 70px;
     }
 
-    .icon1,
-    .icon2,
-    .icon3 {
+    .icon1, .icon2, .icon3 {
         margin: 5px 2px 5px 10px;
         padding: 2px 2px 2px 2px;
         width: 70%;
@@ -2099,9 +2047,7 @@ body {
         grid-gap: 0px;
     }
 
-    .Second-Container .grid-1,
-    .grid-2,
-    .grid-3 {
+    .Second-Container .grid-1, .grid-2, .grid-3 {
         width: 170px;
         height: 280px;
         padding: 20px 20px 20px 20px;
@@ -2110,9 +2056,7 @@ body {
         left: 35px;
     }
 
-    .icon1,
-    .icon2,
-    .icon3 {
+    .icon1, .icon2, .icon3 {
         margin: 5px 2px 5px 10px;
         padding: 2px 2px 2px 2px;
         width: 70%;
