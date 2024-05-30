@@ -89,7 +89,8 @@ body {
 }
 
 .body-container {
-    padding: 0;
+    padding: 5px;
+    overflow: hidden;
 }
 
 
@@ -738,7 +739,7 @@ body {
 @media (max-width:1440px) and (min-width: 1025px) {
 
     .header {
-        width: 100%;
+        width: 98%;
         padding: 10px 5px 0px 5px;
     }
 
@@ -869,8 +870,12 @@ body {
 }
 
 @media (max-width:1024px) and (min-width: 769px) {
+    .header {
+        width: 95%;
+    }
+
     .body-container {
-        max-width: 100%;
+        padding: 0;
     }
 
     .First-container .curtain .content {
@@ -886,7 +891,7 @@ body {
     }
 
     .curtain {
-        max-width: 1024px;
+        width: 100%;
         padding: 20px;
     }
 
@@ -1028,7 +1033,7 @@ body {
 
 @media (max-width:768px) and (min-width: 426px) {
     .header {
-        width: 100%;
+        width: 95%;
         padding: 10px 5px 1px 5px;
     }
 
@@ -1209,34 +1214,39 @@ body {
 @media (max-width:425px) and (min-width: 376px) {
     .header {
         padding: 10px 10px 10px 10px;
-        width: 100%;
+        width: 95%;
     }
 
     .body-container {
-        max-width: 100%;
+        padding: 0;
+    }
+
+    .curtain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .First-container .curtain .content {
         width: 100%;
-        position: relative;
-        right: 0px;
         padding: 10px;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .content h1 {
-        margin: 20px 20px 20px 20px;
+        margin: 20px 5px 20px 5px;
     }
 
     .content p {
-        width: 100%;
+        width: 85%;
         text-align: justify;
         font-size: medium;
     }
 
     .curtain {
-        width: 425px;
+        width: 100%;
         padding: 20px;
     }
 
@@ -1295,6 +1305,8 @@ body {
 
     .ctxlogo {
         margin: 10px 10px 20px 0px;
+        display: flex;
+        flex-direction: row;
     }
 
     .Ctxpress-Logo {
@@ -1302,11 +1314,11 @@ body {
     }
 
     .base .paragraph {
-        margin: 0px 0px 0px 50px;
-        width: 45%;
+        margin: 0px 0px 0px 35px;
+        width: 40%;
         float: right;
         position: relative;
-        bottom: 115px;
+        bottom: 5px;
     }
 
     .paragraph p {
@@ -1320,8 +1332,10 @@ body {
 
     .footer {
         width: 100%;
+        display: flex;
+        flex-direction: row;
         margin: 0px;
-        padding: 20px;
+        padding: 5px;
         box-shadow: 0px -12px 25px rgba(72, 182, 255, 0.8);
 
     }
@@ -1332,8 +1346,9 @@ body {
 
     .footer .foot .row {
         position: relative;
-        right: 0px;
-        width: 70%;
+        width: 100%;
+        display: flex;
+        align-items: center;
     }
 
     .footer .foot .row .logoQR {
@@ -1396,26 +1411,20 @@ body {
     }
 
     .footer .info {
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin: auto;
         width: 100%;
-        position: relative;
-        right: 57px;
+
     }
 
     .footer .info .basic {
-        display: flex;
-        flex-direction: column;
+        padding: 5px;
+        margin: 30px 0px 0px 0px;
+        left: 0;
+        width: 85%;
         position: relative;
-        left: 100px;
-        bottom: 0px;
-        width: 100%;
-        margin: 45px 2px 2px 2px;
-        padding: 2px 2px 2px 2px;
-    }
-
-    .footer .info .basic>div {
-        flex: 1;
     }
 
     .footer .info .basic p {
@@ -1466,7 +1475,6 @@ body {
     }
 
     .footer .info .connect {
-        left: 140px;
         padding: 5px;
         margin: 5px;
         width: 70px;
@@ -1505,8 +1513,11 @@ body {
     .footer .foot .footer-links {
         margin: auto;
         position: relative;
-        left: 65px;
-        bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        bottom: 20px;
+        right: 0;
+        float: right;
         width: 100%;
     }
 
@@ -1532,9 +1543,8 @@ body {
         padding: 5px;
         margin-top: 7px;
         border-radius: 5px;
-        width: 85%;
+        width: 80%;
         position: relative;
-        right: 5px;
     }
 
     .footer .copyright {
