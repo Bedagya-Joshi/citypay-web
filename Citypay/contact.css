@@ -316,7 +316,7 @@ body {
 /* Footer styles */
 .footer {
     background: rgb(161, 159, 159);
-    background: linear-gradient(0deg, rgb(152, 170, 230) 0%, rgb(241, 242, 245) 55%);
+    /* background: linear-gradient(0deg, rgb(152, 170, 230) 0%, rgb(241, 242, 245) 55%); */
     box-shadow: 0px -12px 25px rgba(228, 237, 250, 0.8);
     /* Adjusted to have a negative y-offset */
     bottom: 0;
@@ -499,7 +499,7 @@ body {
 .footer-links a {
     text-decoration: none;
     color: #000000;
-    font-weight: bold;
+    font-weight: normal;
     transition: color 0.3s;
 }
 
@@ -535,7 +535,7 @@ body {
 
 .copyright p {
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 
