@@ -747,6 +747,11 @@ body {
     color: #0d60b5;
 }
 
+.soc svg:hover {
+    transform: scale(1.2);
+    /* Increase the size of the icon on hover */
+}
+
 .copyright {
     align-items: center;
     margin: 10px 1px 1px 1px;
