@@ -4614,7 +4614,7 @@ p {
     margin: auto;
     position: relative;
     right: 25px;
-    bottom: 50px;
+    bottom: 0px;
     width: 100%;
   }
 
@@ -5354,7 +5354,7 @@ p {
     margin: auto;
     position: relative;
     right: 35px;
-    bottom: 30px;
+    bottom: 0px;
     width: 100%;
   }
 
