@@ -262,8 +262,7 @@ body {
 }
 
 .read:hover {
-    background-color: white;
-    color: #0d60b5;
+    transform: scale(1.05);
 }
 
 
@@ -644,7 +643,7 @@ body {
     /* Footer styles */
 
     .footer {
-    
+
         bottom: 0;
         left: 0;
         width: 100%;
@@ -822,7 +821,7 @@ body {
         margin-bottom: 10px;
     }
 
-  
+
 
     /* Become Agent Button */
     .agent {
