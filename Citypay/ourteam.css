@@ -378,18 +378,6 @@ body {
 }
 
 
-/* IT Department */
-/* .it-depart-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    margin: 20px;
-    padding: 20px;
-    width: 70%;
-    gap: 60px;
-    align-content: center;
-} */
-
 /* team 12 */
 .team .it h2 {
     text-align: center;
@@ -625,6 +613,12 @@ body {
 .appstore {
     width: 100%;
     height: 100%;
+}
+
+.playstore:hover,
+.appstore:hover {
+    transform: scale(1.05);
+    /* Increase size on hover */
 }
 
 .info {

@@ -489,6 +489,12 @@ body {
     height: 100%;
 }
 
+.playstore:hover,
+.appstore:hover {
+    transform: scale(1.05);
+    /* Increase size on hover */
+}
+
 .info {
     display: flex;
     flex-direction: row;
