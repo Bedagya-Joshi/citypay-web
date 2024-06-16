@@ -262,8 +262,7 @@ body {
 }
 
 .read:hover {
-    background-color: white;
-    color: #0d60b5;
+    transform: scale(1.05);
 }
 
 
@@ -398,8 +397,8 @@ body {
 /* Footer styles */
 
 .footer {
-    background: rgb(161, 159, 159);
-    background: linear-gradient(0deg, rgb(152, 170, 230) 0%, rgb(241, 242, 245) 55%);
+    background: rgb(255, 255, 255);
+    /* background: linear-gradient(0deg, rgb(152, 170, 230) 0%, rgb(241, 242, 245) 55%); */
     box-shadow: 0px -12px 25px rgba(228, 237, 250, 0.8);
     /* Adjusted to have a negative y-offset */
     bottom: 0;
@@ -488,6 +487,12 @@ body {
 .appstore {
     width: 100%;
     height: 100%;
+}
+
+.playstore:hover,
+.appstore:hover {
+    transform: scale(1.05);
+    /* Increase size on hover */
 }
 
 .info {
@@ -582,7 +587,7 @@ body {
 .footer-links a {
     text-decoration: none;
     color: #000000;
-    font-weight: bold;
+    font-weight: normal;
     transition: color 0.3s;
 }
 
@@ -610,6 +615,11 @@ body {
     color: #0d60b5;
 }
 
+.soc svg:hover {
+    transform: scale(1.2);
+    /* Increase the size of the icon on hover */
+}
+
 .copyright {
     align-items: center;
     margin: 10px 1px 1px 1px;
@@ -618,7 +628,7 @@ body {
 
 .copyright p {
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -639,10 +649,7 @@ body {
     /* Footer styles */
 
     .footer {
-        background: rgb(161, 159, 159);
-        background: linear-gradient(0deg, rgb(152, 170, 230) 0%, rgb(241, 242, 245) 55%);
-        box-shadow: 0px -12px 25px rgba(228, 237, 250, 0.8);
-        /* Adjusted to have a negative y-offset */
+
         bottom: 0;
         left: 0;
         width: 100%;
@@ -820,36 +827,17 @@ body {
         margin-bottom: 10px;
     }
 
-    .footer-links a {
-        text-decoration: none;
-        color: #000000;
-        font-weight: bold;
-        transition: color 0.3s;
-    }
 
-    .footer-links a:hover {
-        color: #ff6b6b;
-    }
 
     /* Become Agent Button */
     .agent {
         float: right;
         border-radius: 10px;
-        background-color: #0d60b5;
         padding: 10px 10px;
         border: none;
         font-size: 12px;
-        color: white;
-        cursor: pointer;
-        margin: 1px 20px 20px 30px;
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
-            0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
-    .agent:hover {
-        background-color: white;
-        color: #0d60b5;
-    }
 
     .copyright {
         align-items: center;
@@ -859,10 +847,8 @@ body {
 
     .copyright p {
         text-align: center;
-        color: white;
     }
 }
-
 
 
 @media (max-width: 1440px) and (min-width: 1025px) {
@@ -1616,8 +1602,19 @@ body {
 @media (max-width: 425px) and (min-width: 376px) {
 
     .header {
-        padding: 10px;
+        padding: 18px;
     }
+
+    .fa-bars {
+        font-size: 35px;
+    }
+
+    .navbar .logo {
+        position: relative;
+        right: 0px;
+        width: 45%;
+    }
+
 
     .nav ul {
         margin: 20px 10px 10px 25px;
@@ -1949,6 +1946,21 @@ body {
 
 @media (max-width: 375px) and (min-width: 321px) {
 
+    .header {
+        padding: 18px;
+    }
+
+    .fa-bars {
+        font-size: 35px;
+    }
+
+    .navbar .logo {
+        position: relative;
+        right: 0px;
+        width: 45%;
+    }
+
+
     .nav ul {
         margin: 20px 20px 10px 61px;
         width: 70%;
@@ -2279,6 +2291,21 @@ body {
 }
 
 @media (max-width: 320px) and (min-width: 280px) {
+
+    .header {
+        padding: 18px;
+    }
+
+    .fa-bars {
+        font-size: 35px;
+    }
+
+    .navbar .logo {
+        position: relative;
+        right: 0px;
+        width: 45%;
+    }
+
 
     .main {
         display: grid;

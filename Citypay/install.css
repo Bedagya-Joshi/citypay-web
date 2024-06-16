@@ -236,9 +236,25 @@ body {
     align-items: center;
 }
 
-.buttqr .buttons .g-play, .appstore {
+/* .buttqr .buttons .g-play, .appstore {
     width: 60%;
+} */
 
+.buttons a img .g-play {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buttons a img .appstore {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buttons a img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .buttqr .qr {
@@ -300,7 +316,8 @@ body {
 
     .downloadct .lines p {
         font-size: 20px;
-}
+    }
+
     .downloadct .logo {
         width: 20%;
         align-items: center;
@@ -615,9 +632,19 @@ body {
 
 @media (max-width: 425px) and (min-width: 376px) {
     .header {
-        width: 100%;
-        padding: 10px;
+        padding: 18px;
     }
+
+    .fa-bars {
+        font-size: 35px;
+    }
+
+    .navbar .logo {
+        position: relative;
+        right: 0px;
+        width: 45%;
+    }
+
 
     .nav ul {
         margin: 20px 10px 10px 25px;
@@ -724,9 +751,19 @@ body {
 
 @media (max-width: 375px) and (min-width: 321px) {
     .header {
-        width: 100%;
-        padding: 10px;
+        padding: 18px;
     }
+
+    .fa-bars {
+        font-size: 35px;
+    }
+
+    .navbar .logo {
+        position: relative;
+        right: 0px;
+        width: 45%;
+    }
+
 
     .nav ul {
         margin: 20px 20px 10px 61px;
@@ -833,9 +870,19 @@ body {
 
 @media (max-width: 320px) and (min-width: 280px) {
     .header {
-        width: 100%;
-        padding: 10px;
+        padding: 18px;
     }
+
+    .fa-bars {
+        font-size: 35px;
+    }
+
+    .navbar .logo {
+        position: relative;
+        right: 0px;
+        width: 45%;
+    }
+
 
     .nav ul {
         margin: 20px 10px 10px 62px;

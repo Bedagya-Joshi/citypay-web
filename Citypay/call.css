@@ -315,8 +315,8 @@ body {
 
 /* Footer styles */
 .footer {
-    background: rgb(161, 159, 159);
-    background: linear-gradient(0deg, rgb(152, 170, 230) 0%, rgb(241, 242, 245) 55%);
+    background: rgb(255, 255, 255);
+    /* background: linear-gradient(0deg, rgb(152, 170, 230) 0%, rgb(241, 242, 245) 55%); */
     box-shadow: 0px -12px 25px rgba(228, 237, 250, 0.8);
     /* Adjusted to have a negative y-offset */
     bottom: 0;
@@ -499,7 +499,7 @@ body {
 .footer-links a {
     text-decoration: none;
     color: #000000;
-    font-weight: bold;
+    font-weight: normal;
     transition: color 0.3s;
 }
 
@@ -527,6 +527,11 @@ body {
     color: #0d60b5;
 }
 
+.soc svg:hover {
+    transform: scale(1.2);
+    /* Increase the size of the icon on hover */
+}
+
 .copyright {
     align-items: center;
     margin: 10px 1px 1px 1px;
@@ -535,7 +540,7 @@ body {
 
 .copyright p {
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -1212,10 +1217,18 @@ body {
         left: 5px;
     }
 
+    .header {
+        padding: 18px;
+    }
+
+    .fa-bars {
+        font-size: 35px;
+    }
+
     .navbar .logo {
         position: relative;
-        right: 15px;
-        top: 0px;
+        right: 0px;
+        width: 45%;
     }
 
 
@@ -1618,11 +1631,20 @@ body {
         left: 5px;
     }
 
+    .header {
+        padding: 18px;
+    }
+
+    .fa-bars {
+        font-size: 35px;
+    }
+
     .navbar .logo {
         position: relative;
-        right: 10px;
-        top: 0px;
+        right: 0px;
+        width: 45%;
     }
+
 
     .container {
         width: 100%;
@@ -2019,12 +2041,19 @@ body {
         left: 5px;
     }
 
-    .navbar .logo {
-        position: relative;
-        right: 10px;
-        top: 0px;
+    .header {
+        padding: 18px;
     }
 
+    .fa-bars {
+        font-size: 35px;
+    }
+
+    .navbar .logo {
+        position: relative;
+        right: 0px;
+        width: 45%;
+    }
 
     .container {
         width: 100%;

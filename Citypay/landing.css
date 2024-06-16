@@ -1007,8 +1007,8 @@ p {
 
 /* Footer styles */
 .footer {
-  background: rgb(161, 159, 159);
-  background: linear-gradient(0deg, rgb(152, 170, 230) 0%, rgb(241, 242, 245) 55%);
+  background: rgb(255, 255, 255);
+  /* background: linear-gradient(0deg, rgb(152, 170, 230) 0%, rgb(241, 242, 245) 55%); */
   box-shadow: 0px -12px 25px rgba(228, 237, 250, 0.8);
   /* Adjusted to have a negative y-offset */
   bottom: 0;
@@ -1192,7 +1192,7 @@ p {
 .footer-links a {
   text-decoration: none;
   color: #000000;
-  font-weight: bold;
+  font-weight: normal;
   transition: color 0.3s;
 }
 
@@ -1228,7 +1228,7 @@ p {
 
 .copyright p {
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 
@@ -3135,7 +3135,14 @@ p {
 @media (max-width:425px) and (min-width: 376px) {
   .navbar {
     position: relative;
+  }
 
+  .fa-bars {
+    font-size: 35px;
+  }
+
+  .header {
+    padding: 18px;
   }
 
   .header .menu-toggle {
@@ -3146,7 +3153,7 @@ p {
   .navbar .logo {
     position: relative;
     right: 0px;
-    top: 6px;
+    width: 45%;
   }
 
   .nav ul {
@@ -3257,7 +3264,7 @@ p {
   .second-section {
     grid-template-columns: 1fr;
     padding: 1px 1px 0px 1px;
-    margin: 40px 1px 90px 30px;
+    margin: 40px 1px 90px 0px;
   }
 
   .second-section .second-title h1 {
@@ -3271,7 +3278,7 @@ p {
 
   .second-section .second-body .second-img {
     position: relative;
-    left: 65px;
+    left: 40px;
     bottom: 40px;
   }
 
@@ -3281,12 +3288,14 @@ p {
   }
 
   .second-section .second-body .second-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     width: 50%;
     position: relative;
-    right: 210px;
-    top: 340px;
+    justify-content: center;
+    align-items: center;
+    top: 430px;
+    right: 150px;
     height: 50%;
     gap: 10px;
   }
@@ -3603,7 +3612,7 @@ p {
   /* Seventh Section */
   .seventh-section {
     grid-template-columns: 1fr;
-    margin: 120px 1px 180px 1px;
+    margin: 120px 1px 230px 1px;
     padding: 120px 1px 200px 1px;
   }
 
@@ -3667,234 +3676,184 @@ p {
     display: none;
   }
 
-
   /* Footer */
-
   .footer {
+    padding: 0;
+    align-items: center;
     width: 100%;
-    margin: 100px 0px 0px 0px;
-    padding: 10px 0px 20px 15px;
-    box-shadow: 10px -17px 265px rgba(180, 226, 255, 0.8);
   }
 
-  .footer .foot .row {
+  .footer .foot {
+    width: 100%;
+    position: relative;
+  }
+
+  .footer .row {
+    width: 100%;
     position: relative;
     right: 0px;
-    width: 70%;
-  }
-
-  .footer .foot .row .logoQR {
-    position: relative;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+
   }
 
-  .footer .foot .logoQR {
-    margin: auto;
+  .footer .row .logoQR {
+    display: flex;
+    flex-direction: column;
     position: relative;
+    align-items: center;
+    align-content: center;
+    top: 0;
+    left: 0;
+    margin: 90px 0px 0px 0px;
   }
 
-  .logoQR .dwbuttons h3 {
-    font-size: 9px;
-    width: 120%;
-  }
-
-  .footer .foot .logoQR .citypaylog {
-    width: 55%;
-    padding: 0;
+  .footer .row .logoQR .citypaylog {
+    width: 40%;
     position: relative;
-    bottom: 40px;
-    right: 18px;
+    right: 0px;
+    padding: 5px;
+    margin: 5px;
   }
 
-  .footer .foot .logoQR .QRcode {
-    width: 55%;
-    padding: 0;
+  .footer .row .logoQR .QRcode {
+    width: 40%;
     position: relative;
-    bottom: 45px;
-    right: 18px;
+    right: 0px;
+    padding: 5px;
+    margin: 2px 0px 0px 0px;
   }
 
-  .logoQR .dwbuttons {
+  .footer .row .logoQR .dwbuttons {
+    position: relative;
+    right: 0px;
+    width: 80%;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .footer .dwbuttons .tit h3 {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .footer .dwbuttons .logimg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     width: 100%;
-    position: relative;
-    right: 40px;
-    bottom: 40px;
+    text-align: center;
   }
 
-  .logoQR .dwbuttons .logimg {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .logimg .playstore .download-btn {
-    width: 52px;
-    height: 18px;
-    margin: 7px 2px 2px 8px;
-    position: relative;
-  }
-
-  .logimg .appstore .download-btn {
-    width: 52px;
-    height: 18px;
-    margin: 7px 2px 2px 8px;
-    position: relative;
+  .footer .dwbuttons .logimg .download-btn {
+    width: 70px;
+    height: 25px;
+    margin: 0px 0px 0px 20px;
   }
 
   .footer .info {
-    display: grid;
-    margin: auto;
-    width: 100%;
-    position: relative;
-    right: 45px;
-  }
-
-  .footer .info .basic {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 90px;
-    bottom: 0px;
-    width: 50%;
-    margin: 65px 2px 2px 2px;
-    padding: 2px 2px 2px 2px;
+    align-items: center;
   }
 
-  .footer .info .basic>div {
-    flex: 1;
+  .footer .info .basic {
+    padding: 5px;
+    margin: 135px 5px 0px 5px;
+    width: 100%;
+    position: relative;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .footer .info .basic p {
-    margin: 0;
-    padding: 8px 8px 5px 1px;
-    font-size: 9px;
+  .basic div {
+    width: 100%;
   }
 
-  .footer .info .basic .Email {
-    width: 150px;
+  .info .basic p {
+    font-size: 10px;
+    margin: 2px;
+    padding: 2px;
+    text-align: left;
   }
 
   .footer .info .basic .Email p {
-    position: relative;
-    left: 15px;
+    width: 100%;
   }
 
-  .footer .info .basic .Tel {
-    width: 210px;
-  }
-
-  .footer .info .basic .Tel p {
-    position: relative;
-    left: 15px;
-  }
-
-  .footer .info .basic .ext p {
-    position: relative;
-    left: 15px;
-  }
-
-  .footer .info .basic .tol {
-    width: 130px;
-  }
-
-  .footer .info .basic .tol p {
-    position: relative;
-    left: 15px;
-  }
-
-  .footer .info .basic .Call {
-    width: 150px;
-  }
-
-  .footer .info .basic .Call p {
-    position: relative;
-    left: 15px;
-  }
-
-  .footer .info .connect {
-    left: 125px;
+  .connect {
     padding: 5px;
-    margin: 5px;
-    width: 70px;
+    margin: 5px 5px 35px 5px;
+    width: 100%;
     position: relative;
-    bottom: 70px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .footer .info .connect p {
-    font-size: 9px;
-    width: 120%;
+  .connect p {
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
   }
 
   .connect .soc {
-    display: flex;
-    flex-direction: row;
     position: relative;
-    left: 6px;
-    width: 80%;
+    left: 0px;
   }
 
   .connect .fb {
-    width: 70px;
+    width: 25px;
     height: auto;
   }
 
   .connect .ytb {
-    width: 60px;
+    width: 25px;
     height: auto;
   }
 
   .connect .lkdn {
-    width: 60px;
+    width: 25px;
     height: auto;
   }
 
-  .footer .foot .footer-links {
-    margin: auto;
+  .footer .footer-links {
+    margin: 45px 0px 1px 1px;
+    padding: 1px 0px 1px 1px;
     position: relative;
-    left: 15px;
-    bottom: 10px;
-    width: 100%;
-  }
-
-  .footer .footer-links li {
-    margin: 0;
-    padding: 1px;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer .footer-links a {
-    font-size: 8px;
-    margin: 0;
-    padding: 5px;
+    font-size: 10px;
   }
 
   .footer-links h4 {
-    font-size: 9px;
-    margin: 0;
-    padding: 0px;
+    font-size: 12px;
   }
 
   .footer-links .agent {
-    font-size: 7px;
-    padding: 5px;
-    margin-top: 7px;
-    border-radius: 5px;
-    width: 75%;
-    position: relative;
-    right: 5px;
-  }
-
-  .footer .copyright {
-    position: relative;
-    bottom: 5px;
-    left: 70px;
+    font-size: 9px;
+    padding: 6px;
     width: 65%;
-    padding: 0;
-    margin: 0;
   }
 
   .footer .copyright p {
-    font-size: 8px;
+    font-size: x-small;
   }
 
   .soc svg:hover {
@@ -3907,13 +3866,23 @@ p {
 @media (max-width:375px) and (min-width: 321px) {
 
   .header {
-    padding: 10px;
+    padding: 18px;
   }
 
   .nav ul {
     margin: 20px 20px 10px 61px;
     width: 70%;
     padding: 10px;
+  }
+
+  .navbar .logo {
+    position: relative;
+    right: 0px;
+    width: 45%;
+  }
+
+  .fa-bars {
+    font-size: 35px;
   }
 
   .body-container {
@@ -4614,7 +4583,7 @@ p {
     margin: auto;
     position: relative;
     right: 25px;
-    bottom: 50px;
+    bottom: 0px;
     width: 100%;
   }
 
@@ -4668,9 +4637,18 @@ p {
 @media (max-width:320px) and (min-width: 280px) {
 
   .header {
-    padding: 10px;
+    padding: 18px;
   }
 
+  .fa-bars {
+    font-size: 30px;
+  }
+
+  .navbar .logo {
+    position: relative;
+    right: 0px;
+    width: 45%;
+  }
 
   .nav ul {
     margin: 20px 10px 10px 62px;
@@ -5354,7 +5332,7 @@ p {
     margin: auto;
     position: relative;
     right: 35px;
-    bottom: 30px;
+    bottom: 0px;
     width: 100%;
   }
 
