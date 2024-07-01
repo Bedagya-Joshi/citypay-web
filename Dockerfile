@@ -3,7 +3,7 @@ FROM nginx:alpine
 
 # Copy the entire website directory to the container's /usr/share/nginx/html director
 
-COPY /Citypay /usr/share/nginx/html/
+COPY /CityPay /usr/share/nginx/html/
 
 # Expose port 80 for web traffic
 EXPOSE 80
