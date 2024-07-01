@@ -1562,6 +1562,21 @@ body {
 
 @media (max-width: 425px) and (min-width:376px) {
 
+    .header {
+        padding: 18px;
+    }
+
+    .fa-bars {
+        font-size: 35px;
+    }
+
+    .navbar .logo {
+        position: relative;
+        right: 0px;
+        width: 45%;
+    }
+
+
     .nav ul {
         margin: 20px 10px 10px 25px;
         width: 80%;
@@ -1944,6 +1959,21 @@ body {
 }
 
 @media (max-width: 375px) and (min-width:321px) {
+
+    .header {
+        padding: 18px;
+    }
+
+    .fa-bars {
+        font-size: 35px;
+    }
+
+    .navbar .logo {
+        position: relative;
+        right: 0px;
+        width: 45%;
+    }
+
 
     .nav ul {
         margin: 20px 20px 10px 61px;
@@ -2345,6 +2375,21 @@ body {
 }
 
 @media (max-width: 320px) and (min-width:280px) {
+
+    .header {
+        padding: 18px;
+    }
+
+    .fa-bars {
+        font-size: 35px;
+    }
+
+    .navbar .logo {
+        position: relative;
+        right: 0px;
+        width: 45%;
+    }
+
     .nav ul {
         margin: 20px 10px 10px 62px;
         width: 60%;

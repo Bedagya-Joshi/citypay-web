@@ -145,7 +145,7 @@ body {
 
 
 .curtain {
-    background: linear-gradient(#0e83e3, #65c7f7, #88e7f8);
+    background: linear-gradient(#e30e0e, #65c7f7, #88e7f8);
     height: 680px;
     width: 95%;
     border-bottom-right-radius: 60px;
@@ -1251,9 +1251,19 @@ body {
 
 @media (max-width:425px) and (min-width: 376px) {
     .header {
-        padding: 10px 10px 10px 10px;
-        width: 95%;
+        padding: 18px;
     }
+
+    .fa-bars {
+        font-size: 35px;
+    }
+
+    .navbar .logo {
+        position: relative;
+        right: 0px;
+        width: 45%;
+    }
+
 
     .nav ul {
         margin: 20px 10px 10px 25px;
@@ -1613,14 +1623,19 @@ body {
 
 @media (max-width:375px) and (min-width: 321px) {
     .header {
-        width: 98%;
-        padding: 10px 0px 1px 0px;
+        padding: 18px;
     }
 
-    .header .logo {
-        width: 50%;
-        margin: 5px;
+    .fa-bars {
+        font-size: 35px;
     }
+
+    .navbar .logo {
+        position: relative;
+        right: 0px;
+        width: 45%;
+    }
+
 
     .nav ul {
         margin: 20px 20px 10px 61px;
@@ -1978,14 +1993,19 @@ body {
 
 @media (max-width:320px) and (min-width: 280px) {
     .header {
-        padding: 10px 1px 2px 0px;
-        width: 100%;
+        padding: 18px;
     }
 
-    .header .logo {
-        width: 50%;
-        margin: 5px;
+    .fa-bars {
+        font-size: 35px;
     }
+
+    .navbar .logo {
+        position: relative;
+        right: 0px;
+        width: 45%;
+    }
+
 
     .header .menu-toggle {
         padding: 1px 15px 0px 0px;

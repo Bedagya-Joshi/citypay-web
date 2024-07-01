@@ -1,43 +1,61 @@
-const menuToggle = document.getElementById("menu-toggle");
-const nav = document.getElementById("nav");
-
-menuToggle.addEventListener("click", () => {
-  nav.classList.toggle("active");
-  menuToggle.classList.toggle("active");
-});
-
-function showDetail(role) {
-  const details = document.querySelectorAll('.detail-grid');
-  details.forEach(detail => {
-    detail.classList.remove('active');
-  });
-  document.getElementById(role).classList.add('active');
-}
-
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
-  const navvItems = document.querySelectorAll('.navv li');
-  const detailGrids = document.querySelectorAll('.detail-grid');
+  const menuToggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav");
 
-  navvItems.forEach(item => {
-    item.addEventListener('click', () => {
-      // Hide all detail grids
-      detailGrids.forEach(grid => grid.style.display = 'none');
-
-      // Get the role from the clicked nav item
-      const role = item.getAttribute('data-role');
-
-      // Show the corresponding detail grid
-      const detailGrid = document.getElementById(role);
-      if (detailGrid) {
-        detailGrid.style.display = 'block';
-      }
-
-      // Show the details section
-      document.querySelector('.details').style.display = 'block';
+  if (menuToggle && nav) {
+    menuToggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+      menuToggle.classList.toggle("active");
     });
-  });
-});
+  }
 
+  const popup = document.getElementById("popup");
+  const error = document.getElementById("error");
+
+  function openPopup() {
+    popup.classList.add("open-popup");
+  }
+
+  function closePopup() {
+    popup.classList.remove("open-popup");
+  }
+
+  function openError() {
+    error.classList.add("open-error");
+  }
+
+  function closeError() {
+    error.classList.remove("open-error");
+  }
+
+  document.getElementById("deletion_request_form").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Get form data
+    const formData = new FormData(this);
+
+    // Send AJAX request
+    fetch('./submit_deletion_request.php', {
+      method: 'POST',
+      body: formData
+    })
+      .then(response => response.json()) // Parse JSON response
+      .then(data => {
+        if (data.message === "Success") { // Check for successful response
+          openPopup(); // Open popup on success
+          this.reset(); // Clear form (optional)
+        } else if (data.message === "Error") { // Check for wrong response
+          openError(); // Open error on same credentials
+        }
+      })
+      .catch(error => {
+        console.error(error);
+        // Handle errors (optional - display error message)
+      });
+  });
+
+  window.openPopup = openPopup;
+  window.closePopup = closePopup;
+  window.openError = openError;
+  window.closeError = closeError;
+});

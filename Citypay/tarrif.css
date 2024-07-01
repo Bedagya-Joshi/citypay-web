@@ -779,6 +779,21 @@ th {
 
 @media (max-width:425px) and (min-width: 376px) {
 
+    .header {
+        padding: 18px;
+    }
+
+    .fa-bars {
+        font-size: 35px;
+    }
+
+    .navbar .logo {
+        position: relative;
+        right: 0px;
+        width: 45%;
+    }
+
+
     /* Footer */
 
     .footer {
@@ -915,6 +930,21 @@ th {
 
 @media (max-width:375px) and (min-width: 321px) {
 
+    .header {
+        padding: 18px;
+    }
+
+    .fa-bars {
+        font-size: 35px;
+    }
+
+    .navbar .logo {
+        position: relative;
+        right: 0px;
+        width: 45%;
+    }
+
+
     /* Footer */
 
     .footer {
@@ -1050,6 +1080,21 @@ th {
 }
 
 @media (max-width:320px) and (min-width: 280px) {
+
+    .header {
+        padding: 18px;
+    }
+
+    .fa-bars {
+        font-size: 35px;
+    }
+
+    .navbar .logo {
+        position: relative;
+        right: 0px;
+        width: 45%;
+    }
+
 
 
     /* Footer */

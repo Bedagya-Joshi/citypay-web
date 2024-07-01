@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="deletion-req.css">
+    <title>Data Deletion Request</title>
+    <link rel="icon" type="nabar-icon" href="./Assets/citypay-favicon.png">
+
+</head>
+
+<body>
+
+    <div class="deletion">
+        <div class="container">
+            <h2>Data Deletion Request</h2>
+            <p>Thank you for using our services. We respect your privacy and
+                are committed to protecting your personal data. Please fill
+                out the form below to request the deletion of your data from
+                our systems.</p>
+            <form id="deletion_request_form" action="submit_deletion_request.php" method="POST"
+                onsubmit="submitForm(event)">
+                <label for="full_name">Full Name:</label>
+                <input type="text" id="full_name" name="full_name" required />
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="phone_number">Mobile Number:</label>
+                <input type="text" id="phone_number" name="phone_number" pattern="[0-9]{10}" maxlength="10" required />
+
+                <label for="wallet_id">Wallet ID:</label>
+                <input type="text" id="wallet_id" name="wallet_id" required />
+
+                <label for="date_of_birth">Date Of Birth:</label>
+                <input type="date" id="date_of_birth" name="date_of_birth" required />
+                <br><br>
+
+                <label for="deletion_reason">Please specify the reason for
+                    deletion of
+                    your wallet account</label>
+                <textarea name="deletion_reason" id="deletion_reason" cols="35" rows="10"
+                    placeholder="Share your thoughts" style="max-width: 100%; max-height: fit-content;" required></textarea>
+
+                <label>
+                    <input type="checkbox" id="consent" name="consent" required>
+                    I confirm my consent for data deletion.
+                </label>
+
+                <button type="submit" id="submit" class="btn">Submit
+                    Request</button>
+
+                <div class="popup" id="popup">
+                    <img src="./Assets/check blue.png" alt="check" class="check">
+                    <h2>Thank You!</h2>
+                    <p>Your form has been successfully submitted.</p>
+                    <button type="button" id="cls" onclick="closePopup()">OK</button>
+                </div>
+
+                <div class="error" id="error">
+                    <img src="./Assets/error.png" alt="error" class="error">
+                    <p>The following Email Address or Phone Number is
+                        already submitted for deletion.</p>
+                    <button type="button" id="cls" onclick="closeError()">OK</button>
+                </div>
+            </form>
+
+            <div class="confirmation">
+                <p>Upon submitting this form, your request will be
+                    processed. You will receive a confirmation email once
+                    your data deletion request has been completed.</p>
+                <p>If you have any questions or concerns, please contact us
+                    at <a href="mailto:citywallet@ctxpress.com ">citywallet@ctxpress.com
+                    </a>.</p>
+            </div>
+            <script src='https://www.google.com/recaptcha/api.js'></script>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

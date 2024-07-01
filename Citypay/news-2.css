@@ -900,8 +900,19 @@ h1 {
 
 @media (max-width:425px) and (min-width: 376px) {
     .header {
-        padding: 10px;
+        padding: 18px;
     }
+
+    .fa-bars {
+        font-size: 35px;
+    }
+
+    .navbar .logo {
+        position: relative;
+        right: 0px;
+        width: 45%;
+    }
+
 
     .nav ul {
         margin: 20px 10px 10px 25px;
@@ -1103,6 +1114,20 @@ h1 {
         padding: 10px;
     }
 
+    .header {
+        padding: 18px;
+    }
+
+    .fa-bars {
+        font-size: 35px;
+    }
+
+    .navbar .logo {
+        position: relative;
+        right: 0px;
+        width: 45%;
+    }
+
 
     /* Footer */
     .footer {
@@ -1300,6 +1325,19 @@ h1 {
         padding: 10px;
     }
 
+    .header {
+        padding: 18px;
+    }
+
+    .fa-bars {
+        font-size: 35px;
+    }
+
+    .navbar .logo {
+        position: relative;
+        right: 0px;
+        width: 45%;
+    }
 
 
     /* Footer */
