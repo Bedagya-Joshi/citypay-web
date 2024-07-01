@@ -136,67 +136,51 @@
     }
 }
 
-.news {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    padding: 50px;
-    text-align: justify;
-    overflow: hidden;
+
+
+main {
+    padding: 20px;
 }
 
-h3 {
-    font-weight: 600;
+.tariff-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.newsimg {
+.tariff-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tariff {
+    margin-bottom: 40px;
+}
+
+.tariff h2 {
+    margin-bottom: 20px;
+}
+
+table {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    border-collapse: collapse;
 }
 
-.newsimg .newsim {
-    width: 80%;
+table, th, td {
+    border: 1px solid #ddd;
 }
 
-
-.points {
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    /* background: linear-gradient(#72c0ff, #65a1d3, #65c7f7, #7589e6); */
-    border-radius: 50px;
+th, td {
+    padding: 12px;
+    text-align: left;
 }
 
-h1 {
-    font-family: "PT Sans";
-    font-size: 45px;
-    color: #0d60b5;
-    margin-top: 30px;
+th {
+    background-color: #f2f2f2;
 }
 
-.news .back {
-    float: right;
-    border-radius: 20px;
-    background-color: #0d60b5;
-    padding: 15px 32px;
-    border: none;
-    font-size: 16px;
-    color: white;
-    cursor: pointer;
-    margin: 1px 20px 20px 1px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.back:hover {
-    background-color: white;
-    color: #0d60b5;
-}
 
 /* Footer styles */
 
@@ -427,11 +411,11 @@ h1 {
     color: rgb(0, 0, 0);
 }
 
+
+
 /* Media Query Responsiveness */
 
 @media (max-width:2560px) and (min-width: 1441px) {
-
-
 
     /* Footer */
     .footer {
@@ -521,18 +505,6 @@ h1 {
 
 
 @media (max-width:1440px) and (min-width: 1025px) {
-    .newsimg {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .newsimg .newsim {
-        width: 80%;
-    }
-
-
 
     /* Footer */
 
@@ -616,16 +588,7 @@ h1 {
 }
 
 @media (max-width:1024px) and (min-width: 769px) {
-    .newsimg {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .newsimg .newsim {
-        width: 80%;
-    }
 
     /* footer */
     .footer .row {
@@ -703,201 +666,119 @@ h1 {
     }
 }
 
-@media (max-width:768px) and (min-width: 426px) {
-    .newsimg {
-        width: 100%;
-        display: flex;
+@media (max-width: 768px) {
+    header {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
 
-    .newsimg .newsim {
-        width: 80%;
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    /* Footer */
-    .footer {
+    .tariff-container {
         padding: 10px;
-        align-items: center;
-        width: 100%;
     }
 
-    .footer .foot {
-        width: 100%;
-        position: relative;
-    }
-
-    .footer .row {
-        width: 100%;
-        position: relative;
-        right: 0px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 0px;
-
-    }
-
-    .footer .row .logoQR {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        align-items: center;
-        align-content: center;
-        top: 0;
-        left: 0;
-        margin: 30px 0px 0px 0px;
-    }
-
-    .footer .row .logoQR .citypaylog {
-        width: 50%;
-        position: relative;
-        right: 0px;
-        padding: 5px;
-        margin: 5px;
-    }
-
-    .footer .row .logoQR .QRcode {
-        width: 50%;
-        position: relative;
-        right: 0px;
-        padding: 5px;
-        margin: 2px 0px 0px 0px;
-    }
-
-    .footer .row .logoQR .dwbuttons {
-        position: relative;
-        right: 0px;
-        width: 50%;
-        align-items: center;
-        padding: 10px;
-        margin: 5px;
-    }
-
-    .footer .dwbuttons .tit h3 {
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .footer .dwbuttons .logimg {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        text-align: center;
-    }
-
-    .footer .dwbuttons .logimg .download-btn {
-        width: 80px;
-        height: auto;
-        margin: 0px 0px 0px 0px;
-    }
-
-    .footer .info {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        align-items: center;
-    }
-
-    .footer .info .basic {
-        padding: 5px;
-        margin: 95px 5px 0px 25px;
-        width: 70%;
-        position: relative;
-        right: 0;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .basic div {
-        width: 100%;
-    }
-
-    .info .basic p {
-        font-size: 11px;
-        margin: 2px;
-        padding: 2px;
-        text-align: left;
-    }
-
-    .footer .info .basic .Email p {
-        width: 100%;
-    }
-
-    .connect {
-        padding: 5px;
-        margin: 5px 5px 35px 5px;
-        width: 100%;
-        position: relative;
-        right: 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .connect p {
-        font-size: 12px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .connect .soc {
-        position: relative;
-        left: 0px;
-    }
-
-    .connect .fb {
-        width: 25px;
-        height: auto;
-    }
-
-    .connect .ytb {
-        width: 25px;
-        height: auto;
-    }
-
-    .connect .lkdn {
-        width: 25px;
-        height: auto;
-    }
-
-    .footer .footer-links {
-        margin: 45px 0px 1px 1px;
-        padding: 1px 0px 1px 1px;
-        position: relative;
-        top: 70px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer .footer-links a {
-        font-size: 10px;
-    }
-
-    .footer-links h4 {
-        font-size: 12px;
-    }
-
-    .footer-links .agent {
-        font-size: 6px;
-        padding: 5px;
-        width: 50%;
-    }
-
-    .footer .copyright p {
-        font-size: x-small;
+    th, td {
+        font-size: 14px;
+        padding: 8px;
     }
 }
 
 
+/* footer */
+.footer .row {
+    position: relative;
+    right: 50px;
+}
+
+.footer .logoQR .citypaylog {
+    width: 40%;
+}
+
+.footer .logoQR .QRcode {
+    width: 40%;
+}
+
+.download-btn {
+    position: relative;
+    right: 5px;
+    top: 5px;
+}
+
+.footer .info .basic {
+    position: relative;
+    left: 55px;
+}
+
+.footer .info p {
+    font-size: 11px;
+}
+
+.footer .footer-links {
+    margin: 40px 50px 1px 1px;
+    padding: 1px 20px 1px 1px;
+    position: relative;
+    right: 25px;
+}
+
+.footer .footer-links a {
+    font-size: x-small;
+}
+
+.footer-links h4 {
+    font-size: medium;
+}
+
+.footer-links .agent {
+    font-size: 9px;
+}
+
+.footer .logimg .download-btn {
+    width: 70px;
+    height: 25px;
+    margin: 2px 2px 2px 5px;
+}
+
+.connect {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    position: relative;
+    right: 40px;
+}
+
+.connect .soc {
+    position: relative;
+    left: 3px;
+}
+
+.connect .fb {
+    width: 20px;
+    height: auto;
+}
+
+.connect .ytb {
+    width: 20px;
+    height: auto;
+}
+
+.connect .lkdn {
+    width: 20px;
+    height: auto;
+}
+
+.footer .copyright p {
+    font-size: smaller;
+}
+
+
 @media (max-width:425px) and (min-width: 376px) {
+
     .header {
         padding: 18px;
     }
@@ -913,191 +794,132 @@ h1 {
     }
 
 
-    .nav ul {
-        margin: 20px 10px 10px 25px;
-        width: 80%;
-        padding: 10px;
-    }
-
-
     /* Footer */
-    .footer {
-        padding: 10px;
-        align-items: center;
-        width: 100%;
-    }
 
-    .footer .foot {
-        width: 100%;
-        position: relative;
+    .footer {
+        margin: 30px 0px 0px 1px;
+        padding: 10px 0px 5px 30px;
+        box-shadow: 0px -12px 25px rgba(228, 237, 250, 0.8);
     }
 
     .footer .row {
-        width: 100%;
         position: relative;
-        right: 0px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 0px;
-
+        right: 50px;
     }
 
-    .footer .row .logoQR {
-        display: flex;
-        flex-direction: column;
+    .footer .logoQR {
         position: relative;
-        align-items: center;
-        align-content: center;
-        top: 0;
-        left: 0;
-        margin: 90px 0px 0px 0px;
+        bottom: 100px;
     }
 
-    .footer .row .logoQR .citypaylog {
-        width: 40%;
-        position: relative;
-        right: 0px;
-        padding: 5px;
-        margin: 5px;
-    }
-
-    .footer .row .logoQR .QRcode {
-        width: 40%;
-        position: relative;
-        right: 0px;
-        padding: 5px;
-        margin: 2px 0px 0px 0px;
-    }
-
-    .footer .row .logoQR .dwbuttons {
-        position: relative;
-        right: 0px;
+    .footer .logoQR .dwbuttons {
         width: 80%;
-        align-items: center;
-        padding: 10px;
-        margin: 5px;
-    }
-
-    .footer .dwbuttons .tit h3 {
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .footer .dwbuttons .logimg {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        text-align: center;
-    }
-
-    .footer .dwbuttons .logimg .download-btn {
-        width: 70px;
-        height: 25px;
-        margin: 0px 0px 0px 5px;
-    }
-
-    .footer .info {
-        display: flex;
-        flex-direction: column;
         position: relative;
-        align-items: center;
+        right: 20px;
+        bottom: 40px;
+    }
+
+    .footer .logimg .download-btn {
+        width: 30px;
+        height: 10px;
+        margin: 2px 2px 2px 1px;
+        position: relative;
+    }
+
+    .footer .logoQR .dwbuttons h3 {
+        font-size: 7px;
+    }
+
+    .footer .logoQR .citypaylog {
+        width: 23%;
+        padding: 0;
+        position: relative;
+        bottom: 25px;
+    }
+
+    .footer .logoQR .QRcode {
+        width: 23%;
+        padding: 0;
+        position: relative;
+        bottom: 25px;
     }
 
     .footer .info .basic {
-        padding: 5px;
-        margin: 135px 5px 0px 5px;
-        width: 100%;
         position: relative;
-        right: 0;
-        left: 0;
+        left: 30px;
+        width: 40%;
+    }
+
+    .footer .info p {
+        font-size: 6px;
+    }
+
+    .footer .info .connect {
         display: flex;
         flex-direction: column;
-        align-items: center;
-    }
-
-    .basic div {
-        width: 100%;
-    }
-
-    .info .basic p {
-        font-size: 10px;
-        margin: 2px;
-        padding: 2px;
-        text-align: left;
-    }
-
-    .footer .info .basic .Email p {
-        width: 100%;
-    }
-
-    .connect {
         padding: 5px;
-        margin: 5px 5px 35px 5px;
-        width: 100%;
+        margin: 5px;
+        width: 110px;
         position: relative;
-        right: 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .connect p {
-        font-size: 12px;
-        width: 100%;
-        text-align: center;
+        right: 30px;
     }
 
     .connect .soc {
         position: relative;
-        left: 0px;
+        left: 3px;
     }
 
     .connect .fb {
-        width: 25px;
+        width: 10px;
         height: auto;
     }
 
     .connect .ytb {
-        width: 25px;
+        width: 10px;
         height: auto;
     }
 
     .connect .lkdn {
-        width: 25px;
+        width: 10px;
         height: auto;
     }
 
     .footer .footer-links {
-        margin: 45px 0px 1px 1px;
-        padding: 1px 0px 1px 1px;
+        margin: 7px 60px 1px 1px;
+        padding: 10px 20px 1px 1px;
         position: relative;
-        top: 70px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        right: 60px;
+        width: 75%;
+    }
+
+    .footer .footer-links li {
+        margin: 0;
     }
 
     .footer .footer-links a {
-        font-size: 10px;
+        font-size: 6px;
+        margin: 0;
     }
 
     .footer-links h4 {
-        font-size: 12px;
+        font-size: 8px;
+        margin: 0;
     }
 
     .footer-links .agent {
-        font-size: 8px;
-        padding: 6px;
+        font-size: 5px;
+        padding: 4px;
+        border-radius: 5px;
         width: 55%;
     }
 
+    .footer .copyright {
+        position: relative;
+        bottom: 30px;
+    }
+
     .footer .copyright p {
-        font-size: x-small;
+        font-size: 5px;
     }
 
     .soc svg:hover {
@@ -1107,11 +929,6 @@ h1 {
 }
 
 @media (max-width:375px) and (min-width: 321px) {
-    .nav ul {
-        margin: 20px 20px 10px 61px;
-        width: 70%;
-        padding: 10px;
-    }
 
     .header {
         padding: 18px;
@@ -1129,184 +946,131 @@ h1 {
 
 
     /* Footer */
-    .footer {
-        padding: 10px;
-        align-items: center;
-        width: 100%;
-    }
 
-    .footer .foot {
-        width: 100%;
-        position: relative;
+    .footer {
+        margin: 30px 0px 0px 1px;
+        padding: 10px 0px 0px 30px;
+        box-shadow: 0px -12px 25px rgba(228, 237, 250, 0.8);
+        overflow: hidden;
     }
 
     .footer .row {
-        width: 100%;
         position: relative;
-        right: 0px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 0px;
-
+        right: 50px;
     }
 
-    .footer .row .logoQR {
-        display: flex;
-        flex-direction: column;
+    .footer .logoQR {
         position: relative;
-        align-items: center;
-        align-content: center;
-        top: 0;
-        left: 0;
-        margin: 90px 0px 0px 0px;
+        bottom: 100px;
     }
 
-    .footer .row .logoQR .citypaylog {
-        width: 50%;
-        position: relative;
-        right: 0px;
-        padding: 5px;
-        margin: 5px;
-    }
-
-    .footer .row .logoQR .QRcode {
-        width: 50%;
-        position: relative;
-        right: 0px;
-        padding: 5px;
-        margin: 2px 0px 0px 0px;
-    }
-
-    .footer .row .logoQR .dwbuttons {
-        position: relative;
-        right: 0px;
+    .footer .logoQR .dwbuttons {
         width: 80%;
-        align-items: center;
-        padding: 10px;
-        margin: 5px;
-    }
-
-    .footer .dwbuttons .tit h3 {
-        font-size: 10px;
-        text-align: center;
-    }
-
-    .footer .dwbuttons .logimg {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        text-align: center;
-    }
-
-    .footer .dwbuttons .logimg .download-btn {
-        width: 65px;
-        height: 23px;
-        margin: 0px 0px 0px 0px;
-    }
-
-    .footer .info {
-        display: flex;
-        flex-direction: column;
         position: relative;
-        align-items: center;
+        right: 20px;
+        bottom: 40px;
+    }
+
+    .footer .logimg .download-btn {
+        width: 30px;
+        height: 10px;
+        margin: 2px 2px 2px 1px;
+        position: relative;
+    }
+
+    .footer .logoQR .dwbuttons h3 {
+        font-size: 7px;
+    }
+
+    .footer .logoQR .citypaylog {
+        width: 23%;
+        padding: 0;
+        position: relative;
+        bottom: 25px;
+    }
+
+    .footer .logoQR .QRcode {
+        width: 23%;
+        padding: 0;
+        position: relative;
+        bottom: 25px;
     }
 
     .footer .info .basic {
-        padding: 5px;
-        margin: 135px 5px 0px 5px;
-        width: 100%;
         position: relative;
-        right: 0;
-        left: 0;
+        left: 30px;
+        width: 40%;
+    }
+
+    .footer .info p {
+        font-size: 6px;
+    }
+
+    .footer .info .connect {
         display: flex;
         flex-direction: column;
-        align-items: center;
-    }
-
-    .basic div {
-        width: 100%;
-    }
-
-    .info .basic p {
-        font-size: 9px;
-        margin: 2px;
-        padding: 2px;
-        text-align: left;
-    }
-
-    .footer .info .basic .Email p {
-        width: 100%;
-    }
-
-    .connect {
         padding: 5px;
-        margin: 5px 5px 35px 5px;
-        width: 100%;
+        margin: 5px;
+        width: 110px;
         position: relative;
-        right: 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .connect p {
-        font-size: 11px;
-        width: 100%;
-        text-align: center;
+        right: 30px;
     }
 
     .connect .soc {
         position: relative;
-        left: 0px;
+        left: 3px;
     }
 
     .connect .fb {
-        width: 20px;
+        width: 10px;
         height: auto;
     }
 
     .connect .ytb {
-        width: 20px;
+        width: 10px;
         height: auto;
     }
 
     .connect .lkdn {
-        width: 20px;
+        width: 10px;
         height: auto;
     }
 
     .footer .footer-links {
-        margin: 45px 0px 1px 1px;
-        padding: 1px 0px 1px 1px;
+        margin: 7px 40px 1px 1px;
+        padding: 10px 20px 1px 1px;
         position: relative;
-        top: 70px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        right: 80px;
+        width: 75%;
+    }
+
+    .footer .footer-links li {
+        margin: 0;
     }
 
     .footer .footer-links a {
-        font-size: 8px;
+        font-size: 5px;
+        margin: 0;
     }
 
     .footer-links h4 {
-        font-size: 10px;
+        font-size: 7px;
+        margin: 0;
     }
 
     .footer-links .agent {
-        font-size: 7px;
-        padding: 6px;
-        width: 55%;
+        font-size: 5px;
+        padding: 4px;
         border-radius: 5px;
     }
 
+    .footer .copyright {
+        position: relative;
+        bottom: 30px;
+    }
+
     .footer .copyright p {
-        font-size: x-small;
+        font-size: 5px;
     }
 
     .soc svg:hover {
@@ -1317,13 +1081,6 @@ h1 {
 
 @media (max-width:320px) and (min-width: 280px) {
 
-
-    .nav ul {
-        margin: 20px 10px 10px 62px;
-        width: 60%;
-        padding: 10px;
-    }
-
     .header {
         padding: 18px;
     }
@@ -1339,186 +1096,234 @@ h1 {
     }
 
 
+
     /* Footer */
 
     .footer {
-        padding: 10px;
-        align-items: center;
         width: 100%;
-    }
-
-    .footer .foot {
-        width: 100%;
-        position: relative;
-    }
-
-    .footer .row {
-        width: 100%;
-        position: relative;
-        right: 0px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
+        margin: 0px;
         padding: 0px;
-
+        box-shadow: 0px -12px 25px rgba(72, 182, 255, 0.8);
     }
 
-    .footer .row .logoQR {
+    .footer .foot .row {
+        position: relative;
+        right: 0px;
+        max-width: 320px;
+    }
+
+    .footer .foot .row .logoQR {
+        position: relative;
         display: flex;
         flex-direction: column;
-        position: relative;
-        align-items: center;
-        align-content: center;
-        top: 0;
-        left: 0;
-        margin: 90px 0px 0px 0px;
+        margin: auto;
     }
 
-    .footer .row .logoQR .citypaylog {
-        width: 50%;
+    .footer .foot .logoQR {
+        margin: auto;
         position: relative;
-        right: 0px;
-        padding: 5px;
-        margin: 5px;
     }
 
-    .footer .row .logoQR .QRcode {
-        width: 50%;
-        position: relative;
-        right: 0px;
-        padding: 5px;
-        margin: 2px 0px 0px 0px;
-    }
-
-    .footer .row .logoQR .dwbuttons {
-        position: relative;
-        right: 0px;
-        width: 80%;
-        align-items: center;
-        padding: 10px;
-        margin: 5px;
-    }
-
-    .footer .dwbuttons .tit h3 {
+    .logoQR .dwbuttons h3 {
         font-size: 9px;
-        text-align: center;
+        width: 120%;
     }
 
-    .footer .dwbuttons .logimg {
+    .footer .foot .logoQR .citypaylog {
+        width: 55%;
+        padding: 0;
+        position: relative;
+        bottom: 40px;
+        right: 18px;
+    }
+
+    .footer .foot .logoQR .QRcode {
+        width: 55%;
+        padding: 0;
+        position: relative;
+        bottom: 45px;
+        right: 18px;
+    }
+
+    .logoQR .dwbuttons {
+        width: 100%;
+        position: relative;
+        right: 40px;
+        bottom: 40px;
+    }
+
+    .logoQR .dwbuttons .logimg {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        text-align: center;
     }
 
-    .footer .dwbuttons .logimg .download-btn {
-        width: 50px;
+    .logimg .playstore .download-btn {
+        width: 52px;
         height: 18px;
-        margin: 0px 0px 0px 2px;
+        margin: 7px 2px 2px 8px;
+        position: relative;
+    }
+
+    .logimg .appstore .download-btn {
+        width: 52px;
+        height: 18px;
+        margin: 7px 2px 2px 8px;
+        position: relative;
     }
 
     .footer .info {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        margin: auto;
+        width: 100%;
         position: relative;
-        align-items: center;
+        right: 70px;
     }
 
     .footer .info .basic {
-        padding: 5px;
-        margin: 135px 0px 0px 0px;
-        width: 110%;
-        position: relative;
-        right: 0;
-        left: 0;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        position: relative;
+        left: 80px;
+        bottom: 0px;
+        width: 50%;
+        margin: 55px 2px 2px 2px;
+        padding: 2px 2px 2px 2px;
     }
 
-    .basic div {
-        width: 100%;
+    .footer .info .basic>div {
+        flex: 1;
     }
 
-    .info .basic p {
-        font-size: 8px;
-        margin: 2px;
-        padding: 2px;
-        text-align: left;
+    .footer .info .basic p {
+        margin: 0;
+        padding: 8px 8px 5px 1px;
+        font-size: 7px;
+    }
+
+    .footer .info .basic .Email {
+        width: 150px;
     }
 
     .footer .info .basic .Email p {
-        width: 100%;
-    }
-
-    .connect {
-        padding: 5px;
-        margin: 5px 5px 35px 5px;
-        width: 100%;
         position: relative;
-        right: 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        left: 15px;
     }
 
-    .connect p {
-        font-size: 11px;
-        width: 100%;
-        text-align: center;
+    .footer .info .basic .Tel {
+        width: 170px;
+    }
+
+    .footer .info .basic .Tel p {
+        position: relative;
+        left: 15px;
+    }
+
+    .footer .info .basic .ext p {
+        position: relative;
+        left: 15px;
+    }
+
+    .footer .info .basic .tol {
+        width: 130px;
+    }
+
+    .footer .info .basic .tol p {
+        position: relative;
+        left: 15px;
+    }
+
+    .footer .info .basic .Call {
+        width: 120px;
+    }
+
+    .footer .info .basic .Call p {
+        position: relative;
+        left: 15px;
+    }
+
+    .footer .info .connect {
+        left: 105px;
+        padding: 5px;
+        margin: 5px;
+        width: 70px;
+        position: relative;
+        bottom: 70px;
+    }
+
+    .footer .info .connect p {
+        font-size: 9px;
+        width: 120%;
     }
 
     .connect .soc {
+        display: flex;
+        flex-direction: row;
         position: relative;
-        left: 0px;
+        left: 6px;
+        width: 80%;
     }
 
     .connect .fb {
-        width: 20px;
+        width: 70px;
         height: auto;
     }
 
     .connect .ytb {
-        width: 20px;
+        width: 60px;
         height: auto;
     }
 
     .connect .lkdn {
-        width: 20px;
+        width: 60px;
         height: auto;
     }
 
-    .footer .footer-links {
-        margin: 45px 0px 1px 1px;
-        padding: 1px 0px 1px 1px;
+    .footer .foot .footer-links {
+        margin: auto;
         position: relative;
-        top: 70px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        right: 35px;
+        bottom: 30px;
+        width: 100%;
+    }
+
+    .footer .footer-links li {
+        margin: 0;
+        padding: 1px;
     }
 
     .footer .footer-links a {
-        font-size: 7px;
+        font-size: 6px;
+        margin: 0;
+        padding: 5px;
     }
 
     .footer-links h4 {
-        font-size: 9px;
+        font-size: 7px;
+        margin: 0;
+        padding: 0px;
     }
 
     .footer-links .agent {
         font-size: 6px;
         padding: 5px;
-        width: 65%;
+        margin-top: 7px;
         border-radius: 5px;
+        width: 75%;
+        position: relative;
+        right: 5px;
+    }
+
+    .footer .copyright {
+        position: relative;
+        bottom: 5px;
+        left: 55px;
+        width: 65%;
+        padding: 0;
+        margin: 0;
     }
 
     .footer .copyright p {
-        font-size: x-small;
+        font-size: 7px;
     }
 
     .soc svg:hover {
