@@ -1,0 +1,2366 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: "PT Sans";
+}
+
+/* Navbar Styles */
+.navbar {
+    z-index: 10;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.logo {
+    width: 90px;
+    height: auto;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-bars {
+    font-size: 40px;
+    color: #1472cf;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-toggle:hover .fa-bars {
+    transform: rotate(90deg);
+}
+
+.nav {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.nav.active {
+    display: block;
+    opacity: 1;
+    position: absolute;
+    right: 20px;
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    top: 60px;
+    animation: dropdown 0.5s ease-in-out forwards;
+}
+
+@keyframes dropdown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.underline {
+    background-color: white;
+    height: 1px;
+    width: 80%;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    background: linear-gradient(135deg, #1472cf, #65c7f7);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    width: 45%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin: 20px 0px 10px 170px;
+    padding: 10px;
+    z-index: 1;
+    top: 0;
+    position: sticky;
+    border-radius: 20px;
+}
+
+.nav li {
+    padding: 10px;
+    text-align: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav a:hover {
+    color: #ffdd57;
+    /* Hover color */
+}
+
+/* Additional Menu Toggle Animation */
+@keyframes menuToggleAnimation {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+
+.body-container {
+    padding: 5px;
+    overflow: hidden;
+}
+
+
+.curtain {
+    background: linear-gradient(#0e83e3, #65c7f7, #88e7f8);
+    height: 680px;
+    width: 95%;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+}
+
+.curtain h1 {
+    color: #FFFFFF;
+    font-size: 110px;
+}
+
+.curtain p {
+    color: #FFFFFF;
+    width: 30%;
+    font-size: 20px;
+}
+
+.curtain .aboutimg {
+    float: right;
+}
+
+.aboutimg .about-img {
+    position: relative;
+    bottom: 450px;
+    margin: 0px 380px 10px 0px;
+}
+
+.Second-Container h1 {
+    text-align: center;
+    font-weight: 2000;
+}
+
+.Second-Container .grids {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grids h3 {
+    text-align: center;
+}
+
+.grids p {
+    text-align: justify;
+}
+
+.grid-1, .grid-2, .grid-3 {
+    width: 350px;
+    height: 300px;
+    background: linear-gradient(#0e83e3, #65c7f7, #88e7f8);
+    border-radius: 25px;
+    padding: 20px 20px 20px 25px;
+    margin: 5px 5px 15px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    /* Center the child elements vertically */
+}
+
+.grid-1:hover, .grid-2:hover, .grid-3:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(#0e83e3, #1868aa, #65c7f7);
+    /* Slight change in gradient */
+}
+
+.icon1, .icon2, .icon3 {
+    margin-bottom: 5px;
+}
+
+.base {
+    background: linear-gradient(#0e83e3, #65c7f7, #88e7f8);
+    padding: 10px 10px 10px 10px;
+    margin-top: auto;
+}
+
+.base h1 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.ctxlogo {
+    margin: 10px 10px 20px 70px;
+}
+
+.paragraph {
+    margin: 80px 150px 40px 0px;
+    width: 35%;
+    float: right;
+}
+
+.paragraph p {
+    margin-bottom: 0px;
+    text-align: justify;
+    font-weight: bold;
+}
+
+/* Footer styles */
+
+.footer {
+    background: rgb(255, 255, 255);
+    /* background: linear-gradient(0deg, rgb(152, 170, 230) 0%, rgb(241, 242, 245) 55%); */
+    box-shadow: 0px -12px 25px rgba(228, 237, 250, 0.8);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    margin-top: auto;
+}
+
+.footer .foot .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-gap: 10px; */
+}
+
+.logoQR {
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+
+.logoQR .citypaylog {
+    position: relative;
+    width: 18%;
+    height: auto;
+    margin: 22px 2px 2px 2px;
+    padding: 25px 5px 5px 15px;
+}
+
+.logoQR .QRcode {
+    position: relative;
+    width: 18%;
+    height: auto;
+    margin: 25px 2px 2px 2px;
+    padding: 25px 5px 5px 15px;
+}
+
+.dwbuttons {
+    margin: 5px 2px 2px 10px;
+    padding: 7px 2px 2px 5px;
+}
+
+.logimg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.dwbuttons .logimg .download-btn {
+    width: 100px;
+    height: 35px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+    align-content: center;
+}
+
+.dwbuttons .tit {
+    width: 100%;
+}
+
+.dwbuttons .tit h3 {
+    font-size: medium;
+    font-weight: bold;
+    width: 100%;
+}
+
+.playstore, .appstore {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding: 0;
+    margin: 0;
+}
+
+.download-btn {
+    width: 200px;
+    height: auto;
+}
+
+.playstore {
+    width: 100%;
+    height: 100%;
+}
+
+.appstore {
+    width: 100%;
+    height: 100%;
+}
+
+.playstore:hover,
+.appstore:hover {
+    transform: scale(1.1);
+    /* Increase size on hover */
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    align-items: center;
+    position: relative;
+    right: 0px;
+}
+
+.info .basic {
+    margin: 4px 0px 4px 0px;
+    padding: 4px 10px 4px 0px;
+    width: 100%;
+    position: relative;
+    right: 80px;
+}
+
+.info .basic p {
+    font-weight: normal;
+    padding-top: 10px;
+    font-size: smaller;
+}
+
+.info .basic .connect p {
+    font-weight: bold;
+    color: #0D60B5;
+    font-size: large;
+}
+
+.connect {
+    width: 100%;
+    margin: 10px 10px 10px 30px;
+    padding: 10px 50px 50px 30px;
+}
+
+.connect p {
+    font-weight: bolder;
+}
+
+.connect .fb {
+    width: 25px;
+    height: auto;
+}
+
+.connect .ytb {
+    width: 25px;
+    height: auto;
+}
+
+.connect .lkdn {
+    width: 25px;
+    height: auto;
+}
+
+.soc svg:hover {
+    transform: scale(1.2);
+    /* Increase the size of the icon on hover */
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4px 4px 4px 4px;
+    padding: 4px 4px 4px 4px;
+    width: 70%;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: normal;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ff6b6b;
+}
+
+/* Become Agent Button */
+.agent {
+    float: right;
+    border-radius: 10px;
+    background-color: #0d60b5;
+    padding: 10px 10px;
+    border: none;
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+    margin: 1px 20px 20px 30px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.agent:hover {
+    background-color: white;
+    color: #0d60b5;
+}
+
+.soc svg:hover {
+    transform: scale(1.2);
+    /* Increase the size of the icon on hover */
+}
+
+.copyright {
+    align-items: center;
+    margin: 10px 1px 1px 1px;
+    padding: 30px 1px 1px 1px;
+}
+
+.copyright p {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+
+/* Media Query Responsiveness */
+
+@media (max-width:2560px) and (min-width: 1441px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0px 10px 10px;
+        width: 98%;
+    }
+
+    .nav ul {
+        margin: 20px 10px 10px 210px;
+        width: 40%;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 90px;
+        height: auto;
+    }
+
+    .menu-toggle {
+        flex-direction: column;
+        cursor: pointer;
+        height: 20px;
+    }
+
+    .body-container {
+        padding: 0;
+    }
+
+    .curtain {
+
+        height: 680px;
+        width: 100%;
+        border-bottom-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .curtain .aboutimg {
+        float: right;
+    }
+
+    .aboutimg .about-img {
+        position: relative;
+        bottom: 450px;
+        margin: 0px 380px 10px 0px;
+    }
+
+    .Second-Container h1 {
+        text-align: center;
+        font-weight: 2000;
+    }
+
+    .Second-Container .grids {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .grids h3 {
+        text-align: center;
+    }
+
+    .grids p {
+        text-align: justify;
+    }
+
+    .grid-1, .grid-2, .grid-3 {
+        width: 350px;
+        height: 300px;
+        border-radius: 25px;
+        padding: 20px 20px 20px 25px;
+        margin: 5px 5px 15px 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon1, .icon2, .icon3 {
+        margin-bottom: 5px;
+    }
+
+    .base {
+        padding: 10px 10px 10px 10px;
+        margin-top: auto;
+    }
+
+    .base h1 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .ctxlogo {
+        margin: 10px 10px 20px 70px;
+    }
+
+    .paragraph {
+        margin: 80px 150px 40px 0px;
+        width: 35%;
+        float: right;
+    }
+
+    .paragraph p {
+        margin-bottom: 0px;
+        text-align: justify;
+        font-weight: bold;
+    }
+
+    /* Footer styles */
+
+    .footer {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 10px 10px 10px;
+        margin-top: auto;
+    }
+
+    .footer .foot .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .logoQR {
+        position: relative;
+        top: 40px;
+        left: 40px;
+    }
+
+    .logoQR .citypaylog {
+        position: relative;
+        width: 18%;
+        height: auto;
+        margin: 22px 2px 2px 2px;
+        padding: 25px 5px 5px 15px;
+    }
+
+    .logoQR .QRcode {
+        position: relative;
+        width: 18%;
+        height: auto;
+        margin: 25px 2px 2px 2px;
+        padding: 25px 5px 5px 15px;
+    }
+
+    .dwbuttons {
+        margin: 5px 2px 2px 10px;
+        padding: 7px 2px 2px 5px;
+    }
+
+    .logimg {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .dwbuttons .logimg .download-btn {
+        width: 100px;
+        height: 35px;
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+        align-items: center;
+        align-content: center;
+    }
+
+    .dwbuttons .tit {
+        width: 100%;
+    }
+
+    .dwbuttons .tit h3 {
+        font-size: medium;
+        font-weight: bold;
+        width: 100%;
+    }
+
+    .playstore, .appstore {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        padding: 0;
+        margin: 0;
+    }
+
+    .download-btn {
+        width: 200px;
+        height: auto;
+    }
+
+    .playstore {
+        width: 100%;
+        height: 100%;
+    }
+
+    .appstore {
+        width: 100%;
+        height: 100%;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: row;
+        gap: 70px;
+        align-items: center;
+        position: relative;
+        right: 0px;
+    }
+
+    .info .basic {
+        margin: 4px 0px 4px 0px;
+        padding: 4px 10px 4px 0px;
+        width: 100%;
+        position: relative;
+        right: 80px;
+    }
+
+    .info .basic p {
+        font-weight: normal;
+        padding-top: 10px;
+        font-size: smaller;
+    }
+
+    .connect {
+        width: 100%;
+        margin: 10px 10px 10px 30px;
+        padding: 10px 50px 50px 30px;
+    }
+
+    .connect p {
+        font-weight: bolder;
+    }
+
+    .connect .fb {
+        width: 25px;
+        height: auto;
+    }
+
+    .connect .ytb {
+        width: 25px;
+        height: auto;
+    }
+
+    .connect .lkdn {
+        width: 25px;
+        height: auto;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 4px 4px 4px 4px;
+        padding: 4px 4px 4px 4px;
+        width: 70%;
+    }
+
+
+
+    /* Become Agent Button */
+    .agent {
+        float: right;
+        border-radius: 10px;
+        padding: 10px 10px;
+        cursor: pointer;
+        margin: 1px 20px 20px 30px;
+    }
+
+
+    .copyright {
+        align-items: center;
+        margin: 10px 1px 1px 1px;
+        padding: 30px 1px 1px 1px;
+    }
+
+    .copyright p {
+        text-align: center;
+        color: white;
+    }
+
+}
+
+
+@media (max-width:1440px) and (min-width: 1025px) {
+
+    .header {
+        width: 98%;
+        padding: 10px 5px 0px 5px;
+    }
+
+    .body-container {
+        padding: 0;
+    }
+
+    .First-container .curtain .content {
+        width: 80%;
+        position: relative;
+        right: 0px;
+        padding: 10px;
+    }
+
+    .curtain {
+        width: 100%;
+        padding: 13px;
+    }
+
+    .curtain .content p {
+        text-align: justify;
+    }
+
+    .curtain .aboutimg {
+        float: right;
+        position: relative;
+        bottom: 530px;
+
+    }
+
+    .aboutimg .about-img {
+        position: relative;
+        bottom: 0px;
+        margin: 0px 360px 10px 0px;
+    }
+
+    .Second-Container .grids {
+        margin: 1px 20px 1px 1px;
+    }
+
+
+    .Second-Container .grid-1, .grid-2, .grid-3 {
+        width: 280px;
+        height: 330px;
+        padding: 20px 20px 20px 25px;
+        margin: 5px 5px 15px 100px;
+    }
+
+    .base {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer {
+        width: 100%;
+    }
+
+    .footer .logoQR .citypaylog {
+        width: 22%;
+    }
+
+    .footer .logoQR .QRcode {
+        width: 22%;
+    }
+
+    .footer .info .basic {
+        position: relative;
+        left: 0px;
+        margin: 20px 1px 1px 1px;
+    }
+
+    .footer .info p {
+        font-size: 16px;
+    }
+
+    .footer .footer-links {
+        margin: 40px 5px 1px 80px;
+        padding: 1px 20px 1px 1px;
+        width: 65%;
+    }
+
+    .footer .footer-links a {
+        font-size: medium;
+    }
+
+    .footer-links h4 {
+        font-size: large;
+    }
+
+    .footer-links .agent {
+        font-size: 16px;
+    }
+
+    .footer .logimg .download-btn {
+        width: 90px;
+        height: 30px;
+        margin: 2px 2px 2px 5px;
+    }
+
+    .connect {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
+        width: 250px;
+    }
+
+    .connect .soc {
+        position: relative;
+        left: 20px;
+    }
+
+    .connect .fb {
+        width: 22px;
+        height: auto;
+    }
+
+    .connect .ytb {
+        width: 22px;
+        height: auto;
+    }
+
+    .connect .lkdn {
+        width: 22px;
+        height: auto;
+    }
+
+}
+
+@media (max-width:1024px) and (min-width: 769px) {
+    .header {
+        width: 95%;
+    }
+
+    .nav ul {
+        margin: 20px 10px 10px 214px;
+        width: 40%;
+        padding: 10px;
+    }
+
+    .body-container {
+        padding: 0;
+    }
+
+    .First-container .curtain .content {
+        width: 100%;
+        position: relative;
+        right: 0px;
+        padding: 10px;
+    }
+
+    .content p {
+        width: 40%;
+        text-align: justify;
+    }
+
+    .curtain {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .curtain .aboutimg {
+        float: right;
+        position: relative;
+        bottom: 480px;
+
+    }
+
+    .aboutimg .about-img {
+        position: relative;
+        bottom: 50px;
+        margin: 0px 60px 10px 80px;
+    }
+
+    .Second-Container .grids {
+        margin: 1px 20px 1px 1px;
+    }
+
+    .grids p {
+        text-align: justify;
+        font-size: 14px;
+    }
+
+
+    .Second-Container .grid-1, .grid-2, .grid-3 {
+        width: 230px;
+        height: 370px;
+        padding: 20px 15px 20px 25px;
+        margin: 5px 5px 15px 60px;
+    }
+
+    .base {
+        width: 100%;
+    }
+
+
+    .base h1 {
+        margin-bottom: 10px;
+        text-align: center;
+
+        /* Add some space below the heading */
+    }
+
+    .ctxlogo {
+        margin: 10px 10px 20px 10px;
+        /* Add some space below the logo */
+    }
+
+    .base .paragraph {
+        margin: 40px 50px 40px 65px;
+        width: 35%;
+        float: right;
+    }
+
+    .paragraph p {
+        margin-bottom: 0px;
+        text-align: justify;
+        font-weight: bold;
+        /* Add some space below the paragraph */
+    }
+
+    /* footer */
+    .footer .row {
+        position: relative;
+        right: 50px;
+    }
+
+    .footer .logoQR .citypaylog {
+        width: 30%;
+    }
+
+    .footer .logoQR .QRcode {
+        width: 30%;
+    }
+
+    .footer .info .basic {
+        position: relative;
+        left: 50px;
+        margin: 30px 1px 1px 1px;
+    }
+
+    .footer .info p {
+        font-size: 14px;
+    }
+
+    .footer .footer-links {
+        margin: 50px 50px 1px 40px;
+        padding: 1px 20px 1px 1px;
+    }
+
+    .footer .footer-links a {
+        font-size: small;
+    }
+
+    .footer-links h4 {
+        font-size: medium;
+    }
+
+    .footer .logimg .download-btn {
+        width: 70px;
+        height: 25px;
+        margin: 2px 2px 2px 5px;
+    }
+
+    .connect {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 30px 10px 10px 40px;
+        width: 200px;
+    }
+
+    .connect .soc {
+        position: relative;
+        left: 14px;
+    }
+
+    .connect .fb {
+        width: 20px;
+        height: auto;
+    }
+
+    .connect .ytb {
+        width: 20px;
+        height: auto;
+    }
+
+    .connect .lkdn {
+        width: 20px;
+        height: auto;
+    }
+
+    .footer .copyright p {
+        font-size: smaller;
+    }
+}
+
+@media (max-width:768px) and (min-width: 426px) {
+    .header {
+        width: 95%;
+        padding: 10px 5px 1px 5px;
+    }
+
+    .nav ul {
+        margin: 20px 0px 10px 190px;
+        padding: 10px;
+    }
+
+    .body-container {
+        padding: 0;
+    }
+
+    .First-container .curtain .content {
+        width: 100%;
+        position: relative;
+        right: 0px;
+        padding: 10px;
+    }
+
+    .content p {
+        width: 42%;
+        text-align: justify;
+        font-size: large;
+    }
+
+    .curtain {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .curtain .aboutimg {
+        float: right;
+        position: relative;
+        bottom: 390px;
+        width: 55%;
+        height: 50%;
+
+    }
+
+    .aboutimg .about-img {
+        position: relative;
+        bottom: 50px;
+        margin: 0px 60px 10px 30px;
+        width: 85%;
+    }
+
+    .Second-Container .grids {
+        margin: 1px 20px 1px 1px;
+    }
+
+    .grids p {
+        text-align: justify;
+        font-size: 10px;
+        grid-gap: 0px;
+    }
+
+    .Second-Container .grid-1, .grid-2, .grid-3 {
+        width: 170px;
+        height: 280px;
+        padding: 10px 10px 20px 10px;
+        margin: 5px 5px 15px 55px;
+    }
+
+    .icon1, .icon2, .icon3 {
+        margin: 5px 2px 5px 5px;
+        padding: 2px 2px 2px 2px;
+        width: 70%;
+    }
+
+    .base {
+        width: 100%;
+    }
+
+
+    .base h1 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .ctxlogo {
+        margin: 10px 10px 20px 10px;
+    }
+
+    .Ctxpress-Logo {
+        width: 40%;
+    }
+
+    .base .paragraph {
+        margin: 10px 50px 40px 85px;
+        width: 35%;
+        float: right;
+    }
+
+    .paragraph p {
+        margin-bottom: 0px;
+        text-align: justify;
+        font-weight: bold;
+        font-size: small;
+    }
+
+    /* footer */
+    .footer .row {
+        position: relative;
+        right: 50px;
+    }
+
+    .footer .logoQR .citypaylog {
+        width: 30%;
+    }
+
+    .footer .logoQR .QRcode {
+        width: 30%;
+    }
+
+    .footer .info .basic {
+        position: relative;
+        left: 50px;
+    }
+
+    .footer .info p {
+        font-size: 11px;
+    }
+
+    .footer .footer-links {
+        margin: 20px 10px 1px 1px;
+        padding: 1px 10px 1px 1px;
+        position: relative;
+        left: 30px;
+    }
+
+    .footer .footer-links a {
+        font-size: x-small;
+    }
+
+    .footer-links h4 {
+        font-size: medium;
+    }
+
+    .agent {
+        font-size: 10px;
+    }
+
+    .footer .logimg .download-btn {
+        width: 70px;
+        height: 25px;
+        margin: 2px 2px 2px 5px;
+    }
+
+    .connect {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
+        width: 200px;
+    }
+
+    .connect .soc {
+        position: relative;
+        left: 3px;
+    }
+
+    .connect .fb {
+        width: 20px;
+        height: auto;
+    }
+
+    .connect .ytb {
+        width: 20px;
+        height: auto;
+    }
+
+    .connect .lkdn {
+        width: 20px;
+        height: auto;
+    }
+
+    .footer .copyright p {
+        font-size: smaller;
+    }
+
+}
+
+@media (max-width:425px) and (min-width: 376px) {
+    .header {
+        padding: 18px;
+    }
+
+    .fa-bars {
+        font-size: 35px;
+    }
+
+    .navbar .logo {
+        position: relative;
+        right: 0px;
+        width: 45%;
+    }
+
+
+    .nav ul {
+        margin: 20px 10px 10px 25px;
+        width: 80%;
+        padding: 10px;
+    }
+
+    .body-container {
+        padding: 0;
+    }
+
+    .curtain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .First-container .curtain .content {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content h1 {
+        margin: 20px 5px 20px 5px;
+    }
+
+    .content p {
+        width: 85%;
+        text-align: justify;
+        font-size: medium;
+    }
+
+    .curtain {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .curtain .aboutimg {
+
+        position: relative;
+        bottom: 0px;
+        width: 75%;
+        height: 50%;
+
+    }
+
+    .aboutimg .about-img {
+        position: relative;
+        bottom: 5px;
+        margin: 0px;
+        width: 80%;
+    }
+
+    .Second-Container .grids {
+        margin: 1px 1px 1px 1px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .grids p {
+        text-align: justify;
+        font-size: 10px;
+        grid-gap: 0px;
+    }
+
+    .Second-Container .grid-1, .grid-2, .grid-3 {
+        width: 170px;
+        height: 280px;
+        padding: 20px 20px 20px 20px;
+        margin: 15px 15px 15px 15px;
+        position: relative;
+        left: 100px;
+    }
+
+    .icon1, .icon2, .icon3 {
+        margin: 5px 2px 5px 10px;
+        padding: 2px 2px 2px 2px;
+        width: 70%;
+    }
+
+    .base {
+        width: 100%;
+    }
+
+
+    .base h1 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .ctxlogo {
+        margin: 10px 10px 20px 0px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Ctxpress-Logo {
+        width: 45%;
+    }
+
+    .base .paragraph {
+        margin: 0px 0px 0px 35px;
+        width: 40%;
+        float: right;
+        position: relative;
+        bottom: 5px;
+    }
+
+    .paragraph p {
+        margin-bottom: 0px;
+        text-align: justify;
+        font-weight: bold;
+        font-size: xx-small;
+    }
+
+    /* Footer */
+
+    .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+        padding: 5px;
+        box-shadow: 0px -12px 25px rgba(72, 182, 255, 0.8);
+
+    }
+
+    .footer .foot {
+        display: grid;
+    }
+
+    .footer .foot .row {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer .foot .row .logoQR {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .footer .foot .logoQR {
+        margin: auto;
+        position: relative;
+    }
+
+    .logoQR .dwbuttons h3 {
+        font-size: 9px;
+        width: 120%;
+    }
+
+    .footer .foot .logoQR .citypaylog {
+        width: 65%;
+        padding: 0;
+        position: relative;
+        bottom: 50px;
+        right: 18px;
+    }
+
+    .footer .foot .logoQR .QRcode {
+        width: 65%;
+        padding: 0;
+        position: relative;
+        bottom: 55px;
+        right: 18px;
+    }
+
+    .logoQR .dwbuttons {
+        width: 100%;
+        position: relative;
+        right: 40px;
+        bottom: 40px;
+    }
+
+    .logoQR .dwbuttons .logimg {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logimg .playstore .download-btn {
+        width: 52px;
+        height: 18px;
+        margin: 7px 2px 2px 8px;
+        position: relative;
+    }
+
+    .logimg .appstore .download-btn {
+        width: 52px;
+        height: 18px;
+        margin: 7px 2px 2px 8px;
+        position: relative;
+    }
+
+    .footer .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+
+    }
+
+    .footer .info .basic {
+        padding: 5px;
+        margin: 30px 0px 0px 0px;
+        left: 0;
+        width: 85%;
+        position: relative;
+    }
+
+    .footer .info .basic p {
+        margin: 0;
+        padding: 8px 8px 5px 1px;
+        font-size: 10px;
+    }
+
+    .footer .info .basic .Email {
+        width: 150px;
+    }
+
+    .footer .info .basic .Email p {
+        position: relative;
+        left: 15px;
+    }
+
+    .footer .info .basic .Tel {
+        width: 170px;
+    }
+
+    .footer .info .basic .Tel p {
+        position: relative;
+        left: 15px;
+    }
+
+    .footer .info .basic .ext p {
+        position: relative;
+        left: 15px;
+    }
+
+    .footer .info .basic .tol {
+        width: 150px;
+    }
+
+    .footer .info .basic .tol p {
+        position: relative;
+        left: 15px;
+    }
+
+    .footer .info .basic .Call {
+        width: 150px;
+    }
+
+    .footer .info .basic .Call p {
+        position: relative;
+        left: 15px;
+    }
+
+    .footer .info .connect {
+        padding: 5px;
+        margin: 5px;
+        width: 70px;
+        position: relative;
+        bottom: 70px;
+    }
+
+    .footer .info .connect p {
+        font-size: 9px;
+        width: 120%;
+    }
+
+    .connect .soc {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: 6px;
+        width: 80%;
+    }
+
+    .connect .fb {
+        width: 70px;
+        height: auto;
+    }
+
+    .connect .ytb {
+        width: 60px;
+        height: auto;
+    }
+
+    .connect .lkdn {
+        width: 60px;
+        height: auto;
+    }
+
+    .footer .foot .footer-links {
+        margin: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        bottom: 20px;
+        right: 0;
+        float: right;
+        width: 100%;
+    }
+
+    .footer .footer-links li {
+        margin: 0;
+        padding: 1px;
+    }
+
+    .footer .footer-links a {
+        font-size: 9px;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .footer-links h4 {
+        font-size: 10px;
+        margin: 0;
+        padding: 0px;
+    }
+
+    .footer-links .agent {
+        font-size: 8px;
+        padding: 5px;
+        margin-top: 7px;
+        border-radius: 5px;
+        width: 80%;
+        position: relative;
+    }
+
+    .footer .copyright {
+        position: relative;
+        bottom: 5px;
+        left: 70px;
+        width: 65%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer .copyright p {
+        font-size: 9px;
+    }
+
+    .soc svg:hover {
+        transform: none;
+        /* Remove the hover effect on mobile devices */
+    }
+
+}
+
+@media (max-width:375px) and (min-width: 321px) {
+    .header {
+        padding: 18px;
+    }
+
+    .fa-bars {
+        font-size: 35px;
+    }
+
+    .navbar .logo {
+        position: relative;
+        right: 0px;
+        width: 45%;
+    }
+
+
+    .nav ul {
+        margin: 20px 20px 10px 61px;
+        width: 70%;
+        padding: 10px;
+    }
+
+    .First-container .curtain .content {
+        width: 100%;
+        position: relative;
+        right: 0px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content h1 {
+        margin: 20px 20px 40px 100px;
+        font-size: 50px;
+    }
+
+    .content p {
+        width: 95%;
+        margin: 20px 10px 40px 10px;
+        text-align: justify;
+        font-size: small;
+    }
+
+    .body-container {
+        padding: 0;
+    }
+
+    .curtain {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .curtain .aboutimg {
+
+        position: relative;
+        bottom: 65px;
+        width: 100%;
+    }
+
+    .aboutimg .about-img {
+        position: relative;
+        bottom: 0px;
+        margin: 30px;
+        width: 80%;
+    }
+
+    .Second-Container .grids {
+        margin: 1px 1px 1px 1px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .grids p {
+        text-align: justify;
+        font-size: 10px;
+        grid-gap: 0px;
+    }
+
+    .Second-Container .grid-1, .grid-2, .grid-3 {
+        width: 170px;
+        height: 280px;
+        padding: 20px 20px 20px 20px;
+        margin: 15px 15px 15px 15px;
+        position: relative;
+        left: 70px;
+    }
+
+    .icon1, .icon2, .icon3 {
+        margin: 5px 2px 5px 10px;
+        padding: 2px 2px 2px 2px;
+        width: 70%;
+    }
+
+    .base {
+        width: 100%;
+        padding: 1px 1px 1px 1px;
+    }
+
+    .base h1 {
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .ctxlogo {
+        margin: 15px 10px 20px 10px;
+    }
+
+    .Ctxpress-Logo {
+        width: 45%;
+    }
+
+    .base .paragraph {
+        margin: 0px 0px 0px 50px;
+        width: 45%;
+        float: right;
+        position: relative;
+        bottom: 85px;
+    }
+
+    .paragraph p {
+        margin-bottom: 0px;
+        text-align: justify;
+        font-weight: bold;
+        font-size: 7px;
+    }
+
+    /* Footer */
+
+    .footer {
+        width: 100%;
+        margin: 0px;
+        padding: 5px 1px 5px 1px;
+    }
+
+    .footer .foot {
+        display: grid;
+    }
+
+    .footer .foot .row {
+        position: relative;
+        right: 0px;
+        width: 70%;
+    }
+
+    .footer .foot .row .logoQR {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .footer .foot .logoQR {
+        margin: auto;
+        position: relative;
+    }
+
+    .logoQR .dwbuttons h3 {
+        font-size: 9px;
+        width: 120%;
+    }
+
+    .footer .foot .logoQR .citypaylog {
+        width: 70%;
+        padding: 0;
+        position: relative;
+        bottom: 50px;
+        right: 25px;
+    }
+
+    .footer .foot .logoQR .QRcode {
+        width: 70%;
+        padding: 0;
+        position: relative;
+        bottom: 55px;
+        right: 25px;
+    }
+
+    .logoQR .dwbuttons {
+        width: 100%;
+        position: relative;
+        right: 40px;
+        bottom: 40px;
+    }
+
+    .logoQR .dwbuttons .logimg {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logimg .playstore .download-btn {
+        width: 52px;
+        height: 18px;
+        margin: 7px 2px 2px 8px;
+        position: relative;
+    }
+
+    .logimg .appstore .download-btn {
+        width: 52px;
+        height: 18px;
+        margin: 7px 2px 2px 8px;
+        position: relative;
+    }
+
+    .footer .info {
+        display: grid;
+        margin: auto;
+        width: 100%;
+        position: relative;
+        right: 57px;
+    }
+
+    .footer .info .basic {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 75px;
+        bottom: 0px;
+        width: 70%;
+        margin: 65px 2px 2px 2px;
+        padding: 2px 2px 2px 2px;
+    }
+
+    .footer .info .basic>div {
+        flex: 1;
+    }
+
+    .footer .info .basic p {
+        margin: 0;
+        padding: 8px 8px 5px 1px;
+        font-size: 8px;
+    }
+
+    .footer .info .basic .Email {
+        width: 150px;
+    }
+
+    .footer .info .basic .Email p {
+        position: relative;
+        left: 15px;
+        width: 110px;
+    }
+
+    .footer .info .basic .Tel {
+        width: 170px;
+    }
+
+    .footer .info .basic .Tel p {
+        position: relative;
+        left: 15px;
+        width: 112px;
+    }
+
+    .footer .info .basic .ext p {
+        position: relative;
+        left: 15px;
+        width: 100px;
+    }
+
+    .footer .info .basic .tol {
+        width: 150px;
+    }
+
+    .footer .info .basic .tol p {
+        position: relative;
+        left: 15px;
+        width: 110px;
+    }
+
+    .footer .info .basic .Call {
+        width: 150px;
+    }
+
+    .footer .info .basic .Call p {
+        position: relative;
+        left: 15px;
+        width: 110px;
+    }
+
+    .footer .info .connect {
+        left: 105px;
+        padding: 5px;
+        margin: 5px;
+        width: 70px;
+        position: relative;
+        bottom: 70px;
+    }
+
+    .footer .info .connect p {
+        font-size: 8px;
+        width: 100%;
+    }
+
+    .connect .soc {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: 6px;
+        width: 70%;
+    }
+
+    .connect .fb {
+        width: 70px;
+        height: auto;
+    }
+
+    .connect .ytb {
+        width: 60px;
+        height: auto;
+    }
+
+    .connect .lkdn {
+        width: 60px;
+        height: auto;
+    }
+
+    .footer .foot .footer-links {
+        margin: auto;
+        position: relative;
+        right: 5px;
+        bottom: 10px;
+        width: 90%;
+    }
+
+    .footer .footer-links li {
+        margin: 0;
+        padding: 1px;
+    }
+
+    .footer .footer-links a {
+        font-size: 8px;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .footer-links h4 {
+        font-size: 10px;
+        margin: 0;
+        padding: 0px;
+    }
+
+    .footer-links .agent {
+        font-size: 7px;
+        padding: 5px;
+        margin-top: 7px;
+        border-radius: 5px;
+        width: 85%;
+        position: relative;
+        right: 5px;
+    }
+
+    .footer .copyright {
+        position: relative;
+        bottom: 5px;
+        left: 65px;
+        width: 65%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer .copyright p {
+        font-size: 8px;
+    }
+
+    .soc svg:hover {
+        transform: none;
+        /* Remove the hover effect on mobile devices */
+    }
+}
+
+@media (max-width:320px) and (min-width: 280px) {
+    .header {
+        padding: 18px;
+    }
+
+    .fa-bars {
+        font-size: 35px;
+    }
+
+    .navbar .logo {
+        position: relative;
+        right: 0px;
+        width: 45%;
+    }
+
+
+    .header .menu-toggle {
+        padding: 1px 15px 0px 0px;
+    }
+
+    .nav ul {
+        margin: 20px 10px 10px 62px;
+        width: 60%;
+        padding: 10px;
+    }
+
+    .body-container {
+        padding: 0;
+    }
+
+    .First-container .curtain .content {
+        width: 100%;
+        position: relative;
+        right: 0px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content h1 {
+        margin: 20px 20px 40px 50px;
+        font-size: 50px;
+    }
+
+    .content p {
+        width: 95%;
+        margin: 20px 5px 40px 10px;
+        text-align: justify;
+        font-size: small;
+    }
+
+    .curtain {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .curtain .aboutimg {
+        position: relative;
+        bottom: 35px;
+        width: 100%;
+    }
+
+    .aboutimg .about-img {
+        position: relative;
+        bottom: 0px;
+        margin: 6px;
+        width: 90%;
+    }
+
+    .Second-Container .grids {
+        margin: 1px 1px 1px 1px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .grids p {
+        text-align: justify;
+        font-size: 10px;
+        grid-gap: 0px;
+    }
+
+    .Second-Container .grid-1, .grid-2, .grid-3 {
+        width: 170px;
+        height: 280px;
+        padding: 20px 20px 20px 20px;
+        margin: 15px 15px 15px 15px;
+        position: relative;
+        left: 35px;
+    }
+
+    .icon1, .icon2, .icon3 {
+        margin: 5px 2px 5px 10px;
+        padding: 2px 2px 2px 2px;
+        width: 70%;
+    }
+
+    .base {
+        width: 100%;
+        padding: 1px 1px 1px 1px;
+    }
+
+    .base h1 {
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .ctxlogo {
+        margin: 15px 10px 20px 10px;
+    }
+
+    .Ctxpress-Logo {
+        width: 45%;
+    }
+
+    .base .paragraph {
+        margin: 0px 0px 0px 50px;
+        width: 45%;
+        float: right;
+        position: relative;
+        bottom: 85px;
+    }
+
+    .paragraph p {
+        margin-bottom: 0px;
+        text-align: justify;
+        font-weight: bold;
+        font-size: 7px;
+    }
+
+    /* Footer */
+
+    .footer {
+        width: 100%;
+        margin: 0px;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .footer .foot {
+        display: grid;
+    }
+
+    .footer .foot .row {
+        position: relative;
+        right: 0px;
+        width: 70%;
+    }
+
+    .footer .foot .row .logoQR {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .footer .foot .logoQR {
+        margin: auto;
+        position: relative;
+    }
+
+    .logoQR .dwbuttons h3 {
+        font-size: 9px;
+        width: 120%;
+    }
+
+    .footer .foot .logoQR .citypaylog {
+        width: 50%;
+        padding: 0;
+        position: relative;
+        bottom: 50px;
+        right: 15px;
+    }
+
+    .footer .foot .logoQR .QRcode {
+        width: 50%;
+        padding: 0;
+        position: relative;
+        bottom: 55px;
+        right: 15px;
+    }
+
+    .logoQR .dwbuttons {
+        width: 100%;
+        position: relative;
+        right: 40px;
+        bottom: 40px;
+    }
+
+    .logoQR .dwbuttons .logimg {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logimg .playstore .download-btn {
+        width: 52px;
+        height: 18px;
+        margin: 7px 2px 2px 8px;
+        position: relative;
+    }
+
+    .logimg .appstore .download-btn {
+        width: 52px;
+        height: 18px;
+        margin: 7px 2px 2px 8px;
+        position: relative;
+    }
+
+    .footer .info {
+        display: grid;
+        margin: auto;
+        width: 100%;
+        position: relative;
+        right: 57px;
+    }
+
+    .footer .info .basic {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 65px;
+        bottom: 0px;
+        width: 70%;
+        margin: 65px 2px 2px 2px;
+        padding: 2px 2px 2px 2px;
+    }
+
+    .footer .info .basic>div {
+        flex: 1;
+    }
+
+    .footer .info .basic p {
+        margin: 0;
+        padding: 8px 8px 5px 1px;
+        font-size: 7px;
+    }
+
+    .footer .info .basic .Email {
+        width: 150px;
+    }
+
+    .footer .info .basic .Email p {
+        position: relative;
+        left: 15px;
+        width: 100px;
+    }
+
+    .footer .info .basic .Tel {
+        width: 170px;
+    }
+
+    .footer .info .basic .Tel p {
+        position: relative;
+        left: 15px;
+        width: 100px;
+    }
+
+    .footer .info .basic .ext p {
+        position: relative;
+        left: 15px;
+        width: 100px;
+    }
+
+    .footer .info .basic .tol {
+        width: 150px;
+    }
+
+    .footer .info .basic .tol p {
+        position: relative;
+        left: 15px;
+        width: 100px;
+    }
+
+    .footer .info .basic .Call {
+        width: 150px;
+    }
+
+    .footer .info .basic .Call p {
+        position: relative;
+        left: 15px;
+        width: 100px;
+    }
+
+    .footer .info .connect {
+        left: 90px;
+        padding: 5px;
+        margin: 5px;
+        width: 70px;
+        position: relative;
+        bottom: 70px;
+    }
+
+    .footer .info .connect p {
+        font-size: 8px;
+        width: 100%;
+    }
+
+    .connect .soc {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: 6px;
+        width: 70%;
+    }
+
+    .connect .fb {
+        width: 70px;
+        height: auto;
+    }
+
+    .connect .ytb {
+        width: 60px;
+        height: auto;
+    }
+
+    .connect .lkdn {
+        width: 60px;
+        height: auto;
+    }
+
+    .footer .foot .footer-links {
+        margin: auto;
+        position: relative;
+        right: 35px;
+        bottom: 10px;
+        width: 90%;
+    }
+
+    .footer .footer-links li {
+        margin: 0;
+        padding: 1px;
+    }
+
+    .footer .footer-links a {
+        font-size: 7px;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .footer-links h4 {
+        font-size: 8px;
+        margin: 0;
+        padding: 0px;
+    }
+
+    .footer-links .agent {
+        font-size: 6px;
+        padding: 5px;
+        margin-top: 7px;
+        border-radius: 5px;
+        width: 75%;
+        position: relative;
+        right: 5px;
+    }
+
+    .footer .copyright {
+        position: relative;
+        bottom: 5px;
+        left: 55px;
+        width: 65%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer .copyright p {
+        font-size: 6px;
+    }
+
+    .soc svg:hover {
+        transform: none;
+        /* Remove the hover effect on mobile devices */
+    }
+
+}
