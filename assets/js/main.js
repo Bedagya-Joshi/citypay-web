@@ -153,7 +153,7 @@
   /**
    * Privacy Policy Toggle
    */
-  document.querySelectorAll('.policy-item h3, .policy-item .policy-toggle').forEach((policyItem) => {
+  document.querySelectorAll('.policy-item h4, .policy-item .policy-toggle').forEach((policyItem) => {
     policyItem.addEventListener('click', () => {
       policyItem.parentNode.classList.toggle('policy-active');
     });
